@@ -1,0 +1,655 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508465800*java2.B¥ 
+ë
+ãgateway/service/src/main/java/org/eclipse/ditto/gateway/service/security/authentication/preauth/PreAuthenticatedAuthenticationProvider.java2
+
+package4
+F
+Aorg.eclipse.ditto.gateway.service.security.authentication.preauth5
+m
+horg.eclipse.ditto.gateway.service.security.authentication.preauth.PreAuthenticatedAuthenticationProvider7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+,
+&PreAuthenticatedAuthenticationProvider12
+A
+;Recovered#typeBindingLTimeMeasuringAuthenticationProvider;014
+
+unknown15
+
+extends16
+
+	Immutable18
+
+annotated by19
+'
+!Recovered#typeBindingLImmutable;021
+
+
+uses22
+"
+AllValuesAreNonnullByDefault24
+:
+4Recovered#typeBindingLAllValuesAreNonnullByDefault;026
+2
+,Recovered#typeBindingLAuthenticationResult;028
+u
+oorg.eclipse.ditto.gateway.service.security.authentication.preauth.PreAuthenticatedAuthenticationProvider.LOGGER30
+
+field31
+
+private32
+
+LOGGER33
+
+ThreadSafeDittoLogger35
+
+is type36
+w
+qorg.eclipse.ditto.gateway.service.security.authentication.preauth.PreAuthenticatedAuthenticationProvider.INSTANCE38
+
+INSTANCE39
+
+calls40
+x
+rorg.eclipse.ditto.gateway.service.security.authentication.preauth.PreAuthenticatedAuthenticationProvider#<init>()V42
+
+method43
+
+
+references44
+Á
+‡org.eclipse.ditto.gateway.service.security.authentication.preauth.PreAuthenticatedAuthenticationProvider#getInstance()Lorg/eclipse/ditto/gateway/service/security/authentication/preauth/PreAuthenticatedAuthenticationProvider;46
+
+getInstance47
+
+returns48
+è
+àorg.eclipse.ditto.gateway.service.security.authentication.preauth.PreAuthenticatedAuthenticationProvider#isApplicable(LRequestContext;)Z50
+
+isApplicable51
+,
+&Recovered#typeBindingLRequestContext;053
+
+	has param54
+ù
+ñorg.eclipse.ditto.gateway.service.security.authentication.preauth.PreAuthenticatedAuthenticationProvider#containsHeader(LRequestContext;LHttpHeader;)Z56
+
+containsHeader57
+(
+"Recovered#typeBindingLHttpHeader;059
+±
+™org.eclipse.ditto.gateway.service.security.authentication.preauth.PreAuthenticatedAuthenticationProvider#getRequestParam(LRequestContext;LHttpHeader;)Ljava/util/Optional;61
+
+getRequestParam62
+)
+#Recovered#typeBindingLHttpRequest;064
+!
+Recovered#typeBindingLUri;066
+#
+Recovered#typeBindingLQuery;068
+…
+¬org.eclipse.ditto.gateway.service.security.authentication.preauth.PreAuthenticatedAuthenticationProvider#tryToAuthenticate(LRequestContext;LDittoHeaders;)Ljava/util/concurrent/CompletableFuture;70
+
+	protected71
+
+tryToAuthenticate72
+*
+$Recovered#typeBindingLDittoHeaders;074
+©
+¢org.eclipse.ditto.gateway.service.security.authentication.preauth.PreAuthenticatedAuthenticationProvider#getPreAuthenticated(LRequestContext;)Ljava/util/Optional;76
+
+DittoRuntimeException78
+∑
+∞org.eclipse.ditto.gateway.service.security.authentication.preauth.PreAuthenticatedAuthenticationProvider#getAuthenticationFailedException(LDittoHeaders;)LDittoRuntimeException;80
+2
+,Recovered#typeBindingLAuthorizationSubject;082
+¨
+•org.eclipse.ditto.gateway.service.security.authentication.preauth.PreAuthenticatedAuthenticationProvider#getAuthorizationSubjects(Ljava/lang/String;)Ljava/util/List;84
+
+AuthenticationResult86
+«
+¿org.eclipse.ditto.gateway.service.security.authentication.preauth.PreAuthenticatedAuthenticationProvider#toFailedAuthenticationResult(Ljava/lang/Throwable;LDittoHeaders;)LAuthenticationResult;88
+€
+‘org.eclipse.ditto.gateway.service.security.authentication.preauth.PreAuthenticatedAuthenticationProvider#buildFailedToExtractAuthorizationSubjectsException(Ljava/lang/String;LDittoHeaders;)LDittoRuntimeException;90
+2
+,Recovered#typeBindingLAuthorizationContext;092
+
+getPreAuthenticated93
+&
+ getAuthenticationFailedException94
+
+getAuthorizationSubjects95
+8
+2buildFailedToExtractAuthorizationSubjectsException96
+"
+toFailedAuthenticationResult97
+£
+úorg.eclipse.ditto.gateway.service.security.authentication.preauth.PreAuthenticatedAuthenticationProvider#getType(LRequestContext;)LAuthorizationContextType;99
+
+getType100
+
+AuthorizationContextType102J
+
+1
+12Z
+
+3	
+354jœ
+
+
+17
+171815
+B
+79<
+798043 *
+1è è(26:3B
+	
+9
+32
+
+
+11
+94
+
+73
+737415
+
+27
+272815
+
+34
+343515
+@
+37:
+373831 *
+1E E(26:3B
+	
+9
+32
+
+
+11
+39
+
+101
+10110215
+
+13
+131415
+
+81
+818215
+C
+98=
+989943 *
+1≠ ≠(26:3B
+	
+9
+10
+
+11
+100
+@
+49:
+495043 *
+1T T(26:3B
+	
+9
+10
+
+
+11
+51
+
+85
+858615
+
+20
+202115
+
+65
+656615
+@
+41:
+414243 *
+1G G(26:3B
+	
+9
+32
+
+
+11
+12
+B
+89<
+899043 *
+1ù ù(26:3B
+	
+9
+32
+
+
+11
+96
+
+91
+919215
+@
+69:
+697043 *
+1e e(26:3B
+	
+9
+71
+
+
+11
+72
+B
+83<
+838443 *
+1ï ï(26:3B
+	
+9
+32
+
+
+11
+95
+
+25
+252615
+B
+75<
+757643 *
+1ä ä(26:3B
+	
+9
+32
+
+
+11
+93
+@
+55:
+555643 *
+1Y Y(26:3B
+	
+9
+32
+
+
+11
+57
+9
+64
+678 *
+1? ?(::3B
+	
+9
+10
+
+
+11
+12
+
+58
+585915
+@
+29:
+293031 *
+1B B(26:3B
+	
+9
+32
+
+
+11
+33
+
+52
+525315
+
+23
+232415
+@
+45:
+454643 *
+1P P(26:3B
+	
+9
+10
+
+
+11
+47
+
+63
+636415
+B
+87<
+878843 *
+1¶ ¶(26:3B
+	
+9
+71
+
+
+11
+97
+@
+60:
+606143 *
+1^ ^(26:3B
+	
+9
+32
+
+
+11
+62
+
+67
+676815
+
+77
+777815r‹
+
+61316*
+1@ @(4
+
+61719*
+1= =(
+
+62022*
+1= =(
+
+62319*
+1> >(
+
+62522*
+1> >(
+
+61322*
+1@ @(4
+
+62722*
+1@5 @(I
+
+293436*
+1B B(/
+
+293422*
+1B B(/
+
+293422*
+1B0 B(6
+
+29622*
+1C4 C(Z
+
+37636*
+1E E(@
+
+37622*
+1E E(@
+
+37622*
+1EA E(I
+
+37640*
+1EP E(v
+
+41640*
+1G G(3
+
+413422*
+1H H(
+
+412944*
+1H H(
+
+45648*
+1P P(9
+
+45622*
+1P P(9
+
+45622*
+1Q Q(
+
+453744*
+1Q Q(
+
+495254*
+1U' U(5
+
+495236*
+1U6 U(D
+
+495222*
+1U' U(5
+
+49644*
+1V V(
+
+495540*
+1V V(
+
+555254*
+1Y1 Y(?
+
+555854*
+1YV Y(`
+
+555236*
+1Y@ Y(N
+
+555222*
+1Y1 Y(?
+
+555836*
+1Ya Y(g
+
+555822*
+1YV Y(`
+
+55644*
+1[- [(<
+
+556040*
+1[- [(<
+
+605254*
+1^; ^(I
+
+605854*
+1^` ^(j
+
+605236*
+1^J ^(X
+
+605222*
+1^; ^(I
+
+605836*
+1^k ^(q
+
+605822*
+1^` ^(j
+
+606336*
+1_ _(&
+
+606322*
+1_ _(
+
+606536*
+1` `(
+
+606522*
+1` `(
+
+606736*
+1a a(
+
+606722*
+1a a(
+
+695254*
+1fO f(]
+
+697354*
+1g g(
+
+692722*
+1f! f(5
+
+695236*
+1f^ f(l
+
+695222*
+1fO f(]
+
+697336*
+1g  g(,
+
+697322*
+1g g(
+
+69644*
+1i- i(@
+
+697540*
+1i- i(@
+
+697748*
+1mF m(f
+
+69644*
+1mF m(f
+
+697940*
+1mF m(f
+
+698122*
+1r r((
+
+69644*
+1rB r(Z
+
+698340*
+1rB r(Z
+
+698548*
+1t6 t(R
+
+69644*
+1t6 t(R
+
+698740*
+1t6 t(R
+
+697748*
+1u u(G
+
+69644*
+1u u(G
+
+698940*
+1u u(G
+
+699136*
+1y$ y(/
+
+699122*
+1y y(#
+
+692944*
+1Ñ	 Ñ(
+
+693422*
+1Ñ	 Ñ(
+
+692944*
+1Ñ	 Ñ(
+
+755254*
+1ä? ä(M
+
+755236*
+1äN ä(\
+
+755222*
+1ä? ä(M
+
+797748*
+1è è()
+
+797354*
+1èQ è(]
+
+797722*
+1è è()
+
+797336*
+1è^ è(j
+
+797322*
+1èQ è(]
+
+838122*
+1ï ï(-
+
+897748*
+1ù ù()
+
+897354*
+1û9 û(E
+
+897722*
+1ù ù()
+
+897336*
+1ûF û(R
+
+897322*
+1û9 û(E
+
+878548*
+1ß ß(#
+
+877354*
+1® ®(
+
+878522*
+1ß ß(#
+
+877336*
+1®  ®(,
+
+877322*
+1® ®(
+
+9810148*
+1Æ Æ($
+
+985254*
+1Æ3 Æ(A
+
+9810122*
+1Æ Æ($
+
+985236*
+1ÆB Æ(P
+
+985222*
+1Æ3 Æ(A

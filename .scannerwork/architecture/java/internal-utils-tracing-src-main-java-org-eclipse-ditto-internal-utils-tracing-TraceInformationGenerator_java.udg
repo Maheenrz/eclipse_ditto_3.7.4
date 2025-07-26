@@ -1,0 +1,769 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508742279*java2.BŸ!
+q
+linternal/utils/tracing/src/main/java/org/eclipse/ditto/internal/utils/tracing/TraceInformationGenerator.java2
+
+package4
+-
+(org.eclipse.ditto.internal.utils.tracing5
+G
+Borg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+TraceInformationGenerator12
+
+	Immutable14
+
+unknown15
+
+annotated by16
+'
+!Recovered#typeBindingLImmutable;018
+
+
+uses19
+.
+(Recovered#typeBindingLTraceInformation;021
+O
+Iorg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator.LOGGER23
+
+field24
+
+private25
+
+LOGGER26
+
+Logger28
+
+is type29
+^
+Xorg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator.SHORTENED_PATH_SUFFIX31
+
+	protected32
+
+SHORTENED_PATH_SUFFIX33
+U
+Oorg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator.FALLBACK_URI35
+
+FALLBACK_URI36
+Z
+Torg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator.FIRST_API_VERSION38
+
+FIRST_API_VERSION39
+[
+Uorg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator.LATEST_API_VERSION41
+
+LATEST_API_VERSION42
+Z
+Torg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator.API_VERSION_GROUP44
+
+API_VERSION_GROUP45
+U
+Oorg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator.API_VERSIONS47
+
+API_VERSIONS48
+
+
+references49
+]
+Worg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator.SUB_PATHS_TO_SHORTEN51
+
+SUB_PATHS_TO_SHORTEN52
+_
+Yorg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator.PATHS_TO_SHORTEN_GROUP54
+
+PATHS_TO_SHORTEN_GROUP55
+h
+borg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator.PATHS_TO_SHORTEN_REGEX_TEMPLATE57
+%
+PATHS_TO_SHORTEN_REGEX_TEMPLATE58
+a
+[org.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator.PATHS_EXACT_LENGTH_GROUP60
+
+PATHS_EXACT_LENGTH_GROUP61
+T
+Norg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator.PATHS_EXACT63
+
+PATHS_EXACT64
+c
+]org.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator.PATHS_EXACT_REGEX_TEMPLATE66
+ 
+PATHS_EXACT_REGEX_TEMPLATE67
+X
+Rorg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator.MESSAGE_PATTERN69
+
+MESSAGE_PATTERN70
+]
+Worg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator.MESSAGES_PATH_SUFFIX72
+
+MESSAGES_PATH_SUFFIX73
+Q
+Korg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator.instance75
+
+instance76
+
+Nullable78
+&
+ Recovered#typeBindingLNullable;080
+T
+Norg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator.pathPattern82
+
+pathPattern83
+k
+eorg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator#<init>(Ljava/util/regex/Pattern;)V85
+
+method86
+
+calls87
+õ
+îorg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator#getInstance()Lorg/eclipse/ditto/internal/utils/tracing/TraceInformationGenerator;89
+
+getInstance90
+
+returns91
+Å
+{org.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator#createOrRegex(Ljava/util/Collection;Z)Ljava/lang/String;93
+
+yorg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator#createRegexGroup(Ljava/lang/String;)Ljava/lang/String;95
+
+createOrRegex96
+
+createRegexGroup97
+t
+norg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator#apply(Ljava/lang/String;)LTraceInformation;99
+
+apply100
+
+TraceInformation102
+à
+Äorg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator#extractTraceInformation(Ljava/lang/String;)LTraceInformation;104
+
+extractTraceInformation105
+õ
+ìorg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator#getMatcherValue(Ljava/lang/String;Ljava/util/regex/Matcher;)Ljava/util/Optional;107
+
+getMatcherValue108
+†
+òorg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator#tryGetCapturingGroup(Ljava/util/regex/Matcher;Ljava/lang/String;)Ljava/util/Optional;110
+
+tryGetCapturingGroup111
+e
+^org.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator#equals(Ljava/lang/Object;)Z113
+
+equals114
+U
+Norg.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator#hashCode()I116
+
+hashCode117
+f
+_org.eclipse.ditto.internal.utils.tracing.TraceInformationGenerator#toString()Ljava/lang/String;119
+
+toString120J
+
+1
+12Z
+
+3	
+354j©
+
+13
+131415
+@
+92:
+929386 *
+1r r(26:3B
+	
+9
+25
+
+
+11
+96
+@
+50:
+505124 *
+18 8(26:3B
+	
+9
+25
+
+
+11
+52
+
+27
+272815
+@
+59:
+596024 *
+1= =(26:3B
+	
+9
+25
+
+
+11
+61
+@
+40:
+404124 *
+14 4(26:3B
+	
+9
+25
+
+
+11
+42
+
+17
+171815
+
+20
+202115
+@
+62:
+626324 *
+1> >(26:3B
+	
+9
+25
+
+
+11
+64
+@
+34:
+343524 *
+11 1(26:3B
+	
+9
+32
+
+
+11
+36
+@
+65:
+656624 *
+1L L(26:3B
+	
+9
+25
+
+
+11
+67
+@
+84:
+848586 *
+1T T(26:3B
+	
+9
+25
+
+
+11
+12
+F
+103?
+10310486 *
+1â â(26:3B
+	
+9
+25
+
+11
+105
+
+79
+798015
+F
+106?
+10610786 *
+1¿ ¿(26:3B
+	
+9
+25
+
+11
+108
+@
+74:
+747524 *
+1P P(26:3B
+	
+9
+25
+
+
+11
+76
+F
+115?
+11511686 *
+1⁄ ⁄(26:3B
+	
+9
+10
+
+11
+117
+
+101
+10110215
+@
+94:
+949586 *
+1x x(26:3B
+	
+9
+25
+
+
+11
+97
+@
+53:
+535424 *
+19 9(26:3B
+	
+9
+25
+
+
+11
+55
+@
+43:
+434424 *
+15 5(26:3B
+	
+9
+25
+
+
+11
+45
+@
+88:
+888986 *
+1] ](26:3B
+	
+9
+10
+
+
+11
+90
+F
+118?
+11811986 *
+1ﬂ ﬂ(26:3B
+	
+9
+10
+
+11
+120
+@
+81:
+818224 *
+1R R(26:3B
+	
+9
+25
+
+
+11
+83
+@
+22:
+222324 *
+1. .(26:3B
+	
+9
+25
+
+
+11
+26
+@
+30:
+303124 *
+10 0(26:3B
+	
+9
+32
+
+
+11
+33
+@
+37:
+373824 *
+13 3(26:3B
+	
+9
+25
+
+
+11
+39
+@
+56:
+565724 *
+1: :(26:3B
+	
+9
+25
+
+
+11
+58
+@
+71:
+717224 *
+1N N(26:3B
+	
+9
+25
+
+
+11
+73
+C
+98=
+989986 *
+1Ñ Ñ(26:3B
+	
+9
+10
+
+11
+100
+@
+68:
+686924 *
+1M M(26:3B
+	
+9
+25
+
+
+11
+70
+F
+109?
+10911086 *
+1ƒ ƒ(26:3B
+	
+9
+25
+
+11
+111
+@
+46:
+464724 *
+16 6(26:3B
+	
+9
+25
+
+
+11
+48
+F
+112?
+11211386 *
+1Œ Œ(26:3B
+	
+9
+10
+
+11
+114
+
+77
+777815
+9
+64
+678 *
+1, ,(-:3B
+	
+9
+10
+
+
+11
+12ré
+
+61316*
+1+ +(
+
+61719*
+1+ +(
+
+62019*
+1,J ,(Z
+
+222729*
+1. .( 
+
+222719*
+1. .( 
+
+222719*
+1.! .('
+
+22619*
+1.B .([
+
+464349*
+17 7(&
+
+463749*
+170 7(A
+
+464049*
+17J 7(\
+
+565349*
+1:K :(a
+
+564649*
+1; ;(
+
+655949*
+1LF L(^
+
+74629*
+1P P(7
+
+747716*
+1P P(
+
+747919*
+1P P(
+
+74619*
+1P P(7
+
+74619*
+1P8 P(@
+
+84687*
+1T T(&
+
+84619*
+1U	 U(
+
+84649*
+1U	 U(
+
+848149*
+1U U(
+
+88691*
+1] ](,
+
+88619*
+1] ](,
+
+88629*
+1^ ^(
+
+88619*
+1^ ^(
+
+887449*
+1^ ^(
+
+88649*
+1`2 `(?
+
+889287*
+1`2 `(?
+
+885049*
+1`@ `(T
+
+885649*
+1b* b(I
+
+886549*
+1e* e(D
+
+88649*
+1eF e(S
+
+889287*
+1eF e(S
+
+886249*
+1eT e(_
+
+88649*
+1g# g(0
+
+889287*
+1g# g(0
+
+88649*
+1h h(-
+
+889487*
+1h h(-
+
+88649*
+1hD h(T
+
+889487*
+1hD h(T
+
+88619*
+1l l(
+
+887449*
+1l l(
+
+88687*
+1l l(5
+
+88619*
+1m m(
+
+887449*
+1m m(
+
+9810191*
+1Ö Ö(
+
+9810119*
+1Ö Ö(
+
+9810191*
+1Ü Ü('
+
+98649*
+1Ü Ü('
+
+9810387*
+1Ü Ü('
+
+10310191*
+1â â(
+
+10310119*
+1â â(
+
+1032029*
+1ä  ä(&
+
+1032019*
+1ä ä(
+
+1038149*
+1å å((
+
+1038149*
+1å å((
+
+1035349*
+1ê5 ê(K
+
+1036849*
+1í, í(;
+
+1036849*
+1í, í(;
+
+1037149*
+1ó; ó(O
+
+103649*
+1ö  ö(/
+
+10310687*
+1ö  ö(/
+
+1035949*
+1°: °(R
+
+1032249*
+1≥ ≥(
+
+1032719*
+1≥ ≥(
+
+1032249*
+1≥ ≥(
+
+1033449*
+1∏ ∏(!
+
+1033449*
+1πH π(T
+
+1032249*
+1ª ª(
+
+1032719*
+1ª ª(
+
+1032249*
+1ª ª(
+
+106649*
+1¡ ¡($
+
+10610987*
+1¡ ¡($
+
+1092249*
+1» »(
+
+1092719*
+1» »(
+
+1092249*
+1» »(
+
+1127716*
+1œ œ(
+
+1127919*
+1œ œ($
+
+112619*
+1– –(
+
+112649*
+1– –(
+
+112629*
+1÷ ÷(
+
+112619*
+1÷ ÷(4
+
+1128149*
+1◊ ◊(*
+
+1128149*
+1◊1 ◊(<
+
+1158149*
+1‹ ‹((
+
+1188149*
+1‚" ‚(-

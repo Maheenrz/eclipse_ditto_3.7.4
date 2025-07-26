@@ -1,0 +1,475 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508563244*java2.B‰
+q
+lconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/mapping/MessageMapperProvider.java2
+
+package4
+3
+.org.eclipse.ditto.connectivity.service.mapping5
+I
+Dorg.eclipse.ditto.connectivity.service.mapping.MessageMapperProvider7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+MessageMapperProvider12
+1
++Recovered#typeBindingLDittoExtensionPoint;014
+
+unknown15
+
+
+implements16
+
+
+uses17
+Z
+Torg.eclipse.ditto.connectivity.service.mapping.MessageMapperProvider.MESSAGE_MAPPERS19
+
+field20
+
+private21
+
+MESSAGE_MAPPERS22
+Y
+Sorg.eclipse.ditto.connectivity.service.mapping.MessageMapperProvider.messageMappers24
+
+messageMappers25
++
+%Recovered#typeBindingLMessageMapper;027
+i
+corg.eclipse.ditto.connectivity.service.mapping.MessageMapperProvider#<init>(LActorSystem;LConfig;)V29
+
+method30
+)
+#Recovered#typeBindingLActorSystem;032
+
+	has param33
+$
+Recovered#typeBindingLConfig;035
+
+calls36
+
+is type37
+/
+)Recovered#typeBindingLDittoExtensionIds;039
+
+
+references40
+m
+gorg.eclipse.ditto.connectivity.service.mapping.MessageMapperProvider#getMessageMappers()Ljava/util/Map;42
+
+getMessageMappers43
+¨
+•org.eclipse.ditto.connectivity.service.mapping.MessageMapperProvider#get(LActorSystem;LConfig;)Lorg/eclipse/ditto/connectivity/service/mapping/MessageMapperProvider;45
+	
+get46
+
+returns47
+
+ExtensionIdConfig49
+V
+Porg.eclipse.ditto.connectivity.service.mapping.MessageMapperProvider$ExtensionId51
+Å
+{org.eclipse.ditto.connectivity.service.mapping.MessageMapperProvider$ExtensionId#computeConfig(LConfig;)LExtensionIdConfig;53
+
+ExtensionId54
+
+extends55
+a
+[org.eclipse.ditto.connectivity.service.mapping.MessageMapperProvider$ExtensionId.CONFIG_KEY57
+
+
+CONFIG_KEY58
+s
+morg.eclipse.ditto.connectivity.service.mapping.MessageMapperProvider$ExtensionId#<init>(LExtensionIdConfig;)V60
+/
+)Recovered#typeBindingLExtensionIdConfig;062
+
+	protected63
+
+computeConfig64
+w
+qorg.eclipse.ditto.connectivity.service.mapping.MessageMapperProvider$ExtensionId#getConfigKey()Ljava/lang/String;66
+
+getConfigKey67
+c
+]org.eclipse.ditto.connectivity.service.mapping.MessageMapperProvider$MessageMapperExtensionId69
+
+MessageMapperExtensionId70
+Ä
+zorg.eclipse.ditto.connectivity.service.mapping.MessageMapperProvider$MessageMapperExtensionId#<init>(LExtensionIdConfig;)V72
+Ñ
+~org.eclipse.ditto.connectivity.service.mapping.MessageMapperProvider$MessageMapperExtensionId#getConfigKey()Ljava/lang/String;74J
+
+1
+12Z
+
+3	
+354j•
+A
+65;
+656630 *
+1^	 ^(
+250:3B
+	
+9
+63
+
+
+11
+67
+@
+44:
+444530 *
+1I I(26:3B
+	
+9
+10
+
+
+11
+46
+
+13
+131415
+
+38
+383915
+?
+509
+50518 *
+1R  R(+26:3B
+	
+9
+21
+
+
+11
+54
+A
+56;
+565720 *
+1T	 T(250:3B
+	
+9
+21
+
+
+11
+58
+@
+41:
+414230 *
+1< <(26:3B
+	
+9
+10
+
+
+11
+43
+A
+59;
+596030 *
+1V	 V(250:3B
+	
+9
+21
+
+
+11
+54
+@
+18:
+181920 *
+1" "(26:3B
+	
+9
+21
+
+
+11
+22
+9
+64
+678 *
+1   ():3B
+	
+9
+10
+
+
+11
+12
+?
+689
+68698 *
+1e  e(826:3B
+	
+9
+21
+
+
+11
+70
+A
+71;
+717230 *
+1g	 g(!268:3B
+	
+9
+63
+
+
+11
+70
+@
+23:
+232420 *
+1$ $(26:3B
+	
+9
+21
+
+
+11
+25
+A
+73;
+737430 *
+1k	 k(
+268:3B
+	
+9
+63
+
+
+11
+67
+A
+52;
+525330 *
+1Z	 Z(250:3B
+	
+9
+63
+
+
+11
+64
+@
+28:
+282930 *
+1& &(26:3B
+	
+9
+21
+
+
+11
+12
+
+48
+484915
+
+34
+343515
+
+31
+313215
+
+26
+262715
+
+61
+616215rÊ
+
+61316*
+1 5  (H
+
+61317*
+1 5  (H
+
+232617*
+1$ $(,
+
+283133*
+1') '(4
+
+283433*
+1'H '(N
+
+28636*
+1' '("
+
+283137*
+1'5 '(@
+
+283117*
+1') '(4
+
+283437*
+1'O '(U
+
+283417*
+1'H '(N
+
+283837*
+1(! ((2
+
+283817*
+1( (( 
+
+282617*
+1)% )(2
+
+281840*
+1* *('
+
+282340*
+14	 4(
+
+412617*
+1< <(%
+
+412340*
+1= =(
+
+44647*
+1I I((
+
+443133*
+1I3 I(>
+
+443433*
+1IR I(X
+
+44617*
+1I I((
+
+443137*
+1I? I(J
+
+443117*
+1I3 I(>
+
+443437*
+1IY I(_
+
+443417*
+1IR I(X
+
+444847*
+1L' L(2
+
+445040*
+1L' L(2
+
+445236*
+1L3 L(@
+
+445040*
+1L' L(2
+
+445017*
+1L' L(2
+
+445040*
+1L' L(2
+
+445017*
+1N5 N(@
+
+445040*
+1N5 N(@
+
+445036*
+1NB N(E
+
+501355*
+1R4 R(G
+
+501317*
+1R4 R(G
+
+501317*
+1RH R(S
+
+50617*
+1RT R(i
+
+596133*
+1V# V(4
+
+595036*
+1V V(
+
+596137*
+1VL V(]
+
+596117*
+1V# V(4
+
+59617*
+1V5 V(J
+
+524847*
+1Z Z(!
+
+523433*
+1ZM Z(S
+
+524817*
+1Z Z(!
+
+52617*
+1Z" Z(7
+
+523437*
+1ZT Z(Z
+
+523417*
+1ZM Z(S
+
+52617*
+1[) [(>
+
+525640*
+1[N [(X
+
+655640*
+1` `(
+
+681355*
+1eA e(T
+
+681317*
+1eA e(T
+
+681317*
+1eU e(`
+
+682617*
+1ea e(n
+
+716133*
+1g( g(9
+
+716836*
+1g	 g(!
+
+716137*
+1gI g(Z
+
+716117*
+1g( g(9
+
+712617*
+1g: g(G

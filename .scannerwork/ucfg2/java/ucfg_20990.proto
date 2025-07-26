@@ -1,0 +1,262 @@
+
+Éorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#getCounts(Ljava/util/Map;J)Ljava/util/Map;±
+§/Users/Maheen/Downloads/ditto-3.7.4/connectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/monitoring/metrics/SlidingWindowCounter.java«  «()"14*˛
+14
+…+ …(::8
+
+…/ …(8
+%0java.util.HashMap"java.util.HashMaph
+f
+
+…+ …(:
+%1"java.util.HashMap#<init>()V*5
+
+__unknown_file (
+
+%0java.util.HashMapd
+b
+
+… …(;
+resultjava.util.Map"__id*5
+
+__unknown_file (
+
+%0java.util.HashMap≤
+Ø
+
+   (
+%2java.time.Clock"__id*É
+
+__unknown_file (g*eZ
+Xorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter"
+clockñì
+
+   ((
+%3java.time.Instant",java.time.Clock#instant()Ljava/time/Instant;*3
+
+__unknown_file (
+
+%2java.time.Clock2	instant()ÖÇ
+
+   (7
+
+%4long"!java.time.Instant#toEpochMilli()J*5
+
+__unknown_file (
+
+%3java.time.Instant2toEpochMilli()*
+
+9
+11
+1*Ω
+3
+› ›(ü
+ú
+
+› ›(/
+%16"__mapSet*5
+
+__unknown_file (
+
+resultjava.util.Map*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""*
+
+9
+11
+1*˚
+4
+÷ ÷(2R
+P
+
+÷ ÷(2
+ejava.util.Map$Entry"__id*"
+
+__unknown_file (
+""ç
+ä
+
+÷ ÷(2
+ejava.util.Map$Entry"
+__arrayGet*2
+
+__unknown_file (
+
+%10java.util.Set*"
+
+__unknown_file (
+""*
+3
+7*Ù
+5
+Ÿ Ÿ(úô
+
+Ÿ8 Ÿ(D
+%14java.lang.Long"0java.util.Map$Entry#getValue()Ljava/lang/Object;*6
+
+__unknown_file (
+
+ejava.util.Map$Entry2
+getValue()æ
+ª
+
+Ÿ Ÿ(E
+%15long"java.lang.Math#min(JJ)J*.
+
+__unknown_file ("
+java.lang.Math*"
+
+__unknown_file (
+""*3
+
+__unknown_file (
+
+%14java.lang.Long*
+4*Ñ
+6
+ÿ& ÿ(*k
+i
+
+ÿ& ÿ(1
+%13boolean"	__compare*
+
+ÿ+ ÿ(-
+<=*
+
+ÿ& ÿ(*
+""*
+
+ÿ. ÿ(1
+""*
+4
+5*û
+7
+◊& ◊('òï
+
+◊& ◊(0
+%11java.lang.Long".java.util.Map$Entry#getKey()Ljava/lang/Object;*6
+
+__unknown_file (
+
+ejava.util.Map$Entry2getKey()j
+h
+
+ÿ ÿ("
+%12boolean"	__compare*
+
+ÿ ÿ(
+>*
+
+ÿ ÿ(
+""*
+
+ÿ ÿ("
+""*
+4
+6*Æ
+8
+÷5 ÷(Aóî
+
+÷5 ÷(L
+%10java.util.Set"'java.util.Map#entrySet()Ljava/util/Set;*;
+
+__unknown_file (
+
+measurementsjava.util.Map2
+entrySet()*
+4*í
+9
+—( —(.h
+f
+
+”) ”(9
+
+%7long"__calculate*
+
+”- ”(.
+-*
+
+”) ”(,
+""*
+
+”/ ”(9
+"" 
+«
+
+”! ”(J
+
+%8long"eorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#getSlot(JJ)J*x
+
+__unknown_file (\Z
+Xorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter*(
+
+__unknown_file (
+
+
+%7long*"
+
+__unknown_file (
+""ƒ
+¡
+
+’! ’(=
+
+%9long"eorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#getSlot(JJ)J*x
+
+__unknown_file (\Z
+Xorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter*"
+
+__unknown_file (
+""*"
+
+__unknown_file (
+""*
+8*ﬁ
+11
+Õ> Õ(Ab
+`
+
+Õ> Õ(a
+%5"__calculate*
+
+ÕB Õ(C
+-*
+
+Õ> Õ(A
+""*
+
+ÕD Õ(a
+""`
+^
+
+Õ> Õ(q
+%6"	__compare*
+
+Õb Õ(c
+<*
+
+Õ> Õ(a
+
+%5*
+
+Õd Õ(q
+""*
+3
+9*8
+1
+ﬂ ﬂ("'
+
+ﬂ ﬂ(
+
+resultjava.util.Map:+
+
+«* «(M
+measurementsjava.util.Map: 
+
+__unknown_file (
+""B\Z
+Xorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter

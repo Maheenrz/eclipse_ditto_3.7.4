@@ -1,0 +1,560 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508498904*java2.Bù
+Z
+Uprotocol/src/main/java/org/eclipse/ditto/protocol/mapper/ThingSearchSignalMapper.java2
+
+package4
+&
+!org.eclipse.ditto.protocol.mapper5
+>
+9org.eclipse.ditto.protocol.mapper.ThingSearchSignalMapper7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+
+ThingSearchSignalMapper12
+2
+,Recovered#typeBindingLAbstractSignalMapper;014
+
+unknown15
+
+extends16
+
+Signal18
+
+	has param19
+
+T21
+
+
+uses22
+t
+norg.eclipse.ditto.protocol.mapper.ThingSearchSignalMapper#getTopicPath(LSignal;LTopicPath/Channel;)LTopicPath;24
+
+method25
+
+getTopicPath26
+
+	TopicPath28
+
+returns29
+'
+!Recovered#typeBindingLTopicPath;031
+
+is type32
+.
+(Recovered#typeBindingLTopicPathBuilder;034
+
+TopicPathBuilder36
+
+
+references37
+g
+aorg.eclipse.ditto.protocol.mapper.ThingSearchSignalMapper#getTopicPathBuilder()LTopicPathBuilder;39
+
+calls40
+4
+.Recovered#typeBindingLSearchTopicPathBuilder;042
+
+SearchTopicPathBuilder44
+Ÿ
+˜org.eclipse.ditto.protocol.mapper.ThingSearchSignalMapper#fromTopicPathBuilderWithChannel(LTopicPathBuilder;LTopicPath/Channel;)LSearchTopicPathBuilder;46
+›
+”org.eclipse.ditto.protocol.mapper.ThingSearchSignalMapper#setTopicPathAction(LSearchTopicPathBuilder;LThingSearchCommand;[LTopicPath/SearchAction;)V48
+0
+*Recovered#typeBindingLThingSearchCommand;050
+
+TopicPath.SearchAction52
+n
+horg.eclipse.ditto.protocol.mapper.ThingSearchSignalMapper#getSupportedActions()[LTopicPath/SearchAction;54
+
+private55
+
+getTopicPathBuilder56
+
+public57
+
+getSupportedActions58
+
+setTopicPathAction59
+B
+<Recovered#innerTypeBindingRecovered#typeBindingLTopicPath;0161
+|
+vorg.eclipse.ditto.protocol.mapper.ThingSearchSignalMapper#setAction(LSearchTopicPathBuilder;LTopicPath/SearchAction;)V63
+‚
+|org.eclipse.ditto.protocol.mapper.ThingSearchSignalMapper#unknownCommandException(Ljava/lang/String;)LDittoRuntimeException;65
+
+unknownCommandException66
+
+DittoRuntimeException68
+
+	setAction69
+%
+fromTopicPathBuilderWithChannel70
+p
+jorg.eclipse.ditto.protocol.mapper.ThingSearchSignalMapper#enhancePayloadBuilder(LSignal;LPayloadBuilder;)V72
+
+enhancePayloadBuilder73
+,
+&Recovered#typeBindingLPayloadBuilder;075
+/
+)Recovered#typeBindingLJsonObjectBuilder;077
+0
+*Recovered#typeBindingLCreateSubscription;079
+0
+*Recovered#typeBindingLCancelSubscription;081
+5
+/Recovered#typeBindingLRequestFromSubscription;083J
+
+1
+12Z
+
+3	
+354j³
+
+80
+808115
+
+27
+272815
+@
+38:
+383925 *
+16 6(26:3B
+	
+9
+55
+
+
+11
+56
+
+60
+606115
+
+76
+767715
+9
+64
+678 *
+1( (($:3B
+	
+9
+10
+
+
+11
+12
+
+17
+171815
+@
+71:
+717225 *
+1r r(26:3B
+	
+9
+10
+
+
+11
+73
+
+49
+495015
+
+74
+747515
+
+20
+202115
+
+35
+353615
+@
+47:
+474825 *
+1E E(26:3B
+	
+9
+55
+
+
+11
+59
+@
+23:
+232425 *
+1* *(26:3B
+	
+9
+10
+
+
+11
+26
+
+30
+303115
+@
+64:
+646525 *
+1R R(26:3B
+	
+9
+10
+
+
+11
+66
+@
+45:
+454625 *
+1f f(26:3B
+	
+9
+55
+
+
+11
+70
+@
+53:
+535425 *
+1= =(26:3B
+	
+9
+57
+
+
+11
+58
+
+41
+414215
+
+13
+131415
+@
+62:
+626325 *
+1V V(26:3B
+	
+9
+55
+
+
+11
+69
+
+82
+828315
+
+51
+515215
+
+33
+333415
+
+78
+787915
+
+67
+676815
+
+43
+434415r¤
+
+61316*
+1(B ((V
+
+61719*
+1(/ ((5
+
+62022*
+1(% ((&
+
+61722*
+1(/ ((5
+
+61322*
+1(B ((V
+
+62022*
+1(W ((X
+
+232729*
+1+ +(
+
+232019*
+1+" +(#
+
+233019*
+1+3 +(<
+
+232722*
+1+ +(
+
+232032*
+1+$ +(+
+
+232022*
+1+" +(#
+
+233032*
+1+E +(L
+
+233022*
+1+3 +(<
+
+233022*
+1+= +(D
+
+233332*
+1,  ,(0
+
+233322*
+1, ,(
+
+233529*
+1,3 ,(F
+
+23637*
+1,3 ,(F
+
+233840*
+1,3 ,(F
+
+234132*
+1-& -(<
+
+234122*
+1- -(%
+
+234329*
+1. .(0
+
+23637*
+1. .(0
+
+234540*
+1. .(0
+
+23637*
+1/	 /(
+
+234740*
+1/	 /(
+
+234922*
+1/5 /(G
+
+235129*
+1/U /(h
+
+23637*
+1/U /(h
+
+235340*
+1/U /(h
+
+383529*
+16 6(
+
+383522*
+16 6(
+
+535129*
+1= =(
+
+533022*
+1= =(
+
+535122*
+1= =("
+
+533022*
+1> >(
+
+533022*
+1> >(*
+
+474119*
+1E+ E(A
+
+474919*
+1EQ E(c
+
+476019*
+1F F(
+
+474132*
+1EB E(I
+
+474122*
+1E+ E(A
+
+474932*
+1Eg E(n
+
+474922*
+1EQ E(c
+
+476032*
+1F- F(=
+
+473022*
+1F F(
+
+473022*
+1F F()
+
+473032*
+1K* K(6
+
+473022*
+1K K(
+
+473022*
+1K K()
+
+47637*
+1N N(
+
+476240*
+1N N(
+
+646729*
+1R R(
+
+646722*
+1R R(
+
+624119*
+1V" V(8
+
+623019*
+1VH V(Q
+
+624132*
+1V9 V(@
+
+624122*
+1V" V(8
+
+623032*
+1V_ V(k
+
+623022*
+1VH V(Q
+
+623022*
+1VR V(^
+
+626729*
+1b b(.
+
+62637*
+1b b(.
+
+626440*
+1b b(.
+
+454329*
+1f f(*
+
+453319*
+1fQ f(a
+
+453019*
+1g g(
+
+454322*
+1f f(*
+
+453332*
+1fb f(r
+
+453322*
+1fQ f(a
+
+453032*
+1g% g(,
+
+453022*
+1g g(
+
+453022*
+1g g($
+
+454132*
+1h& h(<
+
+454122*
+1h h(%
+
+712019*
+1s& s('
+
+717419*
+1s7 s(E
+
+712032*
+1s( s(/
+
+712022*
+1s& s('
+
+717432*
+1sF s(T
+
+717422*
+1s7 s(E
+
+717632*
+1t! t(6
+
+717622*
+1t t( 
+
+717822*
+1v  v(2
+
+717832*
+1w& w(3
+
+717822*
+1w w(%
+
+717822*
+1w7 w(I
+
+718022*
+1„' „(9
+
+718032*
+1…& …(3
+
+718022*
+1… …(%
+
+718022*
+1…7 …(I
+
+718222*
+1ˆ' ˆ(>
+
+718232*
+1‰+ ‰(9
+
+718222*
+1‰ ‰(*
+
+718222*
+1‰= ‰(T

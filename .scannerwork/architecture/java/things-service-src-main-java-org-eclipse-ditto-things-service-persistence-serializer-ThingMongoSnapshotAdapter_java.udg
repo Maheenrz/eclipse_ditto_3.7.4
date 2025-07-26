@@ -1,0 +1,536 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508539658*java2.BÌ
+x
+sthings/service/src/main/java/org/eclipse/ditto/things/service/persistence/serializer/ThingMongoSnapshotAdapter.java2
+
+package4
+<
+7org.eclipse.ditto.things.service.persistence.serializer5
+V
+Qorg.eclipse.ditto.things.service.persistence.serializer.ThingMongoSnapshotAdapter7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+ThingMongoSnapshotAdapter12
+:
+4Recovered#typeBindingLAbstractMongoSnapshotAdapter;014
+
+unknown15
+
+extends16
+
+
+ThreadSafe18
+
+annotated by19
+(
+"Recovered#typeBindingLThreadSafe;021
+
+
+uses22
+#
+Recovered#typeBindingLThing;024
+^
+Xorg.eclipse.ditto.things.service.persistence.serializer.ThingMongoSnapshotAdapter.LOGGER26
+
+field27
+
+private28
+
+LOGGER29
+
+Logger31
+
+is type32
+Ö
+org.eclipse.ditto.things.service.persistence.serializer.ThingMongoSnapshotAdapter.THING_SNAPSHOT_TAKEN_EVENT_PUBLISHING_ENABLED34
+
+	protected35
+3
+-THING_SNAPSHOT_TAKEN_EVENT_PUBLISHING_ENABLED36
+f
+`org.eclipse.ditto.things.service.persistence.serializer.ThingMongoSnapshotAdapter.pubSubMediator38
+
+pubSubMediator39
+
+ActorRef41
+{
+uorg.eclipse.ditto.things.service.persistence.serializer.ThingMongoSnapshotAdapter.snapshotTakenEventPublishingEnabled43
+)
+#snapshotTakenEventPublishingEnabled44
+v
+porg.eclipse.ditto.things.service.persistence.serializer.ThingMongoSnapshotAdapter#<init>(LActorSystem;LConfig;)V46
+
+method47
+)
+#Recovered#typeBindingLActorSystem;049
+
+	has param50
+$
+Recovered#typeBindingLConfig;052
+
+calls53
+
+
+references54
+s
+morg.eclipse.ditto.things.service.persistence.serializer.ThingMongoSnapshotAdapter#<init>(LActorRef;LConfig;)V56
+&
+ Recovered#typeBindingLActorRef;058
+Ç
+|org.eclipse.ditto.things.service.persistence.serializer.ThingMongoSnapshotAdapter#createJsonifiableFrom(LJsonObject;)LThing;60
+
+createJsonifiableFrom61
+
+Thing63
+
+returns64
+(
+"Recovered#typeBindingLJsonObject;066
+k
+eorg.eclipse.ditto.things.service.persistence.serializer.ThingMongoSnapshotAdapter#isDeleted(LThing;)Z68
+
+	isDeleted69
+Å
+{org.eclipse.ditto.things.service.persistence.serializer.ThingMongoSnapshotAdapter#getDeletedLifecycleJsonField()LJsonField;71
+"
+getDeletedLifecycleJsonField72
+
+	JsonField74
+ä
+Éorg.eclipse.ditto.things.service.persistence.serializer.ThingMongoSnapshotAdapter#getRevisionJsonField(LThing;)Ljava/util/Optional;76
+
+getRevisionJsonField77
+'
+!Recovered#typeBindingLJsonField;079
+à
+Åorg.eclipse.ditto.things.service.persistence.serializer.ThingMongoSnapshotAdapter#onSnapshotStoreConversion(LThing;LJsonObject;)V81
+
+onSnapshotStoreConversion82
+%
+Recovered#typeBindingLThingId;084
+É
+}org.eclipse.ditto.things.service.persistence.serializer.ThingMongoSnapshotAdapter#publishThingSnapshotTaken(LSnapshotTaken;)V86
+
+publishThingSnapshotTaken87
++
+%Recovered#typeBindingLSnapshotTaken;089
+0
+*Recovered#typeBindingLThingSnapshotTaken;091J
+
+1
+12Z
+
+3	
+354jì	
+
+57
+575815
+
+40
+404115
+@
+75:
+757647 *
+1^ ^(26:3B
+	
+9
+35
+
+
+11
+77
+
+30
+303115
+@
+37:
+373827 *
+15 5(26:3B
+	
+9
+28
+
+
+11
+39
+@
+67:
+676847 *
+1R R(26:3B
+	
+9
+35
+
+
+11
+69
+
+20
+202115
+@
+85:
+858647 *
+1z z(26:3B
+	
+9
+28
+
+
+11
+87
+@
+45:
+454647 *
+1< <(26:3B
+	
+9
+10
+
+
+11
+12
+@
+70:
+707147 *
+1W W(26:3B
+	
+9
+35
+
+
+11
+72
+
+73
+737415
+
+83
+838415
+@
+33:
+333427 *
+12 2(26:3B
+	
+9
+35
+
+
+11
+36
+@
+55:
+555647 *
+1G G(26:3B
+	
+9
+10
+
+
+11
+12
+
+23
+232415
+
+88
+888915
+
+51
+515215
+
+65
+656615
+
+62
+626315
+
+90
+909115
+
+17
+171815
+@
+80:
+808147 *
+1e e(26:3B
+	
+9
+35
+
+
+11
+82
+9
+64
+678 *
+1. .(-:3B
+	
+9
+10
+
+
+11
+12
+
+78
+787915
+@
+59:
+596047 *
+1M M(26:3B
+	
+9
+35
+
+
+11
+61
+
+13
+131415
+@
+25:
+252627 *
+10 0(26:3B
+	
+9
+28
+
+
+11
+29
+
+48
+484915
+@
+42:
+424327 *
+16 6(26:3B
+	
+9
+28
+
+
+11
+44rÔ
+
+61316*
+1.6 .(R
+
+61719*
+1- -(
+
+62022*
+1- -(
+
+61322*
+1.6 .(R
+
+62322*
+1.S .(X
+
+253032*
+10 0( 
+
+253022*
+10 0( 
+
+253022*
+10! 0('
+
+25622*
+10B 0([
+
+374032*
+15 5(
+
+374022*
+15 5(
+
+374022*
+15 5(*
+
+454850*
+1=, =(7
+
+455150*
+1=K =(Q
+
+45653*
+1= =(%
+
+454832*
+1=8 =(C
+
+454822*
+1=, =(7
+
+455132*
+1=R =(X
+
+455122*
+1=K =(Q
+
+45654*
+1>	 >(
+
+45653*
+1>	 >(
+
+45653*
+1>	 >(
+
+555750*
+1G, G(4
+
+555150*
+1GK G(Q
+
+55653*
+1G G(%
+
+555732*
+1G5 G(C
+
+555722*
+1G, G(4
+
+555132*
+1GR G(X
+
+555122*
+1GK G(Q
+
+553022*
+1H H(
+
+552554*
+1H H(
+
+55622*
+1I	 I(
+
+55654*
+1I	 I(
+
+554022*
+1I I(
+
+553754*
+1I I(
+
+554254*
+1J	 J(,
+
+553354*
+1JA J(n
+
+596264*
+1N N(
+
+596550*
+1N1 N(;
+
+596222*
+1N N(
+
+596532*
+1N< N(F
+
+596522*
+1N1 N(;
+
+672350*
+1S' S(,
+
+672332*
+1S- S(;
+
+672322*
+1S' S(,
+
+707364*
+1X X(
+
+707322*
+1X X(
+
+752350*
+1_> _(C
+
+757822*
+1_ _(!
+
+752332*
+1_D _(J
+
+752322*
+1_> _(C
+
+802350*
+1f4 f(9
+
+806550*
+1fG f(Q
+
+802332*
+1f: f(?
+
+802322*
+1f4 f(9
+
+806532*
+1fR f([
+
+806522*
+1fG f(Q
+
+804254*
+1g g(0
+
+808322*
+1h h(#
+
+80654*
+1s s(*
+
+808553*
+1s s(*
+
+802554*
+1u u(
+
+803022*
+1u u(
+
+802554*
+1u u(
+
+858850*
+1z2 z(?
+
+858832*
+1zT z(f
+
+858822*
+1z2 z(?
+
+859022*
+1z@ z(R
+
+853754*
+1|	 |(
+
+854022*
+1|	 |(
+
+853754*
+1|	 |(

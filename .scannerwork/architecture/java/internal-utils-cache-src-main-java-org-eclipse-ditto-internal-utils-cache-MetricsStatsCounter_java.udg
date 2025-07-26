@@ -1,0 +1,1492 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508627398*java2.BÃ.
+g
+binternal/utils/cache/src/main/java/org/eclipse/ditto/internal/utils/cache/MetricsStatsCounter.java2
+
+package4
++
+&org.eclipse.ditto.internal.utils.cache5
+?
+:org.eclipse.ditto.internal.utils.cache.MetricsStatsCounter7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+MetricsStatsCounter12
+*
+$Recovered#typeBindingLStatsCounter;014
+
+unknown15
+
+
+implements16
+
+
+uses17
+M
+Gorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter.CACHE_PREFIX19
+
+field20
+
+private21
+
+CACHE_PREFIX22
+K
+Eorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter$MetricName24
+
+
+enum25
+
+
+MetricName26
+ù
+ñorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter$MetricName#values()[Lorg/eclipse/ditto/internal/utils/cache/MetricsStatsCounter$MetricName;28
+
+method29
+
+values30
+Ø
+®org.eclipse.ditto.internal.utils.cache.MetricsStatsCounter$MetricName#valueOf(Ljava/lang/String;)Lorg/eclipse/ditto/internal/utils/cache/MetricsStatsCounter$MetricName;32
+
+valueOf33
+P
+Jorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter$MetricName.HITS35
+
+
+HITS36
+
+calls37
+
+
+references38
+R
+Lorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter$MetricName.MISSES40
+
+MISSES41
+[
+Uorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter$MetricName.TOTAL_LOAD_TIME43
+
+TOTAL_LOAD_TIME44
+Y
+Sorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter$MetricName.LOADS_SUCCESS46
+
+LOADS_SUCCESS47
+Y
+Sorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter$MetricName.LOADS_FAILURE49
+
+LOADS_FAILURE50
+U
+Oorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter$MetricName.EVICTIONS52
+
+	EVICTIONS53
+\
+Vorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter$MetricName.EVICTIONS_WEIGHT55
+
+EVICTIONS_WEIGHT56
+Z
+Torg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter$MetricName.ESTIMATED_SIZE58
+
+ESTIMATED_SIZE59
+T
+Norg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter$MetricName.MAX_SIZE61
+
+MAX_SIZE62
+c
+]org.eclipse.ditto.internal.utils.cache.MetricsStatsCounter$MetricName.ESTIMATED_INVALIDATIONS64
+
+ESTIMATED_INVALIDATIONS65
+p
+jorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter$MetricName.ESTIMATED_INVALIDATIONS_WITHOUT_ITEM67
+*
+$ESTIMATED_INVALIDATIONS_WITHOUT_ITEM68
+P
+Jorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter$MetricName.name70
+
+
+name71
+z
+torg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter$MetricName#<init>(Ljava/lang/String;ILjava/lang/String;)V73
+h
+borg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter$MetricName#getValue()Ljava/lang/String;75
+
+getValue76
+h
+borg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter$MetricName#toString()Ljava/lang/String;78
+
+toString79
+O
+Iorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter.CACHE_NAME_TAG81
+
+CACHE_NAME_TAG82
+I
+Corg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter.hitCount84
+
+hitCount85
+
+Counter87
+
+is type88
+J
+Dorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter.missCount90
+
+	missCount91
+Q
+Korg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter.loadSuccessCount93
+
+loadSuccessCount94
+Q
+Korg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter.loadFailureCount96
+
+loadFailureCount97
+N
+Horg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter.totalLoadTime99
+
+totalLoadTime100
+
+PreparedTimer102
+O
+Horg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter.evictionCount104
+
+evictionCount105
+P
+Iorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter.evictionWeight107
+
+evictionWeight108
+O
+Horg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter.estimatedSize110
+
+estimatedSize111
+
+Gauge113
+I
+Borg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter.maxSize115
+
+maxSize116
+X
+Qorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter.estimatedInvalidations118
+
+estimatedInvalidations119
+c
+\org.eclipse.ditto.internal.utils.cache.MetricsStatsCounter.estimatedInvalidationsWithoutItem121
+(
+!estimatedInvalidationsWithoutItem122
+Q
+Jorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter.maxSizeSupplier124
+
+maxSizeSupplier125
+W
+Porg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter.estimatedSizeSupplier127
+
+estimatedSizeSupplier128
+ò
+êorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter#<init>(Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Supplier;)V130
+œ
+«org.eclipse.ditto.internal.utils.cache.MetricsStatsCounter#of(Ljava/lang/String;Ljava/util/function/Supplier;Ljava/util/function/Supplier;)Lorg/eclipse/ditto/internal/utils/cache/MetricsStatsCounter;132
+
+	protected133
+	
+of134
+
+returns135
+P
+Iorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter#recordHits(I)V137
+
+
+recordHits138
+R
+Korg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter#recordMisses(I)V140
+
+recordMisses141
+W
+Porg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter#recordLoadSuccess(J)V143
+
+recordLoadSuccess144
+[
+Torg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter#updateCacheSizeMetrics()V146
+W
+Porg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter#recordLoadFailure(J)V148
+
+recordLoadFailure149
+b
+[org.eclipse.ditto.internal.utils.cache.MetricsStatsCounter#recordEviction(ILRemovalCause;)V151
+
+recordEviction152
++
+$Recovered#typeBindingLRemovalCause;0154
+
+	has param155
+W
+Porg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter#recordInvalidation()V157
+
+recordInvalidation158
+b
+[org.eclipse.ditto.internal.utils.cache.MetricsStatsCounter#recordInvalidationWithoutItem()V160
+$
+recordInvalidationWithoutItem161
+X
+Qorg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter#snapshot()LCacheStats;163
+
+snapshot164
+
+
+CacheStats166
+^
+Worg.eclipse.ditto.internal.utils.cache.MetricsStatsCounter#toString()Ljava/lang/String;168
+
+updateCacheSizeMetrics169J
+
+1
+12Z
+
+3	
+354jÀ
+
+101
+10110215
+F
+126?
+12612720 *
+1Ç Ç(26:3B
+	
+9
+21
+
+11
+128
+F
+162?
+16216329 *
+1œ œ(26:3B
+	
+9
+10
+
+11
+164
+A
+72;
+727329 *
+1a	 a(223:3B
+	
+9
+21
+
+
+11
+26
+G
+156@
+15615729 *
+1∆ ∆(	26:3B
+
+
+9
+133
+
+11
+158
+@
+80:
+808120 *
+1t t(26:3B
+	
+9
+21
+
+
+11
+82
+D
+109=
+10911020 *
+1} }(26:3B
+	
+9
+21
+
+11
+111
+6
+630
+636420 *
+1X	 X( 223:3B
+
+
+11
+65
+A
+74;
+747529 *
+1j	 j(223:3B
+	
+9
+10
+
+
+11
+76
+
+86
+868715
+6
+660
+666720 *
+1]	 ](-223:3B
+
+
+11
+68
+G
+159@
+15916029 *
+1À À(	26:3B
+
+
+9
+133
+
+11
+161
+E
+167>
+16716829 *
+1€ €(26:3B
+	
+9
+10
+
+
+11
+79
+
+153
+15315415
+@
+92:
+929320 *
+1x x(26:3B
+	
+9
+21
+
+
+11
+94
+
+13
+131415
+6
+510
+515220 *
+1G	 G(223:3B
+
+
+11
+53
+D
+106=
+10610720 *
+1| |(26:3B
+	
+9
+21
+
+11
+108
+F
+150?
+15015129 *
+1º º(26:3B
+	
+9
+10
+
+11
+152
+6
+540
+545520 *
+1K	 K(223:3B
+
+
+11
+56
+F
+139?
+13914029 *
+1™ ™(26:3B
+	
+9
+10
+
+11
+141
+D
+117=
+11711820 *
+1 (26:3B
+	
+9
+21
+
+11
+119
+F
+142?
+14214329 *
+1Ø Ø(26:3B
+	
+9
+10
+
+11
+144
+@
+83:
+838420 *
+1v v(26:3B
+	
+9
+21
+
+
+11
+85
+E
+129>
+12913029 *
+1Ñ Ñ(26:3B
+	
+9
+21
+
+
+11
+12
+6
+420
+424320 *
+1:	 :(223:3B
+
+
+11
+44
+A
+98;
+989920 *
+1z z(26:3B
+	
+9
+21
+
+11
+100
+
+165
+16516615
+6
+570
+575820 *
+1O	 O(223:3B
+
+
+11
+59
+G
+131@
+13113229 *
+1† †(26:3B
+
+
+9
+133
+
+11
+134
+6
+390
+394020 *
+16	 6(223:3B
+
+
+11
+41
+F
+145?
+14514629 *
+1‚ ‚(26:3B
+	
+9
+21
+
+11
+169
+F
+123?
+12312420 *
+1Å Å(26:3B
+	
+9
+21
+
+11
+125
+6
+340
+343520 *
+12	 2(223:3B
+
+
+11
+36
+6
+600
+606120 *
+1S	 S(223:3B
+
+
+11
+62
+F
+120?
+12012120 *
+1Ä Ä(26:3B
+	
+9
+21
+
+11
+122
+9
+64
+678 *
+1& &(':3B
+	
+9
+10
+
+
+11
+12
+6
+310
+313229 *
+1- -(223:3B
+
+
+11
+33
+D
+103=
+10310420 *
+1{ {(26:3B
+	
+9
+21
+
+11
+105
+F
+147?
+14714829 *
+1∂ ∂(26:3B
+	
+9
+10
+
+11
+149
+
+112
+11211315
+@
+18:
+181920 *
+1( ((26:3B
+	
+9
+21
+
+
+11
+22
+6
+270
+272829 *
+1- -(223:3B
+
+
+11
+30
+@
+23:
+232425 *
+1- -(26:3B
+	
+9
+10
+
+
+11
+26
+D
+114=
+11411520 *
+1~ ~(26:3B
+	
+9
+21
+
+11
+116
+@
+89:
+899020 *
+1w w(26:3B
+	
+9
+21
+
+
+11
+91
+F
+136?
+13613729 *
+1• •(26:3B
+	
+9
+10
+
+11
+138
+A
+69;
+697020 *
+1_	 _(223:3B
+	
+9
+21
+
+
+11
+71
+@
+95:
+959620 *
+1y y(26:3B
+	
+9
+21
+
+
+11
+97
+6
+450
+454620 *
+1>	 >(223:3B
+
+
+11
+47
+6
+480
+484920 *
+1B	 B(223:3B
+
+
+11
+50
+A
+77;
+777829 *
+1n	 n(
+223:3B
+	
+9
+10
+
+
+11
+79r£;
+
+61316*
+1&3 &(?
+
+61317*
+1&3 &(?
+
+342337*
+12	 2(
+
+342337*
+12	 2(
+
+341838*
+12 2(
+
+392337*
+16	 6(
+
+392337*
+16	 6(
+
+391838*
+16 6(
+
+422337*
+1:	 :(
+
+422337*
+1:	 :(
+
+421838*
+1: :(%
+
+452337*
+1>	 >(
+
+452337*
+1>	 >(
+
+451838*
+1> >(#
+
+482337*
+1B	 B(
+
+482337*
+1B	 B(
+
+481838*
+1B B(#
+
+512337*
+1G	 G(
+
+512337*
+1G	 G(
+
+511838*
+1G G(
+
+542337*
+1K	 K(
+
+542337*
+1K	 K(
+
+541838*
+1K K(&
+
+572337*
+1O	 O(
+
+572337*
+1O	 O(
+
+571838*
+1O O($
+
+602337*
+1S	 S(
+
+602337*
+1S	 S(
+
+601838*
+1S S(
+
+632337*
+1X	 X( 
+
+632337*
+1X	 X( 
+
+631838*
+1X! X(-
+
+662337*
+1]	 ](-
+
+662337*
+1]	 ](-
+
+661838*
+1]. ](:
+
+722337*
+1a	 a(
+
+722317*
+1b b(
+
+722338*
+1b b(
+
+726938*
+1b b(
+
+746938*
+1k k(
+
+776938*
+1p p(
+
+838688*
+1v v(
+
+838617*
+1v v(
+
+838617*
+1v v(#
+
+898688*
+1w w(
+
+898617*
+1w w(
+
+898617*
+1w w($
+
+928688*
+1x x(
+
+928617*
+1x x(
+
+928617*
+1x x(+
+
+958688*
+1y y(
+
+958617*
+1y y(
+
+958617*
+1y y(+
+
+9810188*
+1z z( 
+
+9810117*
+1z z( 
+
+9810117*
+1z! z(.
+
+1038688*
+1{ {(
+
+1038617*
+1{ {(
+
+1038617*
+1{ {((
+
+1068688*
+1| |(
+
+1068617*
+1| |(
+
+1068617*
+1| |()
+
+10911288*
+1} }(
+
+10911217*
+1} }(
+
+10911217*
+1} }(&
+
+11411288*
+1~ ~(
+
+11411217*
+1~ ~(
+
+11411217*
+1~ ~( 
+
+1178688*
+1 (
+
+1178617*
+1 (
+
+1178617*
+1 (1
+
+1208688*
+1Ä Ä(
+
+1208617*
+1Ä Ä(
+
+1208617*
+1Ä Ä(<
+
+129637*
+1Ñ Ñ( 
+
+1298617*
+1Ü	 Ü(
+
+1298338*
+1Ü	 Ü(
+
+1292338*
+1Ü) Ü(3
+
+1297437*
+1Ü9 Ü(A
+
+1292317*
+1Ü) Ü(3
+
+1292338*
+1Ü) Ü(3
+
+1292317*
+1Ü4 Ü(8
+
+1293438*
+1Ü4 Ü(8
+
+1298038*
+1ÜI Ü(W
+
+1298617*
+1á	 á(
+
+1298938*
+1á	 á(
+
+1292338*
+1á* á(4
+
+1297437*
+1á< á(D
+
+1292317*
+1á* á(4
+
+1292338*
+1á* á(4
+
+1292317*
+1á5 á(;
+
+1293938*
+1á5 á(;
+
+1298038*
+1áL á(Z
+
+12910117*
+1à	 à(
+
+1299838*
+1à	 à(
+
+1292338*
+1à, à(6
+
+1297437*
+1àG à(O
+
+1292317*
+1à, à(6
+
+1292338*
+1à, à(6
+
+1292317*
+1à7 à(F
+
+1294238*
+1à7 à(F
+
+1298038*
+1àW à(e
+
+1298617*
+1â	 â(
+
+1299238*
+1â	 â(
+
+1292338*
+1â1 â(;
+
+1297437*
+1âJ â(R
+
+1292317*
+1â1 â(;
+
+1292338*
+1â1 â(;
+
+1292317*
+1â< â(I
+
+1294538*
+1â< â(I
+
+1298038*
+1âZ â(h
+
+1298617*
+1ä	 ä(
+
+1299538*
+1ä	 ä(
+
+1292338*
+1ä1 ä(;
+
+1297437*
+1äJ ä(R
+
+1292317*
+1ä1 ä(;
+
+1292338*
+1ä1 ä(;
+
+1292317*
+1ä< ä(I
+
+1294838*
+1ä< ä(I
+
+1298038*
+1äZ ä(h
+
+1298617*
+1ã	 ã(
+
+12910338*
+1ã	 ã(
+
+1292338*
+1ã. ã(8
+
+1297437*
+1ãC ã(K
+
+1292317*
+1ã. ã(8
+
+1292338*
+1ã. ã(8
+
+1292317*
+1ã9 ã(B
+
+1295138*
+1ã9 ã(B
+
+1298038*
+1ãS ã(a
+
+1298617*
+1å	 å(
+
+12910638*
+1å	 å(
+
+1292338*
+1å/ å(9
+
+1297437*
+1åK å(S
+
+1292317*
+1å/ å(9
+
+1292338*
+1å/ å(9
+
+1292317*
+1å: å(J
+
+1295438*
+1å: å(J
+
+1298038*
+1å[ å(i
+
+12911217*
+1ç	 ç(
+
+12910938*
+1ç	 ç(
+
+1292338*
+1ç, ç(6
+
+1297437*
+1çF ç(N
+
+1292317*
+1ç, ç(6
+
+1292338*
+1ç, ç(6
+
+1292317*
+1ç7 ç(E
+
+1295738*
+1ç7 ç(E
+
+1298038*
+1çV ç(d
+
+12911217*
+1é	 é(
+
+12911438*
+1é	 é(
+
+1292338*
+1é& é(0
+
+1297437*
+1é: é(B
+
+1292317*
+1é& é(0
+
+1292338*
+1é& é(0
+
+1292317*
+1é1 é(9
+
+1296038*
+1é1 é(9
+
+1298038*
+1éJ é(X
+
+1298617*
+1è	 è(
+
+12911738*
+1è	 è(
+
+1292338*
+1ê& ê(0
+
+1297437*
+1êI ê(Q
+
+1292317*
+1ê& ê(0
+
+1292338*
+1ê& ê(0
+
+1292317*
+1ê1 ê(H
+
+1296338*
+1ê1 ê(H
+
+1298038*
+1êY ê(g
+
+1298617*
+1ë	 ë(*
+
+12912038*
+1ë	 ë(*
+
+1292338*
+1í& í(0
+
+1297437*
+1íV í(^
+
+1292317*
+1í& í(0
+
+1292338*
+1í& í(0
+
+1292317*
+1í1 í(U
+
+1296638*
+1í1 í(U
+
+1298038*
+1ì ì(,
+
+129617*
+1î	 î(
+
+129638*
+1î	 î(
+
+12912338*
+1î î(
+
+129617*
+1ï	 ï(
+
+129638*
+1ï	 ï(
+
+12912638*
+1ï ï(#
+
+1316135*
+1† †(
+
+131617*
+1† †(
+
+131637*
+1¢ ¢('
+
+1368338*
+1ß	 ß(
+
+1368617*
+1ß	 ß(
+
+1368338*
+1ß	 ß(
+
+1398938*
+1¨	 ¨(
+
+1398617*
+1¨	 ¨(
+
+1398938*
+1¨	 ¨(
+
+1429238*
+1±	 ±(
+
+1428617*
+1±	 ±(
+
+1429238*
+1±	 ±(
+
+1429838*
+1≤	 ≤(
+
+14210117*
+1≤	 ≤(
+
+1429838*
+1≤	 ≤(
+
+142638*
+1≥	 ≥(
+
+14214537*
+1≥	 ≥(
+
+1479538*
+1∏	 ∏(
+
+1478617*
+1∏	 ∏(
+
+1479538*
+1∏	 ∏(
+
+1479838*
+1π	 π(
+
+14710117*
+1π	 π(
+
+1479838*
+1π	 π(
+
+150153155*
+1Ω8 Ω(D
+
+15015388*
+1ΩE Ω(Q
+
+15015317*
+1Ω8 Ω(D
+
+15010338*
+1æ	 æ(
+
+1508617*
+1æ	 æ(
+
+15010338*
+1æ	 æ(
+
+15010638*
+1ø	 ø(
+
+1508617*
+1ø	 ø(
+
+15010638*
+1ø	 ø(
+
+150638*
+1¿	 ¿(
+
+15014537*
+1¿	 ¿(
+
+15611738*
+1«	 «(
+
+1568617*
+1«	 «(
+
+15611738*
+1«	 «(
+
+156638*
+1»	 »(
+
+15614537*
+1»	 »(
+
+15912038*
+1Ã	 Ã(*
+
+1598617*
+1Ã	 Ã(*
+
+15912038*
+1Ã	 Ã(*
+
+162165135*
+1– –(
+
+16216517*
+1– –(
+
+1628338*
+1“ “(
+
+1628617*
+1“ “(
+
+1628338*
+1“ “(
+
+1628938*
+1” ”(
+
+1628617*
+1” ”(
+
+1628938*
+1” ”(
+
+1629238*
+1‘ ‘(!
+
+1628617*
+1‘ ‘(!
+
+1629238*
+1‘ ‘(!
+
+1629538*
+1’ ’(!
+
+1628617*
+1’ ’(!
+
+1629538*
+1’ ’(!
+
+1629838*
+1÷ ÷(
+
+16210117*
+1÷ ÷(
+
+1629838*
+1÷ ÷(
+
+16210338*
+1◊ ◊(
+
+1628617*
+1◊ ◊(
+
+16210338*
+1◊ ◊(
+
+16210638*
+1ÿ ÿ(
+
+1628617*
+1ÿ ÿ(
+
+16210638*
+1ÿ ÿ(
+
+167165135*
+1ﬁ! ﬁ()
+
+167638*
+1ﬁ! ﬁ()
+
+16716237*
+1ﬁ! ﬁ()
+
+14511438*
+1„	 „(
+
+14511217*
+1„	 „(
+
+14511438*
+1„	 „(
+
+14512338*
+1„ „($
+
+14512338*
+1„ „($
+
+14510938*
+1‰	 ‰(
+
+14511217*
+1‰	 ‰(
+
+14510938*
+1‰	 ‰(
+
+14512638*
+1‰ ‰(0
+
+14512638*
+1‰ ‰(0

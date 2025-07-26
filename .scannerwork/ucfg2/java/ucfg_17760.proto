@@ -1,0 +1,104 @@
+
+„org.eclipse.ditto.gateway.service.endpoints.routes.thingsearch.ThingSearchRoute#calculateNamespaces(Ljava/util/List;)Ljava/util/Set;£
+–/Users/Maheen/Downloads/ditto-3.7.4/gateway/service/src/main/java/org/eclipse/ditto/gateway/service/endpoints/routes/thingsearch/ThingSearchRoute.java½ ½(1"startingBlock*%
+2
+Å Å("
+
+Å Å(
+""*ª
+3
+¿ À(>z
+x
+
+¿ À(>!
+%0java.util.function.Function"__declareFunction*4
+
+__unknown_file (
+__sonar_lambda_1862$Š
+‡
+
+¾ À(?2
+splitAndRemoveEmptyjava.util.function.Function"__id*?
+
+__unknown_file (#
+!
+%0java.util.function.Function‡„
+
+Ä Ä('
+%6boolean"java.util.List#isEmpty()Z*A
+
+__unknown_file (%
+#
+namespacesStringsjava.util.List2	isEmpty()*
+2
+1*š
+startingBlock
+½1 ½(W
+Œ
+
+¼ ¼(
+%11"
+__annotate*(
+
+__unknown_file (
+
+Nullable*A
+
+__unknown_file (%
+#
+namespacesStringsjava.util.Listf
+d
+
+½E ½(V#
+namespacesStringsjava.util.List"__annotation*#
+
+__unknown_file (
+
+%11*
+3*û
+1
+Ç Ç( ³°
+
+Ç Ç()
+%7java.util.stream.Stream"6java.util.Collection#stream()Ljava/util/stream/Stream;*A
+
+__unknown_file (%
+#
+namespacesStringsjava.util.List2stream()¾»
+
+Ç È(-
+%8java.util.stream.Stream"Wjava.util.stream.Stream#flatMap(Ljava/util/function/Function;)Ljava/util/stream/Stream;*;
+
+__unknown_file (
+
+%7java.util.stream.Stream*P
+
+__unknown_file (4
+2
+splitAndRemoveEmptyjava.util.function.Function2&flatMap(Ljava/util/function/Function;)¯
+¬
+
+É É(+ 
+%9java.util.stream.Collector"?java.util.stream.Collectors#toSet()Ljava/util/stream/Collector;*;
+
+__unknown_file ("
+java.util.stream.Collectorsš—
+
+Ç É(,
+%10java.util.Set"Ojava.util.stream.Stream#collect(Ljava/util/stream/Collector;)Ljava/lang/Object;*;
+
+__unknown_file (
+
+%8java.util.stream.Stream*>
+
+__unknown_file ("
+ 
+%9java.util.stream.Collector2%collect(Ljava/util/stream/Collector;)"$
+
+Ç É(-
+
+%10java.util.Set:1
+
+½2 ½(V#
+namespacesStringsjava.util.ListBS"Q
+Oorg.eclipse.ditto.gateway.service.endpoints.routes.thingsearch.ThingSearchRouteH

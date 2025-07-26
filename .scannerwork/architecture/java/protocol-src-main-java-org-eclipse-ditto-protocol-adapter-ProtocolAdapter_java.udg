@@ -1,0 +1,423 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508502651*java2.BÍ
+S
+Nprotocol/src/main/java/org/eclipse/ditto/protocol/adapter/ProtocolAdapter.java2
+
+package4
+'
+"org.eclipse.ditto.protocol.adapter5
+7
+2org.eclipse.ditto.protocol.adapter.ProtocolAdapter7
+
+	interface8
+
+access9
+
+public10
+
+simple name11
+
+ProtocolAdapter12
+[
+Uorg.eclipse.ditto.protocol.adapter.ProtocolAdapter#fromAdaptable(LAdaptable;)LSignal;14
+
+method15
+
+fromAdaptable16
+
+Signal18
+
+unknown19
+
+returns20
+'
+!Recovered#typeBindingLAdaptable;022
+
+	has param23
+
+
+uses24
+
+is type25
+Y
+Sorg.eclipse.ditto.protocol.adapter.ProtocolAdapter#toAdaptable(LSignal;)LAdaptable;27
+
+toAdaptable28
+
+	Adaptable30
+$
+Recovered#typeBindingLSignal;032
+l
+forg.eclipse.ditto.protocol.adapter.ProtocolAdapter#toAdaptable(LSignal;LTopicPath/Channel;)LAdaptable;34
+'
+!Recovered#typeBindingLTopicPath;036
+Y
+Sorg.eclipse.ditto.protocol.adapter.ProtocolAdapter#toTopicPath(LSignal;)LTopicPath;38
+
+toTopicPath39
+
+	TopicPath41
+]
+Worg.eclipse.ditto.protocol.adapter.ProtocolAdapter#headerTranslator()LHeaderTranslator;43
+
+headerTranslator44
+
+HeaderTranslator46
+P
+Jorg.eclipse.ditto.protocol.adapter.ProtocolAdapter#isLiveSignal(LSignal;)Z48
+
+isLiveSignal49
+f
+`org.eclipse.ditto.protocol.adapter.ProtocolAdapter#determineChannel(LSignal;)LTopicPath/Channel;51
+
+determineChannel52
+
+TopicPath.Channel54
+
+
+references55
+
+calls56
+m
+gorg.eclipse.ditto.protocol.adapter.ProtocolAdapter#determineDefaultChannel(LSignal;)LTopicPath/Channel;58
+
+determineDefaultChannel59
++
+%Recovered#typeBindingLPolicyCommand;061
+3
+-Recovered#typeBindingLPolicyCommandResponse;063
+)
+#Recovered#typeBindingLPolicyEvent;065
+1
++Recovered#typeBindingLConnectivityCommand;067
+9
+3Recovered#typeBindingLConnectivityCommandResponse;069
+/
+)Recovered#typeBindingLConnectivityEvent;071
+*
+$Recovered#typeBindingLAnnouncement;073
+,
+&Recovered#typeBindingLMessageCommand;075
+4
+.Recovered#typeBindingLMessageCommandResponse;077J
+
+1
+12Z
+
+3	
+354jŸ
+
+40
+404119
+
+70
+707119
+
+45
+454619
+
+72
+727319
+@
+57:
+575815 *
+1v v(26:3B
+	
+9
+10
+
+
+11
+59
+
+68
+686919
+
+17
+171819
+
+31
+313219
+@
+33:
+333415 *
+1A A(26:3B
+	
+9
+10
+
+
+11
+28
+@
+50:
+505115 *
+1h h(26:3B
+	
+9
+10
+
+
+11
+52
+
+60
+606119
+
+29
+293019
+
+35
+353619
+
+53
+535419
+
+21
+212219
+
+64
+646519
+9
+64
+678 *
+1$ $(!:3B
+	
+9
+10
+
+
+11
+12
+
+74
+747519
+@
+37:
+373815 *
+1J J(26:3B
+	
+9
+10
+
+
+11
+39
+
+66
+666719
+@
+26:
+262715 *
+16 6(26:3B
+	
+9
+10
+
+
+11
+28
+@
+42:
+424315 *
+1Q Q(26:3B
+	
+9
+10
+
+
+11
+44
+
+62
+626319
+
+76
+767719
+@
+13:
+131415 *
+1- -(26:3B
+	
+9
+10
+
+
+11
+16
+@
+47:
+474815 *
+1Y Y(26:3B
+	
+9
+10
+
+
+11
+49rË
+
+131720*
+1- -(
+
+132123*
+1- -(&
+
+131724*
+1- -(
+
+132125*
+1-' -(0
+
+132124*
+1- -(&
+
+262920*
+16 6(
+
+263123*
+16 6(!
+
+262924*
+16 6(
+
+263125*
+16% 6(+
+
+263124*
+16 6(!
+
+332920*
+1A A(
+
+333123*
+1A A(!
+
+333523*
+1A- A(6
+
+332924*
+1A A(
+
+333125*
+1A% A(+
+
+333124*
+1A A(!
+
+333525*
+1A? A(F
+
+333524*
+1A- A(6
+
+333524*
+1A7 A(>
+
+374020*
+1J J(
+
+373123*
+1J J(!
+
+374024*
+1J J(
+
+373125*
+1J% J(+
+
+373124*
+1J J(!
+
+424520*
+1Q Q(
+
+424524*
+1Q Q(
+
+473123*
+1Y' Y(-
+
+473125*
+1Y1 Y(7
+
+473124*
+1Y' Y(-
+
+505320*
+1h h(
+
+503123*
+1h5 h(;
+
+503524*
+1h h(
+
+505324*
+1h h(
+
+503125*
+1h? h(E
+
+503124*
+1h5 h(;
+
+50655*
+1k& k(2
+
+504756*
+1k& k(2
+
+505320*
+1m m(*
+
+50655*
+1m m(*
+
+505756*
+1m m(*
+
+575320*
+1v v(
+
+573123*
+1v< v(B
+
+573524*
+1v v(
+
+575324*
+1v v(
+
+573125*
+1vF v(L
+
+573124*
+1v< v(B
+
+576024*
+1w w(,
+
+576224*
+1wB w(W
+
+576424*
+1x# x(.
+
+576624*
+1z& z(9
+
+576824*
+1zO z(j
+
+577024*
+1{# {(4
+
+577224*
+1}& }(2
+
+577424*
+1& (4
+
+577624*
+1J (`

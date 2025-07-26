@@ -1,0 +1,568 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508557854*java2.B°
+g
+bpolicies/enforcement/src/main/java/org/eclipse/ditto/policies/enforcement/PolicyEnforcerCache.java2
+
+package4
++
+&org.eclipse.ditto.policies.enforcement5
+?
+:org.eclipse.ditto.policies.enforcement.PolicyEnforcerCache7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+
+PolicyEnforcerCache12
+#
+Recovered#typeBindingLCache;014
+
+unknown15
+
+
+implements16
+
+
+uses17
+&
+ Recovered#typeBindingLPolicyId;019
+#
+Recovered#typeBindingLEntry;021
+,
+&Recovered#typeBindingLPolicyEnforcer;023
+I
+Corg.eclipse.ditto.policies.enforcement.PolicyEnforcerCache.delegate25
+
+field26
+
+private27
+
+delegate28
+
+Cache30
+
+is type31
+W
+Qorg.eclipse.ditto.policies.enforcement.PolicyEnforcerCache.policyIdToImportingMap33
+
+policyIdToImportingMap34
+É
+}org.eclipse.ditto.policies.enforcement.PolicyEnforcerCache#<init>(LAsyncCacheLoader;LExecutionContextExecutor;LCacheConfig;)V36
+
+method37
+.
+(Recovered#typeBindingLAsyncCacheLoader;039
+
+	has param40
+6
+0Recovered#typeBindingLExecutionContextExecutor;042
+)
+#Recovered#typeBindingLCacheConfig;044
+
+calls45
+
+
+references46
+x
+rorg.eclipse.ditto.policies.enforcement.PolicyEnforcerCache#get(LPolicyId;)Ljava/util/concurrent/CompletableFuture;48
+
+public49
+	
+get50
+ñ
+èorg.eclipse.ditto.policies.enforcement.PolicyEnforcerCache#get(LPolicyId;Ljava/util/function/Function;)Ljava/util/concurrent/CompletableFuture;52
+Å
+{org.eclipse.ditto.policies.enforcement.PolicyEnforcerCache#getIfPresent(LPolicyId;)Ljava/util/concurrent/CompletableFuture;54
+
+getIfPresent55
+l
+forg.eclipse.ditto.policies.enforcement.PolicyEnforcerCache#getBlocking(LPolicyId;)Ljava/util/Optional;57
+
+getBlocking58
+X
+Rorg.eclipse.ditto.policies.enforcement.PolicyEnforcerCache#invalidate(LPolicyId;)Z60
+
+
+invalidate61
+É
+}org.eclipse.ditto.policies.enforcement.PolicyEnforcerCache#invalidateConditionally(LPolicyId;Ljava/util/function/Predicate;)Z63
+
+invalidateConditionally64
+X
+Rorg.eclipse.ditto.policies.enforcement.PolicyEnforcerCache#put(LPolicyId;LEntry;)V66
+	
+put67
+l
+forg.eclipse.ditto.policies.enforcement.PolicyEnforcerCache#asMap()Ljava/util/concurrent/ConcurrentMap;69
+
+asMap70J
+
+1
+12Z
+
+3	
+354j≥
+@
+47:
+474837 *
+1H H(26:3B
+	
+9
+49
+
+
+11
+50
+@
+24:
+242526 *
+1( ((26:3B
+	
+9
+27
+
+
+11
+28
+@
+59:
+596037 *
+1] ](26:3B
+	
+9
+49
+
+
+11
+61
+
+18
+181915
+
+43
+434415
+@
+65:
+656637 *
+1~ ~(26:3B
+	
+9
+49
+
+
+11
+67
+B
+68<
+686937 *
+1É É(26:3B
+	
+9
+49
+
+
+11
+70
+@
+35:
+353637 *
+1+ +(26:3B
+	
+9
+10
+
+
+11
+12
+@
+56:
+565737 *
+1X X(26:3B
+	
+9
+49
+
+
+11
+58
+
+41
+414215
+
+13
+131415
+
+20
+202115
+9
+64
+678 *
+1& &( :3B
+	
+9
+10
+
+
+11
+12
+@
+32:
+323326 *
+1) )(26:3B
+	
+9
+27
+
+
+11
+34
+
+38
+383915
+@
+62:
+626337 *
+1m m(26:3B
+	
+9
+49
+
+
+11
+64
+@
+53:
+535437 *
+1S S(26:3B
+	
+9
+49
+
+
+11
+55
+
+22
+222315
+
+29
+293015
+@
+51:
+515237 *
+1M M(26:3B
+	
+9
+49
+
+
+11
+50r±
+
+61316*
+1&, &(1
+
+61317*
+1&, &(1
+
+61817*
+1&2 &(:
+
+62017*
+1&< &(A
+
+62217*
+1&B &(P
+
+242931*
+1( ((
+
+242917*
+1( ((
+
+241817*
+1( ((!
+
+242017*
+1(# (((
+
+242217*
+1() ((7
+
+242917*
+1(: ((B
+
+321817*
+1) )(
+
+321817*
+1)% )(-
+
+353840*
+1+ +(/
+
+354140*
+1, ,(+
+
+354340*
+1- -(
+
+35645*
+1+ +(
+
+353831*
+1+Q +(j
+
+353817*
+1+ +(/
+
+351817*
+1+0 +(8
+
+352017*
+1+: +(?
+
+352217*
+1+@ +(N
+
+354131*
+1,, ,(;
+
+354117*
+1, ,(+
+
+354331*
+1- -(*
+
+354317*
+1- -(
+
+353246*
+1.	 .(
+
+35617*
+1/	 /(
+
+35646*
+1/	 /(
+
+352917*
+1/ /(
+
+352446*
+1/ /(
+
+471840*
+1II I(Q
+
+472017*
+1I' I(,
+
+472217*
+1I- I(;
+
+471831*
+1IR I(U
+
+471817*
+1II I(Q
+
+472446*
+1J J(
+
+472917*
+1J J(
+
+472446*
+1J J(
+
+511840*
+1NI N(Q
+
+512017*
+1N' N(,
+
+512217*
+1N- N(;
+
+511831*
+1NR N(U
+
+511817*
+1NI N(Q
+
+512017*
+1O0 O(5
+
+512217*
+1O6 O(D
+
+512446*
+1P P(
+
+512917*
+1P P(
+
+512446*
+1P P(
+
+531840*
+1TR T(Z
+
+532017*
+1T' T(,
+
+532217*
+1T- T(;
+
+531831*
+1T[ T(^
+
+531817*
+1TR T(Z
+
+532446*
+1U U(
+
+532917*
+1U U(
+
+532446*
+1U U(
+
+561840*
+1Y> Y(F
+
+562017*
+1Y Y(
+
+562217*
+1Y Y()
+
+561831*
+1YG Y(J
+
+561817*
+1Y> Y(F
+
+562446*
+1Z Z(
+
+562917*
+1Z Z(
+
+562446*
+1Z Z(
+
+591840*
+1^% ^(-
+
+591831*
+1^. ^(6
+
+591817*
+1^% ^(-
+
+592446*
+1`( `(0
+
+592917*
+1`( `(0
+
+592446*
+1`( `(0
+
+593246*
+1cG c(]
+
+593246*
+1cG c(]
+
+592917*
+1f f(
+
+592446*
+1f f(
+
+621840*
+1n2 n(:
+
+621831*
+1n; n(C
+
+621817*
+1n2 n(:
+
+622017*
+1o o("
+
+622217*
+1o# o(1
+
+622446*
+1q( q(0
+
+622917*
+1q( q(0
+
+622446*
+1q( q(0
+
+623246*
+1tG t(]
+
+623246*
+1tG t(]
+
+651840*
+1 (#
+
+652040*
+1/ (4
+
+651831*
+1$ ('
+
+651817*
+1 (#
+
+652031*
+1E (J
+
+652017*
+1/ (4
+
+652217*
+15 (C
+
+652446*
+1Ä	 Ä(
+
+652917*
+1Ä	 Ä(
+
+652446*
+1Ä	 Ä(
+
+681817*
+1Ñ Ñ("
+
+682017*
+1Ñ$ Ñ()
+
+682217*
+1Ñ* Ñ(8
+
+682446*
+1Ö Ö(
+
+682917*
+1Ö Ö(
+
+682446*
+1Ö Ö(

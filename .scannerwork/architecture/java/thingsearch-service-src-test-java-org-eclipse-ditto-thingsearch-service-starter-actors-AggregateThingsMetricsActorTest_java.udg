@@ -1,0 +1,850 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508669456*java2.Bª
+Ä
+{thingsearch/service/src/test/java/org/eclipse/ditto/thingsearch/service/starter/actors/AggregateThingsMetricsActorTest.java2
+
+package4
+9
+4org.eclipse.ditto.thingsearch.service.starter.actors5
+Y
+Torg.eclipse.ditto.thingsearch.service.starter.actors.AggregateThingsMetricsActorTest7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+%
+AggregateThingsMetricsActorTest12
+
+RunWith14
+
+unknown15
+
+annotated by16
+%
+Recovered#typeBindingLRunWith;018
+
+
+uses19
++
+%Recovered#typeBindingLParameterized;021
+v
+porg.eclipse.ditto.thingsearch.service.starter.actors.AggregateThingsMetricsActorTest.DITTO_TRACING_INIT_RESOURCE23
+
+field24
+!
+DITTO_TRACING_INIT_RESOURCE25
+
+DittoTracingInitResource27
+
+is type28
+
+	ClassRule30
+'
+!Recovered#typeBindingLClassRule;032
+q
+korg.eclipse.ditto.thingsearch.service.starter.actors.AggregateThingsMetricsActorTest.RUNNING_MONGOD_PROCESS34
+
+	protected35
+
+RUNNING_MONGOD_PROCESS36
+.
+(Recovered#typeBindingLTransitionWalker;038
+2
+,Recovered#typeBindingLRunningMongodProcess;040
+a
+[org.eclipse.ditto.thingsearch.service.starter.actors.AggregateThingsMetricsActorTest.SYSTEM42
+
+private43
+
+SYSTEM44
+
+ActorSystem46
+^
+Xorg.eclipse.ditto.thingsearch.service.starter.actors.AggregateThingsMetricsActorTest.LOG48
+	
+LOG49
+
+LoggingAdapter51
+
+
+references52
+f
+`org.eclipse.ditto.thingsearch.service.starter.actors.AggregateThingsMetricsActorTest.mongoClient54
+
+mongoClient55
+
+DittoMongoClient57
+g
+aorg.eclipse.ditto.thingsearch.service.starter.actors.AggregateThingsMetricsActorTest.searchConfig59
+
+searchConfig60
+
+DittoSearchConfig62
+f
+`org.eclipse.ditto.thingsearch.service.starter.actors.AggregateThingsMetricsActorTest.persistence64
+
+persistence65
+"
+ThingsAggregationPersistence67
+j
+dorg.eclipse.ditto.thingsearch.service.starter.actors.AggregateThingsMetricsActorTest#initTestData()V69
+
+method70
+
+initTestData71
+
+BeforeClass73
+)
+#Recovered#typeBindingLBeforeClass;075
++
+%Recovered#typeBindingLServerAddress;077
+
+returns78
+•
+ûorg.eclipse.ditto.thingsearch.service.starter.actors.AggregateThingsMetricsActorTest#provideClientWrapper(LServerAddress;Ljava/lang/String;)LDittoMongoClient;80
+
+calls81
+à
+Åorg.eclipse.ditto.thingsearch.service.starter.actors.AggregateThingsMetricsActorTest#insert(Ljava/lang/CharSequence;[LDocument;)V83
+©
+¢org.eclipse.ditto.thingsearch.service.starter.actors.AggregateThingsMetricsActorTest#loadDocumentsFromResource(Ljava/lang/String;Ljava/util/List;)Ljava/util/List;85
+&
+ Recovered#typeBindingLDocument;087
+w
+qorg.eclipse.ditto.thingsearch.service.starter.actors.AggregateThingsMetricsActorTest#data()Ljava/util/Collection;89
+
+
+data90
+
+Parameterized.Parameters92
+$
+Recovered#typeBindingLConfig;094
+1
++Recovered#typeBindingLDefaultScopedConfig;096
+f
+`org.eclipse.ditto.thingsearch.service.starter.actors.AggregateThingsMetricsActorTest#teardown()V98
+
+teardown99
+
+
+AfterClass101
+)
+"Recovered#typeBindingLAfterClass;0103
+
+provideClientWrapper104
+
+	has param105
+b
+[org.eclipse.ditto.thingsearch.service.starter.actors.AggregateThingsMetricsActorTest.config107
+
+config108
+$
+CustomAggregationMetricConfig110
+ó
+èorg.eclipse.ditto.thingsearch.service.starter.actors.AggregateThingsMetricsActorTest#<init>(Ljava/lang/String;LCustomAggregationMetricConfig;)V112
+<
+5Recovered#typeBindingLCustomAggregationMetricConfig;0114
+t
+morg.eclipse.ditto.thingsearch.service.starter.actors.AggregateThingsMetricsActorTest#testAggregationMetric()V116
+
+testAggregationMetric117
+
+Test119
+#
+Recovered#typeBindingLTest;0121
+]
+Vorg.eclipse.ditto.thingsearch.service.starter.actors.AggregateThingsMetricsActorTest$1123
+5
+.Recovered#typeBindingLAggregateThingsMetrics;0125
+
+insert126
+B
+;Recovered#innerTypeBindingRecovered#typeBindingLDocument;01128
+(
+!Recovered#typeBindingLPublisher;0130
+/
+(Recovered#typeBindingLInsertManyResult;0132
+ 
+loadDocumentsFromResource133J
+
+1
+12Z
+
+3	
+354jß
+
+17
+171815
+
+45
+454615
+
+102
+10210315
+@
+47:
+474824 *
+1L L(26:3B
+	
+9
+43
+
+
+11
+49
+
+72
+727315
+@
+88:
+888970 *
+1u u(26:3B
+	
+9
+10
+
+
+11
+90
+C
+84=
+848570 *
+1Œ Œ(26:3B
+	
+9
+43
+
+11
+133
+
+39
+394015
+
+56
+565715
+C
+79=
+798070 *
+1à à(26:3B
+	
+9
+43
+
+11
+104
+
+26
+262715
+
+20
+202115
+E
+111>
+11111270 *
+1ë ë(26:3B
+	
+9
+10
+
+
+11
+12
+
+131
+13113215
+@
+68:
+686970 *
+1Q Q(26:3B
+	
+9
+10
+
+
+11
+71
+@
+97:
+979870 *
+1 (26:3B
+	
+9
+10
+
+
+11
+99
+
+129
+12913015
+
+13
+131415
+
+86
+868715
+
+113
+11311415
+@
+53:
+535424 *
+1M M(26:3B
+	
+9
+43
+
+
+11
+55
+:
+1223
+1221238 *
+1ù ù(2115:3B
+	
+9
+35
+
+76
+767715
+@
+22:
+222324 *
+1F F(26:3B
+	
+9
+10
+
+
+11
+25
+
+118
+11811915
+F
+106?
+10610724 *
+1è è(26:3B
+	
+9
+43
+
+11
+108
+F
+115?
+11511670 *
+1õ õ(26:3B
+	
+9
+10
+
+11
+117
+
+74
+747515
+
+127
+12712815
+
+61
+616215
+
+93
+939415
+
+31
+313215
+
+124
+12412515
+
+95
+959615
+
+29
+293015
+@
+58:
+585924 *
+1N N(26:3B
+	
+9
+43
+
+
+11
+60
+@
+63:
+636424 *
+1O O(26:3B
+	
+9
+43
+
+
+11
+65
+C
+82=
+828370 *
+1¿ ¿(26:3B
+	
+9
+43
+
+11
+126
+
+100
+10010115
+
+66
+666715
+@
+41:
+414224 *
+1K K(26:3B
+	
+9
+43
+
+
+11
+44
+@
+33:
+333424 *
+1I I(26:3B
+	
+9
+35
+
+
+11
+36
+
+91
+919215
+
+109
+10911015
+
+120
+12012115
+
+50
+505115
+
+37
+373815
+9
+64
+678 *
+1D D(-:3B
+	
+9
+10
+
+
+11
+12rÚ
+
+61316*
+1C C(
+
+61719*
+1C C(	
+
+62019*
+1C
+ C(
+
+222628*
+1G G(1
+
+222916*
+1F F(
+
+223119*
+1F F(
+
+222619*
+1G G(1
+
+222619*
+1G2 G(M
+
+333728*
+1I I(*
+
+333719*
+1I I(*
+
+333719*
+1I+ I(7
+
+333919*
+1I8 I(L
+
+414528*
+1K K(
+
+414519*
+1K K(
+
+414519*
+1K  K(&
+
+475028*
+1L L((
+
+475019*
+1L L((
+
+475019*
+1L) L(,
+
+474152*
+1L/ L(5
+
+474519*
+1L/ L(5
+
+474152*
+1L/ L(5
+
+535628*
+1M M($
+
+535619*
+1M M($
+
+535619*
+1M% M(0
+
+586128*
+1N N(%
+
+586119*
+1N N(%
+
+586119*
+1N& N(2
+
+636628*
+1O O(0
+
+636619*
+1O O(0
+
+636619*
+1O1 O(<
+
+687216*
+1Q Q(
+
+687419*
+1Q Q(
+
+687628*
+1S S(*
+
+687619*
+1S S(
+
+685619*
+1T	 T(
+
+685352*
+1T	 T(
+
+685678*
+1T T(+
+
+68652*
+1T T(+
+
+687981*
+1T T(+
+
+686619*
+1U	 U(
+
+686352*
+1U	 U(
+
+685619*
+1U< U(G
+
+685352*
+1U< U(G
+
+686119*
+1UI U(U
+
+685852*
+1UI U(U
+
+685019*
+1UW U(Z
+
+684752*
+1UW U(Z
+
+684752*
+1V	 V(
+
+685019*
+1V	 V(
+
+684752*
+1V	 V(
+
+68652*
+1q	 q(
+
+688281*
+1q	 q(
+
+68652*
+1r r(*
+
+688481*
+1r r(*
+
+688619*
+1rh r(p
+
+889116*
+1u u(
+
+882019*
+1u u(
+
+882019*
+1u u(
+
+889328*
+1w w(
+
+889319*
+1w w(
+
+889528*
+1x# x(/
+
+889519*
+1x x("
+
+886119*
+1y	 y(
+
+885852*
+1y	 y(
+
+885852*
+1z z(
+
+886119*
+1z z(
+
+885852*
+1z z(
+
+9710016*
+1 (
+
+9710219*
+1 (
+
+974519*
+1Å% Å(+
+
+974152*
+1Å% Å(+
+
+974519*
+1Ö	 Ö(
+
+974152*
+1Ö	 Ö(
+
+795678*
+1à à($
+
+7976105*
+1à@ à(M
+
+795619*
+1à à($
+
+797628*
+1àN à([
+
+797619*
+1à@ à(M
+
+10610928*
+1è è(0
+
+10610919*
+1è è(0
+
+10610919*
+1è1 è(7
+
+111113105*
+1í? í(\
+
+111681*
+1í í(+
+
+11111328*
+1í] í(c
+
+11111319*
+1í? í(\
+
+111619*
+1ì	 ì(
+
+111652*
+1ì	 ì(
+
+11110919*
+1ì ì(
+
+11110652*
+1ì ì(
+
+11511816*
+1õ õ(
+
+11512019*
+1õ õ(
+
+
+1154519*
+1ù ù(
+
+1154152*
+1ù ù(
+
+1224152*
+1ü ü(%
+
+1224519*
+1ü ü(%
+
+1224152*
+1ü ü(%
+
+1226619*
+1üP ü([
+
+1226352*
+1üP ü([
+
+12212428*
+1°* °(1
+
+12212419*
+1° °()
+
+12210652*
+1¢ ¢(
+
+12210919*
+1¢ ¢(
+
+12210652*
+1¢ ¢(
+
+12210652*
+1£ £(
+
+12210919*
+1£ £(
+
+12210652*
+1£ £(
+
+12210652*
+1§ §(
+
+12210919*
+1§ §(
+
+12210652*
+1§ §(
+
+12210652*
+1• •(
+
+12210919*
+1• •(
+
+12210652*
+1• •(
+
+12212419*
+1ß, ß(B
+
+12210652*
+1¨ ¨(
+
+12210919*
+1¨ ¨(
+
+12210652*
+1¨ ¨(
+
+82127105*
+1¿E ¿(M
+
+8212728*
+1¿Q ¿(Z
+
+828619*
+1¿E ¿(M
+
+8212928*
+1¡+ ¡(D
+
+8212919*
+1¡ ¡(
+
+8213119*
+1¡ ¡()
+
+825352*
+1¬ ¬(
+
+825619*
+1¬ ¬(
+
+825352*
+1¬ ¬(
+
+824519*
+1≈' ≈(-
+
+824152*
+1≈' ≈(-
+
+848619*
+1Œ Œ(!
+
+84619*
+1–( –(G
+
+848619*
+1÷ ÷(

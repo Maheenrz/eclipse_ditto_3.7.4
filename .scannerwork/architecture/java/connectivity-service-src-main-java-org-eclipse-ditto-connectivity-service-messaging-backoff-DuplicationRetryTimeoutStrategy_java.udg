@@ -1,0 +1,496 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508545693*java2.B¬
+Ü
+Äconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/backoff/DuplicationRetryTimeoutStrategy.java2
+
+package4
+=
+8org.eclipse.ditto.connectivity.service.messaging.backoff5
+]
+Xorg.eclipse.ditto.connectivity.service.messaging.backoff.DuplicationRetryTimeoutStrategy7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+%
+DuplicationRetryTimeoutStrategy12
+2
+,Recovered#typeBindingLRetryTimeoutStrategy;014
+
+unknown15
+
+
+implements16
+
+
+uses17
+Ä
+zorg.eclipse.ditto.connectivity.service.messaging.backoff.DuplicationRetryTimeoutStrategy.ZERO_MIN_DURATION_FIRST_INCREMENT19
+
+field20
+
+private21
+'
+!ZERO_MIN_DURATION_FIRST_INCREMENT22
+i
+corg.eclipse.ditto.connectivity.service.messaging.backoff.DuplicationRetryTimeoutStrategy.minTimeout24
+
+
+minTimeout25
+i
+corg.eclipse.ditto.connectivity.service.messaging.backoff.DuplicationRetryTimeoutStrategy.maxTimeout27
+
+
+maxTimeout28
+m
+gorg.eclipse.ditto.connectivity.service.messaging.backoff.DuplicationRetryTimeoutStrategy.currentTimeout30
+
+currentTimeout31
+k
+eorg.eclipse.ditto.connectivity.service.messaging.backoff.DuplicationRetryTimeoutStrategy.currentTries33
+
+currentTries34
+ë
+äorg.eclipse.ditto.connectivity.service.messaging.backoff.DuplicationRetryTimeoutStrategy#<init>(Ljava/time/Duration;Ljava/time/Duration;)V36
+
+method37
+
+calls38
+
+
+references39
+ê
+âorg.eclipse.ditto.connectivity.service.messaging.backoff.DuplicationRetryTimeoutStrategy#isPositiveOrZero()Ljava/util/function/Predicate;41
+¶
+üorg.eclipse.ditto.connectivity.service.messaging.backoff.DuplicationRetryTimeoutStrategy#isLowerThanOrEqual(Ljava/time/Duration;)Ljava/util/function/Predicate;43
+’
+Œorg.eclipse.ditto.connectivity.service.messaging.backoff.DuplicationRetryTimeoutStrategy#fromConfig(LTimeoutConfig;)Lorg/eclipse/ditto/connectivity/service/messaging/backoff/DuplicationRetryTimeoutStrategy;45
+
+
+fromConfig46
+
+returns47
++
+%Recovered#typeBindingLTimeoutConfig;049
+
+	has param50
+
+is type51
+g
+aorg.eclipse.ditto.connectivity.service.messaging.backoff.DuplicationRetryTimeoutStrategy#reset()V53
+
+public54
+
+reset55
+É
+}org.eclipse.ditto.connectivity.service.messaging.backoff.DuplicationRetryTimeoutStrategy#getNextTimeout()Ljava/time/Duration;57
+
+getNextTimeout58
+j
+dorg.eclipse.ditto.connectivity.service.messaging.backoff.DuplicationRetryTimeoutStrategy#increase()V60
+q
+korg.eclipse.ditto.connectivity.service.messaging.backoff.DuplicationRetryTimeoutStrategy#getCurrentTries()I62
+
+getCurrentTries63
+
+increase64
+©
+¢org.eclipse.ditto.connectivity.service.messaging.backoff.DuplicationRetryTimeoutStrategy#minDuration(Ljava/time/Duration;Ljava/time/Duration;)Ljava/time/Duration;66
+
+minDuration67
+ì
+åorg.eclipse.ditto.connectivity.service.messaging.backoff.DuplicationRetryTimeoutStrategy#isLonger(Ljava/time/Duration;Ljava/time/Duration;)Z69
+
+isLonger70
+
+isLowerThanOrEqual71
+
+isPositiveOrZero72J
+
+1
+12Z
+
+3	
+354j¡
+@
+26:
+262720 *
+1 (26:3B
+	
+9
+21
+
+
+11
+28
+@
+68:
+686937 *
+1P P(26:3B
+	
+9
+21
+
+
+11
+70
+@
+61:
+616237 *
+1B B(26:3B
+	
+9
+54
+
+
+11
+63
+@
+29:
+293020 *
+1   (26:3B
+	
+9
+21
+
+
+11
+31
+@
+65:
+656637 *
+1L L(26:3B
+	
+9
+21
+
+
+11
+67
+9
+64
+678 *
+1 (,:3B
+	
+9
+10
+
+
+11
+12
+@
+56:
+565737 *
+17 7(26:3B
+	
+9
+54
+
+
+11
+58
+@
+40:
+404137 *
+1\ \(26:3B
+	
+9
+21
+
+
+11
+72
+
+13
+131415
+@
+35:
+353637 *
+1# #(26:3B
+	
+9
+21
+
+
+11
+12
+@
+42:
+424337 *
+1T T(26:3B
+	
+9
+21
+
+
+11
+71
+@
+32:
+323320 *
+1! !(26:3B
+	
+9
+21
+
+
+11
+34
+
+48
+484915
+@
+18:
+181920 *
+1 (26:3B
+	
+9
+21
+
+
+11
+22
+@
+23:
+232420 *
+1 (26:3B
+	
+9
+21
+
+
+11
+25
+@
+52:
+525337 *
+11 1(26:3B
+	
+9
+54
+
+
+11
+55
+@
+59:
+596037 *
+1G G(26:3B
+	
+9
+21
+
+
+11
+64
+@
+44:
+444537 *
+1, ,(26:3B
+	
+9
+10
+
+
+11
+46r≤
+
+61316*
+18 (L
+
+61317*
+18 (L
+
+35638*
+1# #(,
+
+35617*
+1$	 $(
+
+35639*
+1$	 $(
+
+352339*
+1$ $(
+
+35639*
+1$5 $(E
+
+354038*
+1$5 $(E
+
+35639*
+1$L $(^
+
+354238*
+1$L $(^
+
+35617*
+1&	 &(
+
+35639*
+1&	 &(
+
+352639*
+1& &(
+
+35639*
+1&5 &(E
+
+354038*
+1&5 &(E
+
+35617*
+1(	 ((
+
+35639*
+1(	 ((
+
+352939*
+1( ((
+
+35617*
+1)	 )(
+
+35639*
+1)	 )(
+
+353239*
+1) )(
+
+44647*
+1, ,(+
+
+444850*
+1,= ,(J
+
+44617*
+1, ,(+
+
+444851*
+1,K ,(Q
+
+444817*
+1,= ,(J
+
+44638*
+1- -(3
+
+52617*
+13	 3(
+
+52639*
+13	 3(
+
+522939*
+13 3(
+
+52617*
+13 3(#
+
+52639*
+13 3(#
+
+522339*
+13$ 3(.
+
+52617*
+14	 4(
+
+52639*
+14	 4(
+
+523239*
+14 4(
+
+56617*
+19" 9(&
+
+56639*
+19" 9(&
+
+562939*
+19' 9(5
+
+56639*
+1:	 :(
+
+565938*
+1: :(
+
+56639*
+1:	 :(
+
+56617*
+1:	 :(
+
+56639*
+1:	 :(
+
+56617*
+1< <(
+
+56639*
+1< <(
+
+562939*
+1< <( 
+
+561839*
+1<# <(D
+
+61617*
+1D D(
+
+61639*
+1D D(
+
+613239*
+1D D(!
+
+59617*
+1H	 H(
+
+59639*
+1H	 H(
+
+592939*
+1H H(
+
+59639*
+1H H(*
+
+596538*
+1H H(*
+
+59617*
+1H+ H(/
+
+59639*
+1H+ H(/
+
+592639*
+1H0 H(:
+
+59617*
+1H< H(@
+
+59639*
+1H< H(@
+
+592939*
+1HA H(O
+
+593239*
+1I I(
+
+65639*
+1M M(
+
+656838*
+1M M(

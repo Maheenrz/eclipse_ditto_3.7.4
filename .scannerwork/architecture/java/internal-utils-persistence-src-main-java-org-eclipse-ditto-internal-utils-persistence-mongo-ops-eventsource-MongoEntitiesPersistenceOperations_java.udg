@@ -1,0 +1,475 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508611938*java2.Bð
+™
+“internal/utils/persistence/src/main/java/org/eclipse/ditto/internal/utils/persistence/mongo/ops/eventsource/MongoEntitiesPersistenceOperations.java2
+
+package4
+G
+Borg.eclipse.ditto.internal.utils.persistence.mongo.ops.eventsource5
+j
+eorg.eclipse.ditto.internal.utils.persistence.mongo.ops.eventsource.MongoEntitiesPersistenceOperations7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+(
+"MongoEntitiesPersistenceOperations12
+9
+3Recovered#typeBindingLEntityPersistenceOperations;014
+
+unknown15
+
+
+implements16
+
+
+uses17
+n
+horg.eclipse.ditto.internal.utils.persistence.mongo.ops.eventsource.MongoEntitiesPersistenceOperations.db19
+
+field20
+
+private21
+
+db22
+
+MongoDatabase24
+
+is type25
+}
+worg.eclipse.ditto.internal.utils.persistence.mongo.ops.eventsource.MongoEntitiesPersistenceOperations.selectionProvider27
+
+selectionProvider28
+1
++MongoPersistenceOperationsSelectionProvider30
+Ÿ
+˜org.eclipse.ditto.internal.utils.persistence.mongo.ops.eventsource.MongoEntitiesPersistenceOperations#<init>(LMongoDatabase;LMongoEventSourceSettings;)V32
+
+method33
++
+%Recovered#typeBindingLMongoDatabase;035
+
+	has param36
+6
+0Recovered#typeBindingLMongoEventSourceSettings;038
+
+calls39
+
+
+references40
+
+úorg.eclipse.ditto.internal.utils.persistence.mongo.ops.eventsource.MongoEntitiesPersistenceOperations#of(LMongoDatabase;LMongoEventSourceSettings;)Lorg/eclipse/ditto/internal/utils/persistence/mongo/ops/eventsource/MongoEntitiesPersistenceOperations;42
+
+of43
+
+returns44
+Œ
+…org.eclipse.ditto.internal.utils.persistence.mongo.ops.eventsource.MongoEntitiesPersistenceOperations#purgeEntity(LEntityId;)LSource;46
+
+purgeEntity47
+
+Source49
+&
+ Recovered#typeBindingLEntityId;051
+%
+Recovered#typeBindingLNotUsed;053
+A
+;Recovered#typeBindingLMongoPersistenceOperationsSelection;055
+›
+”org.eclipse.ditto.internal.utils.persistence.mongo.ops.eventsource.MongoEntitiesPersistenceOperations#selectEntity(LEntityId;)Ljava/util/Collection;57
+Ÿ
+˜org.eclipse.ditto.internal.utils.persistence.mongo.ops.eventsource.MongoEntitiesPersistenceOperations#purgeAllSelections(Ljava/util/Collection;)LSource;59
+
+selectEntity60
+
+purgeAllSelections61
+$
+Recovered#typeBindingLSource;063
+¡
+šorg.eclipse.ditto.internal.utils.persistence.mongo.ops.eventsource.MongoEntitiesPersistenceOperations#purge(LMongoPersistenceOperationsSelection;)LSource;65
+
+purge66
+-
+'Recovered#typeBindingLMongoCollection;068
+&
+ Recovered#typeBindingLDocument;070J
+
+1
+12Z
+
+3	
+354j»
+@
+26:
+262720 *
+1% %(26:3B
+	
+9
+21
+
+
+11
+28
+@
+64:
+646533 *
+1S S(26:3B
+	
+9
+21
+
+
+11
+66
+
+29
+293015
+@
+45:
+454633 *
+1: :(26:3B
+	
+9
+10
+
+
+11
+47
+
+67
+676815
+9
+64
+678 *
+1" "(6:3B
+	
+9
+10
+
+
+11
+12
+@
+18:
+181920 *
+1$ $(26:3B
+	
+9
+21
+
+
+11
+22
+
+34
+343515
+
+52
+525315
+@
+56:
+565733 *
+1C C(26:3B
+	
+9
+21
+
+
+11
+60
+
+13
+131415
+
+69
+697015
+@
+41:
+414233 *
+15 5(26:3B
+	
+9
+10
+
+
+11
+43
+
+48
+484915
+
+50
+505115
+@
+58:
+585933 *
+1G G(26:3B
+	
+9
+21
+
+
+11
+61
+
+54
+545515
+@
+31:
+313233 *
+1' '(26:3B
+	
+9
+21
+
+
+11
+12
+
+23
+232415
+
+37
+373815
+
+62
+626315r­
+
+61316*
+1"B "(]
+
+61317*
+1"B "(]
+
+182325*
+1$ $( 
+
+182317*
+1$ $( 
+
+182317*
+1$! $(#
+
+262925*
+1% %(>
+
+262917*
+1% %(>
+
+262917*
+1%? %(P
+
+313436*
+1'6 '(C
+
+313736*
+1( ((+
+
+31639*
+1' '(/
+
+313425*
+1'D '(F
+
+313417*
+1'6 '(C
+
+313725*
+1(, ((?
+
+313717*
+1( ((+
+
+31617*
+1)	 )(
+
+31640*
+1)	 )(
+
+312317*
+1) )(
+
+311840*
+1) )(
+
+31617*
+1+	 +(
+
+31640*
+1+	 +(
+
+312917*
+1+ +(
+
+312640*
+1+ +(
+
+41644*
+15 5(5
+
+413436*
+15? 5(L
+
+413736*
+16 6(+
+
+41617*
+15 5(5
+
+413425*
+15M 5(O
+
+413417*
+15? 5(L
+
+413725*
+16, 6(?
+
+413717*
+16 6(+
+
+41639*
+17 7(6
+
+454844*
+1; ;(
+
+455036*
+1;? ;(G
+
+454817*
+1; ;(
+
+455217*
+1;$ ;(+
+
+455025*
+1;H ;(P
+
+455017*
+1;? ;(G
+
+455417*
+1> >(=
+
+45640*
+1>L >(X
+
+455639*
+1>L >(X
+
+454844*
+1@ @("
+
+45640*
+1@ @("
+
+455839*
+1@ @("
+
+565036*
+1CP C(X
+
+565417*
+1C C(;
+
+565025*
+1CY C(a
+
+565017*
+1CP C(X
+
+562640*
+1D D(!
+
+562917*
+1D D(!
+
+562640*
+1D D(!
+
+584844*
+1G G(
+
+584817*
+1G G(
+
+585217*
+1G% G(,
+
+585417*
+1H H(A
+
+586225*
+1I* I(0
+
+586217*
+1I	 I(
+
+585217*
+1I! I((
+
+585425*
+1K2 K(C
+
+585417*
+1K K(1
+
+586225*
+1L4 L(9
+
+586217*
+1L L(
+
+585217*
+1L+ L(2
+
+584844*
+1L< L(A
+
+58640*
+1L< L(A
+
+586439*
+1L< L(A
+
+644844*
+1S S(
+
+645436*
+1S: S(]
+
+644817*
+1S S(
+
+645217*
+1S% S(,
+
+645425*
+1S^ S(g
+
+645417*
+1S: S(]
+
+646725*
+1T) T(3
+
+646717*
+1T T(
+
+646917*
+1T T('
+
+641840*
+1T6 T(8
+
+642317*
+1T6 T(8
+
+641840*
+1T6 T(8

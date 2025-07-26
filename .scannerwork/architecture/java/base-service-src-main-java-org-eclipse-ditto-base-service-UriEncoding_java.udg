@@ -1,0 +1,665 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508784647*java2.B¨
+O
+Jbase/service/src/main/java/org/eclipse/ditto/base/service/UriEncoding.java2
+
+package4
+#
+org.eclipse.ditto.base.service5
+/
+*org.eclipse.ditto.base.service.UriEncoding7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+UriEncoding12
+9
+3org.eclipse.ditto.base.service.UriEncoding.ENCODING14
+
+field15
+
+private16
+
+ENCODING17
+@
+:org.eclipse.ditto.base.service.UriEncoding.ALLOWED_IN_PATH19
+
+ALLOWED_IN_PATH20
+
+
+references21
+<
+6org.eclipse.ditto.base.service.UriEncoding#isPchar(I)Z23
+
+unknown24
+
+calls25
+H
+Borg.eclipse.ditto.base.service.UriEncoding.ALLOWED_IN_PATH_SEGMENT27
+
+ALLOWED_IN_PATH_SEGMENT28
+
+
+uses29
+A
+;org.eclipse.ditto.base.service.UriEncoding.ALLOWED_IN_QUERY31
+
+ALLOWED_IN_QUERY32
+G
+Aorg.eclipse.ditto.base.service.UriEncoding.ALLOWED_IN_QUERY_PARAM34
+
+ALLOWED_IN_QUERY_PARAM35
+a
+[org.eclipse.ditto.base.service.UriEncoding#encodePath(Ljava/lang/String;)Ljava/lang/String;37
+
+method38
+
+
+encodePath39
+’
+‹org.eclipse.ditto.base.service.UriEncoding#encodeRFC3986UriComponent(Ljava/lang/String;Ljava/util/function/IntPredicate;)Ljava/lang/String;41
+h
+borg.eclipse.ditto.base.service.UriEncoding#encodePathSegment(Ljava/lang/String;)Ljava/lang/String;43
+
+encodePathSegment44
+œ
+•org.eclipse.ditto.base.service.UriEncoding#encodeQuery(Ljava/lang/String;Lorg/eclipse/ditto/base/service/UriEncoding$EncodingType;)Ljava/lang/String;46
+
+encodeQuery47
+=
+7org.eclipse.ditto.base.service.UriEncoding$EncodingType49
+
+	has param50
+
+is type51
+
+returns52
+N
+Horg.eclipse.ditto.base.service.UriEncoding$EncodingType.FORM_URL_ENCODED54
+k
+eorg.eclipse.ditto.base.service.UriEncoding#encodeFormUrlEncoded(Ljava/lang/String;)Ljava/lang/String;56
+¡
+šorg.eclipse.ditto.base.service.UriEncoding#encodeQueryParam(Ljava/lang/String;Lorg/eclipse/ditto/base/service/UriEncoding$EncodingType;)Ljava/lang/String;58
+
+encodeQueryParam59
+m
+gorg.eclipse.ditto.base.service.UriEncoding#encodeAllButUnreserved(Ljava/lang/String;)Ljava/lang/String;61
+
+encodeAllButUnreserved62
+—
+org.eclipse.ditto.base.service.UriEncoding#decode(Ljava/lang/String;Lorg/eclipse/ditto/base/service/UriEncoding$EncodingType;)Ljava/lang/String;64
+
+decode65
+k
+eorg.eclipse.ditto.base.service.UriEncoding#decodeFormUrlEncoded(Ljava/lang/String;)Ljava/lang/String;67
+d
+^org.eclipse.ditto.base.service.UriEncoding#decodeRFC3986(Ljava/lang/String;)Ljava/lang/String;69
+
+encodeFormUrlEncoded70
+
+decodeFormUrlEncoded71
+
+decodeRFC398672
+
+encodeRFC3986UriComponent73
+c
+]org.eclipse.ditto.base.service.UriEncoding#encodeBytes([BLjava/util/function/IntPredicate;)[B75
+
+encodeBytes76
+
+isPchar77
+A
+;org.eclipse.ditto.base.service.UriEncoding#isUnreserved(I)Z79
+C
+=org.eclipse.ditto.base.service.UriEncoding#isSubDelimiter(I)Z81
+
+isUnreserved82
+<
+6org.eclipse.ditto.base.service.UriEncoding#isAlpha(I)Z84
+<
+6org.eclipse.ditto.base.service.UriEncoding#isDigit(I)Z86
+
+isAlpha87
+
+isDigit88
+
+isSubDelimiter89
+
+
+enum90
+
+EncodingType91
+€
+zorg.eclipse.ditto.base.service.UriEncoding$EncodingType#values()[Lorg/eclipse/ditto/base/service/UriEncoding$EncodingType;93
+
+values94
+“
+Œorg.eclipse.ditto.base.service.UriEncoding$EncodingType#valueOf(Ljava/lang/String;)Lorg/eclipse/ditto/base/service/UriEncoding$EncodingType;96
+
+valueOf97
+E
+?org.eclipse.ditto.base.service.UriEncoding$EncodingType.RFC398699
+
+RFC3986100
+
+FORM_URL_ENCODED101J
+
+1
+12Z
+
+3	
+354jç
+B
+66<
+666738 *
+1Ž Ž(26:3B
+	
+9
+16
+
+
+11
+71
+@
+57:
+575838 *
+1^ ^(26:3B
+	
+9
+10
+
+
+11
+59
+B
+55<
+555638 *
+1† †(26:3B
+	
+9
+16
+
+
+11
+70
+B
+80<
+808138 *
+1 (26:3B
+	
+9
+16
+
+
+11
+89
+@
+45:
+454638 *
+1J J(26:3B
+	
+9
+10
+
+
+11
+47
+B
+68<
+686938 *
+1– –(26:3B
+	
+9
+16
+
+
+11
+72
+@
+26:
+262715 *
+1" "(26:3B
+	
+9
+16
+
+
+11
+28
+B
+40<
+404138 *
+1É É(26:3B
+	
+9
+10
+
+
+11
+73
+@
+42:
+424338 *
+1= =(26:3B
+	
+9
+10
+
+
+11
+44
+B
+48<
+484990 *
+1— —(26:3B
+	
+9
+10
+
+
+11
+91
+B
+74<
+747538 *
+1Ô Ô(26:3B
+	
+9
+16
+
+
+11
+76
+9
+64
+678 *
+1 (:3B
+	
+9
+10
+
+
+11
+12
+@
+36:
+363738 *
+11 1(26:3B
+	
+9
+10
+
+
+11
+39
+8
+952
+959638 *
+1— —(248:3B
+
+
+11
+97
+8
+922
+929338 *
+1— —(248:3B
+
+
+11
+94
+@
+30:
+303115 *
+1' '(26:3B
+	
+9
+16
+
+
+11
+32
+B
+22<
+222338 *
+1ð ð(26:3B
+	
+9
+10
+
+
+11
+77
+B
+78<
+787938 *
+1ú ú(26:3B
+	
+9
+10
+
+
+11
+82
+B
+83<
+838438 *
+1 (26:3B
+	
+9
+16
+
+
+11
+87
+@
+13:
+131415 *
+1   (26:3B
+	
+9
+16
+
+
+11
+17
+B
+85<
+858638 *
+1ˆ ˆ(26:3B
+	
+9
+16
+
+
+11
+88
+9
+983
+989915 *
+1›	 ›(248:3B
+
+11
+100
+@
+18:
+181915 *
+1! !(26:3B
+	
+9
+16
+
+
+11
+20
+@
+60:
+606138 *
+1o o(26:3B
+	
+9
+10
+
+
+11
+62
+9
+533
+535415 *
+1¡	 ¡(248:3B
+
+11
+101
+@
+63:
+636438 *
+1{ {(26:3B
+	
+9
+10
+
+
+11
+65
+@
+33:
+333415 *
+1( ((26:3B
+	
+9
+16
+
+
+11
+35rƒ
+
+18621*
+1!> !(E
+
+182225*
+1!> !(E
+
+26629*
+1"A "(L
+
+30621*
+1'L '(S
+
+302225*
+1'L '(S
+
+333021*
+1)- )(=
+
+333021*
+1)- )(=
+
+36621*
+14 4()
+
+364025*
+14 4()
+
+361821*
+140 4(?
+
+42621*
+1@ @()
+
+424025*
+1@ @()
+
+422621*
+1@7 @(N
+
+454850*
+1J@ J(L
+
+454851*
+1JM J(T
+
+454829*
+1J@ J(L
+
+454821*
+1J@ J(L
+
+454852*
+1L	 L(
+
+454829*
+1N N($
+
+454821*
+1N N($
+
+454829*
+1N% N(5
+
+455321*
+1N% N(5
+
+45621*
+1O O((
+
+455525*
+1O O((
+
+45621*
+1S S(-
+
+454025*
+1S S(-
+
+453021*
+1S5 S(E
+
+574850*
+1^J ^(V
+
+574851*
+1^W ^(^
+
+574829*
+1^J ^(V
+
+574821*
+1^J ^(V
+
+574852*
+1`	 `(
+
+574829*
+1b b($
+
+574821*
+1b b($
+
+574829*
+1b% b(5
+
+575321*
+1b% b(5
+
+57621*
+1c c((
+
+575525*
+1c c((
+
+57621*
+1e e(-
+
+574025*
+1e e(-
+
+573321*
+1e: e(P
+
+60621*
+1p p()
+
+604025*
+1p p()
+
+60629*
+1p2 p(=
+
+634850*
+1{< {(H
+
+634851*
+1{I {(P
+
+634829*
+1{< {(H
+
+634821*
+1{< {(H
+
+634852*
+1}	 }(
+
+634829*
+1 ($
+
+634821*
+1 ($
+
+634829*
+1% (5
+
+635321*
+1% (5
+
+63621*
+1€ €((
+
+636625*
+1€ €((
+
+63621*
+1‚ ‚(!
+
+636825*
+1‚ ‚(!
+
+551321*
+1ˆ) ˆ(1
+
+661321*
+1. (6
+
+681321*
+1¹6 ¹(>
+
+40621*
+1Í" Í(-
+
+407425*
+1Í" Í(-
+
+401321*
+1Í> Í(F
+
+22621*
+1ñ ñ(
+
+227825*
+1ñ ñ(
+
+22621*
+1ñ# ñ(1
+
+228025*
+1ñ# ñ(1
+
+78621*
+1û û(
+
+788325*
+1û û(
+
+78621*
+1û û(%
+
+788525*
+1û û(%
+
+984825*
+1›	 ›(
+
+984825*
+1›	 ›(
+
+534825*
+1¡	 ¡(
+
+534825*
+1¡	 ¡(

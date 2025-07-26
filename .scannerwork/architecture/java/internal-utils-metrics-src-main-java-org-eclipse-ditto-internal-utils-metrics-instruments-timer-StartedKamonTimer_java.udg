@@ -1,0 +1,1008 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508576220*java2.Bˆ
+{
+vinternal/utils/metrics/src/main/java/org/eclipse/ditto/internal/utils/metrics/instruments/timer/StartedKamonTimer.java2
+
+package4
+?
+:org.eclipse.ditto.internal.utils.metrics.instruments.timer5
+Q
+Lorg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+
+StartedKamonTimer12
+*
+$Recovered#typeBindingLStartedTimer;014
+
+unknown15
+
+
+implements16
+
+
+uses17
+Y
+Sorg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer.LOGGER19
+
+field20
+
+private21
+
+LOGGER22
+
+Logger24
+
+is type25
+b
+\org.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer.SEGMENT_TAG_KEY27
+
+SEGMENT_TAG_KEY28
+W
+Qorg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer.name30
+
+
+name31
+[
+Uorg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer.segments33
+
+segments34
+a
+[org.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer.onStopHandlers36
+
+onStopHandlers37
++
+%Recovered#typeBindingLOnStopHandler;039
+_
+Yorg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer.startInstant41
+
+startInstant42
+
+StartInstant44
+W
+Qorg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer.tags46
+
+
+tags47
+
+TagSet49
+_
+Yorg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer.stoppedTimer51
+
+stoppedTimer52
+
+StoppedTimer54
+
+Nullable56
+
+annotated by57
+&
+ Recovered#typeBindingLNullable;059
+v
+porg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer#<init>(Ljava/lang/String;LTagSet;)V61
+
+method62
+$
+Recovered#typeBindingLTagSet;064
+
+	has param65
+
+calls66
+
+
+references67
+É
+}org.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer#fromPreparedTimer(LPreparedTimer;)LStartedTimer;69
+
+fromPreparedTimer70
+
+StartedTimer72
+
+returns73
++
+%Recovered#typeBindingLPreparedTimer;075
+É
+}org.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer#addOverallSegmentTagIfNoOtherSegmentTagExists()V77
+3
+-addOverallSegmentTagIfNoOtherSegmentTagExists78
+c
+]org.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer#hasSegmentTag()Z80
+
+hasSegmentTag81
+o
+iorg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer#tags(LTagSet;)LStartedTimer;83
+
+public84
+_
+Yorg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer#isStopped()Z86
+f
+`org.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer#getTagSet()LTagSet;88
+
+	getTagSet89
+k
+eorg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer#tag(LTag;)LStartedTimer;91
+	
+tag92
+!
+Recovered#typeBindingLTag;094
+g
+aorg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer#stop()LStoppedTimer;96
+
+
+stop97
+_
+Yorg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer#isRunning()Z99
+
+	isRunning100
+
+	isStopped101
+Ö
+~org.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer#startNewSegment(Ljava/lang/String;)LStartedTimer;103
+
+startNewSegment104
+y
+rorg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer#onStop(LOnStopHandler;)LStartedTimer;106
+
+onStop107
+o
+horg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer#getName()Ljava/lang/String;109
+
+getName110
+s
+lorg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer#getStartInstant()LStartInstant;112
+
+getStartInstant113
+p
+iorg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer#getSegments()Ljava/util/Map;115
+
+getSegments116
+w
+porg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer#getOnStopHandlers()Ljava/util/List;118
+
+getOnStopHandlers119
+p
+iorg.eclipse.ditto.internal.utils.metrics.instruments.timer.StartedKamonTimer#toString()Ljava/lang/String;121
+
+toString122J
+
+1
+12Z
+
+3	
+354j«
+@
+18:
+181920 *
+1" "(26:3B
+	
+9
+21
+
+
+11
+22
+@
+45:
+454620 *
+1+ +(26:3B
+	
+9
+21
+
+
+11
+47
+@
+35:
+353620 *
+1( ((26:3B
+	
+9
+21
+
+
+11
+37
+@
+29:
+293020 *
+1& &(26:3B
+	
+9
+21
+
+
+11
+31
+@
+68:
+686962 *
+17 7(26:3B
+	
+9
+10
+
+
+11
+70
+
+53
+535415
+
+43
+434415
+@
+79:
+798062 *
+1C C(26:3B
+	
+9
+21
+
+
+11
+81
+
+23
+232415
+F
+108?
+10810962 *
+1î î(26:3B
+	
+9
+84
+
+11
+110
+F
+120?
+12012162 *
+1® ®(26:3B
+	
+9
+84
+
+11
+122
+@
+82:
+828362 *
+1G G(26:3B
+	
+9
+84
+
+
+11
+47
+F
+105?
+10510662 *
+1é é(26:3B
+	
+9
+84
+
+11
+107
+
+58
+585915
+
+93
+939415
+
+48
+484915
+F
+114?
+11411562 *
+1û û(26:3B
+	
+9
+84
+
+11
+116
+
+63
+636415
+@
+87:
+878862 *
+1R R(26:3B
+	
+9
+84
+
+
+11
+89
+F
+111?
+11111262 *
+1ô ô(26:3B
+	
+9
+84
+
+11
+113
+
+38
+383915
+@
+26:
+262720 *
+1$ $(26:3B
+	
+9
+21
+
+
+11
+28
+@
+95:
+959662 *
+1b b(26:3B
+	
+9
+84
+
+
+11
+97
+F
+117?
+11711862 *
+1£ £(26:3B
+	
+9
+84
+
+11
+119
+D
+102=
+10210362 *
+1w w(26:3B
+	
+9
+84
+
+11
+104
+@
+90:
+909162 *
+1W W(26:3B
+	
+9
+84
+
+
+11
+92
+A
+98;
+989962 *
+1n n(26:3B
+	
+9
+84
+
+11
+100
+@
+76:
+767762 *
+1= =(26:3B
+	
+9
+21
+
+
+11
+78
+
+13
+131415
+
+74
+747515
+9
+64
+678 *
+1   (:3B
+	
+9
+10
+
+
+11
+12
+@
+60:
+606162 *
+1. .(26:3B
+	
+9
+21
+
+
+11
+12
+@
+50:
+505120 *
+1, ,(26:3B
+	
+9
+21
+
+
+11
+52
+A
+85;
+858662 *
+1s s(26:3B
+	
+9
+21
+
+11
+101
+@
+40:
+404120 *
+1) )(26:3B
+	
+9
+21
+
+
+11
+42
+
+55
+555615
+
+71
+717215
+@
+32:
+323320 *
+1' '(26:3B
+	
+9
+21
+
+
+11
+34ró%
+
+61316*
+1 *  (6
+
+61317*
+1 *  (6
+
+182325*
+1" "( 
+
+182317*
+1" "( 
+
+182317*
+1"! "('
+
+18617*
+1"B "(S
+
+321317*
+1' '(+
+
+353817*
+1( ((%
+
+404325*
+1) )(
+
+404317*
+1) )(
+
+404317*
+1)  )(,
+
+454825*
+1+ +(
+
+454817*
+1+ +(
+
+454817*
+1+ +(
+
+505325*
+1, ,(#
+
+505557*
+1, ,(
+
+505817*
+1, ,(
+
+505317*
+1, ,(#
+
+505317*
+1,$ ,(0
+
+606365*
+1.8 .(>
+
+60666*
+1. .(
+
+606325*
+1.? .(C
+
+606317*
+1.8 .(>
+
+60617*
+1/	 /(
+
+60667*
+1/	 /(
+
+602967*
+1/ /(
+
+603267*
+10	 0(
+
+603567*
+11	 1(
+
+604317*
+12	 2(
+
+604067*
+12	 2(
+
+60617*
+13	 3(
+
+60667*
+13	 3(
+
+604817*
+13 3(
+
+604567*
+13 3(
+
+605317*
+14	 4(
+
+605067*
+14	 4(
+
+687173*
+17 7(
+
+687465*
+171 7(>
+
+687117*
+17 7(
+
+687425*
+17? 7(L
+
+687417*
+171 7(>
+
+68625*
+18 8(
+
+68666*
+18  8(1
+
+68667*
+19	 9(
+
+687666*
+19 9(=
+
+76667*
+1> >(
+
+767966*
+1> >(
+
+762667*
+1? ?( 
+
+794567*
+1D D(
+
+794817*
+1D D(
+
+794567*
+1D D(
+
+792667*
+1D! D(0
+
+827173*
+1H H(
+
+826365*
+1H$ H(*
+
+827117*
+1H H(
+
+826325*
+1H+ H(/
+
+826317*
+1H$ H(*
+
+82667*
+1I I(
+
+828566*
+1I I(
+
+821867*
+1J J(
+
+822317*
+1J J(
+
+821867*
+1J J(
+
+822967*
+1K K(
+
+82617*
+1M M(
+
+82667*
+1M M(
+
+824817*
+1M M(
+
+824567*
+1M M(
+
+82617*
+1O O(
+
+82667*
+1O O(
+
+874873*
+1S S(
+
+874817*
+1S S(
+
+874817*
+1T T(
+
+874567*
+1T T(
+
+907173*
+1X X(
+
+909365*
+1X# X(&
+
+907117*
+1X X(
+
+909325*
+1X' X(*
+
+909317*
+1X# X(&
+
+90667*
+1Z Z(
+
+908566*
+1Z Z(
+
+901867*
+1[ [(
+
+902317*
+1[ [(
+
+901867*
+1[ [(
+
+902967*
+1[s [(w
+
+904817*
+1] ](
+
+904567*
+1] ](
+
+904567*
+1] ](
+
+904817*
+1] ](
+
+904567*
+1] ](
+
+90617*
+1_ _(
+
+90667*
+1_ _(
+
+955373*
+1c c(
+
+955317*
+1c c(
+
+95667*
+1d d(
+
+959866*
+1d d(
+
+955317*
+1e e(
+
+955067*
+1e e(
+
+95617*
+1e? e(C
+
+95667*
+1e? e(C
+
+951867*
+1f f(
+
+952317*
+1f f(
+
+951867*
+1f f(
+
+951867*
+1g g(
+
+952317*
+1g g(
+
+951867*
+1g g(
+
+952967*
+1h h(
+
+954567*
+1i i(
+
+954817*
+1i i(
+
+954567*
+1i i(
+
+952667*
+1i& i(5
+
+955317*
+1k k(
+
+955067*
+1k k(
+
+985317*
+1p p(
+
+985067*
+1p p(
+
+85667*
+1t t(
+
+859866*
+1t t(
+
+1027173*
+1x x(
+
+1027117*
+1x x(
+
+1021325*
+1y y("
+
+1021317*
+1y y(
+
+102667*
+1z z(
+
+1029866*
+1z z(
+
+1022967*
+1{2 {(6
+
+1024817*
+1| |(
+
+1024567*
+1| |(
+
+1022667*
+1} }()
+
+1023267*
+1 (
+
+1023267*
+1 (
+
+1021867*
+1Å Å(
+
+1022317*
+1Å Å(
+
+1021867*
+1Å Å(
+
+1021867*
+1Ç Ç(
+
+1022317*
+1Ç Ç(
+
+1021867*
+1Ç Ç(
+
+1022967*
+1Ö Ö(
+
+1024567*
+1Ü Ü(
+
+1024817*
+1Ü Ü(
+
+1024567*
+1Ü Ü(
+
+1022667*
+1Ü* Ü(9
+
+102617*
+1â â(
+
+102667*
+1â â(
+
+1057173*
+1è è(
+
+1053865*
+1è& è(3
+
+1057117*
+1è è(
+
+1053825*
+1è4 è(A
+
+1053817*
+1è& è(3
+
+1053567*
+1ê	 ê(
+
+1053567*
+1ê	 ê(
+
+105617*
+1ë ë(
+
+105667*
+1ë ë(
+
+1082967*
+1ñ ñ(
+
+1114373*
+1ö ö(
+
+1114317*
+1ö ö(
+
+1114317*
+1õ õ(
+
+1114067*
+1õ õ(
+
+1141317*
+1ü ü($
+
+1143267*
+1† †(&
+
+1173817*
+1§ §(
+
+1173567*
+1• •(*
+
+1202967*
+1´ ´(
+
+1204817*
+1¨ ¨(!
+
+1204567*
+1¨ ¨(!
+
+1203567*
+1≠' ≠(5
+
+1203267*
+1Æ! Æ()
+
+1204067*
+1Ø& Ø(2
+
+1204317*
+1Ø& Ø(2
+
+1204067*
+1Ø& Ø(2
+
+1204067*
+1∞% ∞(1
+
+1204317*
+1∞% ∞(1
+
+1204067*
+1∞% ∞(1
+
+1205317*
+1±% ±(1
+
+1205067*
+1±% ±(1

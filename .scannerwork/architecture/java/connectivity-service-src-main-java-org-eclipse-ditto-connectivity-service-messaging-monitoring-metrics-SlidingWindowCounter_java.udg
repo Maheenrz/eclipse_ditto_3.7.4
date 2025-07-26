@@ -1,0 +1,1646 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508771558*java2.B∆J
+Ü
+Äconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/monitoring/metrics/SlidingWindowCounter.java2
+
+package4
+H
+Corg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics5
+]
+Xorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+SlidingWindowCounter12
+d
+^org.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter.clock14
+
+field15
+
+private16
+
+clock17
+r
+lorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter.windowsForRecording19
+
+windowsForRecording20
+
+MeasurementWindow22
+
+unknown23
+
+is type24
+
+
+uses25
+r
+lorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter.windowsForReporting27
+
+windowsForReporting28
+r
+lorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter.successMeasurements30
+
+successMeasurements31
+r
+lorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter.failureMeasurements33
+
+failureMeasurements34
+s
+morg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter.lastSuccessTimestamp36
+
+lastSuccessTimestamp37
+s
+morg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter.lastFailureTimestamp39
+
+lastFailureTimestamp40
+l
+forg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter.minResolution42
+
+minResolution43
+m
+gorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter.metricsCounter45
+
+metricsCounter46
+
+Counter48
+k
+eorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter.metricsAlert50
+
+metricsAlert51
+
+MetricsAlert53
+
+Nullable55
+
+annotated by56
+&
+ Recovered#typeBindingLNullable;058
+m
+gorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter.maximumPerSlot60
+
+maximumPerSlot61
+m
+gorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter.cleanUpEnabled63
+
+cleanUpEnabled64
+u
+oorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter.lastTimestampOverrides66
+
+lastTimestampOverrides67
+/
+)Recovered#typeBindingLMeasurementWindow;069
+ﬂ
+ÿorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#<init>(Lorg/eclipse/ditto/connectivity/service/messaging/monitoring/metrics/SlidingWindowCounter$SlidingWindowCounterBuilder;)V71
+
+method72
+z
+torg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder74
+
+	has param75
+
+calls76
+
+
+references77
+ä
+Éorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder.metricsCounter79
+Ä
+zorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder.clock81
+à
+Åorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder.metricsAlert83
+ä
+Éorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder.cleanUpEnabled85
+ó
+êorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder.recordingMeasurementWindows87
+ó
+êorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder.reportingMeasurementWindows89
+ä
+Éorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder.maximumPerSlot91
+í
+ãorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder.lastTimestampOverrides93
+Î
+‰org.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#newBuilder(LCounter;)Lorg/eclipse/ditto/connectivity/service/messaging/monitoring/metrics/SlidingWindowCounter$SlidingWindowCounterBuilder;95
+
+	protected96
+
+
+newBuilder97
+
+returns98
+&
+Recovered#typeBindingLCounter;0100
+~
+worg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#getLastSuccessMeasurementAt()J102
+"
+getLastSuccessMeasurementAt103
+~
+worg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#getLastFailureMeasurementAt()J105
+"
+getLastFailureMeasurementAt106
+l
+eorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#increment()V108
+
+	increment109
+m
+forg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#increment(Z)V111
+n
+gorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#increment(ZJ)V113
+≠
+•org.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#updateTimestampAndReturnPrevious(Ljava/util/concurrent/atomic/AtomicLong;J)J115
+â
+Åorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#incrementMeasurements(JLjava/util/Map;)V117
+y
+rorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#cleanUpOldMeasurements()V119
+'
+ updateTimestampAndReturnPrevious120
+
+incrementMeasurements121
+l
+eorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#getSlot(JJ)J123
+
+cleanUpOldMeasurements124
+â
+Åorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#cleanUpOldMeasurements(Ljava/util/Map;)V126
+i
+borg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#isOld(J)Z128
+
+isOld129
+{
+torg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#getCounts(Z)Ljava/util/Map;131
+
+	getCounts132
+ã
+Éorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#getCounts(Ljava/util/Map;J)Ljava/util/Map;134
+h
+aorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#reset()V136
+
+reset137
+w
+porg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#reset(Ljava/util/Map;)V139
+
+getSlot140
+"
+SlidingWindowCounterBuilder141
+"
+recordingMeasurementWindows142
+"
+reportingMeasurementWindows143
+è
+áorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder#<init>(LCounter;)V145
+ã
+Éorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder#clock(Ljava/time/Clock;)Lorg/eclipse/ditto/connectivity/service/messaging/monitoring/metrics/SlidingWindowCounter$SlidingWindowCounterBuilder;147
+è
+áorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder#metricsAlert(LMetricsAlert;)Lorg/eclipse/ditto/connectivity/service/messaging/monitoring/metrics/SlidingWindowCounter$SlidingWindowCounterBuilder;149
++
+$Recovered#typeBindingLMetricsAlert;0151
+Ñ
+¸org.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder#cleanUpEnabled(Z)Lorg/eclipse/ditto/connectivity/service/messaging/monitoring/metrics/SlidingWindowCounter$SlidingWindowCounterBuilder;153
+§
+úorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder#recordingMeasurementWindows([LMeasurementWindow;)Lorg/eclipse/ditto/connectivity/service/messaging/monitoring/metrics/SlidingWindowCounter$SlidingWindowCounterBuilder;155
+K
+DRecovered#innerTypeBindingRecovered#typeBindingLMeasurementWindow;01157
+§
+úorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder#reportingMeasurementWindows([LMeasurementWindow;)Lorg/eclipse/ditto/connectivity/service/messaging/monitoring/metrics/SlidingWindowCounter$SlidingWindowCounterBuilder;159
+õ
+ìorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder#measurementWindows([LMeasurementWindow;)Lorg/eclipse/ditto/connectivity/service/messaging/monitoring/metrics/SlidingWindowCounter$SlidingWindowCounterBuilder;161
+
+measurementWindows162
+Ñ
+¸org.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder#maximumPerSlot(J)Lorg/eclipse/ditto/connectivity/service/messaging/monitoring/metrics/SlidingWindowCounter$SlidingWindowCounterBuilder;164
+±
+©org.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder#useLastTimestampForWindow(LMeasurementWindow;Ljava/lang/Long;)Lorg/eclipse/ditto/connectivity/service/messaging/monitoring/metrics/SlidingWindowCounter$SlidingWindowCounterBuilder;166
+ 
+useLastTimestampForWindow167
+ﬁ
+÷org.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter$SlidingWindowCounterBuilder#build()Lorg/eclipse/ditto/connectivity/service/messaging/monitoring/metrics/SlidingWindowCounter;169
+
+build170
+|
+uorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.SlidingWindowCounter#toString()Ljava/lang/String;172
+
+toString173J
+
+1
+12Z
+
+3	
+354jé
+G
+165@
+16516672 *
+1´	 ´($273:3B
+	
+9
+96
+
+11
+167
+D
+86>
+868715 *
+1˚	 ˚(273:3B
+	
+9
+16
+
+11
+142
+G
+154@
+15415572 *
+1ì	 ì($273:3B
+	
+9
+96
+
+11
+142
+
+99
+9910023
+@
+94:
+949572 *
+1Q Q(26:3B
+	
+9
+96
+
+
+11
+97
+F
+127?
+12712872 *
+1§ §(26:3B
+	
+9
+16
+
+11
+129
+@
+29:
+293015 *
+1. .(26:3B
+	
+9
+16
+
+
+11
+31
+
+68
+686923
+C
+84=
+848515 *
+1˙	 ˙(273:3B
+	
+9
+16
+
+
+11
+64
+
+47
+474823
+D
+107=
+10710872 *
+1h h(	26:3B
+	
+9
+96
+
+11
+109
+F
+122?
+12212372 *
+1Ó Ó(26:3B
+	
+9
+16
+
+11
+140
+
+156
+15615723
+C
+78=
+787915 *
+1˜	 ˜(273:3B
+	
+9
+16
+
+
+11
+46
+@
+35:
+353615 *
+11 1(26:3B
+	
+9
+16
+
+
+11
+37
+
+52
+525323
+C
+90=
+909115 *
+1˝	 ˝(273:3B
+	
+9
+16
+
+
+11
+61
+F
+171?
+17117272 *
+1∂ ∂(26:3B
+	
+9
+10
+
+11
+173
+@
+13:
+131415 *
+1& &(26:3B
+	
+9
+16
+
+
+11
+17
+G
+168@
+16816972 *
+1±	 ±(273:3B
+	
+9
+96
+
+11
+170
+F
+116?
+11611772 *
+1ë ë(26:3B
+	
+9
+16
+
+11
+121
+@
+49:
+495015 *
+15 5(26:3B
+	
+9
+16
+
+
+11
+51
+@
+70:
+707172 *
+1= =(26:3B
+	
+9
+16
+
+
+11
+12
+
+54
+545523
+D
+112=
+11211372 *
+1{ {(	26:3B
+	
+9
+96
+
+11
+109
+G
+160@
+16016172 *
+1ü	 ü($273:3B
+	
+9
+96
+
+11
+162
+C
+92=
+929315 *
+1˛	 ˛(273:3B
+	
+9
+16
+
+
+11
+67
+D
+110=
+11011172 *
+1q q(	26:3B
+	
+9
+96
+
+11
+109
+C
+80=
+808115 *
+1¯	 ¯(273:3B
+	
+9
+16
+
+
+11
+17
+
+21
+212223
+@
+32:
+323315 *
+1/ /(26:3B
+	
+9
+16
+
+
+11
+34
+F
+138?
+13813972 *
+1Í Í(26:3B
+	
+9
+16
+
+11
+137
+G
+144@
+14414572 *
+1Ä	 Ä(273:3B
+	
+9
+16
+
+11
+141
+F
+125?
+12512672 *
+1† †(26:3B
+	
+9
+16
+
+11
+124
+9
+64
+678 *
+1$ $((:3B
+	
+9
+10
+
+
+11
+12
+
+57
+575823
+G
+158@
+15815972 *
+1ô	 ô($273:3B
+	
+9
+96
+
+11
+143
+F
+118?
+11811972 *
+1õ õ(26:3B
+	
+9
+16
+
+11
+124
+F
+146?
+14614772 *
+1Ñ	 Ñ($273:3B
+	
+9
+96
+
+
+11
+17
+D
+88>
+888915 *
+1¸	 ¸(273:3B
+	
+9
+16
+
+11
+143
+F
+130?
+13013172 *
+1∫ ∫(26:3B
+	
+9
+96
+
+11
+132
+F
+148?
+14814972 *
+1â	 â($273:3B
+	
+9
+96
+
+
+11
+51
+F
+163?
+16316472 *
+1¶	 ¶($273:3B
+	
+9
+96
+
+
+11
+61
+D
+101=
+10110272 *
+1Y Y(	26:3B
+	
+9
+96
+
+11
+103
+D
+104=
+10410572 *
+1a a(	26:3B
+	
+9
+96
+
+11
+106
+@
+65:
+656615 *
+1; ;(26:3B
+	
+9
+16
+
+
+11
+67
+@
+38:
+383915 *
+12 2(26:3B
+	
+9
+16
+
+
+11
+40
+F
+135?
+13513672 *
+1Â Â(	26:3B
+	
+9
+96
+
+11
+137
+F
+152?
+15215372 *
+1é	 é($273:3B
+	
+9
+96
+
+
+11
+64
+@
+26:
+262715 *
+1, ,(26:3B
+	
+9
+16
+
+
+11
+28
+@
+59:
+596015 *
+16 6(26:3B
+	
+9
+16
+
+
+11
+61
+B
+73<
+73748 *
+1ı ı(326:3B
+	
+9
+96
+
+11
+141
+@
+62:
+626315 *
+17 7(26:3B
+	
+9
+16
+
+
+11
+64
+
+150
+15015123
+@
+18:
+181915 *
+1+ +(26:3B
+	
+9
+16
+
+
+11
+20
+@
+44:
+444515 *
+14 4(26:3B
+	
+9
+16
+
+
+11
+46
+F
+133?
+13313472 *
+1« «(26:3B
+	
+9
+16
+
+11
+132
+@
+41:
+414215 *
+13 3(26:3B
+	
+9
+16
+
+
+11
+43
+C
+82=
+828315 *
+1˘	 ˘(273:3B
+	
+9
+16
+
+
+11
+51
+F
+114?
+11411572 *
+1ç ç(26:3B
+	
+9
+16
+
+11
+120rﬂ@
+
+182124*
+1+ +($
+
+182125*
+1+ +($
+
+182125*
+1+' +(:
+
+262124*
+1, ,($
+
+262125*
+1, ,($
+
+262125*
+1,' ,(:
+
+444724*
+14 4(
+
+444725*
+14 4(
+
+444725*
+14 4()
+
+495224*
+15 5()
+
+495456*
+15 5(
+
+495725*
+15 5(
+
+495225*
+15 5()
+
+495225*
+15* 5(6
+
+656825*
+1; ;((
+
+707375*
+1=( =(C
+
+70676*
+1= =(!
+
+707324*
+1=D =(K
+
+707325*
+1=( =(C
+
+707377*
+1=( =(C
+
+704725*
+1>	 >(
+
+704477*
+1>	 >(
+
+704725*
+1>" >(0
+
+707877*
+1>" >(0
+
+701377*
+1?	 ?(
+
+708077*
+1? ?(
+
+705225*
+1@	 @(
+
+704977*
+1@	 @(
+
+705225*
+1@  @(,
+
+708277*
+1@  @(,
+
+706277*
+1A	 A(
+
+708477*
+1A" A(0
+
+702125*
+1B	 B(
+
+701877*
+1B	 B(
+
+702125*
+1B' B(B
+
+708677*
+1B' B(B
+
+702125*
+1C	 C(
+
+702677*
+1C	 C(
+
+702125*
+1C' C(B
+
+708877*
+1C' C(B
+
+705977*
+1D	 D(
+
+709077*
+1D" D(0
+
+706577*
+1E	 E(
+
+709277*
+1E* E(@
+
+704177*
+1G	 G(
+
+702125*
+1G# G(6
+
+701877*
+1G# G(6
+
+947398*
+1Q Q('
+
+949975*
+1Q9 Q(@
+
+947325*
+1Q Q('
+
+947377*
+1Q Q('
+
+949924*
+1QA Q(O
+
+949925*
+1Q9 Q(@
+
+947376*
+1R R(/
+
+1013577*
+1Z Z($
+
+1013577*
+1Z Z($
+
+1043877*
+1b b($
+
+1043877*
+1b b($
+
+107677*
+1i	 i(
+
+10711076*
+1i	 i(
+
+110677*
+1r	 r(
+
+11011276*
+1r	 r(
+
+1101377*
+1r r(!
+
+1101377*
+1r r(!
+
+1124477*
+1~ ~(
+
+1124725*
+1~ ~(
+
+1124477*
+1~ ~(
+
+112677*
+1! (A
+
+11211476*
+1! (A
+
+1123577*
+1B (V
+
+112677*
+1Ä Ä("
+
+11211676*
+1Ä Ä("
+
+1122977*
+1Ä' Ä(:
+
+1124477*
+1Ç Ç(
+
+1124725*
+1Ç Ç(
+
+1124477*
+1Ç Ç(
+
+112677*
+1É! É(A
+
+11211476*
+1É! É(A
+
+1123877*
+1ÉB É(V
+
+112677*
+1Ñ Ñ("
+
+11211676*
+1Ñ Ñ("
+
+1123277*
+1Ñ' Ñ(:
+
+1126277*
+1à à(
+
+1124177*
+1à8 à(E
+
+1124177*
+1à8 à(E
+
+112677*
+1â â(#
+
+11211876*
+1â â(#
+
+1166824*
+1í& í(,
+
+1166825*
+1í í(%
+
+1162125*
+1í/ í(B
+
+1161877*
+1í/ í(B
+
+116677*
+1ì ì(&
+
+11612276*
+1ì ì(&
+
+1165225*
+1ï ï(
+
+1164977*
+1ï ï(
+
+1164977*
+1ï) ï(5
+
+1165225*
+1ï) ï(5
+
+1164977*
+1ï) ï(5
+
+1164977*
+1ñ ñ(
+
+1165225*
+1ñ ñ(
+
+1164977*
+1ñ ñ(
+
+118677*
+1ú	 ú(
+
+11812576*
+1ú	 ú(
+
+1182977*
+1ú  ú(3
+
+118677*
+1ù	 ù(
+
+11812576*
+1ù	 ù(
+
+1183277*
+1ù  ù(3
+
+125677*
+1°/ °(4
+
+12512776*
+1°/ °(4
+
+1271377*
+1• •(
+
+1271377*
+1• •(
+
+1276824*
+1¶& ¶(,
+
+1276825*
+1¶ ¶(%
+
+1272125*
+1¶/ ¶(B
+
+1271877*
+1¶/ ¶(B
+
+127677*
+1™ ™(%
+
+12712276*
+1™ ™(%
+
+127677*
+1¨ ¨(%
+
+12712276*
+1¨ ¨(%
+
+130677*
+1º º(
+
+13013376*
+1º º(
+
+1302977*
+1º º(1
+
+1303577*
+1º3 º(G
+
+1303577*
+1º3 º(G
+
+130677*
+1æ æ(
+
+13013376*
+1æ æ(
+
+1303277*
+1æ æ(-
+
+1303877*
+1æ/ æ(C
+
+1303877*
+1æ/ æ(C
+
+1331377*
+1   (
+
+1331377*
+1   (
+
+1336824*
+1À& À(,
+
+1336825*
+1À À(%
+
+1332125*
+1À/ À(B
+
+1332677*
+1À/ À(B
+
+1336577*
+1Õ Õ('
+
+1336577*
+1Õ Õ('
+
+1336577*
+1Œ Œ(-
+
+1336577*
+1Œ Œ(-
+
+133677*
+1”" ”()
+
+13312276*
+1”" ”()
+
+133677*
+1’" ’()
+
+13312276*
+1’" ’()
+
+1335977*
+1Ÿ) Ÿ(7
+
+135677*
+1Ê	 Ê(
+
+13513876*
+1Ê	 Ê(
+
+1352977*
+1Ê Ê("
+
+135677*
+1Á	 Á(
+
+13513876*
+1Á	 Á(
+
+1353277*
+1Á Á("
+
+784724*
+1˜ ˜(
+
+784725*
+1˜ ˜(
+
+784725*
+1˜ ˜(-
+
+825224*
+1˘ ˘(
+
+825225*
+1˘ ˘(
+
+825225*
+1˘ ˘(*
+
+862124*
+1˚ ˚("
+
+862125*
+1˚ ˚("
+
+862125*
+1˚% ˚(@
+
+882124*
+1¸ ¸("
+
+882125*
+1¸ ¸("
+
+882125*
+1¸% ¸(@
+
+926825*
+1˛ ˛(,
+
+926825*
+1˛[ ˛(l
+
+1449975*
+1Ä3 Ä(:
+
+1447376*
+1Ä Ä(,
+
+1449924*
+1Ä; Ä(I
+
+1449925*
+1Ä3 Ä(:
+
+1447325*
+1Å Å(
+
+1447377*
+1Å Å(
+
+1444725*
+1Å Å( 
+
+1447877*
+1Å Å( 
+
+1467398*
+1Ñ	 Ñ($
+
+1467325*
+1Ñ	 Ñ($
+
+1467377*
+1Ñ	 Ñ($
+
+1467325*
+1Ö Ö(
+
+1467377*
+1Ö Ö(
+
+1468077*
+1Ö Ö(
+
+1467325*
+1Ü Ü(
+
+1467377*
+1Ü Ü(
+
+1487398*
+1â	 â($
+
+14815075*
+1âB â(N
+
+1487325*
+1â	 â($
+
+1487377*
+1â	 â($
+
+14815024*
+1âO â([
+
+1485456*
+1â2 â(3
+
+1485725*
+1â3 â(;
+
+14815025*
+1âB â(N
+
+1487325*
+1ä ä(
+
+1487377*
+1ä ä(
+
+1485225*
+1ä ä(
+
+1488277*
+1ä ä(
+
+1487325*
+1ã ã(
+
+1487377*
+1ã ã(
+
+1527398*
+1é	 é($
+
+1527325*
+1é	 é($
+
+1527377*
+1é	 é($
+
+1527325*
+1è è(
+
+1527377*
+1è è(
+
+1528477*
+1è è( 
+
+1527325*
+1ê ê(
+
+1527377*
+1ê ê(
+
+1547398*
+1ì	 ì($
+
+15415675*
+1î î((
+
+1547325*
+1ì	 ì($
+
+1547377*
+1ì	 ì($
+
+15415624*
+1î, î(G
+
+1546825*
+1î î((
+
+1547325*
+1ï ï(
+
+1547377*
+1ï ï(
+
+1542125*
+1ï ï(-
+
+1548677*
+1ï ï(-
+
+1547325*
+1ñ ñ(
+
+1547377*
+1ñ ñ(
+
+1587398*
+1ô	 ô($
+
+15815675*
+1ö ö((
+
+1587325*
+1ô	 ô($
+
+1587377*
+1ô	 ô($
+
+15815624*
+1ö, ö(G
+
+1586825*
+1ö ö((
+
+1587325*
+1õ õ(
+
+1587377*
+1õ õ(
+
+1582125*
+1õ õ(-
+
+1588877*
+1õ õ(-
+
+1587325*
+1ú ú(
+
+1587377*
+1ú ú(
+
+1607398*
+1ü	 ü($
+
+16015675*
+1† †((
+
+1607325*
+1ü	 ü($
+
+1607377*
+1ü	 ü($
+
+16015624*
+1†, †(>
+
+1606825*
+1† †((
+
+1607325*
+1° °(
+
+1607377*
+1° °(
+
+1602125*
+1° °(-
+
+1608877*
+1° °(-
+
+1607325*
+1¢ ¢(
+
+1607377*
+1¢ ¢(
+
+1602125*
+1¢ ¢(-
+
+1608677*
+1¢ ¢(-
+
+1607325*
+1£ £(
+
+1607377*
+1£ £(
+
+1637398*
+1¶	 ¶($
+
+1637325*
+1¶	 ¶($
+
+1637377*
+1¶	 ¶($
+
+1637325*
+1ß ß(
+
+1637377*
+1ß ß(
+
+1639077*
+1ß ß( 
+
+1637325*
+1® ®(
+
+1637377*
+1® ®(
+
+1657398*
+1´	 ´($
+
+1656875*
+1´E ´(V
+
+1657325*
+1´	 ´($
+
+1657377*
+1´	 ´($
+
+1656824*
+1´W ´(]
+
+1656825*
+1´E ´(V
+
+1657325*
+1≠ ≠(
+
+1657377*
+1≠ ≠(
+
+1659277*
+1≠ ≠((
+
+1657325*
+1Æ Æ(
+
+1657377*
+1Æ Æ(
+
+168698*
+1±	 ±(
+
+168625*
+1±	 ±(
+
+168676*
+1≤ ≤(,
+
+1687325*
+1≤- ≤(1
+
+1687377*
+1≤- ≤(1
+
+1711377*
+1π π(!
+
+1712125*
+1∫< ∫(O
+
+1711877*
+1∫< ∫(O
+
+1712125*
+1ª< ª(O
+
+1712677*
+1ª< ª(O
+
+1712977*
+1º, º(?
+
+1713277*
+1Ω, Ω(?
+
+1713577*
+1æ- æ(A
+
+1713877*
+1ø- ø(A
+
+1714177*
+1¿& ¿(3
+
+1714725*
+1¡' ¡(5
+
+1714477*
+1¡' ¡(5
+
+1715225*
+1¬% ¬(1
+
+1714977*
+1¬% ¬(1
+
+1715977*
+1√' √(5
+
+1716277*
+1ƒ' ƒ(5
+
+1716577*
+1≈/ ≈(E

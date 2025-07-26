@@ -1,0 +1,663 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508546537*java2.B≠
+á
+Åthings/service/src/test/java/org/eclipse/ditto/things/service/persistence/actors/strategies/commands/EntityTagCalculatorTest.java2
+
+package4
+L
+Gorg.eclipse.ditto.things.service.persistence.actors.strategies.commands5
+d
+_org.eclipse.ditto.things.service.persistence.actors.strategies.commands.EntityTagCalculatorTest7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+
+EntityTagCalculatorTest12
+o
+iorg.eclipse.ditto.things.service.persistence.actors.strategies.commands.EntityTagCalculatorTest.underTest14
+
+field15
+
+private16
+
+	underTest17
+
+EntityTagCalculator19
+
+unknown20
+
+is type21
+
+
+uses22
+n
+horg.eclipse.ditto.things.service.persistence.actors.strategies.commands.EntityTagCalculatorTest#setUp()V24
+
+method25
+
+setUp26
+
+
+BeforeEach28
+
+annotated by29
+(
+"Recovered#typeBindingLBeforeEach;031
+
+
+references32
+w
+qorg.eclipse.ditto.things.service.persistence.actors.strategies.commands.EntityTagCalculatorTest#testVisitThing()V34
+
+testVisitThing35
+
+
+Test37
+"
+Recovered#typeBindingLTest;039
+(
+"org.eclipse.ditto.json.JsonPointer41
+
+returns42
+T
+Norg.eclipse.ditto.json.JsonPointer#empty()Lorg/eclipse/ditto/json/JsonPointer;44
+
+calls45
+Å
+{org.eclipse.ditto.things.service.persistence.actors.strategies.commands.EntityTagCalculatorTest#testVisitThingDefinition()V47
+
+testVisitThingDefinition48
+z
+torg.eclipse.ditto.things.service.persistence.actors.strategies.commands.EntityTagCalculatorTest#testVisitPolicyId()V50
+
+testVisitPolicyId51
+|
+vorg.eclipse.ditto.things.service.persistence.actors.strategies.commands.EntityTagCalculatorTest#testVisitAttributes()V53
+
+testVisitAttributes54
+{
+uorg.eclipse.ditto.things.service.persistence.actors.strategies.commands.EntityTagCalculatorTest#testVisitAttribute()V56
+
+testVisitAttribute57
+i
+corg.eclipse.ditto.json.JsonPointer#of(Ljava/lang/CharSequence;)Lorg/eclipse/ditto/json/JsonPointer;59
+z
+torg.eclipse.ditto.things.service.persistence.actors.strategies.commands.EntityTagCalculatorTest#testVisitFeatures()V61
+
+testVisitFeatures62
+y
+sorg.eclipse.ditto.things.service.persistence.actors.strategies.commands.EntityTagCalculatorTest#testVisitFeature()V64
+
+testVisitFeature65
+É
+}org.eclipse.ditto.things.service.persistence.actors.strategies.commands.EntityTagCalculatorTest#testVisitFeatureProperties()V67
+ 
+testVisitFeatureProperties68
+Å
+{org.eclipse.ditto.things.service.persistence.actors.strategies.commands.EntityTagCalculatorTest#testVisitFeatureProperty()V70
+
+testVisitFeatureProperty71
+ã
+Ñorg.eclipse.ditto.things.service.persistence.actors.strategies.commands.EntityTagCalculatorTest#testVisitFeatureDesiredProperties()V73
+'
+!testVisitFeatureDesiredProperties74
+â
+Çorg.eclipse.ditto.things.service.persistence.actors.strategies.commands.EntityTagCalculatorTest#testVisitFeatureDesiredProperty()V76
+%
+testVisitFeatureDesiredProperty77
+É
+}org.eclipse.ditto.things.service.persistence.actors.strategies.commands.EntityTagCalculatorTest#testVisitFeatureDefinition()V79
+ 
+testVisitFeatureDefinition80J
+
+1
+12Z
+
+3	
+354j˜
+9
+64
+678 *
+1 (:3B
+	
+9
+10
+
+
+11
+12
+@
+46:
+464725 *
+1. .(26:3B
+	
+9
+10
+
+
+11
+48
+@
+69:
+697025 *
+1\ \(26:3B
+	
+9
+10
+
+
+11
+71
+@
+49:
+495025 *
+15 5(26:3B
+	
+9
+10
+
+
+11
+51
+@
+78:
+787925 *
+1q q(26:3B
+	
+9
+10
+
+
+11
+80
+
+43
+434420
+@
+52:
+525325 *
+1; ;(26:3B
+	
+9
+10
+
+
+11
+54
+
+30
+303120
+@
+55:
+555625 *
+1A A(26:3B
+	
+9
+10
+
+
+11
+57
+@
+63:
+636425 *
+1N N(26:3B
+	
+9
+10
+
+
+11
+65
+
+27
+272820
+
+36
+363720
+
+18
+181920
+@
+72:
+727325 *
+1c c(26:3B
+	
+9
+10
+
+
+11
+74
+@
+13:
+131415 *
+1! !(26:3B
+	
+9
+16
+
+
+11
+17
+
+38
+383920
+@
+60:
+606125 *
+1H H(26:3B
+	
+9
+10
+
+
+11
+62
+@
+66:
+666725 *
+1U U(26:3B
+	
+9
+10
+
+
+11
+68
+@
+75:
+757625 *
+1j j(26:3B
+	
+9
+10
+
+
+11
+77
+
+58
+585920
+@
+23:
+232425 *
+1# #(26:3B
+	
+9
+10
+
+
+11
+26
+@
+33:
+333425 *
+1( ((26:3B
+	
+9
+10
+
+
+11
+35
+
+40
+404120rÎ
+
+131821*
+1! !( 
+
+131822*
+1! !( 
+
+131822*
+1!! !(*
+
+232729*
+1# #(
+
+233022*
+1# #(
+
+231822*
+1%	 %(
+
+231332*
+1%	 %(
+
+333629*
+1( ((
+
+333822*
+1( ((
+
+
+331332*
+1* *(
+
+331822*
+1* *(
+
+331332*
+1* *(
+
+334042*
+1*) *(4
+
+334032*
+1*) *(4
+
+334345*
+1*5 *(:
+
+334022*
+1*) *(4
+
+463629*
+1. .(
+
+463822*
+1. .(
+
+
+461332*
+11 1(
+
+461822*
+11 1(
+
+461332*
+11 1(
+
+493629*
+15 5(
+
+493822*
+15 5(
+
+
+491332*
+17 7(
+
+491822*
+17 7(
+
+491332*
+17 7(
+
+523629*
+1; ;(
+
+523822*
+1; ;(
+
+
+521332*
+1= =(
+
+521822*
+1= =(
+
+521332*
+1= =(
+
+553629*
+1A A(
+
+553822*
+1A A(
+
+
+554021*
+1C C((
+
+554022*
+1C C(
+
+554042*
+1C+ C(6
+
+554032*
+1C+ C(6
+
+555845*
+1C7 C(9
+
+554022*
+1C+ C(6
+
+551332*
+1D D(
+
+551822*
+1D D(
+
+551332*
+1D D(
+
+603629*
+1H H(
+
+603822*
+1H H(
+
+
+601332*
+1J J(
+
+601822*
+1J J(
+
+601332*
+1J J(
+
+633629*
+1N N(
+
+633822*
+1N N(
+
+
+634021*
+1P P("
+
+634022*
+1P P(
+
+634042*
+1P% P(0
+
+634032*
+1P% P(0
+
+635845*
+1P1 P(3
+
+634022*
+1P% P(0
+
+631332*
+1Q Q(
+
+631822*
+1Q Q(
+
+631332*
+1Q Q(
+
+663629*
+1U U(
+
+663822*
+1U U(
+
+
+664021*
+1W W("
+
+664022*
+1W W(
+
+664042*
+1W% W(0
+
+664032*
+1W% W(0
+
+665845*
+1W1 W(3
+
+664022*
+1W% W(0
+
+661332*
+1X X(
+
+661822*
+1X X(
+
+661332*
+1X X(
+
+693629*
+1\ \(
+
+693822*
+1\ \(
+
+
+694021*
+1^ ^("
+
+694022*
+1^ ^(
+
+694042*
+1^% ^(0
+
+694032*
+1^% ^(0
+
+695845*
+1^1 ^(3
+
+694022*
+1^% ^(0
+
+691332*
+1_ _(
+
+691822*
+1_ _(
+
+691332*
+1_ _(
+
+723629*
+1c c(
+
+723822*
+1c c(
+
+
+724021*
+1e e("
+
+724022*
+1e e(
+
+724042*
+1e% e(0
+
+724032*
+1e% e(0
+
+725845*
+1e1 e(3
+
+724022*
+1e% e(0
+
+721332*
+1f f(
+
+721822*
+1f f(
+
+721332*
+1f f(
+
+753629*
+1j j(
+
+753822*
+1j j(
+
+
+754021*
+1l l("
+
+754022*
+1l l(
+
+754042*
+1l% l(0
+
+754032*
+1l% l(0
+
+755845*
+1l1 l(3
+
+754022*
+1l% l(0
+
+751332*
+1m m(
+
+751822*
+1m m(
+
+751332*
+1m m(
+
+783629*
+1q q(
+
+783822*
+1q q(
+
+
+784021*
+1s s("
+
+784022*
+1s s(
+
+784042*
+1s% s(0
+
+784032*
+1s% s(0
+
+785845*
+1s1 s(3
+
+784022*
+1s% s(0
+
+781332*
+1t t(
+
+781822*
+1t t(
+
+781332*
+1t t(

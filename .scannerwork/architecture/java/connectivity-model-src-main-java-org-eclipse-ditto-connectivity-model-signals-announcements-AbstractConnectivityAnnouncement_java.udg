@@ -1,0 +1,581 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508505378*java2.B¸
+á
+Åconnectivity/model/src/main/java/org/eclipse/ditto/connectivity/model/signals/announcements/AbstractConnectivityAnnouncement.java2
+
+package4
+?
+:org.eclipse.ditto.connectivity.model.signals.announcements5
+`
+[org.eclipse.ditto.connectivity.model.signals.announcements.AbstractConnectivityAnnouncement7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+&
+ AbstractConnectivityAnnouncement12
+2
+,Recovered#typeBindingLAbstractAnnouncement;014
+
+unknown15
+
+extends16
+6
+0Recovered#typeBindingLConnectivityAnnouncement;018
+
+
+implements19
+
+
+uses20
+n
+horg.eclipse.ditto.connectivity.model.signals.announcements.AbstractConnectivityAnnouncement.connectionId22
+
+field23
+
+private24
+
+connectionId25
+
+ConnectionId27
+
+is type28
+à
+Åorg.eclipse.ditto.connectivity.model.signals.announcements.AbstractConnectivityAnnouncement#<init>(LConnectionId;LDittoHeaders;)V30
+
+method31
+
+	protected32
+*
+$Recovered#typeBindingLConnectionId;034
+
+	has param35
+*
+$Recovered#typeBindingLDittoHeaders;037
+
+calls38
+
+
+references39
+ñ
+èorg.eclipse.ditto.connectivity.model.signals.announcements.AbstractConnectivityAnnouncement#deserializeConnectionId(LJsonObject;)LConnectionId;41
+
+deserializeConnectionId42
+
+returns43
+(
+"Recovered#typeBindingLJsonObject;045
+1
++Recovered#typeBindingLJsonFieldDefinition;047
+:
+4Recovered#typeBindingLConnectionIdInvalidException;049
+
+JsonParseException51
+…
+¬org.eclipse.ditto.connectivity.model.signals.announcements.AbstractConnectivityAnnouncement#getJsonParseException(LJsonFieldDefinition;Ljava/lang/Class;Ljava/lang/Throwable;)LJsonParseException;53
+
+getJsonParseException54
+
+JsonExceptionBuilder56
+“
+Àorg.eclipse.ditto.connectivity.model.signals.announcements.AbstractConnectivityAnnouncement#getJsonParseExceptionBuilder(LJsonFieldDefinition;Ljava/lang/Class;Ljava/lang/Throwable;)LJsonExceptionBuilder;58
+"
+getJsonParseExceptionBuilder59
+0
+*Recovered#typeBindingLJsonParseException;061
+º
+µorg.eclipse.ditto.connectivity.model.signals.announcements.AbstractConnectivityAnnouncement#appendConnectivityAnnouncementPayload(LJsonObjectBuilder;Ljava/util/function/Predicate;)V63
++
+%appendConnectivityAnnouncementPayload64
+/
+)Recovered#typeBindingLJsonObjectBuilder;066
+'
+!Recovered#typeBindingLJsonField;068
+}
+worg.eclipse.ditto.connectivity.model.signals.announcements.AbstractConnectivityAnnouncement#getEntityId()LConnectionId;70
+
+getEntityId71
+Ä
+zorg.eclipse.ditto.connectivity.model.signals.announcements.AbstractConnectivityAnnouncement#getResourcePath()LJsonPointer;73
+
+getResourcePath74
+
+JsonPointer76
+Ö
+org.eclipse.ditto.connectivity.model.signals.announcements.AbstractConnectivityAnnouncement#getResourceType()Ljava/lang/String;78
+
+getResourceType79
+§
+ùorg.eclipse.ditto.connectivity.model.signals.announcements.AbstractConnectivityAnnouncement#appendPayload(LJsonObjectBuilder;Ljava/util/function/Predicate;)V81
+
+appendPayload82
+~
+xorg.eclipse.ditto.connectivity.model.signals.announcements.AbstractConnectivityAnnouncement#toString()Ljava/lang/String;84
+
+toString85
+
+AbstractAnnouncement87
+}
+worg.eclipse.ditto.connectivity.model.signals.announcements.AbstractConnectivityAnnouncement#equals(Ljava/lang/Object;)Z89
+
+equals90
+m
+gorg.eclipse.ditto.connectivity.model.signals.announcements.AbstractConnectivityAnnouncement#hashCode()I92
+
+hashCode93J
+
+1
+12Z
+
+3	
+354j√	
+
+36
+363715
+
+48
+484915
+
+60
+606115
+@
+77:
+777831 *
+1g g(26:3B
+	
+9
+10
+
+
+11
+79
+@
+40:
+404131 *
+19 9(26:3B
+	
+9
+32
+
+
+11
+42
+
+75
+757615
+
+50
+505115
+
+65
+656615
+
+17
+171815
+
+26
+262715
+
+13
+131415
+
+86
+868715
+
+44
+444515
+@
+57:
+575831 *
+1I I(26:3B
+	
+9
+32
+
+
+11
+59
+
+55
+555615
+
+33
+333415
+B
+91<
+919231 *
+1Ä Ä(26:3B
+	
+9
+10
+
+
+11
+93
+@
+21:
+212223 *
+1, ,(26:3B
+	
+9
+24
+
+
+11
+25
+9
+64
+678 *
+1( ((7:3B
+	
+9
+10
+
+
+11
+12
+@
+52:
+525331 *
+1C C(26:3B
+	
+9
+32
+
+
+11
+54
+@
+29:
+293031 *
+14 4(26:3B
+	
+9
+32
+
+
+11
+12
+
+67
+676815
+@
+72:
+727331 *
+1b b(26:3B
+	
+9
+10
+
+
+11
+74
+
+46
+464715
+@
+62:
+626331 *
+1Z Z(26:3B
+	
+9
+32
+
+
+11
+64
+@
+69:
+697031 *
+1] ](26:3B
+	
+9
+10
+
+
+11
+71
+@
+80:
+808131 *
+1l l(26:3B
+	
+9
+32
+
+
+11
+82
+@
+88:
+888931 *
+1w w(26:3B
+	
+9
+10
+
+
+11
+90
+@
+83:
+838431 *
+1r r(26:3B
+	
+9
+10
+
+
+11
+85rü
+
+61316*
+1) )(%
+
+61719*
+1* *(,
+
+61320*
+1) )(%
+
+61720*
+1* *(,
+
+212628*
+1, ,(
+
+212620*
+1, ,(
+
+212620*
+1,  ,(,
+
+293335*
+146 4(B
+
+293635*
+14W 4(c
+
+29638*
+14 4(/
+
+293328*
+14C 4(O
+
+293320*
+146 4(B
+
+293628*
+14d 4(p
+
+293620*
+14W 4(c
+
+29620*
+16	 6(
+
+29639*
+16	 6(
+
+292620*
+16 6(
+
+292139*
+16 6(
+
+402643*
+19 9("
+
+404435*
+19A 9(K
+
+402620*
+19 9("
+
+404428*
+19L 9(V
+
+404420*
+19A 9(K
+
+404628*
+1:+ :(:
+
+404620*
+1: :("
+
+404828*
+1>5 >(6
+
+404820*
+1> >(4
+
+405043*
+1? ?((
+
+40639*
+1? ?((
+
+405238*
+1? ?((
+
+403320*
+1?: ?(F
+
+525043*
+1C C((
+
+524635*
+1CE C(X
+
+525020*
+1C C((
+
+524628*
+1C\ C(k
+
+524620*
+1CE C(X
+
+525543*
+1E E(,
+
+52639*
+1E E(,
+
+525738*
+1E E(,
+
+575543*
+1I I(*
+
+574635*
+1J J(&
+
+575520*
+1I I(*
+
+576020*
+1I+ I(=
+
+574628*
+1J* J(9
+
+574620*
+1J J(&
+
+626535*
+1ZC Z(T
+
+626528*
+1ZU Z(f
+
+626520*
+1ZC Z(T
+
+626720*
+1[ [( 
+
+692643*
+1^ ^(
+
+692620*
+1^ ^(
+
+692620*
+1_ _(
+
+692139*
+1_ _(
+
+727543*
+1c c(
+
+727520*
+1c c(
+
+806535*
+1m( m(9
+
+806528*
+1m: m(K
+
+806520*
+1m( m(9
+
+806720*
+1m] m(f
+
+802139*
+1nW n(c
+
+802620*
+1nW n(c
+
+802139*
+1nW n(c
+
+80639*
+1o	 o(.
+
+806238*
+1o	 o(.
+
+83639*
+1t t(
+
+838620*
+1t t(
+
+83639*
+1t t(
+
+832620*
+1t7 t(C
+
+832139*
+1t7 t(C
+
+88639*
+1y y(
+
+888620*
+1y y(
+
+88639*
+1y y(
+
+88620*
+1z% z(E
+
+882620*
+1zQ z(]
+
+882139*
+1zQ z(]
+
+882620*
+1z_ z(k
+
+882139*
+1z_ z(k
+
+912620*
+1Ç Ç()
+
+912139*
+1Ç Ç()
+
+91639*
+1Ç+ Ç(0
+
+918620*
+1Ç+ Ç(0
+
+91639*
+1Ç+ Ç(0

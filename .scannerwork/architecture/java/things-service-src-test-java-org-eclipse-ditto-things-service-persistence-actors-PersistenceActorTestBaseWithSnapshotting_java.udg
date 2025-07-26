@@ -1,0 +1,1095 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508650821*java2.Bä0
+ƒ
+~things/service/src/test/java/org/eclipse/ditto/things/service/persistence/actors/PersistenceActorTestBaseWithSnapshotting.java2
+
+package4
+8
+3org.eclipse.ditto.things.service.persistence.actors5
+a
+\org.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+.
+(PersistenceActorTestBaseWithSnapshotting12
+6
+0Recovered#typeBindingLPersistenceActorTestBase;014
+
+unknown15
+
+extends16
+
+
+uses17
+q
+korg.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting.FIELD_SELECTOR19
+
+field20
+
+	protected21
+
+FIELD_SELECTOR22
+
+JsonFieldSelector24
+
+is type25
+‚
+|org.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting.DEFAULT_TEST_SNAPSHOT_THRESHOLD27
+%
+DEFAULT_TEST_SNAPSHOT_THRESHOLD28
+u
+oorg.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting.VERY_LONG_DURATION30
+
+private31
+
+VERY_LONG_DURATION32
+…
+org.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting.PERSISTENCE_ASSERT_WAIT_AT_MOST_MS34
+(
+"PERSISTENCE_ASSERT_WAIT_AT_MOST_MS35
+„
+~org.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting.PERSISTENCE_ASSERT_RETRY_DELAY_MS37
+'
+!PERSISTENCE_ASSERT_RETRY_DELAY_MS38
+r
+lorg.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting.SNAPSHOT_PREFIX40
+
+SNAPSHOT_PREFIX41
+u
+oorg.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting.SNAPSHOT_THRESHOLD43
+
+SNAPSHOT_THRESHOLD44
+
+
+references45
+t
+norg.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting.SNAPSHOT_INTERVAL47
+
+SNAPSHOT_INTERVAL48
+x
+rorg.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting.ACTIVITY_CHECK_PREFIX50
+
+ACTIVITY_CHECK_PREFIX51
+z
+torg.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting.ACTIVITY_CHECK_INTERVAL53
+
+ACTIVITY_CHECK_INTERVAL54
+‚
+|org.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting.ACTIVITY_CHECK_DELETED_INTERVAL56
+%
+ACTIVITY_CHECK_DELETED_INTERVAL57
+o
+iorg.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting.eventAdapter59
+
+eventAdapter60
+
+ThingMongoEventAdapter62
+t
+norg.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting.journalTestHelper64
+
+journalTestHelper65
+
+ThingsJournalTestHelper67
+(
+"Recovered#typeBindingLThingEvent;069
+u
+oorg.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting.snapshotTestHelper71
+
+snapshotTestHelper72
+
+ThingsSnapshotTestHelper74
+#
+Recovered#typeBindingLThing;076
+
+yorg.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting.commandToEventMapperRegistry78
+"
+commandToEventMapperRegistry79
+%
+Recovered#typeBindingLCommand;081
+
+bound by82
+/
+)Recovered#typeBindingLEventsourcedEvent;084
+ˆ
+org.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting#createNewDefaultTestConfig()LConfig;86
+
+method87
+ 
+createNewDefaultTestConfig88
+
+Config90
+
+returns91
+s
+morg.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting#setup(LConfig;)V93
+
+setup94
+$
+Recovered#typeBindingLConfig;096
+
+	has param97
+
+PersistenceActorTestBase99
+2
++Recovered#typeBindingLExtendedActorSystem;0101
+*
+#Recovered#typeBindingLCreateThing;0103
+*
+#Recovered#typeBindingLModifyThing;0105
+*
+#Recovered#typeBindingLDeleteThing;0107
+‹
+ƒorg.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting#assertThingInSnapshot(LThing;LThing;)V109
+
+assertThingInSnapshot110
+Œ
+„org.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting#assertThingInResponse(LThing;LThing;J)V112
+
+calls113
+Š
+‚org.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting#assertThingInJournal(LThing;LThing;)V115
+
+assertThingInJournal116
+
+assertThingInResponse117
+„
+}org.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting#assertSnapshotsEmpty(LThingId;)V119
+
+assertSnapshotsEmpty120
+&
+Recovered#typeBindingLThingId;0122
+
+ˆorg.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting#assertSnapshots(LThingId;Ljava/util/List;)V124
+Ž
+†org.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting#assertJournal(LThingId;Ljava/util/List;)V126
+
+assertJournal127
+‘
+‰org.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting#retryOnAssertionError(Ljava/lang/Runnable;)V129
+|
+uorg.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting#toDeletedThing(I)LThing;131
+
+toDeletedThing132
+
+Thing134
+‘
+‰org.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting#toEvent(LCommand;LThing;)LEventsourcedEvent;136
+
+toEvent137
+
+EventsourcedEvent139
+
+assertSnapshots140
+
+retryOnAssertionError141
+œ
+”org.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting#convertJournalEntryToEvent(LBsonDocument;J)LThingEvent;143
+!
+convertJournalEntryToEvent144
+
+
+ThingEvent146
++
+$Recovered#typeBindingLBsonDocument;0148
+8
+1Recovered#typeBindingLAbstractEventsourcedEvent;0150
+—
+org.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting#convertSnapshotDataToThing(LBsonDocument;J)LThing;152
+!
+convertSnapshotDataToThing153
+,
+%Recovered#typeBindingLDittoBsonJson;0155
+)
+"Recovered#typeBindingLJsonObject;0157
+¡
+™org.eclipse.ditto.things.service.persistence.actors.PersistenceActorTestBaseWithSnapshotting#convertDomainIdToPersistenceId(LEntityId;)Ljava/lang/String;159
+%
+convertDomainIdToPersistenceId160
+'
+ Recovered#typeBindingLEntityId;0162J
+
+1
+12Z
+
+3	
+354j˜
+F
+158?
+15815987 *
+1í í(26:3B
+	
+9
+31
+
+11
+160
+
+104
+10410515
+@
+49:
+495020 *
+1L L(26:3B
+	
+9
+31
+
+
+11
+51
+@
+46:
+464720 *
+1K K(26:3B
+	
+9
+31
+
+
+11
+48
+
+161
+16116215
+
+121
+12112215
+F
+108?
+10810987 *
+1Ž Ž(26:3B
+	
+9
+31
+
+11
+110
+
+75
+757615
+
+145
+14514615
+@
+39:
+394020 *
+1I I(26:3B
+	
+9
+31
+
+
+11
+41
+
+95
+959615
+@
+77:
+777820 *
+1T T(26:3B
+	
+9
+31
+
+
+11
+79
+
+98
+989915
+
+133
+13313415
+@
+18:
+181920 *
+1A A(26:3B
+	
+9
+21
+
+
+11
+22
+@
+26:
+262720 *
+1D D(26:3B
+	
+9
+21
+
+
+11
+28
+@
+55:
+555620 *
+1N N(26:3B
+	
+9
+31
+
+
+11
+57
+F
+123?
+12312487 *
+1Ï Ï(	26:3B
+	
+9
+21
+
+11
+140
+
+73
+737415
+@
+70:
+707120 *
+1R R(26:3B
+	
+9
+31
+
+
+11
+72
+
+66
+666715
+@
+92:
+929387 *
+1a a(26:3B
+	
+9
+21
+
+
+11
+94
+9
+64
+678 *
+1? ?(?:3B
+	
+9
+10
+
+
+11
+12
+
+138
+13813915
+
+154
+15415515
+
+23
+232415
+
+102
+10210315
+
+89
+899015
+F
+142?
+14214387 *
+1Ü Ü(26:3B
+	
+9
+31
+
+11
+144
+F
+151?
+15115287 *
+1â â(26:3B
+	
+9
+31
+
+11
+153
+F
+111?
+11111287 *
+1› ›(26:3B
+	
+9
+21
+
+11
+117
+
+68
+686915
+F
+114?
+11411587 *
+1“ “(26:3B
+	
+9
+31
+
+11
+116
+F
+118?
+11811987 *
+1¥ ¥(	26:3B
+	
+9
+21
+
+11
+120
+@
+36:
+363720 *
+1G G(26:3B
+	
+9
+31
+
+
+11
+38
+
+156
+15615715
+
+83
+838415
+
+106
+10610715
+@
+29:
+293020 *
+1E E(26:3B
+	
+9
+31
+
+
+11
+32
+F
+125?
+12512687 *
+1© ©(	26:3B
+	
+9
+21
+
+11
+127
+@
+58:
+585920 *
+1P P(26:3B
+	
+9
+31
+
+
+11
+60
+@
+42:
+424320 *
+1J J(26:3B
+	
+9
+21
+
+
+11
+44
+
+61
+616215
+
+147
+14714815
+@
+52:
+525320 *
+1M M(26:3B
+	
+9
+31
+
+
+11
+54
+
+149
+14915015
+
+100
+10010115
+F
+130?
+13013187 *
+1¾ ¾(26:3B
+	
+9
+21
+
+11
+132
+
+80
+808115
+@
+33:
+333420 *
+1F F(26:3B
+	
+9
+31
+
+
+11
+35
+F
+135?
+13513687 *
+1Å Å(26:3B
+	
+9
+21
+
+11
+137
+
+13
+131415
+@
+63:
+636420 *
+1Q Q(26:3B
+	
+9
+31
+
+
+11
+65
+F
+128?
+12812987 *
+1Ø Ø(26:3B
+	
+9
+31
+
+11
+141
+@
+85:
+858687 *
+1W W(26:3B
+	
+9
+21
+
+
+11
+88r¨$
+
+61316*
+1?H ?(`
+
+61317*
+1?H ?(`
+
+182325*
+1A A(#
+
+182317*
+1A A(#
+
+182317*
+1A$ A(2
+
+423945*
+1J. J(=
+
+463945*
+1K5 K(D
+
+524945*
+1M; M(P
+
+554945*
+1NC N(X
+
+586125*
+1P P(#
+
+586117*
+1P P(#
+
+586117*
+1P$ P(0
+
+636625*
+1Q Q($
+
+636617*
+1Q Q($
+
+636817*
+1Q% Q(/
+
+636617*
+1Q4 Q(E
+
+707325*
+1R R(%
+
+707317*
+1R R(%
+
+707517*
+1R& R(+
+
+707317*
+1R- R(?
+
+778082*
+1T! T((
+
+778017*
+1T! T((
+
+778017*
+1T9 T(@
+
+777517*
+1TE T(J
+
+778317*
+1TL T(]
+
+858991*
+1W W(
+
+858917*
+1W W(
+
+854245*
+1Y Y(.
+
+852645*
+1Z Z(8
+
+855245*
+1[ [(3
+
+852945*
+1[S [(e
+
+855545*
+1\ \(;
+
+852945*
+1]7 ](I
+
+854645*
+1^ ^(-
+
+852945*
+1^M ^(_
+
+929597*
+1b  b(&
+
+929525*
+1b' b(3
+
+929517*
+1b  b(&
+
+92645*
+1c	 c(
+
+929817*
+1c	 c(
+
+92645*
+1c	 c(
+
+926117*
+1d	 d(
+
+925845*
+1d	 d(
+
+9210017*
+1d4 d(G
+
+926617*
+1e	 e(
+
+926345*
+1e	 e(
+
+92617*
+1eH e(L
+
+92645*
+1eH e(L
+
+92617*
+1f f(9
+
+927317*
+1g	 g(
+
+927045*
+1g	 g(
+
+92617*
+1h h(9
+
+92617*
+1i i(9
+
+927745*
+1k	 k(%
+
+927745*
+1l	 l(%
+
+927745*
+1l	 l(%
+
+9210217*
+1l* l(5
+
+927745*
+1x	 x(%
+
+927745*
+1x	 x(%
+
+9210417*
+1x* x(5
+
+927745*
+1„	 „(%
+
+927745*
+1„	 „(%
+
+9210617*
+1„* „(5
+
+1087597*
+1Ž5 Ž(:
+
+1087597*
+1ŽN Ž(S
+
+1087525*
+1Ž; Ž(F
+
+1087517*
+1Ž5 Ž(:
+
+1087525*
+1ŽT Ž(a
+
+1087517*
+1ŽN Ž(S
+
+108645*
+1	 (
+
+108111113*
+1	 (
+
+1147597*
+1“4 “(9
+
+1147597*
+1“M “(R
+
+1147525*
+1“: “(E
+
+1147517*
+1“4 “(9
+
+1147525*
+1“S “(`
+
+1147517*
+1“M “(R
+
+1147525*
+1” ”(,
+
+1147517*
+1” ”(
+
+1142317*
+1˜8 ˜(F
+
+1141845*
+1˜8 ˜(F
+
+1117597*
+1›- ›(2
+
+1117597*
+1›F ›(K
+
+1117525*
+1›3 ›(>
+
+1117517*
+1›- ›(2
+
+1117525*
+1›L ›(Y
+
+1117517*
+1›F ›(K
+
+1117525*
+1 (,
+
+1117517*
+1 (
+
+1112317*
+1¢8 ¢(F
+
+1111845*
+1¢8 ¢(F
+
+11812197*
+1¥% ¥(,
+
+11812125*
+1¥- ¥(4
+
+11812117*
+1¥% ¥(,
+
+118645*
+1¦	 ¦(
+
+118123113*
+1¦	 ¦(
+
+12512197*
+1© ©(%
+
+12512125*
+1©& ©(-
+
+12512117*
+1© ©(%
+
+1258317*
+1©: ©(K
+
+125645*
+1ª	 ª(
+
+125128113*
+1ª	 ª(
+
+1256817*
+1« «("
+
+1256345*
+1«6 «(G
+
+1256617*
+1«6 «(G
+
+1256345*
+1«6 «(G
+
+13013391*
+1¾ ¾(
+
+13013317*
+1¾ ¾(
+
+13513891*
+1Å Å(
+
+1358097*
+1Å( Å(/
+
+1357597*
+1ÅB Å(G
+
+13513817*
+1Å Å(
+
+1358025*
+1Å3 Å(:
+
+1358017*
+1Å( Å(/
+
+1357525*
+1ÅH Å(U
+
+1357517*
+1ÅB Å(G
+
+1358017*
+1Æ Æ(!
+
+1357517*
+1Æ& Æ(+
+
+1358317*
+1Æ- Æ(>
+
+1357745*
+1Ç Ç(-
+
+1357745*
+1Ç Ç(-
+
+12312197*
+1Ï  Ï('
+
+12312125*
+1Ï( Ï(/
+
+12312117*
+1Ï  Ï('
+
+1237517*
+1Ï< Ï(A
+
+123645*
+1Ð	 Ð(
+
+123128113*
+1Ð	 Ð(
+
+1237517*
+1Ñ Ñ(
+
+1237045*
+1Ñ+ Ñ(=
+
+1237317*
+1Ñ+ Ñ(=
+
+1237045*
+1Ñ+ Ñ(=
+
+123617*
+1Ó Ó(E
+
+1283345*
+1Ù- Ù(O
+
+1283645*
+1ÙQ Ù(r
+
+14214591*
+1Ü Ü(
+
+14214797*
+1Ü< Ü(H
+
+14214517*
+1Ü Ü(
+
+14214725*
+1ÜI Ü(Q
+
+14214717*
+1Ü< Ü(H
+
+14214925*
+1Ý, Ý(0
+
+14214917*
+1Ý Ý((
+
+14214917*
+1Ý4 Ý(M
+
+1425845*
+1Þ Þ(
+
+1426117*
+1Þ Þ(
+
+1425845*
+1Þ Þ(
+
+1426817*
+1ß ß(
+
+15113391*
+1â â(
+
+15114797*
+1â; â(G
+
+15113317*
+1â â(
+
+15114725*
+1âH â(P
+
+15114717*
+1â; â(G
+
+15115425*
+1ã ã(*
+
+15115417*
+1ã ã(
+
+15115625*
+1ä ä(
+
+15115617*
+1ä ä(
+
+1517525*
+1æ æ(
+
+1517517*
+1æ æ(
+
+15816197*
+1í@ í(H
+
+15816125*
+1íI í(Q
+
+15816117*
+1í@ í(H

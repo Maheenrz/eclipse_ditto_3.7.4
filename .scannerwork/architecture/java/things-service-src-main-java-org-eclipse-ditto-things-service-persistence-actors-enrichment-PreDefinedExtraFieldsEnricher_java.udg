@@ -1,0 +1,778 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508777779*java2.B’!
+É
+~things/service/src/main/java/org/eclipse/ditto/things/service/persistence/actors/enrichment/PreDefinedExtraFieldsEnricher.java2
+
+package4
+C
+>org.eclipse.ditto.things.service.persistence.actors.enrichment5
+a
+\org.eclipse.ditto.things.service.persistence.actors.enrichment.PreDefinedExtraFieldsEnricher7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+#
+PreDefinedExtraFieldsEnricher12
+i
+corg.eclipse.ditto.things.service.persistence.actors.enrichment.PreDefinedExtraFieldsEnricher.LOGGER14
+
+field15
+
+private16
+
+LOGGER17
+
+DittoLogger19
+
+unknown20
+
+is type21
+
+
+uses22
+s
+morg.eclipse.ditto.things.service.persistence.actors.enrichment.PreDefinedExtraFieldsEnricher.TIME_PLACEHOLDER24
+
+TIME_PLACEHOLDER25
+
+TimePlaceholder27
+v
+porg.eclipse.ditto.things.service.persistence.actors.enrichment.PreDefinedExtraFieldsEnricher.HEADERS_PLACEHOLDER29
+
+HEADERS_PLACEHOLDER30
+
+HeadersPlaceholder32
+
+yorg.eclipse.ditto.things.service.persistence.actors.enrichment.PreDefinedExtraFieldsEnricher.preDefinedExtraFieldsConfigs34
+"
+preDefinedExtraFieldsConfigs35
+9
+3Recovered#typeBindingLPreDefinedExtraFieldsConfig;037
+y
+sorg.eclipse.ditto.things.service.persistence.actors.enrichment.PreDefinedExtraFieldsEnricher.policyEnforcerProvider39
+
+policyEnforcerProvider40
+
+PolicyEnforcerProvider42
+ï
+éorg.eclipse.ditto.things.service.persistence.actors.enrichment.PreDefinedExtraFieldsEnricher#<init>(Ljava/util/List;LPolicyEnforcerProvider;)V44
+
+method45
+4
+.Recovered#typeBindingLPolicyEnforcerProvider;047
+
+	has param48
+
+calls49
+
+
+references50
+€
+‘org.eclipse.ditto.things.service.persistence.actors.enrichment.PreDefinedExtraFieldsEnricher#enrichWithPredefinedExtraFields(LThingId;LThing;LPolicyId;LDittoHeadersSettable;)Ljava/util/concurrent/CompletionStage;52
+%
+enrichWithPredefinedExtraFields53
+%
+Recovered#typeBindingLThingId;055
+#
+Recovered#typeBindingLThing;057
+&
+ Recovered#typeBindingLPolicyId;059
+
+T61
+
+DittoHeadersSettable63
+
+bound by64
+
+Nullable66
+
+annotated by67
+&
+ Recovered#typeBindingLNullable;069
+¿
+πorg.eclipse.ditto.things.service.persistence.actors.enrichment.PreDefinedExtraFieldsEnricher#applyPredefinedExtraFieldsCondition(LThing;LWithDittoHeaders;)Ljava/util/function/Predicate;71
+/
+)Recovered#typeBindingLJsonFieldSelector;073
+ﬂ
+ÿorg.eclipse.ditto.things.service.persistence.actors.enrichment.PreDefinedExtraFieldsEnricher#buildPredefinedExtraFieldsHeaderReadGrantObject(LPolicyId;LJsonFieldSelector;LThing;)Ljava/util/concurrent/CompletionStage;75
+)
+#applyPredefinedExtraFieldsCondition76
+.
+(Recovered#typeBindingLWithDittoHeaders;078
+!
+PreDefinedExtraFieldsConfig80
+;
+5Recovered#typeBindingLInvalidRqlExpressionException;082
+Ø
+®org.eclipse.ditto.things.service.persistence.actors.enrichment.PreDefinedExtraFieldsEnricher#buildPredefinedExtraFieldsHeaderList(LJsonFieldSelector;)Ljava/lang/String;84
+*
+$buildPredefinedExtraFieldsHeaderList85
+5
+/buildPredefinedExtraFieldsHeaderReadGrantObject86
+›
+÷org.eclipse.ditto.things.service.persistence.actors.enrichment.PreDefinedExtraFieldsEnricher#calculatePartialReadFieldsAndSubjects(LJsonFieldSelector;LThing;LPolicyEnforcer;Ljava/util/Set;)Ljava/util/stream/Stream;88
++
+%calculatePartialReadFieldsAndSubjects89
+,
+&Recovered#typeBindingLPolicyEnforcer;091
+'
+!Recovered#typeBindingLJsonField;093
+2
+,Recovered#typeBindingLAuthorizationSubject;095
+∫
+≥org.eclipse.ditto.things.service.persistence.actors.enrichment.PreDefinedExtraFieldsEnricher#collectFields(LAuthorizationSubject;LJsonField;LJsonPointer;)Ljava/util/stream/Stream;97
+
+collectFields98
+*
+#Recovered#typeBindingLJsonPointer;0100
+≥
+´org.eclipse.ditto.things.service.persistence.actors.enrichment.PreDefinedExtraFieldsEnricher#buildPredefinedExtraFieldsHeaderObject(LThing;LJsonFieldSelector;)LJsonObject;102
+-
+&buildPredefinedExtraFieldsHeaderObject103
+
+
+JsonObject105
+
+returns106
+0
+)Recovered#typeBindingLJsonObjectBuilder;0108
+)
+"Recovered#typeBindingLJsonObject;0110
+®
+†org.eclipse.ditto.things.service.persistence.actors.enrichment.PreDefinedExtraFieldsEnricher#mergeFieldsAndArrayValuesWithinFields()Ljava/util/stream/Collector;112
+,
+%mergeFieldsAndArrayValuesWithinFields113J
+
+1
+12Z
+
+3	
+354j◊
+@
+33:
+333415 *
+1J J(26:3B
+	
+9
+16
+
+
+11
+35
+
+79
+798020
+F
+111?
+11111245 *
+1´ ´(26:3B
+	
+9
+16
+
+11
+113
+
+46
+464720
+
+58
+585920
+
+104
+10410520
+
+94
+949520
+B
+83<
+838445 *
+1¥ ¥(26:3B
+	
+9
+16
+
+
+11
+85
+
+81
+818220
+
+107
+10710820
+
+31
+313220
+
+54
+545520
+B
+74<
+747545 *
+1º º(26:3B
+	
+9
+16
+
+
+11
+86
+@
+23:
+232415 *
+1G G(26:3B
+	
+9
+16
+
+
+11
+25
+
+60
+606120
+
+68
+686920
+B
+70<
+707145 *
+1ñ ñ(26:3B
+	
+9
+16
+
+
+11
+76
+B
+87<
+878845 *
+1Ù Ù(26:3B
+	
+9
+16
+
+
+11
+89
+
+56
+565720
+
+90
+909120
+
+109
+10911020
+
+18
+181920
+B
+96<
+969745 *
+1ç ç(26:3B
+	
+9
+16
+
+
+11
+98
+@
+51:
+515245 *
+1f f(26:3B
+	
+9
+10
+
+
+11
+53
+F
+101?
+10110245 *
+1ü ü(26:3B
+	
+9
+16
+
+11
+103
+@
+28:
+282915 *
+1H H(26:3B
+	
+9
+16
+
+
+11
+30
+
+72
+727320
+
+77
+777820
+
+41
+414220
+
+26
+262720
+
+92
+929320
+@
+38:
+383915 *
+1K K(26:3B
+	
+9
+16
+
+
+11
+40
+
+99
+9910020
+9
+64
+678 *
+1C C(1:3B
+	
+9
+10
+
+
+11
+12
+@
+13:
+131415 *
+1E E(26:3B
+	
+9
+16
+
+
+11
+17
+
+36
+363720
+@
+43:
+434445 *
+1S S(26:3B
+	
+9
+10
+
+
+11
+12
+
+65
+656620
+
+62
+626320r∑
+
+131821*
+1E E(%
+
+131822*
+1E E(%
+
+131822*
+1E& E(,
+
+13622*
+1EL E(i
+
+232621*
+1G G()
+
+232622*
+1G G()
+
+232622*
+1G* G(:
+
+283121*
+1H H(,
+
+283122*
+1H H(,
+
+283122*
+1H- H(@
+
+333622*
+1J J(3
+
+384121*
+1K K()
+
+384122*
+1K K()
+
+384122*
+1K* K(@
+
+434648*
+1U U()
+
+43649*
+1S S()
+
+433622*
+1T T(3
+
+434621*
+1U* U(@
+
+434622*
+1U U()
+
+43622*
+1W	 W(
+
+43650*
+1W	 W(
+
+433350*
+1W W(*
+
+43622*
+1X	 X(
+
+43650*
+1X	 X(
+
+434122*
+1X X($
+
+433850*
+1X X($
+
+515448*
+1g g(
+
+515648*
+1h h("
+
+515848*
+1i i(%
+
+516048*
+1j j(
+
+516248*
+1f f(+
+
+516022*
+1f f(
+
+516222*
+1f f(+
+
+516064*
+1f6 f(7
+
+516022*
+1f6 f(7
+
+516022*
+1fJ f(K
+
+515421*
+1g g("
+
+515422*
+1g g(
+
+515621*
+1h# h((
+
+516567*
+1h h(
+
+516822*
+1h h(
+
+515622*
+1h h("
+
+515821*
+1i& i(.
+
+516567*
+1i i(
+
+516822*
+1i i(
+
+515822*
+1i i(%
+
+516021*
+1j j(%
+
+516022*
+1j j(
+
+513350*
+1l l(;
+
+513350*
+1l l(;
+
+513622*
+1m m(3
+
+513350*
+1n n(1
+
+513350*
+1n n(1
+
+51650*
+1v% v(H
+
+517049*
+1v% v(H
+
+517221*
+1x% x(B
+
+517222*
+1x x($
+
+51650*
+1 (C
+
+517449*
+1 (C
+
+705648*
+1ó ó(
+
+707748*
+1ò ò(#
+
+703622*
+1ñ ñ(2
+
+705621*
+1ó ó(
+
+705622*
+1ó ó(
+
+707721*
+1ò$ ò(4
+
+707722*
+1ò ò(#
+
+707921*
+1ö ö(
+
+702622*
+1¶G ¶(W
+
+702350*
+1¶G ¶(W
+
+703122*
+1ßG ß(Z
+
+702850*
+1ßG ß(Z
+
+708121*
+1´> ´(?
+
+708122*
+1´  ´(=
+
+701350*
+1¨ ¨(
+
+701822*
+1¨ ¨(
+
+701350*
+1¨ ¨(
+
+837248*
+1¥F ¥(W
+
+837221*
+1¥X ¥(m
+
+837222*
+1¥F ¥(W
+
+745848*
+1Ω Ω(%
+
+747248*
+1æ æ($
+
+745648*
+1ø ø(
+
+745821*
+1Ω& Ω(.
+
+746567*
+1Ω Ω(
+
+746822*
+1Ω Ω(
+
+745822*
+1Ω Ω(%
+
+747221*
+1æ% æ(:
+
+747222*
+1æ æ($
+
+745621*
+1ø ø(
+
+745622*
+1ø ø(
+
+743850*
+1¡ ¡(&
+
+744122*
+1¡ ¡(&
+
+743850*
+1¡ ¡(&
+
+877248*
+1ı ı($
+
+875648*
+1ˆ ˆ(
+
+879048*
+1˜ ˜(!
+
+879222*
+1Ù Ù($
+
+877221*
+1ı% ı(:
+
+877222*
+1ı ı($
+
+875621*
+1ˆ ˆ(
+
+875622*
+1ˆ ˆ(
+
+879021*
+1˜" ˜(0
+
+879022*
+1˜ ˜(!
+
+879422*
+1¯ ¯(+
+
+969448*
+1ç: ç(N
+
+969248*
+1é é(
+
+969948*
+1è è(
+
+969222*
+1ç ç($
+
+969421*
+1çO ç(c
+
+969422*
+1ç: ç(N
+
+969221*
+1é é("
+
+969222*
+1é é(
+
+969921*
+1è è(%
+
+969922*
+1è è(
+
+101104106*
+1ü ü(
+
+1015648*
+1† †(
+
+1017248*
+1° °($
+
+10110422*
+1ü ü(
+
+1015621*
+1† †(
+
+1015622*
+1† †(
+
+1017221*
+1°% °(:
+
+1017222*
+1° °($
+
+10110721*
+1£! £((
+
+10110722*
+1£ £( 
+
+10110921*
+1§ §(#
+
+10110922*
+1§ §(
+
+1119222*
+1´ ´('
+
+11110722*
+1´) ´(:
+
+11110922*
+1´< ´(F

@@ -1,0 +1,666 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508653929*java2.B‚
+]
+Xthings/service/src/test/java/org/eclipse/ditto/things/service/enforcement/TestSetup.java2
+
+package4
+1
+,org.eclipse.ditto.things.service.enforcement5
+;
+6org.eclipse.ditto.things.service.enforcement.TestSetup7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+	TestSetup12
+G
+Aorg.eclipse.ditto.things.service.enforcement.TestSetup.FEATURE_ID14
+
+field15
+
+
+FEATURE_ID16
+O
+Iorg.eclipse.ditto.things.service.enforcement.TestSetup.FEATURE_PROPERTY_118
+
+FEATURE_PROPERTY_119
+O
+Iorg.eclipse.ditto.things.service.enforcement.TestSetup.FEATURE_PROPERTY_221
+
+FEATURE_PROPERTY_222
+E
+?org.eclipse.ditto.things.service.enforcement.TestSetup.THING_ID24
+
+THING_ID25
+
+ThingId27
+
+unknown28
+
+is type29
+
+
+uses30
+F
+@org.eclipse.ditto.things.service.enforcement.TestSetup.POLICY_ID32
+
+	POLICY_ID33
+
+PolicyId35
+D
+>org.eclipse.ditto.things.service.enforcement.TestSetup.FEATURE37
+
+FEATURE38
+
+Feature40
+
+
+references41
+B
+<org.eclipse.ditto.things.service.enforcement.TestSetup.THING43
+
+THING44
+
+Thing46
+G
+Aorg.eclipse.ditto.things.service.enforcement.TestSetup.SUBJECT_ID48
+
+
+SUBJECT_ID49
+D
+>org.eclipse.ditto.things.service.enforcement.TestSetup.SUBJECT51
+
+SUBJECT52
+
+AuthorizationSubject54
+K
+Eorg.eclipse.ditto.things.service.enforcement.TestSetup.GOOGLE_SUBJECT56
+
+GOOGLE_SUBJECT57
+a
+[org.eclipse.ditto.things.service.enforcement.TestSetup#newThing()LThingBuilder/FromScratch;59
+
+method60
+
+newThing61
+
+ThingBuilder.FromScratch63
+
+returns64
+*
+$Recovered#typeBindingLThingBuilder;066
+i
+corg.eclipse.ditto.things.service.enforcement.TestSetup#newThingWithPolicyId(LPolicyId;)LJsonObject;68
+
+newThingWithPolicyId69
+
+
+JsonObject71
+&
+ Recovered#typeBindingLPolicyId;073
+
+	has param74
+
+calls75
+z
+torg.eclipse.ditto.things.service.enforcement.TestSetup#fishForMsgClass(LTestKit;Ljava/lang/Class;)Ljava/lang/Object;77
+
+fishForMsgClass78
+
+T80
+%
+Recovered#typeBindingLTestKit;082
+O
+Iorg.eclipse.ditto.things.service.enforcement.TestSetup$DummyLiveSignalPub84
+
+DummyLiveSignalPub85
++
+%Recovered#typeBindingLLiveSignalPub;087
+
+
+implements88
+^
+Xorg.eclipse.ditto.things.service.enforcement.TestSetup$DummyLiveSignalPub.pubSubMediator90
+
+private91
+
+pubSubMediator92
+
+ActorRef94
+c
+]org.eclipse.ditto.things.service.enforcement.TestSetup$DummyLiveSignalPub#<init>(LActorRef;)V96
+&
+ Recovered#typeBindingLActorRef;098
+j
+corg.eclipse.ditto.things.service.enforcement.TestSetup$DummyLiveSignalPub#command()LDistributedPub;100
+
+command101
+
+DistributedPub103
++
+$Recovered#typeBindingLThingCommand;0105
+
+	!Unknown!107
+
+	protected108
+h
+aorg.eclipse.ditto.things.service.enforcement.TestSetup$DummyLiveSignalPub#event()LDistributedPub;110
+
+event111
+)
+"Recovered#typeBindingLThingEvent;0113
+j
+corg.eclipse.ditto.things.service.enforcement.TestSetup$DummyLiveSignalPub#message()LDistributedPub;115
+
+message116
+1
+*Recovered#typeBindingLSignalWithEntityId;0118J
+
+1
+12Z
+
+3	
+354jÄ
+
+53
+535428
+A
+95;
+959660 *
+1c	 c(283:3B
+	
+9
+10
+
+
+11
+85
+@
+23:
+232415 *
+10 0(26:3B
+	
+9
+10
+
+
+11
+25
+Y
+106R
+1061078 *
+1ì+ ì(,2114:3:3:3B$
+
+
+9
+108
+
+
+9
+108
+
+
+9
+108
+@
+36:
+363715 *
+12 2(26:3B
+	
+9
+10
+
+
+11
+38
+
+97
+979828
+
+72
+727328
+
+93
+939428
+E
+109>
+10911060 *
+1|	 |(
+283:3B
+	
+9
+10
+
+11
+111
+@
+42:
+424315 *
+19 9(26:3B
+	
+9
+10
+
+
+11
+44
+@
+47:
+474815 *
+1? ?(26:3B
+	
+9
+10
+
+
+11
+49
+
+70
+707128
+@
+76:
+767760 *
+1Z Z(26:3B
+	
+9
+10
+
+
+11
+78
+
+39
+394028
+
+102
+10210328
+@
+17:
+171815 *
+1- -(26:3B
+	
+9
+10
+
+
+11
+19
+9
+64
+678 *
+1* *(:3B
+	
+9
+10
+
+
+11
+12
+@
+20:
+202115 *
+1. .(26:3B
+	
+9
+10
+
+
+11
+22
+
+112
+11211328
+
+79
+798028
+?
+839
+83848 *
+1_ _(126:3B
+	
+9
+10
+
+
+11
+85
+C
+99=
+9910060 *
+1g	 g(
+283:3B
+	
+9
+10
+
+11
+101
+@
+58:
+585960 *
+1D D(26:3B
+	
+9
+10
+
+
+11
+61
+
+45
+454628
+
+65
+656628
+
+117
+11711828
+@
+31:
+313215 *
+11 1(26:3B
+	
+9
+10
+
+
+11
+33
+@
+50:
+505115 *
+1@ @(26:3B
+	
+9
+10
+
+
+11
+52
+A
+89;
+899015 *
+1a	 a(283:3B
+	
+9
+91
+
+
+11
+92
+G
+114@
+11411560 *
+1ë	 ë(
+283:3B
+	
+9
+10
+
+11
+116
+@
+55:
+555615 *
+1B B(26:3B
+	
+9
+10
+
+
+11
+57
+@
+67:
+676860 *
+1J J(26:3B
+	
+9
+10
+
+
+11
+69
+
+104
+10410528
+
+81
+818228
+
+26
+262728
+
+62
+626328
+@
+13:
+131415 *
+1, ,(26:3B
+	
+9
+10
+
+
+11
+16
+
+86
+868728
+
+34
+343528r€
+
+232629*
+10 0( 
+
+232630*
+10 0( 
+
+232630*
+10! 0()
+
+313429*
+11 1(!
+
+313430*
+11 1(!
+
+313430*
+11" 1(+
+
+363929*
+12 2( 
+
+363930*
+12 2( 
+
+363930*
+12! 2((
+
+361741*
+14 4(,
+
+362041*
+15 5(,
+
+361341*
+17 7(
+
+424529*
+19 9(
+
+424530*
+19 9(
+
+424530*
+19 9($
+
+422630*
+1: :(
+
+422341*
+1: :(
+
+423430*
+1; ;(#
+
+423141*
+1; ;(#
+
+423930*
+1< <( 
+
+423641*
+1< <( 
+
+505329*
+1@ @(-
+
+505330*
+1@ @(-
+
+505330*
+1@. @(5
+
+504741*
+1@d @(n
+
+555329*
+1B B(-
+
+555330*
+1B B(-
+
+555330*
+1B. B(<
+
+554741*
+1Bl B(v
+
+586264*
+1D D(
+
+586530*
+1D D(
+
+586230*
+1D  D(+
+
+582630*
+1F F( 
+
+582341*
+1F F( 
+
+677064*
+1J J(
+
+677274*
+1J9 J(A
+
+677030*
+1J J(
+
+677229*
+1JB J(J
+
+677230*
+1J9 J(A
+
+676264*
+1K K(
+
+67641*
+1K K(
+
+675875*
+1K K(
+
+767964*
+1Z Z(
+
+768174*
+1Z/ Z(6
+
+768129*
+1Z7 Z(>
+
+768130*
+1Z/ Z(6
+
+767964*
+1[ [(
+
+838688*
+1_= _(J
+
+838630*
+1_= _(J
+
+899329*
+1a a(
+
+899330*
+1a a(
+
+899330*
+1a  a(.
+
+959774*
+1c) c(1
+
+958375*
+1c c("
+
+959729*
+1c2 c(@
+
+959730*
+1c) c(1
+
+958330*
+1d d(
+
+958341*
+1d d(
+
+959330*
+1d d( 
+
+958941*
+1d d( 
+
+9910264*
+1h h(
+
+9910230*
+1h h(
+
+9910430*
+1h h(+
+
+10910264*
+1} }(
+
+10910230*
+1} }(
+
+10911230*
+1} }()
+
+11410264*
+1í í(
+
+11410230*
+1í í(
+
+11411730*
+1í í(1

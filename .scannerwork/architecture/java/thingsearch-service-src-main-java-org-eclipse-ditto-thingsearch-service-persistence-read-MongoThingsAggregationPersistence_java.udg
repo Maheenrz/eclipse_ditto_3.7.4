@@ -1,0 +1,500 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508767608*java2.BÐ
+„
+thingsearch/service/src/main/java/org/eclipse/ditto/thingsearch/service/persistence/read/MongoThingsAggregationPersistence.java2
+
+package4
+;
+6org.eclipse.ditto.thingsearch.service.persistence.read5
+]
+Xorg.eclipse.ditto.thingsearch.service.persistence.read.MongoThingsAggregationPersistence7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+'
+!MongoThingsAggregationPersistence12
+:
+4Recovered#typeBindingLThingsAggregationPersistence;014
+
+unknown15
+
+
+implements16
+
+
+uses17
+i
+corg.eclipse.ditto.thingsearch.service.persistence.read.MongoThingsAggregationPersistence.collection19
+
+field20
+
+private21
+
+
+collection22
+
+MongoCollection24
+
+is type25
+&
+ Recovered#typeBindingLDocument;027
+b
+\org.eclipse.ditto.thingsearch.service.persistence.read.MongoThingsAggregationPersistence.log29
+	
+log30
+
+LoggingAdapter32
+k
+eorg.eclipse.ditto.thingsearch.service.persistence.read.MongoThingsAggregationPersistence.maxQueryTime34
+
+maxQueryTime35
+d
+^org.eclipse.ditto.thingsearch.service.persistence.read.MongoThingsAggregationPersistence.hints37
+
+hints38
+
+
+MongoHints40
+y
+sorg.eclipse.ditto.thingsearch.service.persistence.read.MongoThingsAggregationPersistence.queryFilterCriteriaFactory42
+ 
+queryFilterCriteriaFactory43
+ 
+QueryFilterCriteriaFactory45
+Ç
+Àorg.eclipse.ditto.thingsearch.service.persistence.read.MongoThingsAggregationPersistence#<init>(LDittoMongoClient;Ljava/util/Optional;Ljava/util/Map;LSearchPersistenceConfig;LLoggingAdapter;)V47
+
+method48
+.
+(Recovered#typeBindingLDittoMongoClient;050
+
+	has param51
+5
+/Recovered#typeBindingLSearchPersistenceConfig;053
+,
+&Recovered#typeBindingLLoggingAdapter;055
+
+calls56
+
+
+references57
++
+%Recovered#typeBindingLMongoDatabase;059
+²
+«org.eclipse.ditto.thingsearch.service.persistence.read.MongoThingsAggregationPersistence#of(LDittoMongoClient;LSearchConfig;LLoggingAdapter;)LThingsAggregationPersistence;61
+
+of62
+"
+ThingsAggregationPersistence64
+
+returns65
+*
+$Recovered#typeBindingLSearchConfig;067
+‘
+Šorg.eclipse.ditto.thingsearch.service.persistence.read.MongoThingsAggregationPersistence#aggregateThings(LAggregateThingsMetrics;)LSource;69
+
+aggregateThings70
+
+Source72
+4
+.Recovered#typeBindingLAggregateThingsMetrics;074
+%
+Recovered#typeBindingLNotUsed;076
+"
+Recovered#typeBindingLBson;078J
+
+1
+12Z
+
+3	
+354j‹
+
+44
+444515
+@
+33:
+333420 *
+19 9(26:3B
+	
+9
+21
+
+
+11
+35
+
+26
+262715
+
+71
+717215
+
+13
+131415
+9
+64
+678 *
+14 4(5:3B
+	
+9
+10
+
+
+11
+12
+
+77
+777815
+@
+36:
+363720 *
+1: :(26:3B
+	
+9
+21
+
+
+11
+38
+
+39
+394015
+@
+46:
+464748 *
+1F F(26:3B
+	
+9
+21
+
+
+11
+12
+
+73
+737415
+@
+68:
+686948 *
+1^ ^(26:3B
+	
+9
+10
+
+
+11
+70
+
+52
+525315
+
+58
+585915
+
+75
+757615
+@
+18:
+181920 *
+17 7(26:3B
+	
+9
+21
+
+
+11
+22
+
+49
+495015
+
+66
+666715
+
+23
+232415
+
+63
+636415
+@
+28:
+282920 *
+18 8(26:3B
+	
+9
+21
+
+
+11
+30
+@
+60:
+606148 *
+1X X(26:3B
+	
+9
+10
+
+
+11
+62
+@
+41:
+414220 *
+1; ;(26:3B
+	
+9
+21
+
+
+11
+43
+
+31
+313215
+
+54
+545515rÍ
+
+61316*
+14A 4(]
+
+61317*
+14A 4(]
+
+182325*
+17 7("
+
+182317*
+17 7("
+
+182617*
+17# 7(+
+
+182317*
+17- 7(7
+
+283125*
+18 8(!
+
+283117*
+18 8(!
+
+283117*
+18" 8(%
+
+363925*
+1: :(
+
+363917*
+1: :(
+
+363917*
+1: :(#
+
+414425*
+1; ;(-
+
+414417*
+1; ;(-
+
+414417*
+1;. ;(H
+
+464951*
+1F5 F(E
+
+465251*
+1HB H(Y
+
+465451*
+1I I(!
+
+46656*
+1F F(.
+
+464925*
+1FF F(Q
+
+464917*
+1F5 F(E
+
+465225*
+1HZ H(k
+
+465217*
+1HB H(Y
+
+465425*
+1I" I(%
+
+465417*
+1I I(!
+
+46617*
+1J	 J(
+
+46657*
+1J	 J(
+
+464417*
+1J J((
+
+464157*
+1J J((
+
+465825*
+1M M(%
+
+465817*
+1M M(
+
+462317*
+1P	 P(
+
+461857*
+1P	 P(
+
+46617*
+1S	 S(
+
+46657*
+1S	 S(
+
+463117*
+1S S(
+
+462857*
+1S S(
+
+463357*
+1T	 T(
+
+463917*
+1U	 U(
+
+463657*
+1U	 U(
+
+606365*
+1X X(/
+
+604951*
+1X9 X(I
+
+606651*
+1Y Y(
+
+605451*
+1Y4 Y(B
+
+606317*
+1X X(/
+
+604925*
+1XJ X(U
+
+604917*
+1X9 X(I
+
+606625*
+1Y  Y(,
+
+606617*
+1Y Y(
+
+605425*
+1YC Y(F
+
+605417*
+1Y4 Y(B
+
+60656*
+1Z Z(5
+
+687165*
+1_ _(
+
+687351*
+1_< _(R
+
+687117*
+1_ _(
+
+682617*
+1_ _(
+
+687517*
+1_ _($
+
+687325*
+1_S _(c
+
+687317*
+1_< _(R
+
+687717*
+1` `(
+
+687717*
+1c c(
+
+687725*
+1h h(
+
+687717*
+1h h(
+
+684157*
+1i i(+
+
+684417*
+1i i(+
+
+684157*
+1i i(+
+
+687725*
+1t t(
+
+687717*
+1t t(
+
+682857*
+1v	 v(
+
+683117*
+1v	 v(
+
+682857*
+1v	 v(
+
+681857*
+1z% z(/
+
+682317*
+1z% z(/
+
+681857*
+1z% z(/
+
+683657*
+1{ {(
+
+683917*
+1{ {(
+
+683657*
+1{ {(
+
+683357*
+1~ ~(&
+
+683357*
+1~ ~(&

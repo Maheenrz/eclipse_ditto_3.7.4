@@ -1,0 +1,776 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508825695*java2.BÍ!
+q
+lconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/mqtt/Mqtt3Validator.java2
+
+package4
+:
+5org.eclipse.ditto.connectivity.service.messaging.mqtt5
+I
+Dorg.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+Mqtt3Validator12
+3
+-Recovered#typeBindingLAbstractMqttValidator;014
+
+unknown15
+
+extends16
+
+	Immutable18
+
+annotated by19
+'
+!Recovered#typeBindingLImmutable;021
+
+
+uses22
+`
+Zorg.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator#<init>(LMqttConfig;)V24
+
+method25
+
+private26
+(
+"Recovered#typeBindingLMqttConfig;028
+
+	has param29
+
+calls30
+
+is type31
+^
+Xorg.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator.HEADERS_PLACEHOLDER33
+
+field34
+
+HEADERS_PLACEHOLDER35
+
+HeadersPlaceholder37
+´
+§org.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator#newInstance(LMqttConfig;)Lorg/eclipse/ditto/connectivity/service/messaging/mqtt/Mqtt3Validator;39
+
+newInstance40
+
+returns41
+a
+[org.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator#type()LConnectionType;43
+
+
+type44
+
+ConnectionType46
+í
+ãorg.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator#validate(LConnection;LDittoHeaders;LActorSystem;LConnectivityConfig;)V48
+
+validate49
+(
+"Recovered#typeBindingLConnection;051
+*
+$Recovered#typeBindingLDittoHeaders;053
+)
+#Recovered#typeBindingLActorSystem;055
+0
+*Recovered#typeBindingLConnectivityConfig;057
+
+
+references58
+{
+uorg.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator#validateClientCount(LConnection;LDittoHeaders;)V60
+
+validateClientCount61
+ê
+âorg.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator#validateSource(LSource;LDittoHeaders;Ljava/util/function/Supplier;)V63
+
+	protected64
+
+validateSource65
+$
+Recovered#typeBindingLSource;067
+
+AbstractMqttValidator69
+m
+gorg.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator#containsMappings(LHeaderMapping;)Z71
+Ö
+org.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator#sourceContainsOnlyAllowedMappings(LSource;LDittoHeaders;)Z73
+y
+sorg.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator#validateConsumerCount(LSource;LDittoHeaders;)V75
+'
+!sourceContainsOnlyAllowedMappings76
+ê
+âorg.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator#validateTarget(LTarget;LDittoHeaders;Ljava/util/function/Supplier;)V78
+
+validateTarget79
+$
+Recovered#typeBindingLTarget;081
+å
+Öorg.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator#targetContainsOnlyAllowedHeaderMappings(LTarget;LDittoHeaders;)Z83
+
+containsMappings84
++
+%Recovered#typeBindingLHeaderMapping;086
+-
+'targetContainsOnlyAllowedHeaderMappings87
+ç
+Üorg.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator#containsOnlyAllowedTargetMappings(LHeaderMapping;LDittoHeaders;)Z89
+'
+!containsOnlyAllowedTargetMappings90
+Å
+{org.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator#checkIfKeyIsAllowed(Ljava/lang/String;LDittoHeaders;)V92
+
+checkIfKeyIsAllowed93
+
+validateConsumerCount94
+a
+[org.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator$Mqtt3HeaderPlaceholder96
+
+Mqtt3HeaderPlaceholder97
+)
+#Recovered#typeBindingLPlaceholder;099
+
+
+implements100
+k
+dorg.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator$Mqtt3HeaderPlaceholder.INSTANCE102
+
+INSTANCE103
+l
+eorg.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator$Mqtt3HeaderPlaceholder#<init>()V105
+ß
+üorg.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator$Mqtt3HeaderPlaceholder#resolveValues(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;107
+
+resolveValues108
+Ä
+yorg.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator$Mqtt3HeaderPlaceholder#getPrefix()Ljava/lang/String;110
+
+	getPrefix111
+Ü
+org.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator$Mqtt3HeaderPlaceholder#getSupportedNames()Ljava/util/List;113
+
+getSupportedNames114
+Ä
+yorg.eclipse.ditto.connectivity.service.messaging.mqtt.Mqtt3Validator$Mqtt3HeaderPlaceholder#supports(Ljava/lang/String;)Z116
+
+supports117J
+
+1
+12Z
+
+3	
+354jÖ
+
+17
+171815
+G
+106@
+10610725 *
+1º	 º(
+295:3B
+	
+9
+10
+
+11
+108
+
+52
+525315
+
+13
+131415
+@
+32:
+323334 *
+11 1(26:3B
+	
+9
+26
+
+
+11
+35
+@
+23:
+232425 *
+1- -(26:3B
+	
+9
+26
+
+
+11
+12
+B
+88<
+888925 *
+1ç ç(26:3B
+	
+9
+26
+
+
+11
+90
+
+20
+202115
+
+36
+363715
+G
+109@
+10911025 *
+1¬	 ¬(
+295:3B
+	
+9
+10
+
+11
+111
+
+98
+989915
+@
+72:
+727325 *
+1k k(26:3B
+	
+9
+26
+
+
+11
+76
+B
+82<
+828325 *
+1â â(26:3B
+	
+9
+26
+
+
+11
+87
+
+68
+686915
+B
+70<
+707125 *
+1Ö Ö(26:3B
+	
+9
+26
+
+
+11
+84
+
+66
+666715
+@
+42:
+424325 *
+1= =(26:3B
+	
+9
+10
+
+
+11
+44
+B
+91<
+919225 *
+1ö ö(26:3B
+	
+9
+26
+
+
+11
+93
+G
+112@
+11211325 *
+1«	 «(
+295:3B
+	
+9
+10
+
+11
+114
+
+45
+454615
+@
+59:
+596025 *
+1N N(26:3B
+	
+9
+26
+
+
+11
+61
+G
+115@
+11511625 *
+1Ã	 Ã(
+295:3B
+	
+9
+10
+
+11
+117
+
+80
+808115
+
+50
+505115
+F
+104?
+10410525 *
+1π	 π(295:3B
+	
+9
+26
+
+
+11
+97
+@
+77:
+777825 *
+1x x(26:3B
+	
+9
+64
+
+
+11
+79
+A
+95;
+95968 *
+1µ  µ(626:3B
+	
+9
+26
+
+
+11
+97
+9
+64
+678 *
+1+ +(":3B
+	
+9
+10
+
+
+11
+12
+
+56
+565715
+
+85
+858615
+@
+38:
+383925 *
+19 9(26:3B
+	
+9
+10
+
+
+11
+40
+B
+74<
+747525 *
+1© ©(26:3B
+	
+9
+26
+
+
+11
+94
+G
+101@
+10110234 *
+1∑	 ∑(295:3B
+	
+9
+26
+
+11
+103
+@
+47:
+474825 *
+1B B(26:3B
+	
+9
+10
+
+
+11
+49
+
+54
+545515
+@
+62:
+626325 *
+1Y Y(26:3B
+	
+9
+64
+
+
+11
+65
+
+27
+272815rÅ
+
+61316*
+1++ +(@
+
+61719*
+1* *(
+
+62022*
+1* *(
+
+61322*
+1++ +(@
+
+232729*
+1-" -(,
+
+23630*
+1- -(
+
+232731*
+1-- -(7
+
+232722*
+1-" -(,
+
+323631*
+11 1(,
+
+323622*
+11 1(,
+
+323622*
+11- 1(@
+
+38641*
+19 9(!
+
+382729*
+194 9(>
+
+38622*
+19 9(!
+
+382731*
+19? 9(I
+
+382722*
+194 9(>
+
+38630*
+1: :("
+
+424541*
+1> >(
+
+424522*
+1> >(
+
+475029*
+1C  C(*
+
+475229*
+1C= C(I
+
+475429*
+1C^ C(i
+
+475629*
+1D D(%
+
+475031*
+1C+ C(5
+
+475022*
+1C  C(*
+
+475231*
+1CJ C(V
+
+475222*
+1C= C(I
+
+475431*
+1Cj C(u
+
+475422*
+1C^ C(i
+
+475631*
+1D& D(8
+
+475622*
+1D D(%
+
+47658*
+1F	 F(
+
+475930*
+1F	 F(
+
+595029*
+1N3 N(=
+
+595229*
+1NP N(\
+
+595031*
+1N> N(H
+
+595022*
+1N3 N(=
+
+595231*
+1N] N(i
+
+595222*
+1NP N(\
+
+626629*
+1Z) Z(/
+
+625229*
+1Z> Z(J
+
+626631*
+1Z0 Z(6
+
+626622*
+1Z) Z(/
+
+625231*
+1ZK Z(W
+
+625222*
+1Z> Z(J
+
+62658*
+1\	 \(
+
+626822*
+1\	 \(
+
+62658*
+1\	 \(
+
+62658*
+1^ ^(
+
+627030*
+1^ ^(
+
+62658*
+1^= ^(^
+
+627230*
+1^= ^(^
+
+62658*
+1h	 h(
+
+627430*
+1h	 h(
+
+726629*
+1k= k(C
+
+725229*
+1l l(
+
+726631*
+1kD k(J
+
+726622*
+1k= k(C
+
+725231*
+1l  l(,
+
+725222*
+1l l(
+
+778029*
+1y) y(/
+
+775229*
+1y> y(J
+
+778031*
+1y0 y(6
+
+778022*
+1y) y(/
+
+775231*
+1yK y(W
+
+775222*
+1y> y(J
+
+77658*
+1{	 {(
+
+776822*
+1{	 {(
+
+77658*
+1{	 {(
+
+77658*
+1} }(
+
+777030*
+1} }(
+
+77658*
+1~ ~(<
+
+778230*
+1~ ~(<
+
+708529*
+1Ö3 Ö(@
+
+708531*
+1ÖA Ö(N
+
+708522*
+1Ö3 Ö(@
+
+828029*
+1âC â(I
+
+825229*
+1âX â(d
+
+828031*
+1âJ â(P
+
+828022*
+1âC â(I
+
+825231*
+1âe â(q
+
+825222*
+1âX â(d
+
+82658*
+1ä ä(1
+
+828830*
+1ä ä(1
+
+888529*
+1ç= ç(J
+
+885229*
+1é é(
+
+888531*
+1çK ç(X
+
+888522*
+1ç= ç(J
+
+885231*
+1é  é(,
+
+885222*
+1é é(
+
+915229*
+1öE ö(Q
+
+915231*
+1öR ö(^
+
+915222*
+1öE ö(Q
+
+746629*
+1©5 ©(;
+
+745229*
+1©J ©(V
+
+746631*
+1©< ©(B
+
+746622*
+1©5 ©(;
+
+745231*
+1©W ©(c
+
+745222*
+1©J ©(V
+
+9598100*
+1µB µ(M
+
+959822*
+1µB µ(M
+
+1019531*
+1∑ ∑(4
+
+1019522*
+1∑ ∑(4
+
+1019558*
+1∑ ∑(4
+
+1019522*
+1∑5 ∑(=
+
+1019530*
+1∑D ∑(Z
+
+1049530*
+1π π('

@@ -1,0 +1,499 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508475594*java2.B±$
+n
+igateway/service/src/main/java/org/eclipse/ditto/gateway/service/util/config/health/HealthCheckConfig.java2
+
+package4
+9
+4org.eclipse.ditto.gateway.service.util.config.health5
+K
+Forg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig7
+
+	interface8
+
+access9
+
+public10
+
+simple name11
+
+HealthCheckConfig12
+4
+.Recovered#typeBindingLBasicHealthCheckConfig;014
+
+unknown15
+
+
+implements16
+
+	Immutable18
+
+annotated by19
+'
+!Recovered#typeBindingLImmutable;021
+
+
+uses22
+t
+norg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig#getServiceTimeout()Ljava/time/Duration;24
+
+method25
+
+getServiceTimeout26
+¿
+πorg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig#getClusterRolesConfig()Lorg/eclipse/ditto/gateway/service/util/config/health/HealthCheckConfig$ClusterRolesConfig;28
+
+getClusterRolesConfig29
+_
+Yorg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$ClusterRolesConfig31
+
+returns32
+
+
+references33
+c
+]org.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$HealthCheckConfigValue35
+
+
+enum36
+
+HealthCheckConfigValue37
+.
+(Recovered#typeBindingLKnownConfigValue;039
+Õ
+∆org.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$HealthCheckConfigValue#values()[Lorg/eclipse/ditto/gateway/service/util/config/health/HealthCheckConfig$HealthCheckConfigValue;41
+
+values42
+ﬂ
+ÿorg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$HealthCheckConfigValue#valueOf(Ljava/lang/String;)Lorg/eclipse/ditto/gateway/service/util/config/health/HealthCheckConfig$HealthCheckConfigValue;44
+
+valueOf45
+s
+morg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$HealthCheckConfigValue.SERVICE_TIMEOUT47
+
+field48
+
+SERVICE_TIMEOUT49
+
+calls50
+h
+borg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$HealthCheckConfigValue.path52
+
+private53
+
+
+path54
+p
+jorg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$HealthCheckConfigValue.defaultValue56
+
+defaultValue57
+•
+ûorg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$HealthCheckConfigValue#<init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Object;)V59
+à
+Åorg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$HealthCheckConfigValue#getDefaultValue()Ljava/lang/Object;61
+
+getDefaultValue62
+Ö
+org.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$HealthCheckConfigValue#getConfigPath()Ljava/lang/String;64
+
+getConfigPath65
+
+ClusterRolesConfig66
+l
+forg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$ClusterRolesConfig#isEnabled()Z68
+
+	isEnabled69
+â
+Çorg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$ClusterRolesConfig#getExpectedClusterRoles()Ljava/util/Set;71
+
+getExpectedClusterRoles72
+w
+qorg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$ClusterRolesConfig$ClusterRolesConfigValue74
+
+ClusterRolesConfigValue75
+ı
+Óorg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$ClusterRolesConfig$ClusterRolesConfigValue#values()[Lorg/eclipse/ditto/gateway/service/util/config/health/HealthCheckConfig$ClusterRolesConfig$ClusterRolesConfigValue;77
+á
+Äorg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$ClusterRolesConfig$ClusterRolesConfigValue#valueOf(Ljava/lang/String;)Lorg/eclipse/ditto/gateway/service/util/config/health/HealthCheckConfig$ClusterRolesConfig$ClusterRolesConfigValue;79
+
+yorg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$ClusterRolesConfig$ClusterRolesConfigValue.ENABLED81
+
+ENABLED82
+Ä
+zorg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$ClusterRolesConfig$ClusterRolesConfigValue.EXPECTED84
+
+EXPECTED85
+|
+vorg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$ClusterRolesConfig$ClusterRolesConfigValue.path87
+Ñ
+~org.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$ClusterRolesConfig$ClusterRolesConfigValue.defaultValue89
+π
+≤org.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$ClusterRolesConfig$ClusterRolesConfigValue#<init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Object;)V91
+ú
+ïorg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$ClusterRolesConfig$ClusterRolesConfigValue#getDefaultValue()Ljava/lang/Object;93
+ö
+ìorg.eclipse.ditto.gateway.service.util.config.health.HealthCheckConfig$ClusterRolesConfig$ClusterRolesConfigValue#getConfigPath()Ljava/lang/String;95J
+
+1
+12Z
+
+3	
+354jÅ
+
+17
+171815
+@
+23:
+232425 *
+1# #(26:3B
+	
+9
+10
+
+
+11
+26
+A
+58;
+585925 *
+1:	 :(234:3B
+	
+9
+53
+
+
+11
+37
+A
+63;
+636425 *
+1D	 D(
+234:3B
+	
+9
+10
+
+
+11
+65
+@
+34:
+343536 *
+10
+ 0( 26:3B
+	
+9
+10
+
+
+11
+37
+@
+27:
+272825 *
+1* *(26:3B
+	
+9
+10
+
+
+11
+29
+A
+90;
+909125 *
+1n n($273:3B
+	
+9
+53
+
+
+11
+75
+
+38
+383915
+A
+86;
+868748 *
+1k k(273:3B
+	
+9
+53
+
+
+11
+54
+A
+92;
+929325 *
+1s s(273:3B
+	
+9
+10
+
+
+11
+62
+
+20
+202115
+A
+51;
+515248 *
+17	 7(234:3B
+	
+9
+53
+
+
+11
+54
+6
+830
+838448 *
+1h h(273:3B
+
+
+11
+85
+9
+64
+678 *
+1 (#:3B
+	
+9
+10
+
+
+11
+12
+6
+780
+787925 *
+1d d(%273:3B
+
+
+11
+45
+A
+94;
+949525 *
+1x x(273:3B
+	
+9
+10
+
+
+11
+65
+A
+60;
+606125 *
+1?	 ?(
+234:3B
+	
+9
+10
+
+
+11
+62
+A
+73;
+737436 *
+1d d(%230:3B
+	
+9
+10
+
+
+11
+75
+6
+760
+767725 *
+1d d(%273:3B
+
+
+11
+42
+6
+430
+434425 *
+10
+ 0( 234:3B
+
+
+11
+45
+A
+67;
+676825 *
+1W	 W(230:3B
+	
+9
+10
+
+
+11
+69
+6
+460
+464748 *
+15	 5(234:3B
+
+
+11
+49
+A
+55;
+555648 *
+18	 8(234:3B
+	
+9
+53
+
+
+11
+57
+
+13
+131415
+?
+309
+30318 *
+1O O(!26:3B
+	
+9
+10
+
+
+11
+66
+6
+400
+404125 *
+10
+ 0( 234:3B
+
+
+11
+42
+A
+70;
+707125 *
+1^	 ^(230:3B
+	
+9
+10
+
+
+11
+72
+6
+800
+808148 *
+1f f(273:3B
+
+
+11
+82
+A
+88;
+888948 *
+1l l(273:3B
+	
+9
+53
+
+
+11
+57rã
+
+61316*
+1, (B
+
+61719*
+1 (
+
+62022*
+1 (
+
+61322*
+1, (B
+
+273032*
+1* *(
+
+273022*
+1* *(
+
+273033*
+1* *(
+
+343816*
+10, 0(<
+
+343822*
+10, 0(<
+
+463450*
+15	 5(
+
+463450*
+15	 5(
+
+583450*
+1:	 :(
+
+585133*
+1; ;(
+
+585533*
+1< <(
+
+605533*
+1A A( 
+
+635133*
+1F F(
+
+301719*
+1N N(
+
+302022*
+1N N(
+
+733816*
+1d1 d(A
+
+733822*
+1d1 d(A
+
+807350*
+1f f(
+
+807350*
+1f f(
+
+837350*
+1h h(
+
+837350*
+1h h(
+
+907350*
+1n n($
+
+908633*
+1o o(
+
+908833*
+1p p(
+
+928833*
+1u u($
+
+948633*
+1z z(

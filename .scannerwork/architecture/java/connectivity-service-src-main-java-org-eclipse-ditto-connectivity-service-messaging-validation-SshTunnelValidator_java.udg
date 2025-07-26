@@ -1,0 +1,674 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508493443*java2.Bž
+{
+vconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/validation/SshTunnelValidator.java2
+
+package4
+@
+;org.eclipse.ditto.connectivity.service.messaging.validation5
+S
+Norg.eclipse.ditto.connectivity.service.messaging.validation.SshTunnelValidator7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+
+SshTunnelValidator12
+_
+Yorg.eclipse.ditto.connectivity.service.messaging.validation.SshTunnelValidator.SSH_SCHEME14
+
+field15
+
+private16
+
+
+SSH_SCHEME17
+a
+[org.eclipse.ditto.connectivity.service.messaging.validation.SshTunnelValidator.dittoHeaders19
+
+dittoHeaders20
+
+DittoHeaders22
+
+unknown23
+
+is type24
+
+
+uses25
+b
+\org.eclipse.ditto.connectivity.service.messaging.validation.SshTunnelValidator.hostValidator27
+
+hostValidator28
+
+HostValidator30
+Ð
+Éorg.eclipse.ditto.connectivity.service.messaging.validation.SshTunnelValidator#getInstance(LDittoHeaders;LHostValidator;)Lorg/eclipse/ditto/connectivity/service/messaging/validation/SshTunnelValidator;32
+
+method33
+
+public34
+
+getInstance35
+
+returns36
+*
+$Recovered#typeBindingLDittoHeaders;038
+
+	has param39
++
+%Recovered#typeBindingLHostValidator;041
+
+calls42
+{
+uorg.eclipse.ditto.connectivity.service.messaging.validation.SshTunnelValidator#<init>(LDittoHeaders;LHostValidator;)V44
+
+
+references45
+k
+eorg.eclipse.ditto.connectivity.service.messaging.validation.SshTunnelValidator#validate(LSshTunnel;)V47
+
+validate48
+'
+!Recovered#typeBindingLSshTunnel;050
+u
+oorg.eclipse.ditto.connectivity.service.messaging.validation.SshTunnelValidator#validateUri(Ljava/lang/String;)V52
+r
+lorg.eclipse.ditto.connectivity.service.messaging.validation.SshTunnelValidator$SshTunnelCredentialsValidator54
+w
+qorg.eclipse.ditto.connectivity.service.messaging.validation.SshTunnelValidator#validateFingerprints(LSshTunnel;)V56
+
+validateFingerprints57
+
+DittoRuntimeException59
+Œ
+…org.eclipse.ditto.connectivity.service.messaging.validation.SshTunnelValidator#configError(Ljava/lang/String;)LDittoRuntimeException;61
+
+validateUri62
+
+configError63
+#
+SshTunnelCredentialsValidator64
+0
+*Recovered#typeBindingLCredentialsVisitor;066
+
+
+implements67
+µ
+®org.eclipse.ditto.connectivity.service.messaging.validation.SshTunnelValidator$SshTunnelCredentialsValidator#clientCertificate(LClientCertificateCredentials;)Ljava/lang/Void;69
+
+clientCertificate70
+:
+4Recovered#typeBindingLClientCertificateCredentials;072
+´
+­org.eclipse.ditto.connectivity.service.messaging.validation.SshTunnelValidator$SshTunnelCredentialsValidator#notSupportedException(Ljava/lang/String;)LDittoRuntimeException;74
+¯
+¨org.eclipse.ditto.connectivity.service.messaging.validation.SshTunnelValidator$SshTunnelCredentialsValidator#usernamePassword(LUserPasswordCredentials;)Ljava/lang/Void;76
+
+usernamePassword77
+5
+/Recovered#typeBindingLUserPasswordCredentials;079
+¹
+²org.eclipse.ditto.connectivity.service.messaging.validation.SshTunnelValidator$SshTunnelCredentialsValidator#sshPublicKeyAuthentication(LSshPublicKeyCredentials;)Ljava/lang/Void;81
+ 
+sshPublicKeyAuthentication82
+5
+/Recovered#typeBindingLSshPublicKeyCredentials;084
+›
+”org.eclipse.ditto.connectivity.service.messaging.validation.SshTunnelValidator$SshTunnelCredentialsValidator#hmac(LHmacCredentials;)Ljava/lang/Void;86
+
+
+hmac87
+-
+'Recovered#typeBindingLHmacCredentials;089
+´
+­org.eclipse.ditto.connectivity.service.messaging.validation.SshTunnelValidator$SshTunnelCredentialsValidator#oauthClientCredentials(LOAuthClientCredentials;)Ljava/lang/Void;91
+
+oauthClientCredentials92
+4
+.Recovered#typeBindingLOAuthClientCredentials;094
+
+notSupportedException95J
+
+1
+12Z
+
+3	
+354jÒ
+
+
+40
+404123
+@
+43:
+434433 *
+12 2(26:3B
+	
+9
+16
+
+
+11
+12
+
+71
+717223
+
+37
+373823
+@
+55:
+555633 *
+1C C(26:3B
+	
+9
+16
+
+
+11
+57
+@
+46:
+464733 *
+1= =(	26:3B
+	
+9
+10
+
+
+11
+48
+
+83
+838423
+?
+539
+53548 *
+1a a(626:3B
+	
+9
+16
+
+
+11
+64
+A
+90;
+909133 *
+1~	 ~(
+253:3B
+	
+9
+34
+
+
+11
+92
+A
+75;
+757633 *
+1h	 h(
+253:3B
+	
+9
+34
+
+
+11
+77
+@
+31:
+313233 *
+1- -(26:3B
+	
+9
+34
+
+
+11
+35
+@
+60:
+606133 *
+1Z Z(26:3B
+	
+9
+16
+
+
+11
+63
+
+29
+293023
+
+93
+939423
+@
+13:
+131415 *
+1" "(26:3B
+	
+9
+16
+
+
+11
+17
+@
+18:
+181915 *
+1# #(26:3B
+	
+9
+16
+
+
+11
+20
+@
+26:
+262715 *
+1$ $(26:3B
+	
+9
+16
+
+
+11
+28
+A
+85;
+858633 *
+1y	 y(
+253:3B
+	
+9
+34
+
+
+11
+87
+9
+64
+678 *
+1   (:3B
+	
+9
+10
+
+
+11
+12
+A
+80;
+808133 *
+1s	 s(
+253:3B
+	
+9
+34
+
+
+11
+82
+
+88
+888923
+
+49
+495023
+
+65
+656623
+C
+73=
+737433 *
+1ƒ	 ƒ(253:3B
+	
+9
+16
+
+
+11
+95
+@
+51:
+515233 *
+1I I(26:3B
+	
+9
+16
+
+
+11
+62
+
+21
+212223
+
+58
+585923
+A
+68;
+686933 *
+1c	 c(
+253:3B
+	
+9
+34
+
+
+11
+70
+
+78
+787923r¥
+
+182124*
+1# #(
+
+182125*
+1# #(
+
+182125*
+1#  #(,
+
+262924*
+1$ $( 
+
+262925*
+1$ $( 
+
+262925*
+1$! $(.
+
+31636*
+1- -(%
+
+313739*
+1-8 -(D
+
+314039*
+1. .( 
+
+31625*
+1- -(%
+
+313724*
+1-E -(Q
+
+313725*
+1-8 -(D
+
+314024*
+1.! .(.
+
+314025*
+1. .( 
+
+31642*
+1/ /(&
+
+433739*
+12& 2(2
+
+434039*
+13 3( 
+
+43642*
+12 2(
+
+433724*
+123 2(?
+
+433725*
+12& 2(2
+
+434024*
+13! 3(.
+
+434025*
+13 3( 
+
+43625*
+14	 4(
+
+43645*
+14	 4(
+
+432125*
+14 4(
+
+431845*
+14 4(
+
+43625*
+15	 5(
+
+43645*
+15	 5(
+
+432925*
+15 5(
+
+432645*
+15 5(
+
+464939*
+1= =("
+
+464924*
+1=# =()
+
+464925*
+1= =("
+
+46645*
+1>	 >(
+
+465142*
+1>	 >(
+
+465342*
+1?, ?(I
+
+46645*
+1@	 @(
+
+465542*
+1@	 @(
+
+554939*
+1C- C(6
+
+554924*
+1C7 C(=
+
+554925*
+1C- C(6
+
+555836*
+1E E(
+
+55645*
+1E E(
+
+556042*
+1E E(
+
+515836*
+1K K(
+
+51645*
+1K K(
+
+516042*
+1K K(
+
+511345*
+1O) O(3
+
+515836*
+1P P("
+
+51645*
+1P P("
+
+516042*
+1P P("
+
+512645*
+1R R(
+
+512925*
+1R R(
+
+512645*
+1R R(
+
+512125*
+1R; R(G
+
+511845*
+1R; R(G
+
+515836*
+1V V(
+
+51645*
+1V V(
+
+516042*
+1V V(
+
+605836*
+1Z Z("
+
+605825*
+1Z Z("
+
+602125*
+1] ](+
+
+601845*
+1] ](+
+
+536567*
+1aB a(T
+
+536525*
+1aB a(T
+
+687139*
+1d- d(I
+
+687124*
+1dJ d(U
+
+687125*
+1d- d(I
+
+685836*
+1e e((
+
+685345*
+1e e((
+
+687342*
+1e e((
+
+757839*
+1i, i(C
+
+757824*
+1iD i(O
+
+757825*
+1i, i(C
+
+755836*
+1k k("
+
+75645*
+1k k("
+
+756042*
+1k k("
+
+755836*
+1n n("
+
+75645*
+1n n("
+
+756042*
+1n n("
+
+808339*
+1t6 t(M
+
+808324*
+1tN t(Y
+
+808325*
+1t6 t(M
+
+802125*
+1uK u(W
+
+801845*
+1uK u(W
+
+858839*
+1z  z(/
+
+858824*
+1z0 z(;
+
+858825*
+1z  z(/
+
+855836*
+1{ {((
+
+855345*
+1{ {((
+
+857342*
+1{ {((
+
+909339*
+12 (H
+
+909324*
+1I (T
+
+909325*
+12 (H
+
+905836*
+1€ €((
+
+905345*
+1€ €((
+
+907342*
+1€ €((
+
+735836*
+1ƒ ƒ(&
+
+735825*
+1ƒ ƒ(&
+
+732125*
+1†# †(/
+
+731845*
+1†# †(/

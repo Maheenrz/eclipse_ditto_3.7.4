@@ -1,0 +1,836 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508740685*java2.B≤
+p
+kgateway/service/src/main/java/org/eclipse/ditto/gateway/service/endpoints/routes/whoami/WhoamiResponse.java2
+
+package4
+>
+9org.eclipse.ditto.gateway.service.endpoints.routes.whoami5
+M
+Horg.eclipse.ditto.gateway.service.endpoints.routes.whoami.WhoamiResponse7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+WhoamiResponse12
+3
+-Recovered#typeBindingLCommonCommandResponse;014
+
+unknown15
+
+extends16
+(
+"Recovered#typeBindingLWithEntity;018
+
+
+implements19
+
+	Immutable21
+
+annotated by22
+'
+!Recovered#typeBindingLImmutable;024
+
+
+uses25
+!
+JsonParsableCommandResponse27
+9
+3Recovered#typeBindingLJsonParsableCommandResponse;029
+S
+Morg.eclipse.ditto.gateway.service.endpoints.routes.whoami.WhoamiResponse.TYPE31
+
+
+references32
+
+field33
+
+
+TYPE34
+]
+Worg.eclipse.ditto.gateway.service.endpoints.routes.whoami.WhoamiResponse.JSON_USER_INFO36
+
+private37
+
+JSON_USER_INFO38
+
+JsonFieldDefinition40
+
+is type41
+(
+"Recovered#typeBindingLJsonObject;043
+Z
+Torg.eclipse.ditto.gateway.service.endpoints.routes.whoami.WhoamiResponse.HTTP_STATUS45
+
+HTTP_STATUS46
+
+
+HttpStatus48
+`
+Zorg.eclipse.ditto.gateway.service.endpoints.routes.whoami.WhoamiResponse.JSON_DESERIALIZER50
+
+JSON_DESERIALIZER51
+%
+CommandResponseJsonDeserializer53
+^
+Xorg.eclipse.ditto.gateway.service.endpoints.routes.whoami.WhoamiResponse.userInformation55
+
+userInformation56
+
+
+JsonObject58
+~
+xorg.eclipse.ditto.gateway.service.endpoints.routes.whoami.WhoamiResponse#<init>(LJsonObject;LHttpStatus;LDittoHeaders;)V60
+
+method61
+
+	has param62
+(
+"Recovered#typeBindingLHttpStatus;064
+*
+$Recovered#typeBindingLDittoHeaders;066
+
+calls67
+:
+4org.eclipse.ditto.base.model.common.ConditionChecker69
+
+yorg.eclipse.ditto.base.model.common.ConditionChecker#checkNotNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;71
+Ω
+∂org.eclipse.ditto.gateway.service.endpoints.routes.whoami.WhoamiResponse#of(LUserInformation;LDittoHeaders;)Lorg/eclipse/ditto/gateway/service/endpoints/routes/whoami/WhoamiResponse;73
+
+of74
+
+returns75
+-
+'Recovered#typeBindingLUserInformation;077
+æ
+∑org.eclipse.ditto.gateway.service.endpoints.routes.whoami.WhoamiResponse#fromJson(LJsonObject;LDittoHeaders;)Lorg/eclipse/ditto/gateway/service/endpoints/routes/whoami/WhoamiResponse;79
+
+fromJson80
+§
+ùorg.eclipse.ditto.gateway.service.endpoints.routes.whoami.WhoamiResponse#appendPayload(LJsonObjectBuilder;LJsonSchemaVersion;Ljava/util/function/Predicate;)V82
+
+	protected83
+
+appendPayload84
+/
+)Recovered#typeBindingLJsonObjectBuilder;086
+/
+)Recovered#typeBindingLJsonSchemaVersion;088
+'
+!Recovered#typeBindingLJsonField;090
+π
+≤org.eclipse.ditto.gateway.service.endpoints.routes.whoami.WhoamiResponse#setDittoHeaders(LDittoHeaders;)Lorg/eclipse/ditto/gateway/service/endpoints/routes/whoami/WhoamiResponse;92
+
+setDittoHeaders93
+∞
+©org.eclipse.ditto.gateway.service.endpoints.routes.whoami.WhoamiResponse#setEntity(LJsonValue;)Lorg/eclipse/ditto/gateway/service/endpoints/routes/whoami/WhoamiResponse;95
+
+	setEntity96
+'
+!Recovered#typeBindingLJsonValue;098
+y
+rorg.eclipse.ditto.gateway.service.endpoints.routes.whoami.WhoamiResponse#getEntity(LJsonSchemaVersion;)LJsonValue;100
+
+	getEntity101
+
+	JsonValue103
+k
+dorg.eclipse.ditto.gateway.service.endpoints.routes.whoami.WhoamiResponse#equals(Ljava/lang/Object;)Z105
+
+equals106
+
+Nullable108
+'
+ Recovered#typeBindingLNullable;0110
+
+CommonCommandResponse112
+[
+Torg.eclipse.ditto.gateway.service.endpoints.routes.whoami.WhoamiResponse#hashCode()I114
+
+hashCode115
+l
+eorg.eclipse.ditto.gateway.service.endpoints.routes.whoami.WhoamiResponse#toString()Ljava/lang/String;117
+
+toString118
+
+Nonnull120
+&
+Recovered#typeBindingLNonnull;0122
+Ä
+yorg.eclipse.ditto.gateway.service.endpoints.routes.whoami.WhoamiResponse#getSupportedSchemaVersions()[LJsonSchemaVersion;124
+!
+getSupportedSchemaVersions125
+
+JsonSchemaVersion127J
+
+1
+12Z
+
+3	
+354j®
+
+20
+202115
+@
+54:
+545533 *
+1E E(26:3B
+	
+9
+37
+
+
+11
+56
+
+65
+656615
+
+63
+636415
+@
+72:
+727361 *
+1[ [(26:3B
+	
+9
+10
+
+
+11
+74
+
+70
+707115
+
+57
+575815
+
+126
+12612715
+9
+64
+678 *
+1/ /(":3B
+	
+9
+10
+
+
+11
+12
+
+23
+232415
+
+85
+858615
+@
+78:
+787961 *
+1l l(26:3B
+	
+9
+10
+
+
+11
+80
+F
+113?
+11311461 *
+1ë ë(26:3B
+	
+9
+10
+
+11
+115
+
+26
+262715
+
+109
+10911015
+
+87
+878815
+
+111
+11111215
+@
+81:
+818261 *
+1p p(26:3B
+	
+9
+83
+
+
+11
+84
+
+42
+424315
+
+17
+171815
+@
+44:
+444533 *
+19 9(26:3B
+	
+9
+37
+
+
+11
+46
+
+47
+474815
+
+119
+11912015
+@
+30:
+303133 *
+14 4(26:3B
+	
+9
+10
+
+
+11
+34
+F
+104?
+10410561 *
+1à à(26:3B
+	
+9
+10
+
+11
+106
+
+13
+131415
+@
+91:
+919261 *
+1x x(26:3B
+	
+9
+10
+
+
+11
+93
+
+97
+979815
+F
+116?
+11611761 *
+1ñ ñ(26:3B
+	
+9
+10
+
+11
+118
+@
+35:
+353633 *
+16 6(26:3B
+	
+9
+37
+
+
+11
+38
+
+102
+10210315
+
+39
+394015
+
+68
+686915
+
+76
+767715
+
+89
+899015
+F
+123?
+12312461 *
+1ü ü(26:3B
+	
+9
+10
+
+11
+125
+
+28
+282915
+
+121
+12112215
+
+52
+525315
+D
+99>
+9910061 *
+1É É(26:3B
+	
+9
+10
+
+11
+101
+@
+94:
+949561 *
+1} }(26:3B
+	
+9
+10
+
+
+11
+96
+@
+49:
+495033 *
+1; ;(26:3B
+	
+9
+37
+
+
+11
+51
+@
+59:
+596061 *
+1G G(26:3B
+	
+9
+37
+
+
+11
+12
+
+107
+10710815r¿
+
+61316*
+1/+ /(@
+
+61719*
+1/\ /(f
+
+62022*
+1- -(
+
+62325*
+1- -(
+
+62622*
+1. .(
+
+62825*
+1. .(
+
+63032*
+1.4 .(8
+
+61325*
+1/+ /(@
+
+61725*
+1/\ /(f
+
+353941*
+16 6(-
+
+353925*
+16 6(-
+
+354225*
+16. 6(8
+
+353925*
+16: 6(H
+
+444741*
+19 9($
+
+444725*
+19 9($
+
+444725*
+19% 9(0
+
+495241*
+1; ;(9
+
+495225*
+1; ;(9
+
+49625*
+1;: ;(H
+
+495225*
+1;J ;([
+
+493032*
+1<9 <(=
+
+545741*
+1E E(
+
+545725*
+1E E(
+
+545725*
+1E E(-
+
+594262*
+1G" G(,
+
+596362*
+1H H(
+
+596562*
+1I I(
+
+59667*
+1G G(
+
+594241*
+1G- G(<
+
+594225*
+1G" G(,
+
+596341*
+1H H((
+
+596325*
+1H H(
+
+596541*
+1I  I(,
+
+596525*
+1I I(
+
+593032*
+1K K(
+
+594725*
+1M/ M(:
+
+594432*
+1M/ M(:
+
+59625*
+1N N('
+
+59625*
+1P	 P(
+
+59632*
+1P	 P(
+
+595725*
+1P P(
+
+595432*
+1P P(
+
+596832*
+1P  P(,
+
+597067*
+1P  P(,
+
+72675*
+1[ [(!
+
+727662*
+1[+ [(:
+
+726562*
+1[R [(^
+
+72625*
+1[ [(!
+
+727641*
+1[; [(J
+
+727625*
+1[+ [(:
+
+726541*
+1[_ [(k
+
+726525*
+1[R [(^
+
+726832*
+1\	 \(
+
+727067*
+1\	 \(
+
+72667*
+1] ]("
+
+724725*
+1]= ](H
+
+724432*
+1]= ](H
+
+78675*
+1l l(!
+
+784262*
+1l1 l(;
+
+786562*
+1lN l(Z
+
+78625*
+1l l(!
+
+784241*
+1l< l(F
+
+784225*
+1l1 l(;
+
+786541*
+1l[ l(g
+
+786525*
+1lN l(Z
+
+784932*
+1m m(!
+
+785225*
+1m m(!
+
+784932*
+1m m(!
+
+818562*
+1q( q(9
+
+818762*
+1r r($
+
+818541*
+1q: q(K
+
+818525*
+1q( q(9
+
+818741*
+1r% r(2
+
+818725*
+1r r($
+
+818925*
+1s s(&
+
+813925*
+1u u(-
+
+813532*
+1u u(-
+
+815725*
+1u/ u(>
+
+815432*
+1u/ u(>
+
+91675*
+1y y(
+
+916562*
+1y1 y(=
+
+91625*
+1y y(
+
+916541*
+1y> y(J
+
+916525*
+1y1 y(=
+
+91667*
+1z z("
+
+915725*
+1z# z(2
+
+915432*
+1z# z(2
+
+94675*
+1~ ~(
+
+949762*
+1~+ ~(4
+
+94625*
+1~ ~(
+
+949741*
+1~5 ~(;
+
+949725*
+1~+ ~(4
+
+946832*
+1	 (
+
+947067*
+1	 (
+
+94667*
+1Ä Ä("
+
+9910275*
+1Ñ Ñ(
+
+998762*
+1Ñ& Ñ(7
+
+9910225*
+1Ñ Ñ(
+
+998741*
+1Ñ8 Ñ(E
+
+998725*
+1Ñ& Ñ(7
+
+995725*
+1Ö Ö(
+
+995432*
+1Ö Ö(
+
+10410722*
+1â â(
+
+10410925*
+1â â($
+
+104632*
+1ä ä(
+
+10411125*
+1ä ä(
+
+104632*
+1ä ä(
+
+104625*
+1ä- ä(;
+
+104641*
+1ã" ã(&
+
+104625*
+1ã ã(!
+
+104625*
+1ã* ã(8
+
+1045725*
+1å# å(2
+
+1045432*
+1å# å(2
+
+1045725*
+1å9 å(H
+
+1045432*
+1å9 å(H
+
+113632*
+1ì ì("
+
+11311125*
+1ì ì("
+
+113632*
+1ì ì("
+
+1135725*
+1ì/ ì(>
+
+1135432*
+1ì/ ì(>
+
+11611922*
+1ó ó(
+
+11612125*
+1ó ó(
+
+116632*
+1ö ö(
+
+11611125*
+1ö ö(
+
+116632*
+1ö ö(
+
+1165725*
+1õ& õ(5
+
+1165432*
+1õ& õ(5
+
+12312675*
+1° °(
+
+12311922*
+1† †(
+
+12312125*
+1† †(
+
+12312625*
+1° °(
+
+1238725*
+1¢ ¢(%

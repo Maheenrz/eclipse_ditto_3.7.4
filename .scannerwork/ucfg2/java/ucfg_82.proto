@@ -1,0 +1,76 @@
+
+Öorg.eclipse.ditto.gateway.service.security.authentication.AuthenticationResultOrTimeout#get()Ljava/util/concurrent/CompletableFuture;©
+û/Users/Maheen/Downloads/ditto-3.7.4/gateway/service/src/main/java/org/eclipse/ditto/gateway/service/security/authentication/AuthenticationResultOrTimeout.javaH  H(#"1*Ï
+1I I()€
+ÿ
+I I(),
+%0&java.util.concurrent.CompletableFuture"__id*ó
+
+__unknown_file ({*yY
+Worg.eclipse.ditto.gateway.service.security.authentication.AuthenticationResultOrTimeout"
+authenticationResultFutureΩ
+∫
+J J(+
+%1java.time.Duration"__id*ç
+
+__unknown_file (q*oY
+Worg.eclipse.ditto.gateway.service.security.authentication.AuthenticationResultOrTimeout"
+awaitAuthTimeout|z
+J J(6
+
+%2long"java.time.Duration#toMillis()J*6
+
+__unknown_file (
+
+%1java.time.Duration2
+toMillis()[
+Y
+J8 J(M#
+%3java.util.concurrent.TimeUnit"__id*"
+
+__unknown_file (
+""ùö
+I J(N,
+%4&java.util.concurrent.CompletableFuture"zjava.util.concurrent.CompletableFuture#orTimeout(JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/CompletableFuture;*J
+
+__unknown_file (.
+,
+%0&java.util.concurrent.CompletableFuture*(
+
+__unknown_file (
+
+
+%2long*A
+
+__unknown_file (%
+#
+%3java.util.concurrent.TimeUnit2+orTimeout(JLjava/util/concurrent/TimeUnit;)±
+Æ
+K M(
+%5"__declareFunction*à
+
+__unknown_file (lj
+h__sonar_lambda_3$org.eclipse.ditto.gateway.service.security.authentication.AuthenticationResultOrTimeout 
+«
+
+__unknown_file (,
+
+%5"$
+"AuthenticationResultOrTimeout.this"__id*w
+
+__unknown_file ([Y
+Worg.eclipse.ditto.gateway.service.security.authentication.AuthenticationResultOrTimeoutÆ´
+I M(
+%7"{java.util.concurrent.CompletableFuture#exceptionally(Ljava/util/function/Function;)Ljava/util/concurrent/CompletableFuture;*J
+
+__unknown_file (.
+,
+%4&java.util.concurrent.CompletableFuture*"
+
+__unknown_file (
+
+%52,exceptionally(Ljava/util/function/Function;)"
+I M(
+
+%7B[Y
+Worg.eclipse.ditto.gateway.service.security.authentication.AuthenticationResultOrTimeoutH

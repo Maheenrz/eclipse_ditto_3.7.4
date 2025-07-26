@@ -1,0 +1,749 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508655871*java2.Bº
+k
+fgateway/service/src/main/java/org/eclipse/ditto/gateway/service/streaming/actors/StreamingSession.java2
+
+package4
+7
+2org.eclipse.ditto.gateway.service.streaming.actors5
+H
+Corg.eclipse.ditto.gateway.service.streaming.actors.StreamingSession7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+StreamingSession12
+_
+Yorg.eclipse.ditto.gateway.service.streaming.actors.StreamingSession.ENTITY_ID_PLACEHOLDER14
+
+field15
+
+private16
+
+ENTITY_ID_PLACEHOLDER17
+
+EntityIdPlaceholder19
+
+unknown20
+
+is type21
+
+
+uses22
+`
+Zorg.eclipse.ditto.gateway.service.streaming.actors.StreamingSession.TOPIC_PATH_PLACEHOLDER24
+
+TOPIC_PATH_PLACEHOLDER25
+
+TopicPathPlaceholder27
+^
+Xorg.eclipse.ditto.gateway.service.streaming.actors.StreamingSession.RESOURCE_PLACEHOLDER29
+
+RESOURCE_PLACEHOLDER30
+
+ResourcePlaceholder32
+Z
+Torg.eclipse.ditto.gateway.service.streaming.actors.StreamingSession.TIME_PLACEHOLDER34
+
+TIME_PLACEHOLDER35
+
+TimePlaceholder37
+Z
+Torg.eclipse.ditto.gateway.service.streaming.actors.StreamingSession.PROTOCOL_ADAPTER39
+
+PROTOCOL_ADAPTER40
+
+DittoProtocolAdapter42
+T
+Norg.eclipse.ditto.gateway.service.streaming.actors.StreamingSession.namespaces44
+
+
+namespaces45
+X
+Rorg.eclipse.ditto.gateway.service.streaming.actors.StreamingSession.thingPredicate47
+
+thingPredicate48
+#
+Recovered#typeBindingLThing;050
+$
+Recovered#typeBindingLSignal;052
+U
+Oorg.eclipse.ditto.gateway.service.streaming.actors.StreamingSession.extraFields54
+
+extraFields55
+
+ThingFieldSelector57
+
+Nullable59
+
+annotated by60
+&
+ Recovered#typeBindingLNullable;062
+_
+Yorg.eclipse.ditto.gateway.service.streaming.actors.StreamingSession.streamingSessionActor64
+
+streamingSessionActor65
+
+ActorRef67
+P
+Jorg.eclipse.ditto.gateway.service.streaming.actors.StreamingSession.logger69
+
+logger70
+#
+ThreadSafeDittoLoggingAdapter72
+«
+¤org.eclipse.ditto.gateway.service.streaming.actors.StreamingSession#<init>(Ljava/util/List;LCriteria;LThingFieldSelector;LActorRef;LThreadSafeDittoLoggingAdapter;)V74
+
+method75
+&
+ Recovered#typeBindingLCriteria;077
+
+	has param78
+0
+*Recovered#typeBindingLThingFieldSelector;080
+&
+ Recovered#typeBindingLActorRef;082
+;
+5Recovered#typeBindingLThreadSafeDittoLoggingAdapter;084
+
+calls85
+
+
+references86
+ë
+äorg.eclipse.ditto.gateway.service.streaming.actors.StreamingSession#of(Ljava/util/List;LCriteria;LThingFieldSelector;LActorRef;LThreadSafeDittoLoggingAdapter;)Lorg/eclipse/ditto/gateway/service/streaming/actors/StreamingSession;88
+
+	protected89
+
+of90
+
+returns91
+i
+corg.eclipse.ditto.gateway.service.streaming.actors.StreamingSession#getNamespaces()Ljava/util/List;93
+
+getNamespaces94
+n
+horg.eclipse.ditto.gateway.service.streaming.actors.StreamingSession#getExtraFields()Ljava/util/Optional;96
+
+getExtraFields97
+z
+torg.eclipse.ditto.gateway.service.streaming.actors.StreamingSession#mergeThingWithExtra(LSignal;LJsonObject;)LThing;99
+
+mergeThingWithExtra100
+
+Thing102
+)
+"Recovered#typeBindingLJsonObject;0104
+j
+corg.eclipse.ditto.gateway.service.streaming.actors.StreamingSession#matchesFilter(LThing;LSignal;)Z106
+
+matchesFilter107
+o
+horg.eclipse.ditto.gateway.service.streaming.actors.StreamingSession#getStreamingSessionActor()LActorRef;109
+
+getStreamingSessionActor110
+u
+norg.eclipse.ditto.gateway.service.streaming.actors.StreamingSession#getLogger()LThreadSafeDittoLoggingAdapter;112
+
+	getLogger113J
+
+1
+12Z
+
+3	
+354jÜ
+
+81
+818220
+
+66
+666720
+F
+111?
+11111275 *
+1‚ ‚(26:3B
+	
+9
+10
+
+11
+113
+@
+92:
+929375 *
+1W W(26:3B
+	
+9
+10
+
+
+11
+94
+@
+63:
+636415 *
+16 6(26:3B
+	
+9
+16
+
+
+11
+65
+D
+108=
+10810975 *
+1{ {(26:3B
+	
+9
+10
+
+11
+110
+@
+13:
+131415 *
+1, ,(26:3B
+	
+9
+16
+
+
+11
+17
+@
+28:
+282915 *
+1. .(26:3B
+	
+9
+16
+
+
+11
+30
+@
+68:
+686915 *
+17 7(26:3B
+	
+9
+16
+
+
+11
+70
+
+51
+515220
+
+61
+616220
+@
+53:
+535415 *
+15 5(26:3B
+	
+9
+16
+
+
+11
+55
+@
+46:
+464715 *
+14 4(26:3B
+	
+9
+16
+
+
+11
+48
+
+49
+495020
+
+76
+767720
+
+103
+10310420
+A
+98;
+989975 *
+1j j(26:3B
+	
+9
+10
+
+11
+100
+@
+87:
+878875 *
+1M M(26:3B
+	
+9
+89
+
+
+11
+90
+@
+95:
+959675 *
+1^ ^(26:3B
+	
+9
+10
+
+
+11
+97
+
+101
+10110220
+D
+105=
+10510675 *
+1w w(26:3B
+	
+9
+10
+
+11
+107
+@
+38:
+383915 *
+11 1(26:3B
+	
+9
+16
+
+
+11
+40
+@
+43:
+434415 *
+13 3(26:3B
+	
+9
+16
+
+
+11
+45
+
+26
+262720
+
+71
+717220
+@
+73:
+737475 *
+19 9(26:3B
+	
+9
+16
+
+
+11
+12
+
+79
+798020
+
+18
+181920
+@
+23:
+232415 *
+1- -(26:3B
+	
+9
+16
+
+
+11
+25
+
+31
+313220
+9
+64
+678 *
+1* *($:3B
+	
+9
+10
+
+
+11
+12
+
+36
+363720
+
+56
+565720
+@
+33:
+333415 *
+1/ /(26:3B
+	
+9
+16
+
+
+11
+35
+
+41
+414220
+
+58
+585920
+
+83
+838420r«
+
+131821*
+1, ,(-
+
+131822*
+1, ,(-
+
+131822*
+1,. ,(C
+
+232621*
+1- -(.
+
+232622*
+1- -(.
+
+232622*
+1-/ -(E
+
+283121*
+1. .(-
+
+283122*
+1. .(-
+
+283122*
+1.. .(B
+
+333621*
+1/ /()
+
+333622*
+1/ /()
+
+333622*
+1/* /(:
+
+384121*
+11 1(.
+
+384122*
+11 1(.
+
+384122*
+11/ 1(?
+
+464922*
+14 4($
+
+465122*
+14& 4(,
+
+535621*
+15 5(/
+
+535860*
+15 5(
+
+536122*
+15 5(
+
+535622*
+15 5(/
+
+535622*
+150 5(;
+
+636621*
+16 6(
+
+636622*
+16 6(
+
+636622*
+16 6(1
+
+687121*
+17 7(0
+
+687122*
+17 7(0
+
+687122*
+171 7(7
+
+737678*
+19M 9(U
+
+737978*
+1: :(/
+
+738178*
+1:C :(K
+
+738378*
+1; ;(0
+
+73685*
+19 9(
+
+737621*
+19V 9(d
+
+735860*
+19= 9(>
+
+736122*
+19> 9(F
+
+737622*
+19M 9(U
+
+737921*
+1:0 :(;
+
+735860*
+1: :(
+
+736122*
+1: :(
+
+737922*
+1: :(/
+
+738121*
+1:L :(a
+
+738122*
+1:C :(K
+
+738321*
+1;1 ;(7
+
+738322*
+1; ;(0
+
+73622*
+1<	 <(
+
+73686*
+1<	 <(
+
+734386*
+1< <(
+
+734686*
+1=	 =(
+
+73622*
+1H	 H(
+
+73686*
+1H	 H(
+
+735622*
+1H H(
+
+735386*
+1H H(
+
+73622*
+1I	 I(
+
+73686*
+1I	 I(
+
+736622*
+1I I(#
+
+736386*
+1I I(#
+
+73622*
+1J	 J(
+
+73686*
+1J	 J(
+
+737122*
+1J J(
+
+736886*
+1J J(
+
+87691*
+1M M(
+
+877678*
+1MO M(W
+
+877978*
+1N N(/
+
+878178*
+1NC N(K
+
+878378*
+1O O(0
+
+87622*
+1M M(
+
+877621*
+1MX M(f
+
+875860*
+1M? M(@
+
+876122*
+1M@ M(H
+
+877622*
+1MO M(W
+
+877921*
+1N0 N(;
+
+875860*
+1N N(
+
+876122*
+1N N(
+
+877922*
+1N N(/
+
+878121*
+1NL N(a
+
+878122*
+1NC N(K
+
+878321*
+1O1 O(7
+
+878322*
+1O O(0
+
+87685*
+1Q Q($
+
+924386*
+1X X(
+
+957922*
+1^ ^('
+
+955622*
+1_$ _(/
+
+955386*
+1_$ _(/
+
+9810191*
+1j j(
+
+985178*
+1j, j(2
+
+9810378*
+1jD j(N
+
+9810122*
+1j j(
+
+985121*
+1j6 j(<
+
+985122*
+1j, j(2
+
+9810321*
+1jO j(T
+
+9810322*
+1jD j(N
+
+985622*
+1kM k(X
+
+985386*
+1kM k(X
+
+1054978*
+1w( w(-
+
+1055178*
+1w; w(A
+
+1054921*
+1w. w(3
+
+1054922*
+1w( w(-
+
+1055121*
+1wE w(K
+
+1055122*
+1w; w(A
+
+1054686*
+1x x(
+
+1054686*
+1x x(
+
+1086691*
+1{ {(
+
+1086622*
+1{ {(
+
+1086622*
+1| |(%
+
+1086386*
+1| |(%
+
+1117191*
+1‚ ‚()
+
+1117122*
+1‚ ‚()
+
+1117122*
+1ƒ ƒ(
+
+1116886*
+1ƒ ƒ(

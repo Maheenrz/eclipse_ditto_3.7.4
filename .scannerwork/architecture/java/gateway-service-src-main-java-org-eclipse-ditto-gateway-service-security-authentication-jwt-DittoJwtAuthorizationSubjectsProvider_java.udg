@@ -1,0 +1,512 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508598850*java2.Bâ
+å
+Ügateway/service/src/main/java/org/eclipse/ditto/gateway/service/security/authentication/jwt/DittoJwtAuthorizationSubjectsProvider.java2
+
+package4
+B
+=org.eclipse.ditto.gateway.service.security.authentication.jwt5
+h
+corg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoJwtAuthorizationSubjectsProvider7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
++
+%DittoJwtAuthorizationSubjectsProvider12
+>
+8Recovered#typeBindingLJwtAuthorizationSubjectsProvider;014
+
+unknown15
+
+
+implements16
+
+	Immutable18
+
+annotated by19
+'
+!Recovered#typeBindingLImmutable;021
+
+
+uses22
+É
+}org.eclipse.ditto.gateway.service.security.authentication.jwt.DittoJwtAuthorizationSubjectsProvider.EXTENSION_CONFIG_KEY_ROLE24
+
+field25
+
+private26
+
+EXTENSION_CONFIG_KEY_ROLE27
+Å
+{org.eclipse.ditto.gateway.service.security.authentication.jwt.DittoJwtAuthorizationSubjectsProvider.jwtSubjectIssuersConfig29
+
+jwtSubjectIssuersConfig30
+
+JwtSubjectIssuersConfig32
+
+is type33
+â
+Çorg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoJwtAuthorizationSubjectsProvider#<init>(LActorSystem;LConfig;)V35
+
+method36
+)
+#Recovered#typeBindingLActorSystem;038
+
+	has param39
+$
+Recovered#typeBindingLConfig;041
+
+calls42
+
+
+references43
+
+returns44
+≤
+´org.eclipse.ditto.gateway.service.security.authentication.jwt.DittoJwtAuthorizationSubjectsProvider#jwtSubjectIssuersConfig(LActorSystem;LConfig;)LJwtSubjectIssuersConfig;46
+ç
+Üorg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoJwtAuthorizationSubjectsProvider#<init>(LJwtSubjectIssuersConfig;)V48
+5
+/Recovered#typeBindingLJwtSubjectIssuersConfig;050
+1
++Recovered#typeBindingLDefaultScopedConfig;052
+)
+#Recovered#typeBindingLOAuthConfig;054
+˙
+Ûorg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoJwtAuthorizationSubjectsProvider#of(LActorSystem;LJwtSubjectIssuersConfig;)Lorg/eclipse/ditto/gateway/service/security/authentication/jwt/DittoJwtAuthorizationSubjectsProvider;56
+
+of57
+£
+úorg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoJwtAuthorizationSubjectsProvider#getAuthorizationSubjects(LJsonWebToken;)Ljava/util/List;59
+
+getAuthorizationSubjects60
+*
+$Recovered#typeBindingLJsonWebToken;062
+2
+,Recovered#typeBindingLAuthorizationSubject;064
+4
+.Recovered#typeBindingLJwtSubjectIssuerConfig;066
+0
+*Recovered#typeBindingLExpressionResolver;068
+Ö
+org.eclipse.ditto.gateway.service.security.authentication.jwt.DittoJwtAuthorizationSubjectsProvider#equals(Ljava/lang/Object;)Z70
+
+equals71
+
+Nullable73
+&
+ Recovered#typeBindingLNullable;075
+u
+oorg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoJwtAuthorizationSubjectsProvider#hashCode()I77
+
+hashCode78
+á
+Äorg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoJwtAuthorizationSubjectsProvider#toString()Ljava/lang/String;80
+
+toString81J
+
+1
+12Z
+
+3	
+354j˚
+
+17
+171815
+@
+76:
+767736 *
+1y y(26:3B
+	
+9
+10
+
+
+11
+78
+@
+34:
+343536 *
+1/ /(26:3B
+	
+9
+10
+
+
+11
+12
+@
+58:
+585936 *
+1Z Z(26:3B
+	
+9
+10
+
+
+11
+60
+
+63
+636415
+
+20
+202115
+@
+23:
+232425 *
+1+ +(26:3B
+	
+9
+26
+
+
+11
+27
+@
+69:
+697036 *
+1m m(26:3B
+	
+9
+10
+
+
+11
+71
+
+74
+747515
+
+40
+404115
+@
+28:
+282925 *
+1- -(26:3B
+	
+9
+26
+
+
+11
+30
+
+67
+676815
+@
+45:
+454636 *
+18 8(26:3B
+	
+9
+26
+
+
+11
+30
+
+51
+515215
+
+13
+131415
+
+61
+616215
+@
+47:
+474836 *
+14 4(26:3B
+	
+9
+26
+
+
+11
+12
+@
+55:
+555636 *
+1R R(26:3B
+	
+9
+10
+
+
+11
+57
+
+65
+656615
+
+53
+535415
+9
+64
+678 *
+1) )(9:3B
+	
+9
+10
+
+
+11
+12
+
+49
+495015
+@
+79:
+798036 *
+1~ ~(26:3B
+	
+9
+10
+
+
+11
+81
+
+37
+373815
+
+72
+727315
+
+31
+313215rÙ
+
+61316*
+1)E )(e
+
+61719*
+1( ((
+
+62022*
+1( ((
+
+61322*
+1)E )(e
+
+283133*
+1- -(*
+
+283122*
+1- -(*
+
+283122*
+1-+ -(B
+
+343739*
+108 0(C
+
+344039*
+10W 0(]
+
+34642*
+10 0(1
+
+343733*
+10D 0(O
+
+343722*
+108 0(C
+
+344033*
+10^ 0(m
+
+344022*
+10W 0(]
+
+34643*
+11	 1(
+
+34642*
+11	 1(
+
+34642*
+11	 1(
+
+343144*
+11 1(%
+
+34643*
+11 1(%
+
+344542*
+11 1(%
+
+474939*
+149 4(P
+
+47642*
+14 4(2
+
+474933*
+14Q 4(h
+
+474922*
+149 4(P
+
+47622*
+15	 5(
+
+47643*
+15	 5(
+
+473122*
+15 5(%
+
+472843*
+15 5(%
+
+453144*
+18 8(+
+
+453739*
+18J 8(U
+
+454039*
+19 9(
+
+453122*
+18 8(+
+
+453733*
+18V 8(a
+
+453722*
+18J 8(U
+
+454033*
+19 9()
+
+454022*
+19 9(
+
+455133*
+1:# :(.
+
+455122*
+1: :("
+
+452343*
+1;. ;(G
+
+455333*
+1< <(&
+
+455322*
+1< <(
+
+55644*
+1R R(8
+
+553739*
+1RB R(M
+
+554939*
+1S S(*
+
+55622*
+1R R(8
+
+553733*
+1RN R(Y
+
+553722*
+1RB R(M
+
+554933*
+1S+ S(B
+
+554922*
+1S S(*
+
+55642*
+1W W(9
+
+586139*
+1[F [(R
+
+586322*
+1[ [(%
+
+586133*
+1[S [(_
+
+586122*
+1[F [(R
+
+586533*
+1_& _(<
+
+586522*
+1_ _(%
+
+582843*
+1_? _(V
+
+583122*
+1_? _(V
+
+582843*
+1_? _(V
+
+586733*
+1b" b(4
+
+586722*
+1b b(!
+
+697219*
+1n n(
+
+697422*
+1n n($
+
+69622*
+1o o(
+
+69643*
+1o o(
+
+69633*
+1u5 u(9
+
+69622*
+1u u(4
+
+69622*
+1u= u(b
+
+693122*
+1v v(6
+
+692843*
+1v v(6
+
+693122*
+1v= v(T
+
+692843*
+1v= v(T
+
+763122*
+1{ {(4
+
+762843*
+1{ {(4
+
+793122*
+1Å. Å(E
+
+792843*
+1Å. Å(E

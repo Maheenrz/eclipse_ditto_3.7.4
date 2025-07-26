@@ -1,0 +1,426 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508828354*java2.B¾
+q
+lmessages/model/src/main/java/org/eclipse/ditto/messages/model/signals/commands/MessagePayloadSerializer.java2
+
+package4
+6
+1org.eclipse.ditto.messages.model.signals.commands5
+O
+Jorg.eclipse.ditto.messages.model.signals.commands.MessagePayloadSerializer7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+MessagePayloadSerializer12
+_
+Yorg.eclipse.ditto.messages.model.signals.commands.MessagePayloadSerializer.BASE64_ENCODER14
+
+field15
+
+private16
+
+BASE64_ENCODER17
+_
+Yorg.eclipse.ditto.messages.model.signals.commands.MessagePayloadSerializer.BASE64_DECODER19
+
+BASE64_DECODER20
+Z
+Torg.eclipse.ditto.messages.model.signals.commands.MessagePayloadSerializer#<init>()V22
+
+method23
+
+calls24
+˜
+‘org.eclipse.ditto.messages.model.signals.commands.MessagePayloadSerializer#serialize(LMessage;LJsonObjectBuilder;Ljava/util/function/Predicate;)V26
+
+	protected27
+
+	serialize28
+%
+Recovered#typeBindingLMessage;030
+
+unknown31
+
+	has param32
+/
+)Recovered#typeBindingLJsonObjectBuilder;034
+
+is type35
+
+
+uses36
+'
+!Recovered#typeBindingLJsonField;038
+)
+#Recovered#typeBindingLContentType;040
+'
+!Recovered#typeBindingLJsonValue;042
+
+	JsonValue44
+
+returns45
+
+
+references46
+’
+‹org.eclipse.ditto.messages.model.signals.commands.MessagePayloadSerializer#interpretAsJsonValue(Ljava/lang/String;LContentType;)LJsonValue;48
+
+T50
+µ
+®org.eclipse.ditto.messages.model.signals.commands.MessagePayloadSerializer#injectMessagePayload(LJsonObjectBuilder;Ljava/util/function/Predicate;LJsonValue;LMessageHeaders;)V52
+
+interpretAsJsonValue53
+
+injectMessagePayload54
+,
+&Recovered#typeBindingLMessageHeaders;056
+
+Nullable58
+
+annotated by59
+&
+ Recovered#typeBindingLNullable;061
+‹
+„org.eclipse.ditto.messages.model.signals.commands.MessagePayloadSerializer#deserialize(LJsonValue;LMessageBuilder;LMessageHeaders;)V63
+
+deserialize64
+,
+&Recovered#typeBindingLMessageBuilder;066
+h
+borg.eclipse.ditto.messages.model.signals.commands.MessagePayloadSerializer#tryToBase64Decode([B)[B68
+
+tryToBase64Decode69J
+
+1
+12Z
+
+3	
+354j©
+9
+64
+678 *
+1# #(&:3B
+	
+9
+10
+
+
+11
+12
+
+41
+414231
+
+43
+434431
+
+55
+555631
+@
+62:
+626323 *
+1b b(26:3B
+	
+9
+10
+
+
+11
+64
+@
+51:
+515223 *
+1S S(26:3B
+	
+9
+16
+
+
+11
+54
+
+33
+333431
+
+37
+373831
+@
+47:
+474823 *
+1F F(26:3B
+	
+9
+16
+
+
+11
+53
+@
+21:
+212223 *
+1( ((26:3B
+	
+9
+16
+
+
+11
+12
+
+65
+656631
+@
+13:
+131415 *
+1% %(26:3B
+	
+9
+16
+
+
+11
+17
+
+49
+495031
+
+60
+606131
+B
+67<
+676823 *
+1€ €(26:3B
+	
+9
+16
+
+
+11
+69
+
+29
+293031
+@
+25:
+252623 *
+1+ +(26:3B
+	
+9
+27
+
+
+11
+28
+
+39
+394031
+@
+18:
+181915 *
+1& &(26:3B
+	
+9
+16
+
+
+11
+20
+
+57
+575831r¤
+
+21624*
+1( ((%
+
+252932*
+1+% +(,
+
+253332*
+1+? +(P
+
+252935*
+1+0 +(7
+
+252936*
+1+% +(,
+
+253335*
+1+Q +(_
+
+253336*
+1+? +(P
+
+253736*
+1, ,(&
+
+253935*
+10 0(&
+
+253936*
+10 0(
+
+254135*
+11 1(%
+
+254136*
+11 1(
+
+254136*
+12G 2(P
+
+254345*
+16 6(-
+
+25646*
+16 6(-
+
+254724*
+16 6(-
+
+251346*
+182 8(@
+
+251346*
+182 8(@
+
+254935*
+1< <(
+
+254945*
+1< <(.
+
+254136*
+1=/ =(8
+
+254136*
+1> >(!
+
+254345*
+1? ?(+
+
+25646*
+1? ?(+
+
+254724*
+1? ?(+
+
+25646*
+1C	 C(
+
+255124*
+1C	 C(
+
+474345*
+1F F(
+
+473932*
+1FU F(`
+
+474336*
+1F F(
+
+473935*
+1Fa F(l
+
+473936*
+1FU F(`
+
+474135*
+1H H(&
+
+474136*
+1H H(
+
+513332*
+1S4 S(E
+
+514132*
+1U U(&
+
+515532*
+1V V(!
+
+513335*
+1SF S(T
+
+513336*
+1S4 S(E
+
+513736*
+1T T(&
+
+514135*
+1U' U(3
+
+515759*
+1U U(
+
+516036*
+1U U(
+
+514136*
+1U U(&
+
+515535*
+1V" V(0
+
+515536*
+1V V(!
+
+624132*
+1b4 b(=
+
+626532*
+1bM b([
+
+625532*
+1c c(!
+
+624135*
+1b> b(E
+
+625759*
+1b$ b(%
+
+626036*
+1b% b(-
+
+624136*
+1b4 b(=
+
+626535*
+1bd b(r
+
+626536*
+1bM b([
+
+625535*
+1c" c(0
+
+625536*
+1c c(!
+
+623935*
+1e e(&
+
+623936*
+1e e(
+
+62646*
+1w- w(>
+
+626724*
+1w- w(>
+
+671846*
+1‚ ‚("
+
+671846*
+1‚ ‚("

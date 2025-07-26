@@ -1,0 +1,1146 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508668456*java2.BÒ/
+v
+qgateway/service/src/test/java/org/eclipse/ditto/gateway/service/security/authentication/jwt/JwtValidatorTest.java2
+
+package4
+B
+=org.eclipse.ditto.gateway.service.security.authentication.jwt5
+S
+Norg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+JwtValidatorTest12
+
+RunWith14
+
+unknown15
+
+annotated by16
+%
+Recovered#typeBindingLRunWith;018
+
+
+uses19
+0
+*Recovered#typeBindingLMockitoJUnitRunner;021
+i
+corg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest.VALID_JSON_WEB_TOKEN23
+
+field24
+
+private25
+
+VALID_JSON_WEB_TOKEN26
+
+JsonWebToken28
+
+is type29
+{
+uorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest.VALID_JSON_WEB_TOKEN_WITHOUT_SIGNATURE31
+,
+&VALID_JSON_WEB_TOKEN_WITHOUT_SIGNATURE32
+q
+korg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest$JsonWebTokenWithoutSignature34
+
+calls35
+k
+eorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest.INVALID_JSON_WEB_TOKEN37
+
+INVALID_JSON_WEB_TOKEN38
+Ä
+zorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest.VALID_JSON_WEB_TOKEN_WITH_NBF_AHEAD_OF_TIME40
+1
++VALID_JSON_WEB_TOKEN_WITH_NBF_AHEAD_OF_TIME41
+Ç
+|org.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest.INVALID_JSON_WEB_TOKEN_WITH_NBF_AHEAD_OF_TIME43
+3
+-INVALID_JSON_WEB_TOKEN_WITH_NBF_AHEAD_OF_TIME44
+`
+Zorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest.oAuthConfig46
+
+oAuthConfig47
+
+OAuthConfig49
+f
+`org.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest.publicKeyProvider51
+
+publicKeyProvider52
+
+PublicKeyProvider54
+
+
+Mock56
+"
+Recovered#typeBindingLMock;058
+g
+aorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest#initTestFixture()V60
+
+method61
+
+initTestFixture62
+
+BeforeClass64
+)
+#Recovered#typeBindingLBeforeClass;066
+
+
+references67
+`
+Zorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest#validate()V69
+
+validate70
+
+
+Test72
+"
+Recovered#typeBindingLTest;074
+
+	JwtParser76
+
+returns77
+à
+Åorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest#getJwtParser(Ljava/security/PublicKey;)LJwtParser;79
+*
+$Recovered#typeBindingLJwtValidator;081
+4
+.Recovered#typeBindingLBinaryValidationResult;083
+
+getJwtParser84
+w
+qorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest#validateTokenWithNbfAheadOfTime()V86
+%
+validateTokenWithNbfAheadOfTime87
+}
+worg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest#validateFailsIfNbfIsTooFarInTheFuture()V89
++
+%validateFailsIfNbfIsTooFarInTheFuture90
+y
+sorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest#validateFailsIfSignatureIsMissing()V92
+'
+!validateFailsIfSignatureIsMissing93
+5
+/Recovered#typeBindingLUnsupportedJwtException;095
+e
+_org.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest#validateFails()V97
+
+validateFails98
+2
++Recovered#typeBindingLExpiredJwtException;0100
+#
+JsonWebTokenWithoutSignature101
++
+$Recovered#typeBindingLJsonWebToken;0103
+
+
+implements104
+x
+qorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest$JsonWebTokenWithoutSignature.token106
+
+token107
+y
+rorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest$JsonWebTokenWithoutSignature.header109
+
+header110
+
+
+JsonObject112
+w
+porg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest$JsonWebTokenWithoutSignature.body114
+
+body115
+è
+áorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest$JsonWebTokenWithoutSignature#<init>(Ljava/lang/String;)V117
+°
+ôorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest$JsonWebTokenWithoutSignature#decodeJwtPart(Ljava/lang/String;)LJsonObject;119
+
+decodeJwtPart120
+ê
+àorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest$JsonWebTokenWithoutSignature#getToken()Ljava/lang/String;122
+
+getToken123
+ã
+Éorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest$JsonWebTokenWithoutSignature#getHeader()LJsonObject;125
+
+	getHeader126
+â
+Åorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest$JsonWebTokenWithoutSignature#getBody()LJsonObject;128
+
+getBody129
+ê
+àorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest$JsonWebTokenWithoutSignature#getKeyId()Ljava/lang/String;131
+
+getKeyId132
+ë
+âorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest$JsonWebTokenWithoutSignature#getIssuer()Ljava/lang/String;134
+
+	getIssuer135
+î
+åorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest$JsonWebTokenWithoutSignature#getSignature()Ljava/lang/String;137
+
+getSignature138
+ë
+âorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest$JsonWebTokenWithoutSignature#getSubjects()Ljava/util/List;140
+
+getSubjects141
+ã
+Éorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest$JsonWebTokenWithoutSignature#getAudience()LAudience;143
+
+getAudience144
+
+Audience146
+ö
+íorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest$JsonWebTokenWithoutSignature#getAuthorizedParty()Ljava/lang/String;148
+
+getAuthorizedParty149
+è
+áorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest$JsonWebTokenWithoutSignature#getScopes()Ljava/util/List;151
+
+	getScopes152
+ö
+íorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest$JsonWebTokenWithoutSignature#getExpirationTime()Ljava/time/Instant;154
+
+getExpirationTime155
+
+xorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtValidatorTest$JsonWebTokenWithoutSignature#isExpired()Z157
+
+	isExpired158J
+
+1
+12Z
+
+3	
+354jí
+
+17
+171815
+
+63
+636415
+
+57
+575815
+
+111
+11111215
+@
+78:
+787961 *
+1a a(26:3B
+	
+9
+25
+
+
+11
+84
+
+48
+484915
+
+55
+555615
+
+20
+202115
+@
+22:
+222324 *
+19 9(26:3B
+	
+9
+25
+
+
+11
+26
+
+71
+717215
+G
+147@
+14714861 *
+1Ÿ	 Ÿ(
+233:3B
+	
+9
+10
+
+11
+149
+@
+39:
+394024 *
+1C C(26:3B
+	
+9
+25
+
+
+11
+41
+G
+116@
+11611761 *
+1•	 •(233:3B
+	
+9
+25
+
+11
+101
+
+65
+656615
+G
+108@
+10810924 *
+1¢	 ¢(233:3B
+	
+9
+25
+
+11
+110
+G
+142@
+14214361 *
+1‘	 ‘(
+233:3B
+	
+9
+10
+
+11
+144
+@
+59:
+596061 *
+1N N(26:3B
+	
+9
+10
+
+
+11
+62
+
+145
+14514615
+@
+45:
+454624 *
+1I I(26:3B
+	
+9
+25
+
+
+11
+47
+G
+150@
+15015161 *
+1ﬁ	 ﬁ(
+233:3B
+	
+9
+10
+
+11
+152
+
+102
+10210315
+G
+118@
+11811961 *
+1¨	 ¨(233:3B
+	
+9
+25
+
+11
+120
+@
+50:
+505124 *
+1K K(26:3B
+	
+9
+25
+
+
+11
+52
+
+53
+535415
+
+73
+737415
+@
+30:
+303124 *
+1< <(26:3B
+	
+9
+25
+
+
+11
+32
+G
+130@
+13013161 *
+1¿	 ¿(
+233:3B
+	
+9
+10
+
+11
+132
+G
+136@
+13613761 *
+1 	  (
+233:3B
+	
+9
+10
+
+11
+138
+B
+96<
+969761 *
+1ë ë(26:3B
+	
+9
+10
+
+
+11
+98
+
+82
+828315
+@
+42:
+424324 *
+1F F(26:3B
+	
+9
+25
+
+
+11
+44
+
+13
+131415
+G
+124@
+12412561 *
+1∂	 ∂(
+233:3B
+	
+9
+10
+
+11
+126
+G
+127@
+12712861 *
+1ª	 ª(
+233:3B
+	
+9
+10
+
+11
+129
+B
+91<
+919261 *
+1É É(26:3B
+	
+9
+10
+
+
+11
+93
+@
+36:
+363724 *
+1@ @(26:3B
+	
+9
+25
+
+
+11
+38
+
+94
+949515
+G
+121@
+12112261 *
+1±	 ±(
+233:3B
+	
+9
+10
+
+11
+123
+
+80
+808115
+
+99
+9910015
+
+27
+272815
+
+75
+757615
+@
+88:
+888961 *
+1v v(26:3B
+	
+9
+10
+
+
+11
+90
+G
+105@
+10510624 *
+1°	 °(233:3B
+	
+9
+25
+
+11
+107
+G
+153@
+15315461 *
+1„	 „(
+233:3B
+	
+9
+10
+
+11
+155
+9
+64
+678 *
+17 7($:3B
+	
+9
+10
+
+
+11
+12
+G
+156@
+15615761 *
+1Ë	 Ë(
+233:3B
+	
+9
+10
+
+11
+158
+G
+113@
+11311424 *
+1£	 £(233:3B
+	
+9
+25
+
+11
+115
+G
+139@
+13914061 *
+1œ	 œ(
+233:3B
+	
+9
+10
+
+11
+141
+@
+68:
+686961 *
+1U U(26:3B
+	
+9
+10
+
+
+11
+70
+G
+133@
+13313461 *
+1≈	 ≈(
+233:3B
+	
+9
+10
+
+11
+135
+@
+85:
+858661 *
+1i i(26:3B
+	
+9
+10
+
+
+11
+87
+B
+33<
+33348 *
+1ü  ü(<26:3B
+	
+9
+25
+
+11
+101r†%
+
+61316*
+16 6(
+
+61719*
+16 6(	
+
+62019*
+16
+ 6(
+
+222729*
+19 9(&
+
+222719*
+19 9(&
+
+222719*
+19' 9(;
+
+302729*
+1< <(&
+
+302719*
+1< <(&
+
+302719*
+1<' <(M
+
+303335*
+1> >(-
+
+362729*
+1@ @(&
+
+362719*
+1@ @(&
+
+362719*
+1@' @(=
+
+392729*
+1C C(&
+
+392719*
+1C C(&
+
+392719*
+1C' C(R
+
+422729*
+1F F(&
+
+422719*
+1F F(&
+
+422719*
+1F' F(T
+
+454829*
+1I I(
+
+454819*
+1I I(
+
+454819*
+1I  I(+
+
+505329*
+1L L(
+
+505516*
+1K K(
+
+505719*
+1K K(
+
+
+505319*
+1L L(
+
+505319*
+1L L(0
+
+596316*
+1N N(
+
+596519*
+1N N(
+
+594819*
+1P	 P(
+
+594567*
+1P	 P(
+
+687116*
+1U U(
+
+687319*
+1U U(
+
+
+685067*
+1W W(
+
+685319*
+1W W(
+
+685067*
+1W W(
+
+687577*
+1Xt X(Ä
+
+68667*
+1Xt X(Ä
+
+687835*
+1Xt X(Ä
+
+688029*
+1Z Z(%
+
+688019*
+1Z Z(
+
+685319*
+1Z? Z(P
+
+685067*
+1Z? Z(P
+
+688229*
+1\& \(9
+
+688219*
+1\ \(%
+
+682719*
+1\O \(c
+
+682267*
+1\O \(c
+
+787577*
+1a a(
+
+787519*
+1a a(
+
+784567*
+1e e(*
+
+784819*
+1e e(*
+
+784567*
+1e e(*
+
+857116*
+1i i(
+
+857319*
+1i i(
+
+
+855067*
+1k k(
+
+855319*
+1k k(
+
+855067*
+1k k(
+
+857577*
+1lt l(Ä
+
+85667*
+1lt l(Ä
+
+857835*
+1lt l(Ä
+
+858029*
+1n n(%
+
+858019*
+1n n(
+
+855319*
+1n? n(P
+
+855067*
+1n? n(P
+
+858229*
+1p& p(9
+
+858219*
+1p p(%
+
+852719*
+1q$ q(O
+
+853967*
+1q$ q(O
+
+887116*
+1v v(
+
+887319*
+1v v(
+
+
+885067*
+1x x(
+
+885319*
+1x x(
+
+885067*
+1x x(
+
+887577*
+1yt y(Ä
+
+88667*
+1yt y(Ä
+
+887835*
+1yt y(Ä
+
+888029*
+1{ {(%
+
+888019*
+1{ {(
+
+885319*
+1{? {(P
+
+885067*
+1{? {(P
+
+888229*
+1}& }(9
+
+888219*
+1} }(%
+
+882719*
+1~$ ~(Q
+
+884267*
+1~$ ~(Q
+
+917116*
+1É É(
+
+917319*
+1É É(
+
+
+915067*
+1Ö Ö(
+
+915319*
+1Ö Ö(
+
+915067*
+1Ö Ö(
+
+917577*
+1Üt Ü(Ä
+
+91667*
+1Üt Ü(Ä
+
+917835*
+1Üt Ü(Ä
+
+918029*
+1à à(%
+
+918019*
+1à à(
+
+915319*
+1à? à(P
+
+915067*
+1à? à(P
+
+918229*
+1ä& ä(9
+
+918219*
+1ä ä(%
+
+912719*
+1ã$ ã(J
+
+913067*
+1ã$ ã(J
+
+919419*
+1éO é(f
+
+967116*
+1ë ë(
+
+967319*
+1ë ë(
+
+
+965067*
+1ì ì(
+
+965319*
+1ì ì(
+
+965067*
+1ì ì(
+
+967577*
+1ï ï(!
+
+96667*
+1ï ï(!
+
+967835*
+1ï ï(!
+
+968029*
+1ó ó(%
+
+968019*
+1ó ó(
+
+965319*
+1ó? ó(P
+
+965067*
+1ó? ó(P
+
+968229*
+1ô& ô(9
+
+968219*
+1ô ô(%
+
+962719*
+1ôO ô(e
+
+963667*
+1ôO ô(e
+
+969919*
+1úO ú(b
+
+33102104*
+1üH ü(T
+
+3310219*
+1üH ü(T
+
+10811129*
+1¢ ¢(!
+
+10811119*
+1¢ ¢(!
+
+10811119*
+1¢" ¢((
+
+11311129*
+1£ £(!
+
+11311119*
+1£ £(!
+
+11311119*
+1£" £(&
+
+1163335*
+1• •(-
+
+1163319*
+1¶ ¶(
+
+1163367*
+1¶ ¶(
+
+11610567*
+1¶ ¶(
+
+1163319*
+1ß) ß(-
+
+1163367*
+1ß) ß(-
+
+11610567*
+1ß. ß(3
+
+11611119*
+1® ®(
+
+11610867*
+1® ®(
+
+11611177*
+1® ®(#
+
+1163367*
+1® ®(#
+
+11611835*
+1® ®(#
+
+11611119*
+1© ©(
+
+11611367*
+1© ©(
+
+11611177*
+1© ©(!
+
+1163367*
+1© ©(!
+
+11611835*
+1© ©(!
+
+11811177*
+1¨ ¨("
+
+11811119*
+1¨ ¨("
+
+12110567*
+1≥ ≥(
+
+12411177*
+1∑ ∑(
+
+12411119*
+1∑ ∑(
+
+12411119*
+1∏ ∏(
+
+12410867*
+1∏ ∏(
+
+12711177*
+1º º(
+
+12711119*
+1º º(
+
+12711119*
+1Ω Ω(
+
+12711367*
+1Ω Ω(
+
+13010867*
+1¬ ¬(
+
+13011119*
+1¬ ¬(
+
+13010867*
+1¬ ¬(
+
+13311367*
+1« «(
+
+13311119*
+1« «(
+
+13311367*
+1« «(
+
+14214577*
+1’ ’(
+
+14214519*
+1’ ’(
+
+15311367*
+1Â* Â(.
+
+15311119*
+1Â* Â(.
+
+15311367*
+1Â* Â(.
+
+1563367*
+1Í* Í(;
+
+15615335*
+1Í* Í(;

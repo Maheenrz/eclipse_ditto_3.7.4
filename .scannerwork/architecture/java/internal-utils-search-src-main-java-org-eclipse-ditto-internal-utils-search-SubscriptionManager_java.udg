@@ -1,0 +1,1035 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508579041*java2.BÈ 
+i
+dinternal/utils/search/src/main/java/org/eclipse/ditto/internal/utils/search/SubscriptionManager.java2
+
+package4
+,
+'org.eclipse.ditto.internal.utils.search5
+@
+;org.eclipse.ditto.internal.utils.search.SubscriptionManager7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+SubscriptionManager12
++
+%Recovered#typeBindingLAbstractActor;014
+
+unknown15
+
+extends16
+
+
+uses17
+L
+Forg.eclipse.ditto.internal.utils.search.SubscriptionManager.ACTOR_NAME19
+
+field20
+
+
+ACTOR_NAME21
+M
+Gorg.eclipse.ditto.internal.utils.search.SubscriptionManager.idleTimeout23
+
+private24
+
+idleTimeout25
+P
+Jorg.eclipse.ditto.internal.utils.search.SubscriptionManager.pubSubMediator27
+
+pubSubMediator28
+
+ActorRef30
+
+is type31
+L
+Forg.eclipse.ditto.internal.utils.search.SubscriptionManager.proxyActor33
+
+
+proxyActor34
+
+ActorSelection36
+N
+Horg.eclipse.ditto.internal.utils.search.SubscriptionManager.materializer38
+
+materializer39
+
+Materializer41
+E
+?org.eclipse.ditto.internal.utils.search.SubscriptionManager.log43
+	
+log44
+#
+DittoDiagnosticLoggingAdapter46
+Q
+Korg.eclipse.ditto.internal.utils.search.SubscriptionManager.defaultPageSize48
+
+defaultPageSize49
+M
+Gorg.eclipse.ditto.internal.utils.search.SubscriptionManager.maxPageSize51
+
+maxPageSize52
+W
+Qorg.eclipse.ditto.internal.utils.search.SubscriptionManager.subscriptionIdCounter54
+
+subscriptionIdCounter55
+à
+Åorg.eclipse.ditto.internal.utils.search.SubscriptionManager#<init>(Ljava/time/Duration;LActorRef;LActorSelection;LMaterializer;)V57
+
+method58
+
+	protected59
+&
+ Recovered#typeBindingLActorRef;061
+
+	has param62
+,
+&Recovered#typeBindingLActorSelection;064
+*
+$Recovered#typeBindingLMaterializer;066
+
+calls67
+
+
+references68
+*
+$Recovered#typeBindingLLimitsConfig;070
+ç
+Üorg.eclipse.ditto.internal.utils.search.SubscriptionManager#props(Ljava/time/Duration;LActorRef;LActorSelection;LMaterializer;)LProps;72
+
+props73
+
+Props75
+
+returns76
+p
+jorg.eclipse.ditto.internal.utils.search.SubscriptionManager#asJsonArray(Ljava/util/Collection;)LJsonArray;78
+
+asJsonArray79
+
+	JsonArray81
+b
+\org.eclipse.ditto.internal.utils.search.SubscriptionManager#getPageSize(Ljava/lang/String;)I83
+
+getPageSize84
+
+Nullable86
+
+annotated by87
+&
+ Recovered#typeBindingLNullable;089
+Z
+Torg.eclipse.ditto.internal.utils.search.SubscriptionManager#createReceive()LReceive;91
+
+createReceive92
+
+Receive94
+5
+/Recovered#typeBindingLRequestFromSubscription;096
+0
+*Recovered#typeBindingLCreateSubscription;098
+1
+*Recovered#typeBindingLCancelSubscription;0100
+r
+korg.eclipse.ditto.internal.utils.search.SubscriptionManager#requestSubscription(LRequestFromSubscription;)V102
+
+requestSubscription103
+z
+sorg.eclipse.ditto.internal.utils.search.SubscriptionManager#forwardToChild(Ljava/lang/String;LThingSearchCommand;)V105
+l
+eorg.eclipse.ditto.internal.utils.search.SubscriptionManager#cancelSubscription(LCancelSubscription;)V107
+
+cancelSubscription108
+
+forwardToChild109
+1
+*Recovered#typeBindingLThingSearchCommand;0111
+<
+5Recovered#typeBindingLSubscriptionNotFoundException;0113
+1
+*Recovered#typeBindingLSubscriptionFailed;0115
+l
+eorg.eclipse.ditto.internal.utils.search.SubscriptionManager#createSubscription(LCreateSubscription;)V117
+
+createSubscription118
+}
+vorg.eclipse.ditto.internal.utils.search.SubscriptionManager#nextSubscriptionId(LCreateSubscription;)Ljava/lang/String;120
+$
+Recovered#typeBindingLProps;0122
+%
+Recovered#typeBindingLSource;0124
+(
+!Recovered#typeBindingLJsonArray;0126
+&
+Recovered#typeBindingLNotUsed;0128
+
+Source130
+n
+gorg.eclipse.ditto.internal.utils.search.SubscriptionManager#getPageSource(LCreateSubscription;)LSource;132
+_
+Xorg.eclipse.ditto.internal.utils.search.SubscriptionManager#connect(LActorRef;LSource;)V134
+
+connect135
+)
+"Recovered#typeBindingLSubscriber;0137
+[
+Torg.eclipse.ditto.internal.utils.search.SubscriptionManager#lazify(LSource;)LSource;139
+
+getPageSource140
++
+$Recovered#typeBindingLSearchSource;0142
+4
+-Recovered#typeBindingLDittoRuntimeException;0144
+
+nextSubscriptionId145
+
+lazify146J
+
+1
+12Z
+
+3	
+354jÎ
+F
+106?
+10610758 *
+1ì ì(26:3B
+	
+9
+24
+
+11
+108
+
+99
+9910015
+@
+71:
+717258 *
+1d d(26:3B
+	
+9
+10
+
+
+11
+73
+
+141
+14114215
+
+29
+293015
+F
+116?
+11611758 *
+1® ®(26:3B
+	
+9
+24
+
+11
+118
+@
+50:
+505120 *
+1G G(26:3B
+	
+9
+24
+
+
+11
+52
+
+13
+131415
+@
+26:
+262720 *
+1A A(26:3B
+	
+9
+24
+
+
+11
+28
+@
+22:
+222320 *
+1@ @(26:3B
+	
+9
+24
+
+
+11
+25
+
+114
+11411515
+
+143
+14314415
+@
+18:
+181920 *
+1> >(26:3B
+	
+9
+10
+
+
+11
+21
+F
+131?
+13113258 *
+1∂ ∂(26:3B
+	
+9
+24
+
+11
+140
+9
+64
+678 *
+19 9(':3B
+	
+9
+10
+
+
+11
+12
+
+123
+12312415
+
+121
+12112215
+F
+119?
+11912058 *
+1Œ Œ(26:3B
+	
+9
+24
+
+11
+145
+
+65
+656615
+
+95
+959615
+
+35
+353615
+
+69
+697015
+F
+101?
+10110258 *
+1è è(26:3B
+	
+9
+24
+
+11
+103
+F
+133?
+13313458 *
+1± ±(26:3B
+	
+9
+24
+
+11
+135
+
+85
+858615
+F
+104?
+10410558 *
+1ó ó(26:3B
+	
+9
+24
+
+11
+109
+
+60
+606115
+@
+32:
+323320 *
+1B B(26:3B
+	
+9
+24
+
+
+11
+34
+
+74
+747515
+
+129
+12913015
+@
+53:
+535420 *
+1I I(26:3B
+	
+9
+24
+
+
+11
+55
+
+63
+636415
+
+110
+11011115
+@
+37:
+373820 *
+1C C(26:3B
+	
+9
+24
+
+
+11
+39
+
+88
+888915
+
+45
+454615
+@
+56:
+565758 *
+1K K(26:3B
+	
+9
+59
+
+
+11
+12
+
+40
+404115
+@
+47:
+474820 *
+1F F(26:3B
+	
+9
+24
+
+
+11
+49
+
+125
+12512615
+
+112
+11211315
+
+127
+12712815
+@
+42:
+424320 *
+1D D(26:3B
+	
+9
+24
+
+
+11
+44
+
+80
+808115
+B
+90<
+909158 *
+1Ü Ü(26:3B
+	
+9
+10
+
+
+11
+92
+
+93
+939415
+
+136
+13613715
+F
+138?
+13813958 *
+1⁄ ⁄(26:3B
+	
+9
+24
+
+11
+146
+@
+82:
+828358 *
+1p p(26:3B
+	
+9
+24
+
+
+11
+84
+@
+77:
+777858 *
+1l l(26:3B
+	
+9
+24
+
+
+11
+79
+
+97
+979815rå&
+
+61316*
+190 9(=
+
+61317*
+190 9(=
+
+262931*
+1A A(
+
+262917*
+1A A(
+
+262917*
+1A A(*
+
+323531*
+1B B(!
+
+323517*
+1B B(!
+
+323517*
+1B" B(,
+
+374031*
+1C C(
+
+374017*
+1C C(
+
+374017*
+1C  C(,
+
+424531*
+1D D(0
+
+424517*
+1D D(0
+
+424517*
+1D1 D(4
+
+566062*
+1L L(
+
+566362*
+1M M(!
+
+566562*
+1N N(
+
+56667*
+1K K(
+
+566031*
+1L L(*
+
+566017*
+1L L(
+
+566331*
+1M" M(,
+
+566317*
+1M M(!
+
+566531*
+1N  N(,
+
+566517*
+1N N(
+
+56617*
+1O	 O(
+
+56668*
+1O	 O(
+
+562268*
+1O O(
+
+56617*
+1P	 P(
+
+56668*
+1P	 P(
+
+562917*
+1P P(
+
+562668*
+1P P(
+
+56617*
+1Q	 Q(
+
+56668*
+1Q	 Q(
+
+563517*
+1Q Q(
+
+563268*
+1Q Q(
+
+56617*
+1R	 R(
+
+56668*
+1R	 R(
+
+564017*
+1R R(
+
+563768*
+1R R(
+
+564517*
+1S	 S(
+
+564268*
+1S	 S(
+
+56617*
+1S> S(B
+
+56668*
+1S> S(B
+
+566931*
+1U U((
+
+566917*
+1U U(
+
+564768*
+1W	 W(
+
+565068*
+1X	 X(
+
+717476*
+1d d(
+
+716062*
+1e e(
+
+716362*
+1f f(!
+
+716562*
+1g g(
+
+717417*
+1d d(
+
+716031*
+1e e(*
+
+716017*
+1e e(
+
+716331*
+1f" f(,
+
+716317*
+1f f(!
+
+716531*
+1g  g(,
+
+716517*
+1g g(
+
+71617*
+1i i(0
+
+778076*
+1l l(
+
+778017*
+1l l(
+
+828587*
+1p p(
+
+828817*
+1p p(&
+
+824768*
+1r r(#
+
+824768*
+1z z(,
+
+825068*
+1{- {(8
+
+825068*
+1ÄN Ä(Y
+
+909376*
+1á á(
+
+909317*
+1á á(
+
+909517*
+1â â(/
+
+90617*
+1â7 â(;
+
+90668*
+1â7 â(;
+
+909717*
+1ä ä(*
+
+90617*
+1ä2 ä(6
+
+90668*
+1ä2 ä(6
+
+909917*
+1ã ã(*
+
+90617*
+1ã2 ã(6
+
+90668*
+1ã2 ã(6
+
+1019562*
+1è, è(C
+
+1019531*
+1èD è([
+
+1019517*
+1è, è(C
+
+101668*
+1ê	 ê(
+
+10110467*
+1ê	 ê(
+
+1069962*
+1ì+ ì(=
+
+1069931*
+1ì> ì(P
+
+1069917*
+1ì+ ì(=
+
+106668*
+1î	 î(
+
+10610467*
+1î	 î(
+
+10411062*
+1óD ó(V
+
+10411031*
+1óZ ó(a
+
+10411017*
+1óD ó(V
+
+1046017*
+1ò ò( 
+
+1044268*
+1ö ö(
+
+1044517*
+1ö ö(
+
+1044268*
+1ö ö(
+
+1044268*
+1û û(
+
+1044517*
+1û û(
+
+1044268*
+1û û(
+
+10411231*
+1†1 †(6
+
+10411217*
+1† †(0
+
+10411431*
+1¢& ¢(8
+
+10411417*
+1¢ ¢(%
+
+1169762*
+1®+ ®(=
+
+1169731*
+1®> ®(P
+
+1169717*
+1®+ ®(=
+
+1164268*
+1©	 ©(
+
+1164517*
+1©	 ©(
+
+1164268*
+1©	 ©(
+
+116668*
+1™' ™(9
+
+11611967*
+1™' ™(9
+
+11612131*
+1´ ´(
+
+11612117*
+1´ ´(
+
+1162268*
+1´5 ´(@
+
+1166031*
+1¨ ¨()
+
+1166017*
+1¨ ¨(
+
+11612331*
+1≠* ≠(4
+
+11612317*
+1≠ ≠(
+
+11612517*
+1≠ ≠(
+
+11612717*
+1≠! ≠((
+
+11612976*
+1≠7 ≠(D
+
+116668*
+1≠7 ≠(D
+
+11613167*
+1≠7 ≠(D
+
+116668*
+1Æ	 Æ(
+
+11613367*
+1Æ	 Æ(
+
+1336062*
+1±  ±((
+
+13312362*
+1±B ±(H
+
+1336031*
+1±) ±(:
+
+1336017*
+1±  ±((
+
+13312331*
+1±] ±(g
+
+13312317*
+1±B ±(H
+
+13312517*
+1±I ±(R
+
+13312717*
+1±T ±([
+
+13313631*
+1≤% ≤(/
+
+13313617*
+1≤ ≤(
+
+13312517*
+1≤ ≤(#
+
+13312976*
+1≥	 ≥(
+
+133668*
+1≥	 ≥(
+
+13313867*
+1≥	 ≥(
+
+1334017*
+1≥E ≥(Q
+
+1333768*
+1≥E ≥(Q
+
+13112976*
+1∂ ∂(
+
+1319762*
+1∂< ∂(N
+
+13112917*
+1∂ ∂(
+
+13112517*
+1∂ ∂(
+
+13112717*
+1∂ ∂(&
+
+1319731*
+1∂O ∂(a
+
+1319717*
+1∂< ∂(N
+
+13112531*
+1∏ ∏(#
+
+13112517*
+1∏ ∏(
+
+131617*
+1∫ ∫()
+
+13114131*
+1Ω  Ω(,
+
+13114117*
+1Ω Ω(
+
+1312917*
+1æ% æ(3
+
+1312668*
+1æ% æ(3
+
+1313517*
+1ø' ø(1
+
+1313268*
+1ø' ø(1
+
+131668*
+1« «()
+
+1318267*
+1« «()
+
+13114331*
+1…. …(/
+
+13114317*
+1… …(-
+
+1199762*
+1Œ- Œ(?
+
+1199731*
+1Œ@ Œ(R
+
+1199717*
+1Œ- Œ(?
+
+1195368*
+1– –(.
+
+13812976*
+1⁄ ⁄(
+
+13812362*
+1⁄2 ⁄(8
+
+13812917*
+1⁄ ⁄(
+
+13812331*
+1⁄? ⁄(G
+
+13812317*
+1⁄2 ⁄(8

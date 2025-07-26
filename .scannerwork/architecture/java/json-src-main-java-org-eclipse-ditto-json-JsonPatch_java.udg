@@ -1,0 +1,575 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508798010*java2.Bí
+=
+8json/src/main/java/org/eclipse/ditto/json/JsonPatch.java2
+
+package4
+
+org.eclipse.ditto.json5
+%
+ org.eclipse.ditto.json.JsonPatch7
+
+	interface8
+
+access9
+
+public10
+
+simple name11
+
+	JsonPatch12
+›
+”org.eclipse.ditto.json.JsonPatch#newInstance(Lorg/eclipse/ditto/json/JsonPatch$Operation;LJsonPointer;LJsonValue;)Lorg/eclipse/ditto/json/JsonPatch;14
+
+method15
+
+newInstance16
+
+returns17
+0
+*org.eclipse.ditto.json.JsonPatch$Operation19
+
+unknown20
+
+	has param21
+)
+#Recovered#typeBindingLJsonPointer;023
+'
+!Recovered#typeBindingLJsonValue;025
+
+
+uses26
+
+is type27
+
+
+references28
+a
+[org.eclipse.ditto.json.JsonPatch#getOperation()Lorg/eclipse/ditto/json/JsonPatch$Operation;30
+
+getOperation31
+=
+7org.eclipse.ditto.json.JsonPatch#getPath()LJsonPointer;33
+
+getPath34
+
+JsonPointer36
+E
+?org.eclipse.ditto.json.JsonPatch#getValue()Ljava/util/Optional;38
+
+getValue39
+;
+5org.eclipse.ditto.json.JsonPatch#toJson()LJsonObject;41
+
+toJson42
+
+
+JsonObject44
+C
+=org.eclipse.ditto.json.JsonPatch#toString()Ljava/lang/String;46
+
+toString47
+
+
+enum48
+
+	Operation49
+f
+`org.eclipse.ditto.json.JsonPatch$Operation#values()[Lorg/eclipse/ditto/json/JsonPatch$Operation;51
+
+values52
+x
+rorg.eclipse.ditto.json.JsonPatch$Operation#valueOf(Ljava/lang/String;)Lorg/eclipse/ditto/json/JsonPatch$Operation;54
+
+valueOf55
+4
+.org.eclipse.ditto.json.JsonPatch$Operation.ADD57
+
+field58
+	
+ADD59
+
+calls60
+7
+1org.eclipse.ditto.json.JsonPatch$Operation.REMOVE62
+
+REMOVE63
+8
+2org.eclipse.ditto.json.JsonPatch$Operation.REPLACE65
+
+REPLACE66
+5
+/org.eclipse.ditto.json.JsonPatch$Operation.name68
+
+private69
+
+
+name70
+_
+Yorg.eclipse.ditto.json.JsonPatch$Operation#<init>(Ljava/lang/String;ILjava/lang/String;)V72
+c
+]org.eclipse.ditto.json.JsonPatch$Operation#fromString(Ljava/lang/String;)Ljava/util/Optional;74
+
+
+fromString75
+
+Nullable77
+
+annotated by78
+&
+ Recovered#typeBindingLNullable;080
+M
+Gorg.eclipse.ditto.json.JsonPatch$Operation#toString()Ljava/lang/String;82
+1
++org.eclipse.ditto.json.JsonPatch$JsonFields84
+
+class85
+
+
+JsonFields86
+
+	Immutable88
+'
+!Recovered#typeBindingLImmutable;090
+;
+5org.eclipse.ditto.json.JsonPatch$JsonFields.OPERATION92
+
+	OPERATION93
+
+JsonFieldDefinition95
+6
+0org.eclipse.ditto.json.JsonPatch$JsonFields.PATH97
+
+
+PATH98
+8
+1org.eclipse.ditto.json.JsonPatch$JsonFields.VALUE100
+
+VALUE101
+<
+5org.eclipse.ditto.json.JsonPatch$JsonFields#<init>()V103J
+
+1
+12Z
+
+3	
+354j¾
+
+87
+878820
+C
+96=
+969758 *
+1”	 ”(283:3B
+	
+9
+10
+
+
+11
+98
+@
+45:
+454615 *
+1U U(26:3B
+	
+9
+10
+
+
+11
+47
+
+43
+434420
+
+35
+353620
+6
+500
+505115 *
+1\
+ \(218:3B
+
+
+11
+52
+9
+64
+678 *
+1$ $(:3B
+	
+9
+10
+
+
+11
+12
+@
+29:
+293015 *
+18 8(26:3B
+	
+9
+10
+
+
+11
+31
+
+89
+899020
+@
+13:
+131415 *
+1/ /(26:3B
+	
+9
+10
+
+
+11
+16
+
+79
+798020
+A
+67;
+676858 *
+1l	 l(218:3B
+	
+9
+69
+
+
+11
+70
+6
+560
+565758 *
+1`	 `(218:3B
+
+
+11
+59
+@
+32:
+323315 *
+1? ?(26:3B
+	
+9
+10
+
+
+11
+34
+6
+640
+646558 *
+1j	 j(218:3B
+
+
+11
+66
+B
+83<
+838485 *
+1Š Š(26:3B
+	
+9
+10
+
+
+11
+86
+
+24
+242520
+C
+91=
+919258 *
+1	 (283:3B
+	
+9
+10
+
+
+11
+93
+
+94
+949520
+
+22
+222320
+@
+37:
+373815 *
+1G G(26:3B
+	
+9
+10
+
+
+11
+39
+E
+99?
+9910058 *
+1™	 ™(283:3B
+	
+9
+10
+
+11
+101
+A
+81;
+818215 *
+1	 (
+218:3B
+	
+9
+10
+
+
+11
+47
+6
+530
+535415 *
+1\
+ \(218:3B
+
+
+11
+55
+A
+71;
+717215 *
+1n	 n(218:3B
+	
+9
+69
+
+
+11
+49
+@
+18:
+181948 *
+1\
+ \(26:3B
+	
+9
+10
+
+
+11
+49
+@
+40:
+404115 *
+1N N(26:3B
+	
+9
+10
+
+
+11
+42
+F
+102?
+10210315 *
+1›	 ›(283:3B
+	
+9
+69
+
+
+11
+86
+6
+610
+616258 *
+1e	 e(218:3B
+
+
+11
+63
+A
+73;
+737415 *
+1y	 y(218:3B
+	
+9
+10
+
+
+11
+75
+
+76
+767720rÌ
+
+13617*
+1/ /(
+
+131821*
+1/( /(1
+
+132221*
+1/M /(X
+
+132421*
+1/e /(n
+
+13626*
+1/ /(
+
+131827*
+1/< /(E
+
+13626*
+1/( /(1
+
+131826*
+1/2 /(;
+
+131828*
+1/2 /(;
+
+132227*
+1/Y /(]
+
+132226*
+1/M /(X
+
+132427*
+1/o /(t
+
+132426*
+1/e /(n
+
+291817*
+18 8(
+
+291826*
+18 8(
+
+291828*
+18 8(
+
+323517*
+1? ?(
+
+323526*
+1? ?(
+
+372426*
+1G G(
+
+404317*
+1N N(
+
+404326*
+1N N(
+
+561860*
+1`	 `(
+
+561860*
+1`	 `(
+
+611860*
+1e	 e(
+
+611860*
+1e	 e(
+
+641860*
+1j	 j(
+
+641860*
+1j	 j(
+
+711860*
+1n n(
+
+711826*
+1o o(
+
+711828*
+1o o(
+
+716728*
+1o o(
+
+731826*
+1y  y()
+
+731828*
+1y  y()
+
+737678*
+1y6 y(7
+
+737926*
+1y7 y(?
+
+731817*
+1z z($
+
+731828*
+1z z($
+
+735060*
+1z z($
+
+731827*
+1{ {(&
+
+736728*
+1{C {(G
+
+816728*
+1 (
+
+838778*
+1‰ ‰(
+
+838926*
+1‰ ‰(
+
+919427*
+1 (0
+
+919426*
+1 (0
+
+919426*
+19 (B
+
+969427*
+1” ”(0
+
+969426*
+1” ”(0
+
+969426*
+1”9 ”(=
+
+999427*
+1™ ™(0
+
+999426*
+1™ ™(0
+
+992426*
+1™1 ™(:
+
+999426*
+1™< ™(A
+
+1028360*
+1› ›(

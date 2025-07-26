@@ -1,0 +1,30 @@
+
+"}\n"java.lang.String
+5
+"    let namespace = \"ns\";\n"java.lang.String
+;%"    let path = \"/attributes/i\";\n"java.lang.String
+5"    let channel = \"twin\";\n"java.lang.String
+6 "    let value = textPayload;\n"java.lang.String
+M7"    while(now - start < sec*1000) now = new Date();\n"java.lang.String
+;%"    let criterion = \"commands\";\n"java.lang.String
+6 "    let action = \"modify\";\n"java.lang.String
+5"    let group = \"things\";\n"java.lang.String
+0"var $global = $global;\n"java.lang.String
+gQ"function mapToDittoProtocolMsg(headers,textPayload,bytePayload,contentType) {\n"java.lang.String
+?	)"    sleep(parseInt(textPayload, 10));\n"java.lang.String
+3"    var now = new Date();\n"java.lang.String
+/"function sleep(sec) {\n"java.lang.String
+5"    var start = new Date();\n"java.lang.String
+6 "        dittoHeaders,value);\n"java.lang.String
+M7"    dittoHeaders[\"correlation-id\"] = textPayload;\n"java.lang.String
+r\"    return Ditto.buildDittoProtocolMsg(namespace,name,group,channel,criterion,action,path,"java.lang.String
+4"    $global = textPayload;\n"java.lang.String
+1"    let name = $global;\n"java.lang.String
+4"    let dittoHeaders = {};\n"java.lang.String
+"}"java.lang.String"_K
+I
+
+÷ ("	#binop +#2+:	
+Bjava.lang.String
+
+÷ (*/Users/Maheen/Downloads/ditto-3.7.4/connectivity/service/src/test/java/org/eclipse/ditto/connectivity/service/messaging/MappingSinksTest.java

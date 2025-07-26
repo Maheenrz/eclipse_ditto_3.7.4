@@ -1,0 +1,631 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508817806*java2.Bı
+p
+kconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/hono/HonoValidator.java2
+
+package4
+:
+5org.eclipse.ditto.connectivity.service.messaging.hono5
+H
+Corg.eclipse.ditto.connectivity.service.messaging.hono.HonoValidator7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+HonoValidator12
+7
+1Recovered#typeBindingLAbstractProtocolValidator;014
+
+unknown15
+
+extends16
+
+	Immutable18
+
+annotated by19
+'
+!Recovered#typeBindingLImmutable;021
+
+
+uses22
+R
+Lorg.eclipse.ditto.connectivity.service.messaging.hono.HonoValidator.instance24
+
+field25
+
+private26
+
+instance27
+
+is type28
+
+Nullable30
+&
+ Recovered#typeBindingLNullable;032
+m
+gorg.eclipse.ditto.connectivity.service.messaging.hono.HonoValidator.allowedSourceAddressHonoAliasValues34
+)
+#allowedSourceAddressHonoAliasValues35
+S
+Morg.eclipse.ditto.connectivity.service.messaging.hono.HonoValidator#<init>()V37
+
+method38
+
+calls39
+
+
+references40
+ù
+ñorg.eclipse.ditto.connectivity.service.messaging.hono.HonoValidator#getInstance()Lorg/eclipse/ditto/connectivity/service/messaging/hono/HonoValidator;42
+
+getInstance43
+
+returns44
+`
+Zorg.eclipse.ditto.connectivity.service.messaging.hono.HonoValidator#type()LConnectionType;46
+
+
+type47
+
+ConnectionType49
+ë
+äorg.eclipse.ditto.connectivity.service.messaging.hono.HonoValidator#validate(LConnection;LDittoHeaders;LActorSystem;LConnectivityConfig;)V51
+
+validate52
+(
+"Recovered#typeBindingLConnection;054
+
+	has param55
+*
+$Recovered#typeBindingLDittoHeaders;057
+)
+#Recovered#typeBindingLActorSystem;059
+0
+*Recovered#typeBindingLConnectivityConfig;061
+è
+àorg.eclipse.ditto.connectivity.service.messaging.hono.HonoValidator#validateSource(LSource;LDittoHeaders;Ljava/util/function/Supplier;)V63
+
+	protected64
+
+validateSource65
+$
+Recovered#typeBindingLSource;067
+|
+vorg.eclipse.ditto.connectivity.service.messaging.hono.HonoValidator#validateSourceEnforcement(LSource;LDittoHeaders;)V69
+z
+torg.eclipse.ditto.connectivity.service.messaging.hono.HonoValidator#validateSourceAddresses(LSource;LDittoHeaders;)V71
+t
+norg.eclipse.ditto.connectivity.service.messaging.hono.HonoValidator#validateSourceQos(LSource;LDittoHeaders;)V73
+
+validateSourceEnforcement74
+
+validateSourceAddresses75
+Ç
+|org.eclipse.ditto.connectivity.service.messaging.hono.HonoValidator#validateSourceAddress(Ljava/lang/String;LDittoHeaders;)V77
+
+validateSourceAddress78
+-
+'ConnectionConfigurationInvalidException80
+¿
+πorg.eclipse.ditto.connectivity.service.messaging.hono.HonoValidator#newConnectionConfigurationInvalidException(Ljava/lang/String;LDittoHeaders;)LConnectionConfigurationInvalidException;82
+0
+*newConnectionConfigurationInvalidException83
+
+validateSourceQos84
+è
+àorg.eclipse.ditto.connectivity.service.messaging.hono.HonoValidator#validateTarget(LTarget;LDittoHeaders;Ljava/util/function/Supplier;)V86
+
+validateTarget87
+$
+Recovered#typeBindingLTarget;089
+Ç
+|org.eclipse.ditto.connectivity.service.messaging.hono.HonoValidator#validateTargetAddress(Ljava/lang/String;LDittoHeaders;)V91
+
+validateTargetAddress92J
+
+1
+12Z
+
+3	
+354j„	
+
+17
+171815
+
+56
+565715
+@
+50:
+505138 *
+1J J(26:3B
+	
+9
+10
+
+
+11
+52
+@
+62:
+626338 *
+1U U(26:3B
+	
+9
+64
+
+
+11
+65
+@
+36:
+363738 *
+10 0(26:3B
+	
+9
+26
+
+
+11
+12
+@
+33:
+333425 *
+1. .(26:3B
+	
+9
+26
+
+
+11
+35
+
+20
+202115
+
+13
+131415
+
+31
+313215
+B
+85<
+858638 *
+1† †(26:3B
+	
+9
+64
+
+
+11
+87
+B
+90<
+909138 *
+1© ©(26:3B
+	
+9
+26
+
+
+11
+92
+9
+64
+678 *
+1* *(!:3B
+	
+9
+10
+
+
+11
+12
+
+79
+798015
+
+66
+666715
+
+48
+484915
+@
+76:
+767738 *
+1{ {(26:3B
+	
+9
+26
+
+
+11
+78
+
+88
+888915
+
+53
+535415
+@
+45:
+454638 *
+1E E(26:3B
+	
+9
+10
+
+
+11
+47
+@
+70:
+707138 *
+1v v(26:3B
+	
+9
+26
+
+
+11
+75
+B
+81<
+818238 *
+1å å(26:3B
+	
+9
+26
+
+
+11
+83
+@
+41:
+414238 *
+1< <(26:3B
+	
+9
+10
+
+
+11
+43
+
+60
+606115
+@
+23:
+232425 *
+1, ,(26:3B
+	
+9
+26
+
+
+11
+27
+@
+68:
+686938 *
+1_ _(26:3B
+	
+9
+26
+
+
+11
+74
+B
+72<
+727338 *
+1ì ì(26:3B
+	
+9
+26
+
+
+11
+84
+
+58
+585915
+
+29
+293015rÈ
+
+61316*
+1** *(C
+
+61719*
+1) )(
+
+62022*
+1) )(
+
+61322*
+1** *(C
+
+23628*
+1, ,(+
+
+232919*
+1, ,(
+
+233122*
+1, ,(
+
+23622*
+1, ,(+
+
+23622*
+1,, ,(4
+
+36639*
+10 0(
+
+363340*
+11	 1(,
+
+41644*
+1< <( 
+
+41622*
+1< <( 
+
+41628*
+1= =(
+
+41622*
+1= =(
+
+412340*
+1= =(
+
+41639*
+1? ?('
+
+41622*
+1@ @(
+
+412340*
+1@ @(
+
+454844*
+1F F(
+
+454822*
+1F F(
+
+505355*
+1K  K(*
+
+505655*
+1L L(
+
+505855*
+1M M(
+
+506055*
+1N N(%
+
+505328*
+1K+ K(5
+
+505322*
+1K  K(*
+
+505628*
+1L  L(,
+
+505622*
+1L L(
+
+505828*
+1M M(*
+
+505822*
+1M M(
+
+506028*
+1N& N(8
+
+506022*
+1N N(%
+
+626655*
+1V) V(/
+
+625655*
+1W W(
+
+626628*
+1V0 V(6
+
+626622*
+1V) V(/
+
+625628*
+1W  W(,
+
+625622*
+1W W(
+
+62640*
+1Z	 Z("
+
+626839*
+1Z	 Z("
+
+62640*
+1[	 [( 
+
+627039*
+1[	 [( 
+
+62640*
+1\	 \(
+
+627239*
+1\	 \(
+
+686655*
+1_2 _(8
+
+685655*
+1_G _(S
+
+686628*
+1_9 _(?
+
+686622*
+1_2 _(8
+
+685628*
+1_T _(`
+
+685622*
+1_G _(S
+
+706655*
+1v0 v(6
+
+705655*
+1vE v(Q
+
+706628*
+1v7 v(=
+
+706622*
+1v0 v(6
+
+705628*
+1vR v(^
+
+705622*
+1vE v(Q
+
+765655*
+1{J {(V
+
+765628*
+1{W {(c
+
+765622*
+1{J {(V
+
+767944*
+1} }(=
+
+76640*
+1} }(=
+
+768139*
+1} }(=
+
+763340*
+1Å Å(1
+
+763340*
+1Å Å(1
+
+767944*
+1Ç Ç(=
+
+76640*
+1Ç Ç(=
+
+768139*
+1Ç Ç(=
+
+763340*
+1Ü Ü(@
+
+817944*
+1å å(;
+
+815655*
+1é é(
+
+817922*
+1å å(;
+
+815628*
+1é  é(,
+
+815622*
+1é é(
+
+726655*
+1ì1 ì(7
+
+725655*
+1ìF ì(R
+
+726628*
+1ì8 ì(>
+
+726622*
+1ì1 ì(7
+
+725628*
+1ìS ì(_
+
+725622*
+1ìF ì(R
+
+858855*
+1°) °(/
+
+855655*
+1¢ ¢(
+
+858828*
+1°0 °(6
+
+858822*
+1°) °(/
+
+855628*
+1¢  ¢(,
+
+855622*
+1¢ ¢(
+
+85640*
+1•	 •(
+
+859039*
+1•	 •(
+
+905655*
+1©Q ©(]
+
+905628*
+1©^ ©(j
+
+905622*
+1©Q ©(]
+
+907944*
+1´ ´(=
+
+90640*
+1´ ´(=
+
+908139*
+1´ ´(=
+
+907944*
+1± ±(=
+
+90640*
+1± ±(=
+
+908139*
+1± ±(=

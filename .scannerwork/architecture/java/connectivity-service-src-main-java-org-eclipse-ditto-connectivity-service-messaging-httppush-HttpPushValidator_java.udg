@@ -1,0 +1,870 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508643268*java2.B∞%
+x
+sconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/httppush/HttpPushValidator.java2
+
+package4
+>
+9org.eclipse.ditto.connectivity.service.messaging.httppush5
+P
+Korg.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+HttpPushValidator12
+7
+1Recovered#typeBindingLAbstractProtocolValidator;014
+
+unknown15
+
+extends16
+
+	Immutable18
+
+annotated by19
+'
+!Recovered#typeBindingLImmutable;021
+
+
+uses22
+W
+Qorg.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator.HTTPS24
+
+field25
+
+private26
+
+HTTPS27
+V
+Porg.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator.HTTP29
+
+
+HTTP30
+b
+\org.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator.ACCEPTED_SCHEMES32
+
+ACCEPTED_SCHEMES33
+
+
+references34
+`
+Zorg.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator.SECURE_SCHEMES36
+
+SECURE_SCHEMES37
+c
+]org.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator.SUPPORTED_METHODS39
+
+SUPPORTED_METHODS40
+(
+"Recovered#typeBindingLHttpMethod;042
+h
+borg.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator.SUPPORTED_METHOD_NAMES44
+
+SUPPORTED_METHOD_NAMES45
+b
+\org.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator.MAX_IDLE_TIMEOUT47
+
+	protected48
+
+MAX_IDLE_TIMEOUT49
+`
+Zorg.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator.httpPushConfig51
+
+httpPushConfig52
+
+HttpPushConfig54
+
+is type55
+d
+^org.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator.oauth2EnforceHttps57
+
+oauth2EnforceHttps58
+Ω
+∂org.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator#newInstance(LHttpPushConfig;)Lorg/eclipse/ditto/connectivity/service/messaging/httppush/HttpPushValidator;60
+
+method61
+
+newInstance62
+
+returns63
+,
+&Recovered#typeBindingLHttpPushConfig;065
+
+	has param66
+
+calls67
+k
+eorg.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator#<init>(LHttpPushConfig;)V69
+h
+borg.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator#type()LConnectionType;71
+
+
+type72
+
+ConnectionType74
+ô
+íorg.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator#validate(LConnection;LDittoHeaders;LActorSystem;LConnectivityConfig;)V76
+
+validate77
+(
+"Recovered#typeBindingLConnection;079
+*
+$Recovered#typeBindingLDittoHeaders;081
+)
+#Recovered#typeBindingLActorSystem;083
+0
+*Recovered#typeBindingLConnectivityConfig;085
+Ç
+|org.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator#validateCredentials(LConnection;LDittoHeaders;)V87
+Ö
+org.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator#validateSpecificConfig(LConnection;LDittoHeaders;)V89
+ó
+êorg.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator#validateSource(LSource;LDittoHeaders;Ljava/util/function/Supplier;)V91
+
+validateSource92
+$
+Recovered#typeBindingLSource;094
+ó
+êorg.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator#validateTarget(LTarget;LDittoHeaders;Ljava/util/function/Supplier;)V96
+
+validateTarget97
+$
+Recovered#typeBindingLTarget;099
+©
+°org.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator#validateTargetAddress(Ljava/lang/String;LDittoHeaders;Ljava/util/function/Supplier;)V101
+
+validateTargetAddress102
+¶
+ûorg.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator#validateHttpMethod(Ljava/lang/String;LDittoHeaders;Ljava/util/function/Supplier;)V104
+
+validateHttpMethod105
+
+validateCredentials106
+
+validateSpecificConfig107
+5
+.Recovered#typeBindingLHttpPushSpecificConfig;0109
+å
+Ñorg.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator#validateIdleTimeout(Ljava/time/Duration;LDittoHeaders;)V111
+x
+qorg.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator#validateParallelism(ILDittoHeaders;)V113
+å
+Ñorg.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator#validateOmitBodyMethods(Ljava/util/List;LDittoHeaders;)V115
+
+validateIdleTimeout116
+
+validateParallelism117
+.
+'ConnectionConfigurationInvalidException119
+©
+°org.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator#parallelismValidationFailed(ILDittoHeaders;)LConnectionConfigurationInvalidException;121
+
+validateOmitBodyMethods122
+"
+parallelismValidationFailed123
+v
+oorg.eclipse.ditto.connectivity.service.messaging.httppush.HttpPushValidator#isSecureScheme(Ljava/lang/String;)Z125
+
+isSecureScheme126J
+
+1
+12Z
+
+3	
+354jÀ
+
+17
+171815
+
+80
+808115
+C
+88=
+888961 *
+1¢ ¢(26:3B
+	
+9
+26
+
+11
+107
+@
+50:
+505125 *
+1= =(26:3B
+	
+9
+26
+
+
+11
+52
+C
+86=
+868761 *
+1ì ì(26:3B
+	
+9
+26
+
+11
+106
+F
+110?
+11011161 *
+1™ ™(26:3B
+	
+9
+26
+
+11
+116
+@
+75:
+757661 *
+1T T(26:3B
+	
+9
+10
+
+
+11
+77
+
+108
+10810915
+@
+23:
+232425 *
+1/ /(26:3B
+	
+9
+26
+
+
+11
+27
+
+20
+202115
+@
+56:
+565725 *
+1> >(26:3B
+	
+9
+26
+
+
+11
+58
+@
+35:
+353625 *
+12 2(26:3B
+	
+9
+26
+
+
+11
+37
+
+13
+131415
+F
+112?
+11211361 *
+1µ µ(26:3B
+	
+9
+26
+
+11
+117
+F
+114?
+11411561 *
+1ø ø(26:3B
+	
+9
+26
+
+11
+122
+@
+46:
+464725 *
+1; ;(26:3B
+	
+9
+48
+
+
+11
+49
+
+118
+11811915
+
+53
+535415
+
+93
+939415
+D
+100=
+10010161 *
+1r r(26:3B
+	
+9
+26
+
+11
+102
+F
+103?
+10310461 *
+1Ñ Ñ(26:3B
+	
+9
+26
+
+11
+105
+
+73
+737415
+@
+38:
+383925 *
+14 4(26:3B
+	
+9
+26
+
+
+11
+40
+F
+124?
+12412561 *
+1‹ ‹(26:3B
+	
+9
+48
+
+11
+126
+
+98
+989915
+
+78
+787915
+@
+43:
+434425 *
+17 7(26:3B
+	
+9
+26
+
+
+11
+45
+@
+59:
+596061 *
+1F F(26:3B
+	
+9
+10
+
+
+11
+62
+@
+28:
+282925 *
+10 0(26:3B
+	
+9
+26
+
+
+11
+30
+@
+95:
+959661 *
+1i i(26:3B
+	
+9
+48
+
+
+11
+97
+
+41
+414215
+9
+64
+678 *
+1- -(%:3B
+	
+9
+10
+
+
+11
+12
+
+84
+848515
+F
+120?
+12012161 *
+1– –(26:3B
+	
+9
+26
+
+11
+123
+@
+68:
+686961 *
+1J J(26:3B
+	
+9
+26
+
+
+11
+12
+@
+31:
+313225 *
+11 1(26:3B
+	
+9
+26
+
+
+11
+33
+@
+70:
+707161 *
+1O O(26:3B
+	
+9
+10
+
+
+11
+72
+@
+90:
+909161 *
+1_ _(26:3B
+	
+9
+48
+
+
+11
+92
+
+82
+828315
+
+64
+646515r◊
+
+61316*
+1-. -(G
+
+61719*
+1, ,(
+
+62022*
+1, ,(
+
+61322*
+1-. -(G
+
+312834*
+11H 1(L
+
+312334*
+11N 1(S
+
+352334*
+12F 2(K
+
+384122*
+14% 4(/
+
+433834*
+17: 7(K
+
+433834*
+17: 7(K
+
+505355*
+1= =(!
+
+505322*
+1= =(!
+
+505322*
+1=" =(0
+
+59663*
+1F F($
+
+596466*
+1F7 F(E
+
+59622*
+1F F($
+
+596455*
+1FF F(L
+
+596422*
+1F7 F(E
+
+59667*
+1G G(%
+
+686466*
+1J% J(3
+
+68667*
+1J J(
+
+686455*
+1J4 J(:
+
+686422*
+1J% J(3
+
+685322*
+1K	 K(
+
+685034*
+1K	 K(
+
+685634*
+1L	 L(
+
+685034*
+1L L(,
+
+685322*
+1L L(,
+
+685034*
+1L L(,
+
+707363*
+1P P(
+
+707322*
+1P P(
+
+757866*
+1U  U(*
+
+758066*
+1U= U(I
+
+758266*
+1U^ U(i
+
+758466*
+1V V(%
+
+757855*
+1U+ U(5
+
+757822*
+1U  U(*
+
+758055*
+1UJ U(V
+
+758022*
+1U= U(I
+
+758255*
+1Uj U(u
+
+758222*
+1U^ U(i
+
+758455*
+1V& V(8
+
+758422*
+1V V(%
+
+753134*
+1W5 W(E
+
+753534*
+1WG W(U
+
+75634*
+1[	 [(
+
+758667*
+1[	 [(
+
+75634*
+1\	 \(
+
+758867*
+1\	 \(
+
+909366*
+1`) `(/
+
+908066*
+1`> `(J
+
+909355*
+1`0 `(6
+
+909322*
+1`) `(/
+
+908055*
+1`K `(W
+
+908022*
+1`> `(J
+
+907363*
+1cU c(Y
+
+90634*
+1cU c(Y
+
+907067*
+1cU c(Y
+
+959866*
+1j) j(/
+
+958066*
+1j> j(J
+
+959855*
+1j0 j(6
+
+959822*
+1j) j(/
+
+958055*
+1jK j(W
+
+958022*
+1j> j(J
+
+95634*
+1n	 n(
+
+9510067*
+1n	 n(
+
+1008066*
+1s s(
+
+1008055*
+1s  s(,
+
+1008022*
+1s s(
+
+100634*
+1x x(
+
+10010367*
+1x x(
+
+1004334*
+1~> ~(T
+
+1038066*
+1Ö Ö(
+
+1038055*
+1Ö  Ö(,
+
+1038022*
+1Ö Ö(
+
+1034122*
+1à à("
+
+1033834*
+1â" â(3
+
+1033834*
+1â" â(3
+
+1034334*
+1ç> ç(T
+
+867866*
+1ì, ì(6
+
+868066*
+1ìI ì(U
+
+867855*
+1ì7 ì(A
+
+867822*
+1ì, ì(6
+
+868055*
+1ìV ì(b
+
+868022*
+1ìI ì(U
+
+887866*
+1¢/ ¢(9
+
+888066*
+1¢L ¢(X
+
+887855*
+1¢: ¢(D
+
+887822*
+1¢/ ¢(9
+
+888055*
+1¢Y ¢(e
+
+888022*
+1¢L ¢(X
+
+8810855*
+1§ §('
+
+8810822*
+1£ £(%
+
+885322*
+1§\ §(j
+
+885034*
+1§\ §(j
+
+88634*
+1•	 •(
+
+8811067*
+1•	 •(
+
+88634*
+1¶	 ¶(
+
+8811267*
+1¶	 ¶(
+
+88634*
+1ß	 ß( 
+
+8811467*
+1ß	 ß( 
+
+1108066*
+1™O ™([
+
+1108055*
+1™\ ™(h
+
+1108022*
+1™O ™([
+
+1104634*
+1´? ´(O
+
+1104634*
+1ÆK Æ([
+
+1104634*
+1ÆK Æ([
+
+1128066*
+1µJ µ(V
+
+1128055*
+1µW µ(c
+
+1128022*
+1µJ µ(V
+
+11211863*
+1∏ ∏(2
+
+112634*
+1∏ ∏(2
+
+11212067*
+1∏ ∏(2
+
+11211863*
+1ª ª(.
+
+112634*
+1ª ª(.
+
+11212067*
+1ª ª(.
+
+1148066*
+1¿ ¿(
+
+1148055*
+1¿  ¿(,
+
+1148022*
+1¿ ¿(
+
+12011863*
+1– –(;
+
+1208066*
+1— —(
+
+12011822*
+1– –(;
+
+1208055*
+1—  —('
+
+1208022*
+1— —(
+
+1242334*
+1› ›(
+
+1242334*
+1› ›(

@@ -1,0 +1,1456 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508801476*java2.B9
+ä
+Ñconnectivity/service/src/test/java/org/eclipse/ditto/connectivity/service/messaging/kafka/KafkaAuthenticationSpecificConfigTest.java2
+
+package4
+;
+6org.eclipse.ditto.connectivity.service.messaging.kafka5
+a
+\org.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
++
+%KafkaAuthenticationSpecificConfigTest12
+}
+worg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest.KNOWN_PLAIN_SASL_MECHANISM14
+
+field15
+
+private16
+ 
+KNOWN_PLAIN_SASL_MECHANISM17
+~
+xorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest.KNOWN_SHA256_SASL_MECHANISM19
+!
+KNOWN_SHA256_SASL_MECHANISM20
+~
+xorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest.KNOWN_SHA512_SASL_MECHANISM22
+!
+KNOWN_SHA512_SASL_MECHANISM23
+ã
+Ñorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest.KNOWN_UNSUPPORTED_GSSAPI_SASL_MECHANISM25
+-
+'KNOWN_UNSUPPORTED_GSSAPI_SASL_MECHANISM26
+ê
+âorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest.KNOWN_UNSUPPORTED_OAUTHBEARER_SASL_MECHANISM28
+2
+,KNOWN_UNSUPPORTED_OAUTHBEARER_SASL_MECHANISM29
+y
+sorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest.UNKNOWN_SASL_MECHANISM31
+
+UNKNOWN_SASL_MECHANISM32
+j
+dorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest.HEADERS34
+
+HEADERS35
+
+DittoHeaders37
+
+unknown38
+
+is type39
+
+
+uses40
+o
+iorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest.DEFAULT_HOST42
+
+DEFAULT_HOST43
+m
+gorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest.KNOWN_USER45
+
+
+KNOWN_USER46
+q
+korg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest.KNOWN_PASSWORD48
+
+KNOWN_PASSWORD49
+x
+rorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest.defaultSpecificConfig51
+
+defaultSpecificConfig52
+l
+forg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest.underTest54
+
+	underTest55
+'
+!KafkaAuthenticationSpecificConfig57
+u
+oorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#initTestFixture()V59
+
+method60
+
+initTestFixture61
+
+BeforeClass63
+
+annotated by64
+)
+#Recovered#typeBindingLBeforeClass;066
+
+
+references67
+k
+eorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#setUp()V69
+
+setUp70
+
+Before72
+$
+Recovered#typeBindingLBefore;074
+ã
+Ñorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#shouldBeApplicableIfCredentialsExist()V76
+*
+$shouldBeApplicableIfCredentialsExist77
+
+
+Test79
+"
+Recovered#typeBindingLTest;081
+(
+"Recovered#typeBindingLConnection;083
+
+
+Connection85
+
+returns86
+≤
+´org.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#getConnection(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)LConnection;88
+
+calls89
+ì
+åorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#shouldNotBeApplicableIfCredentialsAreMissing()V91
+2
+,shouldNotBeApplicableIfCredentialsAreMissing92
+ô
+íorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#getConnectionWithoutUsernameAndPassword()LConnection;94
+ç
+Üorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#shouldBeValidIfContainsNoSaslMechanism()V96
+,
+&shouldBeValidIfContainsNoSaslMechanism97
+¢
+õorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#getConnectionWithSaslMechanism(Ljava/lang/String;)LConnection;99
+ï
+çorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#shouldBeValidIfContainsSupportedSaslMechanism()V101
+4
+-shouldBeValidIfContainsSupportedSaslMechanism102
+ô
+ëorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#shouldBeInvalidIfContainsUnsupportedSaslMechanism()V104
+8
+1shouldBeInvalidIfContainsUnsupportedSaslMechanism105
+è
+áorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#shouldValidateIfContainsNoSaslMechanism()V107
+.
+'shouldValidateIfContainsNoSaslMechanism108
+ñ
+éorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#shouldValidateIfContainsSupportedSaslMechanism()V110
+5
+.shouldValidateIfContainsSupportedSaslMechanism111
+°
+ôorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#shouldThrowOnValidationIfContainsUnsupportedSaslMechanism()V113
+@
+9shouldThrowOnValidationIfContainsUnsupportedSaslMechanism114
+Ñ
+}org.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#shouldNotValidate(LConnection;)V116
+
+shouldNotValidate117
+
+	has param118
+F
+?Recovered#typeBindingLConnectionConfigurationInvalidException;0120
+ù
+ïorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#shouldNotAddSaslConfigurationIfCredentialsAreMissingg()V122
+<
+5shouldNotAddSaslConfigurationIfCredentialsAreMissingg123
+ë
+âorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#shouldNotContainSaslMechanism(LConnection;)V125
+°
+ôorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#shouldAddDefaultSaslConfigurationIfSaslMechanismIsMissing()V127
+@
+9shouldAddDefaultSaslConfigurationIfSaslMechanismIsMissing128
+ì
+ãorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#shouldContainPlainSaslMechanism(LConnection;)V130
+°
+ôorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#shouldNotAddSaslConfigurationIfSaslMechanismIsUnsupported()V132
+@
+9shouldNotAddSaslConfigurationIfSaslMechanismIsUnsupported133
+ú
+îorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#shouldAddSaslConfigurationIfSaslMechanismIsSupported()V135
+;
+4shouldAddSaslConfigurationIfSaslMechanismIsSupported136
+•
+ùorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#shouldContainScramSaslMechanism(LConnection;Ljava/lang/String;)V138
+$
+shouldNotContainSaslMechanism139
+&
+shouldContainPlainSaslMechanism140
+&
+shouldContainScramSaslMechanism141
+%
+getConnectionWithSaslMechanism142
+
+Nullable144
+'
+ Recovered#typeBindingLNullable;0146
+ß
+üorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#specificConfigWithSaslMechanism(Ljava/lang/String;)Ljava/util/Map;148
+.
+'getConnectionWithoutUsernameAndPassword149
+
+getConnection150
+∂
+Æorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaAuthenticationSpecificConfigTest#getUriWithUserAndPassword(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;152
+ 
+getUriWithUserAndPassword153
+&
+specificConfigWithSaslMechanism154J
+
+1
+12Z
+
+3	
+354j•
+
+62
+626338
+@
+68:
+686960 *
+1A A(26:3B
+	
+9
+10
+
+
+11
+70
+F
+126?
+12612760 *
+1Ü Ü(26:3B
+	
+9
+10
+
+11
+128
+@
+24:
+242515 *
+1/ /(26:3B
+	
+9
+16
+
+
+11
+26
+C
+93=
+939460 *
+1ª ª(26:3B
+	
+9
+16
+
+11
+149
+@
+95:
+959660 *
+1T T(26:3B
+	
+9
+10
+
+
+11
+97
+
+73
+737438
+
+78
+787938
+@
+41:
+414215 *
+13 3(26:3B
+	
+9
+16
+
+
+11
+43
+
+65
+656638
+
+56
+565738
+F
+129?
+12913060 *
+1£ £(26:3B
+	
+9
+16
+
+11
+140
+9
+64
+678 *
+1* *(9:3B
+	
+9
+10
+
+
+11
+12
+@
+47:
+474815 *
+15 5(26:3B
+	
+9
+16
+
+
+11
+49
+F
+121?
+12112260 *
+1Å Å(26:3B
+	
+9
+10
+
+11
+123
+F
+147?
+14714860 *
+1‹ ‹(26:3B
+	
+9
+16
+
+11
+154
+D
+109=
+10911060 *
+1n n(26:3B
+	
+9
+10
+
+11
+111
+
+80
+808138
+D
+106=
+10610760 *
+1i i(26:3B
+	
+9
+10
+
+11
+108
+@
+53:
+535415 *
+19 9(26:3B
+	
+9
+16
+
+
+11
+55
+
+143
+14314438
+@
+18:
+181915 *
+1- -(26:3B
+	
+9
+16
+
+
+11
+20
+@
+30:
+303115 *
+11 1(26:3B
+	
+9
+16
+
+
+11
+32
+C
+87=
+878860 *
+1ø ø(26:3B
+	
+9
+16
+
+11
+150
+
+71
+717238
+@
+75:
+757660 *
+1F F(26:3B
+	
+9
+10
+
+
+11
+77
+@
+13:
+131415 *
+1, ,(26:3B
+	
+9
+16
+
+
+11
+17
+C
+98=
+989960 *
+1∑ ∑(26:3B
+	
+9
+16
+
+11
+142
+@
+44:
+444515 *
+14 4(26:3B
+	
+9
+16
+
+
+11
+46
+F
+124?
+12412560 *
+1ú ú(26:3B
+	
+9
+16
+
+11
+139
+F
+134?
+13413560 *
+1í í(26:3B
+	
+9
+10
+
+11
+136
+F
+131?
+13113260 *
+1ã ã(26:3B
+	
+9
+10
+
+11
+133
+@
+27:
+272815 *
+10 0(26:3B
+	
+9
+16
+
+
+11
+29
+
+145
+14514638
+@
+90:
+909160 *
+1M M(26:3B
+	
+9
+10
+
+
+11
+92
+D
+100=
+10010160 *
+1Y Y(26:3B
+	
+9
+10
+
+11
+102
+@
+21:
+212215 *
+1. .(26:3B
+	
+9
+16
+
+
+11
+23
+@
+50:
+505115 *
+17 7(26:3B
+	
+9
+16
+
+
+11
+52
+
+82
+828338
+
+84
+848538
+D
+112=
+11211360 *
+1u u(26:3B
+	
+9
+10
+
+11
+114
+@
+58:
+585960 *
+1; ;(26:3B
+	
+9
+10
+
+
+11
+61
+D
+115=
+11511660 *
+1| |(26:3B
+	
+9
+16
+
+11
+117
+F
+151?
+15115260 *
+1œ œ(26:3B
+	
+9
+16
+
+11
+153
+
+36
+363738
+F
+137?
+13713860 *
+1≠ ≠(26:3B
+	
+9
+16
+
+11
+141
+
+119
+11912038
+@
+33:
+333415 *
+12 2(26:3B
+	
+9
+16
+
+
+11
+35
+D
+103=
+10310460 *
+1` `(26:3B
+	
+9
+10
+
+11
+105r˝;
+
+333639*
+12 2(&
+
+333640*
+12 2(&
+
+333640*
+12' 2(.
+
+535639*
+19 9(.
+
+535640*
+19 9(.
+
+535640*
+19/ 9(8
+
+586264*
+1; ;(
+
+586540*
+1; ;(
+
+585067*
+1=	 =(
+
+585067*
+1>	 >(
+
+585067*
+1>	 >(
+
+584167*
+1>7 >(C
+
+687164*
+1A A(
+
+687340*
+1A A(
+
+685640*
+1C	 C(
+
+685367*
+1C	 C(
+
+757864*
+1F F(
+
+758040*
+1F F(
+
+
+758239*
+1H H(+
+
+758240*
+1H H(
+
+758486*
+1H. H(;
+
+75667*
+1H. H(;
+
+758789*
+1H. H(;
+
+754467*
+1H< H(F
+
+754767*
+1HH H(V
+
+755067*
+1HX H(m
+
+755367*
+1J J(
+
+755640*
+1J J(
+
+755367*
+1J J(
+
+907864*
+1M M(
+
+908040*
+1M M(
+
+
+908239*
+1O O($
+
+908240*
+1O O(
+
+908486*
+1O' O(N
+
+90667*
+1O' O(N
+
+909389*
+1O' O(N
+
+905367*
+1Q Q(
+
+905640*
+1Q Q(
+
+905367*
+1Q Q(
+
+957864*
+1T T(
+
+958040*
+1T T(
+
+
+955367*
+1V V(
+
+955640*
+1V V(
+
+955367*
+1V V(
+
+958486*
+1V& V(D
+
+95667*
+1V& V(D
+
+959889*
+1V& V(D
+
+1007864*
+1Y Y(
+
+1008040*
+1Y Y(
+
+
+1005367*
+1[ [(
+
+1005640*
+1[ [(
+
+1005367*
+1[ [(
+
+1008486*
+1[& [(D
+
+100667*
+1[& [(D
+
+1009889*
+1[& [(D
+
+1001367*
+1[E [(_
+
+1005367*
+1\ \(
+
+1005640*
+1\ \(
+
+1005367*
+1\ \(
+
+1008486*
+1\& \(D
+
+100667*
+1\& \(D
+
+1009889*
+1\& \(D
+
+1001867*
+1\E \(`
+
+1005367*
+1] ](
+
+1005640*
+1] ](
+
+1005367*
+1] ](
+
+1008486*
+1]& ](D
+
+100667*
+1]& ](D
+
+1009889*
+1]& ](D
+
+1002167*
+1]E ](`
+
+1037864*
+1` `(
+
+1038040*
+1` `(
+
+
+1035367*
+1b b(
+
+1035640*
+1b b(
+
+1035367*
+1b b(
+
+1038486*
+1c c(/
+
+103667*
+1c c(/
+
+1039889*
+1c c(/
+
+1032767*
+1c0 c(\
+
+1035367*
+1e e(
+
+1035640*
+1e e(
+
+1035367*
+1e e(
+
+1038486*
+1e# e(A
+
+103667*
+1e# e(A
+
+1039889*
+1e# e(A
+
+1032467*
+1eB e(i
+
+1035367*
+1f f(
+
+1035640*
+1f f(
+
+1035367*
+1f f(
+
+1038486*
+1f& f(D
+
+103667*
+1f& f(D
+
+1039889*
+1f& f(D
+
+1033067*
+1fE f([
+
+1067864*
+1i i(
+
+1068040*
+1i i(
+
+
+1065367*
+1k	 k(
+
+1065640*
+1k	 k(
+
+1065367*
+1k	 k(
+
+1068486*
+1k# k(A
+
+106667*
+1k# k(A
+
+1069889*
+1k# k(A
+
+1063640*
+1kI k(P
+
+1063367*
+1kI k(P
+
+1097864*
+1n n(
+
+1098040*
+1n n(
+
+
+1095367*
+1p	 p(
+
+1095640*
+1p	 p(
+
+1095367*
+1p	 p(
+
+1098486*
+1p# p(A
+
+109667*
+1p# p(A
+
+1099889*
+1p# p(A
+
+1091367*
+1pB p(\
+
+1093640*
+1p_ p(f
+
+1093367*
+1p_ p(f
+
+1095367*
+1q	 q(
+
+1095640*
+1q	 q(
+
+1095367*
+1q	 q(
+
+1098486*
+1q# q(A
+
+109667*
+1q# q(A
+
+1099889*
+1q# q(A
+
+1091867*
+1qB q(]
+
+1093640*
+1q` q(g
+
+1093367*
+1q` q(g
+
+1095367*
+1r	 r(
+
+1095640*
+1r	 r(
+
+1095367*
+1r	 r(
+
+1098486*
+1r# r(A
+
+109667*
+1r# r(A
+
+1099889*
+1r# r(A
+
+1092167*
+1rB r(]
+
+1093640*
+1r` r(g
+
+1093367*
+1r` r(g
+
+1127864*
+1u u(
+
+1128040*
+1u u(
+
+
+112667*
+1w	 w(
+
+11211589*
+1w	 w(
+
+1128486*
+1w w(9
+
+112667*
+1w w(9
+
+1129889*
+1w w(9
+
+1122767*
+1w: w(f
+
+112667*
+1x	 x(
+
+11211589*
+1x	 x(
+
+1128486*
+1x x(9
+
+112667*
+1x x(9
+
+1129889*
+1x x(9
+
+1122467*
+1x: x(a
+
+112667*
+1y	 y(
+
+11211589*
+1y	 y(
+
+1128486*
+1y y(9
+
+112667*
+1y y(9
+
+1129889*
+1y y(9
+
+1123067*
+1y: y(P
+
+11582118*
+1|* |(4
+
+1158239*
+1|5 |(?
+
+1158240*
+1|* |(4
+
+11511940*
+1}# }(J
+
+1217864*
+1Å Å(
+
+1218040*
+1Å Å(
+
+
+121667*
+1É	 É(&
+
+12112489*
+1É	 É(&
+
+1218486*
+1É' É(N
+
+121667*
+1É' É(N
+
+1219389*
+1É' É(N
+
+1267864*
+1Ü Ü(
+
+1268040*
+1Ü Ü(
+
+
+126667*
+1à	 à((
+
+12612989*
+1à	 à((
+
+1268486*
+1à) à(G
+
+126667*
+1à) à(G
+
+1269889*
+1à) à(G
+
+1317864*
+1ã ã(
+
+1318040*
+1ã ã(
+
+
+131667*
+1ç	 ç(&
+
+13112489*
+1ç	 ç(&
+
+1318486*
+1ç' ç(E
+
+131667*
+1ç' ç(E
+
+1319889*
+1ç' ç(E
+
+1312767*
+1çF ç(r
+
+131667*
+1é	 é(&
+
+13112489*
+1é	 é(&
+
+1318486*
+1é' é(E
+
+131667*
+1é' é(E
+
+1319889*
+1é' é(E
+
+1312467*
+1éF é(m
+
+131667*
+1è	 è(&
+
+13112489*
+1è	 è(&
+
+1318486*
+1è' è(E
+
+131667*
+1è' è(E
+
+1319889*
+1è' è(E
+
+1313067*
+1èF è(\
+
+1347864*
+1í í(
+
+1348040*
+1í í(
+
+
+134667*
+1î	 î((
+
+13412989*
+1î	 î((
+
+1348486*
+1î) î(G
+
+134667*
+1î) î(G
+
+1349889*
+1î) î(G
+
+1341367*
+1îH î(b
+
+134667*
+1ï	 ï((
+
+13413789*
+1ï	 ï((
+
+1348486*
+1ï) ï(G
+
+134667*
+1ï) ï(G
+
+1349889*
+1ï) ï(G
+
+1341867*
+1ïH ï(c
+
+1341867*
+1ñ ñ(,
+
+134667*
+1ó	 ó((
+
+13413789*
+1ó	 ó((
+
+1348486*
+1ó) ó(G
+
+134667*
+1ó) ó(G
+
+1349889*
+1ó) ó(G
+
+1342167*
+1óH ó(c
+
+1342167*
+1ò ò(,
+
+12482118*
+1ú6 ú(@
+
+1248239*
+1úA ú(K
+
+1248240*
+1ú6 ú(@
+
+1245367*
+1ù0 ù(9
+
+1245640*
+1ù0 ù(9
+
+1245367*
+1ù0 ù(9
+
+12982118*
+1£8 £(B
+
+1298239*
+1£C £(M
+
+1298240*
+1£8 £(B
+
+1295367*
+1§0 §(9
+
+1295640*
+1§0 §(9
+
+1295367*
+1§0 §(9
+
+1291367*
+1¶J ¶(d
+
+1294467*
+1®b ®(l
+
+1294767*
+1©, ©(:
+
+13782118*
+1≠8 ≠(B
+
+1378239*
+1≠C ≠(M
+
+1378240*
+1≠8 ≠(B
+
+1375367*
+1Æ0 Æ(9
+
+1375640*
+1Æ0 Æ(9
+
+1375367*
+1Æ0 Æ(9
+
+1374467*
+1≤b ≤(l
+
+1374767*
+1≥, ≥(:
+
+988486*
+1∑ ∑(
+
+988440*
+1∑ ∑(
+
+9814364*
+1∑> ∑(?
+
+9814540*
+1∑? ∑(G
+
+988486*
+1∏ ∏(
+
+98667*
+1∏ ∏(
+
+988789*
+1∏ ∏(
+
+984467*
+1∏ ∏((
+
+984767*
+1∏* ∏(8
+
+98667*
+1∏: ∏(Y
+
+9814789*
+1∏: ∏(Y
+
+938486*
+1ª ª(
+
+938440*
+1ª ª(
+
+938486*
+1º º(
+
+93667*
+1º º(
+
+938789*
+1º º(
+
+935067*
+1º* º(?
+
+878486*
+1ø ø(
+
+878440*
+1ø ø(
+
+8714364*
+1ø- ø(.
+
+8714540*
+1ø. ø(6
+
+8714364*
+1øN ø(O
+
+8714540*
+1øO ø(W
+
+87667*
+1¬ ¬(5
+
+8715189*
+1¬ ¬(5
+
+15114364*
+1œ5 œ(6
+
+15114540*
+1œ6 œ(>
+
+15114364*
+1œV œ(W
+
+15114540*
+1œW œ(_
+
+1514167*
+1Ÿ Ÿ(
+
+14714364*
+1‹H ‹(I
+
+14714540*
+1‹I ‹(Q
+
+1475067*
+1ﬁ ﬁ()
+
+1475067*
+1·B ·(W

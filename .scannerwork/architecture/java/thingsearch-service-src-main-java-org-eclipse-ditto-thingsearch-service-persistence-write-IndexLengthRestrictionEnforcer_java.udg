@@ -1,0 +1,375 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508632867*java2.B∂
+Ç
+}thingsearch/service/src/main/java/org/eclipse/ditto/thingsearch/service/persistence/write/IndexLengthRestrictionEnforcer.java2
+
+package4
+<
+7org.eclipse.ditto.thingsearch.service.persistence.write5
+[
+Vorg.eclipse.ditto.thingsearch.service.persistence.write.IndexLengthRestrictionEnforcer7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+$
+IndexLengthRestrictionEnforcer12
+q
+korg.eclipse.ditto.thingsearch.service.persistence.write.IndexLengthRestrictionEnforcer.DEFAULT_VALUE_LENGTH14
+
+field15
+
+private16
+
+DEFAULT_VALUE_LENGTH17
+u
+oorg.eclipse.ditto.thingsearch.service.persistence.write.IndexLengthRestrictionEnforcer.MAX_INDEX_CONTENT_LENGTH19
+
+	protected20
+
+MAX_INDEX_CONTENT_LENGTH21
+{
+uorg.eclipse.ditto.thingsearch.service.persistence.write.IndexLengthRestrictionEnforcer.AUTHORIZATION_SUBJECT_OVERHEAD23
+$
+AUTHORIZATION_SUBJECT_OVERHEAD24
+u
+oorg.eclipse.ditto.thingsearch.service.persistence.write.IndexLengthRestrictionEnforcer.thingIdNamespaceOverhead26
+
+thingIdNamespaceOverhead27
+x
+rorg.eclipse.ditto.thingsearch.service.persistence.write.IndexLengthRestrictionEnforcer#<init>(Ljava/lang/String;)V29
+
+method30
+
+calls31
+
+
+uses32
+
+
+references33
+ü
+òorg.eclipse.ditto.thingsearch.service.persistence.write.IndexLengthRestrictionEnforcer#calculateThingIdNamespaceAuthSubjectOverhead(Ljava/lang/String;)I35
+
+unknown36
+’
+Œorg.eclipse.ditto.thingsearch.service.persistence.write.IndexLengthRestrictionEnforcer#newInstance(Ljava/lang/String;)Lorg/eclipse/ditto/thingsearch/service/persistence/write/IndexLengthRestrictionEnforcer;38
+
+newInstance39
+
+returns40
+~
+xorg.eclipse.ditto.thingsearch.service.persistence.write.IndexLengthRestrictionEnforcer#checkThingId(Ljava/lang/String;)V42
+ì
+åorg.eclipse.ditto.thingsearch.service.persistence.write.IndexLengthRestrictionEnforcer#enforce(LJsonPointer;LJsonValue;)Ljava/util/Optional;44
+
+enforce45
+)
+#Recovered#typeBindingLJsonPointer;047
+
+	has param48
+'
+!Recovered#typeBindingLJsonValue;050
+
+is type51
+}
+worg.eclipse.ditto.thingsearch.service.persistence.write.IndexLengthRestrictionEnforcer#jsonPointerBytes(LJsonPointer;)I53
+
+	JsonValue55
+Ç
+|org.eclipse.ditto.thingsearch.service.persistence.write.IndexLengthRestrictionEnforcer#fixViolation(LJsonValue;I)LJsonValue;57
+~
+xorg.eclipse.ditto.thingsearch.service.persistence.write.IndexLengthRestrictionEnforcer#isNonEmptyComposite(LJsonValue;)Z59
+
+isNonEmptyComposite60
+
+fixViolation61
+2
+,calculateThingIdNamespaceAuthSubjectOverhead62
+
+jsonPointerBytes63
+
+checkThingId64J
+
+1
+12Z
+
+3	
+354jè
+@
+34:
+343530 *
+1l l(26:3B
+	
+9
+16
+
+
+11
+62
+@
+25:
+252615 *
+1/ /(26:3B
+	
+9
+16
+
+
+11
+27
+@
+13:
+131415 *
+1   (26:3B
+	
+9
+16
+
+
+11
+17
+@
+28:
+282930 *
+11 1(26:3B
+	
+9
+16
+
+
+11
+12
+9
+64
+678 *
+1 (2:3B
+	
+9
+10
+
+
+11
+12
+@
+52:
+525330 *
+1r r(26:3B
+	
+9
+16
+
+
+11
+63
+
+49
+495036
+
+54
+545536
+@
+58:
+585930 *
+1V V(26:3B
+	
+9
+16
+
+
+11
+60
+@
+22:
+222315 *
+1* *(26:3B
+	
+9
+20
+
+
+11
+24
+
+46
+464736
+@
+56:
+565730 *
+1\ \(26:3B
+	
+9
+16
+
+
+11
+61
+@
+41:
+414230 *
+1v v(26:3B
+	
+9
+16
+
+
+11
+64
+@
+37:
+373830 *
+1; ;(26:3B
+	
+9
+10
+
+
+11
+39
+@
+43:
+434430 *
+1G G(26:3B
+	
+9
+10
+
+
+11
+45
+@
+18:
+181915 *
+1% %(26:3B
+	
+9
+20
+
+
+11
+21r≠
+
+28631*
+11 1(+
+
+28632*
+12	 2(
+
+28633*
+12	 2(
+
+282533*
+12 2(&
+
+28633*
+12) 2(U
+
+283431*
+12) 2(U
+
+37640*
+1; ;(1
+
+37632*
+1; ;(1
+
+37633*
+1<	 <(
+
+374131*
+1<	 <(
+
+37631*
+1= =(2
+
+434648*
+1G. G(9
+
+434948*
+1GI G(R
+
+434932*
+1G G(
+
+434651*
+1G: G(A
+
+434632*
+1G. G(9
+
+434951*
+1GS G(X
+
+434932*
+1GI G(R
+
+43633*
+1H! H(1
+
+435231*
+1H! H(1
+
+432533*
+1H= H(U
+
+431833*
+1I I(3
+
+431333*
+1I6 I(J
+
+435440*
+1M  M(,
+
+43633*
+1M  M(,
+
+435631*
+1M  M(,
+
+43633*
+1N N('
+
+435831*
+1N N('
+
+584948*
+1V6 V(?
+
+584951*
+1V@ V(E
+
+584932*
+1V6 V(?
+
+565440*
+1\ \(
+
+564948*
+1\1 \(:
+
+565432*
+1\ \(
+
+564951*
+1\; \(@
+
+564932*
+1\1 \(:
+
+561833*
+1^) ^(A
+
+524648*
+1r/ r(:
+
+524651*
+1r; r(F
+
+524632*
+1r/ r(:

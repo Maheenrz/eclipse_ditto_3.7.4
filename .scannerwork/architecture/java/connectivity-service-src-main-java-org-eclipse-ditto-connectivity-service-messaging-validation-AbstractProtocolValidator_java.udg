@@ -1,0 +1,669 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508534916*java2.Bß
+Ç
+}connectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/validation/AbstractProtocolValidator.java2
+
+package4
+@
+;org.eclipse.ditto.connectivity.service.messaging.validation5
+Z
+Uorg.eclipse.ditto.connectivity.service.messaging.validation.AbstractProtocolValidator7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+AbstractProtocolValidator12
+r
+lorg.eclipse.ditto.connectivity.service.messaging.validation.AbstractProtocolValidator#type()LConnectionType;14
+
+method15
+
+
+type16
+
+ConnectionType18
+
+unknown19
+
+returns20
+
+
+uses21
+£
+úorg.eclipse.ditto.connectivity.service.messaging.validation.AbstractProtocolValidator#validate(LConnection;LDittoHeaders;LActorSystem;LConnectivityConfig;)V23
+
+validate24
+(
+"Recovered#typeBindingLConnection;026
+
+	has param27
+*
+$Recovered#typeBindingLDittoHeaders;029
+)
+#Recovered#typeBindingLActorSystem;031
+0
+*Recovered#typeBindingLConnectivityConfig;033
+
+is type34
+…
+¬org.eclipse.ditto.connectivity.service.messaging.validation.AbstractProtocolValidator#validateUriScheme(LConnection;LDittoHeaders;Ljava/util/Collection;Ljava/util/Collection;Ljava/lang/String;)V36
+
+	protected37
+
+validateUriScheme38
+è
+àorg.eclipse.ditto.connectivity.service.messaging.validation.AbstractProtocolValidator#validateSourceConfigs(LConnection;LDittoHeaders;)V40
+
+validateSourceConfigs41
+°
+öorg.eclipse.ditto.connectivity.service.messaging.validation.AbstractProtocolValidator#validateSource(LSource;LDittoHeaders;Ljava/util/function/Supplier;)V43
+
+validateSource44
+$
+Recovered#typeBindingLSource;046
+è
+àorg.eclipse.ditto.connectivity.service.messaging.validation.AbstractProtocolValidator#validateTargetConfigs(LConnection;LDittoHeaders;)V48
+
+validateTargetConfigs49
+≤
+´org.eclipse.ditto.connectivity.service.messaging.validation.AbstractProtocolValidator#validatePayloadMappings(LConnection;LActorSystem;LConnectivityConfig;LDittoHeaders;)V51
+
+validatePayloadMappings52
+2
+,Recovered#typeBindingLMessageMapperFactory;054
+3
+-Recovered#typeBindingLMessageMapperRegistry;056
+3
+-Recovered#typeBindingLDittoRuntimeException;058
+í
+ãorg.eclipse.ditto.connectivity.service.messaging.validation.AbstractProtocolValidator#validateHeaderMapping(LHeaderMapping;LDittoHeaders;)V60
+
+validateHeaderMapping61
++
+%Recovered#typeBindingLHeaderMapping;063
+z
+torg.eclipse.ditto.connectivity.service.messaging.validation.AbstractProtocolValidator#validateExtraFields(LTarget;)V65
+
+validateExtraFields66
+$
+Recovered#typeBindingLTarget;068
+Ö
+org.eclipse.ditto.connectivity.service.messaging.validation.AbstractProtocolValidator#validateExtraFields(LJsonFieldSelector;)V70
+
+private71
+/
+)Recovered#typeBindingLJsonFieldSelector;073
+
+Nullable75
+
+annotated by76
+&
+ Recovered#typeBindingLNullable;078
+°
+öorg.eclipse.ditto.connectivity.service.messaging.validation.AbstractProtocolValidator#validateTarget(LTarget;LDittoHeaders;Ljava/util/function/Supplier;)V80
+
+validateTarget81
+°
+öorg.eclipse.ditto.connectivity.service.messaging.validation.AbstractProtocolValidator#sourceDescription(LSource;LConnection;)Ljava/util/function/Supplier;83
+
+sourceDescription84
+°
+öorg.eclipse.ditto.connectivity.service.messaging.validation.AbstractProtocolValidator#targetDescription(LTarget;LConnection;)Ljava/util/function/Supplier;86
+
+targetDescription87
+û
+óorg.eclipse.ditto.connectivity.service.messaging.validation.AbstractProtocolValidator#validateTemplate(Ljava/lang/String;LDittoHeaders;[LPlaceholder;)V89
+
+validateTemplate90
+
+Placeholder92
+…
+¬org.eclipse.ditto.connectivity.service.messaging.validation.AbstractProtocolValidator#validateTemplateAndReplace(Ljava/lang/String;LDittoHeaders;Ljava/lang/String;[LPlaceholder;)Ljava/util/List;94
+ 
+validateTemplateAndReplace95J
+
+1
+12Z
+
+3	
+354j€
+
+
+91
+919219
+
+28
+282919
+@
+35:
+353615 *
+1P P(26:3B
+	
+9
+37
+
+
+11
+38
+B
+64<
+646515 *
+1ƒ ƒ(26:3B
+	
+9
+37
+
+
+11
+66
+B
+69<
+697015 *
+1… …(26:3B
+	
+9
+71
+
+
+11
+66
+
+53
+535419
+B
+50<
+505115 *
+1ô ô(26:3B
+	
+9
+37
+
+
+11
+52
+@
+22:
+222315 *
+1C C(26:3B
+	
+9
+10
+
+
+11
+24
+
+77
+777819
+@
+13:
+131415 *
+18 8(26:3B
+	
+9
+10
+
+
+11
+16
+B
+85<
+858615 *
+1Ú Ú(26:3B
+	
+9
+71
+
+
+11
+87
+
+57
+575819
+
+45
+454619
+
+55
+555619
+B
+82<
+828315 *
+1Ê Ê(26:3B
+	
+9
+71
+
+
+11
+84
+
+17
+171819
+
+67
+676819
+
+25
+252619
+B
+42<
+424315 *
+1É É(26:3B
+	
+9
+37
+
+
+11
+44
+
+72
+727319
+@
+39:
+394015 *
+1u u(26:3B
+	
+9
+37
+
+
+11
+41
+B
+93<
+939415 *
+1† †(26:3B
+	
+9
+37
+
+
+11
+95
+
+32
+323319
+
+62
+626319
+9
+64
+678 *
+11 1(0:3B
+	
+9
+10
+
+
+11
+12
+B
+79<
+798015 *
+1‹ ‹(26:3B
+	
+9
+37
+
+
+11
+81
+B
+88<
+888915 *
+1Å Å(26:3B
+	
+9
+37
+
+
+11
+90
+
+30
+303119
+B
+47<
+474815 *
+1å å(26:3B
+	
+9
+37
+
+
+11
+49
+
+74
+747519
+B
+59<
+596015 *
+1ø ø(26:3B
+	
+9
+37
+
+
+11
+61rî
+
+131720*
+18 8(#
+
+131721*
+18 8(#
+
+222527*
+1C# C(-
+
+222827*
+1C: C(F
+
+223027*
+1CU C(`
+
+223227*
+1D D(%
+
+222534*
+1C. C(8
+
+222521*
+1C# C(-
+
+222834*
+1CG C(S
+
+222821*
+1C: C(F
+
+223034*
+1Ca C(l
+
+223021*
+1CU C(`
+
+223234*
+1D& D(8
+
+223221*
+1D D(%
+
+352527*
+1P3 P(=
+
+352827*
+1Q Q(
+
+352534*
+1P> P(H
+
+352521*
+1P3 P(=
+
+352834*
+1Q  Q(,
+
+352821*
+1Q Q(
+
+392527*
+1u0 u(:
+
+392827*
+1uM u(Y
+
+392534*
+1u; u(E
+
+392521*
+1u0 u(:
+
+392834*
+1uZ u(f
+
+392821*
+1uM u(Y
+
+424527*
+1É, É(2
+
+422827*
+1É; É(G
+
+424534*
+1É3 É(9
+
+424521*
+1É, É(2
+
+422834*
+1ÉH É(T
+
+422821*
+1É; É(G
+
+472527*
+1å0 å(:
+
+472827*
+1åM å(Y
+
+472534*
+1å; å(E
+
+472521*
+1å0 å(:
+
+472834*
+1åZ å(f
+
+472821*
+1åM å(Y
+
+502527*
+1ô2 ô(<
+
+503027*
+1ôO ô(Z
+
+503227*
+1ö ö(%
+
+502827*
+1ö@ ö(L
+
+502534*
+1ô= ô(G
+
+502521*
+1ô2 ô(<
+
+503034*
+1ô[ ô(f
+
+503021*
+1ôO ô(Z
+
+503234*
+1ö& ö(8
+
+503221*
+1ö ö(%
+
+502834*
+1öM ö(Y
+
+502821*
+1ö@ ö(L
+
+505334*
+1õ$ õ(8
+
+505321*
+1õ õ(#
+
+505534*
+1ü) ü(>
+
+505521*
+1ü ü((
+
+505734*
+1™. ™(/
+
+505721*
+1™ ™(-
+
+596227*
+1ø0 ø(=
+
+592827*
+1øS ø(_
+
+596234*
+1ø> ø(K
+
+596221*
+1ø0 ø(=
+
+592834*
+1ø` ø(l
+
+592821*
+1øS ø(_
+
+646727*
+1ƒ5 ƒ(;
+
+646734*
+1ƒ< ƒ(B
+
+646721*
+1ƒ5 ƒ(;
+
+697227*
+1…= …(N
+
+697234*
+1…O …(Z
+
+697476*
+1…- …(.
+
+697721*
+1…. …(6
+
+697221*
+1…= …(N
+
+796727*
+1‹, ‹(2
+
+792827*
+1‹; ‹(G
+
+796734*
+1‹3 ‹(9
+
+796721*
+1‹, ‹(2
+
+792834*
+1‹H ‹(T
+
+792821*
+1‹; ‹(G
+
+824527*
+1Ê= Ê(C
+
+822527*
+1ÊR Ê(\
+
+824534*
+1ÊD Ê(J
+
+824521*
+1Ê= Ê(C
+
+822534*
+1Ê] Ê(g
+
+822521*
+1ÊR Ê(\
+
+856727*
+1Ú= Ú(C
+
+852527*
+1ÚR Ú(\
+
+856734*
+1ÚD Ú(J
+
+856721*
+1Ú= Ú(C
+
+852534*
+1Ú] Ú(g
+
+852521*
+1ÚR Ú(\
+
+882827*
+1ÅB Å(N
+
+889127*
+1Ç Ç(
+
+882834*
+1ÅO Å(V
+
+882821*
+1ÅB Å(N
+
+889134*
+1Ç% Ç(1
+
+889121*
+1Ç Ç(
+
+885734*
+1Ö. Ö(7
+
+885721*
+1Ö Ö(-
+
+932827*
+1†T †(`
+
+939127*
+1°D °(O
+
+932834*
+1†a †(h
+
+932821*
+1†T †(`
+
+939134*
+1°V °(b
+
+939121*
+1°D °(O
+
+935734*
+1§. §(7
+
+935721*
+1§ §(-

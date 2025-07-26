@@ -1,0 +1,95 @@
+
+¥org.eclipse.ditto.policies.model.enforcers.trie.PermissionSubjectsMap#getMaxWeightForAllPermissions(Ljava/util/Collection;Ljava/util/Collection;)Ljava/util/Optional;–
+‹/Users/Maheen/Downloads/ditto-3.7.4/policies/model/src/main/java/org/eclipse/ditto/policies/model/enforcers/trie/PermissionSubjectsMap.javaY Y(3"1*Ù
+1\ \(µ
+²
+\ \(&
+
+%0void"qorg.eclipse.ditto.policies.model.enforcers.trie.PermissionSubjectsMap#validateSubjectIds(Ljava/util/Collection;)V*e
+
+__unknown_file (I"G
+Eorg.eclipse.ditto.policies.model.enforcers.trie.PermissionSubjectsMap*@
+
+__unknown_file ($
+"
+
+subjectIdsjava.util.Collection³
+°
+] ]((
+
+%1void"norg.eclipse.ditto.policies.model.enforcers.trie.PermissionSubjectsMap#validatePermissions(Ljava/lang/Object;)V*e
+
+__unknown_file (I"G
+Eorg.eclipse.ditto.policies.model.enforcers.trie.PermissionSubjectsMap*A
+
+__unknown_file (%
+#
+permissionsjava.util.Collection±®
+_ _(#
+%2java.util.stream.Stream"6java.util.Collection#stream()Ljava/util/stream/Stream;*A
+
+__unknown_file (%
+#
+permissionsjava.util.Collection2stream()¾
+»
+` c(!
+%3java.util.function.Function"__declareFunction*y
+
+__unknown_file (][
+Y__sonar_lambda_1797$org.eclipse.ditto.policies.model.enforcers.trie.PermissionSubjectsMap˜
+•
+
+__unknown_file (1
+!
+%3java.util.function.Function"
+
+subjectIds"__id*@
+
+__unknown_file ($
+"
+
+subjectIdsjava.util.CollectionÍ
+Ê
+
+__unknown_file (A
+!
+%3java.util.function.Function"
+PermissionSubjectsMap.this"__id*e
+
+__unknown_file (IG
+Eorg.eclipse.ditto.policies.model.enforcers.trie.PermissionSubjectsMap«¨
+_ c(
+%9java.util.stream.Stream"Wjava.util.stream.Stream#flatMap(Ljava/util/function/Function;)Ljava/util/stream/Stream;*;
+
+__unknown_file (
+
+%2java.util.stream.Stream*?
+
+__unknown_file (#
+!
+%3java.util.function.Function2&flatMap(Ljava/util/function/Function;)›
+˜
+d d(.
+%10java.util.Comparator"9java.util.Comparator#naturalOrder()Ljava/util/Comparator;*4
+
+__unknown_file ("
+java.util.Comparator†ƒ
+_ d(/
+%11java.util.Optional"Gjava.util.stream.Stream#max(Ljava/util/Comparator;)Ljava/util/Optional;*;
+
+__unknown_file (
+
+%9java.util.stream.Stream*9
+
+__unknown_file (
+
+%10java.util.Comparator2max(Ljava/util/Comparator;)"'
+_ d(0
+
+%11java.util.Optional:.
+Y4 Y(X"
+
+subjectIdsjava.util.Collection:/
+Z Z(0#
+permissionsjava.util.CollectionBIG
+Eorg.eclipse.ditto.policies.model.enforcers.trie.PermissionSubjectsMap

@@ -1,0 +1,964 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508502225*java2.Bã)
+m
+hconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/mapping/CloudEventsMapper.java2
+
+package4
+3
+.org.eclipse.ditto.connectivity.service.mapping5
+E
+@org.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+CloudEventsMapper12
+3
+-Recovered#typeBindingLAbstractMessageMapper;014
+
+unknown15
+
+extends16
+
+
+uses17
+[
+Uorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.PAYLOAD_MAPPER_ALIAS19
+
+field20
+
+private21
+
+PAYLOAD_MAPPER_ALIAS22
+L
+Forg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.CE_ID24
+
+CE_ID25
+N
+Horg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.CE_TYPE27
+
+CE_TYPE28
+P
+Jorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.CE_SOURCE30
+
+	CE_SOURCE31
+U
+Oorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.CE_SPECVERSION33
+
+CE_SPECVERSION34
+^
+Xorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.STRUCTURED_CONTENT_TYPE36
+
+STRUCTURED_CONTENT_TYPE37
+b
+\org.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.DITTO_PROTOCOL_CONTENT_TYPE39
+!
+DITTO_PROTOCOL_CONTENT_TYPE40
+R
+Lorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.SPECVERSION42
+
+SPECVERSION43
+I
+Corg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.ID45
+
+ID46
+M
+Gorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.SOURCE48
+
+SOURCE49
+K
+Eorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.TYPE51
+
+
+TYPE52
+S
+Morg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.OUTBOUNDTYPE54
+
+OUTBOUNDTYPE55
+Z
+Torg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.OUTBOUNDSPECVERSION57
+
+OUTBOUNDSPECVERSION58
+U
+Oorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.OUTBOUNDSOURCE60
+
+OUTBOUNDSOURCE61
+K
+Eorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.DATA63
+
+
+DATA64
+R
+Lorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.DATA_BASE6466
+
+DATA_BASE6467
+a
+[org.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.OUTBOUND_DATA_CONTENT_TYPE69
+ 
+OUTBOUND_DATA_CONTENT_TYPE70
+T
+Norg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.OUTBOUND_TIME72
+
+OUTBOUND_TIME73
+W
+Qorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.OUTBOUND_SUBJECT75
+
+OUTBOUND_SUBJECT76
+d
+^org.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper.DEFAULT_MAPPING_ERROR_MESSAGE78
+#
+DEFAULT_MAPPING_ERROR_MESSAGE79
+e
+_org.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper#<init>(LActorSystem;LConfig;)V81
+
+method82
+)
+#Recovered#typeBindingLActorSystem;084
+
+	has param85
+$
+Recovered#typeBindingLConfig;087
+
+calls88
+
+is type89
+ì
+åorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper#<init>(Lorg/eclipse/ditto/connectivity/service/mapping/CloudEventsMapper;)V91
+c
+]org.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper#getAlias()Ljava/lang/String;93
+
+getAlias94
+
+
+references95
+b
+\org.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper#isConfigurationMandatory()Z97
+
+isConfigurationMandatory98
+p
+iorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper#createNewMapperInstance()LMessageMapper;100
+
+createNewMapperInstance101
+
+MessageMapper103
+
+returns104
+n
+gorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper#map(LExternalMessage;)Ljava/util/List;106
+
+
+map107
+.
+'Recovered#typeBindingLExternalMessage;0109
+(
+!Recovered#typeBindingLAdaptable;0111
+n
+gorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper#isBinaryCloudEvent(LExternalMessage;)Z113
+3
+,Recovered#typeBindingLJsonifiableAdaptable;0115
++
+$Recovered#typeBindingLDittoHeaders;0117
+s
+lorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper#isStructuredCloudEvent(Ljava/lang/String;)Z119
+
+JsonifiableAdaptable121
+}
+vorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper#extractData(Ljava/lang/String;)LJsonifiableAdaptable;123
+z
+sorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper#getInboundId(Ljava/lang/String;)Ljava/lang/String;125
+Ñ
+}org.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper#getAdditionalInboundHeaders(LExternalMessage;)LDittoHeaders;127
+"
+getAdditionalInboundHeaders128
+
+DittoHeaders130
+h
+aorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper#map(LAdaptable;)Ljava/util/List;132
+ã
+Éorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper#getExternalCloudEventSpecifications(LAdaptable;)Ljava/lang/String;134
+
+	protected135
+
+isStructuredCloudEvent136
+)
+"Recovered#typeBindingLJsonObject;0138
+
+isBinaryCloudEvent139
+
+extractData140
+(
+!Recovered#typeBindingLJsonValue;0142
+|
+uorg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper#base64decoding(Ljava/lang/String;)Ljava/lang/String;144
+
+base64decoding145
+*
+#getExternalCloudEventSpecifications146
+t
+morg.eclipse.ditto.connectivity.service.mapping.CloudEventsMapper#getJsonString(LAdaptable;)Ljava/lang/String;148
+
+getInboundId149
+
+getJsonString150J
+
+1
+12Z
+
+3	
+354jä
+@
+68:
+686920 *
+1? ?(26:3B
+	
+9
+21
+
+
+11
+70
+@
+35:
+353620 *
+14 4(26:3B
+	
+9
+21
+
+
+11
+37
+@
+92:
+929382 *
+1R R(26:3B
+	
+9
+10
+
+
+11
+94
+
+116
+11611715
+
+13
+131415
+F
+143?
+14314482 *
+1¬ ¬(26:3B
+	
+9
+21
+
+11
+145
+D
+105=
+10510682 *
+1a a(26:3B
+	
+9
+10
+
+11
+107
+G
+112@
+11211382 *
+1• •(26:3B
+
+
+9
+135
+
+11
+139
+
+114
+11411515
+@
+44:
+444520 *
+17 7(26:3B
+	
+9
+21
+
+
+11
+46
+
+102
+10210315
+@
+26:
+262720 *
+11 1(26:3B
+	
+9
+21
+
+
+11
+28
+@
+59:
+596020 *
+1< <(26:3B
+	
+9
+21
+
+
+11
+61
+@
+50:
+505120 *
+19 9(26:3B
+	
+9
+21
+
+
+11
+52
+@
+41:
+414220 *
+16 6(26:3B
+	
+9
+21
+
+
+11
+43
+@
+65:
+656620 *
+1> >(26:3B
+	
+9
+21
+
+
+11
+67
+
+86
+868715
+F
+131?
+13113282 *
+1è è(26:3B
+	
+9
+10
+
+11
+107
+
+137
+13713815
+
+110
+11011115
+G
+118@
+11811982 *
+1ù ù(26:3B
+
+
+9
+135
+
+11
+136
+@
+18:
+181920 *
+1. .(26:3B
+	
+9
+21
+
+
+11
+22
+@
+23:
+232420 *
+10 0(26:3B
+	
+9
+21
+
+
+11
+25
+F
+147?
+14714882 *
+1· ·(26:3B
+	
+9
+21
+
+11
+150
+9
+64
+678 *
+1, ,(%:3B
+	
+9
+10
+
+
+11
+12
+@
+96:
+969782 *
+1W W(26:3B
+	
+9
+10
+
+
+11
+98
+
+141
+14114215
+@
+77:
+777820 *
+1B B(26:3B
+	
+9
+21
+
+
+11
+79
+@
+32:
+323320 *
+13 3(26:3B
+	
+9
+21
+
+
+11
+34
+@
+80:
+808182 *
+1J J(26:3B
+	
+9
+10
+
+
+11
+12
+@
+56:
+565720 *
+1; ;(26:3B
+	
+9
+21
+
+
+11
+58
+F
+122?
+12212382 *
+1≠ ≠(26:3B
+	
+9
+21
+
+11
+140
+@
+90:
+909182 *
+1N N(26:3B
+	
+9
+21
+
+
+11
+12
+@
+71:
+717220 *
+1@ @(26:3B
+	
+9
+21
+
+
+11
+73
+F
+133?
+13313482 *
+1« «(26:3B
+	
+9
+21
+
+11
+146
+
+129
+12913015
+@
+47:
+474820 *
+18 8(26:3B
+	
+9
+21
+
+
+11
+49
+B
+99<
+9910082 *
+1\ \(26:3B
+	
+9
+10
+
+11
+101
+@
+53:
+535420 *
+1: :(26:3B
+	
+9
+21
+
+
+11
+55
+@
+38:
+383920 *
+15 5(26:3B
+	
+9
+21
+
+
+11
+40
+@
+62:
+626320 *
+1= =(26:3B
+	
+9
+21
+
+
+11
+64
+
+120
+12012115
+@
+74:
+747520 *
+1A A(26:3B
+	
+9
+21
+
+
+11
+76
+@
+29:
+293020 *
+12 2(26:3B
+	
+9
+21
+
+
+11
+31
+
+83
+838415
+
+108
+10810915
+F
+124?
+12412582 *
+1‹ ‹(26:3B
+	
+9
+21
+
+11
+149
+F
+126?
+12612782 *
+1ä ä(26:3B
+	
+9
+10
+
+11
+128rÑ
+
+61316*
+1,. ,(C
+
+61317*
+1,. ,(C
+
+808385*
+1J$ J(/
+
+808685*
+1JC J(I
+
+80688*
+1J J(
+
+808389*
+1J0 J(;
+
+808317*
+1J$ J(/
+
+808689*
+1JJ J(P
+
+808617*
+1JC J(I
+
+90685*
+1N% N(6
+
+90688*
+1N N(
+
+90689*
+1N7 N(E
+
+90617*
+1N% N(6
+
+921895*
+1T T($
+
+99102104*
+1] ](
+
+9910217*
+1] ](
+
+99688*
+1^ ^(%
+
+99617*
+1^& ^(*
+
+99695*
+1^& ^(*
+
+10510885*
+1b& b(5
+
+10511017*
+1b b(
+
+10510889*
+1b6 b(=
+
+10510817*
+1b& b(5
+
+1053895*
+1e  e(;
+
+105695*
+1f f(#
+
+10511288*
+1f f(#
+
+10511489*
+1g, g(;
+
+10511417*
+1g g(+
+
+10511689*
+1j$ j(+
+
+10511617*
+1j j(#
+
+1052395*
+1lA l(F
+
+1057795*
+1r& r(C
+
+1053595*
+1v' v(>
+
+105695*
+1w w('
+
+10511888*
+1w w('
+
+10511489*
+1x, x(5
+
+10511417*
+1x x(+
+
+105120104*
+1x8 x(C
+
+105695*
+1x8 x(C
+
+10512288*
+1x8 x(C
+
+10511689*
+1y$ y(+
+
+10511617*
+1y y(#
+
+105695*
+1{( {(4
+
+10512488*
+1{( {(4
+
+1057795*
+1Å& Å(C
+
+126129104*
+1ã ã(
+
+12610885*
+1ã5 ã(D
+
+12612917*
+1ã ã(
+
+12610889*
+1ãE ã(L
+
+12610817*
+1ã5 ã(D
+
+13111085*
+1ê, ê(5
+
+13110817*
+1ê ê( 
+
+13111089*
+1ê6 ê(?
+
+13111017*
+1ê, ê(5
+
+1313595*
+1ìE ì(\
+
+131695*
+1ñ# ñ(F
+
+13113388*
+1ñ# ñ(F
+
+11813789*
+1û û($
+
+11813717*
+1û û(
+
+1184195*
+1ü$ ü(/
+
+1185095*
+1†% †()
+
+1184495*
+1°% °('
+
+1184795*
+1¢% ¢(+
+
+11210885*
+1•& •(5
+
+11210889*
+1•6 •(=
+
+11210817*
+1•& •(5
+
+1122395*
+1ß1 ß(6
+
+1122995*
+1®% ®(.
+
+1122695*
+1©% ©(,
+
+1123295*
+1™% ™(3
+
+122120104*
+1≠ ≠(!
+
+12212017*
+1≠ ≠(!
+
+12213789*
+1Æ Æ(%
+
+12213717*
+1Æ Æ(
+
+12214117*
+1Ø Ø(!
+
+1226595*
+1ØD Ø(O
+
+12214117*
+1∞ ∞(!
+
+1226295*
+1∞B ∞(F
+
+122695*
+1≥( ≥(6
+
+12214388*
+1≥( ≥(6
+
+1223595*
+1ª< ª(S
+
+1227795*
+1º" º(?
+
+13311085*
+1«E «(N
+
+13311089*
+1«O «(X
+
+13311017*
+1«E «(N
+
+13313789*
+1   (
+
+13313717*
+1 	  (
+
+133695*
+1 7  (D
+
+13314788*
+1 7  (D
+
+1335395*
+1Ã Ã()
+
+13313789*
+1œ œ(/
+
+13313717*
+1œ œ(
+
+1336295*
+1– –(
+
+1334195*
+1— —(!
+
+1335695*
+1—# —(6
+
+1334495*
+1“ “(
+
+1334795*
+1” ”(
+
+1335995*
+1” ”(,
+
+1335095*
+1‘ ‘(
+
+1336895*
+1’ ’(0
+
+1333895*
+1’2 ’(M
+
+1337195*
+1÷ ÷(#
+
+1337495*
+1◊ ◊(&
+
+12413789*
+1› ›((
+
+12413717*
+1›	 ›(
+
+1244495*
+1ﬁ. ﬁ(0
+
+14711085*
+1·/ ·(8
+
+14711089*
+1·9 ·(B
+
+14711017*
+1·/ ·(8

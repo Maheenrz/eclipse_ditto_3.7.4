@@ -1,0 +1,419 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508743013*java2.B˝
+|
+wconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/internal/ssl/DittoTrustManager.java2
+
+package4
+B
+=org.eclipse.ditto.connectivity.service.messaging.internal.ssl5
+T
+Oorg.eclipse.ditto.connectivity.service.messaging.internal.ssl.DittoTrustManager7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+
+DittoTrustManager12
+f
+`org.eclipse.ditto.connectivity.service.messaging.internal.ssl.DittoTrustManager.HOSTNAME_CHECKER14
+
+field15
+
+private16
+
+HOSTNAME_CHECKER17
+
+HostnameChecker19
+
+unknown20
+
+is type21
+
+
+uses22
+f
+`org.eclipse.ditto.connectivity.service.messaging.internal.ssl.DittoTrustManager.IPV6_URI_PATTERN24
+
+IPV6_URI_PATTERN25
+q
+korg.eclipse.ditto.connectivity.service.messaging.internal.ssl.DittoTrustManager.delegateWithRevocationCheck27
+!
+delegateWithRevocationCheck28
+t
+norg.eclipse.ditto.connectivity.service.messaging.internal.ssl.DittoTrustManager.delegateWithoutRevocationCheck30
+$
+delegateWithoutRevocationCheck31
+b
+\org.eclipse.ditto.connectivity.service.messaging.internal.ssl.DittoTrustManager.hostnameOrIp33
+
+hostnameOrIp34
+f
+`org.eclipse.ditto.connectivity.service.messaging.internal.ssl.DittoTrustManager.connectionLogger36
+
+connectionLogger37
+
+ConnectionLogger39
+ƒ
+Ωorg.eclipse.ditto.connectivity.service.messaging.internal.ssl.DittoTrustManager#<init>(Ljavax/net/ssl/X509TrustManager;Ljavax/net/ssl/X509TrustManager;Ljava/lang/String;LConnectionLogger;)V41
+
+method42
+.
+(Recovered#typeBindingLConnectionLogger;044
+
+	has param45
+
+calls46
+
+
+references47
+é
+áorg.eclipse.ditto.connectivity.service.messaging.internal.ssl.DittoTrustManager#stripIpv6Brackets(Ljava/lang/String;)Ljava/lang/String;49
+Â
+ﬁorg.eclipse.ditto.connectivity.service.messaging.internal.ssl.DittoTrustManager#wrapTrustManagers([Ljavax/net/ssl/TrustManager;[Ljavax/net/ssl/TrustManager;Ljava/lang/String;LConnectionLogger;)[Ljavax/net/ssl/TrustManager;51
+
+wrapTrustManagers52
+£
+úorg.eclipse.ditto.connectivity.service.messaging.internal.ssl.DittoTrustManager#checkClientTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V54
+
+public55
+
+checkClientTrusted56
+£
+úorg.eclipse.ditto.connectivity.service.messaging.internal.ssl.DittoTrustManager#checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V58
+
+checkServerTrusted59
+ù
+ñorg.eclipse.ditto.connectivity.service.messaging.internal.ssl.DittoTrustManager#isServerCertificateInTrustStore(Ljava/security/cert/X509Certificate;)Z61
+ê
+âorg.eclipse.ditto.connectivity.service.messaging.internal.ssl.DittoTrustManager#getAcceptedIssuers()[Ljava/security/cert/X509Certificate;63
+
+getAcceptedIssuers64
+%
+isServerCertificateInTrustStore65
+
+stripIpv6Brackets66J
+
+1
+12Z
+
+3	
+354j—
+@
+35:
+353615 *
+1( ((26:3B
+	
+9
+16
+
+
+11
+37
+@
+23:
+232415 *
+1# #(26:3B
+	
+9
+16
+
+
+11
+25
+
+18
+181920
+@
+53:
+535442 *
+1Q Q(26:3B
+	
+9
+55
+
+
+11
+56
+9
+64
+678 *
+1   (:3B
+	
+9
+10
+
+
+11
+12
+
+43
+434420
+@
+50:
+505142 *
+1@ @(26:3B
+	
+9
+10
+
+
+11
+52
+@
+40:
+404142 *
+1* *(26:3B
+	
+9
+16
+
+
+11
+12
+@
+32:
+323315 *
+1' '(26:3B
+	
+9
+16
+
+
+11
+34
+@
+13:
+131415 *
+1" "(26:3B
+	
+9
+16
+
+
+11
+17
+@
+48:
+484942 *
+1x x(26:3B
+	
+9
+16
+
+
+11
+66
+@
+57:
+575842 *
+1V V(26:3B
+	
+9
+55
+
+
+11
+59
+@
+62:
+626342 *
+1o o(26:3B
+	
+9
+55
+
+
+11
+64
+@
+26:
+262715 *
+1% %(26:3B
+	
+9
+16
+
+
+11
+28
+@
+29:
+293015 *
+1& &(26:3B
+	
+9
+16
+
+
+11
+31
+
+38
+383920
+@
+60:
+606142 *
+1t t(26:3B
+	
+9
+16
+
+
+11
+65r∫
+
+
+131821*
+1" "()
+
+131822*
+1" "()
+
+131822*
+1"* "(:
+
+353821*
+1( ((#
+
+353822*
+1( ((#
+
+353822*
+1($ ((4
+
+404345*
+1- -(#
+
+40646*
+1* *(
+
+404321*
+1-$ -(4
+
+404322*
+1- -(#
+
+40622*
+1.	 .(
+
+40647*
+1.	 .(
+
+402647*
+1. .()
+
+40622*
+1/	 /(
+
+40647*
+1/	 /(
+
+402947*
+1/ /(,
+
+40622*
+10	 0(
+
+40647*
+10	 0(
+
+403247*
+10 0(
+
+40647*
+10 0(.
+
+404846*
+10 0(.
+
+40622*
+11	 1(
+
+40647*
+11	 1(
+
+403822*
+11 1(
+
+403547*
+11 1(
+
+504345*
+1C C(#
+
+504321*
+1C$ C(4
+
+504322*
+1C C(#
+
+50646*
+1J J(&
+
+532647*
+1S	 S($
+
+532647*
+1S	 S($
+
+572647*
+1[ [((
+
+572647*
+1[ [((
+
+572947*
+1^ ^(+
+
+572947*
+1^ ^(+
+
+573547*
+1_ _(
+
+573822*
+1_ _(
+
+573547*
+1_ _(
+
+57647*
+1j j(-
+
+576046*
+1j j(-
+
+571347*
+1k k(
+
+571822*
+1k k(
+
+571347*
+1k k(
+
+573247*
+1k$ k(0
+
+622647*
+1q q(+
+
+622647*
+1q q(+
+
+602647*
+1u u(9
+
+602647*
+1u u(9
+
+482347*
+1y y(
+
+482347*
+1y y(

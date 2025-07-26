@@ -1,0 +1,672 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508642699*java2.B“
+m
+hgateway/service/src/main/java/org/eclipse/ditto/gateway/service/health/ClusterStatusAndHealthHelper.java2
+
+package4
+-
+(org.eclipse.ditto.gateway.service.health5
+J
+Eorg.eclipse.ditto.gateway.service.health.ClusterStatusAndHealthHelper7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+"
+ClusterStatusAndHealthHelper12
+Z
+Torg.eclipse.ditto.gateway.service.health.ClusterStatusAndHealthHelper.JSON_KEY_ROLES14
+
+field15
+
+private16
+
+JSON_KEY_ROLES17
+c
+]org.eclipse.ditto.gateway.service.health.ClusterStatusAndHealthHelper.JSON_KEY_EXPECTED_ROLES19
+
+JSON_KEY_EXPECTED_ROLES20
+b
+\org.eclipse.ditto.gateway.service.health.ClusterStatusAndHealthHelper.JSON_KEY_MISSING_ROLES22
+
+JSON_KEY_MISSING_ROLES23
+`
+Zorg.eclipse.ditto.gateway.service.health.ClusterStatusAndHealthHelper.JSON_KEY_EXTRA_ROLES25
+
+JSON_KEY_EXTRA_ROLES26
+`
+Zorg.eclipse.ditto.gateway.service.health.ClusterStatusAndHealthHelper.STATUS_SUPPLIER_PATH28
+
+STATUS_SUPPLIER_PATH29
+W
+Qorg.eclipse.ditto.gateway.service.health.ClusterStatusAndHealthHelper.actorSystem31
+
+actorSystem32
+
+ActorSystem34
+
+unknown35
+
+is type36
+
+
+uses37
+`
+Zorg.eclipse.ditto.gateway.service.health.ClusterStatusAndHealthHelper.clusterStateSupplier39
+
+clusterStateSupplier40
++
+%Recovered#typeBindingLClusterStatus;042
+]
+Worg.eclipse.ditto.gateway.service.health.ClusterStatusAndHealthHelper.healthCheckConfig44
+
+healthCheckConfig45
+
+HealthCheckConfig47
+ì
+åorg.eclipse.ditto.gateway.service.health.ClusterStatusAndHealthHelper#<init>(LActorSystem;Ljava/util/function/Supplier;LHealthCheckConfig;)V49
+
+method50
+)
+#Recovered#typeBindingLActorSystem;052
+
+	has param53
+/
+)Recovered#typeBindingLHealthCheckConfig;055
+
+calls56
+
+
+references57
+’
+Œorg.eclipse.ditto.gateway.service.health.ClusterStatusAndHealthHelper#of(LActorSystem;Ljava/util/function/Supplier;LHealthCheckConfig;)Lorg/eclipse/ditto/gateway/service/health/ClusterStatusAndHealthHelper;59
+
+of60
+
+returns61
+è
+àorg.eclipse.ditto.gateway.service.health.ClusterStatusAndHealthHelper#retrieveOverallRolesStatus()Ljava/util/concurrent/CompletionStage;63
+ 
+retrieveOverallRolesStatus64
+(
+"Recovered#typeBindingLJsonObject;066
+:
+4org.eclipse.ditto.internal.utils.pekko.SimpleCommand68
+•
+ûorg.eclipse.ditto.internal.utils.pekko.SimpleCommand#of(Ljava/lang/String;Ljava/lang/String;LJsonValue;)Lorg/eclipse/ditto/internal/utils/pekko/SimpleCommand;70
+è
+àorg.eclipse.ditto.gateway.service.health.ClusterStatusAndHealthHelper#retrieveOverallRolesHealth()Ljava/util/concurrent/CompletionStage;72
+ 
+retrieveOverallRolesHealth73
+(
+"Recovered#typeBindingLStatusInfo;075
+'
+!Recovered#typeBindingLJsonArray;077
+1
++Recovered#typeBindingLStatusDetailMessage;079
+µ
+Æorg.eclipse.ditto.gateway.service.health.ClusterStatusAndHealthHelper#sendCommandToRemoteAddresses(LActorSystem;Lorg/eclipse/ditto/internal/utils/pekko/SimpleCommand;Ljava/util/Collection;Lorg/eclipse/ditto/gateway/service/health/ClusterStatusAndHealthHelper$RemoteResponseTransformer;)Ljava/util/List;81
+"
+sendCommandToRemoteAddresses82
+e
+_org.eclipse.ditto.gateway.service.health.ClusterStatusAndHealthHelper$RemoteResponseTransformer84
+
+	interface85
+
+RemoteResponseTransformer86
+π
+≤org.eclipse.ditto.gateway.service.health.ClusterStatusAndHealthHelper$RemoteResponseTransformer#apply(Ljava/lang/Object;Ljava/lang/Throwable;Ljava/lang/String;)Ljava/lang/Object;88
+
+public89
+
+apply90
+
+R92
+
+T94
+
+U96J
+
+1
+12Z
+
+3	
+354j∫
+
+
+33
+333435
+@
+21:
+212215 *
+18 8(26:3B
+	
+9
+16
+
+
+11
+23
+
+69
+697035
+
+78
+787935
+B
+83<
+838485 *
+1Ñ Ñ(026:3B
+	
+9
+16
+
+
+11
+86
+
+41
+414235
+
+91
+919235
+@
+24:
+242515 *
+19 9(26:3B
+	
+9
+16
+
+
+11
+26
+
+93
+939435
+9
+64
+678 *
+14 4():3B
+	
+9
+10
+
+
+11
+12
+
+95
+959635
+
+54
+545535
+C
+87=
+878850 *
+1Ü	 Ü(
+283:3B
+	
+9
+89
+
+
+11
+90
+@
+38:
+383915 *
+1> >(26:3B
+	
+9
+16
+
+
+11
+40
+
+65
+656635
+B
+71<
+717250 *
+1ö ö(26:3B
+	
+9
+10
+
+
+11
+73
+@
+13:
+131415 *
+16 6(26:3B
+	
+9
+16
+
+
+11
+17
+
+76
+767735
+@
+18:
+181915 *
+17 7(26:3B
+	
+9
+16
+
+
+11
+20
+@
+48:
+484950 *
+1A A(26:3B
+	
+9
+16
+
+
+11
+12
+
+67
+676835
+@
+62:
+626350 *
+1` `(26:3B
+	
+9
+10
+
+
+11
+64
+@
+27:
+272815 *
+1; ;(26:3B
+	
+9
+16
+
+
+11
+29
+
+74
+747535
+@
+30:
+303115 *
+1= =(26:3B
+	
+9
+16
+
+
+11
+32
+
+46
+464735
+
+51
+515235
+@
+58:
+585950 *
+1S S(26:3B
+	
+9
+10
+
+
+11
+60
+@
+43:
+434415 *
+1? ?(26:3B
+	
+9
+16
+
+
+11
+45
+B
+80<
+808150 *
+1Ì Ì(26:3B
+	
+9
+16
+
+
+11
+82r‚
+
+303336*
+1= =(
+
+303337*
+1= =(
+
+303337*
+1= =(*
+
+384137*
+1> >()
+
+434636*
+1? ?($
+
+434637*
+1? ?($
+
+434637*
+1?% ?(6
+
+485153*
+1A0 A(;
+
+485453*
+1BG B(X
+
+48656*
+1A A()
+
+485136*
+1A< A(G
+
+485137*
+1A0 A(;
+
+484137*
+1B B()
+
+485436*
+1BY B(j
+
+485437*
+1BG B(X
+
+48637*
+1D	 D(
+
+48657*
+1D	 D(
+
+483337*
+1D D(
+
+483057*
+1D D(
+
+48637*
+1E	 E(
+
+48657*
+1E	 E(
+
+483857*
+1E E("
+
+48637*
+1F	 F(
+
+48657*
+1F	 F(
+
+484637*
+1F F(
+
+484357*
+1F F(
+
+58661*
+1S S((
+
+585153*
+1S2 S(=
+
+585453*
+1TG T(X
+
+58637*
+1S S((
+
+585136*
+1S> S(I
+
+585137*
+1S2 S(=
+
+584137*
+1T T()
+
+585436*
+1TY T(j
+
+585437*
+1TG T(X
+
+58656*
+1V V(0
+
+626537*
+1` `(
+
+626736*
+1a a($
+
+626737*
+1a a(
+
+626761*
+1a' a(4
+
+626757*
+1a' a(4
+
+626956*
+1a5 a(7
+
+626737*
+1a' a(4
+
+626537*
+1c& c(0
+
+623857*
+1d d(%
+
+623857*
+1d d(%
+
+717437*
+1ö ö(
+
+714136*
+1õ õ(*
+
+714137*
+1õ õ(
+
+713857*
+1õ- õ(A
+
+713857*
+1õ- õ(A
+
+717437*
+1ú& ú(0
+
+715436*
+1û4 û(F
+
+715437*
+1û û( 
+
+715437*
+1û! û(3
+
+714357*
+1ûI û(Z
+
+714637*
+1ûI û(Z
+
+714357*
+1ûI û(Z
+
+717636*
+1† †(*
+
+717637*
+1† †(
+
+717636*
+1¶ ¶((
+
+717637*
+1¶ ¶(
+
+717636*
+1≠ ≠()
+
+717637*
+1≠ ≠(
+
+717636*
+1± ±('
+
+717637*
+1± ±(
+
+717436*
+1∂% ∂(+
+
+717437*
+1∂ ∂(
+
+717437*
+1∂ ∂($
+
+717836*
+1∑- ∑(2
+
+717837*
+1∑ ∑(&
+
+717837*
+1∑' ∑(,
+
+717836*
+1π' π(:
+
+717837*
+1π π(&
+
+712157*
+1∫ ∫(0
+
+712457*
+1ª ª(.
+
+717436*
+1Ω Ω((
+
+717437*
+1Ω Ω(
+
+711857*
+1ø$ ø(;
+
+716736*
+1ƒ ƒ($
+
+716737*
+1ƒ ƒ(
+
+716761*
+1ƒ' ƒ(4
+
+716757*
+1ƒ' ƒ(4
+
+716956*
+1ƒ5 ƒ(7
+
+716737*
+1ƒ' ƒ(4
+
+805153*
+1ÌO Ì(Z
+
+806753*
+1Ó Ó( 
+
+808353*
+1 (,
+
+805136*
+1Ì[ Ì(f
+
+805137*
+1ÌO Ì(Z
+
+806736*
+1Ó! Ó((
+
+806737*
+1Ó Ó( 
+
+808336*
+1C (V
+
+808337*
+1 (,
+
+808357*
+1 (,
+
+804357*
+1Ú4 Ú(E
+
+804637*
+1Ú4 Ú(E
+
+804357*
+1Ú4 Ú(E
+
+802757*
+1ı7 ı(K
+
+879161*
+1Ü	 Ü(
+
+
+879353*
+1Ü Ü(
+
+879553*
+1Ü' Ü((
+
+879336*
+1Ü Ü(%
+
+879536*
+1Ü) Ü(2

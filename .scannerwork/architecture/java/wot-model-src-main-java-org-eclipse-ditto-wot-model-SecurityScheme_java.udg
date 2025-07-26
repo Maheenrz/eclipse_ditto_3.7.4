@@ -1,0 +1,1082 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508690090*java2.Bç3
+L
+Gwot/model/src/main/java/org/eclipse/ditto/wot/model/SecurityScheme.java2
+
+package4
+ 
+org.eclipse.ditto.wot.model5
+/
+*org.eclipse.ditto.wot.model.SecurityScheme7
+
+	interface8
+
+access9
+
+public10
+
+simple name11
+
+SecurityScheme12
+-
+'Recovered#typeBindingLTypedJsonObject;014
+
+unknown15
+
+
+implements16
+)
+#Recovered#typeBindingLJsonifiable;018
+
+
+uses19
+(
+"Recovered#typeBindingLJsonObject;021
+å
+Öorg.eclipse.ditto.wot.model.SecurityScheme#fromJson(Ljava/lang/CharSequence;LJsonObject;)Lorg/eclipse/ditto/wot/model/SecurityScheme;23
+
+method24
+
+fromJson25
+
+returns26
+
+	has param27
+
+is type28
+I
+Corg.eclipse.ditto.wot.model.SecurityScheme$SecuritySchemeJsonFields30
+
+
+references31
+
+JsonFieldDefinition33
+P
+Jorg.eclipse.ditto.wot.model.SecurityScheme$SecuritySchemeJsonFields.SCHEME35
+y
+sorg.eclipse.ditto.wot.model.SecurityScheme#newNoSecurityBuilder(Ljava/lang/CharSequence;)LNoSecurityScheme/Builder;37
+
+newNoSecurityBuilder38
+
+NoSecurityScheme.Builder40
+.
+(Recovered#typeBindingLNoSecurityScheme;042
+}
+worg.eclipse.ditto.wot.model.SecurityScheme#newAutoSecurityBuilder(Ljava/lang/CharSequence;)LAutoSecurityScheme/Builder;44
+
+newAutoSecurityBuilder45
+ 
+AutoSecurityScheme.Builder47
+0
+*Recovered#typeBindingLAutoSecurityScheme;049
+ä
+Éorg.eclipse.ditto.wot.model.SecurityScheme#newAllOfComboSecurityBuilder(Ljava/lang/CharSequence;)LAllOfComboSecurityScheme/Builder;51
+"
+newAllOfComboSecurityBuilder52
+&
+ AllOfComboSecurityScheme.Builder54
+6
+0Recovered#typeBindingLAllOfComboSecurityScheme;056
+ä
+Éorg.eclipse.ditto.wot.model.SecurityScheme#newOneOfComboSecurityBuilder(Ljava/lang/CharSequence;)LOneOfComboSecurityScheme/Builder;58
+"
+newOneOfComboSecurityBuilder59
+&
+ OneOfComboSecurityScheme.Builder61
+6
+0Recovered#typeBindingLOneOfComboSecurityScheme;063
+
+yorg.eclipse.ditto.wot.model.SecurityScheme#newBasicSecurityBuilder(Ljava/lang/CharSequence;)LBasicSecurityScheme/Builder;65
+
+newBasicSecurityBuilder66
+!
+BasicSecurityScheme.Builder68
+1
++Recovered#typeBindingLBasicSecurityScheme;070
+Å
+{org.eclipse.ditto.wot.model.SecurityScheme#newDigestSecurityBuilder(Ljava/lang/CharSequence;)LDigestSecurityScheme/Builder;72
+
+newDigestSecurityBuilder73
+"
+DigestSecurityScheme.Builder75
+2
+,Recovered#typeBindingLDigestSecurityScheme;077
+Å
+{org.eclipse.ditto.wot.model.SecurityScheme#newApiKeySecurityBuilder(Ljava/lang/CharSequence;)LApiKeySecurityScheme/Builder;79
+
+newApiKeySecurityBuilder80
+"
+ApiKeySecurityScheme.Builder82
+2
+,Recovered#typeBindingLApiKeySecurityScheme;084
+Å
+{org.eclipse.ditto.wot.model.SecurityScheme#newBearerSecurityBuilder(Ljava/lang/CharSequence;)LBearerSecurityScheme/Builder;86
+
+newBearerSecurityBuilder87
+"
+BearerSecurityScheme.Builder89
+2
+,Recovered#typeBindingLBearerSecurityScheme;091
+{
+uorg.eclipse.ditto.wot.model.SecurityScheme#newPskSecurityBuilder(Ljava/lang/CharSequence;)LPskSecurityScheme/Builder;93
+
+newPskSecurityBuilder94
+
+PskSecurityScheme.Builder96
+/
+)Recovered#typeBindingLPskSecurityScheme;098
+Ç
+{org.eclipse.ditto.wot.model.SecurityScheme#newOAuth2SecurityBuilder(Ljava/lang/CharSequence;)LOAuth2SecurityScheme/Builder;100
+
+newOAuth2SecurityBuilder101
+#
+OAuth2SecurityScheme.Builder103
+3
+,Recovered#typeBindingLOAuth2SecurityScheme;0105
+£
+õorg.eclipse.ditto.wot.model.SecurityScheme#newAdditionalSecurityBuilder(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)LAdditionalSecurityScheme/Builder;107
+#
+newAdditionalSecurityBuilder108
+'
+ AdditionalSecurityScheme.Builder110
+7
+0Recovered#typeBindingLAdditionalSecurityScheme;0112
+[
+Torg.eclipse.ditto.wot.model.SecurityScheme#getSecuritySchemeName()Ljava/lang/String;114
+
+getSecuritySchemeName115
+Q
+Jorg.eclipse.ditto.wot.model.SecurityScheme#getAtType()Ljava/util/Optional;117
+
+	getAtType118
+%
+Recovered#typeBindingLAtType;0120
+S
+Lorg.eclipse.ditto.wot.model.SecurityScheme#getScheme()LSecuritySchemeScheme;122
+
+	getScheme123
+
+SecuritySchemeScheme125
+V
+Oorg.eclipse.ditto.wot.model.SecurityScheme#getDescription()Ljava/util/Optional;127
+
+getDescription128
+*
+#Recovered#typeBindingLDescription;0130
+W
+Porg.eclipse.ditto.wot.model.SecurityScheme#getDescriptions()Ljava/util/Optional;132
+
+getDescriptions133
++
+$Recovered#typeBindingLDescriptions;0135
+P
+Iorg.eclipse.ditto.wot.model.SecurityScheme#getProxy()Ljava/util/Optional;137
+
+getProxy138
+"
+Recovered#typeBindingLIRI;0140
+9
+2org.eclipse.ditto.wot.model.SecurityScheme$Builder142
+
+Builder143
+5
+.Recovered#typeBindingLTypedJsonObjectBuilder;0145
+Å
+zorg.eclipse.ditto.wot.model.SecurityScheme$Builder#setAtType(LAtType;)Lorg/eclipse/ditto/wot/model/SecurityScheme$Builder;147
+
+	setAtType148
+
+B150
+
+Nullable152
+
+annotated by153
+'
+ Recovered#typeBindingLNullable;0155
+ê
+àorg.eclipse.ditto.wot.model.SecurityScheme$Builder#setScheme(LSecuritySchemeScheme;)Lorg/eclipse/ditto/wot/model/SecurityScheme$Builder;157
+
+	setScheme158
+3
+,Recovered#typeBindingLSecuritySchemeScheme;0160
+å
+Ñorg.eclipse.ditto.wot.model.SecurityScheme$Builder#setDescription(LDescription;)Lorg/eclipse/ditto/wot/model/SecurityScheme$Builder;162
+
+setDescription163
+é
+Üorg.eclipse.ditto.wot.model.SecurityScheme$Builder#setDescriptions(LDescriptions;)Lorg/eclipse/ditto/wot/model/SecurityScheme$Builder;165
+
+setDescriptions166
+}
+vorg.eclipse.ditto.wot.model.SecurityScheme$Builder#setProxy(LIRI;)Lorg/eclipse/ditto/wot/model/SecurityScheme$Builder;168
+
+setProxy169
+m
+forg.eclipse.ditto.wot.model.SecurityScheme$Builder#build()Lorg/eclipse/ditto/wot/model/SecurityScheme;171
+
+build172
+
+S174
+
+class175
+
+SecuritySchemeJsonFields176
+
+	Immutable178
+(
+!Recovered#typeBindingLImmutable;0180
+R
+Korg.eclipse.ditto.wot.model.SecurityScheme$SecuritySchemeJsonFields.AT_TYPE182
+
+field183
+
+AT_TYPE184
+[
+Torg.eclipse.ditto.wot.model.SecurityScheme$SecuritySchemeJsonFields.AT_TYPE_MULTIPLE186
+
+AT_TYPE_MULTIPLE187
+(
+!Recovered#typeBindingLJsonArray;0189
+
+SCHEME190
+V
+Oorg.eclipse.ditto.wot.model.SecurityScheme$SecuritySchemeJsonFields.DESCRIPTION192
+
+DESCRIPTION193
+W
+Porg.eclipse.ditto.wot.model.SecurityScheme$SecuritySchemeJsonFields.DESCRIPTIONS195
+
+DESCRIPTIONS196
+P
+Iorg.eclipse.ditto.wot.model.SecurityScheme$SecuritySchemeJsonFields.PROXY198
+
+PROXY199
+T
+Morg.eclipse.ditto.wot.model.SecurityScheme$SecuritySchemeJsonFields#<init>()V201
+
+private202
+
+calls203J
+
+1
+12Z
+
+3	
+354j≠
+@
+85:
+858624 *
+1u u(26:3B
+	
+9
+10
+
+
+11
+87
+B
+99<
+9910024 *
+1} }(26:3B
+	
+9
+10
+
+11
+101
+
+46
+464715
+
+102
+10210315
+
+134
+13413515
+@
+43:
+434424 *
+1] ](26:3B
+	
+9
+10
+
+
+11
+45
+@
+64:
+646524 *
+1i i(26:3B
+	
+9
+10
+
+
+11
+66
+
+95
+959615
+F
+121?
+12112224 *
+1ä ä(26:3B
+	
+9
+10
+
+11
+123
+
+97
+979815
+
+179
+17918015
+9
+64
+678 *
+18 8( :3B
+	
+9
+10
+
+
+11
+12
+
+39
+394015
+F
+116?
+11611724 *
+1à à(26:3B
+	
+9
+10
+
+11
+118
+
+109
+10911015
+F
+136?
+13613724 *
+1ê ê(26:3B
+	
+9
+10
+
+11
+138
+
+17
+171815
+H
+170A
+17017124 *
+1ü	 ü(
+2141:3B
+	
+9
+10
+
+11
+172
+
+60
+606115
+
+90
+909115
+H
+146A
+14614724 *
+1ï	 ï(
+2141:3B
+	
+9
+10
+
+11
+148
+F
+106?
+10610724 *
+1Å Å(26:3B
+	
+9
+10
+
+11
+108
+
+83
+838415
+
+104
+10410515
+@
+92:
+929324 *
+1y y(26:3B
+	
+9
+10
+
+
+11
+94
+D
+29>
+2930175 *
+1¶ ¶()26:3B
+	
+9
+10
+
+11
+176
+
+32
+323315
+
+74
+747515
+
+139
+13914015
+F
+131?
+13113224 *
+1é é(26:3B
+	
+9
+10
+
+11
+133
+@
+22:
+222324 *
+1: :(26:3B
+	
+9
+10
+
+
+11
+25
+
+159
+15916015
+
+144
+14414515
+
+62
+626315
+@
+50:
+505124 *
+1a a(26:3B
+	
+9
+10
+
+
+11
+52
+
+151
+15115215
+
+13
+131415
+
+177
+17717815
+
+149
+14915015
+
+88
+888915
+
+129
+12913015
+H
+156A
+15615724 *
+1ó	 ó(
+2141:3B
+	
+9
+10
+
+11
+158
+
+53
+535415
+
+55
+555615
+
+67
+676815
+H
+161A
+16116224 *
+1ô	 ô(
+2141:3B
+	
+9
+10
+
+11
+163
+
+119
+11912015
+
+124
+12412515
+
+173
+17317415
+
+111
+11111215
+F
+113?
+11311424 *
+1Ü Ü(26:3B
+	
+9
+10
+
+11
+115
+E
+34?
+3435183 *
+1Æ	 Æ(229:3B
+	
+9
+10
+
+11
+190
+
+154
+15415515
+@
+57:
+575824 *
+1e e(26:3B
+	
+9
+10
+
+
+11
+59
+
+81
+818215
+
+20
+202115
+H
+191A
+191192183 *
+1±	 ±(229:3B
+	
+9
+10
+
+11
+193
+H
+200A
+20020124 *
+1∫	 ∫(229:3B
+
+
+9
+202
+
+11
+176
+
+76
+767715
+@
+78:
+787924 *
+1q q(26:3B
+	
+9
+10
+
+
+11
+80
+
+188
+18818915
+
+69
+697015
+H
+185A
+185186183 *
+1´	 ´(229:3B
+	
+9
+10
+
+11
+187
+H
+164A
+16416524 *
+1õ	 õ(
+2141:3B
+	
+9
+10
+
+11
+166
+H
+194A
+194195183 *
+1¥	 ¥(229:3B
+	
+9
+10
+
+11
+196
+
+48
+484915
+H
+197A
+197198183 *
+1∑	 ∑(229:3B
+	
+9
+10
+
+11
+199
+@
+36:
+363724 *
+1Y Y(26:3B
+	
+9
+10
+
+
+11
+38
+H
+167A
+16716824 *
+1ù	 ù(
+2141:3B
+	
+9
+10
+
+11
+169
+
+41
+414215
+E
+141>
+1411428 *
+1ì ì(26:3B
+	
+9
+10
+
+11
+143
+H
+181A
+181182183 *
+1®	 ®(229:3B
+	
+9
+10
+
+11
+184
+@
+71:
+717224 *
+1m m(26:3B
+	
+9
+10
+
+
+11
+73
+F
+126?
+12612724 *
+1å å(26:3B
+	
+9
+10
+
+11
+128rß
+
+61316*
+18) 8(8
+
+61716*
+18J 8(U
+
+61319*
+18) 8(8
+
+61719*
+18J 8(U
+
+62019*
+18V 8(`
+
+22626*
+1: :(
+
+222027*
+1:Q :([
+
+22619*
+1: :(
+
+222028*
+1:\ :(f
+
+222019*
+1:Q :([
+
+222919*
+1<$ <(<
+
+222931*
+1<$ <(<
+
+223219*
+1<= <(C
+
+223431*
+1<= <(C
+
+363926*
+1Y Y(
+
+364119*
+1Y Y(
+
+363919*
+1Y Y($
+
+434626*
+1] ](
+
+434819*
+1] ](
+
+434619*
+1] ](&
+
+505326*
+1a a($
+
+505519*
+1a a($
+
+505319*
+1a% a(,
+
+576026*
+1e e($
+
+576219*
+1e e($
+
+576019*
+1e% e(,
+
+646726*
+1i i(
+
+646919*
+1i i(
+
+646719*
+1i  i('
+
+717426*
+1m m( 
+
+717619*
+1m m( 
+
+717419*
+1m! m((
+
+788126*
+1q q( 
+
+788319*
+1q q( 
+
+788119*
+1q! q((
+
+858826*
+1u u( 
+
+859019*
+1u u( 
+
+858819*
+1u! u((
+
+929526*
+1y y(
+
+929719*
+1y y(
+
+929519*
+1y y(%
+
+9910226*
+1} }( 
+
+9910419*
+1} }( 
+
+9910219*
+1}! }((
+
+10610926*
+1Å Å($
+
+10611119*
+1Å Å($
+
+10610919*
+1Å% Å(,
+
+11611919*
+1à à(
+
+12112426*
+1ä ä(
+
+12112419*
+1ä ä(
+
+12612919*
+1å å(
+
+13113419*
+1é é(
+
+13613919*
+1ê ê(
+
+14114416*
+1ìR ì(h
+
+141627*
+1ì: ì(H
+
+141619*
+1ì: ì(H
+
+14114419*
+1ìR ì(h
+
+14614926*
+1ï	 ï(
+
+
+14611927*
+1ï ï(%
+
+14611928*
+1ï& ï(,
+
+146151153*
+1ï ï(
+
+14615419*
+1ï ï(
+
+14611919*
+1ï ï(%
+
+15614926*
+1ó	 ó(
+
+
+15615927*
+1ó ó(3
+
+15615928*
+1ó4 ó(:
+
+156151153*
+1ó ó(
+
+15615419*
+1ó ó(
+
+15615919*
+1ó ó(3
+
+16114926*
+1ô	 ô(
+
+
+16112927*
+1ô$ ô(/
+
+16112928*
+1ô0 ô(;
+
+161151153*
+1ô ô(
+
+16115419*
+1ô ô(#
+
+16112919*
+1ô$ ô(/
+
+16414926*
+1õ	 õ(
+
+
+16413427*
+1õ% õ(1
+
+16413428*
+1õ2 õ(>
+
+164151153*
+1õ õ(
+
+16415419*
+1õ õ($
+
+16413419*
+1õ% õ(1
+
+16714926*
+1ù	 ù(
+
+
+16713927*
+1ù ù(!
+
+16713928*
+1ù" ù('
+
+167151153*
+1ù ù(
+
+16715419*
+1ù ù(
+
+16713919*
+1ù ù(!
+
+17017326*
+1ü	 ü(
+
+
+29177153*
+1• •(
+
+2917919*
+1• •(
+
+1813228*
+1® ®(0
+
+1813219*
+1® ®(0
+
+1813219*
+1®9 ®(@
+
+1853228*
+1´ ´(0
+
+1853219*
+1´ ´(0
+
+18518819*
+1´1 ´(:
+
+1853219*
+1´< ´(L
+
+343228*
+1Æ Æ(0
+
+343219*
+1Æ Æ(0
+
+343219*
+1Æ9 Æ(?
+
+1913228*
+1± ±(0
+
+1913219*
+1± ±(0
+
+1913219*
+1±9 ±(D
+
+1943228*
+1¥ ¥(0
+
+1943219*
+1¥ ¥(0
+
+1942019*
+1¥1 ¥(;
+
+1943219*
+1¥= ¥(I
+
+1973228*
+1∑ ∑(0
+
+1973219*
+1∑ ∑(0
+
+1973219*
+1∑9 ∑(>
+
+20029203*
+1∫ ∫()

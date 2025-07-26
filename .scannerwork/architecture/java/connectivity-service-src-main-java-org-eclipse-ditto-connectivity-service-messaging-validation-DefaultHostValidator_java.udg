@@ -1,0 +1,506 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508637741*java2.Bÿ
+}
+xconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/validation/DefaultHostValidator.java2
+
+package4
+@
+;org.eclipse.ditto.connectivity.service.messaging.validation5
+U
+Porg.eclipse.ditto.connectivity.service.messaging.validation.DefaultHostValidator7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+
+DefaultHostValidator12
++
+%Recovered#typeBindingLHostValidator;014
+
+unknown15
+
+
+implements16
+
+
+uses17
+g
+aorg.eclipse.ditto.connectivity.service.messaging.validation.DefaultHostValidator.allowedHostnames19
+
+field20
+
+private21
+
+allowedHostnames22
+g
+aorg.eclipse.ditto.connectivity.service.messaging.validation.DefaultHostValidator.blockedAddresses24
+
+blockedAddresses25
+e
+_org.eclipse.ditto.connectivity.service.messaging.validation.DefaultHostValidator.blockedSubnets27
+
+blockedSubnets28
+_
+Yorg.eclipse.ditto.connectivity.service.messaging.validation.DefaultHostValidator.resolver30
+
+resolver31
+f
+`org.eclipse.ditto.connectivity.service.messaging.validation.DefaultHostValidator$AddressResolver33
+
+is type34
+
+
+references35
+g
+aorg.eclipse.ditto.connectivity.service.messaging.validation.DefaultHostValidator.hostRegexPattern37
+
+hostRegexPattern38
+„
+~org.eclipse.ditto.connectivity.service.messaging.validation.DefaultHostValidator#<init>(LConnectivityConfig;LLoggingAdapter;)V40
+
+method41
+0
+*Recovered#typeBindingLConnectivityConfig;043
+
+	has param44
+,
+&Recovered#typeBindingLLoggingAdapter;046
+
+calls47
+ç
+àorg.eclipse.ditto.connectivity.service.messaging.validation.DefaultHostValidator#<init>(LConnectivityConfig;LLoggingAdapter;Lorg/eclipse/ditto/connectivity/service/messaging/validation/DefaultHostValidator$AddressResolver;)V49
+¯
+¨org.eclipse.ditto.connectivity.service.messaging.validation.DefaultHostValidator#calculateBlockedAddresses(Ljava/util/Collection;LLoggingAdapter;)Ljava/util/Collection;51
+Ÿ
+˜org.eclipse.ditto.connectivity.service.messaging.validation.DefaultHostValidator#filterEmptyBlockedSubnets(Ljava/util/Collection;)Ljava/util/Collection;53
+Ž
+‡org.eclipse.ditto.connectivity.service.messaging.validation.DefaultHostValidator#validateHost(Ljava/lang/String;)LHostValidationResult;55
+
+public56
+
+validateHost57
+
+HostValidationResult59
+
+returns60
+¡
+šorg.eclipse.ditto.connectivity.service.messaging.validation.DefaultHostValidator#validateInetAddressesAndSubnets(Ljava/lang/String;)LHostValidationResult;62
+%
+validateInetAddressesAndSubnets63
+š
+“org.eclipse.ditto.connectivity.service.messaging.validation.DefaultHostValidator$AddressResolver#resolve(Ljava/lang/String;)[Ljava/net/InetAddress;65
+
+calculateBlockedAddresses66
+
+filterEmptyBlockedSubnets67
+
+	interface68
+
+AddressResolver69
+
+resolve70J
+
+1
+12Z
+
+3	
+354jî
+
+13
+131415
+@
+54:
+545541 *
+1V V(26:3B
+	
+9
+56
+
+
+11
+57
+@
+26:
+262720 *
+1% %(26:3B
+	
+9
+21
+
+
+11
+28
+@
+39:
+394041 *
+1/ /(26:3B
+	
+9
+10
+
+
+11
+12
+C
+64=
+646541 *
+1¹	 ¹(232:3B
+	
+9
+56
+
+
+11
+70
+@
+48:
+484941 *
+1: :(26:3B
+	
+9
+10
+
+
+11
+12
+B
+50<
+505141 *
+1 (26:3B
+	
+9
+21
+
+
+11
+66
+@
+61:
+616241 *
+1f f(26:3B
+	
+9
+21
+
+
+11
+63
+@
+23:
+232420 *
+1$ $(26:3B
+	
+9
+21
+
+
+11
+25
+
+42
+424315
+B
+52<
+525341 *
+1¤ ¤(26:3B
+	
+9
+21
+
+
+11
+67
+@
+36:
+363720 *
+1' '(26:3B
+	
+9
+21
+
+
+11
+38
+B
+32<
+323368 *
+1¯ ¯(26:3B
+	
+9
+10
+
+
+11
+69
+@
+29:
+293020 *
+1& &(26:3B
+	
+9
+21
+
+
+11
+31
+9
+64
+678 *
+1! !(!:3B
+	
+9
+10
+
+
+11
+12
+@
+18:
+181920 *
+1# #(26:3B
+	
+9
+21
+
+
+11
+22
+
+45
+454615
+
+58
+585915r€
+
+61316*
+1!- !(:
+
+61317*
+1!- !(:
+
+293234*
+1& &("
+
+293217*
+1& &("
+
+293235*
+1& &("
+
+293217*
+1&# &(+
+
+394244*
+1/  /(2
+
+394544*
+1/M /([
+
+39647*
+1/ /(
+
+394234*
+1/3 /(E
+
+394217*
+1/  /(2
+
+394534*
+1/\ /(j
+
+394517*
+1/M /([
+
+39635*
+10	 0(
+
+39647*
+10	 0(
+
+39647*
+10	 0(
+
+484244*
+1:  :(2
+
+484544*
+1:M :([
+
+483244*
+1; ;("
+
+48647*
+1: :(
+
+484234*
+1:3 :(E
+
+484217*
+1:  :(2
+
+484534*
+1:\ :(j
+
+484517*
+1:M :([
+
+483234*
+1;# ;(+
+
+483217*
+1; ;("
+
+483235*
+1; ;("
+
+48617*
+1<	 <(
+
+48635*
+1<	 <(
+
+483217*
+1< <(
+
+482935*
+1< <(
+
+48617*
+1=	 =(
+
+48635*
+1=	 =(
+
+481835*
+1= =(
+
+48617*
+1?	 ?(
+
+48635*
+1?	 ?(
+
+482335*
+1? ?(
+
+48635*
+1?! ?(:
+
+485047*
+1?! ?(:
+
+48617*
+1A	 A(
+
+48635*
+1A	 A(
+
+482635*
+1A A(
+
+48635*
+1A A(8
+
+485247*
+1A A(8
+
+48617*
+1C	 C(
+
+48635*
+1C	 C(
+
+483635*
+1C C(
+
+545860*
+1W W( 
+
+545817*
+1W W( 
+
+542335*
+1X X(
+
+542335*
+1X X(
+
+541835*
+1[ [($
+
+541835*
+1[ [($
+
+543635*
+1^ ^($
+
+543635*
+1^ ^($
+
+545860*
+1b b(3
+
+54635*
+1b b(3
+
+546147*
+1b b(3
+
+615860*
+1f f(!
+
+615817*
+1f f(!
+
+613235*
+1i1 i(9
+
+616447*
+1i: i(A
+
+612935*
+1i1 i(9
+
+613217*
+1i1 i(9
+
+612935*
+1i1 i(9
+
+612335*
+1s s(,
+
+612335*
+1s s(,
+
+612635*
+1w, w(:
+
+504544*
+1Ž Ž(!
+
+504534*
+1Ž" Ž(%
+
+504517*
+1Ž Ž(!
+
+503235*
+1”* ”(2
+
+506447*
+1”3 ”(:
+
+502935*
+1”* ”(2
+
+503217*
+1”* ”(2
+
+502935*
+1”* ”(2

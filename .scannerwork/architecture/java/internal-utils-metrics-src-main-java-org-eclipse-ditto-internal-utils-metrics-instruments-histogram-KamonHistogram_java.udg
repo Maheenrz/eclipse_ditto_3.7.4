@@ -1,0 +1,655 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508491467*java2.Bª
+|
+winternal/utils/metrics/src/main/java/org/eclipse/ditto/internal/utils/metrics/instruments/histogram/KamonHistogram.java2
+
+package4
+C
+>org.eclipse.ditto.internal.utils.metrics.instruments.histogram5
+R
+Morg.eclipse.ditto.internal.utils.metrics.instruments.histogram.KamonHistogram7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+KamonHistogram12
+'
+!Recovered#typeBindingLHistogram;014
+
+unknown15
+
+
+implements16
+
+	Immutable18
+
+annotated by19
+'
+!Recovered#typeBindingLImmutable;021
+
+
+uses22
+Z
+Torg.eclipse.ditto.internal.utils.metrics.instruments.histogram.KamonHistogram.LOGGER24
+
+field25
+
+private26
+
+LOGGER27
+
+Logger29
+
+is type30
+X
+Rorg.eclipse.ditto.internal.utils.metrics.instruments.histogram.KamonHistogram.name32
+
+
+name33
+X
+Rorg.eclipse.ditto.internal.utils.metrics.instruments.histogram.KamonHistogram.tags35
+
+
+tags36
+
+TagSet38
+w
+qorg.eclipse.ditto.internal.utils.metrics.instruments.histogram.KamonHistogram#<init>(Ljava/lang/String;LTagSet;)V40
+
+method41
+$
+Recovered#typeBindingLTagSet;043
+
+	has param44
+
+calls45
+
+
+references46
+
+yorg.eclipse.ditto.internal.utils.metrics.instruments.histogram.KamonHistogram#newHistogram(Ljava/lang/String;)LHistogram;48
+
+newHistogram49
+
+	Histogram51
+
+returns52
+i
+corg.eclipse.ditto.internal.utils.metrics.instruments.histogram.KamonHistogram#tag(LTag;)LHistogram;54
+	
+tag55
+!
+Recovered#typeBindingLTag;057
+m
+gorg.eclipse.ditto.internal.utils.metrics.instruments.histogram.KamonHistogram#tags(LTagSet;)LHistogram;59
+g
+aorg.eclipse.ditto.internal.utils.metrics.instruments.histogram.KamonHistogram#getTagSet()LTagSet;61
+
+	getTagSet62
+\
+Vorg.eclipse.ditto.internal.utils.metrics.instruments.histogram.KamonHistogram#reset()Z64
+
+reset65
+v
+porg.eclipse.ditto.internal.utils.metrics.instruments.histogram.KamonHistogram#getSnapshot(Z)Ljava/util/Optional;67
+w
+qorg.eclipse.ditto.internal.utils.metrics.instruments.histogram.KamonHistogram#record(Ljava/lang/Long;)LHistogram;69
+
+record70
+
+kamon.metric.Histogram72
+à
+Åorg.eclipse.ditto.internal.utils.metrics.instruments.histogram.KamonHistogram#getKamonInternalHistogram()Lkamon/metric/Histogram;74
+x
+rorg.eclipse.ditto.internal.utils.metrics.instruments.histogram.KamonHistogram#getRecordedValues()[Ljava/lang/Long;76
+
+getRecordedValues77
+!
+Recovered#typeBindingLSeq;079
+*
+$Recovered#typeBindingLDistribution;081
+°
+öorg.eclipse.ditto.internal.utils.metrics.instruments.histogram.KamonHistogram#addBucketValuesToList(LDistribution/Bucket;Ljava/util/List;)Ljava/util/List;83
+
+addBucketValuesToList84
+
+getSnapshot85
+#
+Recovered#typeBindingLkamon;087
+
+getKamonInternalHistogram88
+p
+jorg.eclipse.ditto.internal.utils.metrics.instruments.histogram.KamonHistogram#toString()Ljava/lang/String;90
+
+toString91J
+
+1
+12Z
+
+3	
+354jâ
+
+
+17
+171815
+
+50
+505115
+@
+34:
+343525 *
+1+ +(26:3B
+	
+9
+26
+
+
+11
+36
+@
+89:
+899041 *
+1v v(26:3B
+	
+9
+10
+
+
+11
+91
+
+28
+282915
+@
+82:
+828341 *
+1a a(26:3B
+	
+9
+26
+
+
+11
+84
+
+20
+202115
+@
+47:
+474841 *
+12 2(26:3B
+	
+9
+10
+
+
+11
+49
+
+80
+808115
+@
+73:
+737441 *
+1r r(26:3B
+	
+9
+26
+
+
+11
+88
+@
+53:
+535441 *
+17 7(26:3B
+	
+9
+10
+
+
+11
+55
+
+56
+565715
+9
+64
+678 *
+1& &(":3B
+	
+9
+10
+
+
+11
+12
+
+37
+373815
+@
+75:
+757641 *
+1X X(26:3B
+	
+9
+10
+
+
+11
+77
+@
+66:
+666741 *
+1h h(26:3B
+	
+9
+26
+
+
+11
+85
+
+71
+717215
+
+78
+787915
+
+42
+424315
+@
+63:
+636441 *
+1F F(26:3B
+	
+9
+10
+
+
+11
+65
+@
+23:
+232425 *
+1( ((26:3B
+	
+9
+26
+
+
+11
+27
+@
+60:
+606141 *
+1A A(26:3B
+	
+9
+10
+
+
+11
+62
+@
+68:
+686941 *
+1R R(26:3B
+	
+9
+10
+
+
+11
+70
+@
+31:
+313225 *
+1* *(26:3B
+	
+9
+26
+
+
+11
+33
+
+13
+131415
+@
+58:
+585941 *
+1< <(26:3B
+	
+9
+10
+
+
+11
+36
+@
+39:
+394041 *
+1- -(26:3B
+	
+9
+26
+
+
+11
+12
+
+86
+868715r≠
+
+61316*
+1&. &(7
+
+61719*
+1% %(
+
+62022*
+1% %(
+
+61322*
+1&. &(7
+
+232830*
+1( (( 
+
+232822*
+1( (( 
+
+232822*
+1(! (('
+
+23622*
+1(B ((P
+
+343730*
+1+ +(
+
+343722*
+1+ +(
+
+343722*
+1+ +(
+
+394244*
+1-5 -(;
+
+39645*
+1- -(
+
+394230*
+1-< -(@
+
+394222*
+1-5 -(;
+
+39622*
+1.	 .(
+
+39646*
+1.	 .(
+
+393146*
+1. .(
+
+39622*
+1/	 /(
+
+39646*
+1/	 /(
+
+393722*
+1/ /(
+
+393446*
+1/ /(
+
+475052*
+12 2(
+
+475022*
+12 2(
+
+47645*
+14 4("
+
+535052*
+18 8(
+
+535644*
+18  8(#
+
+535022*
+18 8(
+
+535630*
+18$ 8('
+
+535622*
+18  8(#
+
+53645*
+19 9("
+
+533146*
+19# 9('
+
+533446*
+19) 9(-
+
+533722*
+19) 9(-
+
+533446*
+19) 9(-
+
+585052*
+1= =(
+
+584244*
+1=! =('
+
+585022*
+1= =(
+
+584230*
+1=( =(,
+
+584222*
+1=! =('
+
+58645*
+1> >("
+
+583146*
+1># >('
+
+58622*
+1>) >(-
+
+58646*
+1>) >(-
+
+583722*
+1>. >(2
+
+583446*
+1>. >(2
+
+603752*
+1B B(
+
+603722*
+1B B(
+
+603722*
+1C C(
+
+603446*
+1C C(
+
+63646*
+1I I(
+
+636645*
+1I I(
+
+632346*
+1J J(
+
+632822*
+1J J(
+
+632346*
+1J J(
+
+633146*
+1J= J(A
+
+632346*
+1L L(
+
+632822*
+1L L(
+
+632346*
+1L L(
+
+685052*
+1S S(
+
+685022*
+1S S(
+
+687152*
+1T	 T("
+
+68646*
+1T	 T("
+
+687345*
+1T	 T("
+
+68622*
+1U U(
+
+68646*
+1U U(
+
+757830*
+1[( [(/
+
+757822*
+1[ [(
+
+758022*
+1[ [(
+
+758022*
+1[  [(&
+
+75646*
+1[2 [(=
+
+756645*
+1[2 [(=
+
+828044*
+1a; a(G
+
+828030*
+1aO a(U
+
+828022*
+1a; a(G
+
+828022*
+1aH a(N
+
+668022*
+1h h("
+
+668630*
+1i& i(/
+
+668622*
+1i i(
+
+668622*
+1i i(
+
+668622*
+1i i(%
+
+667152*
+1i2 i(K
+
+66646*
+1i2 i(K
+
+667345*
+1i2 i(K
+
+668630*
+1k@ k(F
+
+668622*
+1k" k('
+
+668622*
+1k( k(.
+
+668622*
+1k/ k(8
+
+668622*
+1k9 k(?
+
+662346*
+1n	 n(
+
+662822*
+1n	 n(
+
+662346*
+1n	 n(
+
+737152*
+1r r(
+
+738622*
+1r r(
+
+738622*
+1r r(
+
+737122*
+1r r(#
+
+733146*
+1s  s($
+
+733722*
+1sS s(W
+
+733446*
+1sS s(W
+
+893146*
+1y y(
+
+893722*
+1z z(!
+
+893446*
+1z z(!

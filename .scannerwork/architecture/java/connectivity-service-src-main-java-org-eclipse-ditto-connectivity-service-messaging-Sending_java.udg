@@ -1,0 +1,936 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508797400*java2.B≈ 
+e
+`connectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/Sending.java2
+
+package4
+5
+0org.eclipse.ditto.connectivity.service.messaging5
+=
+8org.eclipse.ditto.connectivity.service.messaging.Sending7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+
+Sending12
+.
+(Recovered#typeBindingLSendingOrDropped;014
+
+unknown15
+
+
+implements16
+
+NotThreadSafe18
+
+annotated by19
++
+%Recovered#typeBindingLNotThreadSafe;021
+
+
+uses22
+M
+Gorg.eclipse.ditto.connectivity.service.messaging.Sending.sendingContext24
+
+field25
+
+private26
+
+sendingContext27
+
+SendingContext29
+
+is type30
+M
+Gorg.eclipse.ditto.connectivity.service.messaging.Sending.futureResponse32
+
+futureResponse33
+(
+"Recovered#typeBindingLSendResult;035
+S
+Morg.eclipse.ditto.connectivity.service.messaging.Sending.connectionIdResolver37
+
+connectionIdResolver38
+
+ExpressionResolver40
+E
+?org.eclipse.ditto.connectivity.service.messaging.Sending.logger42
+
+logger43
+#
+ThreadSafeDittoLoggingAdapter45
+≤
+´org.eclipse.ditto.connectivity.service.messaging.Sending#<init>(LSendingContext;Ljava/util/concurrent/CompletionStage;LExpressionResolver;LThreadSafeDittoLoggingAdapter;)V47
+
+method48
+,
+&Recovered#typeBindingLSendingContext;050
+
+	has param51
+0
+*Recovered#typeBindingLExpressionResolver;053
+;
+5Recovered#typeBindingLThreadSafeDittoLoggingAdapter;055
+
+calls56
+
+
+references57
+ê
+âorg.eclipse.ditto.connectivity.service.messaging.Sending#monitorAndAcknowledge(LExceptionToAcknowledgementConverter;)Ljava/util/Optional;59
+
+public60
+
+monitorAndAcknowledge61
+A
+;Recovered#typeBindingLExceptionToAcknowledgementConverter;063
+-
+'Recovered#typeBindingLCommandResponse;065
+£
+úorg.eclipse.ditto.connectivity.service.messaging.Sending#acknowledgementFromNullResponse(LExceptionToAcknowledgementConverter;LSendResult;)LCommandResponse;67
+%
+acknowledgementFromNullResponse68
+
+CommandResponse70
+
+returns71
+
+Nullable73
+&
+ Recovered#typeBindingLNullable;075
+
+Acknowledgement77
+¥
+≠org.eclipse.ditto.connectivity.service.messaging.Sending#convertExceptionToAcknowledgementOrNull(Ljava/lang/Exception;LExceptionToAcknowledgementConverter;)LAcknowledgement;79
+#
+MessageSendingFailedException81
+s
+morg.eclipse.ditto.connectivity.service.messaging.Sending#getNullAckException()LMessageSendingFailedException;83
+á
+Äorg.eclipse.ditto.connectivity.service.messaging.Sending#getSentFailure(Ljava/lang/Throwable;LSendResult;Z)Ljava/lang/Exception;85
+
+getSentFailure86
+w
+qorg.eclipse.ditto.connectivity.service.messaging.Sending#getRootCause(Ljava/lang/Throwable;)Ljava/lang/Exception;88
+{
+uorg.eclipse.ditto.connectivity.service.messaging.Sending#getAckFailure(LWithHttpStatus;)Ljava/util/function/Supplier;90
+
+getAckFailure91
+,
+&Recovered#typeBindingLWithHttpStatus;093
+3
+-Recovered#typeBindingLDittoRuntimeException;095
+(
+"Recovered#typeBindingLHttpStatus;097
+-
+'Recovered#typeBindingLAcknowledgement;099
+
+DittoRuntimeException101
+â
+Åorg.eclipse.ditto.connectivity.service.messaging.Sending#getExceptionForAcknowledgement(LAcknowledgement;)LDittoRuntimeException;103
+m
+forg.eclipse.ditto.connectivity.service.messaging.Sending#isTargetIssuesLiveResponse(LSendingContext;)Z105
+Ö
+~org.eclipse.ditto.connectivity.service.messaging.Sending#getExceptionForLiveResponse(LCommandResponse;)LDittoRuntimeException;107
+
+getNullAckException108
+!
+isTargetIssuesLiveResponse109
+.
+'convertExceptionToAcknowledgementOrNull110
+3
+,Recovered#typeBindingLAcknowledgementLabel;0112
+%
+Recovered#typeBindingLSignal;0114
+'
+ Recovered#typeBindingLEntityId;0116
+
+getRootCause117
+i
+borg.eclipse.ditto.connectivity.service.messaging.Sending#updateSendMonitor(Ljava/lang/Exception;)V119
+
+updateSendMonitor120
+0
+)Recovered#typeBindingLConnectionMonitor;0122
+.
+'Recovered#typeBindingLExternalMessage;0124
+p
+iorg.eclipse.ditto.connectivity.service.messaging.Sending#updateAckMonitor(Ljava/util/function/Supplier;)V126
+
+updateAckMonitor127
+"
+getExceptionForLiveResponse128
+%
+getExceptionForAcknowledgement129J
+
+1
+12Z
+
+3	
+354jÙ
+
+28
+282915
+@
+23:
+232425 *
+14 4(26:3B
+	
+9
+26
+
+
+11
+27
+C
+78=
+787948 *
+1£ £(26:3B
+	
+9
+26
+
+11
+110
+C
+87=
+878848 *
+1Ω Ω(26:3B
+	
+9
+26
+
+11
+117
+
+96
+969715
+F
+104?
+10410548 *
+1ú ú(26:3B
+	
+9
+26
+
+11
+109
+
+17
+171815
+
+69
+697015
+B
+89<
+899048 *
+1á á(26:3B
+	
+9
+26
+
+
+11
+91
+
+76
+767715
+
+115
+11511615
+
+113
+11311415
+
+20
+202115
+
+74
+747515
+C
+82=
+828348 *
+1ï ï(26:3B
+	
+9
+26
+
+11
+108
+@
+41:
+414225 *
+17 7(26:3B
+	
+9
+26
+
+
+11
+43
+
+49
+495015
+F
+125?
+12512648 *
+1Í Í(26:3B
+	
+9
+26
+
+11
+127
+
+94
+949515
+
+111
+11111215
+
+121
+12112215
+
+64
+646515
+@
+66:
+666748 *
+1b b(26:3B
+	
+9
+26
+
+
+11
+68
+@
+36:
+363725 *
+16 6(26:3B
+	
+9
+26
+
+
+11
+38
+
+80
+808115
+
+52
+525315
+@
+84:
+848548 *
+1s s(26:3B
+	
+9
+26
+
+
+11
+86
+
+92
+929315
+
+44
+444515
+@
+58:
+585948 *
+1L L(26:3B
+	
+9
+60
+
+
+11
+61
+F
+106?
+10610748 *
+1ı ı(26:3B
+	
+9
+26
+
+11
+128
+F
+102?
+10210348 *
+1˛ ˛(26:3B
+	
+9
+26
+
+11
+129
+
+62
+626315
+
+13
+131415
+
+39
+394015
+@
+31:
+313225 *
+15 5(26:3B
+	
+9
+26
+
+
+11
+33
+@
+46:
+464748 *
+1B B(26:3B
+	
+9
+10
+
+
+11
+12
+
+98
+989915
+9
+64
+678 *
+12 2(:3B
+	
+9
+10
+
+
+11
+12
+F
+118?
+11811948 *
+1Œ Œ(26:3B
+	
+9
+26
+
+11
+120
+
+100
+10010115
+
+123
+12312415
+
+34
+343515
+
+54
+545515
+
+72
+727315rˇ#
+
+61316*
+12  2(0
+
+61719*
+11 1(
+
+62022*
+11 1(
+
+61322*
+12  2(0
+
+232830*
+14 4(!
+
+232822*
+14 4(!
+
+232822*
+14" 4(0
+
+313422*
+15# 5(-
+
+363930*
+16 6(%
+
+363922*
+16 6(%
+
+363922*
+16& 6(:
+
+414430*
+17 7(0
+
+414422*
+17 7(0
+
+414422*
+171 7(7
+
+464951*
+1B B(!
+
+465251*
+1C C(%
+
+465451*
+1D D(0
+
+46656*
+1B B(
+
+464930*
+1B" B(0
+
+464922*
+1B B(!
+
+463422*
+1BH B(R
+
+465230*
+1C& C(:
+
+465222*
+1C C(%
+
+465430*
+1D1 D(7
+
+465422*
+1D D(0
+
+46622*
+1F	 F(
+
+46657*
+1F	 F(
+
+462822*
+1F F(
+
+462357*
+1F F(
+
+46622*
+1G	 G(
+
+46657*
+1G	 G(
+
+463157*
+1G G(
+
+46622*
+1H	 H(
+
+46657*
+1H	 H(
+
+463922*
+1H H("
+
+463657*
+1H H("
+
+46622*
+1I	 I(
+
+46657*
+1I	 I(
+
+464422*
+1I I(
+
+464157*
+1I I(
+
+586251*
+1O O(6
+
+586422*
+1N% N(4
+
+586230*
+1O7 O(I
+
+586222*
+1O O(6
+
+583157*
+1Q Q(*
+
+583157*
+1Q Q(*
+
+666971*
+1c c(
+
+666251*
+1d d(6
+
+663451*
+1d[ d(e
+
+667219*
+1b b(
+
+667422*
+1b b(
+
+666922*
+1c c(
+
+666230*
+1d7 d(I
+
+666222*
+1d d(6
+
+663430*
+1df d(l
+
+667219*
+1dK d(L
+
+667422*
+1dL d(T
+
+663422*
+1d[ d(e
+
+662357*
+1e e(
+
+662822*
+1e e(
+
+662357*
+1e e(
+
+667671*
+1m m(;
+
+66657*
+1m m(;
+
+667856*
+1m m(;
+
+668071*
+1m< m(O
+
+66657*
+1m< m(O
+
+668256*
+1m< m(O
+
+843451*
+1tQ t([
+
+847219*
+1s s(
+
+847422*
+1s s(
+
+847219*
+1t& t('
+
+847422*
+1t' t(/
+
+843430*
+1t\ t(b
+
+847219*
+1tG t(H
+
+847422*
+1tH t(P
+
+843422*
+1tQ t([
+
+84657*
+1 ( 
+
+848756*
+1 ( 
+
+848071*
+1Å Å('
+
+84657*
+1Å Å('
+
+848256*
+1Å Å('
+
+899251*
+1àA à(O
+
+897219*
+1á á(
+
+897422*
+1á á(
+
+899422*
+1à à(+
+
+899230*
+1àP à(X
+
+899222*
+1àA à(O
+
+899630*
+1â â( 
+
+899622*
+1â â(
+
+899830*
+1ä1 ä(@
+
+899822*
+1ä! ä(0
+
+8910071*
+1ã ã(8
+
+89657*
+1ã ã(8
+
+8910256*
+1ã ã(8
+
+896422*
+1å( å(7
+
+89657*
+1ç ç(.
+
+8910456*
+1ç ç(.
+
+892822*
+1ç/ ç(=
+
+892357*
+1ç/ ç(=
+
+8910071*
+1è è(5
+
+89657*
+1è è(5
+
+8910656*
+1è è(5
+
+896422*
+1è7 è(F
+
+828071*
+1ï ï(1
+
+828022*
+1ï ï(1
+
+1044951*
+1ú= ú(K
+
+1044930*
+1úL ú(Z
+
+1044922*
+1ú= ú(K
+
+787671*
+1§ §(
+
+786251*
+1• •(6
+
+787219*
+1£ £(
+
+787422*
+1£ £(
+
+787622*
+1§ §(
+
+786230*
+1•7 •(I
+
+786222*
+1• •(6
+
+7811122*
+1ß ß(,
+
+782357*
+1ß= ß(K
+
+782822*
+1ß= ß(K
+
+782357*
+1ß= ß(K
+
+7811330*
+1¨ ¨(
+
+7811322*
+1¨ ¨(
+
+782357*
+1¨" ¨(0
+
+782822*
+1¨" ¨(0
+
+782357*
+1¨" ¨(0
+
+7811522*
+1≠ ≠( 
+
+7811522*
+1Æ0 Æ(8
+
+87657*
+1¡ ¡( 
+
+1187219*
+1Œ$ Œ(%
+
+1187422*
+1Œ% Œ(-
+
+11812130*
+1œ! œ(1
+
+11812122*
+1œ œ( 
+
+1182357*
+1œ4 œ(B
+
+1182822*
+1œ4 œ(B
+
+1182357*
+1œ4 œ(B
+
+11812330*
+1– –(&
+
+11812322*
+1– –(
+
+1182357*
+1–) –(7
+
+1182822*
+1–) –(7
+
+1182357*
+1–) –(7
+
+1189430*
+1’< ’(Q
+
+1189422*
+1’& ’(;
+
+1184157*
+1◊ ◊(
+
+1184422*
+1◊ ◊(
+
+1184157*
+1◊ ◊(
+
+1184157*
+1ﬁ ﬁ(
+
+1184422*
+1ﬁ ﬁ(
+
+1184157*
+1ﬁ ﬁ(
+
+1257219*
+1Î Î(
+
+1257422*
+1Î Î(
+
+1259422*
+1Î& Î(;
+
+1252357*
+1Ï	 Ï(
+
+1252822*
+1Ï	 Ï(
+
+1252357*
+1Ï	 Ï(
+
+10610071*
+1ı ı()
+
+1066451*
+1ıL ı([
+
+10610022*
+1ı ı()
+
+1066430*
+1ı_ ı(g
+
+1066422*
+1ıL ı([
+
+10210071*
+1˛ ˛()
+
+1029851*
+1˛O ˛(^
+
+10210022*
+1˛ ˛()
+
+1029830*
+1˛_ ˛(n
+
+1029822*
+1˛O ˛(^

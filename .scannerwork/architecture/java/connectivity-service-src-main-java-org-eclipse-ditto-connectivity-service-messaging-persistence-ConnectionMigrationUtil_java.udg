@@ -1,0 +1,942 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508556724*java2.B◊'
+Å
+|connectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/persistence/ConnectionMigrationUtil.java2
+
+package4
+A
+<org.eclipse.ditto.connectivity.service.messaging.persistence5
+Y
+Torg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+
+ConnectionMigrationUtil12
+p
+jorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil.AUTHORIZATION_CONTEXT14
+
+field15
+
+AUTHORIZATION_CONTEXT16
+
+JsonFieldDefinition18
+
+unknown19
+
+is type20
+
+
+uses21
+'
+!Recovered#typeBindingLJsonArray;023
+d
+^org.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil#<init>()V25
+
+method26
+
+private27
+
+calls28
+ï
+éorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil#connectionFromJsonWithMigration(LJsonObject;)LConnection;30
+%
+connectionFromJsonWithMigration31
+
+
+Connection33
+
+returns34
+(
+"Recovered#typeBindingLJsonObject;036
+
+	has param37
+
+Nonnull39
+
+annotated by40
+%
+Recovered#typeBindingLNonnull;042
+o
+iorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateSourceFilters44
+{
+uorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateTopicActionSubjectFilters46
+w
+qorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateAuthorizationContexts48
+v
+porg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateTargetHeaderMappings50
+
+MigrateSourceFilters51
+ê
+âorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateSourceFilters#apply(LJsonObject;)LJsonObject;53
+
+public54
+
+apply55
+
+
+JsonObject57
+
+
+references58
+ô
+íorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateSourceFilters#needsSourceFilterMigration(LJsonArray;)Z60
+ 
+needsSourceFilterMigration61
+ü
+òorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateSourceFilters#migrateSourceFilters(LJsonObject;)LJsonObject;63
+
+migrateSourceFilters64
+&
+ MigrateTopicActionSubjectFilters65
+ï
+éorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateTopicActionSubjectFilters.OLD_TOPIC_ACTION_SUBJECT67
+
+OLD_TOPIC_ACTION_SUBJECT68
+ï
+éorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateTopicActionSubjectFilters.NEW_TOPIC_ACTION_SUBJECT70
+
+NEW_TOPIC_ACTION_SUBJECT71
+ú
+ïorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateTopicActionSubjectFilters#apply(LJsonObject;)LJsonObject;73
+/
+)Recovered#typeBindingLJsonObjectBuilder;075
+
+	JsonArray77
+¢
+õorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateTopicActionSubjectFilters#migrateSource(LJsonArray;)LJsonArray;79
+¢
+õorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateTopicActionSubjectFilters#migrateTarget(LJsonArray;)LJsonArray;81
+
+migrateSource82
+
+migrateTarget83
+´
+§org.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateTopicActionSubjectFilters#migrateTargetAddress(LJsonObject;)LJsonObject;85
+
+migrateTargetAddress86
+¿
+πorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateTopicActionSubjectFilters#migrateHeaderMapping(LJsonObject;LJsonFieldDefinition;)LJsonObject;88
+
+migrateHeaderMapping89
+1
++Recovered#typeBindingLJsonFieldDefinition;091
+"
+MigrateAuthorizationContexts92
+ò
+ëorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateAuthorizationContexts#apply(LJsonObject;)LJsonObject;94
+¥
+≠org.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateAuthorizationContexts#migrateSources(LJsonObject;LJsonArray;)Ljava/util/Optional;96
+¥
+≠org.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateAuthorizationContexts#migrateTargets(LJsonObject;LJsonArray;)Ljava/util/Optional;98
+
+migrateSources99
+
+migrateTargets100
+"
+MigrateTargetHeaderMappings101
+ù
+ïorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateTargetHeaderMappings.LEGACY_DEFAULT_TARGET_HEADER_MAPPING103
++
+$LEGACY_DEFAULT_TARGET_HEADER_MAPPING104
+ò
+êorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateTargetHeaderMappings#apply(LJsonObject;)LJsonObject;106
+ó
+èorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateTargetHeaderMappings#containsTargets(LJsonObject;)Z108
+
+containsTargets109
+ü
+óorg.eclipse.ditto.connectivity.service.messaging.persistence.ConnectionMigrationUtil$MigrateTargetHeaderMappings#migrateTargets(LJsonArray;)LJsonArray;111J
+
+1
+12Z
+
+3	
+354j˜
+C
+80=
+808126 *
+1√	 √(245:3B
+	
+9
+27
+
+
+11
+83
+G
+107@
+10710826 *
+1ƒ	 ƒ(249:3B
+	
+9
+27
+
+11
+109
+A
+47;
+47488 *
+1Ï Ï(.26:3B
+	
+9
+10
+
+
+11
+92
+
+56
+565719
+
+74
+747519
+@
+24:
+242526 *
+16 6(26:3B
+	
+9
+27
+
+
+11
+12
+@
+29:
+293026 *
+1C C(26:3B
+	
+9
+10
+
+
+11
+31
+C
+78=
+787926 *
+1ª	 ª(245:3B
+	
+9
+27
+
+
+11
+82
+C
+93=
+939426 *
+1Ó	 Ó(
+247:3B
+	
+9
+54
+
+
+11
+55
+C
+72=
+727326 *
+1£	 £(
+245:3B
+	
+9
+54
+
+
+11
+55
+B
+49<
+49508 *
+1¨ ¨(-26:3B
+	
+9
+10
+
+11
+101
+C
+84=
+848526 *
+1Ã	 Ã(245:3B
+	
+9
+10
+
+
+11
+86
+
+35
+353619
+D
+97>
+979826 *
+1ó	 ó(247:3B
+	
+9
+10
+
+11
+100
+
+22
+222319
+C
+87=
+878826 *
+1÷	 ÷(245:3B
+	
+9
+10
+
+
+11
+89
+G
+102@
+10210315 *
+1Æ	 Æ(249:3B
+	
+9
+27
+
+11
+104
+C
+95=
+959626 *
+1É	 É(247:3B
+	
+9
+10
+
+
+11
+99
+G
+110@
+11011126 *
+1 	  (249:3B
+	
+9
+10
+
+11
+100
+
+38
+383919
+?
+439
+43448 *
+1r r(&26:3B
+	
+9
+10
+
+
+11
+51
+
+32
+323319
+C
+59=
+596026 *
+1É	 É(243:3B
+	
+9
+27
+
+
+11
+61
+
+17
+171819
+C
+62=
+626326 *
+1ä	 ä(243:3B
+	
+9
+10
+
+
+11
+64
+9
+64
+678 *
+1* *($:3B
+	
+9
+10
+
+
+11
+12
+A
+45;
+45468 *
+1û û(226:3B
+	
+9
+10
+
+
+11
+65
+C
+69=
+697015 *
+1°	 °(245:3B
+	
+9
+27
+
+
+11
+71
+
+76
+767719
+
+90
+909119
+
+41
+414219
+A
+52;
+525326 *
+1t	 t(
+243:3B
+	
+9
+54
+
+
+11
+55
+C
+66=
+666715 *
+1†	 †(245:3B
+	
+9
+27
+
+
+11
+68
+@
+13:
+131415 *
+11 1(26:3B
+	
+9
+10
+
+
+11
+16
+F
+105?
+10510626 *
+1≥	 ≥(
+249:3B
+	
+9
+54
+
+
+11
+55r€#
+
+131720*
+11 1(%
+
+131721*
+11 1(%
+
+132221*
+11& 1(/
+
+131721*
+111 1(F
+
+24628*
+16 6($
+
+293234*
+1C C(
+
+293537*
+1CF C(P
+
+293221*
+1C C(
+
+293520*
+1CQ C(e
+
+293840*
+1C7 C(8
+
+294121*
+1C8 C(?
+
+293521*
+1CF C(P
+
+293521*
+1D D('
+
+294328*
+1DD D(X
+
+293521*
+1E E('
+
+294528*
+1EP E(p
+
+293521*
+1F F('
+
+294728*
+1FL F(h
+
+293521*
+1G G('
+
+294928*
+1GK G(f
+
+433521*
+1r@ r(J
+
+525634*
+1u u(
+
+523537*
+1u' u(1
+
+525621*
+1u u(
+
+523520*
+1u2 u(F
+
+523521*
+1u' u(1
+
+522221*
+1v v(%
+
+524358*
+1w( w(B
+
+525928*
+1w( w(B
+
+522220*
+1x! x(-
+
+522221*
+1x x( 
+
+524321*
+1{ {(2
+
+524358*
+1{ {(2
+
+592237*
+1ÉA É(J
+
+592220*
+1ÉK É(R
+
+592221*
+1ÉA É(J
+
+625634*
+1ä ä(
+
+623537*
+1ä6 ä(@
+
+625621*
+1ä ä(
+
+623520*
+1äA ä(G
+
+623521*
+1ä6 ä(@
+
+453521*
+1ûL û(V
+
+725634*
+1§ §(
+
+723537*
+1§' §(1
+
+725621*
+1§ §(
+
+723520*
+1§2 §(F
+
+723521*
+1§' §(1
+
+727420*
+1¶% ¶(<
+
+727421*
+1¶ ¶($
+
+722221*
+1® ®(%
+
+722220*
+1™! ™(-
+
+722221*
+1™ ™( 
+
+727634*
+1™0 ™(=
+
+724558*
+1™0 ™(=
+
+727828*
+1™0 ™(=
+
+722221*
+1Æ Æ(%
+
+722220*
+1∞! ∞(-
+
+722221*
+1∞ ∞( 
+
+727634*
+1∞0 ∞(=
+
+724558*
+1∞0 ∞(=
+
+728028*
+1∞0 ∞(=
+
+787634*
+1ª ª(
+
+782237*
+1ª/ ª(8
+
+787621*
+1ª ª(
+
+782220*
+1ª9 ª(@
+
+782221*
+1ª/ ª(8
+
+807634*
+1√ √(
+
+802237*
+1√/ √(8
+
+807621*
+1√ √(
+
+802220*
+1√9 √(@
+
+802221*
+1√/ √(8
+
+804521*
+1« «(:
+
+804558*
+1« «(:
+
+845634*
+1Ã Ã(
+
+843537*
+1Ã6 Ã(@
+
+845621*
+1Ã Ã(
+
+843520*
+1ÃA Ã(G
+
+843521*
+1Ã6 Ã(@
+
+846658*
+1–- –(E
+
+846658*
+1—: —(R
+
+846958*
+1—U —(m
+
+875634*
+1÷ ÷(
+
+873537*
+1÷6 ÷(@
+
+879037*
+1◊ ◊(*
+
+875621*
+1÷ ÷(
+
+873520*
+1÷A ÷(V
+
+873521*
+1÷6 ÷(@
+
+879020*
+1◊7 ◊(J
+
+879021*
+1◊ ◊(*
+
+873521*
+1◊+ ◊(5
+
+873521*
+1ÿ ÿ(&
+
+473521*
+1ÏH Ï(R
+
+935634*
+1Ô Ô(
+
+933537*
+1Ô' Ô(1
+
+935621*
+1Ô Ô(
+
+933520*
+1Ô2 Ô(F
+
+933521*
+1Ô' Ô(1
+
+932221*
+1 (%
+
+931721*
+1b (w
+
+931358*
+1b (w
+
+937420*
+1Û) Û(C
+
+937421*
+1Û Û((
+
+932220*
+1Ù! Ù(,
+
+932221*
+1Ù Ù( 
+
+934758*
+1ˆ ˆ(-
+
+939528*
+1ˆ. ˆ(<
+
+934758*
+1ˆ ˆ(-
+
+934721*
+1ˆ ˆ(-
+
+934758*
+1ˆ ˆ(-
+
+934758*
+1¯ ¯(-
+
+939728*
+1¯. ¯(<
+
+934758*
+1¯ ¯(-
+
+934721*
+1¯ ¯(-
+
+934758*
+1¯ ¯(-
+
+953537*
+1ÉB É(L
+
+952237*
+1Ñ Ñ( 
+
+952221*
+1É É("
+
+953520*
+1ÉM É(a
+
+953840*
+1É3 É(4
+
+954121*
+1É4 É(;
+
+953521*
+1ÉB É(L
+
+952220*
+1Ñ! Ñ(,
+
+952221*
+1Ñ Ñ( 
+
+973537*
+1óB ó(L
+
+972237*
+1ò ò( 
+
+972221*
+1ó ó("
+
+973520*
+1óM ó(a
+
+973840*
+1ó3 ó(4
+
+974121*
+1ó4 ó(;
+
+973521*
+1óB ó(L
+
+972220*
+1ò! ò(,
+
+972221*
+1ò ò( 
+
+493521*
+1¨G ¨(Q
+
+1025620*
+1Æ Æ((
+
+1025621*
+1Æ Æ((
+
+1025621*
+1Æ) Æ(M
+
+1055634*
+1¥ ¥(
+
+1053537*
+1¥' ¥(1
+
+1055621*
+1¥ ¥(
+
+1053520*
+1¥2 ¥(F
+
+1053521*
+1¥' ¥(1
+
+1054958*
+1π) π(8
+
+10510728*
+1π) π(8
+
+1052220*
+1∫! ∫(0
+
+1052221*
+1∫ ∫( 
+
+1054921*
+1ª ª(9
+
+1054958*
+1ª ª(9
+
+1073537*
+1ƒ? ƒ(I
+
+1073520*
+1ƒJ ƒ(^
+
+1073840*
+1ƒ0 ƒ(1
+
+1074121*
+1ƒ1 ƒ(8
+
+1073521*
+1ƒ? ƒ(I
+
+1107634*
+1   (
+
+1102237*
+1 8  (A
+
+1107621*
+1   (
+
+1102220*
+1 B  (R
+
+1103840*
+1 )  (*
+
+1104121*
+1 *  (1
+
+1102221*
+1 8  (A

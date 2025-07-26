@@ -1,0 +1,120 @@
+
+yorg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning#getSasToken(Ljava/time/Instant;)Ljava/lang/String;ù
+í/Users/Maheen/Downloads/ditto-3.7.4/connectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/signing/AzSaslSigning.javat t("1*ë
+1u u(%û
+õ
+u+ u(.
+%0java.time.Duration"__id*o
+
+__unknown_file (S*QH
+Forg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning"
+ttlóî
+u u(/
+%1java.time.Instant"Njava.time.Instant#plus(Ljava/time/temporal/TemporalAmount;)Ljava/time/Instant;*<
+
+__unknown_file ( 
+
+	timestampjava.time.Instant*6
+
+__unknown_file (
+
+%0java.time.Duration2)plus(Ljava/time/temporal/TemporalAmount;)áÑ
+u u(@
+
+%2long"#java.time.Instant#getEpochSecond()J*5
+
+__unknown_file (
+
+%1java.time.Instant2getEpochSecond()°
+û
+v= v(E
+%3java.lang.String"__id*t
+
+__unknown_file (X*VH
+Forg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning"
+
+endpointN
+L
+v v(G
+srjava.lang.String"__id*"
+
+__unknown_file (
+""h
+f
+w$ w(-
+%4java.lang.String"__concat*$
+w$ w(&
+
+srjava.lang.String*
+w) w(-
+\nh
+f
+w$ w(6
+%5java.lang.String"__concat*$
+w$ w(-
+
+%4java.lang.String*
+w0 w(6
+""j
+h
+w w(7 
+stringToSignjava.lang.String"__id*4
+
+__unknown_file (
+
+%5java.lang.Stringò
+ï
+y y(#
+%6java.util.Base64$Encoder"7java.util.Base64#getEncoder()Ljava/util/Base64$Encoder;*0
+
+__unknown_file ("
+java.util.Base64»≈
+y y(i
+%7"=java.util.Base64$Encoder#encodeToString([B)Ljava/lang/String;*<
+
+__unknown_file ( 
+
+%6java.util.Base64$Encoder*"
+
+__unknown_file (
+""2encodeToString([B)U
+S
+x y(k
+	signaturejava.lang.String"__id*"
+
+__unknown_file (
+""¶
+£
+z4 z(A
+%8java.lang.String"__id*y
+
+__unknown_file (]*[H
+Forg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning"
+sharedKeyName¸
+˘
+z z(B
+%9java.lang.String"üorg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning#assembleToken(Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;)Ljava/lang/String;*f
+
+__unknown_file (J"H
+Forg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning*4
+
+__unknown_file (
+
+srjava.lang.String*;
+
+__unknown_file (
+
+	signaturejava.lang.String*"
+
+__unknown_file (
+""*4
+
+__unknown_file (
+
+%8java.lang.String"$
+z z(C
+
+%9java.lang.String:*
+t t(6
+	timestampjava.time.InstantBJH
+Forg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning

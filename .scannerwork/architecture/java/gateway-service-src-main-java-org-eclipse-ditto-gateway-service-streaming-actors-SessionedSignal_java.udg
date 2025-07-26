@@ -1,0 +1,725 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508435279*java2.BÇ
+j
+egateway/service/src/main/java/org/eclipse/ditto/gateway/service/streaming/actors/SessionedSignal.java2
+
+package4
+7
+2org.eclipse.ditto.gateway.service.streaming.actors5
+G
+Borg.eclipse.ditto.gateway.service.streaming.actors.SessionedSignal7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+
+SessionedSignal12
+2
+,Recovered#typeBindingLSessionedJsonifiable;014
+
+unknown15
+
+
+implements16
+
+	Immutable18
+
+annotated by19
+'
+!Recovered#typeBindingLImmutable;021
+
+
+uses22
+Y
+Sorg.eclipse.ditto.gateway.service.streaming.actors.SessionedSignal.PROTOCOL_ADAPTER24
+
+field25
+
+private26
+
+PROTOCOL_ADAPTER27
+
+DittoProtocolAdapter29
+
+is type30
+O
+Iorg.eclipse.ditto.gateway.service.streaming.actors.SessionedSignal.signal32
+
+signal33
+
+Signal35
+W
+Qorg.eclipse.ditto.gateway.service.streaming.actors.SessionedSignal.sessionHeaders37
+
+sessionHeaders38
+
+DittoHeaders40
+P
+Jorg.eclipse.ditto.gateway.service.streaming.actors.SessionedSignal.session42
+
+session43
+
+StreamingSession45
+T
+Norg.eclipse.ditto.gateway.service.streaming.actors.SessionedSignal.startedSpan47
+
+startedSpan48
+
+StartedSpan50
+à
+Åorg.eclipse.ditto.gateway.service.streaming.actors.SessionedSignal#<init>(LSignal;LDittoHeaders;LStreamingSession;LStartedSpan;)V52
+
+method53
+$
+Recovered#typeBindingLSignal;055
+
+	has param56
+*
+$Recovered#typeBindingLDittoHeaders;058
+.
+(Recovered#typeBindingLStreamingSession;060
+)
+#Recovered#typeBindingLStartedSpan;062
+
+calls63
+
+
+references64
+)
+#Recovered#typeBindingLJsonifiable;066
+(
+"Recovered#typeBindingLJsonObject;068
+'
+!Recovered#typeBindingLJsonField;070
+h
+borg.eclipse.ditto.gateway.service.streaming.actors.SessionedSignal#getDittoHeaders()LDittoHeaders;72
+
+public73
+
+getDittoHeaders74
+
+returns75
+ù
+ñorg.eclipse.ditto.gateway.service.streaming.actors.SessionedSignal#retrieveExtraFields(LSignalEnrichmentFacade;)Ljava/util/concurrent/CompletionStage;77
+
+retrieveExtraFields78
+4
+.Recovered#typeBindingLSignalEnrichmentFacade;080
+
+Nullable82
+&
+ Recovered#typeBindingLNullable;084
+0
+*Recovered#typeBindingLExpressionResolver;086
+&
+ Recovered#typeBindingLEntityId;088
+0
+*Recovered#typeBindingLThingFieldSelector;090
+%
+Recovered#typeBindingLThingId;092
+ñ
+èorg.eclipse.ditto.gateway.service.streaming.actors.SessionedSignal#getExtraFields(LExpressionResolver;LThingFieldSelector;)Ljava/util/Optional;94
+
+getExtraFields95
+)
+#Recovered#typeBindingLJsonPointer;097
+/
+)Recovered#typeBindingLJsonFieldSelector;099
+j
+corg.eclipse.ditto.gateway.service.streaming.actors.SessionedSignal#getSession()Ljava/util/Optional;101
+
+
+getSession102
+W
+Porg.eclipse.ditto.gateway.service.streaming.actors.SessionedSignal#finishSpan()V104
+
+
+finishSpan105J
+
+1
+12Z
+
+3	
+354j˝	
+
+17
+171815
+
+57
+575815
+F
+103?
+10310453 *
+1ã ã(26:3B
+	
+9
+73
+
+11
+105
+@
+46:
+464725 *
+1@ @(26:3B
+	
+9
+26
+
+
+11
+48
+F
+100?
+10010153 *
+1Ü Ü(26:3B
+	
+9
+73
+
+11
+102
+
+61
+616215
+
+20
+202115
+@
+36:
+363725 *
+1> >(26:3B
+	
+9
+26
+
+
+11
+38
+
+87
+878815
+
+34
+343515
+
+54
+545515
+
+91
+919215
+
+83
+838415
+9
+64
+678 *
+19 9(:3B
+	
+9
+10
+
+
+11
+12
+@
+51:
+515253 *
+1B B(26:3B
+	
+9
+10
+
+
+11
+12
+
+67
+676815
+
+65
+656615
+@
+76:
+767753 *
+1T T(26:3B
+	
+9
+73
+
+
+11
+78
+
+79
+798015
+
+85
+858615
+@
+23:
+232425 *
+1; ;(26:3B
+	
+9
+26
+
+
+11
+27
+
+89
+899015
+@
+71:
+717253 *
+1O O(26:3B
+	
+9
+73
+
+
+11
+74
+
+98
+989915
+@
+41:
+414225 *
+1? ?(26:3B
+	
+9
+26
+
+
+11
+43
+
+69
+697015
+@
+31:
+313225 *
+1= =(26:3B
+	
+9
+26
+
+
+11
+33
+
+44
+444515
+
+96
+969715
+
+39
+394015
+
+28
+282915
+
+49
+495015
+
+81
+818215
+
+13
+131415
+
+59
+596015
+@
+93:
+939453 *
+1w w(26:3B
+	
+9
+26
+
+
+11
+95r∞
+
+61316*
+19( 9(<
+
+61719*
+18 8(
+
+62022*
+18 8(
+
+61322*
+19( 9(<
+
+232830*
+1; ;(.
+
+232822*
+1; ;(.
+
+232822*
+1;/ ;(?
+
+313430*
+1= =(
+
+313422*
+1= =(
+
+313422*
+1= =(#
+
+363930*
+1> >(
+
+363922*
+1> >(
+
+363922*
+1>  >(.
+
+414430*
+1? ?(#
+
+414422*
+1? ?(#
+
+414422*
+1?$ ?(+
+
+464930*
+1@ @(
+
+464922*
+1@ @(
+
+464922*
+1@ @(*
+
+515456*
+1B B(!
+
+515756*
+1B3 B(?
+
+515956*
+1BV B(f
+
+516156*
+1C C(
+
+51663*
+1B B(
+
+515430*
+1B% B(+
+
+515422*
+1B B(!
+
+515730*
+1B@ B(N
+
+515722*
+1B3 B(?
+
+515930*
+1Bg B(n
+
+515922*
+1BV B(f
+
+516130*
+1C C(*
+
+516122*
+1C C(
+
+51622*
+1D	 D(
+
+51664*
+1D	 D(
+
+513422*
+1D D(
+
+513164*
+1D D(
+
+51622*
+1E	 E(
+
+51664*
+1E	 E(
+
+513922*
+1E E(
+
+513664*
+1E E(
+
+51622*
+1F	 F(
+
+51664*
+1F	 F(
+
+514422*
+1F F(
+
+514164*
+1F F(
+
+51622*
+1G	 G(
+
+51664*
+1G	 G(
+
+514922*
+1G G(
+
+514664*
+1G G(
+
+66522*
+1K K(
+
+66522*
+1K K(%
+
+66722*
+1K& K(0
+
+66922*
+1K2 K(;
+
+63422*
+1L L(
+
+63164*
+1L L(
+
+713975*
+1P P(
+
+713922*
+1P P(
+
+713164*
+1Q Q(
+
+713422*
+1Q Q(
+
+713164*
+1Q Q(
+
+767956*
+1UL U(b
+
+766722*
+1U U(&
+
+767930*
+1Uc U(i
+
+768119*
+1U< U(=
+
+768322*
+1U= U(E
+
+767922*
+1UL U(b
+
+768530*
+1V" V(4
+
+768522*
+1V V(!
+
+763975*
+1WA W(P
+
+76664*
+1WA W(P
+
+767163*
+1WA W(P
+
+768722*
+1Y8 Y(@
+
+763422*
+1YH Y(N
+
+763164*
+1YH Y(N
+
+768722*
+1[8 [(@
+
+763422*
+1[H [(N
+
+763164*
+1[H [(N
+
+763422*
+1\J \(P
+
+763164*
+1\J \(P
+
+762364*
+1]L ](\
+
+762822*
+1]L ](\
+
+762364*
+1]L ](\
+
+763422*
+1]i ](o
+
+763164*
+1]i ](o
+
+763422*
+1^K ^(Q
+
+763164*
+1^K ^(Q
+
+763975*
+1`J `(Y
+
+76664*
+1`J `(Y
+
+767163*
+1`J `(Y
+
+768922*
+1b b(*
+
+764164*
+1bB b(I
+
+764422*
+1bB b(I
+
+764164*
+1bB b(I
+
+769122*
+1e e(#
+
+769122*
+1eV e(]
+
+763422*
+1ee e(k
+
+763164*
+1ee e(k
+
+763922*
+1gf g(t
+
+763664*
+1gf g(t
+
+763422*
+1h h(
+
+763164*
+1h h(
+
+766722*
+1j% j(/
+
+763164*
+1l# l()
+
+763422*
+1l# l()
+
+763164*
+1l# l()
+
+764164*
+1n n(
+
+764422*
+1n n(
+
+764164*
+1n n(
+
+763422*
+1n3 n(9
+
+763164*
+1n3 n(9
+
+938556*
+1w? w(Q
+
+938956*
+1x x(%
+
+938922*
+1w w((
+
+938530*
+1wR w(d
+
+938522*
+1w? w(Q
+
+938930*
+1x& x(8
+
+938922*
+1x x(%
+
+939622*
+1y y(
+
+939830*
+1Ç! Ç(2
+
+939822*
+1Ç Ç( 
+
+1005922*
+1á á(%
+
+1004422*
+1à à(#
+
+1004164*
+1à à(#
+
+1034664*
+1ç	 ç(
+
+1034922*
+1ç	 ç(
+
+1034664*
+1ç	 ç(

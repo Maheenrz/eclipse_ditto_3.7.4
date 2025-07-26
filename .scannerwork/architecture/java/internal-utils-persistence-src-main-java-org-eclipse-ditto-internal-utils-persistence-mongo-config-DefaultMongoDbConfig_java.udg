@@ -1,0 +1,911 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508618556*java2.BŽ#
+
+|internal/utils/persistence/src/main/java/org/eclipse/ditto/internal/utils/persistence/mongo/config/DefaultMongoDbConfig.java2
+
+package4
+>
+9org.eclipse.ditto.internal.utils.persistence.mongo.config5
+S
+Norg.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+DefaultMongoDbConfig12
++
+%Recovered#typeBindingLMongoDbConfig;014
+
+unknown15
+
+
+implements16
+
+	Immutable18
+
+annotated by19
+'
+!Recovered#typeBindingLImmutable;021
+
+
+uses22
+`
+Zorg.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig.CONFIG_PATH24
+
+field25
+
+	protected26
+
+CONFIG_PATH27
+_
+Yorg.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig.mongoDbUri29
+
+private30
+
+
+mongoDbUri31
+a
+[org.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig.maxQueryTime33
+
+maxQueryTime34
+p
+jorg.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig.documentDbCompatibilityMode36
+!
+documentDbCompatibilityMode37
+b
+\org.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig.optionsConfig39
+
+optionsConfig40
+
+DefaultOptionsConfig42
+
+is type43
+i
+corg.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig.connectionPoolConfig45
+
+connectionPoolConfig46
+!
+DefaultConnectionPoolConfig48
+i
+corg.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig.circuitBreakerConfig50
+
+circuitBreakerConfig51
+!
+DefaultCircuitBreakerConfig53
+e
+_org.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig.monitoringConfig55
+
+monitoringConfig56
+
+DefaultMonitoringConfig58
+f
+`org.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig.readJournalConfig60
+
+readJournalConfig61
+
+MongoReadJournalConfig63
+r
+lorg.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig#<init>(LConfigWithFallback;)V65
+
+method66
+0
+*Recovered#typeBindingLConfigWithFallback;068
+
+	has param69
+
+calls70
+
+
+references71
+ž
+—org.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig#determineMongoDbUri(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;73
+²
+«org.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig#of(LConfig;)Lorg/eclipse/ditto/internal/utils/persistence/mongo/config/DefaultMongoDbConfig;75
+
+of76
+
+returns77
+$
+Recovered#typeBindingLConfig;079
+
+ConfigWithFallback81
+ˆ
+org.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig#appendFallbackValues(LConfig;)LConfigWithFallback;83
+
+appendFallbackValues84
+
+determineMongoDbUri85
+v
+porg.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig#getMongoDbUri()Ljava/lang/String;87
+
+getMongoDbUri88
+z
+torg.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig#getMaxQueryTime()Ljava/time/Duration;90
+
+getMaxQueryTime91
+u
+oorg.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig#isDocumentDBCompatibilityMode()Z93
+#
+isDocumentDBCompatibilityMode94
+v
+porg.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig#getOptionsConfig()LOptionsConfig;96
+
+getOptionsConfig97
+
+OptionsConfig99
+…
+~org.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig#getConnectionPoolConfig()LConnectionPoolConfig;101
+
+getConnectionPoolConfig102
+
+ConnectionPoolConfig104
+…
+~org.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig#getCircuitBreakerConfig()LCircuitBreakerConfig;106
+
+getCircuitBreakerConfig107
+
+CircuitBreakerConfig109
+}
+vorg.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig#getMonitoringConfig()LMonitoringConfig;111
+
+getMonitoringConfig112
+
+MonitoringConfig114
+„
+}org.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig#getReadJournalConfig()LMongoReadJournalConfig;116
+
+getReadJournalConfig117
+q
+jorg.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig#equals(Ljava/lang/Object;)Z119
+
+equals120
+a
+Zorg.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig#hashCode()I122
+
+hashCode123
+r
+korg.eclipse.ditto.internal.utils.persistence.mongo.config.DefaultMongoDbConfig#toString()Ljava/lang/String;125
+
+toString126J
+
+1
+12Z
+
+3	
+354jÂ
+
+17
+171815
+
+13
+131415
+@
+32:
+323325 *
+1& &(26:3B
+	
+9
+30
+
+
+11
+34
+@
+54:
+545525 *
+1+ +(26:3B
+	
+9
+30
+
+
+11
+56
+
+103
+10310415
+
+98
+989915
+9
+64
+678 *
+1 ((:3B
+	
+9
+10
+
+
+11
+12
+D
+110=
+11011166 *
+1z z(26:3B
+	
+9
+10
+
+11
+112
+F
+124?
+12412566 *
+1 (26:3B
+	
+9
+10
+
+11
+126
+
+113
+11311415
+F
+121?
+12112266 *
+1— —(26:3B
+	
+9
+10
+
+11
+123
+D
+105=
+10510666 *
+1u u(26:3B
+	
+9
+10
+
+11
+107
+
+41
+414215
+@
+95:
+959666 *
+1k k(26:3B
+	
+9
+10
+
+
+11
+97
+
+20
+202115
+
+62
+626315
+@
+86:
+868766 *
+1\ \(26:3B
+	
+9
+10
+
+
+11
+88
+
+80
+808115
+@
+74:
+747566 *
+1K K(26:3B
+	
+9
+10
+
+
+11
+76
+@
+89:
+899066 *
+1a a(26:3B
+	
+9
+10
+
+
+11
+91
+
+67
+676815
+@
+64:
+646566 *
+1. .(26:3B
+	
+9
+30
+
+
+11
+12
+@
+82:
+828366 *
+1Q Q(26:3B
+	
+9
+30
+
+
+11
+84
+
+78
+787915
+@
+44:
+444525 *
+1) )(26:3B
+	
+9
+30
+
+
+11
+46
+
+108
+10810915
+@
+59:
+596025 *
+1, ,(26:3B
+	
+9
+30
+
+
+11
+61
+
+47
+474815
+F
+118?
+11811966 *
+1„ „(26:3B
+	
+9
+10
+
+11
+120
+@
+23:
+232425 *
+1# #(26:3B
+	
+9
+26
+
+
+11
+27
+@
+92:
+929366 *
+1f f(26:3B
+	
+9
+10
+
+
+11
+94
+
+57
+575815
+@
+72:
+727366 *
+1U U(26:3B
+	
+9
+30
+
+
+11
+85
+@
+28:
+282925 *
+1% %(26:3B
+	
+9
+30
+
+
+11
+31
+@
+38:
+383925 *
+1( ((26:3B
+	
+9
+30
+
+
+11
+40
+D
+100=
+10010166 *
+1p p(26:3B
+	
+9
+10
+
+11
+102
+@
+35:
+353625 *
+1' '(26:3B
+	
+9
+30
+
+
+11
+37
+@
+49:
+495025 *
+1* *(26:3B
+	
+9
+30
+
+
+11
+51
+D
+115=
+11511666 *
+1 (26:3B
+	
+9
+10
+
+11
+117
+
+52
+525315rã
+
+61316*
+14 (A
+
+61719*
+1 (
+
+62022*
+1 (
+
+61322*
+14 (A
+
+384143*
+1( (('
+
+384122*
+1( (('
+
+384122*
+1(( ((5
+
+444743*
+1) )(.
+
+444722*
+1) )(.
+
+444722*
+1)/ )(C
+
+495243*
+1* *(.
+
+495222*
+1* *(.
+
+495222*
+1*/ *(C
+
+545743*
+1+ +(*
+
+545722*
+1+ +(*
+
+545722*
+1++ +(;
+
+596243*
+1, ,()
+
+596222*
+1, ,()
+
+596222*
+1,* ,(;
+
+646769*
+1.( .(:
+
+64670*
+1. .(!
+
+646743*
+1.; .(A
+
+646722*
+1.( .(:
+
+643271*
+1/	 /(
+
+643571*
+10	 0($
+
+644122*
+11	 1(
+
+643871*
+11	 1(
+
+643871*
+13? 3(L
+
+644122*
+13? 3(L
+
+643871*
+13? 3(L
+
+643871*
+1;) ;(6
+
+644122*
+1;) ;(6
+
+643871*
+1;) ;(6
+
+642871*
+1=	 =(
+
+64671*
+1= =()
+
+647270*
+1= =()
+
+644722*
+1>	 >(
+
+644471*
+1>	 >(
+
+645222*
+1?	 ?(
+
+644971*
+1?	 ?(
+
+645722*
+1@	 @(
+
+645471*
+1@	 @(
+
+646222*
+1A	 A(
+
+645971*
+1A	 A(
+
+74677*
+1K K('
+
+747869*
+1K1 K(7
+
+74622*
+1K K('
+
+747843*
+1K8 K(>
+
+747822*
+1K1 K(7
+
+748077*
+1L( L(<
+
+74671*
+1L( L(<
+
+748270*
+1L( L(<
+
+74670*
+1N N((
+
+828077*
+1Q Q(&
+
+827869*
+1QB Q(H
+
+828022*
+1Q Q(&
+
+827843*
+1QI Q(O
+
+827822*
+1QB Q(H
+
+822371*
+1R7 R(B
+
+862871*
+1^ ^(
+
+893271*
+1c c(
+
+923571*
+1h h(+
+
+959877*
+1l l(
+
+959822*
+1l l(
+
+954122*
+1m m(
+
+953871*
+1m m(
+
+10010377*
+1q q( 
+
+10010322*
+1q q( 
+
+1004722*
+1r r($
+
+1004471*
+1r r($
+
+10510877*
+1v v( 
+
+10510822*
+1v v( 
+
+1055222*
+1w w($
+
+1054971*
+1w w($
+
+11011377*
+1{ {(
+
+11011322*
+1{ {(
+
+1105722*
+1| |( 
+
+1105471*
+1| |( 
+
+1156277*
+1€ €("
+
+1156222*
+1€ €("
+
+1156222*
+1 (!
+
+1155971*
+1 (!
+
+118622*
+1† †(
+
+118671*
+1† †(
+
+118643*
+1Œ$ Œ((
+
+118622*
+1Œ Œ(#
+
+118622*
+1Œ, Œ(@
+
+1182871*
+1 ()
+
+1182871*
+10 (:
+
+1183271*
+1Ž  Ž(,
+
+1183271*
+1Ž3 Ž(?
+
+1183571*
+1 (,
+
+1183571*
+15 (P
+
+1184122*
+1  (-
+
+1183871*
+1  (-
+
+1184122*
+14 (A
+
+1183871*
+14 (A
+
+1184722*
+1‘  ‘(4
+
+1184471*
+1‘  ‘(4
+
+1184722*
+1‘; ‘(O
+
+1184471*
+1‘; ‘(O
+
+1185222*
+1’  ’(4
+
+1184971*
+1’  ’(4
+
+1185222*
+1’; ’(O
+
+1184971*
+1’; ’(O
+
+1186222*
+1“  “(1
+
+1185971*
+1“  “(1
+
+1186222*
+1“8 “(I
+
+1185971*
+1“8 “(I
+
+1185722*
+1”  ”(0
+
+1185471*
+1”  ”(0
+
+1185722*
+1”7 ”(G
+
+1185471*
+1”7 ”(G
+
+1212871*
+1™ ™('
+
+1213271*
+1™) ™(5
+
+1213571*
+1™7 ™(R
+
+1214122*
+1™T ™(a
+
+1213871*
+1™T ™(a
+
+1214722*
+1™c ™(w
+
+1214471*
+1™c ™(w
+
+1215222*
+1š š(%
+
+1214971*
+1š š(%
+
+1215722*
+1š' š(7
+
+1215471*
+1š' š(7
+
+1216222*
+1š9 š(J
+
+1215971*
+1š9 š(J
+
+1242871*
+1 !  (+
+
+1243271*
+1¡% ¡(1
+
+1243571*
+1¢4 ¢(O
+
+1244122*
+1£& £(3
+
+1243871*
+1£& £(3
+
+1244722*
+1¤- ¤(A
+
+1244471*
+1¤- ¤(A
+
+1245222*
+1¥- ¥(A
+
+1244971*
+1¥- ¥(A
+
+1245722*
+1¦) ¦(9
+
+1245471*
+1¦) ¦(9
+
+1246222*
+1§* §(;
+
+1245971*
+1§* §(;

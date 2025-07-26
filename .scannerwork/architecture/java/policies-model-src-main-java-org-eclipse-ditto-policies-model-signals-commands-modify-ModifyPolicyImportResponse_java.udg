@@ -1,0 +1,1333 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508525886*java2.B»-
+z
+upolicies/model/src/main/java/org/eclipse/ditto/policies/model/signals/commands/modify/ModifyPolicyImportResponse.java2
+
+package4
+=
+8org.eclipse.ditto.policies.model.signals.commands.modify5
+X
+Sorg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+ 
+ModifyPolicyImportResponse12
+5
+/Recovered#typeBindingLAbstractCommandResponse;014
+
+unknown15
+
+extends16
+9
+3Recovered#typeBindingLPolicyModifyCommandResponse;018
+
+
+implements19
+
+	Immutable21
+
+annotated by22
+'
+!Recovered#typeBindingLImmutable;024
+
+
+uses25
+!
+JsonParsableCommandResponse27
+9
+3Recovered#typeBindingLJsonParsableCommandResponse;029
+^
+Xorg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse.TYPE31
+
+
+references32
+
+field33
+
+
+TYPE34
+q
+korg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse.JSON_IMPORTED_POLICY_ID36
+
+	protected37
+
+JSON_IMPORTED_POLICY_ID38
+
+JsonFieldDefinition40
+
+is type41
+l
+forg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse.JSON_POLICY_IMPORT43
+
+JSON_POLICY_IMPORT44
+'
+!Recovered#typeBindingLJsonValue;046
+g
+aorg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse.HTTP_STATUSES48
+
+private49
+
+HTTP_STATUSES50
+(
+"Recovered#typeBindingLHttpStatus;052
+k
+eorg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse.JSON_DESERIALIZER54
+
+JSON_DESERIALIZER55
+%
+CommandResponseJsonDeserializer57
+b
+\org.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse.policyId59
+
+policyId60
+
+PolicyId62
+j
+dorg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse.importedPolicyId64
+
+importedPolicyId65
+m
+gorg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse.policyImportCreated67
+
+policyImportCreated68
+
+PolicyImport70
+
+Nullable72
+&
+ Recovered#typeBindingLNullable;074
+†
+ôorg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse#<init>(LPolicyId;LPolicyId;LPolicyImport;LHttpStatus;LDittoHeaders;)V76
+
+method77
+&
+ Recovered#typeBindingLPolicyId;079
+
+	has param80
+*
+$Recovered#typeBindingLPolicyImport;082
+*
+$Recovered#typeBindingLDittoHeaders;084
+
+calls85
+ﬂ
+ÿorg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse#created(LPolicyId;LPolicyImport;LDittoHeaders;)Lorg/eclipse/ditto/policies/model/signals/commands/modify/ModifyPolicyImportResponse;87
+
+created88
+
+returns89
+‹
+’org.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse#modified(LPolicyId;LPolicyId;LDittoHeaders;)Lorg/eclipse/ditto/policies/model/signals/commands/modify/ModifyPolicyImportResponse;91
+
+modified92
+˘
+Úorg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse#newInstance(LPolicyId;LPolicyId;LPolicyImport;LHttpStatus;LDittoHeaders;)Lorg/eclipse/ditto/policies/model/signals/commands/modify/ModifyPolicyImportResponse;94
+
+newInstance95
+⁄
+”org.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse#fromJson(Ljava/lang/String;LDittoHeaders;)Lorg/eclipse/ditto/policies/model/signals/commands/modify/ModifyPolicyImportResponse;97
+
+fromJson98
+’
+Õorg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse#fromJson(LJsonObject;LDittoHeaders;)Lorg/eclipse/ditto/policies/model/signals/commands/modify/ModifyPolicyImportResponse;100
+)
+"Recovered#typeBindingLJsonObject;0102
+z
+sorg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse#getImportedPolicyId()LPolicyId;104
+
+getImportedPolicyId105
+à
+Äorg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse#getPolicyImportCreated()Ljava/util/Optional;107
+
+getPolicyImportCreated108
+é
+Üorg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse#getEntity(LJsonSchemaVersion;)Ljava/util/Optional;110
+
+	getEntity111
+0
+)Recovered#typeBindingLJsonSchemaVersion;0113
+«
+øorg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse#setEntity(LJsonValue;)Lorg/eclipse/ditto/policies/model/signals/commands/modify/ModifyPolicyImportResponse;115
+
+	setEntity116
+y
+rorg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse#getResourcePath()LJsonPointer;118
+
+getResourcePath119
+
+JsonPointer121
+∞
+®org.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse#appendPayload(LJsonObjectBuilder;LJsonSchemaVersion;Ljava/util/function/Predicate;)V123
+
+appendPayload124
+0
+)Recovered#typeBindingLJsonObjectBuilder;0126
+(
+!Recovered#typeBindingLJsonField;0128
+–
+»org.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse#setDittoHeaders(LDittoHeaders;)Lorg/eclipse/ditto/policies/model/signals/commands/modify/ModifyPolicyImportResponse;130
+
+setDittoHeaders131
+r
+korg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse#getEntityId()LPolicyId;133
+
+getEntityId134
+x
+qorg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse#canEqual(Ljava/lang/Object;)Z136
+
+canEqual137
+v
+oorg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse#equals(Ljava/lang/Object;)Z139
+
+equals140
+
+AbstractCommandResponse142
+f
+_org.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse#hashCode()I144
+
+hashCode145
+w
+porg.eclipse.ditto.policies.model.signals.commands.modify.ModifyPolicyImportResponse#toString()Ljava/lang/String;147
+
+toString148J
+
+1
+12Z
+
+3	
+354jû
+
+78
+787915
+F
+135?
+13513677 *
+1ã ã(26:3B
+	
+9
+37
+
+11
+137
+@
+47:
+474833 *
+1D D(26:3B
+	
+9
+49
+
+
+11
+50
+F
+117?
+11711877 *
+1È È(26:3B
+	
+9
+10
+
+11
+119
+F
+138?
+13813977 *
+1ê ê(26:3B
+	
+9
+10
+
+11
+140
+
+23
+232415
+
+125
+12512615
+@
+30:
+303133 *
+1< <(26:3B
+	
+9
+10
+
+
+11
+34
+
+112
+11211315
+@
+42:
+424333 *
+1A A(26:3B
+	
+9
+37
+
+
+11
+44
+@
+53:
+535433 *
+1L L(26:3B
+	
+9
+49
+
+
+11
+55
+B
+96<
+969777 *
+1π π(26:3B
+	
+9
+10
+
+
+11
+98
+F
+103?
+10310477 *
+1œ œ(26:3B
+	
+9
+10
+
+11
+105
+@
+86:
+868777 *
+1{ {(26:3B
+	
+9
+10
+
+
+11
+88
+@
+58:
+585933 *
+1b b(26:3B
+	
+9
+49
+
+
+11
+60
+B
+90<
+909177 *
+1é é(26:3B
+	
+9
+10
+
+
+11
+92
+
+39
+394015
+F
+114?
+11411577 *
+1· ·(26:3B
+	
+9
+10
+
+11
+116
+
+127
+12712815
+F
+129?
+12913077 *
+1Ä Ä(26:3B
+	
+9
+10
+
+11
+131
+
+28
+282915
+
+56
+565715
+C
+99=
+9910077 *
+1∆ ∆(26:3B
+	
+9
+10
+
+
+11
+98
+F
+106?
+10610777 *
+1ÿ ÿ(26:3B
+	
+9
+10
+
+11
+108
+
+71
+717215
+
+20
+202115
+
+141
+14114215
+
+83
+838415
+
+51
+515215
+
+120
+12012115
+F
+143?
+14314477 *
+1† †(26:3B
+	
+9
+10
+
+11
+145
+@
+66:
+666733 *
+1d d(26:3B
+	
+9
+49
+
+
+11
+68
+
+26
+262715
+
+73
+737415
+F
+146?
+14614777 *
+1• •(26:3B
+	
+9
+10
+
+11
+148
+
+101
+10110215
+F
+109?
+10911077 *
+1‹ ‹(26:3B
+	
+9
+10
+
+11
+111
+
+17
+171815
+
+45
+454615
+9
+64
+678 *
+16 6(.:3B
+	
+9
+10
+
+
+11
+12
+
+81
+818215
+F
+122?
+12212377 *
+1Û Û(26:3B
+	
+9
+37
+
+11
+124
+
+69
+697015
+@
+35:
+353633 *
+1> >(26:3B
+	
+9
+37
+
+
+11
+38
+F
+132?
+13213377 *
+1Ü Ü(26:3B
+	
+9
+10
+
+11
+134
+
+61
+616215
+B
+93<
+939477 *
+1† †(26:3B
+	
+9
+10
+
+
+11
+95
+
+13
+131415
+@
+63:
+636433 *
+1c c(26:3B
+	
+9
+49
+
+
+11
+65
+@
+75:
+757677 *
+1f f(26:3B
+	
+9
+49
+
+
+11
+12rˆ9
+
+61316*
+167 6(N
+
+61719*
+17 7(/
+
+62022*
+14 4(
+
+62325*
+14 4(
+
+62622*
+15 5(
+
+62825*
+15 5(
+
+63032*
+15@ 5(D
+
+61325*
+167 6(N
+
+61725*
+17 7(/
+
+353941*
+1> >(%
+
+353925*
+1> >(%
+
+353925*
+1>. >(E
+
+423941*
+1A A(%
+
+423925*
+1A A(%
+
+424525*
+1A& A(/
+
+423925*
+1A1 A(C
+
+475125*
+1D D((
+
+65125*
+1G G(
+
+64732*
+1I	 I(
+
+535641*
+1L L(9
+
+535625*
+1L L(9
+
+53625*
+1L: L(T
+
+535625*
+1LV L(g
+
+533032*
+1M9 M(=
+
+586141*
+1b b(
+
+586125*
+1b b(
+
+586125*
+1b b($
+
+636141*
+1c c(
+
+636125*
+1c c(
+
+636125*
+1c c(,
+
+666941*
+1d d()
+
+667122*
+1d d(
+
+667325*
+1d d(
+
+666925*
+1d d()
+
+666925*
+1d* d(=
+
+757880*
+1f. f(6
+
+757880*
+1g g(
+
+758180*
+1h h()
+
+755180*
+1i i(
+
+758380*
+1j j(
+
+75685*
+1f f('
+
+757841*
+1f7 f(?
+
+757825*
+1f. f(6
+
+757841*
+1g g(,
+
+757825*
+1g g(
+
+758141*
+1h* h(=
+
+757122*
+1h h(
+
+757325*
+1h h(
+
+758125*
+1h h()
+
+755141*
+1i i((
+
+755125*
+1i i(
+
+758341*
+1j  j(,
+
+758325*
+1j j(
+
+753032*
+1l l(
+
+75625*
+1m	 m(
+
+75632*
+1m	 m(
+
+756125*
+1m m(
+
+756332*
+1m m(
+
+75625*
+1n	 n(
+
+75632*
+1n	 n(
+
+756125*
+1n n(
+
+755832*
+1n n(
+
+75625*
+1o	 o(
+
+75632*
+1o	 o(
+
+756925*
+1o o(!
+
+756632*
+1o o(!
+
+86689*
+1{ {(-
+
+867880*
+1{< {(D
+
+868180*
+1{U {(a
+
+868380*
+1| |(
+
+86625*
+1{ {(-
+
+867841*
+1{E {(M
+
+867825*
+1{< {(D
+
+868141*
+1{b {(u
+
+868125*
+1{U {(a
+
+868341*
+1|  |(,
+
+868325*
+1| |(
+
+86685*
+1~ ~(.
+
+90689*
+1é é(-
+
+907880*
+1é= é(E
+
+907880*
+1è è(
+
+908380*
+1ê ê(
+
+90625*
+1é é(-
+
+907841*
+1éF é(N
+
+907825*
+1é= é(E
+
+907841*
+1è è(,
+
+907825*
+1è è(
+
+908341*
+1ê  ê(,
+
+908325*
+1ê ê(
+
+90685*
+1ë ë(.
+
+93689*
+1† †(-
+
+937880*
+1†@ †(H
+
+937880*
+1° °(
+
+938180*
+1¢ ¢()
+
+935180*
+1£ £(
+
+938380*
+1§ §(
+
+93625*
+1† †(-
+
+937841*
+1†I †(Q
+
+937825*
+1†@ †(H
+
+937841*
+1° °(,
+
+937825*
+1° °(
+
+938141*
+1¢* ¢(=
+
+937122*
+1¢ ¢(
+
+937325*
+1¢ ¢(
+
+938125*
+1¢ ¢()
+
+935141*
+1£ £((
+
+935125*
+1£ £(
+
+938341*
+1§  §(,
+
+938325*
+1§ §(
+
+93685*
+1¶ ¶(.
+
+934732*
+1™ ™(&
+
+93625*
+1´ ´(3
+
+96689*
+1π π(-
+
+968380*
+1πV π(b
+
+96625*
+1π π(-
+
+968341*
+1πc π(o
+
+968325*
+1πV π(b
+
+96689*
+1∫ ∫(
+
+96632*
+1∫ ∫(
+
+99689*
+1∆ ∆(-
+
+9910180*
+1∆= ∆(G
+
+998380*
+1∆Z ∆(f
+
+99625*
+1∆ ∆(-
+
+9910141*
+1∆H ∆(R
+
+9910125*
+1∆= ∆(G
+
+998341*
+1∆g ∆(s
+
+998325*
+1∆Z ∆(f
+
+995332*
+1« «(!
+
+995625*
+1« «(!
+
+995332*
+1« «(!
+
+1036189*
+1œ œ(
+
+1036125*
+1œ œ(
+
+1036125*
+1– –( 
+
+1036332*
+1– –( 
+
+1068125*
+1ÿ ÿ(!
+
+1066925*
+1Ÿ$ Ÿ(7
+
+1066632*
+1Ÿ$ Ÿ(7
+
+10911280*
+1›0 ›(A
+
+1094525*
+1› ›(
+
+10911241*
+1›B ›(O
+
+10911225*
+1›0 ›(A
+
+1096925*
+1ﬁ$ ﬁ(7
+
+1096632*
+1ﬁ$ ﬁ(7
+
+114689*
+1‚ ‚(&
+
+1144580*
+1‚7 ‚(@
+
+114625*
+1‚ ‚(&
+
+1144541*
+1‚A ‚(G
+
+1144525*
+1‚7 ‚(@
+
+114689*
+1„ „(
+
+114632*
+1„ „(
+
+1149385*
+1„ „(
+
+1146125*
+1„ „($
+
+1145832*
+1„ „($
+
+1146125*
+1„& „(6
+
+1146332*
+1„& „(6
+
+1146125*
+1Â> Â(N
+
+1146332*
+1Â> Â(N
+
+11712089*
+1Í Í(
+
+11712025*
+1Í Í(
+
+1176925*
+1Î Î( 
+
+1176632*
+1Î Î( 
+
+1176125*
+1Ô+ Ô(;
+
+1176332*
+1Ô+ Ô(;
+
+12212580*
+1Ù( Ù(9
+
+12211280*
+1ÙS Ù(d
+
+12212541*
+1Ù: Ù(K
+
+12212525*
+1Ù( Ù(9
+
+12211241*
+1Ùe Ù(r
+
+12211225*
+1ÙS Ù(d
+
+12212725*
+1ı ı(&
+
+12212725*
+1˜ ˜("
+
+1225832*
+1¯P ¯(X
+
+1226125*
+1¯P ¯(X
+
+1225832*
+1¯P ¯(X
+
+1223925*
+1˘ ˘(6
+
+1223532*
+1˘ ˘(6
+
+1226332*
+1˘8 ˘(H
+
+1226125*
+1˘8 ˘(H
+
+1226332*
+1˘8 ˘(H
+
+1226925*
+1˙ ˙((
+
+1226632*
+1˙ ˙((
+
+1223925*
+1˚# ˚(5
+
+1224232*
+1˚# ˚(5
+
+1226632*
+1˚7 ˚(J
+
+1226925*
+1˚7 ˚(J
+
+1226632*
+1˚7 ˚(J
+
+129689*
+1Å Å(&
+
+1298380*
+1Å= Å(I
+
+129625*
+1Å Å(&
+
+1298341*
+1ÅJ Å(V
+
+1298325*
+1Å= Å(I
+
+1296925*
+1Ç Ç($
+
+1296632*
+1Ç Ç($
+
+129689*
+1Ç0 Ç(7
+
+129632*
+1Ç0 Ç(7
+
+1298685*
+1Ç0 Ç(7
+
+1296125*
+1Ç8 Ç(@
+
+1295832*
+1Ç8 Ç(@
+
+1296925*
+1ÇB Ç(U
+
+1296632*
+1ÇB Ç(U
+
+129689*
+1É É(
+
+129632*
+1É É(
+
+1299085*
+1É É(
+
+1296125*
+1É É("
+
+1295832*
+1É É("
+
+1296125*
+1É$ É(4
+
+1296332*
+1É$ É(4
+
+1326189*
+1á á(
+
+1326125*
+1á á(
+
+1326125*
+1à à(
+
+1325832*
+1à à(
+
+1357122*
+1å  å(!
+
+1357325*
+1å! å()
+
+135625*
+1ç! ç(;
+
+1387122*
+1ë ë(
+
+1387325*
+1ë ë($
+
+138625*
+1í í(
+
+138632*
+1í í(
+
+138641*
+1ò* ò(.
+
+138625*
+1ò ò()
+
+138625*
+1ò2 ò(L
+
+138632*
+1ô ô(
+
+13813585*
+1ô ô(
+
+138625*
+1ô ô("
+
+138632*
+1ô ô("
+
+1386125*
+1ö  ö((
+
+1385832*
+1ö  ö((
+
+1386125*
+1ö/ ö(7
+
+1385832*
+1ö/ ö(7
+
+1386125*
+1õ  õ(0
+
+1386332*
+1õ  õ(0
+
+1386125*
+1õ7 õ(G
+
+1386332*
+1õ7 õ(G
+
+1386925*
+1ú  ú(3
+
+1386632*
+1ú  ú(3
+
+1386925*
+1ú: ú(M
+
+1386632*
+1ú: ú(M
+
+138632*
+1ù ù(
+
+13814125*
+1ù ù(
+
+138632*
+1ù ù(
+
+143632*
+1¢ ¢("
+
+14314125*
+1¢ ¢("
+
+143632*
+1¢ ¢("
+
+1436125*
+1¢/ ¢(7
+
+1435832*
+1¢/ ¢(7
+
+1436125*
+1¢9 ¢(I
+
+1436332*
+1¢9 ¢(I
+
+1436925*
+1¢K ¢(^
+
+1436632*
+1¢K ¢(^
+
+146632*
+1ß4 ß(9
+
+14614125*
+1ß4 ß(9
+
+146632*
+1ß4 ß(9
+
+1466125*
+1®! ®()
+
+1465832*
+1®! ®()
+
+1466125*
+1©) ©(9
+
+1466332*
+1©) ©(9
+
+1466925*
+1™, ™(?
+
+1466632*
+1™, ™(?

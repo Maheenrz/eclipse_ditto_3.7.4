@@ -1,0 +1,556 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508462562*java2.B¬
+m
+hthingsearch/api/src/main/java/org/eclipse/ditto/thingsearch/api/query/filter/ParameterOptionVisitor.java2
+
+package4
+3
+.org.eclipse.ditto.thingsearch.api.query.filter5
+J
+Eorg.eclipse.ditto.thingsearch.api.query.filter.ParameterOptionVisitor7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+ParameterOptionVisitor12
++
+%Recovered#typeBindingLOptionVisitor;014
+
+unknown15
+
+
+implements16
+"
+AllValuesAreNonnullByDefault18
+
+annotated by19
+:
+4Recovered#typeBindingLAllValuesAreNonnullByDefault;021
+
+
+uses22
+X
+Rorg.eclipse.ditto.thingsearch.api.query.filter.ParameterOptionVisitor.queryBuilder24
+
+field25
+
+private26
+
+queryBuilder27
+
+QueryBuilder29
+
+is type30
+b
+\org.eclipse.ditto.thingsearch.api.query.filter.ParameterOptionVisitor.fieldExpressionFactory32
+
+fieldExpressionFactory33
+
+FieldExpressionFactory35
+{
+uorg.eclipse.ditto.thingsearch.api.query.filter.ParameterOptionVisitor#<init>(LFieldExpressionFactory;LQueryBuilder;)V37
+
+method38
+4
+.Recovered#typeBindingLFieldExpressionFactory;040
+
+	has param41
+*
+$Recovered#typeBindingLQueryBuilder;043
+
+calls44
+
+
+references45
+²
+«org.eclipse.ditto.thingsearch.api.query.filter.ParameterOptionVisitor#visitAll(Ljava/lang/Iterable;)Lorg/eclipse/ditto/thingsearch/api/query/filter/ParameterOptionVisitor;47
+
+visitAll48
+
+returns49
+$
+Recovered#typeBindingLOption;051
+a
+[org.eclipse.ditto.thingsearch.api.query.filter.ParameterOptionVisitor#visit(LLimitOption;)V53
+
+visit54
+)
+#Recovered#typeBindingLLimitOption;056
+„
+~org.eclipse.ditto.thingsearch.api.query.filter.ParameterOptionVisitor#visit(Lorg/eclipse/ditto/thingsearch/model/SortOption;)V58
+L
+FRecovered#typeBindingLorg/eclipse/ditto/thingsearch/model/SortOption;060
+(
+"Recovered#typeBindingLSortOption;062
+b
+\org.eclipse.ditto.thingsearch.api.query.filter.ParameterOptionVisitor#visit(LCursorOption;)V64
+*
+$Recovered#typeBindingLCursorOption;066
+`
+Zorg.eclipse.ditto.thingsearch.api.query.filter.ParameterOptionVisitor#visit(LSizeOption;)V68
+(
+"Recovered#typeBindingLSizeOption;070
+r
+lorg.eclipse.ditto.thingsearch.api.query.filter.ParameterOptionVisitor#mapSort(LSortOptionEntry;)LSortOption;72
+
+mapSort73
+
+
+SortOption75
+-
+'Recovered#typeBindingLSortOptionEntry;077
+
+SortFieldExpression79
+‚
+|org.eclipse.ditto.thingsearch.api.query.filter.ParameterOptionVisitor#determineSortField(LJsonPointer;)LSortFieldExpression;81
+
+SortDirection83
+
+ˆorg.eclipse.ditto.thingsearch.api.query.filter.ParameterOptionVisitor#determineSortDirection(LSortOptionEntry/SortOrder;)LSortDirection;85
+
+determineSortField86
+)
+#Recovered#typeBindingLJsonPointer;088
+
+determineSortDirection89J
+
+1
+12Z
+
+3	
+354jù
+@
+57:
+575838 *
+1K K(26:3B
+	
+9
+10
+
+
+11
+54
+
+34
+343515
+@
+80:
+808138 *
+1c c(26:3B
+	
+9
+26
+
+
+11
+86
+
+61
+616215
+@
+67:
+676838 *
+1Z Z(26:3B
+	
+9
+10
+
+
+11
+54
+
+42
+424315
+
+28
+282915
+
+65
+656615
+
+82
+828315
+
+59
+596015
+
+69
+697015
+
+74
+747515
+9
+64
+678 *
+1& &(*:3B
+	
+9
+10
+
+
+11
+12
+
+20
+202115
+@
+52:
+525338 *
+1C C(26:3B
+	
+9
+10
+
+
+11
+54
+
+55
+555615
+
+50
+505115
+@
+31:
+313225 *
+1) )(26:3B
+	
+9
+26
+
+
+11
+33
+
+39
+394015
+
+78
+787915
+
+87
+878815
+@
+46:
+464738 *
+1> >(26:3B
+	
+9
+10
+
+
+11
+48
+@
+63:
+636438 *
+1U U(26:3B
+	
+9
+10
+
+
+11
+54
+@
+71:
+717238 *
+1_ _(26:3B
+	
+9
+26
+
+
+11
+73
+
+76
+767715
+
+17
+171815
+@
+23:
+232425 *
+1( ((26:3B
+	
+9
+26
+
+
+11
+27
+@
+36:
+363738 *
+12 2(26:3B
+	
+9
+10
+
+
+11
+12
+
+13
+131415
+@
+84:
+848538 *
+1g g(26:3B
+	
+9
+26
+
+
+11
+89rø
+
+61316*
+1&6 &(C
+
+61719*
+1% %(
+
+62022*
+1% %(
+
+61322*
+1&6 &(C
+
+232830*
+1( ((
+
+232822*
+1( ((
+
+232822*
+1(  ((,
+
+313430*
+1) )()
+
+313422*
+1) )()
+
+313422*
+1)* )(@
+
+363941*
+12) 2(?
+
+364241*
+13 3(
+
+36644*
+12 2("
+
+363930*
+12@ 2(V
+
+363922*
+12) 2(?
+
+364230*
+13  3(,
+
+364222*
+13 3(
+
+36622*
+14	 4(
+
+36645*
+14	 4(
+
+363422*
+14 4($
+
+363145*
+14 4($
+
+36622*
+15	 5(
+
+36645*
+15	 5(
+
+362822*
+15 5(
+
+362345*
+15 5(
+
+46649*
+1> >("
+
+46622*
+1> >("
+
+465022*
+1>; >(A
+
+46622*
+1?' ?(+
+
+46645*
+1?' ?(+
+
+46622*
+1@ @(
+
+46645*
+1@ @(
+
+525541*
+1D D((
+
+525530*
+1D) D(4
+
+525522*
+1D D((
+
+522345*
+1H	 H(
+
+522822*
+1H	 H(
+
+522345*
+1H	 H(
+
+575941*
+1L L( 
+
+575930*
+1LL L(V
+
+575922*
+1LA L(K
+
+576122*
+1N N(
+
+57622*
+1P P(
+
+57645*
+1P P(
+
+572345*
+1R	 R(
+
+572822*
+1R	 R(
+
+572345*
+1R	 R(
+
+636541*
+1V V()
+
+636530*
+1V* V(6
+
+636522*
+1V V()
+
+676941*
+1[ [('
+
+676930*
+1[( [(2
+
+676922*
+1[ [('
+
+672345*
+1\	 \(
+
+672822*
+1\	 \(
+
+672345*
+1\	 \(
+
+717449*
+1_ _(
+
+717641*
+1_& _(5
+
+717422*
+1_ _(
+
+717630*
+1_6 _(;
+
+717622*
+1_& _(5
+
+717849*
+1` `(1
+
+71645*
+1` `(1
+
+718044*
+1` `(1
+
+718249*
+1`L `(b
+
+71645*
+1`L `(b
+
+718444*
+1`L `(b
+
+807849*
+1c c( 
+
+808741*
+1c: c(E
+
+807822*
+1c c( 
+
+808730*
+1cF c(I
+
+808722*
+1c: c(E
+
+803145*
+1d d(&
+
+803422*
+1d d(&
+
+803145*
+1d d(&
+
+848249*
+1g g(!
+
+847641*
+1g? g(N
+
+848222*
+1g g(!
+
+847630*
+1gY g(^
+
+847622*
+1g? g(N
+
+847622*
+1gO g(X

@@ -1,0 +1,385 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508483504*java2.B×
+v
+qthings/service/src/main/java/org/eclipse/ditto/things/service/enforcement/StreamRequestingCommandEnforcement.java2
+
+package4
+1
+,org.eclipse.ditto.things.service.enforcement5
+T
+Oorg.eclipse.ditto.things.service.enforcement.StreamRequestingCommandEnforcement7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+(
+"StreamRequestingCommandEnforcement12
+9
+3Recovered#typeBindingLAbstractEnforcementReloaded;014
+
+unknown15
+
+extends16
+6
+0Recovered#typeBindingLThingEnforcementStrategy;018
+
+
+implements19
+
+
+uses20
+:
+4Recovered#typeBindingLStreamingSubscriptionCommand;022
+-
+'Recovered#typeBindingLCommandResponse;024
+m
+gorg.eclipse.ditto.things.service.enforcement.StreamRequestingCommandEnforcement#isApplicable(LSignal;)Z26
+
+method27
+
+public28
+
+isApplicable29
+$
+Recovered#typeBindingLSignal;031
+
+	has param32
+
+is type33
+~
+xorg.eclipse.ditto.things.service.enforcement.StreamRequestingCommandEnforcement#responseIsApplicable(LCommandResponse;)Z35
+
+responseIsApplicable36
+{
+uorg.eclipse.ditto.things.service.enforcement.StreamRequestingCommandEnforcement#getEnforcement()LEnforcementReloaded;38
+
+getEnforcement39
+
+EnforcementReloaded41
+
+returns42
+
+Signal44
+
+S46
+
+CommandResponse48
+
+R50
+1
++Recovered#typeBindingLEnforcementReloaded;052
+
+
+references53
+¼
+µorg.eclipse.ditto.things.service.enforcement.StreamRequestingCommandEnforcement#authorizeSignal(LStreamingSubscriptionCommand;LPolicyEnforcer;)Ljava/util/concurrent/CompletionStage;55
+
+authorizeSignal56
+,
+&Recovered#typeBindingLPolicyEnforcer;058
+)
+#Recovered#typeBindingLResourceKey;060
+¿
+¸org.eclipse.ditto.things.service.enforcement.StreamRequestingCommandEnforcement#authorizeSignalWithMissingEnforcer(LStreamingSubscriptionCommand;)Ljava/util/concurrent/CompletionStage;62
+(
+"authorizeSignalWithMissingEnforcer63
+…
+org.eclipse.ditto.things.service.enforcement.StreamRequestingCommandEnforcement#shouldFilterCommandResponse(LCommandResponse;)Z65
+!
+shouldFilterCommandResponse66
+®
+§org.eclipse.ditto.things.service.enforcement.StreamRequestingCommandEnforcement#filterResponse(LCommandResponse;LPolicyEnforcer;)Ljava/util/concurrent/CompletionStage;68
+
+filterResponse69J
+
+1
+12Z
+
+3	
+354j
+@
+34:
+343527 *
+1* *(26:3B
+	
+9
+28
+
+
+11
+36
+
+13
+131415
+
+51
+515215
+@
+67:
+676827 *
+1T T(26:3B
+	
+9
+28
+
+
+11
+69
+
+17
+171815
+@
+54:
+545527 *
+14 4(26:3B
+	
+9
+28
+
+
+11
+56
+@
+64:
+646527 *
+1O O(26:3B
+	
+9
+28
+
+
+11
+66
+
+47
+474815
+
+30
+303115
+
+43
+434415
+
+49
+495015
+
+21
+212215
+
+45
+454615
+@
+61:
+616227 *
+1F F(26:3B
+	
+9
+28
+
+
+11
+63
+
+40
+404115
+@
+25:
+252627 *
+1% %(26:3B
+	
+9
+28
+
+
+11
+29
+
+57
+575815
+@
+37:
+373827 *
+1/ /(26:3B
+	
+9
+28
+
+
+11
+39
+
+23
+232415
+9
+64
+678 *
+1! !(/:3B
+	
+9
+10
+
+
+11
+12
+
+59
+596015rÙ
+
+
+61316*
+1" "(,
+
+61719*
+1# #(,
+
+61320*
+1" "(,
+
+62120*
+1"- "(I
+
+62320*
+1"N "(]
+
+61720*
+1# #(,
+
+253032*
+1&' &(-
+
+253033*
+1&1 &(7
+
+253020*
+1&' &(-
+
+252120*
+1'" '(>
+
+342332*
+1+/ +(>
+
+342333*
+1+B +(Q
+
+342320*
+1+/ +(>
+
+374042*
+10@ 0(S
+
+374332*
+10 0(
+
+374520*
+10 0(
+
+374320*
+10 0(
+
+374732*
+10, 0(;
+
+374920*
+10" 0(#
+
+374720*
+10, 0(;
+
+374020*
+10@ 0(S
+
+374520*
+10T 0(U
+
+374920*
+10W 0(X
+
+375120*
+11 1($
+
+374520*
+11% 1(&
+
+374920*
+11( 1()
+
+37620*
+11, 1(0
+
+37653*
+11, 1(0
+
+542132*
+15S 5(o
+
+545732*
+16 6(!
+
+542120*
+15 5(8
+
+542133*
+15s 5(y
+
+542120*
+15S 5(o
+
+545733*
+16" 6(0
+
+545720*
+16 6(!
+
+545933*
+18 8(&
+
+545920*
+18 8(
+
+612132*
+1H H(/
+
+612120*
+1G G(8
+
+612133*
+1H3 H(9
+
+612120*
+1H H(/
+
+642332*
+1P6 P(E
+
+642333*
+1PI P(X
+
+642320*
+1P6 P(E
+
+672332*
+1UE U(T
+
+675732*
+1V V(!
+
+672320*
+1U U(+
+
+672333*
+1UX U(g
+
+672320*
+1UE U(T
+
+675733*
+1V" V(0
+
+675720*
+1V V(!

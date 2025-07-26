@@ -1,0 +1,1378 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508486789*java2.BÉD
+x
+sconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/hono/HonoConnectionFactory.java2
+
+package4
+:
+5org.eclipse.ditto.connectivity.service.messaging.hono5
+P
+Korg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+HonoConnectionFactory12
+1
++Recovered#typeBindingLDittoExtensionPoint;014
+
+unknown15
+
+
+implements16
+
+
+uses17
+l
+forg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory.SPEC_CONFIG_HONO_TENANT_ID19
+
+field20
+
+	protected21
+ 
+SPEC_CONFIG_HONO_TENANT_ID22
+^
+Xorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory.honoTenantId24
+
+private25
+
+honoTenantId26
+[
+Uorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#<init>()V28
+
+method29
+
+calls30
+∫
+≥org.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#get(LActorSystem;LConfig;)Lorg/eclipse/ditto/connectivity/service/messaging/hono/HonoConnectionFactory;32
+	
+get33
+
+returns34
+)
+#Recovered#typeBindingLActorSystem;036
+
+	has param37
+$
+Recovered#typeBindingLConfig;039
+
+is type40
+]
+Worg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory$ExtensionId42
+
+
+references43
+h
+borg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory$ExtensionId.CONFIG_KEY45
+}
+worg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#getHonoConnection(LConnection;)LConnection;47
+
+getHonoConnection48
+
+
+Connection50
+(
+"Recovered#typeBindingLConnection;052
+n
+horg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#preConversion(LConnection;)V54
+´
+§org.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#combineUriWithCredentials(Ljava/lang/String;LUserPasswordCredentials;)Ljava/lang/String;56
+l
+forg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#getBaseUri()Ljava/net/URI;58
+
+UserPasswordCredentials60
+{
+uorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#getCredentials()LUserPasswordCredentials;62
+k
+eorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#isValidateCertificates()Z64
+|
+vorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#getTrustedCertificates()Ljava/lang/String;66
+É
+}org.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#makeupSpecificConfig(LConnection;)Ljava/util/Map;68
+à
+Åorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#makeupSources(Ljava/util/Collection;)Ljava/util/List;70
+à
+Åorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#makeupTargets(Ljava/util/Collection;)Ljava/util/List;72
+
+preConversion73
+u
+oorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#getHonoTenantId()Ljava/lang/String;75
+
+getHonoTenantId76
+
+
+getBaseUri77
+
+isValidateCertificates78
+
+getTrustedCertificates79
+~
+xorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#getSaslMechanism()LHonoConfig/SaslMechanism;81
+
+getSaslMechanism82
+
+HonoConfig.SaslMechanism84
+(
+"Recovered#typeBindingLHonoConfig;086
+y
+sorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#getBootstrapServerUris()Ljava/util/Set;88
+
+getBootstrapServerUris89
+Ç
+|org.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#getGroupId(Ljava/lang/String;)Ljava/lang/String;91
+
+
+getGroupId92
+
+getCredentials93
+ç
+Üorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#resolveSourceAddress(LHonoAddressAlias;)Ljava/lang/String;95
+
+resolveSourceAddress96
+.
+(Recovered#typeBindingLHonoAddressAlias;098
+é
+Üorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#resolveTargetAddress(LHonoAddressAlias;)Ljava/lang/String;100
+
+resolveTargetAddress101
+ 
+combineUriWithCredentials102
+6
+/Recovered#typeBindingLUserPasswordCredentials;0104
+
+makeupSpecificConfig105
+õ
+ìorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#getAsCommaSeparatedListString(Ljava/util/Collection;)Ljava/lang/String;107
+$
+getAsCommaSeparatedListString108
+
+makeupSources109
+%
+Recovered#typeBindingLSource;0111
+
+makeupTargets112
+%
+Recovered#typeBindingLTarget;0114
+ë
+âorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#resolveSourceAddresses(Ljava/util/Collection;)Ljava/util/Set;116
+
+resolveSourceAddresses117
+û
+ñorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#resolveTargetAddressOrKeepUnresolved(Ljava/lang/String;)Ljava/lang/String;119
++
+$resolveTargetAddressOrKeepUnresolved120
+â
+Åorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#getReplyTargetForSource(LSource;)Ljava/util/Optional;122
+
+getReplyTargetForSource123
+*
+#Recovered#typeBindingLReplyTarget;0125
+~
+worg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#isApplyReplyTarget(Ljava/util/Collection;)Z127
+ç
+Öorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#getReplyTargetHeaderMapping(LReplyTarget;)LHeaderMapping;129
+"
+getReplyTargetHeaderMapping130
+
+HeaderMapping132
+g
+`org.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory$HeaderMappingBuilder134
+ﬁ
+÷org.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory$HeaderMappingBuilder#of(LHeaderMapping;)Lorg/eclipse/ditto/connectivity/service/messaging/hono/HonoConnectionFactory$HeaderMappingBuilder;136
+Å
+zorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#isCommandHonoAddressAlias(Ljava/lang/String;)Z138
+Ç
+{org.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#getSourceHeaderMapping(LSource;)LHeaderMapping;140
+
+getSourceHeaderMapping141
+,
+%Recovered#typeBindingLHeaderMapping;0143
+à
+Äorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#isAdjustSourceHeaderMapping(Ljava/util/Collection;)Z145
+Ç
+{org.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#getTargetHeaderMapping(LTarget;)LHeaderMapping;147
+
+getTargetHeaderMapping148
+å
+Ñorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory#isResponseRequiredHeaderMapping(Ljava/util/Collection;)Z150
+
+isApplyReplyTarget151
+ 
+isCommandHonoAddressAlias152
+"
+isAdjustSourceHeaderMapping153
+&
+isResponseRequiredHeaderMapping154
+,
+%Recovered#typeBindingLFilteredTopic;0156
+$
+Recovered#typeBindingLTopic;0158
+
+Topic160
+
+ExtensionId161
+
+extends162
+
+
+CONFIG_KEY163
+{
+torg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory$ExtensionId#<init>(LExtensionIdConfig;)V165
+0
+)Recovered#typeBindingLExtensionIdConfig;0167
+
+xorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory$ExtensionId#getConfigKey()Ljava/lang/String;169
+
+getConfigKey170
+
+HeaderMappingBuilder171
+
+NotThreadSafe173
+
+annotated by174
+,
+%Recovered#typeBindingLNotThreadSafe;0176
+
+xorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory$HeaderMappingBuilder.headerMappingDefinition178
+
+headerMappingDefinition179
+Ä
+yorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory$HeaderMappingBuilder#<init>(LHeaderMapping;)V181
+	
+of182
+›
+’org.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory$HeaderMappingBuilder#putCorrelationId()Lorg/eclipse/ditto/connectivity/service/messaging/hono/HonoConnectionFactory$HeaderMappingBuilder;184
+
+putCorrelationId185
+ÿ
+–org.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory$HeaderMappingBuilder#putDeviceId()Lorg/eclipse/ditto/connectivity/service/messaging/hono/HonoConnectionFactory$HeaderMappingBuilder;187
+
+putDeviceId188
+È
+·org.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory$HeaderMappingBuilder#putSubject(Ljava/lang/String;)Lorg/eclipse/ditto/connectivity/service/messaging/hono/HonoConnectionFactory$HeaderMappingBuilder;190
+
+
+putSubject191
+˘
+Òorg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory$HeaderMappingBuilder#putEntry(Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/ditto/connectivity/service/messaging/hono/HonoConnectionFactory$HeaderMappingBuilder;193
+
+putEntry194
+~
+worg.eclipse.ditto.connectivity.service.messaging.hono.HonoConnectionFactory$HeaderMappingBuilder#build()LHeaderMapping;196
+
+build197J
+
+1
+12Z
+
+3	
+354jö
+B
+94<
+949529 *
+1Æ Æ(26:3B
+	
+9
+21
+
+
+11
+96
+F
+149?
+14915029 *
+1Ø Ø(26:3B
+	
+9
+25
+
+11
+154
+@
+23:
+232420 *
+1G G(26:3B
+	
+9
+25
+
+
+11
+26
+
+172
+17217315
+F
+106?
+10610729 *
+1√ √(26:3B
+	
+9
+25
+
+11
+108
+F
+139?
+13914029 *
+1Ü Ü(26:3B
+	
+9
+25
+
+11
+141
+C
+55=
+555629 *
+1≤ ≤(26:3B
+	
+9
+25
+
+11
+102
+
+175
+17517615
+
+38
+383915
+B
+61<
+616229 *
+1¨ ¨(26:3B
+	
+9
+21
+
+
+11
+93
+B
+90<
+909129 *
+1™ ™(26:3B
+	
+9
+21
+
+
+11
+92
+@
+31:
+313229 *
+1Y Y(26:3B
+	
+9
+10
+
+
+11
+33
+B
+80<
+808129 *
+1¶ ¶(26:3B
+	
+9
+21
+
+
+11
+82
+
+110
+11011115
+
+13
+131415
+F
+146?
+14614729 *
+1ì ì(26:3B
+	
+9
+25
+
+11
+148
+B
+87<
+878829 *
+1® ®(26:3B
+	
+9
+21
+
+
+11
+89
+F
+137?
+13713829 *
+1ß ß(26:3B
+	
+9
+25
+
+11
+152
+E
+133>
+1331348 *
+1»  »(426:3B
+	
+9
+25
+
+11
+171
+H
+192A
+19219329 *
+1„	 „(2133:3B
+	
+9
+21
+
+11
+194
+F
+118?
+11811929 *
+1Ê Ê(26:3B
+	
+9
+25
+
+11
+120
+
+83
+838415
+
+59
+596015
+
+157
+15715815
+
+142
+14214315
+B
+53<
+535429 *
+1ê ê(26:3B
+	
+9
+21
+
+
+11
+73
+D
+44>
+444520 *
+1∫	 ∫(241:3B
+	
+9
+25
+
+11
+163
+@
+46:
+464729 *
+1q q(26:3B
+	
+9
+10
+
+
+11
+48
+G
+164@
+16416529 *
+1º	 º(241:3B
+	
+9
+25
+
+11
+161
+
+35
+353615
+F
+144?
+14414529 *
+1´ ´(26:3B
+	
+9
+25
+
+11
+153
+B
+41<
+41428 *
+1∏ ∏(*26:3B
+	
+9
+10
+
+11
+161
+F
+121?
+12112229 *
+1Ï Ï(26:3B
+	
+9
+25
+
+11
+123
+H
+183A
+18318429 *
+1‘	 ‘(2133:3B
+	
+9
+21
+
+11
+185
+
+155
+15515615
+G
+168@
+16816929 *
+1¿	 ¿(
+241:3B
+	
+9
+21
+
+11
+170
+B
+65<
+656629 *
+1§ §(26:3B
+	
+9
+21
+
+
+11
+79
+C
+71=
+717229 *
+1‘ ‘(26:3B
+	
+9
+25
+
+11
+112
+
+85
+858615
+
+131
+13113215
+
+97
+979815
+F
+126?
+12612729 *
+1ü ü(26:3B
+	
+9
+25
+
+11
+151
+B
+57<
+575829 *
+1† †(26:3B
+	
+9
+21
+
+
+11
+77
+F
+128?
+12812929 *
+1˙ ˙(26:3B
+	
+9
+25
+
+11
+130
+
+159
+15916015
+
+166
+16616715
+D
+99>
+9910029 *
+1∞ ∞(26:3B
+	
+9
+21
+
+11
+101
+@
+27:
+272829 *
+1L L(26:3B
+	
+9
+21
+
+
+11
+12
+
+124
+12412515
+C
+69=
+697029 *
+1… …(26:3B
+	
+9
+25
+
+11
+109
+
+113
+11311415
+
+49
+495015
+
+51
+515215
+F
+115?
+11511629 *
+1ﬁ ﬁ(26:3B
+	
+9
+25
+
+11
+117
+B
+74<
+747529 *
+1ô ô(26:3B
+	
+9
+21
+
+
+11
+76
+C
+67=
+676829 *
+1∏ ∏(26:3B
+	
+9
+25
+
+11
+105
+H
+189A
+18919029 *
+1ﬁ	 ﬁ(2133:3B
+	
+9
+21
+
+11
+191
+@
+18:
+181920 *
+1E E(26:3B
+	
+9
+21
+
+
+11
+22
+B
+63<
+636429 *
+1¢ ¢(26:3B
+	
+9
+21
+
+
+11
+78
+H
+177A
+17717820 *
+1 	  (2133:3B
+	
+9
+25
+
+11
+179
+H
+186A
+18618729 *
+1Ÿ	 Ÿ(2133:3B
+	
+9
+21
+
+11
+188
+H
+195A
+19519629 *
+1Ë	 Ë(2133:3B
+	
+9
+21
+
+11
+197
+H
+135A
+13513629 *
+1–	 –(2133:3B
+	
+9
+21
+
+11
+182
+H
+180A
+18018129 *
+1Ã	 Ã(2133:3B
+	
+9
+25
+
+11
+171
+
+103
+10310415
+9
+64
+678 *
+1@ @(,:3B
+	
+9
+10
+
+
+11
+12rß,
+
+61316*
+1@8 @(K
+
+61317*
+1@8 @(K
+
+27630*
+1L L($
+
+31634*
+1Y Y((
+
+313537*
+1Y3 Y(>
+
+313837*
+1YR Y(X
+
+31617*
+1Y Y((
+
+313540*
+1Y? Y(J
+
+313517*
+1Y3 Y(>
+
+313840*
+1YY Y(_
+
+313817*
+1YR Y(X
+
+31617*
+1_N _(c
+
+314117*
+1a! a(,
+
+314143*
+1a! a(,
+
+314443*
+1a- a(7
+
+314117*
+1b b($
+
+314143*
+1b b($
+
+314130*
+1b& b()
+
+464934*
+1q q(
+
+465137*
+1q/ q(9
+
+464917*
+1q q(
+
+465140*
+1q: q(D
+
+465117*
+1q/ q(9
+
+462343*
+1z	 z(
+
+461843*
+1{ {(9
+
+46643*
+1}	 }(
+
+465330*
+1}	 }(
+
+46643*
+1Ä Ä(/
+
+465530*
+1Ä Ä(/
+
+46643*
+1Ä? Ä(I
+
+465730*
+1Ä? Ä(I
+
+465934*
+1ÄN Ä(\
+
+46643*
+1ÄN Ä(\
+
+466130*
+1ÄN Ä(\
+
+46643*
+1Å& Å(<
+
+466330*
+1Å& Å(<
+
+46643*
+1Ç& Ç(<
+
+466530*
+1Ç& Ç(<
+
+46643*
+1É! É(5
+
+466730*
+1É! É(5
+
+46643*
+1Ñ Ñ(*
+
+466930*
+1Ñ Ñ(*
+
+46643*
+1Ö Ö(*
+
+467130*
+1Ö Ö(*
+
+535137*
+1ê( ê(2
+
+535140*
+1ê3 ê(A
+
+535117*
+1ê( ê(2
+
+742343*
+1ö ö(
+
+742343*
+1ù ù(
+
+808334*
+1¶ ¶("
+
+808517*
+1¶ ¶("
+
+808317*
+1¶# ¶(0
+
+615934*
+1¨ ¨(/
+
+615917*
+1¨ ¨(/
+
+949737*
+1Æ4 Æ(D
+
+949740*
+1ÆE Æ(U
+
+949717*
+1Æ4 Æ(D
+
+999737*
+1∞4 ∞(D
+
+999740*
+1∞E ∞(U
+
+999717*
+1∞4 ∞(D
+
+5510337*
+1≤F ≤(]
+
+5510340*
+1≤^ ≤(i
+
+5510317*
+1≤F ≤(]
+
+675137*
+1∏< ∏(F
+
+675140*
+1∏G ∏(Q
+
+675117*
+1∏< ∏(F
+
+67643*
+1π π(!
+
+679030*
+1π π(!
+
+678334*
+1Ω1 Ω(A
+
+67643*
+1Ω1 Ω(A
+
+678030*
+1Ω1 Ω(A
+
+67643*
+1æ% æ(B
+
+6710630*
+1æ% æ(B
+
+67643*
+1æC æ(Y
+
+678730*
+1æC æ(Y
+
+6911017*
+1   (
+
+6911017*
+1 9  (?
+
+7111317*
+1‘ ‘(
+
+7111317*
+1‘9 ‘(?
+
+115617*
+1· ·("
+
+115643*
+1· ·("
+
+118617*
+1Ë Ë(
+
+118643*
+1Ë Ë(
+
+12111037*
+1ÏA Ï(G
+
+12112417*
+1Ï Ï(!
+
+12111040*
+1ÏH Ï(N
+
+12111017*
+1ÏA Ï(G
+
+12112417*
+1Ì Ì(#
+
+121643*
+1Ó Ó(
+
+12112630*
+1Ó Ó(
+
+12813134*
+1˙ ˙(!
+
+12812437*
+1˙D ˙(O
+
+12813117*
+1˙ ˙(!
+
+12812440*
+1˙P ˙([
+
+12812417*
+1˙D ˙(O
+
+12813334*
+1˚* ˚(>
+
+12813343*
+1˚* ˚(>
+
+12813530*
+1˚? ˚(A
+
+12813343*
+1˚* ˚(>
+
+12813317*
+1˚* ˚(>
+
+12813343*
+1˚* ˚(>
+
+128643*
+1˝ ˝(&
+
+12813730*
+1˝ ˝(&
+
+13913134*
+1Ü Ü(!
+
+13911037*
+1Ü? Ü(E
+
+13913117*
+1Ü Ü(!
+
+13911040*
+1ÜF Ü(L
+
+13911017*
+1Ü? Ü(E
+
+13914240*
+1á á(#
+
+13914217*
+1á á(
+
+139643*
+1à à((
+
+13914430*
+1à à((
+
+13913334*
+1â â(*
+
+13913343*
+1â â(*
+
+13913530*
+1â+ â(-
+
+13913343*
+1â â(*
+
+13913317*
+1â â(*
+
+13913343*
+1â â(*
+
+14613134*
+1ì ì(!
+
+14611337*
+1ì? ì(E
+
+14613117*
+1ì ì(!
+
+14611340*
+1ìF ì(L
+
+14611317*
+1ì? ì(E
+
+14613334*
+1î* î(>
+
+14613343*
+1î* î(>
+
+14613530*
+1î? î(A
+
+14613343*
+1î* î(>
+
+14613317*
+1î* î(>
+
+14613343*
+1î* î(>
+
+146643*
+1ô ô(,
+
+14614930*
+1ô ô(,
+
+14915517*
+1ØM Ø(Z
+
+14915717*
+1∞ ∞(
+
+14915940*
+1∞1 ∞(6
+
+14915717*
+1± ±(
+
+14915940*
+1±1 ±(6
+
+4113162*
+1∏3 ∏(F
+
+411317*
+1∏3 ∏(F
+
+411317*
+1∏G ∏(R
+
+41617*
+1∏S ∏(h
+
+16416637*
+1º# º(4
+
+1644130*
+1º º(
+
+16416640*
+1ºL º(]
+
+16416617*
+1º# º(4
+
+164617*
+1º5 º(J
+
+1684443*
+1¬ ¬(
+
+133172174*
+1« «(
+
+13317517*
+1« «(
+
+18014237*
+1Ã, Ã(9
+
+18013330*
+1Ã Ã(%
+
+18014240*
+1Ã: Ã(O
+
+18014217*
+1Ã, Ã(9
+
+18017743*
+1Õ Õ($
+
+13513334*
+1– –($
+
+13514237*
+1–. –(;
+
+13513317*
+1– –($
+
+13513343*
+1– –($
+
+13514240*
+1–< –(Q
+
+13514217*
+1–. –(;
+
+13513330*
+1— —(,
+
+18313334*
+1‘	 ‘(
+
+18313317*
+1‘	 ‘(
+
+18313343*
+1‘	 ‘(
+
+18317743*
+1’ ’($
+
+18317743*
+1’ ’($
+
+18313317*
+1÷ ÷(
+
+18313343*
+1÷ ÷(
+
+18613334*
+1Ÿ	 Ÿ(
+
+18613317*
+1Ÿ	 Ÿ(
+
+18613343*
+1Ÿ	 Ÿ(
+
+18617743*
+1⁄ ⁄($
+
+18617743*
+1⁄ ⁄($
+
+18613317*
+1€ €(
+
+18613343*
+1€ €(
+
+18913334*
+1ﬁ	 ﬁ(
+
+18913317*
+1ﬁ	 ﬁ(
+
+18913343*
+1ﬁ	 ﬁ(
+
+18917743*
+1ﬂ ﬂ($
+
+18917743*
+1ﬂ ﬂ($
+
+18913317*
+1‡ ‡(
+
+18913343*
+1‡ ‡(
+
+19213334*
+1„	 „(
+
+19213317*
+1„	 „(
+
+19213343*
+1„	 „(
+
+19217743*
+1‰ ‰($
+
+19217743*
+1‰ ‰($
+
+19213317*
+1Â Â(
+
+19213343*
+1Â Â(
+
+19513134*
+1Ë	 Ë(
+
+19513117*
+1Ë	 Ë(
+
+19517743*
+1È> È(U

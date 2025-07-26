@@ -1,0 +1,864 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508711015*java2.BÞ
+Y
+Tjson-cbor/src/main/java/org/eclipse/ditto/json/cbor/JacksonSerializationContext.java2
+
+package4
+ 
+org.eclipse.ditto.json.cbor5
+<
+7org.eclipse.ditto.json.cbor.JacksonSerializationContext7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+!
+JacksonSerializationContext12
+2
+,Recovered#typeBindingLSerializationContext;014
+
+unknown15
+
+
+implements16
+
+
+uses17
+N
+Horg.eclipse.ditto.json.cbor.JacksonSerializationContext.jacksonGenerator19
+
+field20
+
+private21
+
+jacksonGenerator22
+
+JsonGenerator24
+
+is type25
+J
+Dorg.eclipse.ditto.json.cbor.JacksonSerializationContext.outputStream27
+
+outputStream28
+V
+Porg.eclipse.ditto.json.cbor.JacksonSerializationContext$ControllableOutputStream30
+
+
+references31
+…
+org.eclipse.ditto.json.cbor.JacksonSerializationContext#<init>(Lcom/fasterxml/jackson/core/JsonFactory;Ljava/io/OutputStream;)V33
+
+method34
++
+%Recovered#typeBindingLcom/fasterxml;036
+
+	has param37
+
+calls38
+]
+Worg.eclipse.ditto.json.cbor.JacksonSerializationContext#<init>(Ljava/io/OutputStream;)V40
+
+	protected41
+„
+~org.eclipse.ditto.json.cbor.JacksonSerializationContext#<init>(Lcom/fasterxml/jackson/core/JsonFactory;Ljava/nio/ByteBuffer;)V43
+b
+\org.eclipse.ditto.json.cbor.JacksonSerializationContext#getJacksonGenerator()LJsonGenerator;45
+
+getJacksonGenerator46
+
+returns47
+F
+@org.eclipse.ditto.json.cbor.JacksonSerializationContext#close()V49
+
+close50
+F
+@org.eclipse.ditto.json.cbor.JacksonSerializationContext#flush()V52
+
+flush53
+U
+Oorg.eclipse.ditto.json.cbor.JacksonSerializationContext#writeCachedElement([B)V55
+
+writeCachedElement56
+a
+[org.eclipse.ditto.json.cbor.JacksonSerializationContext$ControllableOutputStream#write([B)V58
+f
+`org.eclipse.ditto.json.cbor.JacksonSerializationContext#informJacksonThatOneElementWasWritten()V60
+J
+Dorg.eclipse.ditto.json.cbor.JacksonSerializationContext#writeNull()V62
+
+	writeNull63
+N
+Horg.eclipse.ditto.json.cbor.JacksonSerializationContext#writeBoolean(Z)V65
+
+writeBoolean66
+M
+Gorg.eclipse.ditto.json.cbor.JacksonSerializationContext#writeNumber(F)V68
+
+writeNumber69
+M
+Gorg.eclipse.ditto.json.cbor.JacksonSerializationContext#writeNumber(D)V71
+M
+Gorg.eclipse.ditto.json.cbor.JacksonSerializationContext#writeNumber(J)V73
+M
+Gorg.eclipse.ditto.json.cbor.JacksonSerializationContext#writeNumber(I)V75
+^
+Xorg.eclipse.ditto.json.cbor.JacksonSerializationContext#writeString(Ljava/lang/String;)V77
+
+writeString78
+a
+[org.eclipse.ditto.json.cbor.JacksonSerializationContext#writeFieldName(Ljava/lang/String;)V80
+
+writeFieldName81
++
+%informJacksonThatOneElementWasWritten82
+a
+[org.eclipse.ditto.json.cbor.JacksonSerializationContext$ControllableOutputStream#disable()V84
+`
+Zorg.eclipse.ditto.json.cbor.JacksonSerializationContext$ControllableOutputStream#enable()V86
+
+ControllableOutputStream87
+]
+Worg.eclipse.ditto.json.cbor.JacksonSerializationContext$ControllableOutputStream.target89
+
+target90
+^
+Xorg.eclipse.ditto.json.cbor.JacksonSerializationContext$ControllableOutputStream.enabled92
+
+enabled93
+v
+porg.eclipse.ditto.json.cbor.JacksonSerializationContext$ControllableOutputStream#<init>(Ljava/io/OutputStream;)V95
+
+enable96
+
+disable97
+`
+Zorg.eclipse.ditto.json.cbor.JacksonSerializationContext$ControllableOutputStream#write(I)V99
+
+write100
+d
+]org.eclipse.ditto.json.cbor.JacksonSerializationContext$ControllableOutputStream#write([BII)V102
+`
+Yorg.eclipse.ditto.json.cbor.JacksonSerializationContext$ControllableOutputStream#flush()V104
+`
+Yorg.eclipse.ditto.json.cbor.JacksonSerializationContext$ControllableOutputStream#close()V106J
+
+1
+12Z
+
+3	
+354jž
+A
+29;
+29308 *
+1Ž Ž(026:3B
+	
+9
+41
+
+
+11
+87
+C
+91=
+919220 *
+1‘	 ‘(229:3B
+	
+9
+21
+
+
+11
+93
+@
+18:
+181920 *
+1 (26:3B
+	
+9
+21
+
+
+11
+22
+@
+39:
+394034 *
+1. .( 26:3B
+	
+9
+41
+
+
+11
+12
+@
+61:
+616234 *
+1Z Z(26:3B
+	
+9
+10
+
+
+11
+63
+D
+98>
+989934 *
+1Ÿ	 Ÿ(
+229:3B
+	
+9
+10
+
+11
+100
+@
+42:
+424334 *
+1: :(26:3B
+	
+9
+10
+
+
+11
+12
+@
+54:
+545534 *
+1S S(26:3B
+	
+9
+10
+
+
+11
+56
+D
+57>
+575834 *
+1©	 ©(
+229:3B
+	
+9
+10
+
+11
+100
+@
+51:
+515234 *
+1N N(26:3B
+	
+9
+10
+
+
+11
+53
+C
+85=
+858634 *
+1—	 —(229:3B
+	
+9
+41
+
+
+11
+96
+
+35
+353615
+
+13
+131415
+B
+59<
+596034 *
+1‚ ‚(26:3B
+	
+9
+21
+
+
+11
+82
+9
+64
+678 *
+1 (/:3B
+	
+9
+10
+
+
+11
+12
+@
+48:
+484934 *
+1F F(26:3B
+	
+9
+10
+
+
+11
+50
+
+23
+232415
+@
+32:
+323334 *
+1( ((26:3B
+	
+9
+10
+
+
+11
+12
+C
+83=
+838434 *
+1›	 ›(229:3B
+	
+9
+41
+
+
+11
+97
+@
+64:
+646534 *
+1_ _(26:3B
+	
+9
+10
+
+
+11
+66
+C
+88=
+888920 *
+1	 (229:3B
+	
+9
+21
+
+
+11
+90
+F
+103?
+10310434 *
+1®	 ®(
+229:3B
+	
+9
+10
+
+
+11
+53
+@
+76:
+767734 *
+1x x(26:3B
+	
+9
+10
+
+
+11
+78
+@
+44:
+444534 *
+1? ?(26:3B
+	
+9
+41
+
+
+11
+46
+@
+72:
+727334 *
+1n n(26:3B
+	
+9
+10
+
+
+11
+69
+@
+74:
+747534 *
+1s s(26:3B
+	
+9
+10
+
+
+11
+69
+C
+94=
+949534 *
+1“	 “(!229:3B
+	
+9
+41
+
+
+11
+87
+@
+79:
+798034 *
+1} }(26:3B
+	
+9
+10
+
+
+11
+81
+@
+26:
+262720 *
+1 (26:3B
+	
+9
+21
+
+
+11
+28
+@
+67:
+676834 *
+1d d(26:3B
+	
+9
+10
+
+
+11
+69
+@
+70:
+707134 *
+1i i(26:3B
+	
+9
+10
+
+
+11
+69
+G
+101@
+10110234 *
+1¤	 ¤(
+229:3B
+	
+9
+10
+
+11
+100
+F
+105?
+10510634 *
+1³	 ³(
+229:3B
+	
+9
+10
+
+
+11
+50r½
+
+61316*
+1; (O
+
+61317*
+1; (O
+
+182325*
+1 ( 
+
+182317*
+1 ( 
+
+182317*
+1! (1
+
+262925*
+1 (+
+
+262917*
+1 (+
+
+262931*
+1 (+
+
+262917*
+1, (8
+
+323537*
+1(. ((1
+
+32638*
+1( (('
+
+323525*
+1(U ((c
+
+323517*
+1(2 ((;
+
+323517*
+1(< ((C
+
+323517*
+1(D ((H
+
+323517*
+1(I ((T
+
+32617*
+1*	 *(
+
+32631*
+1*	 *(
+
+322917*
+1* *(
+
+322631*
+1* *(
+
+322938*
+1*! *(9
+
+322317*
+1+	 +(
+
+321831*
+1+	 +(
+
+32617*
+1+; +(?
+
+32631*
+1+; +(?
+
+322917*
+1+@ +(L
+
+322631*
+1+@ +(L
+
+39638*
+1. .( 
+
+39631*
+1/	 /(
+
+39638*
+1/	 /(
+
+39638*
+1/	 /(
+
+423537*
+1:. :(1
+
+42638*
+1: :('
+
+423525*
+1:U :(c
+
+423517*
+1:2 :(;
+
+423517*
+1:< :(C
+
+423517*
+1:D :(H
+
+423517*
+1:I :(T
+
+42631*
+1<	 <(
+
+42638*
+1<	 <(
+
+42638*
+1<	 <(
+
+442347*
+1? ?(
+
+442317*
+1? ?(
+
+442317*
+1@ @( 
+
+441831*
+1@ @( 
+
+481831*
+1H	 H(
+
+482317*
+1H	 H(
+
+481831*
+1H	 H(
+
+511831*
+1P	 P(
+
+512317*
+1P	 P(
+
+511831*
+1P	 P(
+
+54631*
+1U	 U(
+
+545138*
+1U	 U(
+
+542931*
+1V	 V(
+
+545738*
+1V V(
+
+542631*
+1V	 V(
+
+542917*
+1V	 V(
+
+542631*
+1V	 V(
+
+54631*
+1W	 W(.
+
+545938*
+1W	 W(.
+
+611831*
+1\	 \(
+
+612317*
+1\	 \(
+
+611831*
+1\	 \(
+
+641831*
+1a	 a(
+
+642317*
+1a	 a(
+
+641831*
+1a	 a(
+
+671831*
+1f	 f(
+
+672317*
+1f	 f(
+
+671831*
+1f	 f(
+
+701831*
+1k	 k(
+
+702317*
+1k	 k(
+
+701831*
+1k	 k(
+
+721831*
+1p	 p(
+
+722317*
+1p	 p(
+
+721831*
+1p	 p(
+
+741831*
+1u	 u(
+
+742317*
+1u	 u(
+
+741831*
+1u	 u(
+
+761831*
+1z	 z(
+
+762317*
+1z	 z(
+
+761831*
+1z	 z(
+
+791831*
+1	 (
+
+792317*
+1	 (
+
+791831*
+1	 (
+
+592931*
+1…	 …(
+
+598338*
+1… …(
+
+592631*
+1…	 …(
+
+592917*
+1…	 …(
+
+592631*
+1…	 …(
+
+591831*
+1†	 †(
+
+592317*
+1†	 †(
+
+591831*
+1†	 †(
+
+591831*
+1‡	 ‡(
+
+592317*
+1‡	 ‡(
+
+591831*
+1‡	 ‡(
+
+592931*
+1ˆ	 ˆ(
+
+598538*
+1ˆ ˆ(
+
+592631*
+1ˆ	 ˆ(
+
+592917*
+1ˆ	 ˆ(
+
+592631*
+1ˆ	 ˆ(
+
+942938*
+1“	 “(!
+
+942917*
+1” ”(
+
+942931*
+1” ”(
+
+948831*
+1” ”(
+
+852917*
+1˜ ˜(
+
+852931*
+1˜ ˜(
+
+859131*
+1˜ ˜(
+
+832917*
+1œ œ(
+
+832931*
+1œ œ(
+
+839131*
+1œ œ(
+
+989131*
+1¡ ¡(
+
+988831*
+1¡ ¡( 
+
+988831*
+1¡ ¡( 
+
+1019131*
+1¦ ¦(
+
+1018831*
+1¦ ¦( 
+
+1018831*
+1¦ ¦( 
+
+579131*
+1« «(
+
+578831*
+1« «( 
+
+578831*
+1« «( 
+
+1038831*
+1° °(
+
+1038831*
+1° °(
+
+1058831*
+1µ µ(
+
+1058831*
+1µ µ(

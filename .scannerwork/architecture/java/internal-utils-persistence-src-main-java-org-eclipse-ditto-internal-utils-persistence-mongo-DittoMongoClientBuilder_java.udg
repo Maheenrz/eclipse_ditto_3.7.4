@@ -1,0 +1,665 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508707001*java2.Bò.
+}
+xinternal/utils/persistence/src/main/java/org/eclipse/ditto/internal/utils/persistence/mongo/DittoMongoClientBuilder.java2
+
+package4
+7
+2org.eclipse.ditto.internal.utils.persistence.mongo5
+O
+Jorg.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder7
+
+	interface8
+
+access9
+
+public10
+
+simple name11
+
+DittoMongoClientBuilder12
+
+NotThreadSafe14
+
+unknown15
+
+annotated by16
++
+%Recovered#typeBindingLNotThreadSafe;018
+
+
+uses19
+j
+dorg.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$ConnectionCoordinatesStep21
+
+ConnectionCoordinatesStep22
+Ú
+Îorg.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$ConnectionCoordinatesStep#connectionString(Ljava/lang/String;)Lorg/eclipse/ditto/internal/utils/persistence/mongo/DittoMongoClientBuilder$GeneralPropertiesStep;24
+
+method25
+
+connectionString26
+f
+`org.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$GeneralPropertiesStep28
+
+returns29
+
+
+references30
+Û
+Ïorg.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$ConnectionCoordinatesStep#hostnameAndPort(Ljava/lang/CharSequence;I)Lorg/eclipse/ditto/internal/utils/persistence/mongo/DittoMongoClientBuilder$DatabaseNameStep;32
+
+hostnameAndPort33
+a
+[org.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$DatabaseNameStep35
+
+DatabaseNameStep36
+Ú
+Îorg.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$DatabaseNameStep#defaultDatabaseName(Ljava/lang/CharSequence;)Lorg/eclipse/ditto/internal/utils/persistence/mongo/DittoMongoClientBuilder$GeneralPropertiesStep;38
+
+defaultDatabaseName39
+
+GeneralPropertiesStep40
+÷
+œorg.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$GeneralPropertiesStep#enableSsl(Z)Lorg/eclipse/ditto/internal/utils/persistence/mongo/DittoMongoClientBuilder$GeneralPropertiesStep;42
+
+	enableSsl43
+Ï
+Âorg.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$GeneralPropertiesStep#maxQueryTime(Ljava/time/Duration;)Lorg/eclipse/ditto/internal/utils/persistence/mongo/DittoMongoClientBuilder$GeneralPropertiesStep;45
+
+maxQueryTime46
+
+Nullable48
+&
+ Recovered#typeBindingLNullable;050
+Ë
+·org.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$GeneralPropertiesStep#documentDbCompatibilityMode(Z)Lorg/eclipse/ditto/internal/utils/persistence/mongo/DittoMongoClientBuilder$GeneralPropertiesStep;52
+!
+documentDbCompatibilityMode53
+‚
+€org.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$GeneralPropertiesStep#connectionPoolMinSize(I)Lorg/eclipse/ditto/internal/utils/persistence/mongo/DittoMongoClientBuilder$GeneralPropertiesStep;55
+
+connectionPoolMinSize56
+‚
+€org.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$GeneralPropertiesStep#connectionPoolMaxSize(I)Lorg/eclipse/ditto/internal/utils/persistence/mongo/DittoMongoClientBuilder$GeneralPropertiesStep;58
+
+connectionPoolMaxSize59
+˘
+Úorg.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$GeneralPropertiesStep#connectionPoolMaxIdleTime(Ljava/time/Duration;)Lorg/eclipse/ditto/internal/utils/persistence/mongo/DittoMongoClientBuilder$GeneralPropertiesStep;61
+
+connectionPoolMaxIdleTime62
+˘
+Úorg.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$GeneralPropertiesStep#connectionPoolMaxWaitTime(Ljava/time/Duration;)Lorg/eclipse/ditto/internal/utils/persistence/mongo/DittoMongoClientBuilder$GeneralPropertiesStep;64
+
+connectionPoolMaxWaitTime65
+Ô
+Ëorg.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$GeneralPropertiesStep#addCommandListener(LCommandListener;)Lorg/eclipse/ditto/internal/utils/persistence/mongo/DittoMongoClientBuilder$GeneralPropertiesStep;67
+
+addCommandListener68
+-
+'Recovered#typeBindingLCommandListener;070
+
+	has param71
+
+is type72
+ﬁ
+◊org.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$GeneralPropertiesStep#enableJmxListener(Z)Lorg/eclipse/ditto/internal/utils/persistence/mongo/DittoMongoClientBuilder$GeneralPropertiesStep;74
+
+enableJmxListener75
+˝
+ˆorg.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$GeneralPropertiesStep#addConnectionPoolListener(LConnectionPoolListener;)Lorg/eclipse/ditto/internal/utils/persistence/mongo/DittoMongoClientBuilder$GeneralPropertiesStep;77
+
+addConnectionPoolListener78
+4
+.Recovered#typeBindingLConnectionPoolListener;080
+Ì
+Êorg.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$GeneralPropertiesStep#setReadPreference(LReadPreference;)Lorg/eclipse/ditto/internal/utils/persistence/mongo/DittoMongoClientBuilder$GeneralPropertiesStep;82
+
+setReadPreference83
+,
+&Recovered#typeBindingLReadPreference;085
+Á
+‡org.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$GeneralPropertiesStep#setReadConcern(LReadConcern;)Lorg/eclipse/ditto/internal/utils/persistence/mongo/DittoMongoClientBuilder$GeneralPropertiesStep;87
+
+setReadConcern88
+)
+#Recovered#typeBindingLReadConcern;090
+È
+‚org.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$GeneralPropertiesStep#setWriteConcern(LWriteConcern;)Lorg/eclipse/ditto/internal/utils/persistence/mongo/DittoMongoClientBuilder$GeneralPropertiesStep;92
+
+setWriteConcern93
+*
+$Recovered#typeBindingLWriteConcern;095
+€
+‘org.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$GeneralPropertiesStep#setRetryWrites(Z)Lorg/eclipse/ditto/internal/utils/persistence/mongo/DittoMongoClientBuilder$GeneralPropertiesStep;97
+
+setRetryWrites98
+Å
+zorg.eclipse.ditto.internal.utils.persistence.mongo.DittoMongoClientBuilder$GeneralPropertiesStep#build()LDittoMongoClient;100
+
+build101
+
+DittoMongoClient103J
+
+1
+12Z
+
+3	
+354jï
+
+79
+798015
+A
+23;
+232425 *
+1/	 /(220:3B
+	
+9
+10
+
+
+11
+26
+
+102
+10210315
+A
+41;
+414225 *
+1[	 [(227:3B
+	
+9
+10
+
+
+11
+43
+A
+57;
+575825 *
+1	 (227:3B
+	
+9
+10
+
+
+11
+59
+
+13
+131415
+C
+60=
+606125 *
+1à	 à(227:3B
+	
+9
+10
+
+
+11
+62
+
+69
+697015
+C
+73=
+737425 *
+1§	 §(227:3B
+	
+9
+10
+
+
+11
+75
+9
+64
+678 *
+1 ():3B
+	
+9
+10
+
+
+11
+12
+
+89
+899015
+
+17
+171815
+
+84
+848515
+
+49
+495015
+A
+31;
+313225 *
+19	 9(220:3B
+	
+9
+10
+
+
+11
+33
+?
+349
+34358 *
+1A A(26:3B
+	
+9
+10
+
+
+11
+36
+C
+81=
+818225 *
+1¥	 ¥(227:3B
+	
+9
+10
+
+
+11
+83
+A
+44;
+444525 *
+1d	 d(227:3B
+	
+9
+10
+
+
+11
+46
+E
+99?
+9910025 *
+1‘	 ‘(227:3B
+	
+9
+10
+
+11
+101
+?
+279
+27288 *
+1S S($26:3B
+	
+9
+10
+
+
+11
+40
+C
+86=
+868725 *
+1º	 º(227:3B
+	
+9
+10
+
+
+11
+88
+
+94
+949515
+C
+91=
+919225 *
+1ƒ	 ƒ(227:3B
+	
+9
+10
+
+
+11
+93
+A
+37;
+373825 *
+1K	 K(234:3B
+	
+9
+10
+
+
+11
+39
+C
+96=
+969725 *
+1Ã	 Ã(227:3B
+	
+9
+10
+
+
+11
+98
+C
+66=
+666725 *
+1ú	 ú(227:3B
+	
+9
+10
+
+
+11
+68
+C
+63=
+636425 *
+1î	 î(227:3B
+	
+9
+10
+
+
+11
+65
+A
+54;
+545525 *
+1u	 u(227:3B
+	
+9
+10
+
+
+11
+56
+C
+76=
+767725 *
+1¨	 ¨(227:3B
+	
+9
+10
+
+
+11
+78
+?
+209
+20218 *
+1% %((26:3B
+	
+9
+10
+
+
+11
+22
+A
+51;
+515225 *
+1l	 l(227:3B
+	
+9
+10
+
+
+11
+53
+
+47
+474815rÜ
+
+61316*
+1 (
+
+61719*
+1 (
+
+201316*
+1$ $(
+
+201719*
+1$ $(
+
+232729*
+1/	 /(
+
+232719*
+1/	 /(
+
+232730*
+1/	 /(
+
+313429*
+19	 9(
+
+313419*
+19	 9(
+
+313430*
+19	 9(
+
+341316*
+1@ @(
+
+341719*
+1@ @(
+
+372729*
+1K	 K(
+
+372719*
+1K	 K(
+
+372730*
+1K	 K(
+
+271316*
+1R R(
+
+271719*
+1R R(
+
+412729*
+1[	 [(
+
+412719*
+1[	 [(
+
+412730*
+1[	 [(
+
+442729*
+1d	 d(
+
+442719*
+1d	 d(
+
+442730*
+1d	 d(
+
+444716*
+1d, d(-
+
+444919*
+1d- d(5
+
+512729*
+1l	 l(
+
+512719*
+1l	 l(
+
+512730*
+1l	 l(
+
+542729*
+1u	 u(
+
+542719*
+1u	 u(
+
+542730*
+1u	 u(
+
+572729*
+1	 (
+
+572719*
+1	 (
+
+572730*
+1	 (
+
+602729*
+1à	 à(
+
+602719*
+1à	 à(
+
+602730*
+1à	 à(
+
+632729*
+1î	 î(
+
+632719*
+1î	 î(
+
+632730*
+1î	 î(
+
+662729*
+1ú	 ú(
+
+666971*
+1ú< ú(K
+
+662719*
+1ú	 ú(
+
+662730*
+1ú	 ú(
+
+666972*
+1úL ú([
+
+664716*
+1ú2 ú(3
+
+664919*
+1ú3 ú(;
+
+666919*
+1ú< ú(K
+
+732729*
+1§	 §(
+
+732719*
+1§	 §(
+
+732730*
+1§	 §(
+
+762729*
+1¨	 ¨(
+
+767971*
+1¨C ¨(Y
+
+762719*
+1¨	 ¨(
+
+762730*
+1¨	 ¨(
+
+767972*
+1¨Z ¨(p
+
+764716*
+1¨9 ¨(:
+
+764919*
+1¨: ¨(B
+
+767919*
+1¨C ¨(Y
+
+812729*
+1¥	 ¥(
+
+818471*
+1¥1 ¥(?
+
+812719*
+1¥	 ¥(
+
+812730*
+1¥	 ¥(
+
+818472*
+1¥@ ¥(N
+
+818419*
+1¥1 ¥(?
+
+862729*
+1º	 º(
+
+868971*
+1º. º(9
+
+862719*
+1º	 º(
+
+862730*
+1º	 º(
+
+868972*
+1º: º(E
+
+868919*
+1º. º(9
+
+912729*
+1ƒ	 ƒ(
+
+919471*
+1ƒ/ ƒ(;
+
+912719*
+1ƒ	 ƒ(
+
+912730*
+1ƒ	 ƒ(
+
+919472*
+1ƒ< ƒ(H
+
+919419*
+1ƒ/ ƒ(;
+
+962729*
+1Ã	 Ã(
+
+962719*
+1Ã	 Ã(
+
+962730*
+1Ã	 Ã(
+
+9910229*
+1‘	 ‘(
+
+9910219*
+1‘	 ‘(

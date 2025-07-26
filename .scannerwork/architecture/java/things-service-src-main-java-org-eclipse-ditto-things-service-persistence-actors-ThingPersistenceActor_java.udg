@@ -1,0 +1,1488 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508787207*java2.B¡:
+p
+kthings/service/src/main/java/org/eclipse/ditto/things/service/persistence/actors/ThingPersistenceActor.java2
+
+package4
+8
+3org.eclipse.ditto.things.service.persistence.actors5
+N
+Iorg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+ThingPersistenceActor12
+6
+0Recovered#typeBindingLAbstractPersistenceActor;014
+
+unknown15
+
+extends16
+
+
+uses17
+%
+Recovered#typeBindingLCommand;019
+#
+Recovered#typeBindingLThing;021
+%
+Recovered#typeBindingLThingId;023
+(
+"Recovered#typeBindingLThingEvent;025
+e
+_org.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor.PERSISTENCE_ID_PREFIX27
+
+field28
+
+	protected29
+
+PERSISTENCE_ID_PREFIX30
+a
+[org.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor.JOURNAL_PLUGIN_ID32
+
+JOURNAL_PLUGIN_ID33
+b
+\org.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor.SNAPSHOT_PLUGIN_ID35
+
+SNAPSHOT_PLUGIN_ID36
+]
+Worg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor.ACK_EXTRACTOR38
+
+private39
+
+ACK_EXTRACTOR40
+
+AckExtractor42
+
+is type43
+[
+Uorg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor.thingConfig45
+
+thingConfig46
+
+ThingConfig48
+^
+Xorg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor.distributedPub50
+
+distributedPub51
+
+DistributedPub53
+f
+`org.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor.searchShardRegionProxy55
+
+searchShardRegionProxy56
+
+ActorRef58
+
+Nullable60
+
+annotated by61
+&
+ Recovered#typeBindingLNullable;063
+r
+lorg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor.eventPreDefinedExtraFieldsEnricher65
+(
+"eventPreDefinedExtraFieldsEnricher66
+#
+PreDefinedExtraFieldsEnricher68
+t
+norg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor.messagePreDefinedExtraFieldsEnricher70
+*
+$messagePreDefinedExtraFieldsEnricher71
+ß
+†org.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#<init>(LThingId;LMongoReadJournal;LDistributedPub;LActorRef;LPolicyEnforcerProvider;)V73
+
+method74
+
+	has param75
+.
+(Recovered#typeBindingLMongoReadJournal;077
+,
+&Recovered#typeBindingLDistributedPub;079
+&
+ Recovered#typeBindingLActorRef;081
+4
+.Recovered#typeBindingLPolicyEnforcerProvider;083
+
+calls84
+/
+)Recovered#typeBindingLDittoThingsConfig;086
+
+
+references87
+¨
+•org.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#props(LThingId;LMongoReadJournal;LDistributedPub;LActorRef;LPolicyEnforcerProvider;)LProps;89
+
+props90
+
+Props92
+
+returns93
+u
+oorg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#onQuery(LCommand;LWithDittoHeaders;)V95
+
+onQuery96
+.
+(Recovered#typeBindingLWithDittoHeaders;098
+Ç
+{org.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#doOnQuery(LCommand;LWithDittoHeaders;LActorRef;)V100
+û
+ñorg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#onStagedQuery(LCommand;Ljava/util/concurrent/CompletionStage;LStartedSpan;)V102
+
+onStagedQuery103
+*
+#Recovered#typeBindingLStartedSpan;0105
+
+	doOnQuery106
+8
+1Recovered#typeBindingLThingQueryCommandResponse;0108
+r
+korg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#persistenceId()Ljava/lang/String;110
+
+persistenceId111
+t
+morg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#journalPluginId()Ljava/lang/String;113
+
+journalPluginId114
+u
+norg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#snapshotPluginId()Ljava/lang/String;116
+
+snapshotPluginId117
+q
+jorg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#getEventClass()Ljava/lang/Class;119
+
+getEventClass120
+.
+'Recovered#typeBindingLCommandStrategy;0122
+}
+vorg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#getCreatedStrategy()LThingCommandStrategies;124
+
+getCreatedStrategy125
+
+ThingCommandStrategies127
+v
+oorg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#getDeletedStrategy()LCommandStrategy;129
+
+getDeletedStrategy130
+
+CommandStrategy132
+*
+#Recovered#typeBindingLCreateThing;0134
+r
+korg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#getEventStrategy()LEventStrategy;136
+
+getEventStrategy137
+
+EventStrategy139
+~
+worg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#getActivityCheckConfig()LActivityCheckConfig;141
+
+getActivityCheckConfig142
+
+ActivityCheckConfig144
+t
+morg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#getSnapshotConfig()LSnapshotConfig;146
+
+getSnapshotConfig147
+
+SnapshotConfig149
+i
+borg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#entityExistsAsDeleted()Z151
+
+entityExistsAsDeleted152
+w
+porg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#matchAnyAfterInitialization()LReceive;154
+"
+matchAnyAfterInitialization155
+
+Receive157
+D
+=Recovered#typeBindingLEnrichSignalWithPreDefinedExtraFields;0159
+
+AbstractPersistenceActor161
+o
+horg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#matchAnyWhenDeleted()LReceive;163
+
+matchAnyWhenDeleted164
+,
+%Recovered#typeBindingLRetrieveThing;0166
+0
+)Recovered#typeBindingLSudoRetrieveThing;0168
+í
+äorg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#newNotAccessibleExceptionBuilder()LDittoRuntimeExceptionBuilder;170
+'
+ newNotAccessibleExceptionBuilder171
+#
+DittoRuntimeExceptionBuilder173
+ö
+íorg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#newHistoryNotAccessibleExceptionBuilder(J)LDittoRuntimeExceptionBuilder;175
+.
+'newHistoryNotAccessibleExceptionBuilder176
+¨
+§org.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#newHistoryNotAccessibleExceptionBuilder(Ljava/time/Instant;)LDittoRuntimeExceptionBuilder;178
+x
+qorg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#recoveryCompleted(LRecoveryCompleted;)V180
+
+recoveryCompleted181
+0
+)Recovered#typeBindingLRecoveryCompleted;0183
+
+Thing185
+z
+sorg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#enhanceThingWithLifecycle(LThing;)LThing;187
+s
+lorg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#publishEvent(LThing;LThingEvent;)V189
+
+publishEvent190
+t
+morg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#shouldSendResponse(LDittoHeaders;)Z192
+
+shouldSendResponse193
++
+$Recovered#typeBindingLDittoHeaders;0195
+g
+`org.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#isEntityAlwaysAlive()Z197
+
+isEntityAlwaysAlive198
+É
+|org.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#getEntitySchemaVersion(LThing;)LJsonSchemaVersion;200
+
+getEntitySchemaVersion201
+
+JsonSchemaVersion203
+ 
+enhanceThingWithLifecycle204
++
+$Recovered#typeBindingLThingBuilder;0206
+°
+ôorg.eclipse.ditto.things.service.persistence.actors.ThingPersistenceActor#enrichSignalWithPreDefinedExtraFields(LEnrichSignalWithPreDefinedExtraFields;)V208
+,
+%enrichSignalWithPreDefinedExtraFields209
+%
+Recovered#typeBindingLSignal;0211
+-
+&Recovered#typeBindingLMessageCommand;0213J
+
+1
+12Z
+
+3	
+354jã
+
+82
+828315
+F
+123?
+12312474 *
+1‘ ‘(26:3B
+	
+9
+29
+
+11
+125
+
+57
+575815
+
+165
+16516615
+F
+115?
+11511674 *
+1≈ ≈(26:3B
+	
+9
+10
+
+11
+117
+
+202
+20220315
+
+52
+525315
+
+107
+10710815
+
+85
+858615
+
+22
+222315
+9
+64
+678 *
+1J J():3B
+	
+9
+10
+
+
+11
+12
+
+20
+202115
+F
+199?
+19920074 *
+1¬ ¬(26:3B
+	
+9
+29
+
+11
+201
+
+184
+18418515
+@
+31:
+313228 *
+1U U(26:3B
+	
+9
+29
+
+
+11
+33
+
+78
+787915
+F
+145?
+14514674 *
+1Ë Ë(26:3B
+	
+9
+29
+
+11
+147
+D
+99>
+9910074 *
+1© ©(26:3B
+	
+9
+39
+
+11
+106
+F
+162?
+16216374 *
+1˙ ˙(26:3B
+	
+9
+29
+
+11
+164
+F
+174?
+17417574 *
+1à à(26:3B
+	
+9
+29
+
+11
+176
+
+212
+21221315
+
+41
+414215
+
+182
+18218315
+F
+207?
+20720874 *
+1– –(26:3B
+	
+9
+39
+
+11
+209
+
+160
+16016115
+@
+34:
+343528 *
+1Z Z(26:3B
+	
+9
+29
+
+
+11
+36
+
+148
+14814915
+
+143
+14314415
+B
+94<
+949574 *
+1í í(26:3B
+	
+9
+10
+
+
+11
+96
+
+67
+676815
+@
+44:
+444528 *
+1_ _(26:3B
+	
+9
+39
+
+
+11
+46
+@
+54:
+545528 *
+1a a(26:3B
+	
+9
+39
+
+
+11
+56
+
+59
+596015
+@
+26:
+262728 *
+1P P(26:3B
+	
+9
+29
+
+
+11
+30
+
+133
+13313415
+
+194
+19419515
+F
+191?
+19119274 *
+1µ µ(26:3B
+	
+9
+29
+
+11
+193
+
+80
+808115
+
+158
+15815915
+
+13
+131415
+F
+140?
+14014174 *
+1„ „(26:3B
+	
+9
+29
+
+11
+142
+F
+179?
+17918074 *
+1í í(26:3B
+	
+9
+29
+
+11
+181
+B
+88<
+888974 *
+1à à(26:3B
+	
+9
+10
+
+
+11
+90
+
+47
+474815
+F
+112?
+11211374 *
+1¿ ¿(26:3B
+	
+9
+10
+
+11
+114
+F
+177?
+17717874 *
+1ç ç(26:3B
+	
+9
+29
+
+11
+176
+
+91
+919215
+F
+188?
+18818974 *
+1õ õ(26:3B
+	
+9
+29
+
+11
+190
+
+104
+10410515
+
+76
+767715
+
+210
+21021115
+
+24
+242515
+
+62
+626315
+@
+69:
+697028 *
+1c c(26:3B
+	
+9
+39
+
+
+11
+71
+F
+150?
+15015174 *
+1Ì Ì(26:3B
+	
+9
+29
+
+11
+152
+F
+109?
+10911074 *
+1ª ª(26:3B
+	
+9
+10
+
+11
+111
+F
+196?
+19619774 *
+1Ω Ω(26:3B
+	
+9
+29
+
+11
+198
+
+167
+16716815
+
+172
+17217315
+
+131
+13113215
+F
+101?
+10110274 *
+1ò ò(26:3B
+	
+9
+10
+
+11
+103
+F
+135?
+13513674 *
+1ﬁ ﬁ(26:3B
+	
+9
+29
+
+11
+137
+
+205
+20520615
+F
+128?
+12812974 *
+1Ÿ Ÿ(26:3B
+	
+9
+29
+
+11
+130
+F
+118?
+11811974 *
+1   (26:3B
+	
+9
+29
+
+11
+120
+
+138
+13813915
+@
+37:
+373828 *
+1\ \(26:3B
+	
+9
+39
+
+
+11
+40
+@
+49:
+495028 *
+1` `(26:3B
+	
+9
+39
+
+
+11
+51
+
+97
+979815
+
+18
+181915
+F
+153?
+15315474 *
+1Ú Ú(26:3B
+	
+9
+29
+
+11
+155
+
+156
+15615715
+@
+72:
+727374 *
+1e e(26:3B
+	
+9
+39
+
+
+11
+12
+F
+169?
+16917074 *
+1É É(26:3B
+	
+9
+29
+
+11
+171
+
+121
+12112215
+
+126
+12612715
+@
+64:
+646528 *
+1b b(26:3B
+	
+9
+39
+
+
+11
+66
+F
+186?
+18618774 *
+1« «(26:3B
+	
+9
+39
+
+11
+204rñ5
+
+61316*
+1K K()
+
+61317*
+1K K()
+
+61817*
+1K* K(1
+
+62017*
+1K6 K(;
+
+62217*
+1K= K(D
+
+62217*
+1KF K(M
+
+62417*
+1KO K(Y
+
+374143*
+1\ \(&
+
+374117*
+1\ \(&
+
+372417*
+1\' \(1
+
+374117*
+1\6 \(C
+
+444743*
+1_ _(
+
+444717*
+1_ _(
+
+444717*
+1_ _(*
+
+495243*
+1` `(!
+
+495217*
+1` `(!
+
+492417*
+1`" `(,
+
+495217*
+1`1 `(?
+
+545743*
+1a a(%
+
+545961*
+1a a(
+
+546217*
+1a a(
+
+545717*
+1a a(%
+
+545717*
+1a& a(<
+
+646743*
+1b b(0
+
+646717*
+1b b(0
+
+646717*
+1b1 b(S
+
+696743*
+1c c(0
+
+696717*
+1c c(0
+
+696717*
+1c1 c(U
+
+722275*
+1f) f(0
+
+727675*
+1g g(#
+
+727875*
+1h h(!
+
+728075*
+1i i(%
+
+728275*
+1j j()
+
+72684*
+1f f("
+
+722243*
+1f1 f(8
+
+722217*
+1f) f(0
+
+727643*
+1g$ g(4
+
+727617*
+1g g(#
+
+727843*
+1h1 h(?
+
+727817*
+1h h(!
+
+722417*
+1h" h(,
+
+728043*
+1i& i(<
+
+725961*
+1i i(
+
+726217*
+1i i(
+
+728017*
+1i i(%
+
+728243*
+1j* j(@
+
+728217*
+1j j()
+
+728543*
+1m! m(-
+
+728517*
+1m m( 
+
+724717*
+1p	 p(
+
+724487*
+1p	 p(
+
+72617*
+1q	 q(
+
+72687*
+1q	 q(
+
+725217*
+1q q(
+
+724987*
+1q q(
+
+72617*
+1r	 r(
+
+72687*
+1r	 r(
+
+725717*
+1r r($
+
+725487*
+1r r($
+
+72617*
+1s	 s(
+
+72687*
+1s	 s(
+
+726717*
+1s s(0
+
+726487*
+1s s(0
+
+724487*
+1t t(
+
+724717*
+1t t(
+
+724487*
+1t t(
+
+72617*
+1w	 w(
+
+72687*
+1w	 w(
+
+726717*
+1w w(2
+
+726987*
+1w w(2
+
+724487*
+1x x(
+
+724717*
+1x x(
+
+724487*
+1x x(
+
+889193*
+1à à(
+
+882275*
+1à% à(,
+
+887675*
+1â â(#
+
+887875*
+1ä ä(!
+
+888075*
+1ã ã(%
+
+888275*
+1å å()
+
+889117*
+1à à(
+
+882243*
+1à- à(4
+
+882217*
+1à% à(,
+
+887643*
+1â$ â(4
+
+887617*
+1â â(#
+
+887843*
+1ä1 ä(?
+
+887817*
+1ä ä(!
+
+882417*
+1ä" ä(,
+
+888043*
+1ã& ã(<
+
+885961*
+1ã ã(
+
+886217*
+1ã ã(
+
+888017*
+1ã ã(%
+
+888243*
+1å* å(@
+
+888217*
+1å å()
+
+88617*
+1é é(2
+
+941875*
+1ì ì(&
+
+949775*
+1ì9 ì(I
+
+941843*
+1ì* ì(1
+
+941817*
+1ì ì(&
+
+949743*
+1ìJ ì(R
+
+949717*
+1ì9 ì(I
+
+948043*
+1î î(
+
+948017*
+1î î(
+
+94687*
+1ï	 ï(
+
+949984*
+1ï	 ï(
+
+1011875*
+1ô% ô(,
+
+10110475*
+1ö ö((
+
+1011843*
+1ô0 ô(7
+
+1011817*
+1ô% ô(,
+
+1019717*
+1ôO ô(_
+
+10110443*
+1ö) ö(4
+
+1015961*
+1ö ö(
+
+1016217*
+1ö ö(
+
+10110417*
+1ö ö((
+
+1018043*
+1õ õ(
+
+1018017*
+1õ õ(
+
+991875*
+1©" ©()
+
+999775*
+1©< ©(L
+
+998075*
+1©] ©(e
+
+991843*
+1©- ©(4
+
+991817*
+1©" ©()
+
+999743*
+1©M ©(U
+
+999717*
+1©< ©(L
+
+998043*
+1©f ©(l
+
+998017*
+1©] ©(e
+
+9910743*
+1ØF Ø(S
+
+9910717*
+1Ø) Ø(B
+
+1123187*
+1¬ ¬(!
+
+1153487*
+1« «("
+
+1182417*
+1Ã Ã(
+
+612117*
+1– –(
+
+612117*
+1– –(&
+
+62217*
+1–' –(.
+
+12312693*
+1’ ’(%
+
+12312617*
+1’ ’(%
+
+12813193*
+1⁄ ⁄(
+
+12813117*
+1⁄ ⁄(
+
+12813317*
+1⁄ ⁄(*
+
+1282017*
+1⁄, ⁄(1
+
+1282217*
+1⁄3 ⁄(:
+
+1282417*
+1⁄< ⁄(F
+
+13513893*
+1ﬂ ﬂ(
+
+13513817*
+1ﬂ ﬂ(
+
+1352417*
+1ﬂ ﬂ('
+
+1352017*
+1ﬂ, ﬂ(1
+
+14014393*
+1‰ ‰("
+
+14014317*
+1‰ ‰("
+
+1404487*
+1Â Â(
+
+1404717*
+1Â Â(
+
+1404487*
+1Â Â(
+
+14514893*
+1È È(
+
+14514817*
+1È È(
+
+1454487*
+1Í Í(
+
+1454717*
+1Í Í(
+
+1454487*
+1Í Í(
+
+15315693*
+1Û Û(
+
+15315617*
+1Û Û(
+
+15315817*
+1ı ı(=
+
+153617*
+1ıE ı(I
+
+153687*
+1ıE ı(I
+
+153687*
+1˜ ˜(
+
+15316017*
+1˜ ˜(
+
+153687*
+1˜ ˜(
+
+16215693*
+1˚ ˚(
+
+16215617*
+1˚ ˚(
+
+16216517*
+1˝ ˝(%
+
+162617*
+1˝- ˝(1
+
+162687*
+1˝- ˝(1
+
+16216717*
+1˛ ˛()
+
+162617*
+1˛1 ˛(5
+
+162687*
+1˛1 ˛(5
+
+162687*
+1Ä Ä(
+
+16216017*
+1Ä Ä(
+
+162687*
+1Ä Ä(
+
+16917293*
+1Ñ Ñ(+
+
+16917217*
+1Ñ Ñ(+
+
+17417293*
+1â â(+
+
+17417217*
+1â â(+
+
+17717293*
+1é é(+
+
+17717217*
+1é é(+
+
+17918275*
+1ì, ì(=
+
+17918243*
+1ì> ì(C
+
+17918217*
+1ì, ì(=
+
+17918493*
+1ï ï(/
+
+179687*
+1ï ï(/
+
+17918684*
+1ï ï(/
+
+179687*
+1ò	 ò(
+
+17916017*
+1ò	 ò(
+
+179687*
+1ò	 ò(
+
+1882075*
+1ú1 ú(6
+
+1882475*
+1úM ú(W
+
+1882043*
+1ú7 ú(E
+
+1885961*
+1ú! ú("
+
+1886217*
+1ú" ú(*
+
+1882017*
+1ú1 ú(6
+
+1882443*
+1ú[ ú(`
+
+1882417*
+1úM ú(W
+
+1882417*
+1ù ù()
+
+1886487*
+1ù6 ù(X
+
+1886717*
+1ù6 ù(X
+
+1886487*
+1ù6 ù(X
+
+19119475*
+1∂0 ∂(<
+
+19119443*
+1∂= ∂(I
+
+19119417*
+1∂0 ∂(<
+
+19920293*
+1√ √( 
+
+1992075*
+1√> √(C
+
+19920217*
+1√ √( 
+
+1992043*
+1√D √(J
+
+1992017*
+1√> √(C
+
+18618493*
+1« «(
+
+1862075*
+1«: «(?
+
+18618417*
+1« «(
+
+1862043*
+1«@ «(E
+
+1862017*
+1«: «(?
+
+18620543*
+1»% »(1
+
+18620517*
+1» »(
+
+18620517*
+1» »($
+
+20715875*
+1— —(8
+
+20715843*
+1—9 —(^
+
+20715817*
+1— —(8
+
+2078043*
+1” ”(
+
+2078017*
+1” ”(
+
+20721043*
+1‘ ‘(
+
+20721017*
+1‘ ‘(
+
+20721017*
+1’ ’(%
+
+20721243*
+1◊' ◊(5
+
+20721217*
+1◊ ◊( 
+
+2076987*
+1ÿ ÿ(=
+
+2076717*
+1ÿ ÿ(=
+
+2076987*
+1ÿ ÿ(=
+
+2072443*
+1ﬁ  ﬁ(*
+
+2072417*
+1ﬁ ﬁ(
+
+2076487*
+1ﬂ ﬂ(;
+
+2076717*
+1ﬂ ﬂ(;
+
+2076487*
+1ﬂ ﬂ(;

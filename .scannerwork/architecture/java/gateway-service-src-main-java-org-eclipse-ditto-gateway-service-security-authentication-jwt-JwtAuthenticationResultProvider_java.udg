@@ -1,0 +1,435 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508672328*java2.Bä
+†
+€gateway/service/src/main/java/org/eclipse/ditto/gateway/service/security/authentication/jwt/JwtAuthenticationResultProvider.java2
+
+package4
+B
+=org.eclipse.ditto.gateway.service.security.authentication.jwt5
+b
+]org.eclipse.ditto.gateway.service.security.authentication.jwt.JwtAuthenticationResultProvider7
+
+	interface8
+
+access9
+
+public10
+
+simple name11
+%
+JwtAuthenticationResultProvider12
+1
++Recovered#typeBindingLDittoExtensionPoint;014
+
+unknown15
+
+
+implements16
+
+
+uses17
+À
+¹org.eclipse.ditto.gateway.service.security.authentication.jwt.JwtAuthenticationResultProvider#getAuthenticationResult(LJsonWebToken;LDittoHeaders;)Ljava/util/concurrent/CompletionStage;19
+
+method20
+
+getAuthenticationResult21
+*
+$Recovered#typeBindingLJsonWebToken;023
+
+	has param24
+*
+$Recovered#typeBindingLDittoHeaders;026
+5
+/Recovered#typeBindingLJwtAuthenticationResult;028
+
+is type29
+ð
+éorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtAuthenticationResultProvider#get(LActorSystem;LConfig;Ljava/lang/String;)Lorg/eclipse/ditto/gateway/service/security/authentication/jwt/JwtAuthenticationResultProvider;31
+	
+get32
+
+returns33
+)
+#Recovered#typeBindingLActorSystem;035
+$
+Recovered#typeBindingLConfig;037
+
+Nullable39
+
+annotated by40
+&
+ Recovered#typeBindingLNullable;042
+
+ExtensionIdConfig44
+o
+iorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtAuthenticationResultProvider$ExtensionId46
+
+
+references47
+­
+¦org.eclipse.ditto.gateway.service.security.authentication.jwt.JwtAuthenticationResultProvider$ExtensionId#computeConfig(LConfig;Ljava/lang/String;)LExtensionIdConfig;49
+
+calls50
+
+class51
+
+ExtensionId52
+
+extends53
+z
+torg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtAuthenticationResultProvider$ExtensionId.CONFIG_KEY55
+
+field56
+
+private57
+
+
+CONFIG_KEY58
+v
+porg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtAuthenticationResultProvider$ExtensionId.suffix60
+
+suffix61
+Ÿ
+˜org.eclipse.ditto.gateway.service.security.authentication.jwt.JwtAuthenticationResultProvider$ExtensionId#<init>(Ljava/lang/String;LExtensionIdConfig;)V63
+/
+)Recovered#typeBindingLExtensionIdConfig;065
+
+	protected66
+
+computeConfig67
+¥
+žorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtAuthenticationResultProvider$ExtensionId#buildConfigKey(Ljava/lang/String;)Ljava/lang/String;69
+‘
+Šorg.eclipse.ditto.gateway.service.security.authentication.jwt.JwtAuthenticationResultProvider$ExtensionId#getConfigKey()Ljava/lang/String;71
+
+getConfigKey72
+
+buildConfigKey73J
+
+1
+12Z
+
+3	
+354jÛ
+A
+59;
+596056 *
+1F	 F(
+245:3B
+	
+9
+57
+
+
+11
+61
+9
+64
+678 *
+1! !(1:3B
+	
+9
+10
+
+
+11
+12
+
+25
+252615
+
+13
+131415
+A
+54;
+545556 *
+1D	 D(245:3B
+	
+9
+57
+
+
+11
+58
+@
+30:
+303120 *
+18 8(26:3B
+	
+9
+10
+
+
+11
+32
+
+22
+222315
+A
+68;
+686920 *
+1X	 X(245:3B
+	
+9
+66
+
+
+11
+73
+A
+48;
+484920 *
+1N	 N(245:3B
+	
+9
+66
+
+
+11
+67
+
+27
+272815
+
+41
+414215
+A
+70;
+707120 *
+1S	 S(
+245:3B
+	
+9
+66
+
+
+11
+72
+@
+45:
+454651 *
+1B B(26:3B
+	
+9
+10
+
+
+11
+52
+
+43
+434415
+
+36
+363715
+
+34
+343515
+@
+18:
+181920 *
+1+ +(26:3B
+	
+9
+10
+
+
+11
+21
+
+38
+383915
+A
+62;
+626320 *
+1H	 H(245:3B
+	
+9
+57
+
+
+11
+52
+
+64
+646515r±
+
+61316*
+1!: !(M
+
+61317*
+1!: !(M
+
+182224*
+1+F +(R
+
+182524*
+1, ,(
+
+182717*
+1+ +(,
+
+182229*
+1+S +(V
+
+182217*
+1+F +(R
+
+182529*
+1, ,(&
+
+182517*
+1, ,(
+
+30633*
+18 8(+
+
+303424*
+186 8(A
+
+303624*
+18U 8([
+
+30617*
+18 8(+
+
+303429*
+18B 8(M
+
+303417*
+186 8(A
+
+303629*
+18\ 8(k
+
+303617*
+18U 8([
+
+303840*
+19 9(
+
+304117*
+19 9(
+
+304333*
+1<' <(2
+
+304547*
+1<' <(2
+
+304850*
+1<3 <(@
+
+304547*
+1<' <(2
+
+304517*
+1<' <(2
+
+304547*
+1<' <(2
+
+451353*
+1B% B(8
+
+451317*
+1B% B(8
+
+451317*
+1B9 B(D
+
+45617*
+1BE B(d
+
+593840*
+1F	 F(
+
+
+594117*
+1F
+ F(
+
+626424*
+1I I((
+
+624550*
+1H H(
+
+623840*
+1H H(
+
+624117*
+1H H(&
+
+626429*
+1IJ I([
+
+626417*
+1I I((
+
+62617*
+1I) I(H
+
+624517*
+1K K(
+
+624547*
+1K K(
+
+625947*
+1K K(
+
+484333*
+1N N(!
+
+483624*
+1NW N(]
+
+484317*
+1N N(!
+
+48617*
+1N" N(A
+
+483629*
+1N^ N(d
+
+483617*
+1NW N(]
+
+483840*
+1O O(
+
+484117*
+1O O(
+
+48617*
+1P) P(H
+
+484547*
+1PX P(f
+
+486850*
+1PX P(f
+
+704547*
+1U U("
+
+706850*
+1U U("
+
+705947*
+1U# U()
+
+683840*
+1X& X('
+
+684117*
+1X' X(/
+
+685447*
+1Z Z("
+
+685447*
+1\ \("

@@ -1,0 +1,442 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508534577*java2.B¡
+s
+nthingsearch/service/src/main/java/org/eclipse/ditto/thingsearch/service/updater/actors/ShardRegionFactory.java2
+
+package4
+9
+4org.eclipse.ditto.thingsearch.service.updater.actors5
+L
+Gorg.eclipse.ditto.thingsearch.service.updater.actors.ShardRegionFactory7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+ShardRegionFactory12
+
+NotThreadSafe14
+
+unknown15
+
+annotated by16
++
+%Recovered#typeBindingLNotThreadSafe;018
+
+
+uses19
+b
+\org.eclipse.ditto.thingsearch.service.updater.actors.ShardRegionFactory.UPDATER_SHARD_REGION21
+
+field22
+
+	protected23
+
+UPDATER_SHARD_REGION24
+Y
+Sorg.eclipse.ditto.thingsearch.service.updater.actors.ShardRegionFactory.actorSystem26
+
+private27
+
+actorSystem28
+
+ActorSystem30
+
+is type31
+d
+^org.eclipse.ditto.thingsearch.service.updater.actors.ShardRegionFactory#<init>(LActorSystem;)V33
+
+method34
+)
+#Recovered#typeBindingLActorSystem;036
+
+	has param37
+
+calls38
+
+
+references39
+≤
+´org.eclipse.ditto.thingsearch.service.updater.actors.ShardRegionFactory#getInstance(LActorSystem;)Lorg/eclipse/ditto/thingsearch/service/updater/actors/ShardRegionFactory;41
+
+getInstance42
+
+returns43
+
+Nonnull45
+%
+Recovered#typeBindingLNonnull;047
+o
+iorg.eclipse.ditto.thingsearch.service.updater.actors.ShardRegionFactory#getThingsShardRegion(I)LActorRef;49
+
+getThingsShardRegion50
+
+ActorRef52
+ñ
+èorg.eclipse.ditto.thingsearch.service.updater.actors.ShardRegionFactory#createShardRegionProxy(Ljava/lang/String;Ljava/lang/String;I)LActorRef;54
+q
+korg.eclipse.ditto.thingsearch.service.updater.actors.ShardRegionFactory#getPoliciesShardRegion(I)LActorRef;56
+
+getPoliciesShardRegion57
+
+createShardRegionProxy58
+-
+'Recovered#typeBindingLClusterSharding;060
+2
+,Recovered#typeBindingLShardRegionExtractor;062
+ê
+âorg.eclipse.ditto.thingsearch.service.updater.actors.ShardRegionFactory#getSearchUpdaterShardRegion(ILProps;Ljava/lang/String;)LActorRef;64
+!
+getSearchUpdaterShardRegion65
+#
+Recovered#typeBindingLProps;067
+ò
+ëorg.eclipse.ditto.thingsearch.service.updater.actors.ShardRegionFactory#createShardRegion(ILProps;Ljava/lang/String;Ljava/lang/String;)LActorRef;69
+
+createShardRegion70J
+
+1
+12Z
+
+3	
+354j’
+
+29
+293015
+
+59
+596015
+@
+48:
+484934 *
+1B B(26:3B
+	
+9
+10
+
+
+11
+50
+@
+63:
+636434 *
+1d d(26:3B
+	
+9
+10
+
+
+11
+65
+
+66
+666715
+
+44
+444515
+
+51
+515215
+@
+68:
+686934 *
+1t t(26:3B
+	
+9
+10
+
+
+11
+70
+9
+64
+678 *
+1% %(&:3B
+	
+9
+10
+
+
+11
+12
+
+13
+131415
+@
+20:
+202122 *
+1' '(26:3B
+	
+9
+23
+
+
+11
+24
+@
+32:
+323334 *
+1+ +(26:3B
+	
+9
+27
+
+
+11
+12
+
+61
+616215
+
+17
+171815
+@
+53:
+535434 *
+1T T(26:3B
+	
+9
+27
+
+
+11
+58
+@
+25:
+252622 *
+1) )(26:3B
+	
+9
+27
+
+
+11
+28
+
+46
+464715
+@
+40:
+404134 *
+16 6(26:3B
+	
+9
+10
+
+
+11
+42
+
+35
+353615
+@
+55:
+555634 *
+1N N(26:3B
+	
+9
+10
+
+
+11
+57r“
+
+61316*
+1$ $(
+
+61719*
+1$ $(
+
+252931*
+1) )(
+
+252919*
+1) )(
+
+252919*
+1) )(*
+
+323537*
+1+& +(1
+
+32638*
+1+ +(
+
+323531*
+1+2 +(@
+
+323519*
+1+& +(1
+
+322919*
+1,	 ,(
+
+322539*
+1,	 ,(
+
+40643*
+17 7(%
+
+403537*
+17A 7(L
+
+404416*
+16 6(
+
+404619*
+16 6(
+
+40619*
+17 7(%
+
+403531*
+17M 7(X
+
+404416*
+172 7(3
+
+404619*
+173 7(:
+
+403519*
+17A 7(L
+
+40638*
+19 9(&
+
+485143*
+1C C(
+
+484416*
+1B B(
+
+484619*
+1B B(
+
+485119*
+1C C(
+
+485143*
+1D D(&
+
+48639*
+1D D(&
+
+485338*
+1D D(&
+
+555143*
+1O O(
+
+554416*
+1N N(
+
+554619*
+1N N(
+
+555119*
+1O O(
+
+555143*
+1P P(&
+
+55639*
+1P P(&
+
+555338*
+1P P(&
+
+535143*
+1T T(
+
+535119*
+1T T(
+
+535931*
+1V V(.
+
+535919*
+1V V(
+
+532919*
+1VE V(P
+
+532539*
+1VE V(P
+
+536131*
+1W$ W(8
+
+536119*
+1W W(#
+
+532919*
+1Wc W(n
+
+532539*
+1Wc W(n
+
+635143*
+1e e(
+
+636637*
+1eZ e(_
+
+634416*
+1d d(
+
+634619*
+1d d(
+
+635119*
+1e e(
+
+636631*
+1e` e(q
+
+634416*
+1eK e(L
+
+634619*
+1eL e(S
+
+636619*
+1eZ e(_
+
+635143*
+1h h(!
+
+63639*
+1h h(!
+
+636838*
+1h h(!
+
+632039*
+1hE h(Y
+
+685143*
+1t t(
+
+686637*
+1t? t(D
+
+685119*
+1t t(
+
+686631*
+1tE t(J
+
+686619*
+1t? t(D
+
+682919*
+1u) u(4
+
+682539*
+1u) u(4

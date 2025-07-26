@@ -1,0 +1,674 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508432740*java2.B˜
+ã
+Öconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/DittoRuntimeExceptionToErrorResponseFunction.java2
+
+package4
+5
+0org.eclipse.ditto.connectivity.service.messaging5
+b
+]org.eclipse.ditto.connectivity.service.messaging.DittoRuntimeExceptionToErrorResponseFunction7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+2
+,DittoRuntimeExceptionToErrorResponseFunction12
+3
+-Recovered#typeBindingLDittoRuntimeException;014
+
+unknown15
+
+
+uses16
+'
+!Recovered#typeBindingLTopicPath;018
++
+%Recovered#typeBindingLErrorResponse;020
+y
+sorg.eclipse.ditto.connectivity.service.messaging.DittoRuntimeExceptionToErrorResponseFunction.dittoHeadersValidator22
+
+field23
+
+private24
+
+dittoHeadersValidator25
+
+DittoHeadersValidator27
+
+is type28
+Ñ
+~org.eclipse.ditto.connectivity.service.messaging.DittoRuntimeExceptionToErrorResponseFunction#<init>(LDittoHeadersValidator;)V30
+
+method31
+3
+-Recovered#typeBindingLDittoHeadersValidator;033
+
+	has param34
+
+calls35
+
+
+references36
+ﬂ
+ÿorg.eclipse.ditto.connectivity.service.messaging.DittoRuntimeExceptionToErrorResponseFunction#of(LDittoHeadersValidator;)Lorg/eclipse/ditto/connectivity/service/messaging/DittoRuntimeExceptionToErrorResponseFunction;38
+
+of39
+
+returns40
+ù
+ñorg.eclipse.ditto.connectivity.service.messaging.DittoRuntimeExceptionToErrorResponseFunction#apply(LDittoRuntimeException;LTopicPath;)LErrorResponse;42
+
+public43
+
+apply44
+
+ErrorResponse46
+
+Nullable48
+
+annotated by49
+&
+ Recovered#typeBindingLNullable;051
+õ
+îorg.eclipse.ditto.connectivity.service.messaging.DittoRuntimeExceptionToErrorResponseFunction#isPolicyException(LDittoRuntimeException;LTopicPath;)Z53
+
+PolicyErrorResponse55
+¥
+≠org.eclipse.ditto.connectivity.service.messaging.DittoRuntimeExceptionToErrorResponseFunction#getPolicyErrorResponse(LDittoRuntimeException;LTopicPath;)LPolicyErrorResponse;57
+
+ThingErrorResponse59
+≤
+´org.eclipse.ditto.connectivity.service.messaging.DittoRuntimeExceptionToErrorResponseFunction#getThingErrorResponse(LDittoRuntimeException;LTopicPath;)LThingErrorResponse;61
+
+isPolicyException62
+ñ
+èorg.eclipse.ditto.connectivity.service.messaging.DittoRuntimeExceptionToErrorResponseFunction#isPolicyExceptionByErrorCode(Ljava/lang/String;)Z64
+è
+àorg.eclipse.ditto.connectivity.service.messaging.DittoRuntimeExceptionToErrorResponseFunction#isPolicyExceptionByTopicPath(LTopicPath;)Z66
+"
+isPolicyExceptionByErrorCode67
+"
+isPolicyExceptionByTopicPath68
+
+getPolicyErrorResponse69
+£
+úorg.eclipse.ditto.connectivity.service.messaging.DittoRuntimeExceptionToErrorResponseFunction#getEntityId(LWithDittoHeaders;LTopicPath;)Ljava/util/Optional;71
+∏
+±org.eclipse.ditto.connectivity.service.messaging.DittoRuntimeExceptionToErrorResponseFunction#constructEntityIdSafely(Ljava/util/function/Function;)Ljava/util/function/Function;73
+
+getThingErrorResponse74
+
+constructEntityIdSafely75
+&
+ Recovered#typeBindingLEntityId;077
+
+EntityId79
+
+getEntityId80
+.
+(Recovered#typeBindingLWithDittoHeaders;082
+û
+óorg.eclipse.ditto.connectivity.service.messaging.DittoRuntimeExceptionToErrorResponseFunction#getEntityIdFromTopicPath(LTopicPath;)Ljava/util/Optional;84
+§
+ùorg.eclipse.ditto.connectivity.service.messaging.DittoRuntimeExceptionToErrorResponseFunction#getEntityIdFromDittoHeaders(LDittoHeaders;)Ljava/util/Optional;86
+
+getEntityIdFromTopicPath87
+!
+getEntityIdFromDittoHeaders88
+*
+$Recovered#typeBindingLDittoHeaders;090J
+
+1
+12Z
+
+3	
+354j±	
+B
+85<
+858631 *
+1è è(26:3B
+	
+9
+24
+
+
+11
+88
+
+89
+899015
+
+26
+262715
+@
+52:
+525331 *
+1? ?(26:3B
+	
+9
+24
+
+
+11
+62
+B
+83<
+838431 *
+1Ñ Ñ(26:3B
+	
+9
+24
+
+
+11
+87
+@
+60:
+606131 *
+1[ [(26:3B
+	
+9
+24
+
+
+11
+74
+
+76
+767715
+
+19
+192015
+
+50
+505115
+@
+37:
+373831 *
+10 0(26:3B
+	
+9
+10
+
+
+11
+39
+@
+21:
+212223 *
+1* *(26:3B
+	
+9
+24
+
+
+11
+25
+@
+41:
+414231 *
+14 4(26:3B
+	
+9
+43
+
+
+11
+44
+
+13
+131415
+
+17
+171815
+@
+65:
+656631 *
+1I I(26:3B
+	
+9
+24
+
+
+11
+68
+@
+63:
+636431 *
+1E E(26:3B
+	
+9
+24
+
+
+11
+67
+
+58
+585915
+
+54
+545515
+@
+29:
+293031 *
+1, ,(26:3B
+	
+9
+24
+
+
+11
+12
+9
+64
+678 *
+1' '(9:3B
+	
+9
+10
+
+
+11
+12
+@
+56:
+565731 *
+1M M(26:3B
+	
+9
+24
+
+
+11
+69
+
+81
+818215
+
+45
+454615
+
+78
+787915
+@
+72:
+727331 *
+1i i(26:3B
+	
+9
+24
+
+
+11
+75
+@
+70:
+707131 *
+1u u(26:3B
+	
+9
+24
+
+
+11
+80
+
+47
+474815
+
+32
+323315r£
+
+61316*
+1( ((4
+
+61716*
+1(6 ((?
+
+61916*
+1(A ((N
+
+212628*
+1* *((
+
+212616*
+1* *((
+
+212616*
+1*) *(>
+
+293234*
+1,@ ,(U
+
+29635*
+1, ,(9
+
+293228*
+1,V ,(k
+
+293216*
+1,@ ,(U
+
+29616*
+1-	 -(
+
+29636*
+1-	 -(
+
+292616*
+1- -(#
+
+292136*
+1- -(#
+
+37640*
+10 0(8
+
+373234*
+10B 0(W
+
+37616*
+10 0(8
+
+373228*
+10X 0(m
+
+373216*
+10B 0(W
+
+37635*
+11 1(@
+
+414540*
+15 5(
+
+411334*
+15) 5(>
+
+411734*
+15Z 5(c
+
+414516*
+15 5(
+
+411328*
+15? 5(H
+
+411316*
+15) 5(>
+
+411728*
+15d 5(m
+
+414749*
+15J 5(K
+
+415016*
+15K 5(S
+
+411716*
+15Z 5(c
+
+411928*
+16  6(&
+
+411916*
+16 6(
+
+41636*
+17 7(
+
+415235*
+17 7(
+
+415440*
+18 8(,
+
+41636*
+18 8(,
+
+415635*
+18 8(,
+
+415840*
+1: :(+
+
+41636*
+1: :(+
+
+416035*
+1: :(+
+
+521334*
+1?4 ?(I
+
+521734*
+1@ @(&
+
+521328*
+1?J ?(S
+
+521316*
+1?4 ?(I
+
+521728*
+1@' @(0
+
+524749*
+1@ @(
+
+525016*
+1@ @(
+
+521716*
+1@ @(&
+
+52636*
+1B B(,
+
+526335*
+1B B(,
+
+52636*
+1BJ B(f
+
+526535*
+1BJ B(f
+
+651734*
+1II I(R
+
+651728*
+1IS I(\
+
+654749*
+1I9 I(:
+
+655016*
+1I: I(B
+
+651716*
+1II I(R
+
+565440*
+1M M( 
+
+561334*
+1M> M(S
+
+561734*
+1N N(&
+
+565416*
+1M M( 
+
+561328*
+1MT M(]
+
+561316*
+1M> M(S
+
+561728*
+1N' N(0
+
+564749*
+1N N(
+
+565016*
+1N N(
+
+561716*
+1N N(&
+
+56636*
+1P P(
+
+567035*
+1P P(
+
+56636*
+1Q Q(1
+
+567235*
+1Q Q(1
+
+605840*
+1[ [(
+
+601334*
+1[< [(Q
+
+601734*
+1\ \(&
+
+605816*
+1[ [(
+
+601328*
+1[R [([
+
+601316*
+1[< [(Q
+
+601728*
+1\' \(0
+
+604749*
+1\ \(
+
+605016*
+1\ \(
+
+601716*
+1\ \(&
+
+60636*
+1^ ^(
+
+607035*
+1^ ^(
+
+60636*
+1_ _(1
+
+607235*
+1_ _(1
+
+727616*
+1i! i()
+
+727616*
+1j j($
+
+727828*
+1k k(
+
+721328*
+1n2 n(3
+
+721316*
+1n n(1
+
+708134*
+1u9 u(I
+
+701734*
+1u] u(f
+
+707616*
+1u u(%
+
+708128*
+1uJ u(K
+
+708116*
+1u9 u(I
+
+701728*
+1ug u(p
+
+704749*
+1uM u(N
+
+705016*
+1uN u(V
+
+701716*
+1u] u(f
+
+707616*
+1w w($
+
+70636*
+1y y(2
+
+708335*
+1y y(2
+
+70636*
+1{ {(5
+
+708535*
+1{ {(5
+
+831734*
+1ÑF Ñ(O
+
+837616*
+1Ñ Ñ(%
+
+831728*
+1ÑP Ñ(Y
+
+831716*
+1ÑF Ñ(O
+
+858934*
+1èI è(U
+
+857616*
+1è è(%
+
+858928*
+1èV è(b
+
+858916*
+1èI è(U
+
+857616*
+1ê ê( 
+
+854749*
+1ë	 ë(
+
+
+855016*
+1ë
+ ë(

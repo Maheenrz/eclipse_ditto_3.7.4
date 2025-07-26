@@ -1,0 +1,920 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508443675*java2.B´"
+y
+tpolicies/model/src/main/java/org/eclipse/ditto/policies/model/enforcers/tree/CollectUnrestrictedSubjectsVisitor.java2
+
+package4
+4
+/org.eclipse.ditto.policies.model.enforcers.tree5
+W
+Rorg.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+(
+"CollectUnrestrictedSubjectsVisitor12
+%
+Recovered#typeBindingLVisitor;014
+
+unknown15
+
+
+implements16
+
+NotThreadSafe18
+
+annotated by19
++
+%Recovered#typeBindingLNotThreadSafe;021
+
+
+uses22
+#
+ParametersAreNonnullByDefault24
+;
+5Recovered#typeBindingLParametersAreNonnullByDefault;026
+2
+,Recovered#typeBindingLAuthorizationSubject;028
+l
+forg.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor.expectedPermissions30
+
+field31
+
+private32
+
+expectedPermissions33
+
+Permissions35
+
+is type36
+q
+korg.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor.pointerLocationEvaluator38
+
+pointerLocationEvaluator39
+)
+#Recovered#typeBindingLJsonPointer;041
+-
+'Recovered#typeBindingLPointerLocation;043
+c
+]org.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor.evaluators45
+
+
+evaluators46
+n
+horg.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor$ResourceNodeEvaluator48
+
+
+references49
+m
+gorg.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor.unrestrictedSubjects51
+
+unrestrictedSubjects52
+i
+corg.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor.currentEvaluator54
+
+currentEvaluator55
+
+Nullable57
+&
+ Recovered#typeBindingLNullable;059
+|
+vorg.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor#<init>(LJsonPointer;LPermissions;)V61
+
+method62
+
+	has param63
+)
+#Recovered#typeBindingLPermissions;065
+
+calls66
+y
+sorg.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor#visitTreeNode(LPolicyTreeNode;)V68
+
+public69
+
+visitTreeNode70
+,
+&Recovered#typeBindingLPolicyTreeNode;072
+|
+vorg.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor#visitSubjectNode(LPolicyTreeNode;)V74
+{
+uorg.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor#visitResourceNode(LResourceNode;)V76
+*
+$Recovered#typeBindingLResourceNode;078
+
+visitSubjectNode79
+
+visitResourceNode80
+ù
+ñorg.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor$ResourceNodeEvaluator#aggregateWeightedPermissions(LResourceNode;)V82
+m
+gorg.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor#get()Ljava/util/Set;84
+	
+get85
+
+ResourceNodeEvaluator86
+v
+porg.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor$ResourceNodeEvaluator.subject88
+
+subject89
+
+AuthorizationSubject91
+Ç
+|org.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor$ResourceNodeEvaluator.weightedPermissions93
+
+weightedPermissions94
+
+WeightedPermissions96
+Â
+ﬁorg.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor$ResourceNodeEvaluator#<init>(Lorg/eclipse/ditto/policies/model/enforcers/tree/CollectUnrestrictedSubjectsVisitor;Ljava/lang/CharSequence;)V98
+"
+aggregateWeightedPermissions99
+2
++Recovered#typeBindingLEffectedPermissions;0101
+
+PointerLocation103
+
+returns104
+∂
+Æorg.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor$ResourceNodeEvaluator#getLocationInRelationToTargetPointer(LResourceNode;)LPointerLocation;106
++
+$getLocationInRelationToTargetPointer107
+{
+torg.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor$ResourceNodeEvaluator#evaluate()V109
+
+evaluate110
+1
+*Recovered#typeBindingLWeightedPermission;0112
+∫
+≤org.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor$ResourceNodeEvaluator#areExpectedPermissionsEffectivelyRevoked(Ljava/util/Map;Ljava/util/Map;)Z114
+∫
+≤org.eclipse.ditto.policies.model.enforcers.tree.CollectUnrestrictedSubjectsVisitor$ResourceNodeEvaluator#areExpectedPermissionsEffectivelyGranted(Ljava/util/Map;Ljava/util/Map;)Z116
+/
+(areExpectedPermissionsEffectivelyRevoked117
+/
+(areExpectedPermissionsEffectivelyGranted118J
+
+1
+12Z
+
+3	
+354j¡
+A
+92;
+929331 *
+1c	 c(247:3B
+	
+9
+32
+
+
+11
+94
+
+90
+909115
+@
+75:
+757662 *
+1L L(26:3B
+	
+9
+32
+
+
+11
+80
+
+100
+10010115
+@
+37:
+373831 *
+1( ((26:3B
+	
+9
+32
+
+
+11
+39
+
+64
+646515
+
+111
+11111215
+
+17
+171815
+
+27
+272815
+
+95
+959615
+
+23
+232415
+E
+105>
+10510662 *
+1x	 x(247:3B
+	
+9
+32
+
+11
+107
+
+20
+202115
+@
+29:
+293031 *
+1& &(26:3B
+	
+9
+32
+
+
+11
+33
+
+58
+585915
+@
+83:
+838462 *
+1R R(26:3B
+	
+9
+69
+
+
+11
+85
+
+34
+343515
+A
+81;
+818262 *
+1j	 j(247:3B
+	
+9
+32
+
+
+11
+99
+?
+479
+47488 *
+1` `(.26:3B
+	
+9
+32
+
+
+11
+86
+@
+60:
+606162 *
+12 2('26:3B
+	
+9
+10
+
+
+11
+12
+E
+108>
+10810962 *
+1|	 |(247:3B
+	
+9
+32
+
+11
+110
+
+13
+131415
+@
+50:
+505131 *
+1* *(26:3B
+	
+9
+32
+
+
+11
+52
+@
+44:
+444531 *
+1) )(26:3B
+	
+9
+32
+
+
+11
+46
+
+77
+777815
+
+42
+424315
+@
+53:
+535431 *
+1+ +(26:3B
+	
+9
+32
+
+
+11
+55
+G
+115@
+11511662 *
+1û	 û(247:3B
+	
+9
+32
+
+11
+118
+9
+64
+678 *
+1$ $(/:3B
+	
+9
+10
+
+
+11
+12
+A
+87;
+878831 *
+1b	 b(247:3B
+	
+9
+32
+
+
+11
+89
+
+40
+404115
+A
+97;
+979862 *
+1e	 e(247:3B
+	
+9
+32
+
+
+11
+86
+
+71
+717215
+
+25
+252615
+@
+73:
+737462 *
+1D D(26:3B
+	
+9
+32
+
+
+11
+79
+
+56
+565715
+@
+67:
+676862 *
+1; ;(26:3B
+	
+9
+69
+
+
+11
+70
+
+102
+10210315
+G
+113@
+11311462 *
+1à	 à(247:3B
+	
+9
+32
+
+11
+117rÔ"
+
+61316*
+1$; $(B
+
+61719*
+1" "(
+
+62022*
+1" "(
+
+62319*
+1# #(
+
+62522*
+1# #(
+
+61322*
+1$; $(B
+
+62722*
+1$G $([
+
+293436*
+1& &(
+
+293422*
+1& &(
+
+293422*
+1& &(2
+
+374022*
+1( (('
+
+374222*
+1() ((8
+
+444722*
+1) )(3
+
+444749*
+1) )(3
+
+502722*
+1* *(+
+
+534736*
+1+ +(,
+
+535619*
+1+ +(
+
+535822*
+1+ +(
+
+534722*
+1+ +(,
+
+534749*
+1+ +(,
+
+534722*
+1+- +(=
+
+604063*
+12. 2(9
+
+606463*
+12Q 2(\
+
+60666*
+12 2('
+
+604036*
+12: 2(I
+
+604022*
+12. 2(9
+
+606436*
+12] 2(p
+
+606422*
+12Q 2(\
+
+60622*
+13	 3(
+
+60649*
+13	 3(
+
+603422*
+13 3(!
+
+602949*
+13 3(!
+
+603749*
+15	 5(!
+
+604449*
+16	 6(
+
+605049*
+17	 7(
+
+604722*
+18	 8(
+
+605349*
+18	 8(
+
+677163*
+1<% <(3
+
+677136*
+1<4 <(8
+
+677122*
+1<% <(3
+
+67649*
+1> >(
+
+677366*
+1> >(
+
+67649*
+1@ @(
+
+677566*
+1@ @(
+
+677722*
+1@  @(,
+
+737163*
+1D) D(7
+
+737136*
+1D8 D(C
+
+737122*
+1D) D(7
+
+734722*
+1H	 H(
+
+735349*
+1H	 H(
+
+734766*
+1H  H(5
+
+734449*
+1I	 I(
+
+734449*
+1I	 I(
+
+734722*
+1I I((
+
+735349*
+1I I((
+
+757763*
+1L* L(6
+
+757736*
+1L7 L(C
+
+757722*
+1L* L(6
+
+754722*
+1M M(%
+
+755349*
+1M M(%
+
+754749*
+1N N(
+
+758166*
+1N N(:
+
+755349*
+1N N(
+
+754722*
+1N N(
+
+755349*
+1N N(
+
+832722*
+1S S($
+
+834449*
+1V	 V(
+
+834449*
+1V	 V(
+
+834722*
+1V V(1
+
+834749*
+1V V(1
+
+835049*
+1W W(2
+
+471719*
+1_ _(
+
+472022*
+1_ _(
+
+879036*
+1b b(+
+
+879022*
+1b b(+
+
+879022*
+1b, b(3
+
+929536*
+1c c(*
+
+929522*
+1c c(*
+
+929522*
+1c+ c(>
+
+974766*
+1e e(&
+
+979022*
+1f f(
+
+978749*
+1f f(
+
+979522*
+1g g( 
+
+979249*
+1g g( 
+
+817763*
+1j9 j(E
+
+817736*
+1jF j(R
+
+817722*
+1j9 j(E
+
+8110036*
+1k' k(:
+
+8110022*
+1k k(&
+
+816436*
+1l l(1
+
+816422*
+1l l(
+
+816436*
+1m m(1
+
+816422*
+1m m(
+
+814236*
+1o# o(2
+
+814222*
+1o o("
+
+81102104*
+1o5 o(Y
+
+814749*
+1o5 o(Y
+
+8110566*
+1o5 o(Y
+
+819249*
+1q q($
+
+819522*
+1q q($
+
+819249*
+1q q($
+
+819249*
+1r r($
+
+819522*
+1r r($
+
+819249*
+1r r($
+
+819249*
+1t t($
+
+819522*
+1t t($
+
+819249*
+1t t($
+
+105102104*
+1x x( 
+
+1057763*
+1xL x(X
+
+10510222*
+1x x( 
+
+1057736*
+1xY x(e
+
+1057722*
+1xL x(X
+
+1053749*
+1y y(,
+
+1053749*
+1y y(,
+
+10811122*
+1} }(1
+
+1089249*
+1~ ~((
+
+1089522*
+1~ ~((
+
+1089249*
+1~ ~((
+
+1083422*
+1~E ~(X
+
+1082949*
+1~E ~(X
+
+10811122*
+1 (1
+
+1089249*
+1Ä Ä((
+
+1089522*
+1Ä Ä((
+
+1089249*
+1Ä Ä((
+
+1083422*
+1ÄE Ä(X
+
+1082949*
+1ÄE Ä(X
+
+1084749*
+1Å Å(9
+
+10811366*
+1Å Å(9
+
+1085049*
+1Ç Ç(%
+
+1085049*
+1Ç Ç(%
+
+1089022*
+1Ç- Ç(4
+
+1088749*
+1Ç- Ç(4
+
+1084749*
+1É É(@
+
+10811566*
+1É É(@
+
+1085049*
+1Ñ Ñ(%
+
+1085049*
+1Ñ Ñ(%
+
+1089022*
+1Ñ* Ñ(1
+
+1088749*
+1Ñ* Ñ(1
+
+11311122*
+1àT à(f
+
+11311122*
+1â# â(5
+
+1132949*
+1ã# ã(6
+
+1133422*
+1ã# ã(6
+
+1132949*
+1ã# ã(6
+
+1133422*
+1è4 è(G
+
+1132949*
+1è4 è(G
+
+11311136*
+1ê* ê(;
+
+11311122*
+1ê ê()
+
+11311136*
+1ë* ë(;
+
+11311122*
+1ë ë()
+
+11511122*
+1ûT û(f
+
+11511122*
+1ü# ü(5
+
+1152949*
+1°# °(6
+
+1153422*
+1°# °(6
+
+1152949*
+1°# °(6
+
+1153422*
+1•4 •(G
+
+1152949*
+1•4 •(G
+
+11511136*
+1¶* ¶(;
+
+11511122*
+1¶ ¶()
+
+11511136*
+1ß* ß(;
+
+11511122*
+1ß ß()

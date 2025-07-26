@@ -1,0 +1,728 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508754169*java2.B®
+p
+kpolicies/enforcement/src/main/java/org/eclipse/ditto/policies/enforcement/pre/PolicyImportsPreEnforcer.java2
+
+package4
+/
+*org.eclipse.ditto.policies.enforcement.pre5
+H
+Corg.eclipse.ditto.policies.enforcement.pre.PolicyImportsPreEnforcer7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+PolicyImportsPreEnforcer12
+)
+#Recovered#typeBindingLPreEnforcer;014
+
+unknown15
+
+
+implements16
+
+
+uses17
+M
+Gorg.eclipse.ditto.policies.enforcement.pre.PolicyImportsPreEnforcer.LOG19
+
+field20
+
+private21
+	
+LOG22
+
+ThreadSafeDittoLogger24
+
+is type25
+Y
+Sorg.eclipse.ditto.policies.enforcement.pre.PolicyImportsPreEnforcer.POLICY_RESOURCE27
+
+POLICY_RESOURCE28
+X
+Rorg.eclipse.ditto.policies.enforcement.pre.PolicyImportsPreEnforcer.ENTRIES_PREFIX30
+
+ENTRIES_PREFIX31
+`
+Zorg.eclipse.ditto.policies.enforcement.pre.PolicyImportsPreEnforcer.policyEnforcerProvider33
+
+policyEnforcerProvider34
+
+PolicyEnforcerProvider36
+h
+borg.eclipse.ditto.policies.enforcement.pre.PolicyImportsPreEnforcer#<init>(LActorSystem;LConfig;)V38
+
+method39
+)
+#Recovered#typeBindingLActorSystem;041
+
+	has param42
+$
+Recovered#typeBindingLConfig;044
+
+calls45
+
+
+references46
+k
+eorg.eclipse.ditto.policies.enforcement.pre.PolicyImportsPreEnforcer#<init>(LPolicyEnforcerProvider;)V48
+
+	protected49
+4
+.Recovered#typeBindingLPolicyEnforcerProvider;051
+
+yorg.eclipse.ditto.policies.enforcement.pre.PolicyImportsPreEnforcer#apply(LSignal;)Ljava/util/concurrent/CompletionStage;53
+
+apply54
+$
+Recovered#typeBindingLSignal;056
+*
+$Recovered#typeBindingLModifyPolicy;058
+¨
+¡org.eclipse.ditto.policies.enforcement.pre.PolicyImportsPreEnforcer#doApply(Ljava/util/stream/Stream;LPolicyModifyCommand;)Ljava/util/concurrent/CompletionStage;60
+*
+$Recovered#typeBindingLCreatePolicy;062
+1
++Recovered#typeBindingLModifyPolicyImports;064
+0
+*Recovered#typeBindingLModifyPolicyImport;066
+
+doApply67
+1
++Recovered#typeBindingLPolicyModifyCommand;069
+*
+$Recovered#typeBindingLPolicyImport;071
+*
+$Recovered#typeBindingLDittoHeaders;073
+œ
+•org.eclipse.ditto.policies.enforcement.pre.PolicyImportsPreEnforcer#getPolicyEnforcer(LPolicyId;LDittoHeaders;)Ljava/util/concurrent/CompletionStage;75
+
+getPolicyEnforcer76
+&
+ Recovered#typeBindingLPolicyId;078
+,
+&Recovered#typeBindingLPolicyEnforcer;080
+•
+Žorg.eclipse.ditto.policies.enforcement.pre.PolicyImportsPreEnforcer#policyNotAccessible(LPolicyId;LDittoHeaders;)Ljava/util/function/Supplier;82
+
+policyNotAccessible83
+:
+4Recovered#typeBindingLPolicyNotAccessibleException;085
+‰
+‚org.eclipse.ditto.policies.enforcement.pre.PolicyImportsPreEnforcer#getImportedResourceKeys(LPolicy;LPolicyImport;)Ljava/util/Set;87
+
+getImportedResourceKeys88
+$
+Recovered#typeBindingLPolicy;090
+)
+#Recovered#typeBindingLResourceKey;092
+#
+Recovered#typeBindingLLabel;094
+Š
+ƒorg.eclipse.ditto.policies.enforcement.pre.PolicyImportsPreEnforcer#authorize(LPolicyModifyCommand;LPolicyEnforcer;LPolicyImport;)Z96
+
+	authorize97
+&
+ Recovered#typeBindingLEnforcer;099
+3
+,Recovered#typeBindingLAuthorizationContext;0101
+
+DittoRuntimeException103
+
+returns104
+Ž
+†org.eclipse.ditto.policies.enforcement.pre.PolicyImportsPreEnforcer#errorForPolicyModifyCommand(LPolicyImport;)LDittoRuntimeException;106
+"
+errorForPolicyModifyCommand107J
+
+1
+12Z
+
+3	
+354jï
+
+
+98
+989915
+
+72
+727315
+
+23
+232415
+
+50
+505115
+@
+47:
+474839 *
+1N N(26:3B
+	
+9
+49
+
+
+11
+12
+
+77
+777815
+@
+18:
+181920 *
+18 8(26:3B
+	
+9
+21
+
+
+11
+22
+
+93
+939415
+
+63
+636415
+@
+74:
+747539 *
+1r r(26:3B
+	
+9
+21
+
+
+11
+76
+@
+32:
+323320 *
+1< <(26:3B
+	
+9
+21
+
+
+11
+34
+@
+52:
+525339 *
+1R R(26:3B
+	
+9
+10
+
+
+11
+54
+
+55
+555615
+@
+29:
+293020 *
+1; ;(26:3B
+	
+9
+21
+
+
+11
+31
+
+61
+616215
+
+100
+10010115
+@
+81:
+818239 *
+1y y(26:3B
+	
+9
+21
+
+
+11
+83
+
+79
+798015
+@
+26:
+262720 *
+1: :(26:3B
+	
+9
+21
+
+
+11
+28
+
+43
+434415
+@
+37:
+373839 *
+1D D(26:3B
+	
+9
+10
+
+
+11
+12
+
+84
+848515
+B
+95<
+959639 *
+1Ž Ž(26:3B
+	
+9
+21
+
+
+11
+97
+F
+105?
+10510639 *
+1£ £(26:3B
+	
+9
+21
+
+11
+107
+@
+86:
+868739 *
+1~ ~(26:3B
+	
+9
+21
+
+
+11
+88
+
+68
+686915
+
+65
+656615
+
+13
+131415
+
+35
+353615
+
+70
+707115
+9
+64
+678 *
+16 6(&:3B
+	
+9
+10
+
+
+11
+12
+
+89
+899015
+
+57
+575815
+@
+59:
+596039 *
+1a a(26:3B
+	
+9
+21
+
+
+11
+67
+
+40
+404115
+
+102
+10210315
+
+91
+919215rÒ
+
+61316*
+162 6(=
+
+61317*
+162 6(=
+
+182325*
+18 8(/
+
+182317*
+18 8(/
+
+182317*
+180 8(3
+
+18617*
+194 9(L
+
+323525*
+1< <()
+
+323517*
+1< <()
+
+323517*
+1<* <(@
+
+374042*
+1E+ E(6
+
+374342*
+1EJ E(P
+
+37645*
+1E E($
+
+374025*
+1E7 E(B
+
+374017*
+1E+ E(6
+
+374325*
+1EQ E(W
+
+374317*
+1EJ E(P
+
+373517*
+1F	 F(
+
+373246*
+1F	 F(
+
+475042*
+1N$ N(:
+
+47645*
+1N N(
+
+475025*
+1N; N(Q
+
+475017*
+1N$ N(:
+
+47617*
+1O	 O(
+
+47646*
+1O	 O(
+
+473517*
+1O O($
+
+473246*
+1O O($
+
+525542*
+1S3 S(9
+
+525517*
+1S S("
+
+525525*
+1S= S(C
+
+525517*
+1S3 S(9
+
+525725*
+1T, T(8
+
+525717*
+1T T(+
+
+52646*
+1U U(
+
+525945*
+1U U(
+
+526125*
+1V3 V(?
+
+526117*
+1V& V(2
+
+52646*
+1W W(
+
+525945*
+1W W(
+
+526325*
+1X: X(M
+
+526317*
+1X& X(9
+
+52646*
+1Y Y(
+
+525945*
+1Y Y(
+
+526525*
+1Z9 Z(K
+
+526517*
+1Z& Z(8
+
+52646*
+1[ [(
+
+525945*
+1[ [(
+
+596842*
+1b b(&
+
+595517*
+1a a(#
+
+597017*
+1a= a(I
+
+596825*
+1b* b(1
+
+596817*
+1b b(&
+
+591846*
+1d d(
+
+592317*
+1d d(
+
+591846*
+1d d(
+
+591846*
+1e e(
+
+592317*
+1e e(
+
+591846*
+1e e(
+
+597225*
+1i i((
+
+597217*
+1i i(
+
+747742*
+1rE r(M
+
+747242*
+1s s(
+
+747917*
+1r r(+
+
+747725*
+1rN r(V
+
+747717*
+1rE r(M
+
+747225*
+1s  s(,
+
+747217*
+1s s(
+
+743246*
+1t t(&
+
+743517*
+1t t(&
+
+743246*
+1t t(&
+
+817742*
+1z z(
+
+817242*
+1z, z(8
+
+818417*
+1y y(9
+
+817725*
+1z z($
+
+817717*
+1z z(
+
+817225*
+1z9 z(E
+
+817217*
+1z, z(8
+
+868942*
+1~C ~(I
+
+867042*
+1~` ~(l
+
+869117*
+1~ ~(#
+
+868925*
+1~J ~(X
+
+868917*
+1~C ~(I
+
+867025*
+1~m ~(y
+
+867017*
+1~` ~(l
+
+869317*
+1 (
+
+869317*
+1ƒ ƒ(
+
+956842*
+1Ž% Ž(8
+
+957942*
+1ŽK Ž(Y
+
+957042*
+1 (
+
+956825*
+1Ž< Ž(C
+
+956817*
+1Ž% Ž(8
+
+957925*
+1ŽZ Ž(h
+
+957917*
+1ŽK Ž(Y
+
+957025*
+1  (,
+
+957017*
+1 (
+
+959825*
+1 ( 
+
+959817*
+1 (
+
+958925*
+1‘ ‘($
+
+958917*
+1‘ ‘(
+
+95646*
+1‘N ‘(a
+
+958145*
+1‘N ‘(a
+
+959117*
+1’ ’(
+
+95646*
+1’/ ’(F
+
+958645*
+1’/ ’(F
+
+9510025*
+1“$ “(8
+
+9510017*
+1“ “(#
+
+951846*
+1— —(
+
+952317*
+1— —(
+
+951846*
+1— —(
+
+951846*
+1˜ ˜(
+
+952317*
+1˜ ˜(
+
+951846*
+1˜ ˜(
+
+95102104*
+1 (.
+
+95646*
+1 (.
+
+9510545*
+1 (.
+
+105102104*
+1£ £()
+
+1057042*
+1£L £(X
+
+10510217*
+1£ £()
+
+1057025*
+1£Y £(e
+
+1057017*
+1£L £(X

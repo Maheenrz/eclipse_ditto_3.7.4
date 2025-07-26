@@ -1,0 +1,831 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508579335*java2.B§"
+a
+\wot/validation/src/main/java/org/eclipse/ditto/wot/validation/InternalFeatureValidation.java2
+
+package4
+%
+ org.eclipse.ditto.wot.validation5
+?
+:org.eclipse.ditto.wot.validation.InternalFeatureValidation7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+
+InternalFeatureValidation12
+J
+Dorg.eclipse.ditto.wot.validation.InternalFeatureValidation#<init>()V14
+
+method15
+
+private16
+
+calls17
+∞
+©org.eclipse.ditto.wot.validation.InternalFeatureValidation#forbidNonModeledFeatures(LFeatures;Ljava/util/Set;LValidationContext;)Ljava/util/concurrent/CompletableFuture;19
+
+forbidNonModeledFeatures20
+&
+ Recovered#typeBindingLFeatures;022
+
+unknown23
+
+	has param24
+/
+)Recovered#typeBindingLValidationContext;026
+
+is type27
+
+Nullable29
+
+annotated by30
+&
+ Recovered#typeBindingLNullable;032
+
+
+uses33
+∏
+±org.eclipse.ditto.wot.validation.InternalFeatureValidation#enforcePresenceOfModeledFeatures(LFeatures;Ljava/util/Set;LValidationContext;)Ljava/util/concurrent/CompletableFuture;35
+&
+ enforcePresenceOfModeledFeatures36
+ﬂ
+ÿorg.eclipse.ditto.wot.validation.InternalFeatureValidation#enforceFeaturePropertiesInAllSubmodels(Ljava/util/Map;LFeatures;ZZLValidationContext;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;38
+,
+&enforceFeaturePropertiesInAllSubmodels39
+(
+"Recovered#typeBindingLThingModel;041
+ª
+¥org.eclipse.ditto.wot.validation.InternalFeatureValidation#enforceFeatureProperties(LThingModel;LFeature;ZZLJsonPointer;LValidationContext;)Ljava/util/concurrent/CompletableFuture;43
+
+enforceFeatureProperties44
+%
+Recovered#typeBindingLFeature;046
+)
+#Recovered#typeBindingLJsonPointer;048
+⁄
+”org.eclipse.ditto.wot.validation.InternalFeatureValidation#enforceFeatureProperty(LThingModel;Ljava/lang/String;LJsonPointer;LJsonValue;ZZLJsonPointer;LValidationContext;)Ljava/util/concurrent/CompletableFuture;50
+
+enforceFeatureProperty51
+'
+!Recovered#typeBindingLJsonValue;053
+Ó
+Áorg.eclipse.ditto.wot.validation.InternalFeatureValidation#enforceFeaturePropertyOnlyDefinedProperties(LThingModel;LJsonPointer;LJsonValue;ZLValidationContext;LProperties;ZLjava/lang/String;)Ljava/util/concurrent/CompletableFuture;55
+1
++enforceFeaturePropertyOnlyDefinedProperties56
+(
+"Recovered#typeBindingLProperties;058
+/
+)Recovered#typeBindingLFeatureProperties;060
+¯
+Òorg.eclipse.ditto.wot.validation.InternalFeatureValidation#enforceFeaturePropertyValidateProperties(LThingModel;LJsonPointer;LJsonValue;ZLJsonPointer;LValidationContext;LProperties;ZLjava/lang/String;)Ljava/util/concurrent/CompletableFuture;62
+.
+(enforceFeaturePropertyValidateProperties63
+E
+?Recovered#typeBindingLWotThingModelPayloadValidationException;065
+&
+ Recovered#typeBindingLProperty;067
+
+
+references68
+Ë
+·org.eclipse.ditto.wot.validation.InternalFeatureValidation#validatePropertyCategory(LThingModel;LProperties;LJsonPointer;ZLJsonObject;Ljava/lang/String;LJsonPointer;LValidationContext;)Ljava/util/concurrent/CompletableFuture;70
+Ñ
+˝org.eclipse.ditto.wot.validation.InternalFeatureValidation#enforcePresenceOfRequiredPropertiesUponFeatureLevelDeletion(LThingModel;Ljava/lang/String;LJsonPointer;LValidationContext;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;72
+A
+;enforcePresenceOfRequiredPropertiesUponFeatureLevelDeletion73
+È
+‚org.eclipse.ditto.wot.validation.InternalFeatureValidation#enforcePresenceOfRequiredPropertiesUponPropertyCategoryDeletion(LThingModel;Ljava/lang/String;LValidationContext;LJsonPointer;)Ljava/util/concurrent/CompletableFuture;75
+E
+?enforcePresenceOfRequiredPropertiesUponPropertyCategoryDeletion76
+É
+¸org.eclipse.ditto.wot.validation.InternalFeatureValidation#enforceFeatureActionPayload(Ljava/lang/String;LThingModel;Ljava/lang/String;LJsonValue;ZLJsonPointer;ZLValidationContext;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;78
+!
+enforceFeatureActionPayload79
+Å
+˙org.eclipse.ditto.wot.validation.InternalFeatureValidation#enforceFeatureEventPayload(Ljava/lang/String;LThingModel;Ljava/lang/String;LJsonValue;ZLJsonPointer;LValidationContext;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;81
+ 
+enforceFeatureEventPayload82
+
+validatePropertyCategory83
+(
+"Recovered#typeBindingLJsonObject;085
+%
+Recovered#typeBindingLJsonKey;087J
+
+1
+12Z
+
+3	
+354jø	
+
+21
+212223
+B
+49<
+495015 *
+1“ “(26:3B
+	
+9
+10
+
+
+11
+51
+
+64
+646523
+@
+34:
+343515 *
+1R R(26:3B
+	
+9
+10
+
+
+11
+36
+
+57
+575823
+
+31
+313223
+
+25
+252623
+
+84
+848523
+@
+18:
+181915 *
+1< <(26:3B
+	
+9
+10
+
+
+11
+20
+@
+37:
+373815 *
+1i i(26:3B
+	
+9
+10
+
+
+11
+39
+
+59
+596023
+9
+64
+678 *
+16 6(&:3B
+	
+9
+10
+
+
+11
+12
+B
+69<
+697015 *
+1 (26:3B
+	
+9
+10
+
+
+11
+83
+B
+77<
+777815 *
+1µ µ(26:3B
+	
+9
+10
+
+
+11
+79
+
+52
+525323
+B
+42<
+424315 *
+1é é(26:3B
+	
+9
+10
+
+
+11
+44
+B
+71<
+717215 *
+1Ì Ì(26:3B
+	
+9
+10
+
+
+11
+73
+
+40
+404123
+
+47
+474823
+B
+80<
+808115 *
+1” ”(26:3B
+	
+9
+10
+
+
+11
+82
+
+86
+868723
+B
+54<
+545515 *
+1¯ ¯(26:3B
+	
+9
+16
+
+
+11
+56
+
+66
+666723
+B
+74<
+747515 *
+1ê ê(26:3B
+	
+9
+16
+
+
+11
+76
+
+45
+454623
+B
+61<
+616215 *
+1® ®(26:3B
+	
+9
+16
+
+
+11
+63
+@
+13:
+131415 *
+18 8(26:3B
+	
+9
+16
+
+
+11
+12
+
+28
+282923rè&
+
+13617*
+18 8(&
+
+182124*
+1<M <(U
+
+182524*
+1> >($
+
+182127*
+1<V <(^
+
+182830*
+1<= <(>
+
+183133*
+1<> <(F
+
+182133*
+1<M <(U
+
+182527*
+1>% >(,
+
+182533*
+1> >($
+
+342124*
+1RU R(]
+
+342524*
+1T T($
+
+342127*
+1R^ R(f
+
+342830*
+1RE R(F
+
+343133*
+1RF R(N
+
+342133*
+1RU R(]
+
+342527*
+1T% T(,
+
+342533*
+1T T($
+
+372124*
+1k k(
+
+372524*
+1n n($
+
+374033*
+1j j()
+
+372127*
+1k k($
+
+372133*
+1k k(
+
+372527*
+1n% n(,
+
+372533*
+1n n($
+
+424024*
+1éC é(M
+
+424524*
+1è è(
+
+424724*
+1í í(
+
+422524*
+1ì ì($
+
+424027*
+1éN é(_
+
+424033*
+1éC é(M
+
+424527*
+1è è("
+
+424533*
+1è è(
+
+424727*
+1í í(+
+
+424733*
+1í í(
+
+422527*
+1ì% ì(,
+
+422533*
+1ì ì($
+
+494024*
+1“A “(K
+
+494724*
+1‘ ‘(
+
+495224*
+1’ ’(
+
+494724*
+1ÿ ÿ(
+
+492524*
+1Ÿ Ÿ($
+
+494027*
+1“L “(]
+
+494033*
+1“A “(K
+
+494727*
+1‘ ‘(+
+
+494733*
+1‘ ‘(
+
+495227*
+1’ ’(*
+
+495233*
+1’ ’(
+
+494727*
+1ÿ ÿ(+
+
+494733*
+1ÿ ÿ(
+
+492527*
+1Ÿ% Ÿ(,
+
+492533*
+1Ÿ Ÿ($
+
+544024*
+1˘ ˘(
+
+544724*
+1˙ ˙(
+
+545224*
+1˚ ˚(
+
+542524*
+1˝ ˝($
+
+545724*
+1˛ ˛(
+
+544027*
+1˘ ˘(/
+
+544033*
+1˘ ˘(
+
+544727*
+1˙ ˙(+
+
+544733*
+1˙ ˙(
+
+545227*
+1˚ ˚(*
+
+545233*
+1˚ ˚(
+
+542527*
+1˝% ˝(,
+
+542533*
+1˝ ˝($
+
+545727*
+1˛ ˛(*
+
+545733*
+1˛ ˛(
+
+545727*
+1Ö" Ö(6
+
+545733*
+1Ö Ö(!
+
+545927*
+1å) å(:
+
+545933*
+1å å((
+
+545927*
+1ô) ô(:
+
+545933*
+1ô ô((
+
+614024*
+1®[ ®(e
+
+614724*
+1© ©(
+
+615224*
+1™ ™(
+
+614724*
+1¨ ¨(
+
+612524*
+1≠ ≠($
+
+615724*
+1Æ Æ(
+
+614027*
+1®f ®(w
+
+614033*
+1®[ ®(e
+
+614727*
+1© ©(+
+
+614733*
+1© ©(
+
+615227*
+1™ ™(*
+
+615233*
+1™ ™(
+
+614727*
+1¨ ¨(+
+
+614733*
+1¨ ¨(
+
+612527*
+1≠% ≠(,
+
+612533*
+1≠ ≠($
+
+615727*
+1Æ Æ(*
+
+615733*
+1Æ Æ(
+
+616427*
+1µG µ(W
+
+616433*
+1µ µ(>
+
+616433*
+1µ? µ(F
+
+616633*
+1æ æ( 
+
+61668*
+1» »(0
+
+616917*
+1» »(0
+
+714024*
+1Ó Ó(
+
+714724*
+1 (
+
+712524*
+1Ò Ò($
+
+714027*
+1Ó Ó(/
+
+714033*
+1Ó Ó(
+
+714727*
+1 (+
+
+714733*
+1 (
+
+712527*
+1Ò% Ò(,
+
+712533*
+1Ò Ò($
+
+714727*
+1Ù Ù()
+
+714733*
+1Ù Ù(
+
+71668*
+1˘ ˘(Y
+
+717417*
+1˘ ˘(Y
+
+744024*
+1ë ë(
+
+742524*
+1ì ì($
+
+744724*
+1î î(
+
+744027*
+1ë ë(/
+
+744033*
+1ë ë(
+
+742527*
+1ì% ì(,
+
+742533*
+1ì ì($
+
+744727*
+1î î(-
+
+744733*
+1î î(
+
+746427*
+1©G ©(W
+
+746433*
+1© ©(>
+
+746433*
+1©? ©(F
+
+774024*
+1∂ ∂(
+
+775224*
+1∏ ∏(&
+
+774724*
+1∫ ∫(
+
+772524*
+1º º($
+
+774027*
+1∂ ∂(/
+
+774033*
+1∂ ∂(
+
+775227*
+1∏' ∏(3
+
+772830*
+1∏ ∏(
+
+773133*
+1∏ ∏(
+
+775233*
+1∏ ∏(&
+
+774727*
+1∫ ∫(+
+
+774733*
+1∫ ∫(
+
+772527*
+1º% º(,
+
+772533*
+1º º($
+
+804024*
+1‘ ‘(
+
+805224*
+1÷ ÷(&
+
+804724*
+1ÿ ÿ(
+
+802524*
+1Ÿ Ÿ($
+
+804027*
+1‘ ‘(/
+
+804033*
+1‘ ‘(
+
+805227*
+1÷' ÷(.
+
+802830*
+1÷ ÷(
+
+803133*
+1÷ ÷(
+
+805233*
+1÷ ÷(&
+
+804727*
+1ÿ ÿ(+
+
+804733*
+1ÿ ÿ(
+
+802527*
+1Ÿ% Ÿ(,
+
+802533*
+1Ÿ Ÿ($
+
+694024*
+1C (M
+
+695724*
+1Ò Ò(
+
+694724*
+1Ú Ú(
+
+698424*
+1Ù Ù(
+
+694724*
+1ˆ ˆ(
+
+692524*
+1˜ ˜($
+
+694027*
+1N (_
+
+694033*
+1C (M
+
+695727*
+1Ò Ò(0
+
+695733*
+1Ò Ò(
+
+694727*
+1Ú Ú(+
+
+694733*
+1Ú Ú(
+
+698427*
+1Ù Ù(,
+
+698433*
+1Ù Ù(
+
+694727*
+1ˆ ˆ(+
+
+694733*
+1ˆ ˆ(
+
+692527*
+1˜% ˜(,
+
+692533*
+1˜ ˜($
+
+696633*
+1˘ ˘(#
+
+698627*
+1˚ ˚(
+
+698633*
+1˚ ˚(

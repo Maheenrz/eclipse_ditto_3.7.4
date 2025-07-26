@@ -1,0 +1,705 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508540084*java2.Bà
+]
+Xconnectivity/model/src/main/java/org/eclipse/ditto/connectivity/model/ConnectionUri.java2
+
+package4
+)
+$org.eclipse.ditto.connectivity.model5
+7
+2org.eclipse.ditto.connectivity.model.ConnectionUri7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+
+ConnectionUri12
+
+	Immutable14
+
+unknown15
+
+annotated by16
+'
+!Recovered#typeBindingLImmutable;018
+
+
+uses19
+K
+Eorg.eclipse.ditto.connectivity.model.ConnectionUri.MASKED_URI_PATTERN21
+
+field22
+
+private23
+
+MASKED_URI_PATTERN24
+T
+Norg.eclipse.ditto.connectivity.model.ConnectionUri.USERNAME_PASSWORD_SEPARATOR26
+!
+USERNAME_PASSWORD_SEPARATOR27
+B
+<org.eclipse.ditto.connectivity.model.ConnectionUri.uriString29
+
+	uriString30
+A
+;org.eclipse.ditto.connectivity.model.ConnectionUri.protocol32
+
+protocol33
+A
+;org.eclipse.ditto.connectivity.model.ConnectionUri.hostname35
+
+hostname36
+=
+7org.eclipse.ditto.connectivity.model.ConnectionUri.port38
+
+
+port39
+=
+7org.eclipse.ditto.connectivity.model.ConnectionUri.path41
+
+
+path42
+A
+;org.eclipse.ditto.connectivity.model.ConnectionUri.userName44
+
+userName45
+
+Nullable47
+&
+ Recovered#typeBindingLNullable;049
+A
+;org.eclipse.ditto.connectivity.model.ConnectionUri.password51
+
+password52
+T
+Norg.eclipse.ditto.connectivity.model.ConnectionUri.uriStringWithMaskedPassword54
+!
+uriStringWithMaskedPassword55
+T
+Norg.eclipse.ditto.connectivity.model.ConnectionUri#<init>(Ljava/lang/String;)V57
+
+method58
+
+calls59
+
+
+references60
+[
+Uorg.eclipse.ditto.connectivity.model.ConnectionUri#isBlankOrNull(Ljava/lang/String;)Z62
+Q
+Korg.eclipse.ditto.connectivity.model.ConnectionUri#isValid(Ljava/net/URI;)Z64
+n
+horg.eclipse.ditto.connectivity.model.ConnectionUri#createUriStringWithMaskedPassword()Ljava/lang/String;66
+'
+!createUriStringWithMaskedPassword67
+l
+forg.eclipse.ditto.connectivity.model.ConnectionUri#getUserCredentialsOrEmptyString()Ljava/lang/String;69
+a
+[org.eclipse.ditto.connectivity.model.ConnectionUri#getPathOrEmptyString()Ljava/lang/String;71
+%
+getUserCredentialsOrEmptyString72
+
+getPathOrEmptyString73
+V
+Porg.eclipse.ditto.connectivity.model.ConnectionUri#getPath()Ljava/util/Optional;75
+
+isValid76
+ƒ
+}org.eclipse.ditto.connectivity.model.ConnectionUri#of(Ljava/lang/String;)Lorg/eclipse/ditto/connectivity/model/ConnectionUri;78
+
+of79
+
+returns80
+X
+Rorg.eclipse.ditto.connectivity.model.ConnectionUri#getProtocol()Ljava/lang/String;82
+
+getProtocol83
+Z
+Torg.eclipse.ditto.connectivity.model.ConnectionUri#getUserName()Ljava/util/Optional;85
+
+getUserName86
+Z
+Torg.eclipse.ditto.connectivity.model.ConnectionUri#getPassword()Ljava/util/Optional;88
+
+getPassword89
+X
+Rorg.eclipse.ditto.connectivity.model.ConnectionUri#getHostname()Ljava/lang/String;91
+
+getHostname92
+C
+=org.eclipse.ditto.connectivity.model.ConnectionUri#getPort()I94
+
+getPort95
+
+isBlankOrNull96
+
+getPath97
+k
+eorg.eclipse.ditto.connectivity.model.ConnectionUri#getUriStringWithMaskedPassword()Ljava/lang/String;99
+%
+getUriStringWithMaskedPassword100
+U
+Norg.eclipse.ditto.connectivity.model.ConnectionUri#equals(Ljava/lang/Object;)Z102
+
+public103
+
+equals104
+
+is type105
+E
+>org.eclipse.ditto.connectivity.model.ConnectionUri#hashCode()I107
+
+hashCode108
+V
+Oorg.eclipse.ditto.connectivity.model.ConnectionUri#toString()Ljava/lang/String;110
+
+toString111J
+
+1
+12Z
+
+3	
+354j§
+
+13
+131415
+@
+68:
+686958 *
+1^ ^(26:3B
+	
+9
+23
+
+
+11
+72
+G
+101@
+10110258 *
+1¦ ¦(26:3B
+
+
+9
+103
+
+11
+104
+
+17
+171815
+B
+84<
+848558 *
+1… …(26:3B
+	
+9
+10
+
+
+11
+86
+@
+40:
+404122 *
+1) )(26:3B
+	
+9
+23
+
+
+11
+42
+B
+61<
+616258 *
+1• •(26:3B
+	
+9
+10
+
+
+11
+96
+
+48
+484915
+@
+31:
+313222 *
+1& &(26:3B
+	
+9
+23
+
+
+11
+33
+G
+109@
+10911058 *
+1» »(26:3B
+
+
+9
+103
+
+11
+111
+@
+56:
+565758 *
+1. .(26:3B
+	
+9
+23
+
+
+11
+12
+@
+25:
+252622 *
+1" "(26:3B
+	
+9
+23
+
+
+11
+27
+9
+64
+678 *
+1 (:3B
+	
+9
+10
+
+
+11
+12
+@
+77:
+777858 *
+1} }(26:3B
+	
+9
+10
+
+
+11
+79
+@
+53:
+535422 *
+1, ,(26:3B
+	
+9
+23
+
+
+11
+55
+@
+34:
+343522 *
+1' '(26:3B
+	
+9
+23
+
+
+11
+36
+@
+50:
+505122 *
+1+ +(26:3B
+	
+9
+23
+
+
+11
+52
+@
+43:
+434422 *
+1* *(26:3B
+	
+9
+23
+
+
+11
+45
+@
+63:
+636458 *
+1p p(26:3B
+	
+9
+10
+
+
+11
+76
+B
+81<
+818258 *
+1 (26:3B
+	
+9
+10
+
+
+11
+83
+C
+98=
+989958 *
+1¢ ¢(26:3B
+	
+9
+10
+
+11
+100
+@
+20:
+202122 *
+1   (26:3B
+	
+9
+23
+
+
+11
+24
+B
+74<
+747558 *
+1ž ž(26:3B
+	
+9
+10
+
+
+11
+97
+@
+70:
+707158 *
+1e e(26:3B
+	
+9
+23
+
+
+11
+73
+@
+28:
+282922 *
+1% %(26:3B
+	
+9
+23
+
+
+11
+30
+B
+93<
+939458 *
+1‘ ‘(26:3B
+	
+9
+10
+
+
+11
+95
+@
+65:
+656658 *
+1Y Y(26:3B
+	
+9
+23
+
+
+11
+67
+@
+37:
+373822 *
+1( ((26:3B
+	
+9
+23
+
+
+11
+39
+G
+106@
+10610758 *
+1² ²(26:3B
+
+
+9
+103
+
+11
+108
+B
+90<
+909158 *
+1 (26:3B
+	
+9
+10
+
+
+11
+92
+
+46
+464715
+B
+87<
+878858 *
+1‰ ‰(26:3B
+	
+9
+10
+
+
+11
+89rÔ
+
+61316*
+1 (
+
+61719*
+1 (
+
+434616*
+1* *(
+
+434819*
+1* *(
+
+504616*
+1+ +(
+
+504819*
+1+ +(
+
+56659*
+1. .(
+
+564616*
+1. .(
+
+564819*
+1. .($
+
+56660*
+1/ /(
+
+566159*
+1/ /(
+
+56660*
+17 7(
+
+566359*
+17 7(
+
+562860*
+1: :(
+
+563160*
+1; ;(
+
+563460*
+1< <(
+
+563760*
+1= =(
+
+564060*
+1> >(
+
+562560*
+1B7 B(R
+
+562560*
+1C= C(X
+
+564360*
+1D D(
+
+565060*
+1E E(
+
+564360*
+1G G(
+
+565060*
+1H H(
+
+565360*
+1L L((
+
+56660*
+1L+ L(L
+
+566559*
+1L+ L(L
+
+562860*
+1N N(
+
+563160*
+1O O(
+
+563460*
+1P P(
+
+563760*
+1Q Q(
+
+564060*
+1R R(
+
+564360*
+1S S(
+
+565060*
+1T T(
+
+565360*
+1U U((
+
+652060*
+1Z% Z(7
+
+653160*
+1Z9 Z(A
+
+65660*
+1ZC Z(b
+
+656859*
+1ZC Z(b
+
+653460*
+1Zf Z(n
+
+653760*
+1Zp Z(t
+
+65660*
+1[ [(%
+
+657059*
+1[ [(%
+
+684360*
+1_ _(
+
+685060*
+1_) _(1
+
+684360*
+1` `(
+
+70660*
+1f f(
+
+707459*
+1f f(
+
+77680*
+1} }(
+
+77619*
+1} }(
+
+774616*
+1} }(
+
+774819*
+1} }('
+
+77659*
+1~ ~(!
+
+813160*
+1‚ ‚(
+
+844360*
+1†$ †(,
+
+875060*
+1Š$ Š(,
+
+903460*
+1Ž Ž(
+
+933760*
+1’ ’(
+
+614616*
+1•" •(#
+
+614819*
+1•# •(+
+
+744060*
+1Ÿ Ÿ(
+
+744060*
+1Ÿ Ÿ(
+
+744060*
+1Ÿ@ Ÿ(D
+
+985360*
+1£ £(+
+
+101619*
+1¨ ¨(
+
+101660*
+1¨ ¨(
+
+1016105*
+1® ®(!
+
+101619*
+1® ®(
+
+101619*
+1®% ®(2
+
+1012860*
+1¯ ¯((
+
+1012860*
+1¯/ ¯(8
+
+1062860*
+1´ ´(&
+
+1092860*
+1½ ½(

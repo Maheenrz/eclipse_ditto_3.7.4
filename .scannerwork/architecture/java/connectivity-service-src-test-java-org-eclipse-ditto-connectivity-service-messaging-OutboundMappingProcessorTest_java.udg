@@ -1,0 +1,1578 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508448791*java2.Bû1
+z
+uconnectivity/service/src/test/java/org/eclipse/ditto/connectivity/service/messaging/OutboundMappingProcessorTest.java2
+
+package4
+5
+0org.eclipse.ditto.connectivity.service.messaging5
+R
+Morg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+"
+OutboundMappingProcessorTest12
+o
+iorg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest.DITTO_TRACING_INIT_RESOURCE14
+
+field15
+!
+DITTO_TRACING_INIT_RESOURCE16
+
+DittoTracingInitResource18
+
+unknown19
+
+is type20
+
+	ClassRule22
+
+annotated by23
+'
+!Recovered#typeBindingLClassRule;025
+
+
+uses26
+i
+corg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest.ACTOR_SYSTEM_RESOURCE28
+
+ACTOR_SYSTEM_RESOURCE29
+
+ActorSystemResource31
+]
+Worg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest.underTest33
+
+private34
+
+	underTest35
+
+OutboundMappingProcessor37
+`
+Zorg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest.DITTO_MAPPER39
+
+DITTO_MAPPER40
+k
+eorg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest.DITTO_MAPPER_CONDITIONS42
+
+DITTO_MAPPER_CONDITIONS43
+i
+corg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest.DITTO_MAPPER_BY_ALIAS45
+
+DITTO_MAPPER_BY_ALIAS46
+x
+rorg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest.DITTO_MAPPER_CUSTOM_HEADER_BLOCKLIST48
+*
+$DITTO_MAPPER_CUSTOM_HEADER_BLOCKLIST49
+c
+]org.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest.DROPPING_MAPPER51
+
+DROPPING_MAPPER52
+b
+\org.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest.FAILING_MAPPER54
+
+FAILING_MAPPER55
+f
+`org.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest.DUPLICATING_MAPPER57
+
+DUPLICATING_MAPPER58
+k
+eorg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest.protocolAdapterProvider60
+
+protocolAdapterProvider61
+
+ProtocolAdapterProvider63
+Z
+Torg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest.logger65
+
+logger66
+#
+ThreadSafeDittoLoggingAdapter68
+\
+Vorg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest#setUp()V70
+
+method71
+
+setUp72
+
+BeforeClass74
+)
+#Recovered#typeBindingLBeforeClass;076
+
+
+references77
+;
+5Recovered#typeBindingLThreadSafeDittoLoggingAdapter;079
+.
+(Recovered#typeBindingLWithDittoHeaders;081
+*
+$Recovered#typeBindingLDittoHeaders;083
+,
+&Recovered#typeBindingLProtocolConfig;085
+[
+Uorg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest#init()V87
+
+
+init88
+
+Before90
+$
+Recovered#typeBindingLBefore;092
+,
+&Recovered#typeBindingLMappingContext;094
+6
+0Recovered#typeBindingLPayloadMappingDefinition;096
+(
+"Recovered#typeBindingLConnection;098
+q
+jorg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest#testOutboundMessageMapped()V100
+ 
+testOutboundMessageMapped101
+
+Test103
+#
+Recovered#typeBindingLTest;0105
+p
+iorg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest#testOutbound(III[LTarget;)V107
+
+calls108
+
+Target110
+
+returns111
+ƒ
+|org.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest#targetWithMapping([Ljava/lang/String;)LTarget;113
+r
+korg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest#testOutboundResponseMapped()V115
+!
+testOutboundResponseMapped116
+m
+forg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest#testGroupingOfTargets()V118
+
+testGroupingOfTargets119
+s
+lorg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest#testOutboundMessageEnriched()V121
+"
+testOutboundMessageEnriched122
+V
+Oorg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest$1124
+
+	protected125
+1
+*Recovered#typeBindingLThingModifiedEvent;0127
+)
+"Recovered#typeBindingLJsonObject;0129
+-
+&Recovered#typeBindingLOutboundSignal;0131
+-
+&Recovered#typeBindingLMappingOutcome;0133
+-
+&Recovered#typeBindingLArgumentCaptor;0135
+©
+¡org.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest#testOutboundEventWithRequestedAcksWhichAreIssuedByTargetDontContainRequestedAcks()V137
+W
+PtestOutboundEventWithRequestedAcksWhichAreIssuedByTargetDontContainRequestedAcks138
+V
+Oorg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest$2140
+3
+,Recovered#typeBindingLAcknowledgementLabel;0142
+¯
+§org.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest#testOutboundLiveMessageWithRequestedAcksWhichAreIssuedByTargetDontContainRequestedAcks()V144
+]
+VtestOutboundLiveMessageWithRequestedAcksWhichAreIssuedByTargetDontContainRequestedAcks145
+V
+Oorg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest$3147
+&
+Recovered#typeBindingLMessage;0149
+-
+&Recovered#typeBindingLMessageCommand;0151
+r
+korg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest#testOutboundMessageDropped()V153
+!
+testOutboundMessageDropped154
+u
+norg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest#testOutboundMessageDuplicated()V156
+$
+testOutboundMessageDuplicated157
+…
+~org.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest#testOutbound(LThingModifiedEvent;IIIZ[LTarget;)V159
+p
+iorg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest#testOutboundMappingFails()V161
+
+testOutboundMappingFails162
+‰
+org.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest#testOutboundMessageDroppedFailedMappedDuplicated()V164
+7
+0testOutboundMessageDroppedFailedMappedDuplicated165
+
+targetWithMapping166
+
+testOutbound167
+@
+9Recovered#innerTypeBindingRecovered#typeBindingLTarget;01169
+
+	has param170
+%
+Recovered#typeBindingLTarget;0172
+V
+Oorg.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest$4174
+—
+org.eclipse.ditto.connectivity.service.messaging.OutboundMappingProcessorTest#removeCorrelationId(LJsonifiableAdaptable;)LJsonifiableAdaptable;176
+
+removeCorrelationId177
+
+JsonifiableAdaptable179
+3
+,Recovered#typeBindingLJsonifiableAdaptable;0181J
+
+1
+12Z
+
+3	
+354jú
+
+73
+737419
+
+168
+16816919
+
+17
+171819
+@
+27:
+272815 *
+1X X(26:3B
+	
+9
+10
+
+
+11
+29
+
+36
+363719
+@
+56:
+565715 *
+1f f(26:3B
+	
+9
+34
+
+
+11
+58
+F
+117?
+11711871 *
+1¸ ¸(26:3B
+	
+9
+10
+
+11
+119
+
+30
+303119
+F
+112?
+11211371 *
+1Î Î(26:3B
+	
+9
+34
+
+11
+166
+
+130
+13013119
+
+91
+919219
+
+102
+10210319
+F
+152?
+15215371 *
+1· ·(26:3B
+	
+9
+10
+
+11
+154
+F
+155?
+15515671 *
+1¼ ¼(26:3B
+	
+9
+10
+
+11
+157
+F
+143?
+14314471 *
+1† †(26:3B
+	
+9
+10
+
+11
+145
+F
+175?
+17517671 *
+1… …(26:3B
+	
+9
+34
+
+11
+177
+@
+44:
+444515 *
+1b b(26:3B
+	
+9
+34
+
+
+11
+46
+
+75
+757619
+F
+114?
+11411571 *
+1³ ³(26:3B
+	
+9
+10
+
+11
+116
+@
+47:
+474815 *
+1c c(26:3B
+	
+9
+34
+
+
+11
+49
+@
+38:
+383915 *
+1^ ^(26:3B
+	
+9
+34
+
+
+11
+40
+
+150
+15015119
+@
+59:
+596015 *
+1h h(26:3B
+	
+9
+34
+
+
+11
+61
+
+95
+959619
+@
+64:
+646515 *
+1i i(26:3B
+	
+9
+34
+
+
+11
+66
+
+67
+676819
+F
+160?
+16016171 *
+1Â Â(26:3B
+	
+9
+10
+
+11
+162
+
+21
+212219
+
+134
+13413519
+@
+53:
+535415 *
+1e e(26:3B
+	
+9
+34
+
+
+11
+55
+
+93
+939419
+@
+41:
+414215 *
+1_ _(26:3B
+	
+9
+34
+
+
+11
+43
+D
+99>
+9910071 *
+1® ®(26:3B
+	
+9
+10
+
+11
+101
+9
+64
+678 *
+1R R(0:3B
+	
+9
+10
+
+
+11
+12
+
+148
+14814919
+F
+106?
+10610771 *
+1Õ Õ(26:3B
+	
+9
+34
+
+11
+167
+
+104
+10410519
+@
+50:
+505115 *
+1d d(26:3B
+	
+9
+34
+
+
+11
+52
+@
+32:
+323315 *
+1\ \(26:3B
+	
+9
+34
+
+
+11
+35
+
+89
+899019
+
+82
+828319
+@
+69:
+697071 *
+1k k(26:3B
+	
+9
+10
+
+
+11
+72
+F
+136?
+13613771 *
+1ß ß(26:3B
+	
+9
+10
+
+11
+138
+
+180
+18018119
+
+109
+10911019
+F
+158?
+15815971 *
+1Ù Ù(26:3B
+	
+9
+34
+
+11
+167
+@
+86:
+868771 *
+1y y(26:3B
+	
+9
+10
+
+
+11
+88
+
+128
+12812919
+
+141
+14114219
+
+24
+242519
+F
+120?
+12012171 *
+1Ê Ê(26:3B
+	
+9
+10
+
+11
+122
+
+171
+17117219
+
+97
+979819
+F
+163?
+16316471 *
+1Ç Ç(26:3B
+	
+9
+10
+
+11
+165
+
+80
+808119
+
+62
+626319
+
+132
+13213319
+@
+13:
+131415 *
+1T T(26:3B
+	
+9
+10
+
+
+11
+16
+
+178
+17817919
+;
+1734
+1731748 *
+1â= â(>2158:3B
+
+
+9
+125
+
+126
+12612719
+;
+1464
+1461478 *
+1‰= ‰(>2143:3B
+
+
+9
+125
+
+78
+787919
+
+84
+848519
+;
+1394
+1391408 *
+1â= â(>2136:3B
+
+
+9
+125
+;
+1234
+1231248 *
+1Í= Í(>2120:3B
+
+
+9
+125r°E
+
+131720*
+1U U(1
+
+132123*
+1T T(
+
+132426*
+1T T(
+
+131726*
+1U U(1
+
+131726*
+1U2 U(M
+
+273020*
+1Y Y(,
+
+272123*
+1X X(
+
+272426*
+1X X(
+
+273026*
+1Y Y(,
+
+273026*
+1Y- Y(B
+
+323620*
+1\ \(%
+
+323626*
+1\ \(%
+
+323626*
+1\& \(/
+
+596220*
+1h h(+
+
+596226*
+1h h(+
+
+596226*
+1h, h(C
+
+646720*
+1i i(1
+
+646726*
+1i i(1
+
+646726*
+1i2 i(8
+
+697323*
+1k k(
+
+697526*
+1k k(
+
+696726*
+1m	 m(
+
+696477*
+1m	 m(
+
+697826*
+1m m(<
+
+696477*
+1n n(
+
+696726*
+1n n(
+
+696477*
+1n n(
+
+696726*
+1o o(#
+
+696477*
+1o o(#
+
+696477*
+1p p(
+
+696726*
+1p p(
+
+696477*
+1p p(
+
+696726*
+1pS p(Y
+
+696477*
+1pS p(Y
+
+696477*
+1q q(
+
+696726*
+1q q(
+
+696477*
+1q q(
+
+698026*
+1q8 q(H
+
+696726*
+1q] q(c
+
+696477*
+1q] q(c
+
+696477*
+1r r(
+
+696726*
+1r r(
+
+696477*
+1r r(
+
+698226*
+1r8 r(D
+
+696726*
+1rY r(_
+
+696477*
+1rY r(_
+
+696477*
+1s s(
+
+696726*
+1s s(
+
+696477*
+1s s(
+
+696726*
+1sP s(V
+
+696477*
+1sP s(V
+
+696477*
+1t t(
+
+696726*
+1t t(
+
+696477*
+1t t(
+
+696726*
+1tY t(_
+
+696477*
+1tY t(_
+
+696226*
+1v	 v( 
+
+695977*
+1v	 v( 
+
+698426*
+1vQ v(_
+
+868923*
+1y y(
+
+869126*
+1y y(
+
+869326*
+1{ {()
+
+863877*
+1| |("
+
+864477*
+1} }(+
+
+864177*
+1 (0
+
+869320*
+1† †(7
+
+869326*
+1† †(
+
+864777*
+1ˆ ˆ(:
+
+865377*
+1‰ ‰($
+
+865077*
+1Š Š(%
+
+869320*
+1‘ ‘(7
+
+869326*
+1‘ ‘(
+
+865677*
+1“ “((
+
+869520*
+1•( •(@
+
+869526*
+1• •('
+
+869720*
+1— —($
+
+869726*
+1— —(
+
+863626*
+1§	 §(
+
+863277*
+1§	 §(
+
+862777*
+1© ©(&
+
+863026*
+1© ©(&
+
+862777*
+1© ©(&
+
+865977*
+1ª ª((
+
+866226*
+1ª ª((
+
+865977*
+1ª ª((
+
+866726*
+1« «(
+
+866477*
+1« «(
+
+9910223*
+1® ®(
+
+9910426*
+1® ®(
+
+
+99677*
+1°	 °(
+
+99106108*
+1°	 °(
+
+99109111*
+1° °(0
+
+99677*
+1° °(0
+
+99112108*
+1° °(0
+
+993877*
+1°1 °(=
+
+11410223*
+1³ ³(
+
+11410426*
+1³ ³(
+
+
+114677*
+1µ	 µ(
+
+114106108*
+1µ	 µ(
+
+11710223*
+1¸ ¸(
+
+11710426*
+1¸ ¸(
+
+
+117677*
+1À	 À(
+
+117106108*
+1À	 À(
+
+117109111*
+1Á Á("
+
+117677*
+1Á Á("
+
+117112108*
+1Á Á("
+
+1173877*
+1Á# Á(/
+
+117109111*
+1Â Â("
+
+117677*
+1Â Â("
+
+117112108*
+1Â Â("
+
+1173877*
+1Â# Â(/
+
+117109111*
+1Ã Ã("
+
+117677*
+1Ã Ã("
+
+117112108*
+1Ã Ã("
+
+1173877*
+1Ã# Ã(/
+
+117109111*
+1Ä Ä("
+
+117677*
+1Ä Ä("
+
+117112108*
+1Ä Ä("
+
+1173877*
+1Ä# Ä(/
+
+1173877*
+1Ä1 Ä(=
+
+117109111*
+1Å Å("
+
+117677*
+1Å Å("
+
+117112108*
+1Å Å("
+
+1173877*
+1Å# Å(/
+
+1173877*
+1Å1 Å(=
+
+117109111*
+1Æ Æ("
+
+117677*
+1Æ Æ("
+
+117112108*
+1Æ Æ("
+
+1173877*
+1Æ# Æ(/
+
+1173877*
+1Æ1 Æ(=
+
+1173877*
+1Æ? Æ(K
+
+12010223*
+1Ê Ê(
+
+12010426*
+1Ê Ê(
+
+
+1202777*
+1Í Í(*
+
+1203026*
+1Í Í(*
+
+1202777*
+1Í Í(*
+
+12312620*
+1Î& Î(,
+
+12312626*
+1Î Î(%
+
+12312820*
+1Ï Ï(#
+
+12312826*
+1Ï Ï(
+
+12313020*
+1Ð" Ð(0
+
+12313026*
+1Ð Ð(!
+
+12313026*
+1Ð@ Ð(N
+
+12313220*
+1ÑG Ñ(K
+
+12313226*
+1Ñ Ñ(!
+
+12313226*
+1Ñ" Ñ()
+
+12313026*
+1Ñ* Ñ(8
+
+12313026*
+1Ñ9 Ñ(?
+
+12313226*
+1Ñ[ Ñ(i
+
+12313226*
+1Ñj Ñ(q
+
+1233277*
+1Ô Ô(
+
+1233626*
+1Ô Ô(
+
+1233277*
+1Ô Ô(
+
+12313420*
+1Õ9 Õ(?
+
+12313426*
+1Õ Õ(!
+
+12313026*
+1Õ" Õ(0
+
+12313026*
+1Õ1 Õ(7
+
+12313026*
+1ÕZ Õ(h
+
+12313026*
+1Õi Õ(o
+
+13610223*
+1ß ß(
+
+13610426*
+1ß ß(
+
+
+1362777*
+1â â(*
+
+1363026*
+1â â(*
+
+1362777*
+1â â(*
+
+13912620*
+1ã  ã(&
+
+13912626*
+1ã ã(
+
+13914120*
+1ä( ä(6
+
+13914126*
+1ä ä('
+
+13914120*
+1å( å(<
+
+13914126*
+1å å('
+
+13913020*
+1í" í(0
+
+13913026*
+1í í(!
+
+13913026*
+1í@ í(N
+
+13913220*
+1îG î(K
+
+13913226*
+1î î(!
+
+13913226*
+1î" î()
+
+13913026*
+1î* î(8
+
+13913026*
+1î9 î(?
+
+13913226*
+1î[ î(i
+
+13913226*
+1îj î(q
+
+1393277*
+1ú ú(
+
+1393626*
+1ú ú(
+
+1393277*
+1ú ú(
+
+13913420*
+1û9 û(?
+
+13913426*
+1û û(!
+
+13913026*
+1û" û(0
+
+13913026*
+1û1 û(7
+
+13913026*
+1ûZ û(h
+
+13913026*
+1ûi û(o
+
+14310223*
+1† †(
+
+14310426*
+1† †(
+
+
+1432777*
+1‰ ‰(*
+
+1433026*
+1‰ ‰(*
+
+1432777*
+1‰ ‰(*
+
+14614120*
+1Š( Š(6
+
+14614126*
+1Š Š('
+
+14614120*
+1‹( ‹(<
+
+14614126*
+1‹ ‹('
+
+1468220*
+1Œ  Œ(,
+
+1468226*
+1Œ Œ(
+
+14614820*
+1‘# ‘(*
+
+14614826*
+1‘ ‘(
+
+14615020*
+1š" š((
+
+14615026*
+1š š(!
+
+14613020*
+1›" ›(0
+
+14613026*
+1› ›(!
+
+14613026*
+1›@ ›(N
+
+14613220*
+1œG œ(K
+
+14613226*
+1œ œ(!
+
+14613226*
+1œ" œ()
+
+14613026*
+1œ* œ(8
+
+14613026*
+1œ9 œ(?
+
+14613226*
+1œ[ œ(i
+
+14613226*
+1œj œ(q
+
+1463277*
+1¨ ¨(
+
+1463626*
+1¨ ¨(
+
+1463277*
+1¨ ¨(
+
+14613420*
+1©9 ©(?
+
+14613426*
+1© ©(!
+
+14613026*
+1©" ©(0
+
+14613026*
+1©1 ©(7
+
+14613026*
+1©Z ©(h
+
+14613026*
+1©i ©(o
+
+15210223*
+1· ·(
+
+15210426*
+1· ·(
+
+
+152677*
+1¹	 ¹(
+
+152106108*
+1¹	 ¹(
+
+152109111*
+1¹ ¹(0
+
+152677*
+1¹ ¹(0
+
+152112108*
+1¹ ¹(0
+
+1525077*
+1¹1 ¹(@
+
+15510223*
+1¼ ¼(
+
+15510426*
+1¼ ¼(
+
+
+155677*
+1¾	 ¾(
+
+155158108*
+1¾	 ¾(
+
+155109111*
+1¿! ¿(2
+
+155677*
+1¿! ¿(2
+
+155112108*
+1¿! ¿(2
+
+1555677*
+1¿3 ¿(E
+
+16010223*
+1Â Â(
+
+16010426*
+1Â Â(
+
+
+160677*
+1Ä	 Ä(
+
+160106108*
+1Ä	 Ä(
+
+160109111*
+1Ä Ä(0
+
+160677*
+1Ä Ä(0
+
+160112108*
+1Ä Ä(0
+
+1605377*
+1Ä1 Ä(?
+
+16310223*
+1Ç Ç(
+
+16310426*
+1Ç Ç(
+
+
+163677*
+1É	 É(
+
+163158108*
+1É	 É(
+
+163109111*
+1Ë Ë("
+
+163677*
+1Ë Ë("
+
+163112108*
+1Ë Ë("
+
+1635077*
+1Ë# Ë(2
+
+1635377*
+1Ë4 Ë(B
+
+1633877*
+1ËD Ë(P
+
+1635677*
+1ËR Ë(d
+
+112109111*
+1Î Î(
+
+11210926*
+1Î Î(
+
+106168170*
+1Õ\ Õ(b
+
+10616820*
+1Õf Õ(m
+
+10617126*
+1Õ\ Õ(b
+
+106677*
+1Ö	 Ö(
+
+106158108*
+1Ö	 Ö(
+
+158126170*
+1Û Û(%
+
+158168170*
+1à à(
+
+15812620*
+1Û) Û(/
+
+15812626*
+1Û Û(%
+
+15816820*
+1à à($
+
+15817126*
+1à à(
+
+1582777*
+1â â(*
+
+1583026*
+1â â(*
+
+1582777*
+1â â(*
+
+17317126*
+1å å(
+
+17313020*
+1é" é(0
+
+17313026*
+1é é(!
+
+17313220*
+1ìG ì(K
+
+17313226*
+1ì ì(!
+
+17313226*
+1ì" ì()
+
+17313026*
+1ì* ì(8
+
+17313026*
+1ì9 ì(?
+
+17313226*
+1ì[ ì(i
+
+17313226*
+1ìj ì(q
+
+1733277*
+1í í(
+
+1733626*
+1í í(
+
+1733277*
+1í í(
+
+17313420*
+1î9 î(?
+
+17313426*
+1î î(!
+
+17313026*
+1î" î(0
+
+17313026*
+1î1 î(7
+
+17313026*
+1îZ î(h
+
+17313026*
+1îi î(o
+
+175178111*
+1… …((
+
+175180170*
+1…C …(W
+
+17517826*
+1… …((
+
+17518020*
+1…X …(a
+
+17518026*
+1…C …(W

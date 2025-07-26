@@ -1,0 +1,799 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508571963*java2.B©
+Ä
+{connectivity/service/src/test/java/org/eclipse/ditto/connectivity/service/messaging/DefaultClientActorPropsFactoryTest.java2
+
+package4
+5
+0org.eclipse.ditto.connectivity.service.messaging5
+X
+Sorg.eclipse.ditto.connectivity.service.messaging.DefaultClientActorPropsFactoryTest7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+(
+"DefaultClientActorPropsFactoryTest12
+-
+'Recovered#typeBindingLWithMockServers;014
+
+unknown15
+
+extends16
+
+
+uses17
+u
+oorg.eclipse.ditto.connectivity.service.messaging.DefaultClientActorPropsFactoryTest.DITTO_TRACING_INIT_RESOURCE19
+
+field20
+!
+DITTO_TRACING_INIT_RESOURCE21
+
+DittoTracingInitResource23
+
+is type24
+
+	ClassRule26
+
+annotated by27
+'
+!Recovered#typeBindingLClassRule;029
+m
+gorg.eclipse.ditto.connectivity.service.messaging.DefaultClientActorPropsFactoryTest.actorSystemResource31
+
+actorSystemResource32
+
+ActorSystemResource34
+
+
+Rule36
+"
+Recovered#typeBindingLRule;038
+e
+_org.eclipse.ditto.connectivity.service.messaging.DefaultClientActorPropsFactoryTest.actorSystem40
+
+private41
+
+actorSystem42
+
+ActorSystem44
+g
+aorg.eclipse.ditto.connectivity.service.messaging.DefaultClientActorPropsFactoryTest.serialization46
+
+serialization47
+
+Serialization49
+c
+]org.eclipse.ditto.connectivity.service.messaging.DefaultClientActorPropsFactoryTest.underTest51
+
+	underTest52
+
+ClientActorPropsFactory54
+b
+\org.eclipse.ditto.connectivity.service.messaging.DefaultClientActorPropsFactoryTest#setUp()V56
+
+method57
+
+setUp58
+
+Before60
+$
+Recovered#typeBindingLBefore;062
+
+
+references63
+|
+vorg.eclipse.ditto.connectivity.service.messaging.DefaultClientActorPropsFactoryTest#amqp091ActorPropsIsSerializable()V65
+%
+amqp091ActorPropsIsSerializable66
+
+
+Test68
+"
+Recovered#typeBindingLTest;070
+†
+ôorg.eclipse.ditto.connectivity.service.messaging.DefaultClientActorPropsFactoryTest#actorPropsIsSerializableAndEqualDeserializedObject(LConnectionType;)V72
+
+calls73
+{
+uorg.eclipse.ditto.connectivity.service.messaging.DefaultClientActorPropsFactoryTest#amqp10ActorPropsIsSerializable()V75
+$
+amqp10ActorPropsIsSerializable76
+y
+sorg.eclipse.ditto.connectivity.service.messaging.DefaultClientActorPropsFactoryTest#mqttActorPropsIsSerializable()V78
+"
+mqttActorPropsIsSerializable79
+z
+torg.eclipse.ditto.connectivity.service.messaging.DefaultClientActorPropsFactoryTest#mqtt5ActorPropsIsSerializable()V81
+#
+mqtt5ActorPropsIsSerializable82
+z
+torg.eclipse.ditto.connectivity.service.messaging.DefaultClientActorPropsFactoryTest#kafkaActorPropsIsSerializable()V84
+#
+kafkaActorPropsIsSerializable85
+Ö
+org.eclipse.ditto.connectivity.service.messaging.DefaultClientActorPropsFactoryTest#actorPropsIsSerializable(LConnectionType;)V87
+y
+sorg.eclipse.ditto.connectivity.service.messaging.DefaultClientActorPropsFactoryTest#honoActorPropsIsSerializable()V89
+"
+honoActorPropsIsSerializable90
+
+actorPropsIsSerializable91
+,
+&Recovered#typeBindingLConnectionType;093
+
+	has param94
+#
+Recovered#typeBindingLProps;096
+
+
+Connection98
+
+returns99
+ä
+Çorg.eclipse.ditto.connectivity.service.messaging.DefaultClientActorPropsFactoryTest#randomConnection(LConnectionType;)LConnection;101
+ã
+Éorg.eclipse.ditto.connectivity.service.messaging.DefaultClientActorPropsFactoryTest#wrapForSerialization(LProps;)Ljava/lang/Object;103
+ô
+ëorg.eclipse.ditto.connectivity.service.messaging.DefaultClientActorPropsFactoryTest#serializeAndDeserialize(Ljava/lang/Object;)Ljava/lang/Object;105
+9
+2actorPropsIsSerializableAndEqualDeserializedObject106
+
+serializeAndDeserialize107
+
+wrapForSerialization108
+
+randomConnection109
+)
+"Recovered#typeBindingLConnection;0111J
+
+1
+12Z
+
+3	
+354jù
+
+43
+434415
+
+59
+596015
+@
+18:
+181920 *
+10 0(26:3B
+	
+9
+10
+
+
+11
+21
+
+22
+222315
+@
+86:
+868757 *
+1} }(26:3B
+	
+9
+41
+
+
+11
+91
+C
+71=
+717257 *
+1Ñ Ñ(26:3B
+	
+9
+41
+
+11
+106
+@
+74:
+747557 *
+1R R(26:3B
+	
+9
+10
+
+
+11
+76
+
+33
+333415
+
+53
+535415
+
+37
+373815
+
+61
+616215
+
+67
+676815
+9
+64
+678 *
+1. .(6:3B
+	
+9
+10
+
+
+11
+12
+@
+55:
+555657 *
+1; ;(26:3B
+	
+9
+10
+
+
+11
+58
+F
+100?
+10010157 *
+1ú ú(26:3B
+	
+9
+41
+
+11
+109
+
+28
+282915
+@
+83:
+838457 *
+1m m(26:3B
+	
+9
+10
+
+
+11
+85
+@
+64:
+646557 *
+1H H(26:3B
+	
+9
+10
+
+
+11
+66
+
+95
+959615
+@
+50:
+505120 *
+19 9(26:3B
+	
+9
+41
+
+
+11
+52
+@
+39:
+394020 *
+17 7(26:3B
+	
+9
+41
+
+
+11
+42
+
+97
+979815
+
+110
+11011115
+
+25
+252615
+
+13
+131415
+@
+45:
+454620 *
+18 8(26:3B
+	
+9
+41
+
+
+11
+47
+@
+77:
+777857 *
+1[ [(26:3B
+	
+9
+10
+
+
+11
+79
+
+48
+484915
+@
+88:
+888957 *
+1w w(26:3B
+	
+9
+10
+
+
+11
+90
+F
+104?
+10410557 *
+1ç ç(26:3B
+	
+9
+41
+
+11
+107
+
+69
+697015
+@
+30:
+303120 *
+14 4(26:3B
+	
+9
+10
+
+
+11
+32
+
+35
+353615
+@
+80:
+808157 *
+1d d(26:3B
+	
+9
+10
+
+
+11
+82
+
+92
+929315
+F
+102?
+10210357 *
+1ó ó(26:3B
+	
+9
+41
+
+11
+108rÈ
+
+61316*
+1.? .(N
+
+61317*
+1.? .(N
+
+182224*
+11 1(1
+
+182527*
+10 0(
+
+182817*
+10 0(
+
+182217*
+11 1(1
+
+182217*
+112 1(M
+
+303324*
+15 5(%
+
+303527*
+14 4(
+
+303717*
+14 4(
+
+
+303317*
+15 5(%
+
+303317*
+15& 5(9
+
+394324*
+17 7(
+
+394317*
+17 7(
+
+394317*
+17 7($
+
+454824*
+18 8(
+
+454817*
+18 8(
+
+454817*
+18 8((
+
+505324*
+19 9($
+
+505317*
+19 9($
+
+505317*
+19% 9(.
+
+555927*
+1; ;(
+
+556117*
+1; ;(
+
+554317*
+1=	 =(
+
+553963*
+1=	 =(
+
+553063*
+1= =(*
+
+553317*
+1= =(*
+
+553063*
+1= =(*
+
+554817*
+1>	 >(
+
+554563*
+1>	 >(
+
+554317*
+1>4 >(?
+
+553963*
+1>4 >(?
+
+555317*
+1?	 ?(
+
+555063*
+1?	 ?(
+
+554317*
+1@- @(8
+
+553963*
+1@- @(8
+
+553963*
+1@V @(a
+
+554317*
+1@V @(a
+
+553963*
+1@V @(a
+
+646727*
+1H H(
+
+646917*
+1H H(
+
+
+64663*
+1J	 J(;
+
+647173*
+1J	 J(;
+
+746727*
+1R R(
+
+746917*
+1R R(
+
+
+74663*
+1T	 T(;
+
+747173*
+1T	 T(;
+
+776727*
+1[ [(
+
+776917*
+1[ [(
+
+
+77663*
+1]	 ](;
+
+777173*
+1]	 ](;
+
+806727*
+1d d(
+
+806917*
+1d d(
+
+
+80663*
+1f	 f(;
+
+807173*
+1f	 f(;
+
+836727*
+1m m(
+
+836917*
+1m m(
+
+
+83663*
+1p	 p(!
+
+838673*
+1p	 p(!
+
+886727*
+1w w(
+
+886917*
+1w w(
+
+
+88663*
+1z	 z(!
+
+888673*
+1z	 z(!
+
+869294*
+1}1 }(?
+
+869224*
+1}@ }(N
+
+869217*
+1}1 }(?
+
+869524*
+1~ ~(
+
+869517*
+1~ ~(
+
+865063*
+1~ ~(&
+
+865317*
+1~ ~(&
+
+865063*
+1~ ~(&
+
+869799*
+1~< ~(L
+
+86663*
+1~< ~(L
+
+8610073*
+1~< ~(L
+
+863963*
+1~^ ~(i
+
+864317*
+1~^ ~(i
+
+863963*
+1~^ ~(i
+
+863963*
+1 (
+
+864317*
+1 (
+
+863963*
+1 (
+
+864317*
+1, (7
+
+863963*
+1, (7
+
+86663*
+1Ä* Ä(>
+
+8610273*
+1Ä* Ä(>
+
+86663*
+1Å	 Å( 
+
+8610473*
+1Å	 Å( 
+
+719294*
+1ÑK Ñ(Y
+
+719224*
+1ÑZ Ñ(h
+
+719217*
+1ÑK Ñ(Y
+
+719524*
+1Ö Ö(
+
+719517*
+1Ö Ö(
+
+715063*
+1Ö Ö(&
+
+715317*
+1Ö Ö(&
+
+715063*
+1Ö Ö(&
+
+719799*
+1Ö< Ö(L
+
+71663*
+1Ö< Ö(L
+
+7110073*
+1Ö< Ö(L
+
+713963*
+1Ö^ Ö(i
+
+714317*
+1Ö^ Ö(i
+
+713963*
+1Ö^ Ö(i
+
+713963*
+1Ü Ü(
+
+714317*
+1Ü Ü(
+
+713963*
+1Ü Ü(
+
+714317*
+1Ü, Ü(7
+
+713963*
+1Ü, Ü(7
+
+71663*
+1á* á(>
+
+7110273*
+1á* á(>
+
+71663*
+1à+ à(B
+
+7110473*
+1à+ à(B
+
+1044563*
+1é é(+
+
+1044817*
+1é é(+
+
+1044563*
+1é é(+
+
+1044563*
+1è è(
+
+1044817*
+1è è(
+
+1044563*
+1è è(
+
+1029594*
+1ó/ ó(4
+
+1029524*
+1ó5 ó(:
+
+1029517*
+1ó/ ó(4
+
+1023963*
+1ôS ô(^
+
+1024317*
+1ôS ô(^
+
+1023963*
+1ôS ô(^
+
+1009799*
+1ú ú(
+
+1009294*
+1ú/ ú(=
+
+1009717*
+1ú ú(
+
+1009224*
+1ú> ú(L
+
+1009217*
+1ú/ ú(=
+
+10011024*
+1ù ù("
+
+10011017*
+1ù ù(

@@ -1,0 +1,548 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508689581*java2.B¨ 
+n
+iconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/config/KafkaProducerConfig.java2
+
+package4
+2
+-org.eclipse.ditto.connectivity.service.config5
+F
+Aorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig7
+
+	interface8
+
+access9
+
+public10
+
+simple name11
+
+KafkaProducerConfig12
+
+	Immutable14
+
+unknown15
+
+annotated by16
+'
+!Recovered#typeBindingLImmutable;018
+
+
+uses19
+W
+Qorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig#getQueueSize()I21
+
+method22
+
+getQueueSize23
+Y
+Sorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig#getParallelism()I25
+
+getParallelism26
+k
+eorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig#getMinBackoff()Ljava/time/Duration;28
+
+getMinBackoff29
+k
+eorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig#getMaxBackoff()Ljava/time/Duration;31
+
+getMaxBackoff32
+Z
+Torg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig#getRandomFactor()D34
+
+getRandomFactor35
+^
+Xorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig#getMaxRestartsCount()I37
+
+getMaxRestartsCount38
+r
+lorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig#getMaxRestartsWithin()Ljava/time/Duration;40
+
+getMaxRestartsWithin41
+j
+dorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig#getPekkoConnectorsConfig()LConfig;43
+
+getPekkoConnectorsConfig44
+
+Config46
+
+returns47
+`
+Zorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig#getInitTimeoutSeconds()J49
+
+getInitTimeoutSeconds50
+˜
+‘org.eclipse.ditto.connectivity.service.config.KafkaProducerConfig#of(LConfig;)Lorg/eclipse/ditto/connectivity/service/config/KafkaProducerConfig;52
+
+of53
+$
+Recovered#typeBindingLConfig;055
+
+	has param56
+
+is type57
+S
+Morg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig$ConfigValue59
+
+
+enum60
+
+ConfigValue61
+.
+(Recovered#typeBindingLKnownConfigValue;063
+
+
+implements64
+­
+¦org.eclipse.ditto.connectivity.service.config.KafkaProducerConfig$ConfigValue#values()[Lorg/eclipse/ditto/connectivity/service/config/KafkaProducerConfig$ConfigValue;66
+
+values67
+¿
+¸org.eclipse.ditto.connectivity.service.config.KafkaProducerConfig$ConfigValue#valueOf(Ljava/lang/String;)Lorg/eclipse/ditto/connectivity/service/config/KafkaProducerConfig$ConfigValue;69
+
+valueOf70
+^
+Xorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig$ConfigValue.QUEUE_SIZE72
+
+field73
+
+
+QUEUE_SIZE74
+
+calls75
+_
+Yorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig$ConfigValue.PARALLELISM77
+
+PARALLELISM78
+_
+Yorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig$ConfigValue.MIN_BACKOFF80
+
+MIN_BACKOFF81
+_
+Yorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig$ConfigValue.MAX_BACKOFF83
+
+MAX_BACKOFF84
+a
+[org.eclipse.ditto.connectivity.service.config.KafkaProducerConfig$ConfigValue.RANDOM_FACTOR86
+
+RANDOM_FACTOR87
+f
+`org.eclipse.ditto.connectivity.service.config.KafkaProducerConfig$ConfigValue.MAX_RESTARTS_COUNT89
+
+MAX_RESTARTS_COUNT90
+g
+aorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig$ConfigValue.MAX_RESTARTS_WITHIN92
+
+MAX_RESTARTS_WITHIN93
+h
+borg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig$ConfigValue.INIT_TIMEOUT_SECONDS95
+
+INIT_TIMEOUT_SECONDS96
+X
+Rorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig$ConfigValue.path98
+
+private99
+
+path100
+a
+Zorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig$ConfigValue.defaultValue102
+
+defaultValue103
+–
+Žorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig$ConfigValue#<init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Object;)V105
+
+
+references106
+x
+qorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig$ConfigValue#getDefaultValue()Ljava/lang/Object;108
+
+getDefaultValue109
+v
+oorg.eclipse.ditto.connectivity.service.config.KafkaProducerConfig$ConfigValue#getConfigPath()Ljava/lang/String;111
+
+getConfigPath112J
+
+1
+12Z
+
+3	
+354j„
+
+13
+131415
+6
+760
+767773 *
+1[	 [(258:3B
+
+
+11
+78
+@
+42:
+424322 *
+1E E(26:3B
+	
+9
+10
+
+
+11
+44
+
+45
+454615
+6
+940
+949573 *
+1g	 g(258:3B
+
+
+11
+96
+@
+39:
+394022 *
+1> >(26:3B
+	
+9
+10
+
+
+11
+41
+E
+110>
+11011122 *
+1w	 w(
+258:3B
+	
+9
+10
+
+11
+112
+B
+97<
+979873 *
+1i	 i(258:3B
+	
+9
+99
+
+11
+100
+
+62
+626315
+
+17
+171815
+6
+790
+798073 *
+1]	 ](258:3B
+
+
+11
+81
+6
+680
+686922 *
+1W
+ W(258:3B
+
+
+11
+70
+@
+33:
+333422 *
+14 4(26:3B
+	
+9
+10
+
+
+11
+35
+@
+58:
+585960 *
+1W
+ W(26:3B
+	
+9
+10
+
+
+11
+61
+
+54
+545515
+E
+101>
+10110273 *
+1j	 j(258:3B
+	
+9
+99
+
+11
+103
+6
+820
+828373 *
+1_	 _(258:3B
+
+
+11
+84
+@
+24:
+242522 *
+1% %(26:3B
+	
+9
+10
+
+
+11
+26
+@
+36:
+363722 *
+19 9(26:3B
+	
+9
+10
+
+
+11
+38
+@
+30:
+303122 *
+1/ /(26:3B
+	
+9
+10
+
+
+11
+32
+@
+48:
+484922 *
+1J J(	26:3B
+	
+9
+10
+
+
+11
+50
+6
+650
+656622 *
+1W
+ W(258:3B
+
+
+11
+67
+@
+20:
+202122 *
+1   (26:3B
+	
+9
+10
+
+
+11
+23
+9
+64
+678 *
+1 (%:3B
+	
+9
+10
+
+
+11
+12
+6
+880
+888973 *
+1c	 c(258:3B
+
+
+11
+90
+@
+27:
+272822 *
+1* *(26:3B
+	
+9
+10
+
+
+11
+29
+6
+710
+717273 *
+1Y	 Y(258:3B
+
+
+11
+74
+6
+850
+858673 *
+1a	 a(258:3B
+
+
+11
+87
+D
+104=
+10410522 *
+1l	 l(258:3B
+	
+9
+99
+
+
+11
+61
+@
+51:
+515222 *
+1S S(26:3B
+	
+9
+10
+
+
+11
+53
+E
+107>
+10710822 *
+1r	 r(
+258:3B
+	
+9
+10
+
+11
+109
+6
+910
+919273 *
+1e	 e(258:3B
+
+
+11
+93rç
+
+61316*
+1 (
+
+61719*
+1 (
+
+424547*
+1E E(
+
+424519*
+1E E(
+
+51647*
+1S S(
+
+515456*
+1S) S(/
+
+51619*
+1S S(
+
+515457*
+1S0 S(6
+
+515419*
+1S) S(/
+
+586264*
+1W! W(1
+
+586219*
+1W! W(1
+
+715875*
+1Y	 Y(
+
+715875*
+1Y	 Y(
+
+765875*
+1[	 [(
+
+765875*
+1[	 [(
+
+795875*
+1]	 ](
+
+795875*
+1]	 ](
+
+825875*
+1_	 _(
+
+825875*
+1_	 _(
+
+855875*
+1a	 a(
+
+855875*
+1a	 a(
+
+885875*
+1c	 c(
+
+885875*
+1c	 c(
+
+915875*
+1e	 e(
+
+915875*
+1e	 e(
+
+945875*
+1g	 g(
+
+945875*
+1g	 g(
+
+1045875*
+1l	 l(
+
+10497106*
+1m m(
+
+104101106*
+1n n(
+
+107101106*
+1t t( 
+
+11097106*
+1y y(

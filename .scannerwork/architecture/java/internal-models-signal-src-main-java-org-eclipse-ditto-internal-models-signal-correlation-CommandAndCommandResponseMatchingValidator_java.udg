@@ -1,0 +1,850 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508712639*java2.B¸!
+è
+âinternal/models/signal/src/main/java/org/eclipse/ditto/internal/models/signal/correlation/CommandAndCommandResponseMatchingValidator.java2
+
+package4
+9
+4org.eclipse.ditto.internal.models.signal.correlation5
+d
+_org.eclipse.ditto.internal.models.signal.correlation.CommandAndCommandResponseMatchingValidator7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+0
+*CommandAndCommandResponseMatchingValidator12
+
+	Immutable14
+
+unknown15
+
+annotated by16
+'
+!Recovered#typeBindingLImmutable;018
+
+
+uses19
+%
+Recovered#typeBindingLCommand;021
+-
+'Recovered#typeBindingLCommandResponse;023
+6
+0Recovered#typeBindingLMatchingValidationResult;025
+o
+iorg.eclipse.ditto.internal.models.signal.correlation.CommandAndCommandResponseMatchingValidator#<init>()V27
+
+method28
+
+private29
+
+calls30
+’
+Œorg.eclipse.ditto.internal.models.signal.correlation.CommandAndCommandResponseMatchingValidator#getInstance()Lorg/eclipse/ditto/internal/models/signal/correlation/CommandAndCommandResponseMatchingValidator;32
+
+getInstance33
+
+returns34
+¢
+õorg.eclipse.ditto.internal.models.signal.correlation.CommandAndCommandResponseMatchingValidator#apply(LCommand;LCommandResponse;)LMatchingValidationResult;36
+
+apply37
+
+MatchingValidationResult39
+
+	has param40
+
+is type41
+
+
+references42
+∏
+±org.eclipse.ditto.internal.models.signal.correlation.CommandAndCommandResponseMatchingValidator#validateCorrelationIdsMatch(LCommand;LCommandResponse;)LMatchingValidationResult;44
+Ø
+®org.eclipse.ditto.internal.models.signal.correlation.CommandAndCommandResponseMatchingValidator#validateTypesMatch(LCommand;LCommandResponse;)LMatchingValidationResult;46
+≥
+¨org.eclipse.ditto.internal.models.signal.correlation.CommandAndCommandResponseMatchingValidator#validateEntityIdsMatch(LCommand;LCommandResponse;)LMatchingValidationResult;48
+∑
+∞org.eclipse.ditto.internal.models.signal.correlation.CommandAndCommandResponseMatchingValidator#validateResourcePathsMatch(LCommand;LCommandResponse;)LMatchingValidationResult;50
+!
+validateCorrelationIdsMatch51
+´
+§org.eclipse.ditto.internal.models.signal.correlation.CommandAndCommandResponseMatchingValidator#doCommandAndResponseCorrelationIdsMatch(LCommand;LCommandResponse;)Z53
+ï
+éorg.eclipse.ditto.internal.models.signal.correlation.CommandAndCommandResponseMatchingValidator#getCorrelationId(LSignal;)Ljava/util/Optional;55
+-
+'doCommandAndResponseCorrelationIdsMatch56
+
+getCorrelationId57
+$
+Recovered#typeBindingLSignal;059
+
+validateTypesMatch60
+Ñ
+~org.eclipse.ditto.internal.models.signal.correlation.CommandAndCommandResponseMatchingValidator#isAcknowledgement(LWithType;)Z62
+é
+áorg.eclipse.ditto.internal.models.signal.correlation.CommandAndCommandResponseMatchingValidator#isErrorResponseType(LCommandResponse;)Z64
+
+SemanticSignalType66
+°
+öorg.eclipse.ditto.internal.models.signal.correlation.CommandAndCommandResponseMatchingValidator#tryToParseSemanticSignalType(LSignal;)LSemanticSignalType;68
+§
+ùorg.eclipse.ditto.internal.models.signal.correlation.CommandAndCommandResponseMatchingValidator#isSameSignalDomain(LSemanticSignalType;LSemanticSignalType;)Z70
+¨
+•org.eclipse.ditto.internal.models.signal.correlation.CommandAndCommandResponseMatchingValidator#getMessageForMismatchingTypes(LWithType;LWithType;)Ljava/lang/String;72
+∞
+©org.eclipse.ditto.internal.models.signal.correlation.CommandAndCommandResponseMatchingValidator#areCorrespondingMessageSignals(LSemanticSignalType;LSemanticSignalType;)Z74
+û
+óorg.eclipse.ditto.internal.models.signal.correlation.CommandAndCommandResponseMatchingValidator#isEqualNames(LSemanticSignalType;LSemanticSignalType;)Z76
+"
+tryToParseSemanticSignalType77
+7
+1Recovered#typeBindingLSignalTypeFormatException;079
+#
+getMessageForMismatchingTypes80
+&
+ Recovered#typeBindingLWithType;082
+
+isAcknowledgement83
+
+isErrorResponseType84
+
+isSameSignalDomain85
+0
+*Recovered#typeBindingLSemanticSignalType;087
+$
+areCorrespondingMessageSignals88
+
+isEqualNames89
+
+validateEntityIdsMatch90
+ê
+âorg.eclipse.ditto.internal.models.signal.correlation.CommandAndCommandResponseMatchingValidator#getEntityId(LSignal;)Ljava/util/Optional;92
+
+getEntityId93
+&
+ Recovered#typeBindingLEntityId;095
+ 
+validateResourcePathsMatch96J
+
+1
+12Z
+
+3	
+354j•
+
+13
+131415
+@
+26:
+262728 *
+1= =(26:3B
+	
+9
+29
+
+
+11
+12
+B
+67<
+676828 *
+1© ©(26:3B
+	
+9
+29
+
+
+11
+77
+9
+64
+678 *
+1: :(>:3B
+	
+9
+10
+
+
+11
+12
+
+78
+787915
+@
+35:
+353628 *
+1J J(26:3B
+	
+9
+10
+
+
+11
+37
+B
+61<
+616228 *
+1ø ø(26:3B
+	
+9
+29
+
+
+11
+83
+
+17
+171815
+@
+43:
+434428 *
+1Z Z(26:3B
+	
+9
+29
+
+
+11
+51
+B
+63<
+636428 *
+1√ √(26:3B
+	
+9
+29
+
+
+11
+84
+
+94
+949515
+
+58
+585915
+B
+75<
+757628 *
+1◊ ◊(26:3B
+	
+9
+29
+
+
+11
+89
+@
+31:
+313228 *
+1F F(26:3B
+	
+9
+10
+
+
+11
+33
+
+65
+656615
+B
+69<
+697028 *
+1« «(26:3B
+	
+9
+29
+
+
+11
+85
+
+22
+222315
+
+86
+868715
+B
+54<
+545528 *
+1Ç Ç(26:3B
+	
+9
+29
+
+
+11
+57
+B
+73<
+737428 *
+1Õ Õ(26:3B
+	
+9
+29
+
+
+11
+88
+@
+52:
+525328 *
+1w w(26:3B
+	
+9
+29
+
+
+11
+56
+B
+91<
+919228 *
+1Ô Ô(26:3B
+	
+9
+29
+
+
+11
+93
+B
+71<
+717228 *
+1π π(26:3B
+	
+9
+29
+
+
+11
+80
+
+24
+242515
+B
+49<
+495028 *
+1Û Û(26:3B
+	
+9
+29
+
+
+11
+96
+
+20
+202115
+
+38
+383915
+B
+45<
+454628 *
+1Ü Ü(26:3B
+	
+9
+29
+
+
+11
+60
+B
+47<
+474828 *
+1€ €(26:3B
+	
+9
+29
+
+
+11
+90
+
+81
+818215rı"
+
+61316*
+19 9(
+
+61719*
+19 9(
+
+62019*
+1; ;(&
+
+62219*
+1;+ ;(:
+
+62419*
+1;? ;(W
+
+26630*
+1= =(7
+
+31634*
+1F F(=
+
+31619*
+1F F(=
+
+31630*
+1G G(>
+
+353834*
+1K K($
+
+352040*
+1K1 K(8
+
+352240*
+1KO K(^
+
+353819*
+1K K($
+
+352041*
+1K< K(G
+
+352019*
+1K1 K(8
+
+352241*
+1Kb K(q
+
+352219*
+1KO K(^
+
+353834*
+1L L(1
+
+35642*
+1L L(1
+
+354330*
+1L L(1
+
+353834*
+1N N((
+
+35642*
+1N N((
+
+354530*
+1N N((
+
+353834*
+1Q Q(,
+
+35642*
+1Q Q(,
+
+354730*
+1Q Q(,
+
+353834*
+1T T(0
+
+35642*
+1T T(0
+
+354930*
+1T T(0
+
+433834*
+1Z Z(,
+
+432040*
+1ZO Z(V
+
+432240*
+1[ [("
+
+433819*
+1Z Z(,
+
+432041*
+1ZZ Z(a
+
+432019*
+1ZO Z(V
+
+432241*
+1[& [(5
+
+432219*
+1[ [("
+
+432441*
+1]( ](.
+
+432419*
+1] ]('
+
+43642*
+1^ ^(4
+
+435230*
+1^ ^(4
+
+43642*
+1f f(-
+
+435430*
+1f f(-
+
+43642*
+1g g(-
+
+435430*
+1g g(-
+
+522040*
+1wJ w(Q
+
+522240*
+1x x("
+
+522041*
+1wU w(\
+
+522019*
+1wJ w(Q
+
+522241*
+1x& x(5
+
+522219*
+1x x("
+
+52642*
+1z* z(:
+
+525430*
+1z* z(:
+
+52642*
+1{2 {(B
+
+525430*
+1{2 {(B
+
+545840*
+1Ç< Ç(B
+
+545841*
+1ÇF Ç(L
+
+545819*
+1Ç< Ç(B
+
+453834*
+1Ü Ü(,
+
+452040*
+1ÜF Ü(M
+
+452240*
+1á á("
+
+453819*
+1Ü Ü(,
+
+452041*
+1ÜQ Ü(X
+
+452019*
+1ÜF Ü(M
+
+452241*
+1á& á(5
+
+452219*
+1á á("
+
+452441*
+1â( â(.
+
+452419*
+1â â('
+
+45642*
+1ã ã(
+
+456130*
+1ã ã(
+
+45642*
+1ã3 ã(F
+
+456330*
+1ã3 ã(F
+
+456534*
+1é5 é(Q
+
+45642*
+1é5 é(Q
+
+456730*
+1é5 é(Q
+
+456534*
+1è- è(I
+
+45642*
+1è- è(I
+
+456730*
+1è- è(I
+
+45642*
+1ë ë($
+
+456930*
+1ë ë($
+
+45642*
+1î î(6
+
+457130*
+1î î(6
+
+45642*
+1ñ ñ(4
+
+457330*
+1ñ ñ(4
+
+45642*
+1ô ô(:
+
+457130*
+1ô ô(:
+
+45642*
+1ù ù(%
+
+457530*
+1ù ù(%
+
+45642*
+1† †(6
+
+457130*
+1† †(6
+
+676534*
+1© ©(&
+
+675840*
+1©J ©(P
+
+676519*
+1© ©(&
+
+675841*
+1©T ©(Z
+
+675819*
+1©J ©(P
+
+677841*
+1¨2 ¨(3
+
+677819*
+1¨ ¨(1
+
+718140*
+1π? π(G
+
+718140*
+1π_ π(g
+
+718141*
+1πH π(W
+
+718119*
+1π? π(G
+
+718141*
+1πh π(o
+
+718119*
+1π_ π(g
+
+618140*
+1ø4 ø(<
+
+618141*
+1ø= ø(L
+
+618119*
+1ø4 ø(<
+
+632240*
+1√6 √(E
+
+632241*
+1√I √(X
+
+632219*
+1√6 √(E
+
+698640*
+1«5 «(G
+
+698640*
+1» »(%
+
+698641*
+1«H «([
+
+698619*
+1«5 «(G
+
+698641*
+1»& »(A
+
+698619*
+1» »(%
+
+738640*
+1ÕA Õ(S
+
+738640*
+1Œ Œ(%
+
+738641*
+1ÕT Õ(_
+
+738619*
+1ÕA Õ(S
+
+738641*
+1Œ& Œ(9
+
+738619*
+1Œ Œ(%
+
+758640*
+1◊/ ◊(A
+
+758640*
+1◊Q ◊(c
+
+758641*
+1◊B ◊(I
+
+758619*
+1◊/ ◊(A
+
+758641*
+1◊d ◊(s
+
+758619*
+1◊Q ◊(c
+
+473834*
+1€ €(,
+
+472040*
+1€J €(Q
+
+472240*
+1‹ ‹("
+
+473819*
+1€ €(,
+
+472041*
+1€U €(\
+
+472019*
+1€J €(Q
+
+472241*
+1‹& ‹(5
+
+472219*
+1‹ ‹("
+
+472441*
+1ﬁ( ﬁ(.
+
+472419*
+1ﬁ ﬁ('
+
+47642*
+1‡% ‡(0
+
+479130*
+1‡% ‡(0
+
+47642*
+1·- ·(8
+
+479130*
+1·- ·(8
+
+915840*
+1Ô9 Ô(?
+
+919419*
+1Ô Ô(%
+
+915841*
+1ÔC Ô(I
+
+915819*
+1Ô9 Ô(?
+
+493834*
+1Û Û(,
+
+492040*
+1ÛN Û(U
+
+492240*
+1Ù Ù("
+
+493819*
+1Û Û(,
+
+492041*
+1ÛY Û(`
+
+492019*
+1ÛN Û(U
+
+492241*
+1Ù& Ù(5
+
+492219*
+1Ù Ù("
+
+492441*
+1ˆ( ˆ(.
+
+492419*
+1ˆ ˆ('
+
+49642*
+1˚ ˚(&
+
+496130*
+1˚ ˚(&
+
+49642*
+1¸ ¸((
+
+496330*
+1¸ ¸((

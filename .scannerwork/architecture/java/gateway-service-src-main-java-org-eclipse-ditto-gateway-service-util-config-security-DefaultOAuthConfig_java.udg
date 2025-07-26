@@ -1,0 +1,795 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508515321*java2.B«$
+q
+lgateway/service/src/main/java/org/eclipse/ditto/gateway/service/util/config/security/DefaultOAuthConfig.java2
+
+package4
+;
+6org.eclipse.ditto.gateway.service.util.config.security5
+N
+Iorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+DefaultOAuthConfig12
+)
+#Recovered#typeBindingLOAuthConfig;014
+
+unknown15
+
+
+implements16
+
+	Immutable18
+
+annotated by19
+'
+!Recovered#typeBindingLImmutable;021
+
+
+uses22
+"
+AllValuesAreNonnullByDefault24
+:
+4Recovered#typeBindingLAllValuesAreNonnullByDefault;026
+[
+Uorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig.CONFIG_PATH28
+
+field29
+
+private30
+
+CONFIG_PATH31
+X
+Rorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig.protocol33
+
+protocol34
+`
+Zorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig.allowedClockSkew36
+
+allowedClockSkew37
+d
+^org.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig.openIdConnectIssuers39
+
+openIdConnectIssuers40
++
+%Recovered#typeBindingLSubjectIssuer;042
+1
++Recovered#typeBindingLSubjectIssuerConfig;044
+m
+gorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig.openIdConnectIssuersExtension46
+#
+openIdConnectIssuersExtension47
+g
+aorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig.tokenIntegrationSubject49
+
+tokenIntegrationSubject50
+m
+gorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig#<init>(LConfigWithFallback;)V52
+
+method53
+0
+*Recovered#typeBindingLConfigWithFallback;055
+
+	has param56
+
+calls57
+
+is type58
+
+
+references59
+ì
+åorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig#loadIssuers(LConfigWithFallback;LKnownConfigValue;)Ljava/util/Map;61
+
+loadIssuers62
+.
+(Recovered#typeBindingLKnownConfigValue;064
+*
+$Recovered#typeBindingLConfigObject;066
+f
+`org.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig$SubjectIssuerCollector68
+
+returns69
+ﬁ
+◊org.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig$SubjectIssuerCollector#toSubjectIssuerMap()Lorg/eclipse/ditto/gateway/service/util/config/security/DefaultOAuthConfig$SubjectIssuerCollector;71
+®
+°org.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig#of(LConfig;)Lorg/eclipse/ditto/gateway/service/util/config/security/DefaultOAuthConfig;73
+
+of74
+$
+Recovered#typeBindingLConfig;076
+o
+iorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig#getProtocol()Ljava/lang/String;78
+
+getProtocol79
+y
+sorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig#getAllowedClockSkew()Ljava/time/Duration;81
+
+getAllowedClockSkew82
+x
+rorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig#getOpenIdConnectIssuers()Ljava/util/Map;84
+
+getOpenIdConnectIssuers85
+Å
+{org.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig#getOpenIdConnectIssuersExtension()Ljava/util/Map;87
+&
+ getOpenIdConnectIssuersExtension88
+~
+xorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig#getTokenIntegrationSubject()Ljava/lang/String;90
+ 
+getTokenIntegrationSubject91
+k
+eorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig#equals(Ljava/lang/Object;)Z93
+
+equals94
+
+Nullable96
+&
+ Recovered#typeBindingLNullable;098
+\
+Uorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig#hashCode()I100
+
+hashCode101
+m
+forg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig#toString()Ljava/lang/String;103
+
+toString104
+
+SubjectIssuerCollector105
+*
+#Recovered#typeBindingLConfigValue;0107
+
+toSubjectIssuerMap108
+ê
+àorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig$SubjectIssuerCollector#supplier()Ljava/util/function/Supplier;110
+
+supplier111
+ï
+çorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig$SubjectIssuerCollector#accumulator()Ljava/util/function/BiConsumer;113
+
+accumulator114
+ñ
+éorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig$SubjectIssuerCollector#combiner()Ljava/util/function/BinaryOperator;116
+
+combiner117
+ê
+àorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig$SubjectIssuerCollector#finisher()Ljava/util/function/Function;119
+
+finisher120
+â
+Åorg.eclipse.ditto.gateway.service.util.config.security.DefaultOAuthConfig$SubjectIssuerCollector#characteristics()Ljava/util/Set;122
+
+characteristics123J
+
+1
+12Z
+
+3	
+354j∑
+
+17
+171815
+@
+45:
+454629 *
+16 6(26:3B
+	
+9
+30
+
+
+11
+47
+
+106
+10610715
+@
+51:
+515253 *
+19 9(26:3B
+	
+9
+30
+
+
+11
+12
+@
+80:
+808153 *
+1[ [(26:3B
+	
+9
+10
+
+
+11
+82
+
+41
+414215
+@
+72:
+727353 *
+1R R(26:3B
+	
+9
+10
+
+
+11
+74
+@
+92:
+929353 *
+1o o(26:3B
+	
+9
+10
+
+
+11
+94
+
+63
+636415
+
+20
+202115
+9
+64
+678 *
+1/ /(&:3B
+	
+9
+10
+
+
+11
+12
+@
+32:
+323329 *
+13 3(26:3B
+	
+9
+30
+
+
+11
+34
+
+97
+979815
+@
+27:
+272829 *
+11 1(26:3B
+	
+9
+30
+
+
+11
+31
+
+54
+545515
+G
+112@
+11211353 *
+1ö	 ö(
+267:3B
+	
+9
+10
+
+11
+114
+
+75
+757615
+B
+67<
+67688 *
+1å å(026:3B
+	
+9
+30
+
+11
+105
+G
+115@
+11511653 *
+1†	 †(
+267:3B
+	
+9
+10
+
+11
+117
+G
+118@
+11811953 *
+1¶	 ¶(
+267:3B
+	
+9
+10
+
+11
+120
+
+25
+252615
+@
+60:
+606153 *
+1C C(26:3B
+	
+9
+30
+
+
+11
+62
+@
+35:
+353629 *
+14 4(26:3B
+	
+9
+30
+
+
+11
+37
+@
+38:
+383929 *
+15 5(26:3B
+	
+9
+30
+
+
+11
+40
+
+43
+434415
+@
+89:
+899053 *
+1j j(26:3B
+	
+9
+10
+
+
+11
+91
+G
+109@
+10911053 *
+1ï	 ï(
+267:3B
+	
+9
+10
+
+11
+111
+
+13
+131415
+@
+48:
+484929 *
+17 7(26:3B
+	
+9
+30
+
+
+11
+50
+@
+83:
+838453 *
+1` `(26:3B
+	
+9
+10
+
+
+11
+85
+
+23
+232415
+D
+70>
+707153 *
+1ë	 ë(267:3B
+	
+9
+30
+
+11
+108
+G
+121@
+12112253 *
+1´	 ´(
+267:3B
+	
+9
+10
+
+11
+123
+B
+99<
+9910053 *
+1{ {(26:3B
+	
+9
+10
+
+11
+101
+
+65
+656615
+@
+86:
+868753 *
+1e e(26:3B
+	
+9
+10
+
+
+11
+88
+@
+77:
+777853 *
+1V V(26:3B
+	
+9
+10
+
+
+11
+79
+
+95
+959615
+F
+102?
+10210353 *
+1Å Å(26:3B
+	
+9
+10
+
+11
+104rı
+
+61316*
+1/2 /(=
+
+61719*
+1- -(
+
+62022*
+1- -(
+
+62319*
+1. .(
+
+62522*
+1. .(
+
+61322*
+1/2 /(=
+
+384122*
+15 5($
+
+384322*
+15& 5(9
+
+454122*
+16 6($
+
+454322*
+16& 6(9
+
+515456*
+19& 9(8
+
+51657*
+19 9(
+
+515458*
+199 9(K
+
+515422*
+19& 9(8
+
+513259*
+1:	 :(
+
+513559*
+1;	 ;(
+
+513859*
+1<	 <(
+
+51659*
+1<  <(+
+
+516057*
+1<  <(+
+
+514559*
+1=	 =(&
+
+51659*
+1> >(
+
+516057*
+1> >(
+
+514859*
+1?	 ?( 
+
+605456*
+1CN C(`
+
+606356*
+1D D(#
+
+604122*
+1C C(%
+
+604322*
+1C' C(:
+
+605458*
+1Ca C(g
+
+605422*
+1CN C(`
+
+606358*
+1D$ D(/
+
+606322*
+1D D(#
+
+606558*
+1F F()
+
+606522*
+1F F(
+
+606769*
+1H: H(P
+
+606759*
+1H: H(P
+
+607057*
+1HQ H(c
+
+606759*
+1H: H(P
+
+606722*
+1H: H(P
+
+606759*
+1H: H(P
+
+72669*
+1R R(%
+
+727556*
+1R/ R(5
+
+72622*
+1R R(%
+
+727558*
+1R6 R(<
+
+727522*
+1R/ R(5
+
+72657*
+1S S(&
+
+722759*
+1SN S(Y
+
+773259*
+1X X(
+
+803559*
+1] ]( 
+
+834122*
+1a a(
+
+834322*
+1a a(2
+
+833859*
+1b b($
+
+864122*
+1f f(
+
+864322*
+1f f(2
+
+864559*
+1g g(-
+
+894859*
+1l l('
+
+929519*
+1p p(
+
+929722*
+1p p($
+
+92622*
+1q q(
+
+92659*
+1q q(
+
+92658*
+1s" s(&
+
+92622*
+1s s(!
+
+92622*
+1s* s(<
+
+923259*
+1t t('
+
+923259*
+1t. t(6
+
+923559*
+1u# u(3
+
+923559*
+1u: u(J
+
+923859*
+1v# v(7
+
+923859*
+1v> v(R
+
+924559*
+1w# w(@
+
+924559*
+1wG w(d
+
+924859*
+1x# x(:
+
+924859*
+1xA x(X
+
+993259*
+1} }(%
+
+993559*
+1}' }(7
+
+993859*
+1}9 }(M
+
+994559*
+1}O }(l
+
+994859*
+1~ ~((
+
+1023259*
+1Ñ Ñ('
+
+1023559*
+1Ö( Ö(8
+
+1023859*
+1Ü- Ü(A
+
+1024559*
+1á6 á(S
+
+1024859*
+1à0 à(G
+
+6710622*
+1é) é(4
+
+674122*
+1é; é(H
+
+674322*
+1éJ é(]
+
+674122*
+1éd é(q
+
+674322*
+1è è((
+
+706769*
+1ë ë(.
+
+706722*
+1ë ë(.
+
+706759*
+1ë ë(.
+
+706757*
+1í í(.
+
+1094122*
+1ñ ñ(*
+
+1094322*
+1ñ, ñ(?
+
+1124122*
+1õ õ(,
+
+1124322*
+1õ. õ(A
+
+11210622*
+1õV õ(a
+
+1154122*
+1°# °(0
+
+1154322*
+1°2 °(E
+
+1184122*
+1ß ß(*
+
+1184322*
+1ß, ß(?
+
+1184122*
+1ßF ß(S
+
+1184322*
+1ßU ß(h

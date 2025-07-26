@@ -1,0 +1,845 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508439431*java2.B¦
+p
+kconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/InboundMappingSink.java2
+
+package4
+5
+0org.eclipse.ditto.connectivity.service.messaging5
+H
+Corg.eclipse.ditto.connectivity.service.messaging.InboundMappingSink7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+InboundMappingSink12
+P
+Jorg.eclipse.ditto.connectivity.service.messaging.InboundMappingSink.logger14
+
+field15
+
+private16
+
+logger17
+
+ThreadSafeDittoLogger19
+
+unknown20
+
+is type21
+
+
+uses22
+b
+\org.eclipse.ditto.connectivity.service.messaging.InboundMappingSink.inboundMappingProcessors24
+
+inboundMappingProcessors25
+5
+/Recovered#typeBindingLInboundMappingProcessor;027
+`
+Zorg.eclipse.ditto.connectivity.service.messaging.InboundMappingSink.inboundDispatchingSink29
+
+inboundDispatchingSink30
+
+
+Sink32
+Z
+Torg.eclipse.ditto.connectivity.service.messaging.InboundMappingSink.throttlingConfig34
+
+throttlingConfig35
+
+ThrottlingConfig37
+
+Nullable39
+
+annotated by40
+&
+ Recovered#typeBindingLNullable;042
+k
+eorg.eclipse.ditto.connectivity.service.messaging.InboundMappingSink.messageMappingProcessorDispatcher44
+'
+!messageMappingProcessorDispatcher45
+
+MessageDispatcher47
+[
+Uorg.eclipse.ditto.connectivity.service.messaging.InboundMappingSink.processorPoolSize49
+
+processorPoolSize50
+­
+¦org.eclipse.ditto.connectivity.service.messaging.InboundMappingSink#<init>(Ljava/util/List;LConnectionId;ILSink;LMappingConfig;LThrottlingConfig;LMessageDispatcher;)V52
+
+method53
+*
+$Recovered#typeBindingLConnectionId;055
+
+	has param56
+"
+Recovered#typeBindingLSink;058
++
+%Recovered#typeBindingLMappingConfig;060
+.
+(Recovered#typeBindingLThrottlingConfig;062
+/
+)Recovered#typeBindingLMessageDispatcher;064
+
+calls65
+
+
+references66
+`
+Zorg.eclipse.ditto.connectivity.service.messaging.InboundMappingSink#determinePoolSize(II)I68
+¶
+¯org.eclipse.ditto.connectivity.service.messaging.InboundMappingSink#createSink(Ljava/util/List;LConnectionId;ILSink;LMappingConfig;LThrottlingConfig;LMessageDispatcher;)LSink;70
+
+
+createSink71
+
+returns72
+%
+Recovered#typeBindingLNotUsed;074
+Y
+Sorg.eclipse.ditto.connectivity.service.messaging.InboundMappingSink#getSink()LSink;76
+
+getSink77
+b
+\org.eclipse.ditto.connectivity.service.messaging.InboundMappingSink#logStatusFailure()LSink;79
+$
+Recovered#typeBindingLStatus;081
+3
+-Recovered#typeBindingLDittoRuntimeException;083
+\
+Vorg.eclipse.ditto.connectivity.service.messaging.InboundMappingSink#mapMessage()LSink;85
+7
+1Recovered#typeBindingLExternalMessageWithSender;087
+
+logStatusFailure88
+
+
+mapMessage89
+"
+Recovered#typeBindingLFlow;091
+4
+.Recovered#typeBindingLInboundMappingOutcomes;093
+
+determinePoolSize94
+ª
+£org.eclipse.ditto.connectivity.service.messaging.InboundMappingSink#mapInboundMessage(LExternalMessageWithSender;LInboundMappingProcessor;)LInboundMappingOutcomes;96
+
+mapInboundMessage97
+
+InboundMappingOutcomes99
+´
+¬org.eclipse.ditto.connectivity.service.messaging.InboundMappingSink#mapExternalMessageToSignal(LExternalMessageWithSender;LInboundMappingProcessor;)LInboundMappingOutcomes;101
+!
+mapExternalMessageToSignal102J
+
+1
+12Z
+
+3	
+354jÝ
+
+
+18
+181920
+@
+43:
+434415 *
+11 1(26:3B
+	
+9
+16
+
+
+11
+45
+
+90
+909120
+@
+69:
+697053 *
+1Y Y(26:3B
+	
+9
+10
+
+
+11
+71
+
+61
+616220
+@
+78:
+787953 *
+1u u(26:3B
+	
+9
+16
+
+
+11
+88
+9
+64
+678 *
+1* *(&:3B
+	
+9
+10
+
+
+11
+12
+@
+75:
+757653 *
+1m m(26:3B
+	
+9
+16
+
+
+11
+77
+
+46
+464720
+
+31
+313220
+
+41
+414220
+
+82
+828320
+
+36
+363720
+
+54
+545520
+@
+33:
+333415 *
+10 0(26:3B
+	
+9
+16
+
+
+11
+35
+@
+48:
+484915 *
+12 2(26:3B
+	
+9
+16
+
+
+11
+50
+
+73
+737420
+
+98
+989920
+@
+51:
+515253 *
+14 4(26:3B
+	
+9
+16
+
+
+11
+12
+B
+67<
+676853 *
+1ž ž(26:3B
+	
+9
+16
+
+
+11
+94
+
+59
+596020
+@
+13:
+131415 *
+1, ,(26:3B
+	
+9
+16
+
+
+11
+17
+
+26
+262720
+
+63
+636420
+@
+84:
+848553 *
+1{ {(26:3B
+	
+9
+16
+
+
+11
+89
+F
+100?
+10010153 *
+1¶ ¶(26:3B
+	
+9
+16
+
+11
+102
+
+80
+808120
+
+57
+575820
+
+86
+868720
+@
+28:
+282915 *
+1/ /(26:3B
+	
+9
+16
+
+
+11
+30
+
+38
+383920
+
+92
+929320
+B
+95<
+959653 *
+1§ §(26:3B
+	
+9
+16
+
+
+11
+97
+@
+23:
+232415 *
+1. .(26:3B
+	
+9
+16
+
+
+11
+25r”"
+
+131821*
+1, ,((
+
+131822*
+1, ,((
+
+131822*
+1,) ,(/
+
+232622*
+1. .(/
+
+283121*
+1/ /(
+
+283122*
+1/ /(
+
+283122*
+1/# /(9
+
+333621*
+10 0(-
+
+333840*
+10 0(
+
+334122*
+10 0(
+
+333622*
+10 0(-
+
+333622*
+10. 0(>
+
+434621*
+11 1($
+
+434622*
+11 1($
+
+434622*
+11% 1(F
+
+515456*
+15 5(
+
+515756*
+17 7(
+
+515956*
+18 8( 
+
+516156*
+19 9(-
+
+516356*
+1: :($
+
+51665*
+14 4(
+
+512622*
+14+ 4(B
+
+515421*
+15  5(,
+
+515422*
+15 5(
+
+515721*
+17# 7(9
+
+515722*
+17 7(
+
+515921*
+18! 8(.
+
+515922*
+18 8( 
+
+516121*
+19. 9(>
+
+513840*
+19 9(
+
+514122*
+19 9(
+
+516122*
+19 9(-
+
+516321*
+1:% :(F
+
+516322*
+1: :($
+
+51622*
+1<	 <(
+
+51666*
+1<	 <(
+
+512366*
+1< <(&
+
+51622*
+1=	 =(
+
+51666*
+1=	 =(
+
+513122*
+1= =($
+
+512866*
+1= =($
+
+51622*
+1?	 ?(
+
+51666*
+1?	 ?(
+
+513622*
+1? ?(
+
+513366*
+1? ?(
+
+51622*
+1@	 @(
+
+51666*
+1@	 @(
+
+514622*
+1@ @(/
+
+514366*
+1@ @(/
+
+511822*
+1C	 C(
+
+511366*
+1C	 C(
+
+51622*
+1C9 C(K
+
+51622*
+1F	 F(
+
+51666*
+1F	 F(
+
+514866*
+1F F(
+
+51666*
+1F" F(&
+
+516765*
+1F' F(8
+
+51666*
+1F" F(&
+
+51622*
+1F" F(&
+
+51666*
+1F" F(&
+
+693172*
+1Y Y(
+
+695456*
+1[ [(
+
+695756*
+1] ](
+
+695956*
+1^ ^( 
+
+696156*
+1_ _(-
+
+696356*
+1` `($
+
+693122*
+1Y Y(
+
+697322*
+1Y  Y('
+
+692622*
+1Z Z(/
+
+695421*
+1[  [(,
+
+695422*
+1[ [(
+
+695721*
+1]# ](9
+
+695722*
+1] ](
+
+695921*
+1^! ^(.
+
+695922*
+1^ ^( 
+
+696121*
+1_. _(>
+
+693840*
+1_ _(
+
+694122*
+1_ _(
+
+696122*
+1_ _(-
+
+696321*
+1`% `(F
+
+696322*
+1` `($
+
+69621*
+1b b(%
+
+69665*
+1b, b(>
+
+693172*
+1j j("
+
+69666*
+1j j("
+
+697565*
+1j# j(*
+
+753172*
+1m m(
+
+753122*
+1m m(
+
+757322*
+1m m(!
+
+753172*
+1o o(+
+
+75666*
+1o o(+
+
+757865*
+1o o(+
+
+758022*
+1o/ o(5
+
+758022*
+1o6 o(=
+
+753122*
+1p p(1
+
+752866*
+1p p(1
+
+758222*
+1p3 p(H
+
+753172*
+1q q(%
+
+75666*
+1q q(%
+
+758465*
+1q q(%
+
+758622*
+1q) q(B
+
+783172*
+1u u(
+
+783122*
+1u u(
+
+788022*
+1v" v((
+
+788022*
+1v) v(0
+
+843172*
+1{ {(
+
+843122*
+1{ {(
+
+847322*
+1{ {(!
+
+849021*
+1|= |(K
+
+849022*
+1| |(
+
+849222*
+1| |(2
+
+847322*
+1|4 |(;
+
+848622*
+1}# }(<
+
+844866*
+1€# €(4
+
+849021*
+1Œ= Œ(W
+
+849022*
+1Œ Œ(
+
+849222*
+1Œ Œ(2
+
+847322*
+1Œ4 Œ(;
+
+843622*
+1 (
+
+843366*
+1 (
+
+843366*
+1) (9
+
+843622*
+1) (9
+
+843366*
+1) (9
+
+843366*
+1 (/
+
+843622*
+1 (/
+
+843366*
+1 (/
+
+843366*
+1< (L
+
+843622*
+1< (L
+
+843366*
+1< (L
+
+843122*
+1› ›(+
+
+842866*
+1› ›(+
+
+671366*
+1   (
+
+671822*
+1   (
+
+671366*
+1   (
+
+959872*
+1§ §(#
+
+958656*
+1§< §(U
+
+952656*
+1¨ ¨(*
+
+959822*
+1§ §(#
+
+958621*
+1§V §(`
+
+958622*
+1§< §(U
+
+952621*
+1¨+ ¨(B
+
+952622*
+1¨ ¨(*
+
+951366*
+1«	 «(
+
+951822*
+1«	 «(
+
+951366*
+1«	 «(
+
+959872*
+1® ®(.
+
+95666*
+1® ®(.
+
+9510065*
+1® ®(.
+
+951366*
+1° °(
+
+951822*
+1° °(
+
+951366*
+1° °(
+
+1009872*
+1¶ ¶(*
+
+1008656*
+1¶L ¶(e
+
+1002656*
+1· ·(*
+
+1009822*
+1¶ ¶(*
+
+1008621*
+1¶f ¶(p
+
+1008622*
+1¶L ¶(e
+
+1002621*
+1·+ ·(B
+
+1002622*
+1· ·(*

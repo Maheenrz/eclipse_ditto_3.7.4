@@ -1,0 +1,1609 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508739866*java2.B 3
+t
+oconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/kafka/KafkaClientActor.java2
+
+package4
+;
+6org.eclipse.ditto.connectivity.service.messaging.kafka5
+L
+Gorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+KafkaClientActor12
+-
+'Recovered#typeBindingLBaseClientActor;014
+
+unknown15
+
+extends16
+
+
+uses17
+c
+]org.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor.publisherActorFactory19
+
+field20
+
+private21
+
+publisherActorFactory22
+ 
+KafkaPublisherActorFactory24
+
+is type25
+m
+gorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor.pendingStatusReportsFromStreams27
+%
+pendingStatusReportsFromStreams28
+&
+ Recovered#typeBindingLActorRef;030
+_
+Yorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor.propertiesFactory32
+
+propertiesFactory33
+
+PropertiesFactory35
+b
+\org.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor.testConnectionFuture37
+
+testConnectionFuture38
+$
+Recovered#typeBindingLStatus;040
+a
+[org.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor.kafkaPublisherActor42
+
+kafkaPublisherActor43
+
+ActorRef45
+a
+[org.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor.kafkaConsumerActors47
+
+kafkaConsumerActors48
+Y
+Sorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor.kafkaConfig50
+
+kafkaConfig51
+
+KafkaConfig53
+™
+£org.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#<init>(LConnection;LActorRef;LActorRef;LKafkaPublisherActorFactory;LDittoHeaders;LConfig;)V55
+
+method56
+(
+"Recovered#typeBindingLConnection;058
+
+	has param59
+8
+2Recovered#typeBindingLKafkaPublisherActorFactory;061
+*
+$Recovered#typeBindingLDittoHeaders;063
+$
+Recovered#typeBindingLConfig;065
+
+calls66
+
+
+references67
+é
+áorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#<init>(LConnection;LActorRef;LActorRef;LDittoHeaders;LConfig;)V69
+ì
+åorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#props(LConnection;LActorRef;LActorRef;LDittoHeaders;LConfig;)LProps;71
+
+props72
+
+Props74
+
+returns75
+
+
+Connection77
+z
+torg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#validateConnection(LConnection;)LConnection;79
+Ø
+®org.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#propsForTests(LConnection;LActorRef;LActorRef;LKafkaPublisherActorFactory;LDittoHeaders;)LProps;81
+
+	protected82
+
+propsForTests83
+
+validateConnection84
+w
+qorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#inTestingState()LFSMStateFunctionBuilder;86
+
+inTestingState87
+
+FSMStateFunctionBuilder89
+-
+'Recovered#typeBindingLBaseClientState;091
+,
+&Recovered#typeBindingLBaseClientData;093
+
+BaseClientActor95
+-
+'Recovered#typeBindingLClientConnected;097
+/
+)Recovered#typeBindingLConnectionFailure;099
+{
+torg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#inConnectingState()LFSMStateFunctionBuilder;101
+
+inConnectingState102
+ò
+êorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#doTestConnection(LTestConnection;)Ljava/util/concurrent/CompletionStage;104
+
+doTestConnection105
+-
+&Recovered#typeBindingLTestConnection;0107
+Ü
+org.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#connectClient(ZLConnectionId;Ljava/lang/CharSequence;)V109
+Ñ
+}org.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#stopConsuming()Ljava/util/concurrent/CompletionStage;111
+
+stopConsuming112
+w
+porg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#doConnectClient(LConnection;LActorRef;)V114
+
+doConnectClient115
+
+Nullable117
+
+annotated by118
+'
+ Recovered#typeBindingLNullable;0120
+{
+torg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#doDisconnectClient(LConnection;LActorRef;Z)V122
+
+doDisconnectClient123
+l
+eorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#getPublisherActor()LActorRef;125
+
+getPublisherActor126
+
+connectClient127
++
+$Recovered#typeBindingLConnectionId;0129
+ç
+Öorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#startKafkaPublisher(ZLConnectionId;Ljava/lang/CharSequence;)V131
+ç
+Öorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#startKafkaConsumers(ZLConnectionId;Ljava/lang/CharSequence;)V133
+
+startKafkaPublisher134
+d
+]org.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#stopPublisherActor()V136
+9
+2Recovered#typeBindingLDefaultSendProducerFactory;0138
+$
+Recovered#typeBindingLProps;0140
+
+startKafkaConsumers141
+d
+]org.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#stopConsumerActors()V143
+â
+Åorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#consumerDataFromSource(LSource;)Ljava/util/stream/Stream;145
+
+consumerDataFromSource146
+%
+Recovered#typeBindingLSource;0148
++
+$Recovered#typeBindingLConsumerData;0150
+s
+lorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#startKafkaConsumer(LConsumerData;Z)V152
+
+startKafkaConsumer153
+2
++Recovered#typeBindingLKafkaConsumerConfig;0155
+9
+2Recovered#typeBindingLConnectionThrottlingConfig;0157
+9
+2Recovered#typeBindingLKafkaConsumerStreamFactory;0159
+
+stopConsumerActors160
+o
+horg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#cleanupResourcesForConnection()V162
+$
+cleanupResourcesForConnection163
+ã
+Éorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#startPublisherActor()Ljava/util/concurrent/CompletionStage;165
+
+startPublisherActor166
+ú
+îorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#startConsumerActors(LClientConnected;)Ljava/util/concurrent/CompletionStage;168
+
+startConsumerActors169
+x
+qorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#getThrottlingConfig()Ljava/util/Optional;171
+
+getThrottlingConfig172
+
+stopPublisherActor173
+Ö
+~org.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#handleStatusReportFromChildren(LStatus/Status;)LState;175
+%
+handleStatusReportFromChildren176
+
+State178
+}
+vorg.eclipse.ditto.connectivity.service.messaging.kafka.KafkaClientActor#completeTestConnectionFuture(LStatus/Status;)V180
+#
+completeTestConnectionFuture181J
+
+1
+12Z
+
+3	
+354jÅ
+F
+170?
+17017156 *
+1Æ Æ(26:3B
+	
+9
+82
+
+11
+172
+
+44
+444515
+F
+110?
+11011156 *
+1∞ ∞(26:3B
+	
+9
+82
+
+11
+112
+@
+18:
+181920 *
+1@ @(26:3B
+	
+9
+21
+
+
+11
+22
+
+98
+989915
+@
+31:
+313220 *
+1B B(26:3B
+	
+9
+21
+
+
+11
+33
+
+23
+232415
+F
+113?
+11311456 *
+1∫ ∫(26:3B
+	
+9
+82
+
+11
+115
+@
+36:
+363720 *
+1D D(26:3B
+	
+9
+21
+
+
+11
+38
+@
+68:
+686956 *
+1X X(26:3B
+	
+9
+21
+
+
+11
+12
+
+64
+646515
+F
+167?
+16716856 *
+1ß ß(26:3B
+	
+9
+82
+
+11
+169
+
+147
+14714815
+@
+80:
+808156 *
+1| |(26:3B
+	
+9
+82
+
+
+11
+83
+@
+41:
+414220 *
+1E E(26:3B
+	
+9
+21
+
+
+11
+43
+
+128
+12812915
+
+139
+13914015
+
+60
+606115
+
+92
+929315
+
+90
+909115
+F
+103?
+10310456 *
+1¢ ¢(26:3B
+	
+9
+82
+
+11
+105
+B
+85<
+858656 *
+1ã ã(26:3B
+	
+9
+82
+
+
+11
+87
+F
+142?
+14214356 *
+1ê ê(26:3B
+	
+9
+21
+
+11
+160
+F
+151?
+15115256 *
+1É É(26:3B
+	
+9
+21
+
+11
+153
+F
+144?
+14414556 *
+1˚ ˚(26:3B
+	
+9
+21
+
+11
+146
+
+177
+17717815
+
+96
+969715
+F
+179?
+17918056 *
+1   (26:3B
+	
+9
+21
+
+11
+181
+
+34
+343515
+@
+70:
+707156 *
+1r r(26:3B
+	
+9
+10
+
+
+11
+72
+
+116
+11611715
+
+149
+14915015
+
+62
+626315
+F
+108?
+10810956 *
+1— —(26:3B
+	
+9
+21
+
+11
+127
+
+29
+293015
+F
+161?
+16116256 *
+1ô ô(26:3B
+	
+9
+82
+
+11
+163
+
+73
+737415
+F
+124?
+12412556 *
+1≈ ≈(26:3B
+	
+9
+82
+
+11
+126
+F
+174?
+17417556 *
+1ª ª(26:3B
+	
+9
+21
+
+11
+176
+F
+130?
+13013156 *
+1⁄ ⁄(26:3B
+	
+9
+21
+
+11
+134
+@
+46:
+464720 *
+1F F(26:3B
+	
+9
+21
+
+
+11
+48
+
+13
+131415
+B
+78<
+787956 *
+1Ü Ü(26:3B
+	
+9
+21
+
+
+11
+84
+
+119
+11912015
+
+94
+949515
+
+106
+10610715
+F
+135?
+13513656 *
+1≥ ≥(26:3B
+	
+9
+21
+
+11
+173
+@
+26:
+262720 *
+1A A(26:3B
+	
+9
+21
+
+
+11
+28
+
+158
+15815915
+
+57
+575815
+
+76
+767715
+
+156
+15615715
+F
+164?
+16416556 *
+1† †(26:3B
+	
+9
+82
+
+11
+166
+F
+100?
+10010156 *
+1ú ú(26:3B
+	
+9
+82
+
+11
+102
+F
+132?
+13213356 *
+1Ì Ì(26:3B
+	
+9
+21
+
+11
+141
+
+154
+15415515
+@
+49:
+495020 *
+1G G(26:3B
+	
+9
+21
+
+
+11
+51
+
+137
+13713815
+@
+54:
+545556 *
+1I I(26:3B
+	
+9
+21
+
+
+11
+12
+
+39
+394015
+F
+121?
+12112256 *
+1ø ø(26:3B
+	
+9
+82
+
+11
+123
+9
+64
+678 *
+1> >($:3B
+	
+9
+10
+
+
+11
+12
+
+88
+888915
+
+52
+525315r®F
+
+61316*
+1>- >(<
+
+61317*
+1>- >(<
+
+182325*
+1@ @(-
+
+182317*
+1@ @(-
+
+182317*
+1@. @(C
+
+262917*
+1A A(
+
+313425*
+1B B($
+
+313417*
+1B B($
+
+313417*
+1B% B(6
+
+363917*
+1D D(%
+
+363917*
+1D& D(,
+
+414425*
+1E E(
+
+414417*
+1E E(
+
+414417*
+1E E()
+
+462917*
+1F F( 
+
+495225*
+1G G(
+
+495217*
+1G G(
+
+495217*
+1G G(*
+
+545759*
+1I$ I(.
+
+542959*
+1J J(
+
+542959*
+1K K(
+
+546059*
+1L L(-
+
+546259*
+1M M(
+
+546459*
+1N N(
+
+54666*
+1I I(
+
+545725*
+1I/ I(9
+
+545717*
+1I$ I(.
+
+542925*
+1J J(1
+
+542917*
+1J J(
+
+542925*
+1K K(+
+
+542917*
+1K K(
+
+546025*
+1L. L(C
+
+546017*
+1L L(-
+
+546225*
+1M  M(,
+
+546217*
+1M M(
+
+546425*
+1N N(6
+
+546417*
+1N N(
+
+545217*
+1Q	 Q(
+
+544967*
+1Q	 Q(
+
+544667*
+1R	 R(
+
+543417*
+1S	 S(
+
+543167*
+1S	 S(
+
+545217*
+1SG S(R
+
+544967*
+1SG S(R
+
+54617*
+1T	 T(
+
+54667*
+1T	 T(
+
+542317*
+1T T(#
+
+541867*
+1T T(#
+
+542667*
+1U	 U((
+
+685759*
+1Y$ Y(.
+
+682959*
+1Z Z(
+
+682959*
+1[ [(
+
+686259*
+1\ \(
+
+686459*
+1] ](
+
+68666*
+1Y Y(
+
+685725*
+1Y/ Y(9
+
+685717*
+1Y$ Y(.
+
+682925*
+1Z Z(1
+
+682917*
+1Z Z(
+
+682925*
+1[ [(+
+
+682917*
+1[ [(
+
+686225*
+1\  \(,
+
+686217*
+1\ \(
+
+686425*
+1] ](6
+
+686417*
+1] ](
+
+68667*
+1_	 _(
+
+68666*
+1_	 _(
+
+68666*
+1_	 _(
+
+707375*
+1r r(
+
+705759*
+1r% r(/
+
+702959*
+1s s(
+
+702959*
+1t t(
+
+706259*
+1u u(
+
+706459*
+1v v(
+
+707317*
+1r r(
+
+705725*
+1r0 r(:
+
+705717*
+1r% r(/
+
+702925*
+1s s(1
+
+702917*
+1s s(
+
+702925*
+1t t(+
+
+702917*
+1t t(
+
+706225*
+1u  u(,
+
+706217*
+1u u(
+
+706425*
+1v v(6
+
+706417*
+1v v(
+
+70617*
+1x x(-
+
+707675*
+1x5 x(G
+
+70667*
+1x5 x(G
+
+707866*
+1x5 x(G
+
+807375*
+1| |(
+
+805759*
+1|& |(0
+
+802959*
+1} }(
+
+802959*
+1~ ~(
+
+806059*
+1 (-
+
+806259*
+1Ä Ä(
+
+807317*
+1| |(
+
+805725*
+1|1 |(;
+
+805717*
+1|& |(0
+
+802925*
+1} }(&
+
+802917*
+1} }(
+
+802925*
+1~ ~(+
+
+802917*
+1~ ~(
+
+806025*
+1. (5
+
+806017*
+1 (-
+
+806225*
+1Ä  Ä(,
+
+806217*
+1Ä Ä(
+
+80617*
+1Ç Ç(-
+
+807675*
+1Ç5 Ç(G
+
+80667*
+1Ç5 Ç(G
+
+807866*
+1Ç5 Ç(G
+
+787675*
+1Ü Ü(
+
+785759*
+1Ü8 Ü(B
+
+787617*
+1Ü Ü(
+
+785725*
+1ÜC Ü(M
+
+785717*
+1Ü8 Ü(B
+
+858875*
+1å å(&
+
+858817*
+1å å(&
+
+859017*
+1å' å(6
+
+859217*
+1å8 å(F
+
+85667*
+1ç ç(
+
+859417*
+1ç ç(
+
+85667*
+1ç ç(
+
+853917*
+1é é(
+
+853917*
+1é é(%
+
+859617*
+1ê ê('
+
+859217*
+1ê/ ê(=
+
+859817*
+1ñ ñ()
+
+859217*
+1ñ1 ñ(?
+
+1008875*
+1ù ù(&
+
+1008817*
+1ù ù(&
+
+1009017*
+1ù' ù(6
+
+1009217*
+1ù8 ù(F
+
+100667*
+1û û(
+
+1009417*
+1û û(
+
+100667*
+1û û(
+
+1003917*
+1ü ü(
+
+1003917*
+1ü ü(%
+
+10310659*
+1£E £(S
+
+1033917*
+1£ £(%
+
+1033917*
+1£& £(,
+
+10310625*
+1£T £(i
+
+10310617*
+1£E £(S
+
+1033667*
+1§ §(!
+
+1033917*
+1ß: ß(@
+
+1033667*
+1©	 ©(
+
+1036225*
+1™ ™((
+
+1036217*
+1™ ™(
+
+103667*
+1¨	 ¨(
+
+10310866*
+1¨	 ¨(
+
+1033667*
+1≠ ≠($
+
+1104667*
+1≥0 ≥(C
+
+1104667*
+1≥0 ≥(C
+
+1135759*
+1ª* ª(4
+
+1132959*
+1ªQ ª(Y
+
+1135725*
+1ª5 ª(?
+
+1135717*
+1ª* ª(4
+
+1132925*
+1ªZ ª(`
+
+113116118*
+1ªA ª(B
+
+11311917*
+1ªB ª(J
+
+1132917*
+1ªQ ª(Y
+
+113667*
+1º	 º(
+
+11310866*
+1º	 º(
+
+1215759*
+1¿- ¿(7
+
+1212959*
+1¿T ¿(\
+
+1215725*
+1¿8 ¿(B
+
+1215717*
+1¿- ¿(7
+
+1212925*
+1¿] ¿(c
+
+121116118*
+1¿D ¿(E
+
+12111917*
+1¿E ¿(M
+
+1212917*
+1¿T ¿(\
+
+1244475*
+1∆ ∆(
+
+1244417*
+1∆ ∆(
+
+1244417*
+1« «(#
+
+1244167*
+1« «(#
+
+10812859*
+1—< —(H
+
+10812825*
+1—I —(U
+
+10812817*
+1—< —(H
+
+108116118*
+1“ “(
+
+10811917*
+1“ “(
+
+108667*
+1’	 ’(
+
+10813066*
+1’	 ’(
+
+108667*
+1◊	 ◊(
+
+10813266*
+1◊	 ◊(
+
+13012859*
+1⁄B ⁄(N
+
+13012825*
+1⁄O ⁄([
+
+13012817*
+1⁄B ⁄(N
+
+130116118*
+1€ €(
+
+13011917*
+1€ €(
+
+130667*
+1‡	 ‡(
+
+13013566*
+1‡	 ‡(
+
+13013725*
+1·* ·(9
+
+13013717*
+1· ·()
+
+1303167*
+1‚8 ‚(I
+
+1303417*
+1‚8 ‚(I
+
+1303167*
+1‚8 ‚(I
+
+13013925*
+1‰ ‰((
+
+13013917*
+1‰ ‰(
+
+1301867*
+1‰+ ‰(@
+
+1302317*
+1‰+ ‰(@
+
+1301867*
+1‰+ ‰(@
+
+1304417*
+1È	 È(
+
+1304167*
+1È	 È(
+
+1301867*
+1È; È(P
+
+1302317*
+1È; È(P
+
+1301867*
+1È; È(P
+
+1302667*
+1Í	 Í((
+
+1302667*
+1Í	 Í((
+
+1304417*
+1Í- Í(@
+
+1304167*
+1Í- Í(@
+
+13212859*
+1ÌB Ì(N
+
+13212825*
+1ÌO Ì([
+
+13212817*
+1ÌB Ì(N
+
+132116118*
+1Ó Ó(
+
+13211917*
+1Ó Ó(
+
+132667*
+1Û	 Û(
+
+13214266*
+1Û	 Û(
+
+132617*
+1˜ ˜(*
+
+14414759*
+1˚F ˚(L
+
+14414917*
+1˚ ˚('
+
+14414725*
+1˚M ˚(S
+
+14414717*
+1˚F ˚(L
+
+15114959*
+1É+ É(7
+
+15114925*
+1É8 É(D
+
+15114917*
+1É+ É(7
+
+15115425*
+1Ñ# Ñ(1
+
+15115417*
+1Ñ Ñ("
+
+1514967*
+1Ñ4 Ñ(?
+
+1515217*
+1Ñ4 Ñ(?
+
+1514967*
+1Ñ4 Ñ(?
+
+15115625*
+1Ö* Ö(:
+
+15115617*
+1Ö Ö()
+
+15115825*
+1Ü* Ü(7
+
+15115817*
+1Ü Ü()
+
+1513417*
+1áB á(S
+
+1513167*
+1áB á(S
+
+15113925*
+1à à('
+
+15113917*
+1à à(
+
+1512925*
+1ã ã(%
+
+1512917*
+1ã ã(
+
+1514667*
+1ç	 ç(
+
+1514667*
+1ç	 ç(
+
+1424667*
+1ë	 ë(
+
+1424667*
+1ë	 ë(
+
+1424667*
+1ñ	 ñ(
+
+1424667*
+1ñ	 ñ(
+
+1612667*
+1õ	 õ((
+
+1612667*
+1õ	 õ((
+
+161667*
+1ú	 ú(
+
+16113566*
+1ú	 ú(
+
+161667*
+1ù	 ù(
+
+16114266*
+1ù	 ù(
+
+1643917*
+1° °(%
+
+1643917*
+1°& °(,
+
+1643917*
+1£& £(,
+
+1643917*
+1£- £(3
+
+1644967*
+1§* §(5
+
+1645217*
+1§* §(5
+
+1644967*
+1§* §(5
+
+1679659*
+1®R ®(a
+
+1673917*
+1® ®(%
+
+1673917*
+1®& ®(,
+
+1679625*
+1®b ®(q
+
+167116118*
+1®B ®(C
+
+16711917*
+1®C ®(K
+
+1679617*
+1®R ®(a
+
+1673917*
+1™& ™(,
+
+1673917*
+1™- ™(3
+
+1674967*
+1´* ´(5
+
+1675217*
+1´* ´(5
+
+1674967*
+1´* ´(5
+
+17015617*
+1Ø Ø(2
+
+1704967*
+1∞ ∞('
+
+1705217*
+1∞ ∞('
+
+1704967*
+1∞ ∞('
+
+1354417*
+1¥ ¥( 
+
+1354167*
+1¥ ¥( 
+
+1354167*
+1µ8 µ(K
+
+1354417*
+1µ8 µ(K
+
+1354167*
+1µ8 µ(K
+
+1354167*
+1∑ ∑( 
+
+1354417*
+1∑ ∑( 
+
+1354167*
+1∑ ∑( 
+
+17417775*
+1ª ª(
+
+1743959*
+1ªY ª(_
+
+17417717*
+1ª ª(
+
+1749017*
+1ª ª("
+
+1749217*
+1ª$ ª(2
+
+1743925*
+1ªg ª(m
+
+1743917*
+1ªY ª(_
+
+1743917*
+1ª` ª(f
+
+1742667*
+1º º(,
+
+1742667*
+1º º(,
+
+1742667*
+1Ω Ω(,
+
+1742667*
+1Ω Ω(,
+
+1743925*
+1æ2 æ(9
+
+1743917*
+1æ# æ()
+
+1743917*
+1æ* æ(1
+
+1749825*
+1ø) ø(:
+
+1749817*
+1ø ø((
+
+1742667*
+1¬ ¬(7
+
+1742667*
+1¬ ¬(7
+
+1749617*
+1ƒ! ƒ(0
+
+1793959*
+1 5  (;
+
+1793925*
+1 C  (M
+
+1793917*
+1 5  (;
+
+1793917*
+1 <  (B
+
+1793667*
+1À À(!
+
+1793667*
+1Ã Ã(!
+
+1793667*
+1Ã Ã(!
+
+1793917*
+1—  —(&

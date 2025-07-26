@@ -1,0 +1,636 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508611839*java2.B¿
+[
+Vbase/model/src/main/java/org/eclipse/ditto/base/model/headers/entitytag/EntityTag.java2
+
+package4
+3
+.org.eclipse.ditto.base.model.headers.entitytag5
+=
+8org.eclipse.ditto.base.model.headers.entitytag.EntityTag7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+	EntityTag12
+
+	Immutable14
+
+unknown15
+
+annotated by16
+'
+!Recovered#typeBindingLImmutable;018
+
+
+uses19
+`
+Zorg.eclipse.ditto.base.model.headers.entitytag.EntityTag.VALIDATION_ERROR_MESSAGE_TEMPLATE21
+
+field22
+
+private23
+'
+!VALIDATION_ERROR_MESSAGE_TEMPLATE24
+W
+Qorg.eclipse.ditto.base.model.headers.entitytag.EntityTag.ENTITY_TAG_REGEX_PATTERN26
+
+ENTITY_TAG_REGEX_PATTERN27
+D
+>org.eclipse.ditto.base.model.headers.entitytag.EntityTag$Regex29
+
+
+references30
+O
+Iorg.eclipse.ditto.base.model.headers.entitytag.EntityTag$Regex.ENTITY_TAG32
+J
+Dorg.eclipse.ditto.base.model.headers.entitytag.EntityTag.WEAK_PREFIX34
+
+WEAK_PREFIX35
+C
+=org.eclipse.ditto.base.model.headers.entitytag.EntityTag.weak37
+
+
+weak38
+H
+Borg.eclipse.ditto.base.model.headers.entitytag.EntityTag.opaqueTag40
+
+	opaqueTag41
+[
+Uorg.eclipse.ditto.base.model.headers.entitytag.EntityTag#<init>(ZLjava/lang/String;)V43
+
+method44
+
+calls45
+a
+[org.eclipse.ditto.base.model.headers.entitytag.EntityTag#isValid(Ljava/lang/CharSequence;)Z47
+
+isValid48
+
+Nullable50
+&
+ Recovered#typeBindingLNullable;052
+_
+Yorg.eclipse.ditto.base.model.headers.entitytag.EntityTag#getOpaqueTag()Ljava/lang/String;54
+
+getOpaqueTag55
+H
+Borg.eclipse.ditto.base.model.headers.entitytag.EntityTag#isWeak()Z57
+
+isWeak58
+å
+Öorg.eclipse.ditto.base.model.headers.entitytag.EntityTag#strongCompareTo(Lorg/eclipse/ditto/base/model/headers/entitytag/EntityTag;)Z60
+
+strongCompareTo61
+
+	has param62
+
+is type63
+Z
+Torg.eclipse.ditto.base.model.headers.entitytag.EntityTag#equals(Ljava/lang/Object;)Z65
+ä
+Éorg.eclipse.ditto.base.model.headers.entitytag.EntityTag#weakCompareTo(Lorg/eclipse/ditto/base/model/headers/entitytag/EntityTag;)Z67
+
+weakCompareTo68
+ò
+ëorg.eclipse.ditto.base.model.headers.entitytag.EntityTag#fromString(Ljava/lang/String;)Lorg/eclipse/ditto/base/model/headers/entitytag/EntityTag;70
+
+
+fromString71
+
+returns72
+í
+ãorg.eclipse.ditto.base.model.headers.entitytag.EntityTag#weak(Ljava/lang/String;)Lorg/eclipse/ditto/base/model/headers/entitytag/EntityTag;74
+î
+çorg.eclipse.ditto.base.model.headers.entitytag.EntityTag#strong(Ljava/lang/String;)Lorg/eclipse/ditto/base/model/headers/entitytag/EntityTag;76
+q
+korg.eclipse.ditto.base.model.headers.entitytag.EntityTag#fromEntity(Ljava/lang/Object;)Ljava/util/Optional;78
+
+
+fromEntity79
+
+strong80
+[
+Uorg.eclipse.ditto.base.model.headers.entitytag.EntityTag#toString()Ljava/lang/String;82
+
+toString83
+
+equals84
+J
+Dorg.eclipse.ditto.base.model.headers.entitytag.EntityTag#hashCode()I86
+
+hashCode87
+
+Regex88
+P
+Jorg.eclipse.ditto.base.model.headers.entitytag.EntityTag$Regex.WEAK_PREFIX90
+O
+Iorg.eclipse.ditto.base.model.headers.entitytag.EntityTag$Regex.OPAQUE_TAG92
+
+
+OPAQUE_TAG93
+
+
+ENTITY_TAG94J
+
+1
+12Z
+
+3	
+354jÕ
+9
+64
+678 *
+1   (:3B
+	
+9
+10
+
+
+11
+12
+
+13
+131415
+B
+64<
+646544 *
+1Æ Æ(26:3B
+	
+9
+10
+
+
+11
+84
+@
+69:
+697044 *
+1z z(26:3B
+	
+9
+10
+
+
+11
+71
+@
+36:
+363722 *
+1' '(26:3B
+	
+9
+23
+
+
+11
+38
+
+17
+171815
+B
+81<
+818244 *
+1£ £(26:3B
+	
+9
+10
+
+
+11
+83
+@
+59:
+596044 *
+1\ \(26:3B
+	
+9
+10
+
+
+11
+61
+
+51
+515215
+@
+39:
+394022 *
+1) )(26:3B
+	
+9
+23
+
+
+11
+41
+@
+42:
+424344 *
+1+ +(26:3B
+	
+9
+23
+
+
+11
+12
+A
+28;
+28298 *
+1ø  ø(%26:3B
+	
+9
+23
+
+
+11
+88
+@
+33:
+333422 *
+1% %(26:3B
+	
+9
+23
+
+
+11
+35
+@
+56:
+565744 *
+1R R(26:3B
+	
+9
+10
+
+
+11
+58
+B
+73<
+737444 *
+1ü ü(26:3B
+	
+9
+10
+
+
+11
+38
+@
+25:
+252622 *
+1# #(26:3B
+	
+9
+23
+
+
+11
+27
+@
+66:
+666744 *
+1n n(26:3B
+	
+9
+10
+
+
+11
+68
+C
+31=
+313222 *
+1√	 √(228:3B
+	
+9
+23
+
+
+11
+94
+C
+91=
+919222 *
+1¬	 ¬(228:3B
+	
+9
+23
+
+
+11
+93
+B
+75<
+757644 *
+1ï ï(26:3B
+	
+9
+10
+
+
+11
+80
+@
+53:
+535444 *
+1I I(26:3B
+	
+9
+10
+
+
+11
+55
+B
+85<
+858644 *
+1∫ ∫(26:3B
+	
+9
+10
+
+
+11
+87
+@
+46:
+464744 *
+1; ;(26:3B
+	
+9
+10
+
+
+11
+48
+B
+77<
+777844 *
+1ã ã(26:3B
+	
+9
+10
+
+
+11
+79
+C
+89=
+899022 *
+1¡	 ¡(228:3B
+	
+9
+23
+
+
+11
+35
+
+49
+495015
+@
+20:
+202122 *
+1" "(26:3B
+	
+9
+23
+
+
+11
+24rÇ
+
+61316*
+1 (
+
+61719*
+1 (
+
+252819*
+1#M #(R
+
+252830*
+1#M #(R
+
+253130*
+1#S #(]
+
+42645*
+1+ +(
+
+42630*
+1, ,(
+
+424645*
+1, ,(
+
+422030*
+1., .(M
+
+42619*
+11	 1(
+
+42630*
+11	 1(
+
+423630*
+11 1(
+
+42619*
+12	 2(
+
+42630*
+12	 2(
+
+423930*
+12 2(
+
+464916*
+1;# ;($
+
+465119*
+1;$ ;(,
+
+462530*
+1>% >(=
+
+462530*
+1>% >(=
+
+533930*
+1J J(
+
+563630*
+1S S(
+
+59662*
+1\* \(3
+
+59663*
+1\4 \(B
+
+59619*
+1\* \(3
+
+59630*
+1] ](
+
+595645*
+1] ](
+
+59630*
+1a a(
+
+595645*
+1a a("
+
+59630*
+1e e(
+
+596445*
+1e e(
+
+66662*
+1n( n(1
+
+66663*
+1n2 n(@
+
+66619*
+1n( n(1
+
+66630*
+1o o(+
+
+665345*
+1o o(+
+
+66630*
+1o/ o(=
+
+665345*
+1o> o(J
+
+69672*
+1z z(
+
+69619*
+1z z(
+
+693330*
+1|3 |(>
+
+69672*
+1~ ~(
+
+69630*
+1~ ~(
+
+697345*
+1~ ~(
+
+69672*
+1Ä Ä(
+
+69630*
+1Ä Ä(
+
+697545*
+1Ä Ä(
+
+77619*
+1ã ã(%
+
+774916*
+1ã2 ã(3
+
+775119*
+1ã3 ã(;
+
+75672*
+1ï ï(
+
+75619*
+1ï ï(
+
+75645*
+1ñ ñ(
+
+73672*
+1ü ü(
+
+73619*
+1ü ü(
+
+73645*
+1† †(
+
+81630*
+1¶ ¶(
+
+815645*
+1¶ ¶(
+
+813330*
+1ß" ß(-
+
+81630*
+1© ©(*
+
+815345*
+1© ©(*
+
+644916*
+1Ø Ø(
+
+645119*
+1Ø Ø($
+
+64619*
+1∞ ∞(
+
+64630*
+1∞ ∞(
+
+64663*
+1∂ ∂("
+
+64619*
+1∂ ∂(
+
+64619*
+1∂& ∂(/
+
+643630*
+1∑ ∑(
+
+643630*
+1∑" ∑(&
+
+643930*
+1∑9 ∑(B
+
+643930*
+1∑N ∑(W
+
+853630*
+1º º(!
+
+853930*
+1º# º(,
+
+318930*
+1√2 √(=
+
+319130*
+1√F √(P

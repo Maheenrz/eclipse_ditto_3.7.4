@@ -1,0 +1,880 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508788385*java2.B‚
+Å
+|things/service/src/main/java/org/eclipse/ditto/things/service/persistence/actors/strategies/commands/MergeThingStrategy.java2
+
+package4
+L
+Gorg.eclipse.ditto.things.service.persistence.actors.strategies.commands5
+_
+Zorg.eclipse.ditto.things.service.persistence.actors.strategies.commands.MergeThingStrategy7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+
+MergeThingStrategy12
+@
+:Recovered#typeBindingLAbstractThingModifyCommandStrategy;014
+
+unknown15
+
+extends16
+
+	Immutable18
+
+annotated by19
+'
+!Recovered#typeBindingLImmutable;021
+
+
+uses22
+(
+"Recovered#typeBindingLMergeThing;024
+r
+lorg.eclipse.ditto.things.service.persistence.actors.strategies.commands.MergeThingStrategy.ENTITY_TAG_MAPPER26
+
+field27
+
+private28
+
+ENTITY_TAG_MAPPER29
+
+ThingResourceMapper31
+
+is type32
+#
+Recovered#typeBindingLThing;034
+'
+!Recovered#typeBindingLEntityTag;036
+w
+qorg.eclipse.ditto.things.service.persistence.actors.strategies.commands.MergeThingStrategy#<init>(LActorSystem;)V38
+
+method39
+)
+#Recovered#typeBindingLActorSystem;041
+
+	has param42
+
+calls43
+ö
+ìorg.eclipse.ditto.things.service.persistence.actors.strategies.commands.MergeThingStrategy#doApply(LContext;LThing;JLMergeThing;LMetadata;)LResult;45
+
+doApply46
+
+Result48
+
+returns49
+%
+Recovered#typeBindingLContext;051
+&
+ Recovered#typeBindingLMetadata;053
+(
+"Recovered#typeBindingLThingEvent;055
+%
+Recovered#typeBindingLThingId;057
+
+Nullable59
+&
+ Recovered#typeBindingLNullable;061
+
+
+references62
+π
+≤org.eclipse.ditto.things.service.persistence.actors.strategies.commands.MergeThingStrategy#handleMergeExisting(LContext;LThing;Ljava/time/Instant;JLMergeThing;LMetadata;)LResult;64
+∏
+±org.eclipse.ditto.things.service.persistence.actors.strategies.commands.MergeThingStrategy#performWotValidation(LMergeThing;LThing;LThing;)Ljava/util/concurrent/CompletionStage;66
+
+performWotValidation67
+
+handleMergeExisting68
+»
+¡org.eclipse.ditto.things.service.persistence.actors.strategies.commands.MergeThingStrategy#handleMergeExistingV2WithV2Command(LContext;LThing;Ljava/time/Instant;JLMergeThing;LMetadata;)LResult;70
+(
+"handleMergeExistingV2WithV2Command71
+∑
+∞org.eclipse.ditto.things.service.persistence.actors.strategies.commands.MergeThingStrategy#applyMergeCommand(LContext;LThing;Ljava/time/Instant;JLMergeThing;LMetadata;)LResult;73
+
+applyMergeCommand74
+*
+$Recovered#typeBindingLDittoHeaders;076
+)
+#Recovered#typeBindingLJsonPointer;078
+'
+!Recovered#typeBindingLJsonValue;080
+Æ
+ßorg.eclipse.ditto.things.service.persistence.actors.strategies.commands.MergeThingStrategy#wrapException(Ljava/util/function/Supplier;LDittoHeaders;)Ljava/lang/Object;82
+.
+(Recovered#typeBindingLWithDittoHeaders;084
+•
+ûorg.eclipse.ditto.things.service.persistence.actors.strategies.commands.MergeThingStrategy#mergeThing(LContext;LMergeThing;LThing;Ljava/time/Instant;J)LThing;86
+
+
+mergeThing87
+
+Thing89
+(
+"Recovered#typeBindingLJsonObject;091
+,
+&Recovered#typeBindingLJsonMergePatch;093
+ú
+ïorg.eclipse.ditto.things.service.persistence.actors.strategies.commands.MergeThingStrategy#previousEntityTag(LMergeThing;LThing;)Ljava/util/Optional;95
+
+public96
+
+previousEntityTag97
+ò
+ëorg.eclipse.ditto.things.service.persistence.actors.strategies.commands.MergeThingStrategy#nextEntityTag(LMergeThing;LThing;)Ljava/util/Optional;99
+
+nextEntityTag100
+
+wrapException101
+
+T103
+3
+,Recovered#typeBindingLJsonRuntimeException;0105J
+
+1
+12Z
+
+3	
+354jÅ
+
+
+17
+171815
+
+23
+232415
+
+50
+505115
+
+75
+757615
+C
+98=
+989939 *
+1´ ´(26:3B
+	
+9
+96
+
+11
+100
+9
+64
+678 *
+13 3(:3B
+	
+9
+10
+
+
+11
+12
+C
+81=
+818239 *
+1∞ ∞(26:3B
+	
+9
+28
+
+11
+101
+@
+63:
+636439 *
+1\ \(26:3B
+	
+9
+28
+
+
+11
+68
+
+47
+474815
+
+52
+525315
+@
+69:
+697039 *
+1i i(26:3B
+	
+9
+28
+
+
+11
+71
+
+20
+202115
+
+92
+929315
+
+56
+565715
+
+54
+545515
+
+102
+10210315
+
+60
+606115
+
+33
+333415
+B
+94<
+949539 *
+1¶ ¶(26:3B
+	
+9
+96
+
+
+11
+97
+@
+37:
+373839 *
+1= =(26:3B
+	
+9
+10
+
+
+11
+12
+@
+65:
+656639 *
+1M M(26:3B
+	
+9
+10
+
+
+11
+67
+
+90
+909115
+@
+25:
+252627 *
+15 5(26:3B
+	
+9
+28
+
+
+11
+29
+
+13
+131415
+
+88
+888915
+@
+44:
+444539 *
+1A A(26:3B
+	
+9
+10
+
+
+11
+46
+
+79
+798015
+
+83
+838415
+
+77
+777815
+
+35
+353615
+B
+85<
+858639 *
+1é é(26:3B
+	
+9
+28
+
+
+11
+87
+
+30
+303115
+@
+72:
+727339 *
+1r r(26:3B
+	
+9
+28
+
+
+11
+74
+
+40
+404115
+
+58
+585915
+
+104
+10410515ré&
+
+61316*
+13( 3(J
+
+61719*
+12 2(
+
+62022*
+12 2(
+
+61322*
+13( 3(J
+
+62322*
+13K 3(U
+
+253032*
+15 5(-
+
+253022*
+15 5(-
+
+253322*
+15. 5(3
+
+253522*
+15> 5(G
+
+253022*
+15J 5([
+
+374042*
+1= =()
+
+37643*
+1= =(
+
+374032*
+1=* =(5
+
+374022*
+1= =()
+
+372322*
+1> >(
+
+444749*
+1B B(
+
+445042*
+1B3 B(:
+
+443342*
+1C C("
+
+442342*
+1E E(
+
+445242*
+1F F(%
+
+444722*
+1B B(
+
+445422*
+1B B( 
+
+445032*
+1BD B(K
+
+445022*
+1B3 B(:
+
+445622*
+1B; B(B
+
+443332*
+1C# C((
+
+445819*
+1C C(
+
+446022*
+1C C(
+
+443322*
+1C C("
+
+442332*
+1E E(%
+
+442322*
+1E E(
+
+445232*
+1F& F(.
+
+445819*
+1F F(
+
+446022*
+1F F(
+
+445222*
+1F F(%
+
+443332*
+1H H(!
+
+443322*
+1H H(
+
+444749*
+1J J(#
+
+44662*
+1J J(#
+
+446343*
+1J J(#
+
+652342*
+1NF N(P
+
+653342*
+1O O("
+
+653342*
+1P P("
+
+652322*
+1N N()
+
+652332*
+1NQ N(X
+
+652322*
+1NF N(P
+
+653332*
+1O# O(0
+
+655819*
+1O O(
+
+656022*
+1O O(
+
+653322*
+1O O("
+
+653332*
+1P# P(/
+
+655819*
+1P P(
+
+656022*
+1P P(
+
+653322*
+1P P("
+
+634749*
+1\ \(
+
+635042*
+1\= \(D
+
+633342*
+1] ](
+
+632342*
+1` `(
+
+635242*
+1a a(%
+
+634722*
+1\ \(
+
+635422*
+1\ \(
+
+635032*
+1\N \(U
+
+635022*
+1\= \(D
+
+635622*
+1\E \(L
+
+633332*
+1] ](
+
+633322*
+1] ](
+
+632332*
+1` `(%
+
+632322*
+1` `(
+
+635232*
+1a& a(.
+
+635819*
+1a a(
+
+636022*
+1a a(
+
+635222*
+1a a(%
+
+634749*
+1c c(2
+
+63662*
+1c c(2
+
+636943*
+1c c(2
+
+694749*
+1i i(
+
+695042*
+1iL i(S
+
+693342*
+1il i(q
+
+692342*
+1l l(
+
+695242*
+1m m(%
+
+694722*
+1i i(
+
+695422*
+1i i(
+
+695032*
+1i] i(d
+
+695022*
+1iL i(S
+
+695622*
+1iT i([
+
+693332*
+1ir i(w
+
+693322*
+1il i(q
+
+692332*
+1l l(%
+
+692322*
+1l l(
+
+695232*
+1m& m(.
+
+695819*
+1m m(
+
+696022*
+1m m(
+
+695222*
+1m m(%
+
+694749*
+1o o(!
+
+69662*
+1o o(!
+
+697243*
+1o o(!
+
+724749*
+1r r(
+
+725042*
+1r; r(B
+
+723342*
+1s s(
+
+722342*
+1v v(
+
+725242*
+1w w(%
+
+724722*
+1r r(
+
+725422*
+1r r(
+
+725032*
+1rL r(S
+
+725022*
+1r; r(B
+
+725622*
+1rC r(J
+
+723332*
+1s s(
+
+723322*
+1s s(
+
+722332*
+1v v(%
+
+722322*
+1v v(
+
+725232*
+1w& w(.
+
+725819*
+1w w(
+
+726022*
+1w w(
+
+725222*
+1w w(%
+
+727532*
+1{ {((
+
+727522*
+1{ {(
+
+727732*
+1| |(
+
+727722*
+1| |(
+
+727932*
+1} }(
+
+727922*
+1} }(
+
+723332*
+1 ( 
+
+723322*
+1 (
+
+72662*
+1# (0
+
+728143*
+1# (0
+
+722322*
+1Ç Ç()
+
+725422*
+1Ñ Ñ()
+
+728322*
+1á á(/
+
+858849*
+1é é(
+
+855042*
+1é$ é(+
+
+852342*
+1è è(
+
+853342*
+1ê ê(
+
+858822*
+1é é(
+
+855032*
+1é5 é(<
+
+855022*
+1é$ é(+
+
+855622*
+1é, é(3
+
+852332*
+1è è(%
+
+852322*
+1è è(
+
+853332*
+1ê ê(
+
+853322*
+1ê ê(
+
+859032*
+1î î(+
+
+859022*
+1î î(
+
+859232*
+1ï ï(,
+
+859222*
+1ï ï(
+
+859032*
+1ó ó($
+
+859022*
+1ó ó(
+
+853332*
+1ü ü( 
+
+853322*
+1ü ü(
+
+942342*
+1ß8 ß(B
+
+943342*
+1ß\ ß(a
+
+943522*
+1ß ß(
+
+942332*
+1ßC ß(J
+
+942322*
+1ß8 ß(B
+
+943332*
+1ßb ß(p
+
+945819*
+1ßL ß(M
+
+946022*
+1ßM ß(U
+
+943322*
+1ß\ ß(a
+
+942562*
+1® ®(!
+
+943022*
+1® ®(!
+
+942562*
+1® ®(!
+
+982342*
+1¨4 ¨(>
+
+983342*
+1¨] ¨(b
+
+983522*
+1¨ ¨(
+
+982332*
+1¨? ¨(K
+
+982322*
+1¨4 ¨(>
+
+983332*
+1¨c ¨(l
+
+985819*
+1¨M ¨(N
+
+986022*
+1¨N ¨(V
+
+983322*
+1¨] ¨(b
+
+982562*
+1≠ ≠(!
+
+983022*
+1≠ ≠(!
+
+982562*
+1≠ ≠(!
+
+8110249*
+1∞ ∞(
+
+817542*
+1∞J ∞(V
+
+817532*
+1∞W ∞(c
+
+817522*
+1∞J ∞(V
+
+8110249*
+1≤ ≤(
+
+8110422*
+1≥ ≥(,

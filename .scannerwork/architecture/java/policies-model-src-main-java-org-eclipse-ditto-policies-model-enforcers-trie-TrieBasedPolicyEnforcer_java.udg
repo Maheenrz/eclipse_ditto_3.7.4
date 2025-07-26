@@ -1,0 +1,860 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508537916*java2.B‰
+n
+ipolicies/model/src/main/java/org/eclipse/ditto/policies/model/enforcers/trie/TrieBasedPolicyEnforcer.java2
+
+package4
+4
+/org.eclipse.ditto.policies.model.enforcers.trie5
+L
+Gorg.eclipse.ditto.policies.model.enforcers.trie.TrieBasedPolicyEnforcer7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+TrieBasedPolicyEnforcer12
+&
+ Recovered#typeBindingLEnforcer;014
+
+unknown15
+
+
+implements16
+
+
+uses17
+[
+Uorg.eclipse.ditto.policies.model.enforcers.trie.TrieBasedPolicyEnforcer.inheritedTrie19
+
+field20
+
+private21
+
+inheritedTrie22
+
+
+PolicyTrie24
+
+is type25
+_
+Yorg.eclipse.ditto.policies.model.enforcers.trie.TrieBasedPolicyEnforcer.bottomUpGrantTrie27
+
+bottomUpGrantTrie28
+`
+Zorg.eclipse.ditto.policies.model.enforcers.trie.TrieBasedPolicyEnforcer.bottomUpRevokeTrie30
+
+bottomUpRevokeTrie31
+k
+eorg.eclipse.ditto.policies.model.enforcers.trie.TrieBasedPolicyEnforcer#<init>(Ljava/lang/Iterable;)V33
+
+method34
+
+calls35
+)
+#Recovered#typeBindingLPolicyEntry;037
+(
+"Recovered#typeBindingLPolicyTrie;039
+
+
+references40
+π
+≤org.eclipse.ditto.policies.model.enforcers.trie.TrieBasedPolicyEnforcer#newInstance(Ljava/lang/Iterable;)Lorg/eclipse/ditto/policies/model/enforcers/trie/TrieBasedPolicyEnforcer;42
+
+newInstance43
+
+returns44
+ú
+ïorg.eclipse.ditto.policies.model.enforcers.trie.TrieBasedPolicyEnforcer#hasUnrestrictedPermissions(LResourceKey;LAuthorizationContext;LPermissions;)Z46
+ 
+hasUnrestrictedPermissions47
+)
+#Recovered#typeBindingLResourceKey;049
+
+	has param50
+2
+,Recovered#typeBindingLAuthorizationContext;052
+)
+#Recovered#typeBindingLPermissions;054
+í
+ãorg.eclipse.ditto.policies.model.enforcers.trie.TrieBasedPolicyEnforcer#seekWithFallback(LResourceKey;LPolicyTrie;LPolicyTrie;)LPolicyTrie;56
+.
+(Recovered#typeBindingLGrantRevokeIndex;058
+ó
+êorg.eclipse.ditto.policies.model.enforcers.trie.TrieBasedPolicyEnforcer#hasPartialPermissions(LResourceKey;LAuthorizationContext;LPermissions;)Z60
+
+hasPartialPermissions61
+ñ
+èorg.eclipse.ditto.policies.model.enforcers.trie.TrieBasedPolicyEnforcer#getSubjectsWithPermission(LResourceKey;LPermissions;)LEffectedSubjects;63
+
+getSubjectsWithPermission64
+
+EffectedSubjects66
+n
+horg.eclipse.ditto.policies.model.enforcers.trie.TrieBasedPolicyEnforcer#checkResourceKey(LResourceKey;)V68
+n
+horg.eclipse.ditto.policies.model.enforcers.trie.TrieBasedPolicyEnforcer#checkPermissions(LPermissions;)V70
+
+checkResourceKey71
+
+checkPermissions72
+ö
+ìorg.eclipse.ditto.policies.model.enforcers.trie.TrieBasedPolicyEnforcer#getSubjectsWithPartialPermission(LResourceKey;LPermissions;)Ljava/util/Set;74
+&
+ getSubjectsWithPartialPermission75
+2
+,Recovered#typeBindingLAuthorizationSubject;077
+ü
+òorg.eclipse.ditto.policies.model.enforcers.trie.TrieBasedPolicyEnforcer#getSubjectsWithUnrestrictedPermission(LResourceKey;LPermissions;)Ljava/util/Set;79
++
+%getSubjectsWithUnrestrictedPermission80
+Æ
+ßorg.eclipse.ditto.policies.model.enforcers.trie.TrieBasedPolicyEnforcer#buildJsonView(LResourceKey;Ljava/lang/Iterable;LAuthorizationContext;LPermissions;)LJsonObject;82
+
+buildJsonView83
+
+
+JsonObject85
+'
+!Recovered#typeBindingLJsonField;087
+%
+Recovered#typeBindingLJsonKey;089
+
+seekWithFallback90J
+
+1
+12Z
+
+3	
+354jÎ	
+
+13
+131415
+
+23
+232415
+B
+73<
+737434 *
+1¢ ¢(26:3B
+	
+9
+10
+
+
+11
+75
+
+53
+535415
+B
+81<
+818234 *
+1ª ª(26:3B
+	
+9
+10
+
+
+11
+83
+
+84
+848515
+
+76
+767715
+B
+78<
+787934 *
+1≠ ≠(26:3B
+	
+9
+10
+
+
+11
+80
+
+57
+575815
+
+51
+515215
+
+36
+363715
+@
+26:
+262720 *
+1T T(26:3B
+	
+9
+21
+
+
+11
+28
+@
+41:
+414234 *
+1i i(26:3B
+	
+9
+10
+
+
+11
+43
+B
+67<
+676834 *
+1ö ö(26:3B
+	
+9
+21
+
+
+11
+71
+
+38
+383915
+@
+32:
+323334 *
+1[ [(26:3B
+	
+9
+21
+
+
+11
+12
+@
+29:
+293020 *
+1Y Y(26:3B
+	
+9
+21
+
+
+11
+31
+B
+59<
+596034 *
+1á á(26:3B
+	
+9
+10
+
+
+11
+61
+
+65
+656615
+9
+64
+678 *
+1J J(+:3B
+	
+9
+10
+
+
+11
+12
+
+86
+868715
+B
+62<
+626334 *
+1ë ë(26:3B
+	
+9
+10
+
+
+11
+64
+
+88
+888915
+B
+55<
+555634 *
+1Ÿ Ÿ(26:3B
+	
+9
+21
+
+
+11
+90
+@
+45:
+454634 *
+1u u(26:3B
+	
+9
+10
+
+
+11
+47
+B
+69<
+697034 *
+1û û(26:3B
+	
+9
+21
+
+
+11
+72
+@
+18:
+181920 *
+1O O(26:3B
+	
+9
+21
+
+
+11
+22
+
+48
+484915ræ&
+
+61316*
+1J7 J(?
+
+61317*
+1J7 J(?
+
+182325*
+1O O(
+
+182317*
+1O O(
+
+182317*
+1O O(+
+
+262325*
+1T T(
+
+262317*
+1T T(
+
+262317*
+1T T(/
+
+292325*
+1Y Y(
+
+292317*
+1Y Y(
+
+292317*
+1Y Y(0
+
+32635*
+1[ [($
+
+323617*
+1[4 [(?
+
+323825*
+1\ \(!
+
+323817*
+1\ \(
+
+322317*
+1]	 ](
+
+321840*
+1]	 ](
+
+322317*
+1^	 ^(
+
+322640*
+1^	 ^(
+
+321840*
+1^ ^(*
+
+322317*
+1^ ^(*
+
+321840*
+1^ ^(*
+
+322317*
+1_	 _(
+
+322940*
+1_	 _(
+
+321840*
+1_ _(+
+
+322317*
+1_ _(+
+
+321840*
+1_ _(+
+
+41644*
+1i i(*
+
+41617*
+1i i(*
+
+413617*
+1iF i(Q
+
+41635*
+1j j(+
+
+454850*
+1v5 v(@
+
+455150*
+1w w('
+
+455350*
+1wD w(O
+
+454825*
+1vA v(L
+
+454817*
+1v5 v(@
+
+455125*
+1w( w(<
+
+455117*
+1w w('
+
+455325*
+1wP w([
+
+455317*
+1wD w(O
+
+453825*
+1y y($
+
+453817*
+1y y(
+
+452344*
+1y' y(7
+
+45640*
+1y' y(7
+
+455535*
+1y' y(7
+
+452317*
+1yE y(W
+
+452940*
+1yE y(W
+
+452317*
+1yY y(f
+
+451840*
+1yY y(f
+
+455725*
+1z  z(0
+
+455717*
+1z z(
+
+594850*
+1à0 à(;
+
+595150*
+1àO à(c
+
+595350*
+1â â(
+
+594825*
+1à< à(G
+
+594817*
+1à0 à(;
+
+595125*
+1àd à(x
+
+595117*
+1àO à(c
+
+595325*
+1â â(*
+
+595317*
+1â â(
+
+593825*
+1ã ã($
+
+593817*
+1ã ã(
+
+592344*
+1ã' ã(7
+
+59640*
+1ã' ã(7
+
+595535*
+1ã' ã(7
+
+592317*
+1ãE ã(V
+
+592640*
+1ãE ã(V
+
+592317*
+1ãX ã(e
+
+591840*
+1ãX ã(e
+
+595725*
+1å  å(0
+
+595717*
+1å å(
+
+626544*
+1í í(
+
+624850*
+1í= í(H
+
+625350*
+1í\ í(g
+
+626517*
+1í í(
+
+624825*
+1íI í(T
+
+624817*
+1í= í(H
+
+625325*
+1íh í(s
+
+625317*
+1í\ í(g
+
+62640*
+1ì	 ì(
+
+626735*
+1ì	 ì(
+
+62640*
+1î	 î(
+
+626935*
+1î	 î(
+
+621840*
+1ï ï(
+
+622317*
+1ï ï(
+
+621840*
+1ï ï(
+
+674850*
+1ö0 ö(;
+
+674825*
+1ö< ö(G
+
+674817*
+1ö0 ö(;
+
+695350*
+1û0 û(;
+
+695325*
+1û< û(G
+
+695317*
+1û0 û(;
+
+734850*
+1£M £(X
+
+735350*
+1§ §(
+
+737617*
+1£ £($
+
+734825*
+1£Y £(d
+
+734817*
+1£M £(X
+
+735325*
+1§ §(*
+
+735317*
+1§ §(
+
+73640*
+1¶	 ¶(
+
+736735*
+1¶	 ¶(
+
+73640*
+1ß	 ß(
+
+736935*
+1ß	 ß(
+
+733825*
+1® ®($
+
+733817*
+1® ®(
+
+732344*
+1®' ®(7
+
+73640*
+1®' ®(7
+
+735535*
+1®' ®(7
+
+732317*
+1®E ®(V
+
+732640*
+1®E ®(V
+
+732317*
+1®X ®(e
+
+731840*
+1®X ®(e
+
+735725*
+1©  ©(0
+
+735717*
+1© ©(
+
+784850*
+1ÆR Æ(]
+
+785350*
+1Ø Ø(
+
+787617*
+1Æ Æ($
+
+784825*
+1Æ^ Æ(i
+
+784817*
+1ÆR Æ(]
+
+785325*
+1Ø Ø(*
+
+785317*
+1Ø Ø(
+
+78640*
+1∞	 ∞(
+
+786735*
+1∞	 ∞(
+
+78640*
+1±	 ±(
+
+786935*
+1±	 ±(
+
+783825*
+1≥ ≥($
+
+783817*
+1≥ ≥(
+
+782344*
+1≥' ≥(7
+
+78640*
+1≥' ≥(7
+
+785535*
+1≥' ≥(7
+
+782317*
+1≥E ≥(W
+
+782940*
+1≥E ≥(W
+
+782317*
+1≥Y ≥(f
+
+781840*
+1≥Y ≥(f
+
+785725*
+1¥  ¥(0
+
+785717*
+1¥ ¥(
+
+787617*
+1µ µ('
+
+818444*
+1º º(
+
+814850*
+1º+ º(6
+
+815150*
+1æ æ('
+
+815350*
+1ø ø(
+
+818417*
+1º º(
+
+814825*
+1º7 º(B
+
+814817*
+1º+ º(6
+
+818617*
+1Ω Ω(%
+
+815125*
+1æ( æ(<
+
+815117*
+1æ æ('
+
+815325*
+1ø ø(*
+
+815317*
+1ø ø(
+
+81640*
+1¡	 ¡(
+
+816735*
+1¡	 ¡(
+
+81640*
+1√	 √(
+
+816935*
+1√	 √(
+
+818825*
+1≈ ≈(
+
+818817*
+1≈ ≈(
+
+811840*
+1« «(
+
+812317*
+1« «(
+
+811840*
+1« «(
+
+813825*
+1» »(#
+
+813817*
+1» »(
+
+811840*
+1»& »(3
+
+812317*
+1»& »(3
+
+811840*
+1»& »(3
+
+552344*
+1Ÿ Ÿ(
+
+554850*
+1Ÿ6 Ÿ(A
+
+553850*
+1ŸU Ÿ(_
+
+553850*
+1⁄ ⁄(
+
+552317*
+1Ÿ Ÿ(
+
+554825*
+1ŸB Ÿ(M
+
+554817*
+1Ÿ6 Ÿ(A
+
+553825*
+1Ÿ` Ÿ(h
+
+553817*
+1ŸU Ÿ(_
+
+553825*
+1⁄ ⁄(&
+
+553817*
+1⁄ ⁄(

@@ -1,0 +1,886 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508805735*java2.BÂ!
+i
+dthingsearch/model/src/main/java/org/eclipse/ditto/thingsearch/model/ImmutableSearchQueryBuilder.java2
+
+package4
+(
+#org.eclipse.ditto.thingsearch.model5
+D
+?org.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+!
+ImmutableSearchQueryBuilder12
+0
+*Recovered#typeBindingLSearchQueryBuilder;014
+
+unknown15
+
+
+implements16
+
+NotThreadSafe18
+
+annotated by19
++
+%Recovered#typeBindingLNotThreadSafe;021
+
+
+uses22
+R
+Lorg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder.searchFilter24
+
+field25
+
+private26
+
+searchFilter27
+
+SearchFilter29
+
+is type30
+W
+Qorg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder.sortOptionEntries32
+
+sortOptionEntries33
+)
+#Recovered#typeBindingLJsonPointer;035
+-
+'Recovered#typeBindingLSortOptionEntry;037
+Q
+Korg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder.limitOption39
+
+limitOption40
+
+LimitOption42
+]
+Worg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder#<init>(LSearchFilter;)V44
+
+method45
+*
+$Recovered#typeBindingLSearchFilter;047
+
+	has param48
+
+calls49
+
+
+references50
+ö
+ìorg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder#of(LSearchFilter;)Lorg/eclipse/ditto/thingsearch/model/ImmutableSearchQueryBuilder;52
+
+public53
+
+of54
+
+returns55
+{
+uorg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder#sortAsc(Ljava/lang/CharSequence;)LSearchQueryBuilder;57
+
+sortAsc58
+
+SearchQueryBuilder60
+á
+Äorg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder#putEntry(Ljava/lang/CharSequence;Ljava/util/function/Function;)V62
+
+putEntry63
+|
+vorg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder#sortDesc(Ljava/lang/CharSequence;)LSearchQueryBuilder;65
+
+sortDesc66
+à
+Åorg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder#removeSortOptionFor(Ljava/lang/CharSequence;)LSearchQueryBuilder;68
+
+removeSortOptionFor69
+c
+]org.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder#limit(II)LSearchQueryBuilder;71
+
+limit72
+l
+forg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder#removeLimitation()LSearchQueryBuilder;74
+
+removeLimitation75
+Z
+Torg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder#build()LSearchQuery;77
+
+build78
+
+SearchQuery80
+Z
+Torg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder$ImmutableSearchQuery82
+
+ImmutableSearchQuery83
+)
+#Recovered#typeBindingLSearchQuery;085
+
+	Immutable87
+'
+!Recovered#typeBindingLImmutable;089
+a
+[org.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder$ImmutableSearchQuery.filter91
+
+filter92
+e
+_org.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder$ImmutableSearchQuery.sortOption94
+
+
+sortOption95
+
+
+SortOption97
+f
+`org.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder$ImmutableSearchQuery.limitOption99
+ß
+üorg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder$ImmutableSearchQuery#<init>(Lorg/eclipse/ditto/thingsearch/model/ImmutableSearchQueryBuilder;)V101
+u
+norg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder$ImmutableSearchQuery#getFilter()LSearchFilter;103
+
+	getFilter104
+
+xorg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder$ImmutableSearchQuery#getSortOption()Ljava/util/Optional;106
+
+getSortOption107
+)
+"Recovered#typeBindingLSortOption;0109
+Ä
+yorg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder$ImmutableSearchQuery#getLimitOption()Ljava/util/Optional;111
+
+getLimitOption112
+*
+#Recovered#typeBindingLLimitOption;0114
+Å
+zorg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder$ImmutableSearchQuery#getAllOptions()Ljava/util/Collection;116
+
+getAllOptions117
+%
+Recovered#typeBindingLOption;0119
+Å
+zorg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder$ImmutableSearchQuery#getFilterAsString()Ljava/lang/String;121
+
+getFilterAsString122
+Ç
+{org.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder$ImmutableSearchQuery#getOptionsAsString()Ljava/lang/String;124
+
+getOptionsAsString125
+x
+qorg.eclipse.ditto.thingsearch.model.ImmutableSearchQueryBuilder$ImmutableSearchQuery#toString()Ljava/lang/String;127
+
+toString128J
+
+1
+12Z
+
+3	
+354j˝
+
+86
+868715
+G
+120@
+12012145 *
+1í	 í(
+281:3B
+	
+9
+53
+
+11
+122
+E
+102>
+10210345 *
+1{	 {(
+281:3B
+	
+9
+53
+
+11
+104
+@
+38:
+383925 *
+1( ((26:3B
+	
+9
+26
+
+
+11
+40
+@
+61:
+616245 *
+1A A(26:3B
+	
+9
+26
+
+
+11
+63
+
+108
+10810915
+
+17
+171815
+@
+43:
+434445 *
+1* *(26:3B
+	
+9
+26
+
+
+11
+12
+
+28
+282915
+A
+93;
+939425 *
+1q	 q(281:3B
+	
+9
+26
+
+
+11
+95
+A
+90;
+909125 *
+1p	 p(281:3B
+	
+9
+26
+
+
+11
+92
+
+88
+888915
+@
+64:
+646545 *
+1F F(26:3B
+	
+9
+53
+
+
+11
+66
+
+20
+202115
+@
+51:
+515245 *
+17 7(26:3B
+	
+9
+53
+
+
+11
+54
+
+96
+969715
+A
+98;
+989925 *
+1r	 r(281:3B
+	
+9
+26
+
+
+11
+40
+G
+105@
+10510645 *
+1Ä	 Ä(
+281:3B
+	
+9
+53
+
+11
+107
+@
+73:
+737445 *
+1^ ^(26:3B
+	
+9
+53
+
+
+11
+75
+
+13
+131415
+
+79
+798015
+@
+23:
+232425 *
+1& &(26:3B
+	
+9
+26
+
+
+11
+27
+?
+819
+81828 *
+1n  n(426:3B
+	
+9
+26
+
+
+11
+83
+@
+70:
+707145 *
+1S S(26:3B
+	
+9
+53
+
+
+11
+72
+
+113
+11311415
+9
+64
+678 *
+1$ $((:3B
+	
+9
+10
+
+
+11
+12
+
+118
+11811915
+@
+31:
+313225 *
+1' '(26:3B
+	
+9
+26
+
+
+11
+33
+
+84
+848515
+G
+110@
+11011145 *
+1Ö	 Ö(
+281:3B
+	
+9
+53
+
+11
+112
+@
+76:
+767745 *
+1d d(26:3B
+	
+9
+53
+
+
+11
+78
+
+34
+343515
+
+36
+363715
+
+41
+414215
+G
+115@
+11511645 *
+1ä	 ä(
+281:3B
+	
+9
+53
+
+11
+117
+@
+56:
+565745 *
+1; ;(26:3B
+	
+9
+53
+
+
+11
+58
+G
+123@
+12312445 *
+1ó	 ó(
+281:3B
+	
+9
+53
+
+11
+125
+
+59
+596015
+D
+100=
+10010145 *
+1t	 t(281:3B
+	
+9
+26
+
+
+11
+83
+
+46
+464715
+@
+67:
+676845 *
+1L L(26:3B
+	
+9
+53
+
+
+11
+69
+G
+126@
+12612745 *
+1´	 ´(
+281:3B
+	
+9
+53
+
+11
+128ró
+
+61316*
+1$4 $(F
+
+61719*
+1# #(
+
+62022*
+1# #(
+
+61322*
+1$4 $(F
+
+232830*
+1& &(
+
+232822*
+1& &(
+
+232822*
+1&  &(,
+
+313422*
+1' '("
+
+313622*
+1'$ '(3
+
+384130*
+1( ((
+
+384122*
+1( ((
+
+384122*
+1( (($
+
+434648*
+1*/ *(;
+
+43649*
+1* *((
+
+434630*
+1*< *(K
+
+434622*
+1*/ *(;
+
+432822*
+1+	 +(
+
+432350*
+1+	 +(
+
+433150*
+1,	 ,(
+
+434122*
+1-	 -(
+
+433850*
+1-	 -(
+
+51655*
+17 7(.
+
+514648*
+178 7(D
+
+51622*
+17 7(.
+
+514630*
+17E 7(Q
+
+514622*
+178 7(D
+
+51649*
+18 8(/
+
+565955*
+1< <(
+
+565922*
+1< <(
+
+56650*
+1=	 =(
+
+566149*
+1=	 =(
+
+56622*
+1> >(
+
+56650*
+1> >(
+
+613422*
+1AC A(N
+
+613622*
+1AP A(_
+
+613430*
+1B B(&
+
+613422*
+1B B(
+
+613150*
+1C	 C(
+
+613150*
+1C	 C(
+
+645955*
+1G G(
+
+645922*
+1G G(
+
+64650*
+1H	 H(
+
+646149*
+1H	 H(
+
+64622*
+1I I(
+
+64650*
+1I I(
+
+675955*
+1M M(
+
+675922*
+1M M(
+
+673150*
+1O	 O(
+
+673150*
+1O	 O(
+
+67622*
+1P P(
+
+67650*
+1P P(
+
+705955*
+1T T(
+
+705922*
+1T T(
+
+704122*
+1Z	 Z(
+
+703850*
+1Z	 Z(
+
+70622*
+1[ [(
+
+70650*
+1[ [(
+
+735955*
+1_ _(
+
+735922*
+1_ _(
+
+734122*
+1`	 `(
+
+733850*
+1`	 `(
+
+73622*
+1a a(
+
+73650*
+1a a(
+
+767955*
+1e e(
+
+767922*
+1e e(
+
+768149*
+1f f((
+
+76622*
+1f) f(-
+
+76650*
+1f) f(-
+
+818416*
+1n@ n(K
+
+818619*
+1m m(
+
+818822*
+1m m(
+
+818422*
+1n@ n(K
+
+902830*
+1p p(#
+
+902822*
+1p p(#
+
+902822*
+1p$ p(*
+
+939630*
+1q q(!
+
+939622*
+1q q(!
+
+939622*
+1q" q(,
+
+984130*
+1r r("
+
+984122*
+1r r("
+
+984122*
+1r# r(.
+
+100648*
+1t, t(G
+
+1008149*
+1t t(%
+
+100630*
+1tH t(O
+
+100622*
+1t, t(G
+
+1002822*
+1u u(
+
+1009050*
+1u u(
+
+1002822*
+1u u(*
+
+1002350*
+1u u(*
+
+1003622*
+1v v('
+
+1003150*
+1vU v(f
+
+1009622*
+1w w(
+
+1009350*
+1w w(
+
+1004122*
+1x x(
+
+1009850*
+1x x(
+
+1004122*
+1x# x(.
+
+1003850*
+1x# x(.
+
+1022855*
+1| |(
+
+1022822*
+1| |(
+
+1022822*
+1} }(
+
+1029050*
+1} }(
+
+10510822*
+1Å Å(#
+
+1059622*
+1Ç( Ç(2
+
+1059350*
+1Ç( Ç(2
+
+11011322*
+1Ü Ü($
+
+1104122*
+1á( á(3
+
+1109850*
+1á( á(3
+
+11511822*
+1ã ã(!
+
+11511822*
+1å å(
+
+1159622*
+1ç ç("
+
+1159350*
+1ç ç("
+
+1158150*
+1é é(
+
+11511049*
+1é é(
+
+1209050*
+1î î(
+
+1202822*
+1î î(
+
+1209050*
+1î î(
+
+1238150*
+1õ õ(
+
+12311049*
+1õ õ(
+
+1238150*
+1ü ü(
+
+12310549*
+1ü ü(
+
+1262822*
+1≠D ≠(J
+
+1269050*
+1≠D ≠(J
+
+1269622*
+1≠_ ≠(i
+
+1269350*
+1≠_ ≠(i
+
+1264122*
+1Ø Ø("
+
+1269850*
+1Ø Ø("

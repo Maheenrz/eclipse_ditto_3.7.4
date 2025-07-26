@@ -1,0 +1,1066 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508691817*java2.BÙ#
+w
+rconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/mapping/DefaultMessageMapperFactory.java2
+
+package4
+3
+.org.eclipse.ditto.connectivity.service.mapping5
+O
+Jorg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+!
+DefaultMessageMapperFactory12
+2
+,Recovered#typeBindingLMessageMapperFactory;014
+
+unknown15
+
+
+implements16
+
+	Immutable18
+
+annotated by19
+'
+!Recovered#typeBindingLImmutable;021
+
+
+uses22
+W
+Qorg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory.LOGGER24
+
+field25
+
+private26
+
+LOGGER27
+
+DittoLogger29
+
+is type30
+\
+Vorg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory.actorSystem32
+
+actorSystem33
+
+ExtendedActorSystem35
+[
+Uorg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory.connection37
+
+
+connection38
+
+
+Connection40
+c
+]org.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory.connectivityConfig42
+
+connectivityConfig43
+
+ConnectivityConfig45
+g
+aorg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory.messageMapperExtension47
+
+messageMapperExtension48
+
+MessageMapperExtension50
+_
+Yorg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory.messageMappers52
+
+messageMappers53
++
+%Recovered#typeBindingLMessageMapper;055
+T
+Norg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory.log57
+	
+log58
+
+LoggingAdapter60
+†
+ôorg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory#<init>(LConnection;LConnectivityConfig;LExtendedActorSystem;LLoggingAdapter;)V62
+
+method63
+(
+"Recovered#typeBindingLConnection;065
+
+	has param66
+0
+*Recovered#typeBindingLConnectivityConfig;068
+1
++Recovered#typeBindingLExtendedActorSystem;070
+,
+&Recovered#typeBindingLLoggingAdapter;072
+
+calls73
+
+
+references74
+
+returns75
+ì
+åorg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory#loadMessageMapperExtension(LActorSystem;)LMessageMapperExtension;77
+
+MessageMapperProvider79
+ë
+äorg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory#loadPayloadMapperProvider(LActorSystem;)LMessageMapperProvider;81
+ 
+loadMessageMapperExtension82
+)
+#Recovered#typeBindingLActorSystem;084
+
+loadPayloadMapperProvider85
+ﬂ
+ÿorg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory#of(LConnection;LConnectivityConfig;LActorSystem;LLoggingAdapter;)Lorg/eclipse/ditto/connectivity/service/mapping/DefaultMessageMapperFactory;87
+
+of88
+í
+ãorg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory#mapperOf(Ljava/lang/String;LMappingContext;)Ljava/util/Optional;90
+
+mapperOf91
+,
+&Recovered#typeBindingLMappingContext;093
+ï
+éorg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory#createMessageMapperInstance(Ljava/lang/String;)Ljava/util/Optional;95
+(
+"Recovered#typeBindingLJsonObject;097
+1
++Recovered#typeBindingLMergedJsonObjectMap;099
+
+MergedJsonObjectMap101
+ï
+çorg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory#mergeMappingOptions(LJsonObject;LJsonObject;)LMergedJsonObjectMap;103
+9
+2Recovered#typeBindingLMessageMapperConfiguration;0105
+
+mergeMappingOptions106
+†
+òorg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory#registryOf(LMappingContext;LPayloadMappingDefinition;)LMessageMapperRegistry;108
+
+
+registryOf109
+
+MessageMapperRegistry111
+7
+0Recovered#typeBindingLPayloadMappingDefinition;0113
+è
+áorg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory#instantiateMappers(Ljava/util/stream/Stream;)Ljava/util/Map;115
+ö
+íorg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory#getEmptyMappingContextForAlias(Ljava/lang/String;)Ljava/util/Map$Entry;117
+%
+getEmptyMappingContextForAlias118
+
+instantiateMappers119
+
+	protected120
+"
+createMessageMapperInstance121
+•
+ùorg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory#configureInstance(LMessageMapper;LMessageMapperConfiguration;)Ljava/util/Optional;123
+
+configureInstance124
+I
+BRecovered#typeBindingLMessageMapperConfigurationInvalidException;0126
+m
+forg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory#equals(Ljava/lang/Object;)Z128
+
+equals129
+]
+Vorg.eclipse.ditto.connectivity.service.mapping.DefaultMessageMapperFactory#hashCode()I131
+
+hashCode132J
+
+1
+12Z
+
+3	
+354jÄ
+
+17
+171815
+@
+36:
+363725 *
+1@ @(26:3B
+	
+9
+26
+
+
+11
+38
+
+78
+787915
+@
+89:
+899063 *
+1v v(26:3B
+	
+9
+10
+
+
+11
+91
+F
+116?
+11611763 *
+1¢ ¢(26:3B
+	
+9
+26
+
+11
+118
+@
+76:
+767763 *
+1Y Y(26:3B
+	
+9
+26
+
+
+11
+82
+@
+86:
+868763 *
+1m m(26:3B
+	
+9
+10
+
+
+11
+88
+
+100
+10010115
+F
+107?
+10710863 *
+1ç ç(26:3B
+	
+9
+10
+
+11
+109
+@
+80:
+808163 *
+1^ ^(26:3B
+	
+9
+26
+
+
+11
+85
+
+13
+131415
+
+20
+202115
+
+34
+343515
+
+44
+444515
+@
+51:
+515225 *
+1G G(26:3B
+	
+9
+26
+
+
+11
+53
+
+98
+989915
+@
+23:
+232425 *
+1: :(26:3B
+	
+9
+26
+
+
+11
+27
+
+96
+969715
+
+28
+282915
+
+104
+10410515
+
+112
+11211315
+
+39
+394015
+
+64
+646515
+9
+64
+678 *
+18 8(/:3B
+	
+9
+10
+
+
+11
+12
+
+125
+12512615
+@
+56:
+565725 *
+1I I(26:3B
+	
+9
+26
+
+
+11
+58
+
+69
+697015
+F
+130?
+13013163 *
+1◊ ◊(26:3B
+	
+9
+10
+
+11
+132
+D
+94>
+949563 *
+1π π(26:3B
+
+
+9
+120
+
+11
+121
+F
+122?
+12212363 *
+1ø ø(26:3B
+	
+9
+26
+
+11
+124
+@
+31:
+313225 *
+1> >(26:3B
+	
+9
+26
+
+
+11
+33
+@
+41:
+414225 *
+1A A(26:3B
+	
+9
+26
+
+
+11
+43
+
+110
+11011115
+@
+61:
+616263 *
+1K K(26:3B
+	
+9
+26
+
+
+11
+12
+
+92
+929315
+
+67
+676815
+@
+46:
+464725 *
+1F F(26:3B
+	
+9
+26
+
+
+11
+48
+
+59
+596015
+
+49
+495015
+F
+102?
+10210363 *
+1à à(26:3B
+	
+9
+26
+
+11
+106
+
+71
+717215
+
+83
+838415
+F
+127?
+12712863 *
+1À À(26:3B
+	
+9
+10
+
+11
+129
+
+54
+545515
+F
+114?
+11411563 *
+1® ®(26:3B
+	
+9
+26
+
+11
+119rä+
+
+61316*
+18; 8(O
+
+61719*
+17 7(
+
+62022*
+17 7(
+
+61322*
+18; 8(O
+
+232830*
+1: :(%
+
+232822*
+1: :(%
+
+232822*
+1:& :(,
+
+23622*
+1:L :(g
+
+313430*
+1> >(&
+
+313422*
+1> >(&
+
+313422*
+1>' >(2
+
+363930*
+1@ @(
+
+363922*
+1@ @(
+
+363922*
+1@ @((
+
+414430*
+1A A(%
+
+414422*
+1A A(%
+
+414422*
+1A& A(8
+
+464930*
+1F F()
+
+464922*
+1F F()
+
+464922*
+1F* F(@
+
+515422*
+1G G(,
+
+565930*
+1I I(!
+
+565922*
+1I I(!
+
+565922*
+1I" I(%
+
+616466*
+1K/ K(9
+
+616766*
+1L L(%
+
+616966*
+1M M(&
+
+617166*
+1N N(!
+
+61673*
+1K K((
+
+616430*
+1K: K(D
+
+616422*
+1K/ K(9
+
+616730*
+1L& L(8
+
+616722*
+1L L(%
+
+616930*
+1M' M(2
+
+616922*
+1M M(&
+
+617130*
+1N" N(%
+
+617122*
+1N N(!
+
+61622*
+1P	 P(
+
+61674*
+1P	 P(
+
+613922*
+1P P(
+
+613674*
+1P P(
+
+61622*
+1Q	 Q(
+
+61674*
+1Q	 Q(
+
+614422*
+1Q Q( 
+
+614174*
+1Q Q( 
+
+61622*
+1R	 R(
+
+61674*
+1R	 R(
+
+613422*
+1R R(
+
+613174*
+1R R(
+
+61622*
+1S	 S(
+
+61674*
+1S	 S(
+
+615922*
+1S S(
+
+615674*
+1S S(
+
+614922*
+1U	 U(
+
+614674*
+1U	 U(
+
+614975*
+1U" U(<
+
+61674*
+1U" U(<
+
+617673*
+1U" U(<
+
+615174*
+1V	 V(
+
+617875*
+1V V(3
+
+61674*
+1V V(3
+
+618073*
+1V V(3
+
+764975*
+1Y Y(*
+
+768366*
+1YL Y(W
+
+764922*
+1Y Y(*
+
+768330*
+1YX Y(c
+
+768322*
+1YL Y(W
+
+807875*
+1^ ^()
+
+808366*
+1^J ^(U
+
+807822*
+1^ ^()
+
+808330*
+1^V ^(a
+
+808322*
+1^J ^(U
+
+86675*
+1m m(.
+
+866466*
+1m8 m(B
+
+866766*
+1n n(%
+
+868366*
+1o o(
+
+867166*
+1p p(!
+
+86622*
+1m m(.
+
+866430*
+1mC m(M
+
+866422*
+1m8 m(B
+
+866730*
+1n& n(8
+
+866722*
+1n n(%
+
+868330*
+1o o(*
+
+868322*
+1o o(
+
+867130*
+1p" p(%
+
+867122*
+1p p(!
+
+866930*
+1r# r(6
+
+866922*
+1r r("
+
+866922*
+1r: r(M
+
+86673*
+1s s(/
+
+899266*
+1wJ w(X
+
+895422*
+1w w("
+
+899230*
+1wY w(g
+
+899222*
+1wJ w(X
+
+895422*
+1x x(%
+
+89674*
+1x0 x(K
+
+899473*
+1x0 x(K
+
+899630*
+1{ {((
+
+899622*
+1{ {(
+
+899830*
+1}# }(>
+
+899822*
+1} }("
+
+8910075*
+1~ ~($
+
+89674*
+1~ ~($
+
+8910273*
+1~ ~($
+
+8910430*
+1* (1
+
+8910422*
+1 ()
+
+892374*
+1É É(
+
+892822*
+1É É(
+
+892374*
+1É É(
+
+10210075*
+1à à('
+
+1029666*
+1àB à(L
+
+1029666*
+1â â(
+
+10210022*
+1à à('
+
+1029630*
+1àM à([
+
+1029622*
+1àB à(L
+
+1029630*
+1â â(/
+
+1029622*
+1â â(
+
+10711075*
+1é é(!
+
+1079266*
+1é3 é(A
+
+10711266*
+1è è(+
+
+10711022*
+1é é(!
+
+1079230*
+1éB é(P
+
+1079222*
+1é3 é(A
+
+10711230*
+1è, è(D
+
+10711222*
+1è è(+
+
+107674*
+1ë# ë(+
+
+1078973*
+1ë# ë(+
+
+107674*
+1ï ï(#
+
+10711473*
+1ï ï(#
+
+107674*
+1ó% ó(7
+
+10711473*
+1ó% ó(7
+
+1075174*
+1ò% ò(3
+
+1075174*
+1ò% ò(3
+
+107622*
+1ú ú(9
+
+1169222*
+1¢& ¢(4
+
+1169230*
+1£ £(1
+
+1169222*
+1£ £(
+
+1145422*
+1® ®(&
+
+1149222*
+1®Z ®(h
+
+945422*
+1π π(
+
+945174*
+1∫$ ∫(2
+
+945174*
+1∫$ ∫(2
+
+1225466*
+1ø= ø(J
+
+12210466*
+1¿ ¿(-
+
+1225422*
+1ø ø(#
+
+1225430*
+1øK ø(Q
+
+1225422*
+1ø= ø(J
+
+12210430*
+1¿. ¿(5
+
+12210422*
+1¿ ¿(-
+
+1223922*
+1¬ ¬((
+
+1223674*
+1¬ ¬((
+
+1224422*
+1¬* ¬(<
+
+1224174*
+1¬* ¬(<
+
+1223422*
+1¬G ¬(R
+
+1223174*
+1¬G ¬(R
+
+12212530*
+1ƒC ƒ(D
+
+12212522*
+1ƒ ƒ(B
+
+1225674*
+1≈ ≈(
+
+1225922*
+1≈ ≈(
+
+1225674*
+1≈ ≈(
+
+127622*
+1Õ Õ(
+
+127674*
+1Õ Õ(
+
+127630*
+1œ+ œ(/
+
+127622*
+1œ œ(*
+
+127622*
+1œ3 œ(N
+
+1273922*
+1– –()
+
+1273674*
+1– –()
+
+1273922*
+1–0 –(:
+
+1273674*
+1–0 –(:
+
+1274422*
+1—  —(2
+
+1274174*
+1—  —(2
+
+1274422*
+1—9 —(K
+
+1274174*
+1—9 —(K
+
+1273422*
+1“  “(+
+
+1273174*
+1“  “(+
+
+1273422*
+1“2 “(=
+
+1273174*
+1“2 “(=
+
+1274922*
+1”  ”(6
+
+1274674*
+1”  ”(6
+
+1274922*
+1”= ”(S
+
+1274674*
+1”= ”(S
+
+1275922*
+1‘  ‘(#
+
+1275674*
+1‘  ‘(#
+
+1275922*
+1‘* ‘(-
+
+1275674*
+1‘* ‘(-
+
+1303922*
+1Ÿ Ÿ('
+
+1303674*
+1Ÿ Ÿ('
+
+1304422*
+1Ÿ) Ÿ(;
+
+1304174*
+1Ÿ) Ÿ(;
+
+1303422*
+1Ÿ= Ÿ(H
+
+1303174*
+1Ÿ= Ÿ(H
+
+1304922*
+1ŸJ Ÿ(`
+
+1304674*
+1ŸJ Ÿ(`
+
+1305922*
+1Ÿb Ÿ(e
+
+1305674*
+1Ÿb Ÿ(e

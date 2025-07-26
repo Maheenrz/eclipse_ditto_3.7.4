@@ -1,0 +1,914 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508645473*java2.Bò*
+\
+Wrql/query/src/main/java/org/eclipse/ditto/rql/query/expression/FieldExpressionUtil.java2
+
+package4
++
+&org.eclipse.ditto.rql.query.expression5
+?
+:org.eclipse.ditto.rql.query.expression.FieldExpressionUtil7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+FieldExpressionUtil12
+I
+Corg.eclipse.ditto.rql.query.expression.FieldExpressionUtil.FIELD_ID14
+
+field15
+
+FIELD_ID16
+T
+Norg.eclipse.ditto.rql.query.expression.FieldExpressionUtil.FIELD_NAME_THING_ID18
+
+FIELD_NAME_THING_ID19
+P
+Jorg.eclipse.ditto.rql.query.expression.FieldExpressionUtil.FIELD_NAMESPACE21
+
+FIELD_NAMESPACE22
+U
+Oorg.eclipse.ditto.rql.query.expression.FieldExpressionUtil.FIELD_NAME_NAMESPACE24
+
+FIELD_NAME_NAMESPACE25
+V
+Porg.eclipse.ditto.rql.query.expression.FieldExpressionUtil.FIELD_NAME_DEFINITION27
+
+FIELD_NAME_DEFINITION28
+R
+Lorg.eclipse.ditto.rql.query.expression.FieldExpressionUtil.REGEX_FIELD_START30
+
+private31
+
+REGEX_FIELD_START32
+P
+Jorg.eclipse.ditto.rql.query.expression.FieldExpressionUtil.REGEX_FIELD_END34
+
+REGEX_FIELD_END35
+]
+Worg.eclipse.ditto.rql.query.expression.FieldExpressionUtil.FIELD_NAME_ATTRIBUTES_PREFIX37
+"
+FIELD_NAME_ATTRIBUTES_PREFIX38
+[
+Uorg.eclipse.ditto.rql.query.expression.FieldExpressionUtil.FIELD_NAME_METADATA_PREFIX40
+ 
+FIELD_NAME_METADATA_PREFIX41
+J
+Dorg.eclipse.ditto.rql.query.expression.FieldExpressionUtil#<init>()V43
+
+method44
+
+calls45
+v
+porg.eclipse.ditto.rql.query.expression.FieldExpressionUtil#wrapExistsRegex(Ljava/lang/String;)Ljava/lang/String;47
+
+wrapExistsRegex48
+
+
+references49
+z
+torg.eclipse.ditto.rql.query.expression.FieldExpressionUtil#parseFeatureField(Ljava/lang/String;)Ljava/util/Optional;51
+
+	protected52
+
+parseFeatureField53
+M
+Gorg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField55
+
+unknown56
+
+
+uses57
+
+is type58
+_
+Yorg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField#isFeatureField()Z60
+j
+dorg.eclipse.ditto.rql.query.expression.FieldExpressionUtil#isAttributeFieldName(Ljava/lang/String;)Z62
+
+isAttributeFieldName63
+|
+vorg.eclipse.ditto.rql.query.expression.FieldExpressionUtil#stripAttributesPrefix(Ljava/lang/String;)Ljava/lang/String;65
+
+stripAttributesPrefix66
+z
+torg.eclipse.ditto.rql.query.expression.FieldExpressionUtil#addAttributesPrefix(Ljava/lang/String;)Ljava/lang/String;68
+
+addAttributesPrefix69
+i
+corg.eclipse.ditto.rql.query.expression.FieldExpressionUtil#isMetadataFieldName(Ljava/lang/String;)Z71
+
+isMetadataFieldName72
+z
+torg.eclipse.ditto.rql.query.expression.FieldExpressionUtil#stripMetadataPrefix(Ljava/lang/String;)Ljava/lang/String;74
+
+stripMetadataPrefix75
+
+FeatureField76
+k
+eorg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField.FIELD_NAME_PROPERTIES_PATTERN78
+#
+FIELD_NAME_PROPERTIES_PATTERN79
+s
+morg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField.FIELD_NAME_DESIRED_PROPERTIES_PATTERN81
++
+%FIELD_NAME_DESIRED_PROPERTIES_PATTERN82
+i
+corg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField.FIELD_NAME_FEATURE_PATTERN184
+!
+FIELD_NAME_FEATURE_PATTERN185
+p
+jorg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField.FIELD_NAME_DESIRED_FEATURE_PATTERN87
+(
+"FIELD_NAME_DESIRED_FEATURE_PATTERN88
+i
+corg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField.FIELD_NAME_FEATURE_PATTERN290
+!
+FIELD_NAME_FEATURE_PATTERN291
+s
+morg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField.FIELD_NAME_FEATURE_DEFINITION_PATTERN93
++
+%FIELD_NAME_FEATURE_DEFINITION_PATTERN94
+X
+Rorg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField.FEATURE_ID96
+
+
+FEATURE_ID97
+U
+Oorg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField.matches99
+
+matches100
+X
+Qorg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField.featureId102
+
+	featureId103
+W
+Porg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField.property105
+
+property106
+[
+Torg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField.isProperties108
+
+isProperties109
+^
+Worg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField.desiredProperty111
+
+desiredProperty112
+b
+[org.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField.isDesiredProperties114
+
+isDesiredProperties115
+[
+Torg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField.isDefinition117
+
+isDefinition118
+p
+iorg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField#<init>(Ljava/lang/CharSequence;)V120
+
+isFeatureField121
+q
+jorg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField#getFeatureId()Ljava/util/Optional;123
+
+getFeatureId124
+p
+iorg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField#getProperty()Ljava/util/Optional;126
+
+getProperty127
+w
+porg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField#getDesiredProperty()Ljava/util/Optional;129
+
+getDesiredProperty130
+^
+Worg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField#isProperties()Z132
+e
+^org.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField#isDesiredProperties()Z134
+^
+Worg.eclipse.ditto.rql.query.expression.FieldExpressionUtil$FeatureField#isDefinition()Z136J
+
+1
+12Z
+
+3	
+354jÖ
+D
+59>
+596044 *
+1˜	 ˜(254:3B
+	
+9
+31
+
+11
+121
+C
+95=
+959615 *
+1õ	 õ(254:3B
+	
+9
+31
+
+
+11
+97
+G
+135@
+13513644 *
+1û	 û(254:3B
+	
+9
+10
+
+11
+118
+@
+70:
+707144 *
+1v v(26:3B
+	
+9
+52
+
+
+11
+72
+G
+107@
+10710815 *
+1†	 †(254:3B
+	
+9
+31
+
+11
+109
+G
+125@
+12512644 *
+1Ö	 Ö(254:3B
+	
+9
+10
+
+11
+127
+@
+46:
+464744 *
+1C C(26:3B
+	
+9
+10
+
+
+11
+48
+C
+86=
+868715 *
+1í	 í(254:3B
+	
+9
+31
+
+
+11
+88
+@
+50:
+505144 *
+1M M(26:3B
+	
+9
+52
+
+
+11
+53
+@
+20:
+202115 *
+1' '(26:3B
+	
+9
+10
+
+
+11
+22
+@
+26:
+262715 *
+12 2(26:3B
+	
+9
+10
+
+
+11
+28
+D
+98>
+989915 *
+1ù	 ù(254:3B
+	
+9
+31
+
+11
+100
+@
+23:
+232415 *
+1, ,(26:3B
+	
+9
+10
+
+
+11
+25
+9
+64
+678 *
+1 (':3B
+	
+9
+10
+
+
+11
+12
+G
+131@
+13113244 *
+1ì	 ì(254:3B
+	
+9
+10
+
+11
+109
+@
+33:
+333415 *
+15 5(26:3B
+	
+9
+31
+
+
+11
+35
+C
+89=
+899015 *
+1ï	 ï(254:3B
+	
+9
+31
+
+
+11
+91
+C
+83=
+838415 *
+1è	 è(254:3B
+	
+9
+31
+
+
+11
+85
+@
+64:
+646544 *
+1b b(26:3B
+	
+9
+52
+
+
+11
+66
+B
+73<
+737444 *
+1Ä Ä(26:3B
+	
+9
+10
+
+
+11
+75
+G
+128@
+12812944 *
+1å	 å(254:3B
+	
+9
+10
+
+11
+130
+@
+39:
+394015 *
+17 7(26:3B
+	
+9
+31
+
+
+11
+41
+@
+67:
+676844 *
+1l l(26:3B
+	
+9
+52
+
+
+11
+69
+@
+29:
+293015 *
+14 4(26:3B
+	
+9
+31
+
+
+11
+32
+G
+122@
+12212344 *
+1˛	 ˛(254:3B
+	
+9
+10
+
+11
+124
+G
+101@
+10110215 *
+1û	 û(254:3B
+	
+9
+31
+
+11
+103
+C
+92=
+929315 *
+1ò	 ò(254:3B
+	
+9
+31
+
+
+11
+94
+@
+36:
+363715 *
+16 6(26:3B
+	
+9
+31
+
+
+11
+38
+G
+116@
+11611715 *
+1£	 £(254:3B
+	
+9
+31
+
+11
+118
+@
+42:
+424344 *
+19 9(26:3B
+	
+9
+31
+
+
+11
+12
+G
+133@
+13313444 *
+1ö	 ö(254:3B
+	
+9
+10
+
+11
+115
+@
+61:
+616244 *
+1X X(26:3B
+	
+9
+52
+
+
+11
+63
+C
+80=
+808115 *
+1å	 å(254:3B
+	
+9
+31
+
+
+11
+82
+@
+17:
+171815 *
+1" "(26:3B
+	
+9
+10
+
+
+11
+19
+G
+113@
+11311415 *
+1¢	 ¢(254:3B
+	
+9
+31
+
+11
+115
+G
+110@
+11011115 *
+1°	 °(254:3B
+	
+9
+31
+
+11
+112
+C
+77=
+777815 *
+1â	 â(254:3B
+	
+9
+31
+
+
+11
+79
+A
+54;
+54558 *
+1á á(+26:3B
+	
+9
+10
+
+
+11
+76
+F
+119?
+11912044 *
+1•	 •(254:3B
+	
+9
+31
+
+
+11
+76
+G
+104@
+10410515 *
+1ü	 ü(254:3B
+	
+9
+31
+
+11
+106
+@
+13:
+131415 *
+1 (26:3B
+	
+9
+10
+
+
+11
+16r‚
+
+42645*
+19 9( 
+
+462949*
+1D D(!
+
+463349*
+1D, D(;
+
+505457*
+1M M(!
+
+505449*
+1M M(!
+
+505458*
+1N N(!
+
+505457*
+1N N(
+
+505449*
+1N N(
+
+505445*
+1N( N(4
+
+505449*
+1O O(
+
+505945*
+1O O($
+
+613649*
+1Y5 Y(Q
+
+643649*
+1c> c(Z
+
+643649*
+1c> c(Z
+
+673649*
+1m m(,
+
+703949*
+1w5 w(O
+
+733949*
+1Å< Å(V
+
+733949*
+1Å< Å(V
+
+1195445*
+1• •(
+
+1198349*
+1¶ ¶(:
+
+1198349*
+1¶ ¶(:
+
+1199849*
+1® ®(
+
+11910149*
+1© ©(
+
+1199549*
+1©+ ©(5
+
+11910749*
+1™ ™(
+
+11910449*
+1´ ´(
+
+11911349*
+1¨ ¨($
+
+11911649*
+1≠ ≠(
+
+11911049*
+1Æ Æ( 
+
+1198649*
+1± ±(=
+
+1198649*
+1± ±(=
+
+1199849*
+1≥ ≥(
+
+11910149*
+1¥ ¥(
+
+1199549*
+1¥/ ¥(9
+
+11910749*
+1µ µ(!
+
+11910449*
+1∂ ∂(
+
+11911349*
+1∑ ∑((
+
+11911649*
+1∏ ∏(!
+
+11911049*
+1π π($
+
+1197749*
+1º º(<
+
+1197749*
+1º º(<
+
+1199849*
+1æ æ( 
+
+11910149*
+1ø ø("
+
+1199549*
+1ø3 ø(=
+
+11910749*
+1¿ ¿(%
+
+11910449*
+1¡ ¡(!
+
+11911349*
+1¬ ¬(,
+
+11911649*
+1√ √(%
+
+11911049*
+1ƒ ƒ((
+
+1198049*
+1«# «(H
+
+1198049*
+1«# «(H
+
+1199849*
+1… …($
+
+11910149*
+1   (&
+
+1199549*
+1 7  (A
+
+11910749*
+1À À()
+
+11910449*
+1Ã Ã(%
+
+11911349*
+1Õ Õ(0
+
+11911649*
+1Œ Œ()
+
+11911049*
+1œ œ(,
+
+1199249*
+1“' “(L
+
+1199249*
+1“' “(L
+
+1199849*
+1‘! ‘((
+
+11910149*
+1’! ’(*
+
+1199549*
+1’; ’(E
+
+11910749*
+1÷! ÷(-
+
+11910449*
+1◊! ◊()
+
+11911349*
+1ÿ! ÿ(4
+
+11911649*
+1Ÿ! Ÿ(-
+
+11911049*
+1⁄! ⁄(0
+
+1198949*
+1›+ ›(F
+
+1198949*
+1›+ ›(F
+
+1199849*
+1ﬂ% ﬂ(,
+
+11910149*
+1‡% ‡(.
+
+1199549*
+1‡? ‡(I
+
+11910749*
+1·% ·(1
+
+11910449*
+1‚% ‚(-
+
+11911349*
+1„% „(8
+
+11911649*
+1‰% ‰(1
+
+11911049*
+1Â% Â(4
+
+1199849*
+1Ë% Ë(,
+
+11910149*
+1È% È(.
+
+11910749*
+1Í% Í(1
+
+11910449*
+1Î% Î(-
+
+11911349*
+1Ï% Ï(8
+
+11911649*
+1Ì% Ì(1
+
+11911049*
+1Ó% Ó(4
+
+599849*
+1¯ ¯(
+
+12210149*
+1ˇ( ˇ(1
+
+12510449*
+1Ü( Ü(0
+
+12811049*
+1ç( ç(7
+
+13110749*
+1î î( 
+
+13311349*
+1õ õ('
+
+13511649*
+1ü ü( 

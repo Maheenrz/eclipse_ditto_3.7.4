@@ -1,0 +1,889 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508540573*java2.Bú*
+
+zpolicies/model/src/main/java/org/eclipse/ditto/policies/model/signals/commands/exceptions/PolicyActionFailedException.java2
+
+package4
+A
+<org.eclipse.ditto.policies.model.signals.commands.exceptions5
+]
+Xorg.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+!
+PolicyActionFailedException12
+3
+-Recovered#typeBindingLDittoRuntimeException;014
+
+unknown15
+
+extends16
+-
+'Recovered#typeBindingLPolicyException;018
+
+
+implements19
+
+	Immutable21
+
+annotated by22
+'
+!Recovered#typeBindingLImmutable;024
+
+
+uses25
+
+JsonParsableException27
+3
+-Recovered#typeBindingLJsonParsableException;029
+i
+corg.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException.ERROR_CODE31
+
+
+references32
+
+field33
+
+
+ERROR_CODE34
+m
+gorg.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException.DEFAULT_STATUS36
+
+private37
+
+DEFAULT_STATUS38
+
+
+HttpStatus40
+
+is type41
+n
+horg.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException.DEFAULT_MESSAGE43
+
+DEFAULT_MESSAGE44
+o
+iorg.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException.MESSAGE_TEMPLATE46
+
+MESSAGE_TEMPLATE47
+r
+lorg.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException.DEFAULT_DESCRIPTION49
+
+DEFAULT_DESCRIPTION50
+o
+iorg.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException.serialVersionUID52
+
+serialVersionUID53
+ 
+√org.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException#<init>(LDittoHeaders;LHttpStatus;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Ljava/net/URI;)V55
+
+method56
+*
+$Recovered#typeBindingLDittoHeaders;058
+
+	has param59
+(
+"Recovered#typeBindingLHttpStatus;061
+
+calls62
+
+Nullable64
+&
+ Recovered#typeBindingLNullable;066
+Œ
+«org.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException#newBuilder()Lorg/eclipse/ditto/policies/model/signals/commands/exceptions/PolicyActionFailedException$Builder;68
+
+
+newBuilder69
+f
+`org.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException$Builder71
+
+returns72
+È
+‚org.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException#newBuilderForActivateTokenIntegration()Lorg/eclipse/ditto/policies/model/signals/commands/exceptions/PolicyActionFailedException$Builder;74
++
+%newBuilderForActivateTokenIntegration75
+‰
+›org.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException$Builder#action(Ljava/lang/String;)Lorg/eclipse/ditto/policies/model/signals/commands/exceptions/PolicyActionFailedException$Builder;77
+Î
+‰org.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException#newBuilderForDeactivateTokenIntegration()Lorg/eclipse/ditto/policies/model/signals/commands/exceptions/PolicyActionFailedException$Builder;79
+-
+'newBuilderForDeactivateTokenIntegration80
+¿
+πorg.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException#newBuilderForInappropriateAuthenticationMethod(Ljava/lang/String;)LDittoRuntimeExceptionBuilder;82
+4
+.newBuilderForInappropriateAuthenticationMethod83
+"
+DittoRuntimeExceptionBuilder85
+ﬁ
+◊org.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException$Builder#status(LHttpStatus;)Lorg/eclipse/ditto/policies/model/signals/commands/exceptions/PolicyActionFailedException$Builder;87
+≠
+¶org.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException#newBuilderForTopLevelAction(Ljava/lang/String;)LDittoRuntimeExceptionBuilder;89
+!
+newBuilderForTopLevelAction90
+ﬁ
+◊org.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException#fromJson(LJsonObject;LDittoHeaders;)Lorg/eclipse/ditto/policies/model/signals/commands/exceptions/PolicyActionFailedException;92
+
+fromJson93
+(
+"Recovered#typeBindingLJsonObject;095
+?
+9Recovered#typeBindingLHttpStatusCodeOutOfRangeException;097
+ê
+âorg.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException#getSupportedSchemaVersions()[LJsonSchemaVersion;99
+!
+getSupportedSchemaVersions100
+
+JsonSchemaVersion102
+0
+)Recovered#typeBindingLJsonSchemaVersion;0104
+ó
+èorg.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException#setDittoHeaders(LDittoHeaders;)LDittoRuntimeException;106
+
+setDittoHeaders107
+
+DittoRuntimeException109
+
+Builder110
+;
+4Recovered#typeBindingLDittoRuntimeExceptionBuilder;0112
+
+NotThreadSafe114
+,
+%Recovered#typeBindingLNotThreadSafe;0116
+n
+gorg.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException$Builder.status118
+
+status119
+q
+jorg.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException$Builder#<init>()V121
+
+action122
+°
+ôorg.eclipse.ditto.policies.model.signals.commands.exceptions.PolicyActionFailedException$Builder#doBuild(LDittoHeaders;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Ljava/net/URI;)Lorg/eclipse/ditto/policies/model/signals/commands/exceptions/PolicyActionFailedException;124
+
+	protected125
+
+doBuild126J
+
+1
+12Z
+
+3	
+354jÚ
+
+20
+202115
+
+57
+575815
+@
+51:
+515233 *
+17 7(26:3B
+	
+9
+37
+
+
+11
+53
+
+60
+606115
+
+113
+11311415
+@
+54:
+545556 *
+19 9(26:3B
+	
+9
+37
+
+
+11
+12
+
+101
+10110215
+
+111
+11111215
+H
+123A
+12312456 *
+1¬	 ¬(
+270:3B
+
+
+9
+125
+
+11
+126
+
+23
+232415
+D
+86>
+868756 *
+1Ω	 Ω(270:3B
+	
+9
+10
+
+11
+119
+@
+73:
+737456 *
+1P P(26:3B
+	
+9
+10
+
+
+11
+75
+9
+64
+678 *
+1( ((/:3B
+	
+9
+10
+
+
+11
+12
+
+115
+11511615
+
+65
+656615
+@
+78:
+787956 *
+1Y Y(26:3B
+	
+9
+10
+
+
+11
+80
+G
+120@
+12012156 *
+1ß	 ß(270:3B
+	
+9
+37
+
+11
+110
+
+103
+10310415
+
+13
+131415
+
+94
+949515
+@
+42:
+424333 *
+11 1(26:3B
+	
+9
+37
+
+
+11
+44
+D
+76>
+767756 *
+1≤	 ≤(270:3B
+	
+9
+10
+
+11
+122
+
+84
+848515
+@
+81:
+818256 *
+1c c(26:3B
+	
+9
+10
+
+
+11
+83
+@
+35:
+353633 *
+1/ /(26:3B
+	
+9
+37
+
+
+11
+38
+@
+45:
+454633 *
+13 3(26:3B
+	
+9
+37
+
+
+11
+47
+@
+88:
+888956 *
+1p p(26:3B
+	
+9
+10
+
+
+11
+90
+B
+91<
+919256 *
+1Ç Ç(26:3B
+	
+9
+10
+
+
+11
+93
+C
+98=
+989956 *
+1è è(26:3B
+	
+9
+10
+
+11
+100
+@
+30:
+303133 *
+1- -(26:3B
+	
+9
+10
+
+
+11
+34
+
+39
+394015
+@
+48:
+484933 *
+15 5(26:3B
+	
+9
+37
+
+
+11
+50
+
+96
+969715
+B
+70<
+70718 *
+1£ £(&26:3B
+	
+9
+10
+
+11
+110
+
+26
+262715
+@
+67:
+676856 *
+1G G(26:3B
+	
+9
+10
+
+
+11
+69
+
+28
+282915
+G
+117@
+11711833 *
+1•	 •(270:3B
+	
+9
+37
+
+11
+119
+F
+105?
+10510656 *
+1î î(26:3B
+	
+9
+10
+
+11
+107
+
+108
+10810915
+
+17
+171815
+
+63
+636415rµ
+
+61316*
+1(8 ((M
+
+61719*
+1(Y ((h
+
+62022*
+1& &(
+
+62325*
+1& &(
+
+62622*
+1' '(
+
+62825*
+1' '(
+
+63032*
+1'@ '(J
+
+61325*
+1(8 ((M
+
+61725*
+1(Y ((h
+
+353941*
+1/ /($
+
+353925*
+1/ /($
+
+353925*
+1/% /(3
+
+545759*
+19/ 9(;
+
+546059*
+1: :(
+
+54662*
+19 9((
+
+545741*
+19< 9(H
+
+545725*
+19/ 9(;
+
+546041*
+1: :($
+
+546025*
+1: :(
+
+546322*
+1; ;(
+
+546525*
+1; ;(
+
+546322*
+1< <(
+
+546525*
+1< <(
+
+546322*
+1= =(
+
+546525*
+1= =(
+
+546322*
+1> >(
+
+546525*
+1> >(
+
+543032*
+1? ?(
+
+677072*
+1G G(
+
+677025*
+1G G(
+
+677032*
+1G G(
+
+677062*
+1H H(
+
+737072*
+1P P(
+
+737025*
+1P P(
+
+737032*
+1P P(
+
+737072*
+1Q Q(
+
+737032*
+1Q Q(
+
+737662*
+1Q Q($
+
+737062*
+1Q Q(
+
+787072*
+1Y Y(
+
+787025*
+1Y Y(
+
+787032*
+1Y Y(
+
+787072*
+1Z Z(
+
+787032*
+1Z Z(
+
+787662*
+1Z Z($
+
+787062*
+1Z Z(
+
+818472*
+1c c(/
+
+818425*
+1c c(/
+
+81625*
+1c0 c(K
+
+817072*
+1e e(
+
+817032*
+1e e(
+
+818662*
+1f f(
+
+817072*
+1e e(
+
+817032*
+1e e(
+
+817662*
+1e e($
+
+817062*
+1e e(
+
+888472*
+1p p(/
+
+888425*
+1p p(/
+
+88625*
+1p0 p(K
+
+887072*
+1r r(
+
+887032*
+1r r(
+
+888662*
+1s s(
+
+887072*
+1r r(
+
+887032*
+1r r(
+
+887662*
+1r r($
+
+887062*
+1r r(
+
+91672*
+1Ç Ç(.
+
+919459*
+1Ç> Ç(H
+
+915759*
+1Ç[ Ç(g
+
+91625*
+1Ç Ç(.
+
+919441*
+1ÇI Ç(S
+
+919425*
+1Ç> Ç(H
+
+915741*
+1Çh Ç(t
+
+915725*
+1Ç[ Ç(g
+
+916041*
+1É É( 
+
+916025*
+1É É(
+
+919641*
+1Ü: Ü(;
+
+919625*
+1Ü Ü(9
+
+917072*
+1åI å(L
+
+917032*
+1åI å(L
+
+918662*
+1åW å(]
+
+917062*
+1åM å(T
+
+9810172*
+1ê ê(
+
+9810125*
+1ê ê(
+
+9810325*
+1ë ë(%
+
+10510872*
+1ï ï(!
+
+1055759*
+1ï8 ï(D
+
+10510825*
+1ï ï(!
+
+1055741*
+1ïE ï(Q
+
+1055725*
+1ï8 ï(D
+
+1057062*
+1ñ ñ(
+
+7011116*
+1£/ £(K
+
+7011322*
+1¢ ¢(
+
+7011525*
+1¢ ¢(
+
+7011125*
+1£/ £(K
+
+70625*
+1£L £(g
+
+1173941*
+1• •(
+
+1173925*
+1• •(
+
+1173925*
+1• •("
+
+1173925*
+1•% •(3
+
+1173532*
+1•% •(3
+
+1207062*
+1ß ß(
+
+1204232*
+1® ®($
+
+1204832*
+1© ©(,
+
+767072*
+1≤ ≤(
+
+767025*
+1≤ ≤(
+
+767032*
+1≤ ≤(
+
+764532*
+1≥* ≥(:
+
+767025*
+1¥ ¥(
+
+767032*
+1¥ ¥(
+
+867072*
+1Ω Ω(
+
+866059*
+1Ω% Ω(/
+
+867025*
+1Ω Ω(
+
+867032*
+1Ω Ω(
+
+866041*
+1Ω0 Ω(6
+
+866025*
+1Ω% Ω(/
+
+867025*
+1æ æ(
+
+867032*
+1æ æ(
+
+863925*
+1æ æ(
+
+8611732*
+1æ æ(
+
+867025*
+1ø ø(
+
+867032*
+1ø ø(
+
+123672*
+1√ √(.
+
+1235759*
+1√= √(I
+
+123625*
+1√ √(.
+
+1235741*
+1√J √(V
+
+1235725*
+1√= √(I
+
+1236322*
+1ƒ ƒ(
+
+1236525*
+1ƒ ƒ(
+
+1236322*
+1≈ ≈(
+
+1236525*
+1≈ ≈(
+
+1236322*
+1∆ ∆(
+
+1236525*
+1∆ ∆(
+
+1236322*
+1« «(
+
+1236525*
+1« «(
+
+123662*
+1» »(3
+
+1233925*
+1»B »(H
+
+12311732*
+1»B »(H

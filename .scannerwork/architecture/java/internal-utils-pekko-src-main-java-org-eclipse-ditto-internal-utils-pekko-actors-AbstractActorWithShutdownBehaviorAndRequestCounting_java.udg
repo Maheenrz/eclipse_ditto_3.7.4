@@ -1,0 +1,559 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508774226*java2.B–
+è
+âinternal/utils/pekko/src/main/java/org/eclipse/ditto/internal/utils/pekko/actors/AbstractActorWithShutdownBehaviorAndRequestCounting.java2
+
+package4
+2
+-org.eclipse.ditto.internal.utils.pekko.actors5
+f
+aorg.eclipse.ditto.internal.utils.pekko.actors.AbstractActorWithShutdownBehaviorAndRequestCounting7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+9
+3AbstractActorWithShutdownBehaviorAndRequestCounting12
+?
+9Recovered#typeBindingLAbstractActorWithShutdownBehavior;014
+
+unknown15
+
+extends16
+
+
+uses17
+k
+eorg.eclipse.ditto.internal.utils.pekko.actors.AbstractActorWithShutdownBehaviorAndRequestCounting.log19
+
+field20
+
+private21
+	
+log22
+
+DiagnosticLoggingAdapter24
+
+is type25
+
+
+references26
+w
+qorg.eclipse.ditto.internal.utils.pekko.actors.AbstractActorWithShutdownBehaviorAndRequestCounting.ongoingRequests28
+
+ongoingRequests29
+x
+rorg.eclipse.ditto.internal.utils.pekko.actors.AbstractActorWithShutdownBehaviorAndRequestCounting.shutdownReceiver31
+
+shutdownReceiver32
+
+ActorRef34
+
+Nullable36
+
+annotated by37
+&
+ Recovered#typeBindingLNullable;039
+Ä
+zorg.eclipse.ditto.internal.utils.pekko.actors.AbstractActorWithShutdownBehaviorAndRequestCounting#createReceive()LReceive;41
+
+method42
+
+createReceive43
+
+Receive45
+
+returns46
+î
+çorg.eclipse.ditto.internal.utils.pekko.actors.AbstractActorWithShutdownBehaviorAndRequestCounting#requestCountingBehavior(LReceive;)LReceive;48
+
+calls49
+à
+Åorg.eclipse.ditto.internal.utils.pekko.actors.AbstractActorWithShutdownBehaviorAndRequestCounting#serviceRequestsDone(LControl;)V51
+
+serviceRequestsDone52
+%
+Recovered#typeBindingLControl;054
+
+	has param55
+z
+torg.eclipse.ditto.internal.utils.pekko.actors.AbstractActorWithShutdownBehaviorAndRequestCounting#become(LReceive;)V57
+
+	protected58
+
+become59
+%
+Recovered#typeBindingLReceive;061
+
+requestCountingBehavior62
+q
+korg.eclipse.ditto.internal.utils.pekko.actors.AbstractActorWithShutdownBehaviorAndRequestCounting$ControlOp64
+}
+worg.eclipse.ditto.internal.utils.pekko.actors.AbstractActorWithShutdownBehaviorAndRequestCounting$ControlOp.OP_COMPLETE66
+•
+ûorg.eclipse.ditto.internal.utils.pekko.actors.AbstractActorWithShutdownBehaviorAndRequestCounting#withRequestCounting(Ljava/util/concurrent/CompletionStage;)V68
+
+withRequestCounting69
+¢
+õorg.eclipse.ditto.internal.utils.pekko.actors.AbstractActorWithShutdownBehaviorAndRequestCounting#requestComplete(Ljava/lang/Object;Ljava/lang/Throwable;)V71
+
+requestComplete72
+
+Èorg.eclipse.ditto.internal.utils.pekko.actors.AbstractActorWithShutdownBehaviorAndRequestCounting#decrementRequestCounter(Lorg/eclipse/ditto/internal/utils/pekko/actors/AbstractActorWithShutdownBehaviorAndRequestCounting$ControlOp;)V74
+
+decrementRequestCounter75
+
+
+enum76
+
+	ControlOp77
+È
+‚org.eclipse.ditto.internal.utils.pekko.actors.AbstractActorWithShutdownBehaviorAndRequestCounting$ControlOp#values()[Lorg/eclipse/ditto/internal/utils/pekko/actors/AbstractActorWithShutdownBehaviorAndRequestCounting$ControlOp;79
+
+values80
+˚
+Ùorg.eclipse.ditto.internal.utils.pekko.actors.AbstractActorWithShutdownBehaviorAndRequestCounting$ControlOp#valueOf(Ljava/lang/String;)Lorg/eclipse/ditto/internal/utils/pekko/actors/AbstractActorWithShutdownBehaviorAndRequestCounting$ControlOp;82
+
+valueOf83
+
+OP_COMPLETE84J
+
+1
+12Z
+
+3	
+354jŸ
+@
+73:
+737442 *
+1Z Z(26:3B
+	
+9
+21
+
+
+11
+75
+@
+47:
+474842 *
+1A A(26:3B
+	
+9
+21
+
+
+11
+62
+
+53
+535415
+
+60
+606115
+
+33
+333415
+@
+18:
+181920 *
+1" "(26:3B
+	
+9
+21
+
+
+11
+22
+@
+30:
+303120 *
+1% %(26:3B
+	
+9
+21
+
+
+11
+32
+
+23
+232415
+@
+27:
+272820 *
+1$ $(26:3B
+	
+9
+21
+
+
+11
+29
+@
+56:
+565742 *
+1< <(26:3B
+	
+9
+58
+
+
+11
+59
+
+13
+131415
+9
+64
+678 *
+1   (J:3B
+	
+9
+10
+
+
+11
+12
+
+38
+383915
+@
+50:
+505142 *
+1, ,(26:3B
+	
+9
+10
+
+
+11
+52
+6
+780
+787942 *
+1d d(263:3B
+
+
+11
+80
+
+44
+444515
+6
+650
+656620 *
+1e	 e(263:3B
+
+
+11
+84
+6
+810
+818242 *
+1d d(263:3B
+
+
+11
+83
+@
+70:
+707142 *
+1U U(26:3B
+	
+9
+21
+
+
+11
+72
+@
+63:
+636476 *
+1d d(26:3B
+	
+9
+10
+
+
+11
+77
+@
+40:
+404142 *
+1' '(26:3B
+	
+9
+10
+
+
+11
+43
+
+35
+353615
+@
+67:
+676842 *
+1P P(26:3B
+	
+9
+10
+
+
+11
+69r∑
+
+61316*
+1 S  (t
+
+61317*
+1 S  (t
+
+182325*
+1" "(+
+
+182317*
+1" "(+
+
+182317*
+1", "(/
+
+18617*
+1"a "(e
+
+18626*
+1"a "(e
+
+303325*
+1% %(
+
+303537*
+1% %(
+
+303817*
+1% %(
+
+303317*
+1% %(
+
+303317*
+1%  %(0
+
+404446*
+1( ((
+
+404417*
+1( ((
+
+404446*
+1)! )(8
+
+40626*
+1)! )(8
+
+404749*
+1)! )(8
+
+505355*
+1-+ -(2
+
+505325*
+1-3 -(F
+
+505317*
+1-+ -(2
+
+502726*
+1. .(
+
+501826*
+1/ /(
+
+502317*
+1/ /(
+
+501826*
+1/ /(
+
+501826*
+12 2(
+
+502317*
+12 2(
+
+501826*
+12 2(
+
+502726*
+12R 2(a
+
+503317*
+13 3(
+
+503026*
+13 3(
+
+566055*
+1=! =((
+
+566025*
+1=) =(0
+
+566017*
+1=! =((
+
+564446*
+1>. >(E
+
+56626*
+1>. >(E
+
+564749*
+1>. >(E
+
+474446*
+1A A(
+
+476055*
+1A3 A(:
+
+474417*
+1A A(
+
+476025*
+1A; A(B
+
+476017*
+1A3 A(:
+
+476317*
+1D D('
+
+476326*
+1D D('
+
+476317*
+1D( D(3
+
+476526*
+1D( D(3
+
+47617*
+1D5 D(9
+
+47626*
+1D5 D(9
+
+672726*
+1Q Q(
+
+67617*
+1R$ R((
+
+67626*
+1R$ R((
+
+703537*
+1U" U(#
+
+703817*
+1U# U(+
+
+701826*
+1V	 V(
+
+702317*
+1V	 V(
+
+701826*
+1V	 V(
+
+706317*
+1V< V(E
+
+706326*
+1V< V(E
+
+706317*
+1VF V(Q
+
+706526*
+1VF V(Q
+
+706317*
+1W W(!
+
+706326*
+1W W(!
+
+706317*
+1W" W(-
+
+706526*
+1W" W(-
+
+736355*
+1Z0 Z(9
+
+736325*
+1Z: Z(L
+
+736317*
+1Z0 Z(9
+
+736326*
+1Z0 Z(9
+
+732726*
+1[ [(
+
+732726*
+1\ \(
+
+733317*
+1\% \(5
+
+733026*
+1\% \(5
+
+731826*
+1] ](
+
+732317*
+1] ](
+
+731826*
+1] ](
+
+733026*
+1^ ^(
+
+733317*
+1^ ^(
+
+733026*
+1^ ^(
+
+731826*
+1` `(
+
+732317*
+1` `(
+
+731826*
+1` `(
+
+732726*
+1`X `(g
+
+656349*
+1e	 e(
+
+656349*
+1e	 e(

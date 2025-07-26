@@ -1,0 +1,1110 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508494445*java2.B¿-
+v
+qgateway/service/src/main/java/org/eclipse/ditto/gateway/service/endpoints/routes/RootRouteHeadersStepBuilder.java2
+
+package4
+7
+2org.eclipse.ditto.gateway.service.endpoints.routes5
+S
+Norg.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+!
+RootRouteHeadersStepBuilder12
+
+NotThreadSafe14
+
+unknown15
+
+annotated by16
++
+%Recovered#typeBindingLNotThreadSafe;018
+
+
+uses19
+e
+_org.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder.headerTranslator21
+
+field22
+
+private23
+
+headerTranslator24
+
+HeaderTranslator26
+
+is type27
+i
+corg.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder.queryParamsToHeaders29
+
+queryParamsToHeaders30
+!
+QueryParametersToHeadersMap32
+i
+corg.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder.customHeadersHandler34
+
+customHeadersHandler35
+
+CustomHeadersHandler37
+j
+dorg.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder.dittoHeadersValidator39
+
+dittoHeadersValidator40
+
+DittoHeadersValidator42
+ª
+¥org.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder#<init>(LHeaderTranslator;LQueryParametersToHeadersMap;LCustomHeadersHandler;LDittoHeadersValidator;)V44
+
+method45
+.
+(Recovered#typeBindingLHeaderTranslator;047
+
+	has param48
+9
+3Recovered#typeBindingLQueryParametersToHeadersMap;050
+2
+,Recovered#typeBindingLCustomHeadersHandler;052
+3
+-Recovered#typeBindingLDittoHeadersValidator;054
+
+calls55
+
+
+references56
+è
+àorg.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder#getInstance(LHeaderTranslator;LQueryParametersToHeadersMap;LCustomHeadersHandler;LDittoHeadersValidator;)Lorg/eclipse/ditto/gateway/service/endpoints/routes/RootRouteHeadersStepBuilder;58
+
+getInstance59
+
+returns60
+Ó
+Áorg.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder#withInitialDittoHeadersBuilder(LDittoHeadersBuilder;)Lorg/eclipse/ditto/gateway/service/endpoints/routes/RootRouteHeadersStepBuilder$RequestContextStep;62
+$
+withInitialDittoHeadersBuilder63
+g
+aorg.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder$RequestContextStep65
+1
++Recovered#typeBindingLDittoHeadersBuilder;067
+
+RequestContextStep68
+{
+uorg.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder$RequestContextStep.dittoHeadersBuilder70
+
+dittoHeadersBuilder71
+
+DittoHeadersBuilder73
+◊
+–org.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder$RequestContextStep#<init>(Lorg/eclipse/ditto/gateway/service/endpoints/routes/RootRouteHeadersStepBuilder;LDittoHeadersBuilder;)V75
+Ò
+Íorg.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder$RequestContextStep#withRequestContext(LRequestContext;)Lorg/eclipse/ditto/gateway/service/endpoints/routes/RootRouteHeadersStepBuilder$QueryParametersStep;77
+
+withRequestContext78
+h
+borg.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder$QueryParametersStep80
+,
+&Recovered#typeBindingLRequestContext;082
+°
+öorg.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder$RequestContextStep#getFilteredExternalHeaders(LHttpMessage;)Ljava/util/Map;84
+ 
+getFilteredExternalHeaders85
+)
+#Recovered#typeBindingLHttpMessage;087
+(
+"Recovered#typeBindingLHttpHeader;089
+
+QueryParametersStep90
+|
+vorg.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder$QueryParametersStep.dittoHeadersBuilder92
+w
+qorg.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder$QueryParametersStep.requestContext94
+
+requestContext95
+
+RequestContext97
+Ä
+zorg.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder$QueryParametersStep.filteredExternalHeaders99
+
+filteredExternalHeaders100
+¯
+org.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder$QueryParametersStep#<init>(Lorg/eclipse/ditto/gateway/service/endpoints/routes/RootRouteHeadersStepBuilder;LDittoHeadersBuilder;LRequestContext;Ljava/util/Map;)V102
+È
+·org.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder$QueryParametersStep#withQueryParameters(Ljava/util/Map;)Lorg/eclipse/ditto/gateway/service/endpoints/routes/RootRouteHeadersStepBuilder$BuildStep;104
+
+withQueryParameters105
+_
+Xorg.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder$BuildStep107
+î
+åorg.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder$QueryParametersStep#avoidConflictingHeaders(Ljava/util/Map;)V109
+
+avoidConflictingHeaders110
+
+Nullable112
+'
+ Recovered#typeBindingLNullable;0114
+&
+GatewayDuplicateHeaderException116
+ª
+≥org.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder$QueryParametersStep#getDuplicateHeaderException(Ljava/lang/String;)LGatewayDuplicateHeaderException;118
+"
+getDuplicateHeaderException119
+
+	BuildStep120
+s
+lorg.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder$BuildStep.dittoHeadersBuilder122
+n
+gorg.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder$BuildStep.requestContext124
+ﬂ
+◊org.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder$BuildStep#<init>(Lorg/eclipse/ditto/gateway/service/endpoints/routes/RootRouteHeadersStepBuilder;LDittoHeadersBuilder;LRequestContext;)V126
+∞
+®org.eclipse.ditto.gateway.service.endpoints.routes.RootRouteHeadersStepBuilder$BuildStep#build(LCustomHeadersHandler/RequestType;)Ljava/util/concurrent/CompletionStage;128
+
+build129
++
+$Recovered#typeBindingLDittoHeaders;0131J
+
+1
+12Z
+
+3	
+354jï
+@
+20:
+202122 *
+10 0(26:3B
+	
+9
+23
+
+
+11
+24
+
+130
+13013115
+
+31
+313215
+
+13
+131415
+
+41
+414215
+G
+117@
+11711845 *
+1√	 √(279:3B
+	
+9
+23
+
+11
+119
+
+25
+252615
+
+49
+495015
+H
+125A
+12512645 *
+1÷	 ÷(2106:3B
+	
+9
+23
+
+11
+120
+D
+98>
+989922 *
+1ö	 ö(279:3B
+	
+9
+23
+
+11
+100
+
+51
+515215
+@
+28:
+282922 *
+11 1(26:3B
+	
+9
+23
+
+
+11
+30
+G
+123@
+12312422 *
+1‘	 ‘(2106:3B
+	
+9
+23
+
+
+11
+95
+
+17
+171815
+?
+649
+64658 *
+1d d(#26:3B
+	
+9
+10
+
+
+11
+68
+
+113
+11311415
+
+115
+11511615
+@
+57:
+575845 *
+1K K(26:3B
+	
+9
+10
+
+
+11
+59
+A
+79;
+79808 *
+1ñ ñ($26:3B
+	
+9
+10
+
+
+11
+90
+E
+106>
+1061078 *
+1— —(26:3B
+	
+9
+10
+
+11
+120
+
+96
+969715
+G
+121@
+12112222 *
+1”	 ”(2106:3B
+	
+9
+23
+
+
+11
+71
+
+46
+464715
+C
+93=
+939422 *
+1ô	 ô(279:3B
+	
+9
+23
+
+
+11
+95
+G
+103@
+10310445 *
+1Ø	 Ø(279:3B
+	
+9
+10
+
+11
+105
+H
+127A
+12712845 *
+1„	 „(2106:3B
+	
+9
+10
+
+11
+129
+
+86
+868715
+
+72
+727315
+
+36
+363715
+
+88
+888915
+@
+61:
+616245 *
+1\ \(26:3B
+	
+9
+10
+
+
+11
+63
+A
+69;
+697022 *
+1f	 f(264:3B
+	
+9
+23
+
+
+11
+71
+A
+83;
+838445 *
+1|	 |(264:3B
+	
+9
+23
+
+
+11
+85
+@
+43:
+434445 *
+15 5(26:3B
+	
+9
+23
+
+
+11
+12
+@
+38:
+383922 *
+13 3(26:3B
+	
+9
+23
+
+
+11
+40
+C
+91=
+919222 *
+1ò	 ò(279:3B
+	
+9
+23
+
+
+11
+71
+
+81
+818215
+F
+101?
+10110245 *
+1ú	 ú(279:3B
+	
+9
+23
+
+
+11
+90
+G
+108@
+10810945 *
+1∫	 ∫(279:3B
+	
+9
+23
+
+11
+110
+A
+76;
+767745 *
+1v	 v(264:3B
+	
+9
+10
+
+
+11
+78
+A
+74;
+747545 *
+1h	 h(264:3B
+	
+9
+23
+
+
+11
+68
+
+66
+666715
+
+111
+11111215
+9
+64
+678 *
+1. .((:3B
+	
+9
+10
+
+
+11
+12
+@
+33:
+333422 *
+12 2(26:3B
+	
+9
+23
+
+
+11
+35
+
+53
+535415rù,
+
+61316*
+1- -(
+
+61719*
+1- -(
+
+202527*
+10 0(#
+
+202519*
+10 0(#
+
+202519*
+10$ 0(4
+
+283127*
+11 1(.
+
+283119*
+11 1(.
+
+283119*
+11/ 1(C
+
+333627*
+12 2('
+
+333619*
+12 2('
+
+333619*
+12( 2(<
+
+384127*
+13 3((
+
+384119*
+13 3((
+
+384119*
+13) 3(>
+
+434648*
+15/ 5(?
+
+434948*
+16 6(.
+
+435148*
+17 7('
+
+435348*
+18 8((
+
+43655*
+15 5((
+
+434627*
+15@ 5(P
+
+434619*
+15/ 5(?
+
+434927*
+16/ 6(C
+
+434919*
+16 6(.
+
+435127*
+17( 7(<
+
+435119*
+17 7('
+
+435327*
+18) 8(>
+
+435319*
+18 8((
+
+43619*
+1:	 :(
+
+43656*
+1:	 :(
+
+432519*
+1: :(
+
+432056*
+1: :(
+
+43619*
+1;	 ;(
+
+43656*
+1;	 ;(
+
+433119*
+1; ;("
+
+432856*
+1; ;("
+
+43619*
+1<	 <(
+
+43656*
+1<	 <(
+
+433619*
+1< <("
+
+433356*
+1< <("
+
+43619*
+1=	 =(
+
+43656*
+1=	 =(
+
+434119*
+1= =(#
+
+433856*
+1= =(#
+
+57660*
+1K K('
+
+574648*
+1K: K(J
+
+574948*
+1L L(.
+
+575148*
+1M M('
+
+575348*
+1N N((
+
+57619*
+1K K('
+
+574627*
+1KK K([
+
+574619*
+1K: K(J
+
+574927*
+1L/ L(C
+
+574919*
+1L L(.
+
+575127*
+1M( M(<
+
+575119*
+1M M('
+
+575327*
+1N) N(>
+
+575319*
+1N N((
+
+57655*
+1P P(/
+
+616460*
+1\ \(
+
+616648*
+1\= \(P
+
+616419*
+1\ \(
+
+616456*
+1\ \(
+
+616627*
+1\W \(q
+
+616619*
+1\= \(P
+
+616455*
+1] ](&
+
+641316*
+1c c(
+
+641719*
+1c c(
+
+697227*
+1f f(*
+
+697219*
+1f f(*
+
+697219*
+1f1 f(D
+
+746648*
+1h* h(=
+
+746455*
+1h h(#
+
+746627*
+1hD h(W
+
+746619*
+1h* h(=
+
+746419*
+1i i(
+
+746456*
+1i i(
+
+747219*
+1i i(%
+
+746956*
+1i i(%
+
+767960*
+1v	 v(
+
+768148*
+1v6 v(D
+
+767919*
+1v	 v(
+
+767956*
+1v	 v(
+
+768127*
+1vE v(S
+
+768119*
+1v6 v(D
+
+766456*
+1xA x([
+
+768355*
+1xA x([
+
+767955*
+1y y(+
+
+767219*
+1y, y(?
+
+766956*
+1y, y(?
+
+838648*
+1|F |(Q
+
+838627*
+1|R |(]
+
+838619*
+1|F |(Q
+
+838819*
+1} }(&
+
+832056*
+1ç ç($
+
+832519*
+1ç ç($
+
+832056*
+1ç ç($
+
+791316*
+1ï ï(
+
+791719*
+1ï ï(
+
+917227*
+1ò ò(*
+
+917219*
+1ò ò(*
+
+917219*
+1ò1 ò(D
+
+939627*
+1ô ô(%
+
+939619*
+1ô ô(%
+
+939619*
+1ô& ô(4
+
+1016648*
+1ú+ ú(>
+
+1018148*
+1ù ù(%
+
+1017955*
+1ú ú($
+
+1016627*
+1úE ú(X
+
+1016619*
+1ú+ ú(>
+
+1018127*
+1ù& ù(4
+
+1018119*
+1ù ù(%
+
+1017919*
+1† †(
+
+1017956*
+1† †(
+
+1017219*
+1† †(%
+
+1019156*
+1† †(%
+
+1017919*
+1° °(
+
+1017956*
+1° °(
+
+1019619*
+1° °( 
+
+1019356*
+1° °( 
+
+1017919*
+1¢ ¢(
+
+1017956*
+1¢ ¢(
+
+1019856*
+1¢ ¢()
+
+10310660*
+1Ø	 Ø(
+
+10310619*
+1Ø	 Ø(
+
+10310656*
+1Ø	 Ø(
+
+1032056*
+1±= ±(M
+
+1032519*
+1±= ±(M
+
+1032056*
+1±= ±(M
+
+1032856*
+1≤D ≤(X
+
+1033119*
+1≤D ≤(X
+
+1032856*
+1≤D ≤(X
+
+1037956*
+1≥ ≥($
+
+10310855*
+1≥ ≥($
+
+1039156*
+1¥ ¥( 
+
+1037219*
+1¥ ¥( 
+
+1039156*
+1¥ ¥( 
+
+1039856*
+1¥, ¥(C
+
+1039156*
+1µ µ( 
+
+1037219*
+1µ µ( 
+
+1039156*
+1µ µ( 
+
+10310655*
+1∑ ∑(!
+
+1037219*
+1∑" ∑(5
+
+1039156*
+1∑" ∑(5
+
+1039619*
+1∑7 ∑(E
+
+1039356*
+1∑7 ∑(E
+
+10811116*
+1º º(
+
+10811319*
+1º º(
+
+1089856*
+1º> º(U
+
+1089856*
+1º> º(U
+
+10811560*
+1æ æ(6
+
+1087956*
+1æ æ(6
+
+10811755*
+1æ æ(6
+
+11711560*
+1√ √(0
+
+11711519*
+1√ √(0
+
+1179156*
+1«# «(6
+
+1177219*
+1«# «(6
+
+1179156*
+1«# «(6
+
+1061316*
+1– –(
+
+1061719*
+1– –(
+
+1217227*
+1” ”(*
+
+1217219*
+1” ”(*
+
+1217219*
+1”1 ”(D
+
+1239627*
+1‘ ‘(%
+
+1239619*
+1‘ ‘(%
+
+1239619*
+1‘& ‘(4
+
+1256648*
+1÷! ÷(4
+
+1258148*
+1÷V ÷(d
+
+12510655*
+1÷ ÷(
+
+1256627*
+1÷; ÷(N
+
+1256619*
+1÷! ÷(4
+
+1258127*
+1÷e ÷(s
+
+1258119*
+1÷V ÷(d
+
+12510619*
+1◊ ◊(
+
+12510656*
+1◊ ◊(
+
+1257219*
+1◊ ◊(%
+
+12512156*
+1◊ ◊(%
+
+12510619*
+1ÿ ÿ(
+
+12510656*
+1ÿ ÿ(
+
+1259619*
+1ÿ ÿ( 
+
+12512356*
+1ÿ ÿ( 
+
+1275148*
+1„3 „(G
+
+12713019*
+1„ „(%
+
+1275127*
+1„T „(_
+
+1275119*
+1„3 „(G
+
+1275119*
+1„H „(S
+
+12713027*
+1Ê  Ê(3
+
+12713019*
+1Ê Ê(
+
+12712156*
+1Ê6 Ê(I
+
+1277219*
+1Ê6 Ê(I
+
+12712156*
+1Ê6 Ê(I
+
+12713019*
+1Î# Î(/
+
+1273356*
+1Î: Î(N
+
+1273619*
+1Î: Î(N
+
+1273356*
+1Î: Î(N
+
+1279619*
+1Ï Ï(#
+
+12712356*
+1Ï Ï(#
+
+1274119*
+1' (<
+
+1273856*
+1' (<

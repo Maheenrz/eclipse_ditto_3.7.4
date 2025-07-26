@@ -1,0 +1,1460 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508447823*java2.BÝ*
+€
+{gateway/service/src/test/java/org/eclipse/ditto/gateway/service/security/authentication/jwt/DittoPublicKeyProviderTest.java2
+
+package4
+B
+=org.eclipse.ditto.gateway.service.security.authentication.jwt5
+]
+Xorg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+ 
+DittoPublicKeyProviderTest12
+
+RunWith14
+
+unknown15
+
+annotated by16
+%
+Recovered#typeBindingLRunWith;018
+
+
+uses19
+0
+*Recovered#typeBindingLMockitoJUnitRunner;021
+l
+forg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest.LATCH_TIMEOUT23
+
+field24
+
+private25
+
+LATCH_TIMEOUT26
+y
+sorg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest.DISCOVERY_ENDPOINT_REQUEST28
+ 
+DISCOVERY_ENDPOINT_REQUEST29
+
+HttpRequest31
+
+is type32
+g
+aorg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest.JWKS_URI34
+
+JWKS_URI35
+r
+lorg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest.PUBLIC_KEYS_REQUEST37
+
+PUBLIC_KEYS_REQUEST38
+
+
+references39
+e
+_org.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest.KEY_ID41
+
+KEY_ID42
+j
+dorg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest.actorSystem44
+
+actorSystem45
+
+ActorSystem47
+h
+borg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest.underTest49
+
+	underTest50
+
+PublicKeyProvider52
+m
+gorg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest.httpClientMock54
+
+httpClientMock55
+
+HttpClientFacade57
+
+
+Mock59
+"
+Recovered#typeBindingLMock;061
+n
+horg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest.oauthConfigMock63
+
+oauthConfigMock64
+
+OAuthConfig66
+g
+aorg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest#setup()V68
+
+method69
+
+setup70
+
+Before72
+$
+Recovered#typeBindingLBefore;074
+5
+/Recovered#typeBindingLJwtSubjectIssuersConfig;076
+j
+dorg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest#tearDown()V78
+
+tearDown79
+
+After81
+#
+Recovered#typeBindingLAfter;083
+z
+torg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest#verifyThatRSAKeyIsCached()V85
+
+verifyThatRSAKeyIsCached86
+
+
+Test88
+"
+Recovered#typeBindingLTest;090
+‰
+‚org.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest#mockSuccessfulDiscoveryEndpointRequest()V92
+
+calls93
+„
+~org.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest#mockRSASuccessfulPublicKeysRequest()V95
+1
++Recovered#typeBindingLPublicKeyWithParser;097
+y
+sorg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest#verifyThatECKeyIsCached()V99
+
+verifyThatECKeyIsCached100
+„
+}org.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest#mockECSuccessfulPublicKeysRequest()V102
+Š
+‚org.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest#verifyExceptionIsThrownForInvalidECKey()V104
+-
+&verifyExceptionIsThrownForInvalidECKey105
+Ÿ
+—org.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest#mockECSuccessfulPublicKeysRequestAndReturnInvalidJsonWebKey()V107
+2
++Recovered#typeBindingLJwkInvalidException;0109
+z
+sorg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest#verifyWithoutPublicKeys()V111
+
+verifyWithoutPublicKeys112
+Ž
+†org.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest#mockSuccessfulPublicKeysRequestWithoutKeys()V114
+ 
+˜org.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest#verifyThatKeyIsNotCachedOnErrorResponseFromDiscoveryEndpoint()V116
+C
+<verifyThatKeyIsNotCachedOnErrorResponseFromDiscoveryEndpoint117
+„
+}org.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest#mockErrorDiscoveryEndpointRequest()V119
+P
+IRecovered#typeBindingLGatewayAuthenticationProviderUnavailableException;0121
+™
+‘org.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest#verifyThatKeyIsNotCachedIfResponseDoesNotContainKeyId()V123
+<
+5verifyThatKeyIsNotCachedIfResponseDoesNotContainKeyId124
+—
+org.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest#mockSuccessfulPublicKeysRequestWithoutMatchingKeyId()V126
+-
+&mockSuccessfulDiscoveryEndpointRequest127
+)
+"Recovered#typeBindingLJsonObject;0129
++
+$Recovered#typeBindingLHttpResponse;0131
+(
+!mockErrorDiscoveryEndpointRequest132
+)
+"mockRSASuccessfulPublicKeysRequest133
+(
+!Recovered#typeBindingLJsonArray;0135
+(
+!mockECSuccessfulPublicKeysRequest136
+B
+;mockECSuccessfulPublicKeysRequestAndReturnInvalidJsonWebKey137
+1
+*mockSuccessfulPublicKeysRequestWithoutKeys138
+:
+3mockSuccessfulPublicKeysRequestWithoutMatchingKeyId139
+‹
+ƒorg.eclipse.ditto.gateway.service.security.authentication.jwt.DittoPublicKeyProviderTest#thisThreadCache(LAsyncCacheLoader;)LCache;141
+
+thisThreadCache142
+
+Cache144
+
+returns145
+/
+(Recovered#typeBindingLAsyncCacheLoader;0147
+
+	has param148J
+
+1
+12Z
+
+3	
+354jù
+
+17
+171815
+F
+125?
+12512669 *
+1¨ ¨(26:3B
+	
+9
+25
+
+11
+139
+
+60
+606115
+F
+103?
+10310469 *
+1‰ ‰(26:3B
+	
+9
+10
+
+11
+105
+
+130
+13013115
+F
+101?
+10110269 *
+1ö ö(26:3B
+	
+9
+25
+
+11
+136
+
+65
+656615
+@
+67:
+676869 *
+1L L(26:3B
+	
+9
+10
+
+
+11
+70
+
+58
+585915
+
+20
+202115
+
+73
+737415
+
+87
+878815
+F
+115?
+11511669 *
+1¨ ¨(26:3B
+	
+9
+10
+
+11
+117
+F
+118?
+11811969 *
+1Ú Ú(26:3B
+	
+9
+25
+
+11
+132
+
+146
+14614715
+@
+43:
+434424 *
+1C C(26:3B
+	
+9
+25
+
+
+11
+45
+@
+62:
+626324 *
+1I I(26:3B
+	
+9
+10
+
+
+11
+64
+F
+140?
+14014169 *
+1¼ ¼(26:3B
+	
+9
+25
+
+11
+142
+@
+53:
+535424 *
+1F F(26:3B
+	
+9
+10
+
+
+11
+55
+
+75
+757615
+@
+27:
+272824 *
+1= =(26:3B
+	
+9
+25
+
+
+11
+29
+
+51
+515215
+@
+77:
+777869 *
+1W W(26:3B
+	
+9
+10
+
+
+11
+79
+
+89
+899015
+
+143
+14314415
+
+46
+464715
+
+71
+717215
+
+82
+828315
+@
+40:
+404124 *
+1A A(26:3B
+	
+9
+25
+
+
+11
+42
+F
+110?
+11011169 *
+1• •(26:3B
+	
+9
+10
+
+11
+112
+C
+94=
+949569 *
+1â â(26:3B
+	
+9
+25
+
+11
+133
+
+13
+131415
+@
+33:
+333424 *
+1? ?(26:3B
+	
+9
+25
+
+
+11
+35
+F
+106?
+10610769 *
+1Š Š(26:3B
+	
+9
+25
+
+11
+137
+A
+98;
+989969 *
+1t t(26:3B
+	
+9
+10
+
+11
+100
+
+128
+12812915
+C
+91=
+919269 *
+1Ò Ò(26:3B
+	
+9
+25
+
+11
+127
+9
+64
+678 *
+19 9(.:3B
+	
+9
+10
+
+
+11
+12
+
+30
+303115
+
+134
+13413515
+
+56
+565715
+
+108
+10810915
+
+120
+12012115
+
+96
+969715
+@
+36:
+363724 *
+1@ @(26:3B
+	
+9
+25
+
+
+11
+38
+F
+122?
+12212369 *
+1¾ ¾(26:3B
+	
+9
+10
+
+11
+124
+
+80
+808115
+@
+84:
+848569 *
+1_ _(26:3B
+	
+9
+10
+
+
+11
+86
+F
+113?
+11311469 *
+1 (26:3B
+	
+9
+25
+
+11
+138
+@
+22:
+222324 *
+1; ;(26:3B
+	
+9
+25
+
+
+11
+26
+@
+48:
+484924 *
+1D D(26:3B
+	
+9
+25
+
+
+11
+50rõC
+
+61316*
+18 8(
+
+61719*
+18 8(	
+
+62019*
+18
+ 8(
+
+273032*
+1= =(%
+
+273019*
+1= =(%
+
+273019*
+1=& =(@
+
+363032*
+1@ @(%
+
+363019*
+1@ @(%
+
+363019*
+1@& @(9
+
+363339*
+1@L @(T
+
+434632*
+1C C(
+
+434619*
+1C C(
+
+434619*
+1C C($
+
+485132*
+1D D(
+
+485119*
+1D D(
+
+485119*
+1D D((
+
+535632*
+1G G(
+
+535816*
+1F F(
+
+536019*
+1F F(
+
+
+535619*
+1G G(
+
+535619*
+1G G(+
+
+626532*
+1J J(
+
+625816*
+1I I(
+
+626019*
+1I I(
+
+
+626519*
+1J J(
+
+626519*
+1J J('
+
+677116*
+1L L(
+
+677319*
+1L L(
+
+674619*
+1N	 N(
+
+674339*
+1N	 N(
+
+675339*
+1O O(
+
+675619*
+1O O(
+
+675339*
+1O O(
+
+674619*
+1O: O(E
+
+674339*
+1O: O(E
+
+677532*
+1P' P(;
+
+677519*
+1P P(&
+
+676239*
+1R R(
+
+676519*
+1R R(
+
+676239*
+1R R(
+
+675119*
+1S	 S(
+
+674839*
+1S	 S(
+
+675619*
+1SF S(T
+
+675339*
+1SF S(T
+
+676519*
+1T T( 
+
+676239*
+1T T( 
+
+67619*
+1T" T(<
+
+778016*
+1W W(
+
+778219*
+1W W(
+
+774619*
+1Y Y(
+
+774339*
+1Y Y(
+
+774339*
+1Z Z(
+
+774619*
+1Z Z(
+
+774339*
+1Z Z(
+
+774619*
+1[ [(
+
+774339*
+1[ [(
+
+848716*
+1_ _(
+
+848919*
+1_ _(
+
+
+84639*
+1b	 b(/
+
+849193*
+1b	 b(/
+
+84639*
+1c	 c(+
+
+849493*
+1c	 c(+
+
+849619*
+1e e(+
+
+844839*
+1f f(
+
+845119*
+1f f(
+
+844839*
+1f f(
+
+844039*
+1f@ f(F
+
+842239*
+1fL f(Y
+
+845619*
+1h h(
+
+845339*
+1h h(
+
+843019*
+1h8 h(R
+
+842739*
+1h8 h(R
+
+845619*
+1i i(
+
+845339*
+1i i(
+
+843019*
+1i8 i(K
+
+843639*
+1i8 i(K
+
+845619*
+1k" k(0
+
+845339*
+1k" k(0
+
+849619*
+1m m(+
+
+844839*
+1n n(
+
+845119*
+1n n(
+
+844839*
+1n n(
+
+844039*
+1n@ n(F
+
+842239*
+1nL n(Y
+
+845619*
+1q" q(0
+
+845339*
+1q" q(0
+
+988716*
+1t t(
+
+988919*
+1t t(
+
+
+98639*
+1w	 w(/
+
+989193*
+1w	 w(/
+
+98639*
+1x	 x(*
+
+9810193*
+1x	 x(*
+
+989619*
+1z z(+
+
+984839*
+1{ {(
+
+985119*
+1{ {(
+
+984839*
+1{ {(
+
+984039*
+1{G {(M
+
+982239*
+1{S {(`
+
+985619*
+1} }(
+
+985339*
+1} }(
+
+983019*
+1}8 }(R
+
+982739*
+1}8 }(R
+
+985619*
+1~ ~(
+
+985339*
+1~ ~(
+
+983019*
+1~8 ~(K
+
+983639*
+1~8 ~(K
+
+985619*
+1€" €(0
+
+985339*
+1€" €(0
+
+989619*
+1‚ ‚(+
+
+984839*
+1ƒ ƒ(
+
+985119*
+1ƒ ƒ(
+
+984839*
+1ƒ ƒ(
+
+984039*
+1ƒG ƒ(M
+
+982239*
+1ƒS ƒ(`
+
+985619*
+1†" †(0
+
+985339*
+1†" †(0
+
+1038716*
+1‰ ‰(
+
+1038919*
+1‰ ‰(
+
+
+103639*
+1Œ	 Œ(/
+
+1039193*
+1Œ	 Œ(/
+
+103639*
+1	 (D
+
+10310693*
+1	 (D
+
+10310819*
+1’- ’(@
+
+1108716*
+1• •(
+
+1108919*
+1• •(
+
+
+110639*
+1˜	 ˜(/
+
+1109193*
+1˜	 ˜(/
+
+110639*
+1™	 ™(3
+
+11011393*
+1™	 ™(3
+
+1109619*
+1› ›(+
+
+1104839*
+1œ œ(
+
+1105119*
+1œ œ(
+
+1104839*
+1œ œ(
+
+1104039*
+1œ@ œ(F
+
+1102239*
+1œL œ(Y
+
+1105619*
+1ž ž(
+
+1105339*
+1ž ž(
+
+1103019*
+1ž8 ž(R
+
+1102739*
+1ž8 ž(R
+
+1105619*
+1Ÿ Ÿ(
+
+1105339*
+1Ÿ Ÿ(
+
+1103019*
+1Ÿ8 Ÿ(K
+
+1103639*
+1Ÿ8 Ÿ(K
+
+1105619*
+1¡" ¡(0
+
+1105339*
+1¡" ¡(0
+
+1109619*
+1£ £(+
+
+1104839*
+1¤ ¤(
+
+1105119*
+1¤ ¤(
+
+1104839*
+1¤ ¤(
+
+1104039*
+1¤@ ¤(F
+
+1102239*
+1¤L ¤(Y
+
+1158716*
+1¨ ¨(
+
+1158919*
+1¨ ¨(
+
+
+115639*
+1«	 «(*
+
+11511893*
+1«	 «(*
+
+11512019*
+1°- °(^
+
+1155619*
+1± ±(
+
+1155339*
+1± ±(
+
+1153019*
+1±8 ±(R
+
+1152739*
+1±8 ±(R
+
+1155619*
+1² ²(
+
+1155339*
+1² ²(
+
+1153019*
+1²A ²(T
+
+1153639*
+1²A ²(T
+
+1155619*
+1´" ´(0
+
+1155339*
+1´" ´(0
+
+11512019*
+1¹- ¹(^
+
+1155619*
+1º º(
+
+1155339*
+1º º(
+
+1153019*
+1º8 º(R
+
+1152739*
+1º8 º(R
+
+1155619*
+1» »(
+
+1155339*
+1» »(
+
+1153019*
+1»A »(T
+
+1153639*
+1»A »(T
+
+1228716*
+1¾ ¾(
+
+1228919*
+1¾ ¾(
+
+
+122639*
+1Â	 Â(/
+
+1229193*
+1Â	 Â(/
+
+122639*
+1Ã	 Ã(<
+
+12212593*
+1Ã	 Ã(<
+
+1224839*
+1Æ Æ(
+
+1225119*
+1Æ Æ(
+
+1224839*
+1Æ Æ(
+
+1224039*
+1Æ@ Æ(F
+
+1222239*
+1ÆL Æ(Y
+
+1225619*
+1Ç Ç(
+
+1225339*
+1Ç Ç(
+
+1223019*
+1Ç8 Ç(R
+
+1222739*
+1Ç8 Ç(R
+
+1225619*
+1È È(
+
+1225339*
+1È È(
+
+1223019*
+1È8 È(K
+
+1223639*
+1È8 È(K
+
+1225619*
+1Ê" Ê(0
+
+1225339*
+1Ê" Ê(0
+
+1224839*
+1Í Í(
+
+1225119*
+1Í Í(
+
+1224839*
+1Í Í(
+
+1224039*
+1Í@ Í(F
+
+1222239*
+1ÍL Í(Y
+
+1225619*
+1Î Î(
+
+1225339*
+1Î Î(
+
+1223019*
+1Î8 Î(R
+
+1222739*
+1Î8 Î(R
+
+1225619*
+1Ï Ï(
+
+1225339*
+1Ï Ï(
+
+1223019*
+1Ï8 Ï(K
+
+1223639*
+1Ï8 Ï(K
+
+9112832*
+1Ó Ó()
+
+9112819*
+1Ó Ó(
+
+913339*
+1ÓT Ó(\
+
+9113032*
+1Ô Ô(5
+
+9113019*
+1Ô Ô(
+
+915339*
+1Ö Ö(
+
+915619*
+1Ö Ö(
+
+915339*
+1Ö Ö(
+
+913019*
+1Ö5 Ö(O
+
+912739*
+1Ö5 Ö(O
+
+11812832*
+1Û Û(#
+
+11812819*
+1Û Û(
+
+11813032*
+1Ü Ü(5
+
+11813019*
+1Ü Ü(
+
+1185339*
+1Þ Þ(
+
+1185619*
+1Þ Þ(
+
+1185339*
+1Þ Þ(
+
+1183019*
+1Þ5 Þ(O
+
+1182739*
+1Þ5 Þ(O
+
+9412832*
+1ä ä($
+
+9412819*
+1ä ä(
+
+944039*
+1è4 è(:
+
+9413432*
+1í í("
+
+9413419*
+1í í(
+
+9412832*
+1î î("
+
+9412819*
+1î î(
+
+9413032*
+1ï ï(.
+
+9413019*
+1ï ï(
+
+945339*
+1ò ò(
+
+945619*
+1ò ò(
+
+945339*
+1ò ò(
+
+943019*
+1ò5 ò(H
+
+943639*
+1ò5 ò(H
+
+10112832*
+1ø ø($
+
+10112819*
+1ø ø(
+
+1014039*
+1ý4 ý(:
+
+10113432*
+1 ("
+
+10113419*
+1 (
+
+10112832*
+1‚ ‚("
+
+10112819*
+1‚ ‚(
+
+10113032*
+1ƒ ƒ(.
+
+10113019*
+1ƒ ƒ(
+
+1015339*
+1† †(
+
+1015619*
+1† †(
+
+1015339*
+1† †(
+
+1013019*
+1†5 †(H
+
+1013639*
+1†5 †(H
+
+10612832*
+1Œ Œ($
+
+10612819*
+1Œ Œ(
+
+1064039*
+14 (:
+
+10613432*
+1” ”("
+
+10613419*
+1” ”(
+
+10612832*
+1• •("
+
+10612819*
+1• •(
+
+10613032*
+1– –(.
+
+10613019*
+1– –(
+
+1065339*
+1™ ™(
+
+1065619*
+1™ ™(
+
+1065339*
+1™ ™(
+
+1063019*
+1™5 ™(H
+
+1063639*
+1™5 ™(H
+
+11313432*
+1Ÿ Ÿ("
+
+11313419*
+1Ÿ Ÿ(
+
+11312832*
+1   ("
+
+11312819*
+1   (
+
+11313032*
+1¡ ¡(.
+
+11313019*
+1¡ ¡(
+
+1135339*
+1¤ ¤(
+
+1135619*
+1¤ ¤(
+
+1135339*
+1¤ ¤(
+
+1133019*
+1¤5 ¤(H
+
+1133639*
+1¤5 ¤(H
+
+12512832*
+1ª ª($
+
+12512819*
+1ª ª(
+
+12513432*
+1³ ³("
+
+12513419*
+1³ ³(
+
+12512832*
+1´ ´("
+
+12512819*
+1´ ´(
+
+12513032*
+1µ µ(.
+
+12513019*
+1µ µ(
+
+1255339*
+1¸ ¸(
+
+1255619*
+1¸ ¸(
+
+1255339*
+1¸ ¸(
+
+1253019*
+1¸5 ¸(H
+
+1253639*
+1¸5 ¸(H
+
+140143145*
+1¼ ¼( 
+
+140146148*
+1¼= ¼(M
+
+14014319*
+1¼ ¼( 
+
+14014632*
+1¼T ¼(Z
+
+14014619*
+1¼= ¼(M
+
+140619*
+1Â3 Â(M

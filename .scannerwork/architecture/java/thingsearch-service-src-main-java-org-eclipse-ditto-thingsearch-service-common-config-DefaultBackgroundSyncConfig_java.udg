@@ -1,0 +1,915 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508814393*java2.B´'
+{
+vthingsearch/service/src/main/java/org/eclipse/ditto/thingsearch/service/common/config/DefaultBackgroundSyncConfig.java2
+
+package4
+8
+3org.eclipse.ditto.thingsearch.service.common.config5
+T
+Oorg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+!
+DefaultBackgroundSyncConfig12
+2
+,Recovered#typeBindingLBackgroundSyncConfig;014
+
+unknown15
+
+
+implements16
+
+	Immutable18
+
+annotated by19
+'
+!Recovered#typeBindingLImmutable;021
+
+
+uses22
+a
+[org.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig.CONFIG_PATH24
+
+field25
+
+private26
+
+CONFIG_PATH27
+\
+Vorg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig.config29
+
+config30
+
+Config32
+
+is type33
+]
+Worg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig.enabled35
+
+enabled36
+a
+[org.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig.quietPeriod38
+
+quietPeriod39
+`
+Zorg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig.keptEvents41
+
+
+keptEvents42
+e
+_org.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig.toleranceWindow44
+
+toleranceWindow45
+h
+borg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig.throttleThroughput47
+
+throttleThroughput48
+d
+^org.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig.throttlePeriod50
+
+throttlePeriod51
+a
+[org.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig.idleTimeout53
+
+idleTimeout54
+f
+`org.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig.policyAskTimeout56
+
+policyAskTimeout57
+`
+Zorg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig.minBackoff59
+
+
+minBackoff60
+`
+Zorg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig.maxBackoff62
+
+
+maxBackoff63
+a
+[org.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig.maxRestarts65
+
+maxRestarts66
+^
+Xorg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig.recovery68
+
+recovery69
+g
+aorg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#<init>(LConfig;)V71
+
+method72
+$
+Recovered#typeBindingLConfig;074
+
+	has param75
+
+calls76
+
+
+references77
+{
+uorg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#parse(LConfig;)LBackgroundSyncConfig;79
+
+parse80
+
+BackgroundSyncConfig82
+
+returns83
+à
+Åorg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#fromUpdaterConfig(LConfig;)LBackgroundSyncConfig;85
+
+fromUpdaterConfig86
+i
+corg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#getConfig()LConfig;88
+
+	getConfig89
+b
+\org.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#isEnabled()Z91
+
+	isEnabled92
+z
+torg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#getQuietPeriod()Ljava/time/Duration;94
+
+getQuietPeriod95
+f
+`org.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#getKeptEvents()I97
+
+getKeptEvents98
+
+xorg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#getToleranceWindow()Ljava/time/Duration;100
+
+getToleranceWindow101
+o
+horg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#getThrottleThroughput()I103
+
+getThrottleThroughput104
+~
+worg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#getThrottlePeriod()Ljava/time/Duration;106
+
+getThrottlePeriod107
+{
+torg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#getIdleTimeout()Ljava/time/Duration;109
+
+getIdleTimeout110
+Ä
+yorg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#getPolicyAskTimeout()Ljava/time/Duration;112
+
+getPolicyAskTimeout113
+z
+sorg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#getMinBackoff()Ljava/time/Duration;115
+
+getMinBackoff116
+z
+sorg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#getMaxBackoff()Ljava/time/Duration;118
+
+getMaxBackoff119
+h
+aorg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#getMaxRestarts()I121
+
+getMaxRestarts122
+x
+qorg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#getRecovery()Ljava/time/Duration;124
+
+getRecovery125
+r
+korg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#equals(Ljava/lang/Object;)Z127
+
+equals128
+b
+[org.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#hashCode()I130
+
+hashCode131
+s
+lorg.eclipse.ditto.thingsearch.service.common.config.DefaultBackgroundSyncConfig#toString()Ljava/lang/String;133
+
+toString134J
+
+1
+12Z
+
+3	
+354jı
+
+17
+171815
+@
+37:
+373825 *
+1" "(26:3B
+	
+9
+26
+
+
+11
+39
+@
+52:
+525325 *
+1' '(26:3B
+	
+9
+26
+
+
+11
+54
+
+31
+313215
+@
+40:
+404125 *
+1# #(26:3B
+	
+9
+26
+
+
+11
+42
+F
+108?
+10810972 *
+1Å Å(26:3B
+	
+9
+10
+
+11
+110
+@
+61:
+616225 *
+1* *(26:3B
+	
+9
+26
+
+
+11
+63
+@
+49:
+495025 *
+1& &(26:3B
+	
+9
+26
+
+
+11
+51
+
+81
+818215
+
+20
+202115
+@
+58:
+585925 *
+1) )(26:3B
+	
+9
+26
+
+
+11
+60
+9
+64
+678 *
+1 (/:3B
+	
+9
+10
+
+
+11
+12
+F
+117?
+11711872 *
+1ì ì(26:3B
+	
+9
+10
+
+11
+119
+@
+43:
+434425 *
+1$ $(26:3B
+	
+9
+26
+
+
+11
+45
+F
+132?
+13213372 *
+1æ æ(26:3B
+	
+9
+10
+
+11
+134
+
+73
+737415
+@
+34:
+343525 *
+1! !(26:3B
+	
+9
+26
+
+
+11
+36
+@
+70:
+707172 *
+1. .(26:3B
+	
+9
+26
+
+
+11
+12
+@
+67:
+676825 *
+1, ,(26:3B
+	
+9
+26
+
+
+11
+69
+F
+126?
+12612772 *
+1¢ ¢(26:3B
+	
+9
+10
+
+11
+128
+D
+102=
+10210372 *
+1p p(26:3B
+	
+9
+10
+
+11
+104
+@
+93:
+939472 *
+1W W(26:3B
+	
+9
+10
+
+
+11
+95
+
+13
+131415
+@
+90:
+909172 *
+1R R(26:3B
+	
+9
+10
+
+
+11
+92
+B
+99<
+9910072 *
+1g g(26:3B
+	
+9
+10
+
+11
+101
+@
+96:
+969772 *
+1\ \(26:3B
+	
+9
+10
+
+
+11
+98
+@
+28:
+282925 *
+1   (26:3B
+	
+9
+26
+
+
+11
+30
+@
+23:
+232425 *
+1 (26:3B
+	
+9
+26
+
+
+11
+27
+F
+129?
+12913072 *
+1∏ ∏(26:3B
+	
+9
+10
+
+11
+131
+@
+46:
+464725 *
+1% %(26:3B
+	
+9
+26
+
+
+11
+48
+@
+55:
+555625 *
+1( ((26:3B
+	
+9
+26
+
+
+11
+57
+F
+123?
+12312472 *
+1ù ù(26:3B
+	
+9
+10
+
+11
+125
+@
+78:
+787972 *
+1D D(26:3B
+	
+9
+10
+
+
+11
+80
+F
+120?
+12012172 *
+1ò ò(26:3B
+	
+9
+10
+
+11
+122
+D
+105=
+10510672 *
+1y y(26:3B
+	
+9
+10
+
+11
+107
+@
+84:
+848572 *
+1H H(26:3B
+	
+9
+10
+
+
+11
+86
+F
+111?
+11111272 *
+1ä ä(26:3B
+	
+9
+10
+
+11
+113
+@
+64:
+646525 *
+1+ +(26:3B
+	
+9
+26
+
+
+11
+66
+F
+114?
+11411572 *
+1é é(26:3B
+	
+9
+10
+
+11
+116
+@
+87:
+878872 *
+1M M(26:3B
+	
+9
+10
+
+
+11
+89rﬂ
+
+61316*
+1; (O
+
+61719*
+1 (
+
+62022*
+1 (
+
+61322*
+1; (O
+
+283133*
+1   (
+
+283122*
+1   (
+
+283122*
+1   ( 
+
+707375*
+1./ .(5
+
+70676*
+1. .((
+
+707333*
+1.6 .(<
+
+707322*
+1./ .(5
+
+70622*
+1/	 /(
+
+70677*
+1/	 /(
+
+703122*
+1/ /(
+
+702877*
+1/ /(
+
+703477*
+10	 0(
+
+703777*
+11	 1(
+
+704077*
+12	 2(
+
+704377*
+13	 3(
+
+704677*
+14	 4(
+
+704977*
+15	 5(
+
+705277*
+16	 6(
+
+705577*
+17	 7(
+
+70622*
+18	 8(
+
+70677*
+18	 8(
+
+705877*
+18 8(
+
+70622*
+19	 9(
+
+70677*
+19	 9(
+
+706177*
+19 9(
+
+70622*
+1:	 :(
+
+70677*
+1:	 :(
+
+706477*
+1: :(
+
+70622*
+1;	 ;(
+
+70677*
+1;	 ;(
+
+706777*
+1; ;(
+
+788183*
+1D D('
+
+787375*
+1D4 D(:
+
+788122*
+1D D('
+
+787333*
+1D; D(A
+
+787322*
+1D4 D(:
+
+78676*
+1E E(/
+
+848183*
+1H H('
+
+847375*
+1H@ H(F
+
+848122*
+1H H('
+
+847333*
+1HG H(T
+
+847322*
+1H@ H(F
+
+84676*
+1I I(/
+
+842377*
+1J? J(J
+
+873183*
+1N N(
+
+873122*
+1N N(
+
+873122*
+1O O(
+
+872877*
+1O O(
+
+903477*
+1T T(
+
+933777*
+1Y Y(
+
+964077*
+1^ ^(
+
+994377*
+1h h(
+
+1024677*
+1q q("
+
+1054977*
+1z z(
+
+1085277*
+1Ç Ç(
+
+1115577*
+1ã ã( 
+
+1145877*
+1ê ê(
+
+1176177*
+1ï ï(
+
+1206477*
+1ö ö(
+
+1236777*
+1ü ü(
+
+126622*
+1§ §(5
+
+126633*
+1•/ •(3
+
+126622*
+1• •(.
+
+126622*
+1•7 •(R
+
+1263477*
+1¶ ¶(
+
+1263477*
+1¶$ ¶(+
+
+1263777*
+1ß$ ß(/
+
+1263777*
+1ß6 ß(A
+
+1265277*
+1®$ ®(/
+
+1265277*
+1®6 ®(A
+
+1264077*
+1© ©(
+
+1264077*
+1©( ©(2
+
+1264377*
+1™$ ™(3
+
+1264377*
+1™: ™(I
+
+1265577*
+1´$ ´(4
+
+1265577*
+1´; ´(K
+
+1264677*
+1¨ ¨('
+
+1264677*
+1¨0 ¨(B
+
+1264977*
+1≠$ ≠(2
+
+1264977*
+1≠9 ≠(G
+
+1265877*
+1Æ$ Æ(.
+
+1265877*
+1Æ5 Æ(?
+
+1266177*
+1Ø$ Ø(.
+
+1266177*
+1Ø5 Ø(?
+
+1266477*
+1∞ ∞( 
+
+1266477*
+1∞) ∞(4
+
+1266777*
+1±$ ±(,
+
+1266777*
+1±3 ±(;
+
+1263122*
+1≤$ ≤(*
+
+1262877*
+1≤$ ≤(*
+
+1263122*
+1≤1 ≤(7
+
+1262877*
+1≤1 ≤(7
+
+1293477*
+1∫ ∫($
+
+1293777*
+1∫& ∫(1
+
+1295277*
+1∫3 ∫(>
+
+1294077*
+1∫@ ∫(J
+
+1294377*
+1∫L ∫([
+
+1295577*
+1∫] ∫(m
+
+1294677*
+1ª ª(#
+
+1294977*
+1ª% ª(3
+
+1295877*
+1ª5 ª(?
+
+1296177*
+1ªA ª(K
+
+1296477*
+1ªM ª(X
+
+1296777*
+1ªZ ª(b
+
+1293122*
+1ªd ª(j
+
+1292877*
+1ªd ª(j
+
+1323122*
+1¡: ¡(@
+
+1322877*
+1¡: ¡(@

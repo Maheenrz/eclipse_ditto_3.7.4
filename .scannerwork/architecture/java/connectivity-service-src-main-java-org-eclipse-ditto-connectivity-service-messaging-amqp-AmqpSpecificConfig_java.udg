@@ -1,0 +1,954 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508574523*java2.BÑ*
+u
+pconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/amqp/AmqpSpecificConfig.java2
+
+package4
+:
+5org.eclipse.ditto.connectivity.service.messaging.amqp5
+M
+Horg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+AmqpSpecificConfig12
+X
+Rorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig.CLIENT_ID14
+
+field15
+
+private16
+
+	CLIENT_ID17
+^
+Xorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig.CONNECT_TIMEOUT19
+
+CONNECT_TIMEOUT20
+[
+Uorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig.SEND_TIMEOUT22
+
+SEND_TIMEOUT23
+^
+Xorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig.REQUEST_TIMEOUT25
+
+REQUEST_TIMEOUT26
+^
+Xorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig.PREFETCH_POLICY28
+
+PREFETCH_POLICY29
+W
+Qorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig.USERNAME31
+
+USERNAME32
+W
+Qorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig.PASSWORD34
+
+PASSWORD35
+^
+Xorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig.SASL_MECHANISMS37
+
+SASL_MECHANISMS38
+X
+Rorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig.TRUST_ALL40
+
+	TRUST_ALL41
+Z
+Torg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig.VERIFY_HOST43
+
+VERIFY_HOST44
+]
+Worg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig.amqpParameters46
+
+amqpParameters47
+\
+Vorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig.jmsParameters49
+
+jmsParameters50
+^
+Xorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig.failoverEnabled52
+
+failoverEnabled53
+g
+aorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig.plainCredentialsSupplier55
+
+plainCredentialsSupplier56
+
+PlainCredentialsSupplier58
+
+unknown59
+
+is type60
+
+
+uses61
+í
+ãorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig#<init>(Ljava/util/Map;Ljava/util/Map;ZLPlainCredentialsSupplier;)V63
+
+method64
+6
+0Recovered#typeBindingLPlainCredentialsSupplier;066
+
+	has param67
+
+calls68
+
+
+references69
+Ó
+Áorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig#withDefault(Ljava/lang/String;LConnection;Ljava/util/Map;LPlainCredentialsSupplier;)Lorg/eclipse/ditto/connectivity/service/messaging/amqp/AmqpSpecificConfig;71
+
+withDefault72
+
+returns73
+(
+"Recovered#typeBindingLConnection;075
+á
+Äorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig#filterForAmqpParameters(Ljava/util/Map;)Ljava/util/Map;77
+5
+/Recovered#typeBindingLUserPasswordCredentials;079
+}
+worg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig#addSaslMechanisms(Ljava/util/LinkedHashMap;Z)V81
+é
+áorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig#addTransportParameters(Ljava/util/LinkedHashMap;LConnection;)V83
+±
+™org.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig#addSpecificConfigParameters(Ljava/util/LinkedHashMap;LConnection;Ljava/util/function/Predicate;)V85
+Ö
+org.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig#filterForJmsParameters(Ljava/util/Map;)Ljava/util/Map;87
+ú
+ïorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig#addParameter(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/Object;)V89
+ç
+Üorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig#addFailoverParameters(Ljava/util/LinkedHashMap;LConnection;)V91
+}
+worg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig#toDefaultConfig(LAmqp10Config;)Ljava/util/Map;93
+
+toDefaultConfig94
+*
+$Recovered#typeBindingLAmqp10Config;096
+{
+uorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig#render(Ljava/lang/String;)Ljava/lang/String;98
+
+render99
+Ü
+org.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig#wrapWithFailOver(Ljava/lang/String;)Ljava/lang/String;101
+ï
+çorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig#joinParameters(Ljava/lang/String;Ljava/util/List;)Ljava/lang/String;103
+
+joinParameters104
+|
+uorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig#encode(Ljava/lang/String;)Ljava/lang/String;106
+y
+rorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig#isPermittedJmsConfig(Ljava/lang/String;)Z108
+
+isPermittedJmsConfig109
+z
+sorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig#isPermittedAmqpConfig(Ljava/lang/String;)Z111
+
+isPermittedAmqpConfig112
+"
+addSpecificConfigParameters113
+
+addSaslMechanisms114
+î
+åorg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig#addCredentials(Ljava/util/LinkedHashMap;LUserPasswordCredentials;)V116
+
+addCredentials117
+
+addTransportParameters118
+r
+korg.eclipse.ditto.connectivity.service.messaging.amqp.AmqpSpecificConfig#isSecuredConnection(LConnection;)Z120
+
+addParameter121
+
+encode122
+
+isSecuredConnection123
+
+addFailoverParameters124
+
+filterForAmqpParameters125
+
+filterForJmsParameters126
+
+wrapWithFailOver127J
+
+1
+12Z
+
+3	
+354jú
+@
+51:
+515215 *
+12 2(26:3B
+	
+9
+16
+
+
+11
+53
+F
+119?
+11912064 *
+1π π(26:3B
+	
+9
+16
+
+11
+123
+@
+97:
+979864 *
+1s s(26:3B
+	
+9
+10
+
+
+11
+99
+@
+36:
+363715 *
+1, ,(26:3B
+	
+9
+16
+
+
+11
+38
+
+57
+575859
+@
+21:
+212215 *
+1' '(26:3B
+	
+9
+16
+
+
+11
+23
+@
+30:
+303115 *
+1* *(26:3B
+	
+9
+16
+
+
+11
+32
+@
+39:
+394015 *
+1- -(26:3B
+	
+9
+16
+
+
+11
+41
+C
+76=
+767764 *
+1“ “(26:3B
+	
+9
+16
+
+11
+125
+F
+107?
+10710864 *
+1Ñ Ñ(26:3B
+	
+9
+16
+
+11
+109
+@
+48:
+484915 *
+11 1(26:3B
+	
+9
+16
+
+
+11
+50
+@
+54:
+545515 *
+13 3(26:3B
+	
+9
+16
+
+
+11
+56
+9
+64
+678 *
+1# #(&:3B
+	
+9
+10
+
+
+11
+12
+F
+115?
+11511664 *
+1ü ü(26:3B
+	
+9
+16
+
+11
+117
+@
+18:
+181915 *
+1& &(26:3B
+	
+9
+16
+
+
+11
+20
+F
+105?
+10510664 *
+1µ µ(26:3B
+	
+9
+16
+
+11
+122
+@
+92:
+929364 *
+1d d(26:3B
+	
+9
+10
+
+
+11
+94
+@
+70:
+707164 *
+1I I(26:3B
+	
+9
+10
+
+
+11
+72
+C
+82=
+828364 *
+1ß ß(26:3B
+	
+9
+16
+
+11
+118
+C
+88=
+888964 *
+1∞ ∞(26:3B
+	
+9
+16
+
+11
+121
+@
+42:
+424315 *
+1. .(26:3B
+	
+9
+16
+
+
+11
+44
+F
+100?
+10010164 *
+1‡ ‡(26:3B
+	
+9
+16
+
+11
+127
+@
+45:
+454615 *
+10 0(26:3B
+	
+9
+16
+
+
+11
+47
+
+74
+747559
+
+65
+656659
+@
+62:
+626364 *
+15 5(26:3B
+	
+9
+16
+
+
+11
+12
+@
+33:
+333415 *
+1+ +(26:3B
+	
+9
+16
+
+
+11
+35
+C
+86=
+868764 *
+1Ÿ Ÿ(26:3B
+	
+9
+16
+
+11
+126
+F
+110?
+11011164 *
+1â â(26:3B
+	
+9
+16
+
+11
+112
+
+95
+959659
+C
+80=
+808164 *
+1ñ ñ(26:3B
+	
+9
+16
+
+11
+114
+D
+102=
+10210364 *
+1} }(26:3B
+	
+9
+16
+
+11
+104
+C
+84=
+848564 *
+1ç ç(26:3B
+	
+9
+16
+
+11
+113
+C
+90=
+909164 *
+1Ω Ω(26:3B
+	
+9
+16
+
+11
+124
+@
+13:
+131415 *
+1% %(26:3B
+	
+9
+16
+
+
+11
+17
+@
+24:
+242515 *
+1( ((26:3B
+	
+9
+16
+
+
+11
+26
+@
+27:
+272815 *
+1) )(26:3B
+	
+9
+16
+
+
+11
+29
+
+78
+787959rî
+
+545760*
+13 3(+
+
+545761*
+13 3(+
+
+545761*
+13, 3(D
+
+626567*
+18 8(+
+
+62668*
+15 5(
+
+626560*
+18, 8(D
+
+626561*
+18 8(+
+
+62661*
+1:	 :(
+
+62669*
+1:	 :(
+
+624569*
+1: :(
+
+62661*
+1;	 ;(
+
+62669*
+1;	 ;(
+
+624869*
+1; ;(
+
+62661*
+1<	 <(
+
+62669*
+1<	 <(
+
+625169*
+1< <(
+
+62661*
+1=	 =(
+
+62669*
+1=	 =(
+
+625761*
+1= =(&
+
+625469*
+1= =(&
+
+70673*
+1I I(%
+
+707467*
+1J J(
+
+706567*
+1L L(+
+
+70661*
+1I I(%
+
+707460*
+1J J((
+
+707461*
+1J J(
+
+706560*
+1L, L(D
+
+706561*
+1L L(+
+
+70669*
+1N8 N(O
+
+707668*
+1N8 N(O
+
+707861*
+1O O(/
+
+70669*
+1P	 P(
+
+708068*
+1P	 P(
+
+70669*
+1Q	 Q(
+
+708268*
+1Q	 Q(
+
+70669*
+1R	 R($
+
+708468*
+1R	 R($
+
+70661*
+1RA R(S
+
+70669*
+1T7 T(M
+
+708668*
+1T7 T(M
+
+70669*
+1U	 U(
+
+708868*
+1U	 U(
+
+701369*
+1U% U(.
+
+70669*
+1W	 W(
+
+709068*
+1W	 W(
+
+70669*
+1X	 X($
+
+708468*
+1X	 X($
+
+70661*
+1X@ X(R
+
+70668*
+1Z Z(&
+
+929567*
+1d= d(I
+
+929560*
+1dJ d(P
+
+929561*
+1d= d(I
+
+92669*
+1f	 f(
+
+928868*
+1f	 f(
+
+921869*
+1f% f(4
+
+92669*
+1g	 g(
+
+928868*
+1g	 g(
+
+922169*
+1g% g(1
+
+92669*
+1h	 h(
+
+928868*
+1h	 h(
+
+922469*
+1h% h(4
+
+92669*
+1i	 i(
+
+928868*
+1i	 i(
+
+922769*
+1i% i(4
+
+975469*
+1t+ t(C
+
+975761*
+1t+ t(C
+
+975469*
+1t+ t(C
+
+975169*
+1u u(
+
+97669*
+1v% v(5
+
+9710068*
+1v% v(5
+
+97669*
+1v6 v(D
+
+9710268*
+1v6 v(D
+
+974569*
+1va v(o
+
+97669*
+1w w("
+
+9710268*
+1w w("
+
+974869*
+1w5 w(B
+
+97669*
+1y y("
+
+9710268*
+1y y("
+
+974569*
+1y? y(M
+
+974869*
+1yO y(\
+
+102669*
+1Ä6 Ä(<
+
+10210568*
+1Ä6 Ä(<
+
+102669*
+1ÄN Ä(T
+
+10210568*
+1ÄN Ä(T
+
+847467*
+1é é(
+
+847460*
+1é é((
+
+847461*
+1é é(
+
+80669*
+1ô ô(
+
+808868*
+1ô ô(
+
+803669*
+1ô& ô(5
+
+80669*
+1õ õ(
+
+808868*
+1õ õ(
+
+803669*
+1õ& õ(5
+
+1157867*
+1† †(*
+
+1157860*
+1†+ †(6
+
+1157861*
+1† †(*
+
+115669*
+1¢	 ¢(
+
+1158868*
+1¢	 ¢(
+
+1153069*
+1¢" ¢(*
+
+115669*
+1£	 £(
+
+1158868*
+1£	 £(
+
+1153369*
+1£" £(*
+
+827467*
+1® ®(
+
+827460*
+1® ®((
+
+827461*
+1® ®(
+
+82669*
+1© ©( 
+
+8211968*
+1© ©( 
+
+82669*
+1´ ´(
+
+828868*
+1´ ´(
+
+823969*
+1´& ´(/
+
+82669*
+1¨ ¨(
+
+828868*
+1¨ ¨(
+
+824269*
+1¨& ¨(1
+
+1197467*
+1π6 π(@
+
+1197460*
+1πA π(K
+
+1197461*
+1π6 π(@
+
+907467*
+1æ æ(
+
+907460*
+1æ æ((
+
+907461*
+1æ æ(
+
+90669*
+1» »(
+
+908868*
+1» »(
+
+90669*
+1… …(
+
+908868*
+1… …(
+
+90669*
+1   (
+
+908868*
+1   (
+
+90669*
+1À À(
+
+908868*
+1À À(
+
+90669*
+1Ã Ã(
+
+908868*
+1Ã Ã(
+
+90669*
+1Õ Õ(
+
+908868*
+1Õ Õ(
+
+90669*
+1Œ Œ(
+
+908868*
+1Œ Œ(
+
+76669*
+1’" ’(7
+
+7611068*
+1’" ’(7

@@ -1,0 +1,213 @@
+
+Xorg.eclipse.ditto.connectivity.service.messaging.kafka.TransformationResult#isExpired()Z¢
+ó/Users/Maheen/Downloads/ditto-3.7.4/connectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/kafka/TransformationResult.javaG G("24*”
+24H, H(4≤
+Ø
+H, H(P
+%0"Ejava.util.Optional#ofNullable(Ljava/lang/Object;)Ljava/util/Optional;*2
+
+__unknown_file ("
+java.util.Optional*"
+
+__unknown_file (
+""ß
+§
+I I(p
+%1"__declareFunction*
+
+__unknown_file (ca
+___sonar_lambda_1013$org.eclipse.ditto.connectivity.service.messaging.kafka.TransformationResultP
+N
+H J($
+headersjava.util.Map"__id*"
+
+__unknown_file (
+""Ö
+Ç
+K K(&
+%2java.time.Instant"*java.time.Instant#now()Ljava/time/Instant;*1
+
+__unknown_file ("
+java.time.InstantÉÄ
+K K(5
+
+%3long"!java.time.Instant#toEpochMilli()J*5
+
+__unknown_file (
+
+%2java.time.Instant2toEpochMilli()*
+23*∏
+13R/ R(2°û
+R5 R(O
+%14java.lang.Long"*java.util.Optional#get()Ljava/lang/Object;*H
+
+__unknown_file (,
+*
+creationTimeOptionaljava.util.Optional2get()*
+12*¶
+15Q4 Q(?åâ
+Q4 Q(K
+%13boolean"java.util.Optional#isPresent()Z*?
+
+__unknown_file (#
+!
+ttlOptionaljava.util.Optional2isPresent()*
+13
+9*ü
+17O P(*n
+l
+O P(*!
+ttlOptionaljava.util.Optional"__id*7
+
+__unknown_file (
+
+%11java.util.Optionalïí
+Q Q(0
+%12boolean"java.util.Optional#isPresent()Z*H
+
+__unknown_file (,
+*
+creationTimeOptionaljava.util.Optional2isPresent()*
+15
+9*ã
+18P P((ÙÒ
+O/ P()
+%11java.util.Optional"Ijava.util.Optional#map(Ljava/util/function/Function;)Ljava/util/Optional;*7
+
+__unknown_file (
+
+%10java.util.Optional*"
+
+__unknown_file (
+""2"map(Ljava/util/function/Function;)*
+17*
+19O/ O(TŸ
+÷
+O/ O(T
+%10java.util.Optional"Ejava.util.Optional#ofNullable(Ljava/lang/Object;)Ljava/util/Optional;*2
+
+__unknown_file ("
+java.util.Optional*4
+
+__unknown_file (
+
+%9java.lang.String*
+18*!
+9Y Y("
+Y Y(
+""*˝
+20M N(*v
+t
+M N(**
+creationTimeOptionaljava.util.Optional"__id*6
+
+__unknown_file (
+
+%7java.util.OptionalO
+M
+OO O(R
+%8java.lang.String"__id*#
+
+__unknown_file (
+ttlù
+ö
+OC O(S
+%9java.lang.String"__mapGet*6
+
+__unknown_file (
+
+headersjava.util.Map*4
+
+__unknown_file (
+
+%8java.lang.String*
+19*â
+21N N((ÚÔ
+M8 N()
+%7java.util.Optional"Ijava.util.Optional#map(Ljava/util/function/Function;)Ljava/util/Optional;*6
+
+__unknown_file (
+
+%6java.util.Optional*"
+
+__unknown_file (
+""2"map(Ljava/util/function/Function;)*
+20*"
+10W W("
+W W(
+""*Ô
+22M8 M(gÿ
+’
+M8 M(g
+%6java.util.Optional"Ejava.util.Optional#ofNullable(Ljava/lang/Object;)Ljava/util/Optional;*2
+
+__unknown_file ("
+java.util.Optional*4
+
+__unknown_file (
+
+%5java.lang.String*
+21*ä
+11S# S(It
+r
+S# S(I
+%17boolean"	__compare*
+S5 S(7
+>=*
+S# S(4
+""*#
+S8 S(I
+
+%16java.lang.Long=
+;
+T T(
+%18"__id*"
+
+__unknown_file (
+""æ
+ª
+T U(=
+%19java.lang.String"__concat*_
+T T(nSQ
+OEvaluating Kafka message expiry with creation-time: <{}>, time since creation: *+
+U  U(=
+<{}> and ttl: <{}> to: <{}>*
+10*è
+23M8 M(@Y
+W
+MX M(e
+%4java.lang.String"__id*-
+
+__unknown_file (
+creation-timeù
+ö
+ML M(f
+%5java.lang.String"__mapGet*6
+
+__unknown_file (
+
+headersjava.util.Map*4
+
+__unknown_file (
+
+%4java.lang.String*
+22*£
+12R/ R(Or
+p
+R/ R(O
+%15long"__calculate*
+R3 R(4
+-*
+R/ R(2
+""*#
+R5 R(O
+
+%14java.lang.Longòï
+S8 S(I
+%16java.lang.Long"*java.util.Optional#get()Ljava/lang/Object;*?
+
+__unknown_file (#
+!
+ttlOptionaljava.util.Optional2get()*
+11BOM
+Korg.eclipse.ditto.connectivity.service.messaging.kafka.TransformationResultX

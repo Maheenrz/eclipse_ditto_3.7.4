@@ -1,0 +1,919 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508703311*java2.Bå
+z
+uconnectivity/service/src/test/java/org/eclipse/ditto/connectivity/service/messaging/validation/HostValidatorTest.java2
+
+package4
+@
+;org.eclipse.ditto.connectivity.service.messaging.validation5
+R
+Morg.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+HostValidatorTest12
+a
+[org.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest.DITTO_HEADERS14
+
+field15
+
+private16
+
+DITTO_HEADERS17
+
+DittoHeaders19
+
+unknown20
+
+is type21
+
+
+uses22
+d
+^org.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest.connectionConfig24
+
+connectionConfig25
+
+ConnectionConfig27
+f
+`org.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest.connectivityConfig29
+
+connectivityConfig30
+
+ConnectivityConfig32
+b
+\org.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest.loggingAdapter34
+
+loggingAdapter35
+
+LoggingAdapter37
+\
+Vorg.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest#setUp()V39
+
+method40
+
+setUp41
+
+Before43
+
+annotated by44
+$
+Recovered#typeBindingLBefore;046
+
+
+references47
+0
+*Recovered#typeBindingLConnectivityConfig;049
+.
+(Recovered#typeBindingLConnectionConfig;051
+,
+&Recovered#typeBindingLLoggingAdapter;053
+n
+horg.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest#testAllowedBlockedHosts()V55
+
+testAllowedBlockedHosts56
+
+
+Test58
+"
+Recovered#typeBindingLTest;060
++
+%Recovered#typeBindingLHostValidator;062
+
+HostValidator64
+
+returns65
+ñ
+èorg.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest#getHostValidatorWithAllowlist([Ljava/lang/String;)LHostValidator;67
+
+calls68
+x
+rorg.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest#assertValid(LHostValidationResult;)V70
+z
+torg.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest#expectValidationFailsForInvalidHost()V72
+)
+#expectValidationFailsForInvalidHost73
+2
+,Recovered#typeBindingLHostValidationResult;075
+E
+?Recovered#typeBindingLConnectionConfigurationInvalidException;077
+Ö
+org.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest#expectConfiguredAllowedAndBlockedHostIsAllowed()V79
+4
+.expectConfiguredAllowedAndBlockedHostIsAllowed80
+¡
+∫org.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest#getHostValidatorWithCustomResolver(LDefaultHostValidator/AddressResolver;[Ljava/lang/String;)LHostValidator;82
+{
+uorg.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest#expectConfiguredBlockedHostIsBlocked()V84
+*
+$expectConfiguredBlockedHostIsBlocked85
+Æ
+ßorg.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest#getHostValidatorWithCustomResolver(LDefaultHostValidator/AddressResolver;)LHostValidator;87
+q
+korg.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest#expectBlockedHostIsBlocked()V89
+ 
+expectBlockedHostIsBlocked90
+2
+,Recovered#typeBindingLDefaultHostValidator;092
+z
+torg.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest#expectIpsInBlockedSubnetsAreBlocked()V94
+)
+#expectIpsInBlockedSubnetsAreBlocked95
+z
+torg.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest#expectKubernetesClusterDNSIsBlocked()V97
+)
+#expectKubernetesClusterDNSIsBlocked98
+é
+Üorg.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest#getHostValidatorWithBlockedRegexPattern()LHostValidator;100
+é
+Üorg.eclipse.ditto.connectivity.service.messaging.validation.HostValidatorTest#resolveHost(Ljava/lang/String;[B)[Ljava/net/InetAddress;102
+
+resolveHost103
+$
+getHostValidatorWithAllowlist104
+)
+"getHostValidatorWithCustomResolver105
+
+	has param106
+.
+'getHostValidatorWithBlockedRegexPattern107
+
+assertValid108J
+
+1
+12Z
+
+3	
+354j∑
+
+42
+424320
+
+61
+616220
+@
+71:
+717240 *
+1G G(26:3B
+	
+9
+10
+
+
+11
+73
+C
+66=
+666740 *
+1ê ê(26:3B
+	
+9
+16
+
+11
+104
+@
+88:
+888940 *
+1f f(26:3B
+	
+9
+10
+
+
+11
+90
+F
+101?
+10110240 *
+1ä ä(26:3B
+	
+9
+16
+
+11
+103
+@
+38:
+383940 *
+1- -(26:3B
+	
+9
+10
+
+
+11
+41
+
+74
+747520
+D
+99>
+9910040 *
+1† †(26:3B
+	
+9
+16
+
+11
+107
+@
+33:
+333415 *
+1+ +(26:3B
+	
+9
+16
+
+
+11
+35
+C
+69=
+697040 *
+1• •(26:3B
+	
+9
+16
+
+11
+108
+
+31
+313220
+@
+13:
+131415 *
+1( ((26:3B
+	
+9
+16
+
+
+11
+17
+
+45
+454620
+
+57
+575820
+C
+81=
+818240 *
+1ö ö(26:3B
+	
+9
+16
+
+11
+105
+
+63
+636420
+@
+83:
+838440 *
+1] ](26:3B
+	
+9
+10
+
+
+11
+85
+@
+28:
+282915 *
+1* *(26:3B
+	
+9
+16
+
+
+11
+30
+
+26
+262720
+9
+64
+678 *
+1& &(:3B
+	
+9
+10
+
+
+11
+12
+C
+86=
+868740 *
+1ï ï(26:3B
+	
+9
+16
+
+11
+105
+B
+96<
+969740 *
+1É É(26:3B
+	
+9
+10
+
+
+11
+98
+@
+78:
+787940 *
+1S S(26:3B
+	
+9
+10
+
+
+11
+80
+@
+93:
+939440 *
+1y y(26:3B
+	
+9
+10
+
+
+11
+95
+@
+54:
+545540 *
+19 9(26:3B
+	
+9
+10
+
+
+11
+56
+
+91
+919220
+
+50
+505120
+
+18
+181920
+
+48
+484920
+@
+23:
+232415 *
+1) )(26:3B
+	
+9
+16
+
+
+11
+25
+
+59
+596020
+
+36
+363720
+
+76
+767720
+
+52
+525320r¥$
+
+131821*
+1( ((&
+
+131822*
+1( ((&
+
+131822*
+1(' ((4
+
+232621*
+1) )(
+
+232622*
+1) )(
+
+232622*
+1) )(.
+
+283121*
+1* *(
+
+283122*
+1* *(
+
+283122*
+1*  *(2
+
+333621*
+1+ +(
+
+333622*
+1+ +(
+
+333622*
+1+ +(*
+
+384244*
+1- -(
+
+384522*
+1- -(
+
+383122*
+1/	 /(
+
+382847*
+1/	 /(
+
+384822*
+1/# /(5
+
+382622*
+10	 0(
+
+382347*
+10	 0(
+
+385022*
+10! 0(1
+
+382847*
+11 1( 
+
+383122*
+11 1( 
+
+382847*
+11 1( 
+
+382622*
+11C 1(S
+
+382347*
+11C 1(S
+
+383622*
+12	 2(
+
+383347*
+12	 2(
+
+385222*
+12 2(-
+
+382347*
+14 4(
+
+382622*
+14 4(
+
+382347*
+14 4(
+
+382347*
+15 5(
+
+382622*
+15 5(
+
+382347*
+15 5(
+
+382347*
+16 6(
+
+382622*
+16 6(
+
+382347*
+16 6(
+
+545744*
+19 9(
+
+545922*
+19 9(
+
+
+546121*
+1< <(&
+
+546122*
+1< <(
+
+546365*
+1= =(.
+
+54647*
+1= =(.
+
+546668*
+1= =(.
+
+54647*
+1@	 @(
+
+546968*
+1@	 @(
+
+54647*
+1A	 A(
+
+546968*
+1A	 A(
+
+54647*
+1B	 B(
+
+546968*
+1B	 B(
+
+54647*
+1C	 C(
+
+546968*
+1C	 C(
+
+54647*
+1D	 D(
+
+546968*
+1D	 D(
+
+715744*
+1G G(
+
+715922*
+1G G(
+
+
+716121*
+1I I(&
+
+716122*
+1I I(
+
+716365*
+1I) I(F
+
+71647*
+1I) I(F
+
+716668*
+1I) I(F
+
+717421*
+1J$ J(4
+
+717422*
+1J J(#
+
+717621*
+1N7 N(@
+
+717622*
+1N N(6
+
+711822*
+1N` N(m
+
+711347*
+1N` N(m
+
+711822*
+1O; O(H
+
+711347*
+1O; O(H
+
+785744*
+1S S(
+
+785922*
+1S S(
+
+
+786121*
+1V V(&
+
+786122*
+1V V(
+
+786365*
+1W W(3
+
+78647*
+1W W(3
+
+788168*
+1W W(3
+
+78622*
+1W4 W(E
+
+787421*
+1X$ X(4
+
+787422*
+1X X(#
+
+835744*
+1] ](
+
+835922*
+1] ](
+
+
+836121*
+1_ _(&
+
+836122*
+1_ _(
+
+836365*
+1_) _(K
+
+83647*
+1_) _(K
+
+838668*
+1_) _(K
+
+83622*
+1_L _(]
+
+837421*
+1`$ `(4
+
+837422*
+1` `(#
+
+831822*
+1c1 c(>
+
+831347*
+1c1 c(>
+
+831822*
+1c] c(j
+
+831347*
+1c] c(j
+
+885744*
+1f f(
+
+885922*
+1f f(
+
+
+882347*
+1l l(
+
+882622*
+1l l(
+
+882347*
+1l l(
+
+889121*
+1o4 o(E
+
+889122*
+1o o(#
+
+889122*
+1o$ o(3
+
+886121*
+1r r(&
+
+886122*
+1r r(
+
+886365*
+1r) r(K
+
+88647*
+1r) r(K
+
+888668*
+1r) r(K
+
+887421*
+1t$ t(4
+
+887422*
+1t t(#
+
+935744*
+1y y(
+
+935922*
+1y y(
+
+
+936121*
+1{ {(&
+
+936122*
+1{ {(
+
+936365*
+1{) {(F
+
+93647*
+1{) {(F
+
+936668*
+1{) {(F
+
+965744*
+1É É(
+
+965922*
+1É É(
+
+
+966121*
+1Ö Ö(&
+
+966122*
+1Ö Ö(
+
+966365*
+1Ö) Ö(P
+
+96647*
+1Ö) Ö(P
+
+969968*
+1Ö) Ö(P
+
+666365*
+1ê ê(
+
+666322*
+1ê ê(
+
+662347*
+1ë ë(
+
+662622*
+1ë ë(
+
+662347*
+1ë ë(
+
+663122*
+1í) í(;
+
+662847*
+1í) í(;
+
+663622*
+1í= í(K
+
+663347*
+1í= í(K
+
+866365*
+1ï ï(
+
+8691106*
+1ïD ï(X
+
+866322*
+1ï ï(
+
+869121*
+1ïi ï(q
+
+869122*
+1ïD ï(X
+
+869122*
+1ïY ï(h
+
+862347*
+1ñ ñ(
+
+862622*
+1ñ ñ(
+
+862347*
+1ñ ñ(
+
+863122*
+1ó) ó(;
+
+862847*
+1ó) ó(;
+
+863622*
+1ó= ó(K
+
+863347*
+1ó= ó(K
+
+816365*
+1ö ö(
+
+8191106*
+1öD ö(X
+
+816322*
+1ö ö(
+
+819121*
+1öi ö(q
+
+819122*
+1öD ö(X
+
+819122*
+1öY ö(h
+
+812347*
+1ú ú(
+
+812622*
+1ú ú(
+
+812347*
+1ú ú(
+
+813122*
+1ù) ù(;
+
+812847*
+1ù) ù(;
+
+813622*
+1ù= ù(K
+
+813347*
+1ù= ù(K
+
+996365*
+1† †(
+
+996322*
+1† †(
+
+992347*
+1° °(
+
+992622*
+1° °(
+
+992347*
+1° °(
+
+993122*
+1¢) ¢(;
+
+992847*
+1¢) ¢(;
+
+993622*
+1¢= ¢(K
+
+993347*
+1¢= ¢(K
+
+6974106*
+1•$ •(8
+
+697421*
+1•9 •(?
+
+697422*
+1•$ •(8

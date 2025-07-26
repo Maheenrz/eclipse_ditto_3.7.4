@@ -1,0 +1,1333 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508796141*java2.Bû0
+|
+wconnectivity/service/src/test/java/org/eclipse/ditto/connectivity/service/messaging/httppush/AwsRequestSigningTest.java2
+
+package4
+>
+9org.eclipse.ditto.connectivity.service.messaging.httppush5
+T
+Oorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+AwsRequestSigningTest12
+`
+Zorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest.ACCESS_KEY14
+
+field15
+
+private16
+
+
+ACCESS_KEY17
+`
+Zorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest.SECRET_KEY19
+
+
+SECRET_KEY20
+`
+Zorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest.X_AMZ_DATE22
+
+
+X_AMZ_DATE23
+a
+[org.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest.REGION_NAME25
+
+REGION_NAME26
+b
+\org.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest.SERVICE_NAME28
+
+SERVICE_NAME29
+Z
+Torg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest.BODY31
+
+
+BODY32
+j
+dorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest.X_AMZ_CONTENT_SHA25634
+
+X_AMZ_CONTENT_SHA25635
+)
+#AwsRequestSigning.XAmzContentSha25637
+
+unknown38
+
+is type39
+/
+)Recovered#typeBindingLAwsRequestSigning;041
+
+
+uses42
+a
+[org.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest.actorSystem44
+
+actorSystem45
+
+ActorSystem47
+a
+[org.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#shutdown()V49
+
+method50
+
+shutdown51
+
+After53
+
+annotated by54
+#
+Recovered#typeBindingLAfter;056
+
+
+references57
+k
+eorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#testCanonicalQuery()V59
+
+testCanonicalQuery60
+
+
+Test62
+"
+Recovered#typeBindingLTest;064
+!
+Recovered#typeBindingLUri;066
+Å
+{org.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#testCanonicalQueryWithEmptyParameterList()V68
+.
+(testCanonicalQueryWithEmptyParameterList69
+É
+}org.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#testCanonicalQueryWithUnreservedCharacters()V71
+0
+*testCanonicalQueryWithUnreservedCharacters72
+ü
+òorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#testCanonicalQueryWithDoubleEncodingOfEqualsCharacterInParameterValue()V74
+K
+EtestCanonicalQueryWithDoubleEncodingOfEqualsCharacterInParameterValue75
+Ñ
+~org.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#testCanonicalQueryWithParameterWithoutValue()V77
+1
++testCanonicalQueryWithParameterWithoutValue78
+m
+gorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#testCanonicalHeaders()V80
+
+testCanonicalHeaders81
+)
+#Recovered#typeBindingLContentType;083
++
+%Recovered#typeBindingLRequestEntity;085
+(
+"Recovered#typeBindingLHttpHeader;087
+)
+#Recovered#typeBindingLHttpRequest;089
+n
+horg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#testXAmzContentSha256()V91
+
+testXAmzContentSha25692
+
+HttpRequest94
+
+returns95
+y
+sorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#getSampleHttpRequest()LHttpRequest;97
+
+calls98
+n
+gorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#testRequestSignature()V100
+
+testRequestSignature101
+å
+Ñorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#getCanonicalRequest(LHttpRequest;)Ljava/lang/String;103
+à
+Äorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#getStringToSign(LHttpRequest;)Ljava/lang/String;105
+u
+norg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#getKSecret()Ljava/lang/String;107
+s
+lorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#getKDate()Ljava/lang/String;109
+u
+norg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#getKRegion()Ljava/lang/String;111
+v
+oorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#getKService()Ljava/lang/String;113
+v
+oorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#getKSigning()Ljava/lang/String;115
+~
+worg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#signRequest(LHttpRequest;)LHttpRequest;117
+|
+uorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#testRequestSignatureWithoutPayload()V119
+)
+"testRequestSignatureWithoutPayload120
+è
+áorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#getSampleHttpRequestWithoutRequestEntity()LHttpRequest;122
+l
+eorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#testS3CanonicalUri()V124
+
+testS3CanonicalUri125
+y
+rorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#testS3CanonicalUriWithEmptyPath()V127
+&
+testS3CanonicalUriWithEmptyPath128
+Ö
+~org.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#testS3CanonicalUriWithEmptyPathButWithSlash()V130
+2
++testS3CanonicalUriWithEmptyPathButWithSlash131
+â
+Åorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#testS3CanonicalUriIsNormalizedAndSinglyEncoded()V133
+5
+.testS3CanonicalUriIsNormalizedAndSinglyEncoded134
+o
+horg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#testNonS3CanonicalUrl()V136
+
+testNonS3CanonicalUrl137
+p
+iorg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#testS3CanonicalRequest()V139
+
+testS3CanonicalRequest140
+/
+(getSampleHttpRequestWithoutRequestEntity141
+
+getSampleHttpRequest142
+
+signRequest143
+
+	has param144
+
+getStringToSign145
+
+getCanonicalRequest146
+
+
+getKSecret147
+r
+korg.eclipse.ditto.connectivity.service.messaging.httppush.AwsRequestSigningTest#toHex([B)Ljava/lang/String;149
+
+getKDate150
+
+
+getKRegion151
+
+getKService152
+
+getKSigning153
+
+toHex154J
+
+1
+12Z
+
+3	
+354j∏
+C
+96=
+969750 *
+1‡ ‡(26:3B
+	
+9
+16
+
+11
+142
+9
+64
+678 *
+1* *():3B
+	
+9
+10
+
+
+11
+12
+
+40
+404138
+F
+123?
+12312450 *
+1û û(26:3B
+	
+9
+10
+
+11
+125
+@
+67:
+676850 *
+1a a(26:3B
+	
+9
+10
+
+
+11
+69
+@
+21:
+212215 *
+10 0(26:3B
+	
+9
+16
+
+
+11
+23
+
+61
+616238
+B
+76<
+767750 *
+1Ñ Ñ(26:3B
+	
+9
+10
+
+
+11
+78
+F
+110?
+11011150 *
+1Ü Ü(26:3B
+	
+9
+16
+
+11
+151
+F
+102?
+10210350 *
+1ˆ ˆ(26:3B
+	
+9
+16
+
+11
+146
+@
+43:
+434415 *
+1; ;(26:3B
+	
+9
+16
+
+
+11
+45
+F
+104?
+10410550 *
+1 (26:3B
+	
+9
+16
+
+11
+145
+F
+106?
+10610750 *
+1˛ ˛(26:3B
+	
+9
+16
+
+11
+147
+F
+116?
+11611750 *
+1Á Á(26:3B
+	
+9
+16
+
+11
+143
+F
+108?
+10810950 *
+1Ç Ç(26:3B
+	
+9
+16
+
+11
+150
+F
+112?
+11211350 *
+1ä ä(26:3B
+	
+9
+16
+
+11
+152
+F
+132?
+13213350 *
+1≥ ≥(26:3B
+	
+9
+10
+
+11
+134
+
+36
+363738
+D
+99>
+9910050 *
+1œ œ(26:3B
+	
+9
+10
+
+11
+101
+F
+114?
+11411550 *
+1é é(26:3B
+	
+9
+16
+
+11
+153
+@
+24:
+242515 *
+12 2(26:3B
+	
+9
+16
+
+
+11
+26
+
+63
+636438
+
+88
+888938
+B
+79<
+798050 *
+1ê ê(26:3B
+	
+9
+10
+
+
+11
+81
+
+46
+464738
+@
+27:
+272815 *
+14 4(26:3B
+	
+9
+16
+
+
+11
+29
+
+55
+555638
+F
+118?
+11811950 *
+1Ç Ç(26:3B
+	
+9
+10
+
+11
+120
+F
+129?
+12913050 *
+1¨ ¨(26:3B
+	
+9
+10
+
+11
+131
+F
+135?
+13513650 *
+1ª ª(26:3B
+	
+9
+10
+
+11
+137
+@
+30:
+303115 *
+16 6(26:3B
+	
+9
+16
+
+
+11
+32
+@
+48:
+484950 *
+1= =(26:3B
+	
+9
+10
+
+
+11
+51
+@
+58:
+585950 *
+1B B(26:3B
+	
+9
+10
+
+
+11
+60
+
+65
+656638
+@
+70:
+707150 *
+1l l(26:3B
+	
+9
+10
+
+
+11
+72
+F
+138?
+13813950 *
+1¬ ¬(26:3B
+	
+9
+10
+
+11
+140
+B
+90<
+909150 *
+1µ µ(26:3B
+	
+9
+10
+
+
+11
+92
+
+82
+828338
+@
+18:
+181915 *
+1. .(26:3B
+	
+9
+16
+
+
+11
+20
+
+93
+939438
+@
+33:
+333415 *
+18 8(26:3B
+	
+9
+16
+
+
+11
+35
+F
+126?
+12612750 *
+1• •(26:3B
+	
+9
+10
+
+11
+128
+@
+13:
+131415 *
+1, ,(26:3B
+	
+9
+16
+
+
+11
+17
+@
+73:
+737450 *
+1x x(26:3B
+	
+9
+10
+
+
+11
+75
+
+84
+848538
+
+86
+868738
+F
+121?
+12112250 *
+1Ÿ Ÿ(26:3B
+	
+9
+16
+
+11
+141
+
+52
+525338
+F
+148?
+14814950 *
+1í í(26:3B
+	
+9
+16
+
+11
+154rﬁ3
+
+333639*
+18 8(+
+
+334042*
+18 8(+
+
+333642*
+18, 8(=
+
+333642*
+18> 8(R
+
+434639*
+1; ;(
+
+434642*
+1; ;(
+
+434642*
+1; ;(*
+
+485254*
+1= =(
+
+485542*
+1= =(
+
+484642*
+1?% ?(0
+
+484357*
+1?% ?(0
+
+586154*
+1B B(
+
+586342*
+1B B(
+
+
+586539*
+1D D(
+
+586542*
+1D D(
+
+676154*
+1a a(
+
+676342*
+1a a(
+
+
+676539*
+1c c(
+
+676542*
+1c c(
+
+706154*
+1l l(
+
+706342*
+1l l(
+
+
+706539*
+1n n(
+
+706542*
+1n n(
+
+736154*
+1x x(
+
+736342*
+1x x(
+
+
+736539*
+1z z(
+
+736542*
+1z z(
+
+766154*
+1Ñ Ñ(
+
+766342*
+1Ñ Ñ(
+
+
+766539*
+1Ü Ü(
+
+766542*
+1Ü Ü(
+
+796154*
+1ê ê(
+
+796342*
+1ê ê(
+
+
+798239*
+1ì ì(&
+
+798242*
+1ì ì(
+
+798439*
+1î î(!
+
+798442*
+1î î(
+
+798642*
+1ï ï(
+
+798839*
+1ú ú("
+
+798842*
+1ú ú(
+
+794039*
+1¨! ¨(*
+
+794042*
+1¨ ¨( 
+
+794642*
+1≠' ≠(2
+
+794357*
+1≠' ≠(2
+
+792457*
+1≠C ≠(N
+
+792757*
+1≠P ≠(\
+
+791357*
+1≠^ ≠(h
+
+791857*
+1Æ Æ(#
+
+793642*
+1ÆC Æ(W
+
+793357*
+1ÆC Æ(W
+
+906154*
+1µ µ(
+
+906342*
+1µ µ(
+
+
+908839*
+1∑ ∑("
+
+908842*
+1∑ ∑(
+
+909395*
+1∑% ∑(9
+
+90657*
+1∑% ∑(9
+
+909698*
+1∑% ∑(9
+
+904042*
+1π π()
+
+904042*
+1π* π(;
+
+904042*
+1π= π(N
+
+903639*
+1πZ π(k
+
+904642*
+1∫' ∫(2
+
+904357*
+1∫' ∫(2
+
+902457*
+1∫E ∫(P
+
+902757*
+1∫R ∫(^
+
+901357*
+1∫` ∫(j
+
+901857*
+1ª ª(#
+
+996154*
+1œ œ(
+
+996342*
+1œ œ(
+
+
+998839*
+1— —((
+
+998842*
+1— —(
+
+999395*
+1—+ —(?
+
+99657*
+1—+ —(?
+
+999698*
+1—+ —(?
+
+99657*
+1€ €('
+
+9910298*
+1€ €('
+
+99657*
+1‰% ‰(4
+
+9910498*
+1‰% ‰(4
+
+99657*
+1Á Á(
+
+9910698*
+1Á Á(
+
+99657*
+1Í Í(
+
+9910898*
+1Í Í(
+
+99657*
+1Ì Ì(
+
+9911098*
+1Ì Ì(
+
+99657*
+1 (
+
+9911298*
+1 (
+
+99657*
+1Û Û(
+
+9911498*
+1Û Û(
+
+998839*
+1˚ ˚(0
+
+998842*
+1˚ ˚(
+
+999395*
+1˚3 ˚(G
+
+99657*
+1˚3 ˚(G
+
+999698*
+1˚3 ˚(G
+
+998839*
+1˛ ˛((
+
+998842*
+1˛ ˛(
+
+999395*
+1˛+ ˛(6
+
+99657*
+1˛+ ˛(6
+
+9911698*
+1˛+ ˛(6
+
+1186154*
+1Ç Ç(
+
+1186342*
+1Ç Ç(
+
+
+1188839*
+1Ñ Ñ((
+
+1188842*
+1Ñ Ñ(
+
+1189395*
+1Ñ+ Ñ(S
+
+118657*
+1Ñ+ Ñ(S
+
+11812198*
+1Ñ+ Ñ(S
+
+118657*
+1é é('
+
+11810298*
+1é é('
+
+1188839*
+1ó ó(0
+
+1188842*
+1ó ó(
+
+1189395*
+1ó3 ó([
+
+118657*
+1ó3 ó([
+
+11812198*
+1ó3 ó([
+
+1188839*
+1ö ö((
+
+1188842*
+1ö ö(
+
+1189395*
+1ö+ ö(6
+
+118657*
+1ö+ ö(6
+
+11811698*
+1ö+ ö(6
+
+1236154*
+1û û(
+
+1236342*
+1û û(
+
+
+1236539*
+1† †(
+
+1236542*
+1† †(
+
+1266154*
+1• •(
+
+1266342*
+1• •(
+
+
+1266539*
+1ß ß(
+
+1266542*
+1ß ß(
+
+1296154*
+1¨ ¨(
+
+1296342*
+1¨ ¨(
+
+
+1296539*
+1Æ Æ(
+
+1296542*
+1Æ Æ(
+
+1326154*
+1≥ ≥(
+
+1326342*
+1≥ ≥(
+
+
+1326539*
+1∂ ∂(
+
+1326542*
+1∂ ∂(
+
+1356154*
+1ª ª(
+
+1356342*
+1ª ª(
+
+
+1356539*
+1Ω Ω(
+
+1356542*
+1Ω Ω(
+
+1386154*
+1¬ ¬(
+
+1386342*
+1¬ ¬(
+
+
+1388839*
+1ƒ ƒ("
+
+1388842*
+1ƒ ƒ(
+
+1389395*
+1ƒ% ƒ(M
+
+138657*
+1ƒ% ƒ(M
+
+13812198*
+1ƒ% ƒ(M
+
+1384039*
+1«! «(*
+
+1384042*
+1« «( 
+
+1384642*
+1»' »(2
+
+1384357*
+1»' »(2
+
+1382457*
+1»E »(P
+
+1382757*
+1»R »(^
+
+1381357*
+1»` »(j
+
+1381857*
+1… …(#
+
+1383642*
+1…D …(X
+
+1383357*
+1…D …(X
+
+1219395*
+1Ÿ Ÿ(
+
+1219342*
+1Ÿ Ÿ(
+
+969395*
+1‡ ‡(
+
+969342*
+1‡ ‡(
+
+963057*
+1‚C ‚(G
+
+969395*
+1„ „(8
+
+96657*
+1„ „(8
+
+9612198*
+1„ „(8
+
+1169395*
+1Á Á(
+
+11688144*
+1Á+ Á(6
+
+1169342*
+1Á Á(
+
+1168839*
+1Á7 Á(F
+
+1168842*
+1Á+ Á(6
+
+1164642*
+1Ë& Ë(1
+
+1164357*
+1Ë& Ë(1
+
+1162457*
+1ËR Ë(]
+
+1162757*
+1Ë_ Ë(k
+
+1161357*
+1Ëm Ë(w
+
+1161857*
+1È È(
+
+1163642*
+1È; È(O
+
+1163357*
+1È; È(O
+
+1162157*
+1Í( Í(2
+
+1164642*
+1Î' Î(2
+
+1164357*
+1Î' Î(2
+
+10488144*
+1* (5
+
+1048839*
+16 (A
+
+1048842*
+1* (5
+
+1044642*
+1Ò& Ò(1
+
+1044357*
+1Ò& Ò(1
+
+1042457*
+1ÒR Ò(]
+
+1042757*
+1Ò_ Ò(k
+
+1041357*
+1Òm Ò(w
+
+1041857*
+1Ú Ú(
+
+1043642*
+1Ú; Ú(O
+
+1043357*
+1Ú; Ú(O
+
+1042157*
+1Û/ Û(9
+
+10288144*
+1ˆ. ˆ(9
+
+1028839*
+1ˆ: ˆ(E
+
+1028842*
+1ˆ. ˆ(9
+
+1024039*
+1˜! ˜(/
+
+1024042*
+1˜ ˜( 
+
+1024642*
+1¯' ¯(2
+
+1024357*
+1¯' ¯(2
+
+1022457*
+1¯S ¯(^
+
+1022757*
+1¯` ¯(l
+
+1021357*
+1¯n ¯(x
+
+1021857*
+1˘ ˘(#
+
+1023642*
+1˘C ˘(W
+
+1023357*
+1˘C ˘(W
+
+1022157*
+1˙@ ˙(J
+
+106657*
+1ˇ ˇ(
+
+10614898*
+1ˇ ˇ(
+
+1061857*
+1ˇ3 ˇ(=
+
+108657*
+1É É(
+
+10814898*
+1É É(
+
+108657*
+1É< É(F
+
+10810698*
+1É< É(F
+
+1082157*
+1ÉK É(U
+
+110657*
+1á á(
+
+11014898*
+1á á(
+
+110657*
+1á> á(F
+
+11010898*
+1á> á(F
+
+1102457*
+1áK á(V
+
+112657*
+1ã ã(
+
+11214898*
+1ã ã(
+
+112657*
+1ã? ã(I
+
+11211098*
+1ã? ã(I
+
+1122757*
+1ãN ã(Z
+
+114657*
+1è è(
+
+11414898*
+1è è(
+
+114657*
+1è? è(J
+
+11411298*
+1è? è(J

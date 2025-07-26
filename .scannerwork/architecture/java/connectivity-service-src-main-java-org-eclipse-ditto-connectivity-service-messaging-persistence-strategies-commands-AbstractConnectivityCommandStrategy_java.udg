@@ -1,0 +1,568 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508689442*java2.B¢
+¢
+úconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/persistence/strategies/commands/AbstractConnectivityCommandStrategy.java2
+
+package4
+U
+Porg.eclipse.ditto.connectivity.service.messaging.persistence.strategies.commands5
+y
+torg.eclipse.ditto.connectivity.service.messaging.persistence.strategies.commands.AbstractConnectivityCommandStrategy7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+)
+#AbstractConnectivityCommandStrategy12
+L
+FRecovered#typeBindingLAbstractConditionHeaderCheckingCommandStrategy;014
+
+unknown15
+
+extends16
+
+Command18
+
+	has param19
+
+C21
+
+
+uses22
+(
+"Recovered#typeBindingLConnection;024
+-
+'Recovered#typeBindingLConnectionState;026
+/
+)Recovered#typeBindingLConnectivityEvent;028
+Ñ
+~org.eclipse.ditto.connectivity.service.messaging.persistence.strategies.commands.AbstractConnectivityCommandStrategy.VALIDATOR30
+
+field31
+
+private32
+
+	VALIDATOR33
+!
+ConditionalHeadersValidator35
+
+is type36
+ñ
+èorg.eclipse.ditto.connectivity.service.messaging.persistence.strategies.commands.AbstractConnectivityCommandStrategy#<init>(Ljava/lang/Class;)V38
+
+method39
+
+calls40
+ß
+†org.eclipse.ditto.connectivity.service.messaging.persistence.strategies.commands.AbstractConnectivityCommandStrategy#getValidator()LConditionalHeadersValidator;42
+
+getValidator43
+
+returns44
+
+
+references45
+ë
+äorg.eclipse.ditto.connectivity.service.messaging.persistence.strategies.commands.AbstractConnectivityCommandStrategy#isDefined(LCommand;)Z47
+
+public48
+
+	isDefined49
+1
++Recovered#typeBindingLConnectivityCommand;051
+5
+/Recovered#typeBindingLConnectivitySudoCommand;053
+¿
+πorg.eclipse.ditto.connectivity.service.messaging.persistence.strategies.commands.AbstractConnectivityCommandStrategy#calculateRelativeMetadata(LConnection;LCommand;)Ljava/util/Optional;55
+
+calculateRelativeMetadata56
+&
+ Recovered#typeBindingLMetadata;058
+
+Nullable60
+
+annotated by61
+&
+ Recovered#typeBindingLNullable;063
+»
+¡org.eclipse.ditto.connectivity.service.messaging.persistence.strategies.commands.AbstractConnectivityCommandStrategy#notAccessible(LContext;LWithDittoHeaders;)LConnectionNotAccessibleException;65
+
+notAccessible66
+&
+ ConnectionNotAccessibleException68
+%
+Recovered#typeBindingLContext;070
+.
+(Recovered#typeBindingLWithDittoHeaders;072
+ƒ
+Ωorg.eclipse.ditto.connectivity.service.messaging.persistence.strategies.commands.AbstractConnectivityCommandStrategy#validate(LContext;LConnectivityCommand;LConnection;)Ljava/util/Optional;74
+
+validate75
+3
+-Recovered#typeBindingLDittoRuntimeException;077
+ﬁ
+◊org.eclipse.ditto.connectivity.service.messaging.persistence.strategies.commands.AbstractConnectivityCommandStrategy#handleValidationException(LContext;LConnectivityCommand;Ljava/lang/Exception;)Ljava/util/Optional;79
+∏
+±org.eclipse.ditto.connectivity.service.messaging.persistence.strategies.commands.AbstractConnectivityCommandStrategy#validate(LContext;LConnectivityCommand;)Ljava/util/Optional;81
+
+handleValidationException82
+
+DittoRuntimeException84
+›
+÷org.eclipse.ditto.connectivity.service.messaging.persistence.strategies.commands.AbstractConnectivityCommandStrategy#toDittoRuntimeException(Ljava/lang/Throwable;LConnectionId;LDittoHeaders;)LDittoRuntimeException;86
+
+toDittoRuntimeException87
+*
+$Recovered#typeBindingLConnectionId;089
+*
+$Recovered#typeBindingLDittoHeaders;091J
+
+1
+12Z
+
+3	
+354jÀ
+
+69
+697015
+
+90
+909115
+
+20
+202115
+
+13
+131415
+
+27
+272815
+@
+41:
+414239 *
+12 2(26:3B
+	
+9
+10
+
+
+11
+43
+@
+29:
+293031 *
+1+ +(26:3B
+	
+9
+32
+
+
+11
+33
+
+25
+252615
+
+57
+575815
+@
+80:
+808139 *
+1S S(26:3B
+	
+9
+10
+
+
+11
+75
+9
+64
+678 *
+1( ((3:3B
+	
+9
+10
+
+
+11
+12
+
+62
+626315
+@
+85:
+858639 *
+1j j(26:3B
+	
+9
+32
+
+
+11
+87
+@
+73:
+737439 *
+1I I(26:3B
+	
+9
+10
+
+
+11
+75
+
+76
+767715
+@
+46:
+464739 *
+17 7(26:3B
+	
+9
+48
+
+
+11
+49
+
+67
+676815
+@
+78:
+787939 *
+1] ](26:3B
+	
+9
+32
+
+
+11
+82
+
+88
+888915
+
+34
+343515
+
+23
+232415
+
+50
+505115
+@
+64:
+646539 *
+1B B(%26:3B
+	
+9
+10
+
+
+11
+66
+
+71
+717215
+
+52
+525315
+
+17
+171815
+@
+54:
+545539 *
+1< <(26:3B
+	
+9
+10
+
+
+11
+56
+
+83
+838415
+
+59
+596015
+@
+37:
+373839 *
+1. .(26:3B
+	
+9
+10
+
+
+11
+12r†
+
+61316*
+1) )(?
+
+61719*
+1(> ((E
+
+62022*
+1(4 ((5
+
+61722*
+1(> ((E
+
+61322*
+1) )(?
+
+62022*
+1)@ )(A
+
+62322*
+1)C )(M
+
+62522*
+1)O )(^
+
+62722*
+1)` )(q
+
+293436*
+1+ +(5
+
+293422*
+1+ +(5
+
+293422*
+1+6 +(?
+
+37640*
+1. .(2
+
+372022*
+1.? .(@
+
+413444*
+13 3(*
+
+413422*
+13 3(*
+
+413422*
+14 4(
+
+412945*
+14 4(
+
+462019*
+18$ 8(%
+
+462036*
+18& 8(-
+
+462022*
+18$ 8(%
+
+465022*
+19# 9(6
+
+465222*
+19M 9(d
+
+542319*
+1=L =(V
+
+542019*
+1> >(
+
+545722*
+1= =( 
+
+542336*
+1=W =(]
+
+545961*
+1=< =(=
+
+546222*
+1== =(E
+
+542322*
+1=L =(V
+
+542036*
+1> >(
+
+542022*
+1> >(
+
+646744*
+1B B(%
+
+646919*
+1B: B(A
+
+647119*
+1C C(#
+
+646722*
+1B B(%
+
+646936*
+1BS B(Z
+
+646922*
+1B: B(A
+
+642522*
+1BB B(Q
+
+647136*
+1C$ C(+
+
+647122*
+1C C(#
+
+736919*
+1I; I(B
+
+735019*
+1J J(&
+
+732319*
+1JC J(M
+
+737622*
+1I I(*
+
+736936*
+1IT I([
+
+736922*
+1I; I(B
+
+732522*
+1IC I(R
+
+735036*
+1J* J(1
+
+735022*
+1J J(&
+
+732336*
+1JN J(X
+
+735961*
+1J3 J(4
+
+736222*
+1J4 J(<
+
+732322*
+1JC J(M
+
+73645*
+1O O(-
+
+737840*
+1O O(-
+
+806919*
+1S; S(B
+
+805019*
+1T T(&
+
+807622*
+1S S(*
+
+806936*
+1ST S([
+
+806922*
+1S; S(B
+
+802522*
+1SC S(R
+
+805036*
+1T* T(1
+
+805022*
+1T T(&
+
+80645*
+1Y Y(-
+
+807840*
+1Y Y(-
+
+786919*
+1^ ^(
+
+785019*
+1^; ^(N
+
+787622*
+1] ](2
+
+786936*
+1^, ^(3
+
+786922*
+1^ ^(
+
+782522*
+1^ ^(*
+
+785036*
+1^R ^(Y
+
+785022*
+1^; ^(N
+
+787636*
+1`% `((
+
+787622*
+1` `($
+
+788344*
+1a a((
+
+78645*
+1a a((
+
+788540*
+1a a((
+
+858344*
+1j j()
+
+858819*
+1j_ j(k
+
+859019*
+1k k(
+
+858322*
+1j j()
+
+858836*
+1jl j(n
+
+858822*
+1j_ j(k
+
+859036*
+1k  k('
+
+859022*
+1k k(

@@ -1,0 +1,1276 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508694614*java2.B∏8
+í
+åconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/mqtt/hivemq/client/BaseGenericMqttSubscribingClient.java2
+
+package4
+H
+Corg.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client5
+i
+dorg.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient7
+
+
+class8
+
+access9
+
+	protected10
+
+simple name11
+&
+ BaseGenericMqttSubscribingClient12
+:
+4Recovered#typeBindingLGenericMqttConnectableClient;014
+
+unknown15
+
+
+implements16
+:
+4Recovered#typeBindingLGenericMqttSubscribingClient;018
+(
+"Recovered#typeBindingLDisposable;020
+
+
+MqttClient22
+
+	has param23
+
+C25
+
+
+uses26
+u
+oorg.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient.mqttClient28
+
+field29
+
+private30
+
+
+mqttClient31
+
+is type32
+{
+uorg.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient.connectingClient34
+
+connectingClient35
+"
+GenericMqttConnectableClient37
+z
+torg.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient.consumingClient39
+
+consumingClient40
+ 
+GenericMqttConsumingClient42
+u
+oorg.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient.clientRole44
+
+
+clientRole45
+
+
+ClientRole47
+u
+oorg.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient.isDisposed49
+
+
+isDisposed50
+«
+¿org.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient#<init>(LMqttClient;LGenericMqttConnectableClient;LGenericMqttConsumingClient;LClientRole;)V52
+
+method53
+8
+2Recovered#typeBindingLGenericMqttConsumingClient;055
+(
+"Recovered#typeBindingLClientRole;057
+
+calls58
+
+
+references59
+˛
+˜org.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient#ofMqtt3RxClient(LMqtt3RxClient;LClientRole;)Lorg/eclipse/ditto/connectivity/service/messaging/mqtt/hivemq/client/BaseGenericMqttSubscribingClient;61
+
+ofMqtt3RxClient62
+
+returns63
++
+%Recovered#typeBindingLMqtt3RxClient;065
+É
+}org.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient$Mqtt3RxSubscribingClient67
+˛
+˜org.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient#ofMqtt5RxClient(LMqtt5RxClient;LClientRole;)Lorg/eclipse/ditto/connectivity/service/messaging/mqtt/hivemq/client/BaseGenericMqttSubscribingClient;69
+
+ofMqtt5RxClient70
++
+%Recovered#typeBindingLMqtt5RxClient;072
+É
+}org.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient$Mqtt5RxSubscribingClient74
+ï
+éorg.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient#subscribe(LGenericMqttSubscribe;)LSingle;76
+
+public77
+
+	subscribe78
+
+Single80
+2
+,Recovered#typeBindingLGenericMqttSubscribe;082
+/
+)Recovered#typeBindingLGenericMqttSubAck;084
+•
+ûorg.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient#sendSubscribe(LMqttClient;LGenericMqttSubscribe;)LSingle;86
+
+SingleTransformer88
+∞
+©org.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient#handleFailedSubscriptions(LGenericMqttSubscribe;)LSingleTransformer;90
+±
+™org.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient#unsubscribe([LMqttTopicFilter;)Ljava/util/concurrent/CompletionStage;92
+
+unsubscribe93
+H
+BRecovered#innerTypeBindingRecovered#typeBindingLMqttTopicFilter;0195
+-
+'Recovered#typeBindingLMqttTopicFilter;097
+
+Completable99
+©
+°org.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient#sendUnsubscribe(LMqttClient;[LMqttTopicFilter;)LCompletable;101
+
+sendSubscribe102
+
+sendUnsubscribe103
+ 
+handleFailedSubscriptions104
+∞
+®org.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient#getSubscriptionTopicFilters(LGenericMqttSubscribe;)Ljava/util/List;106
+"
+getSubscriptionTopicFilters107
+ø
+∑org.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient#getFailedSubscriptionStatuses(LGenericMqttSubAck;Ljava/util/List;)Ljava/util/List;109
+$
+getFailedSubscriptionStatuses110
+1
+*Recovered#typeBindingLSubscriptionStatus;0112
+¨
+§org.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient#consumeSubscribedPublishesWithManualAcknowledgement()LFlowable;114
+:
+3consumeSubscribedPublishesWithManualAcknowledgement115
+
+Flowable117
+1
+*Recovered#typeBindingLGenericMqttPublish;0119
+Ö
+~org.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient#stopBufferingPublishes()V121
+
+stopBufferingPublishes122
+∞
+®org.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient#connect(LGenericMqttConnect;)Ljava/util/concurrent/CompletionStage;124
+
+connect125
+1
+*Recovered#typeBindingLGenericMqttConnect;0127
+ü
+óorg.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient#disconnect()Ljava/util/concurrent/CompletionStage;129
+
+
+disconnect130
+v
+oorg.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient#dispose()V132
+
+dispose133
+y
+rorg.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient#isDisposed()Z135
+â
+Åorg.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient#toString()Ljava/lang/String;137
+
+toString138
+
+Mqtt3RxSubscribingClient139
+
+extends140
+‰
+‹org.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient$Mqtt3RxSubscribingClient#<init>(LMqtt3RxClient;LGenericMqttConnectableClient;LGenericMqttConsumingClient;LClientRole;)V142
+¬
+∫org.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient$Mqtt3RxSubscribingClient#sendSubscribe(LMqtt3RxClient;LGenericMqttSubscribe;)LSingle;144
+≈
+Ωorg.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient$Mqtt3RxSubscribingClient#sendUnsubscribe(LMqtt3RxClient;[LMqttTopicFilter;)LCompletable;146
+
+Mqtt5RxSubscribingClient147
+‰
+‹org.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient$Mqtt5RxSubscribingClient#<init>(LMqtt5RxClient;LGenericMqttConnectableClient;LGenericMqttConsumingClient;LClientRole;)V149
+¬
+∫org.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient$Mqtt5RxSubscribingClient#sendSubscribe(LMqtt5RxClient;LGenericMqttSubscribe;)LSingle;151
+≈
+Ωorg.eclipse.ditto.connectivity.service.messaging.mqtt.hivemq.client.BaseGenericMqttSubscribingClient$Mqtt5RxSubscribingClient#sendUnsubscribe(LMqtt5RxClient;[LMqttTopicFilter;)LCompletable;153J
+
+1
+12Z
+
+3	
+354j∏
+
+98
+989915
+G
+141@
+14114253 *
+1÷	 ÷(266:3B
+	
+9
+30
+
+11
+139
+@
+91:
+919253 *
+1m m(26:3B
+	
+9
+77
+
+
+11
+93
+
+46
+464715
+F
+108?
+10810953 *
+1§ §(26:3B
+	
+9
+30
+
+11
+110
+
+13
+131415
+@
+51:
+515253 *
+17 7(26:3B
+	
+9
+30
+
+
+11
+12
+@
+27:
+272829 *
+11 1(26:3B
+	
+9
+30
+
+
+11
+31
+
+87
+878815
+@
+48:
+484929 *
+15 5(26:3B
+	
+9
+30
+
+
+11
+50
+G
+148@
+14814953 *
+1Ö	 Ö(273:3B
+	
+9
+30
+
+11
+147
+E
+134>
+13413553 *
+1» »(26:3B
+	
+9
+77
+
+
+11
+50
+
+71
+717215
+
+17
+171815
+F
+131?
+13113253 *
+1¬ ¬(26:3B
+	
+9
+77
+
+11
+133
+@
+43:
+434429 *
+14 4(26:3B
+	
+9
+30
+
+
+11
+45
+G
+145@
+14514653 *
+1ˆ	 ˆ(
+266:3B
+	
+9
+10
+
+11
+103
+B
+66<
+66678 *
+1‘  ‘(826:3B
+	
+9
+30
+
+11
+139
+
+94
+949515
+
+56
+565715
+@
+75:
+757653 *
+1f f(26:3B
+	
+9
+77
+
+
+11
+78
+
+54
+545515
+B
+73<
+73748 *
+1É  É(826:3B
+	
+9
+30
+
+11
+147
+F
+120?
+12012153 *
+1≥ ≥(26:3B
+	
+9
+77
+
+11
+122
+
+21
+212215
+
+83
+838415
+
+118
+11811915
+
+19
+192015
+
+96
+969715
+G
+143@
+14314453 *
+1ﬁ	 ﬁ(
+266:3B
+	
+9
+10
+
+11
+102
+
+24
+242515
+@
+33:
+333429 *
+12 2(26:3B
+	
+9
+30
+
+
+11
+35
+
+81
+818215
+
+126
+12612715
+@
+68:
+686953 *
+1\ \(26:3B
+	
+9
+10
+
+
+11
+70
+
+64
+646515
+F
+136?
+13613753 *
+1Õ Õ(26:3B
+	
+9
+77
+
+11
+138
+9
+64
+678 *
+1. .(0:3B
+	
+9
+10
+
+
+11
+12
+F
+128?
+12812953 *
+1Ω Ω(26:3B
+	
+9
+77
+
+11
+130
+
+111
+11111215
+F
+123?
+12312453 *
+1∏ ∏(26:3B
+	
+9
+77
+
+11
+125
+
+41
+414215
+A
+89;
+899053 *
+1z z(26:3B
+	
+9
+30
+
+11
+104
+@
+60:
+606153 *
+1J J(26:3B
+	
+9
+10
+
+
+11
+62
+F
+105?
+10510653 *
+1û û(26:3B
+	
+9
+30
+
+11
+107
+
+36
+363715
+G
+150@
+15015153 *
+1ç	 ç(
+273:3B
+	
+9
+10
+
+11
+102
+G
+152@
+15215353 *
+1§	 §(
+273:3B
+	
+9
+10
+
+11
+103
+D
+100=
+10010153 *
+1x x(26:3B
+	
+9
+10
+
+11
+103
+
+79
+798015
+F
+113?
+11311453 *
+1Æ Æ(26:3B
+	
+9
+77
+
+11
+115
+@
+38:
+383929 *
+13 3(26:3B
+	
+9
+30
+
+
+11
+40
+A
+85;
+858653 *
+1v v(26:3B
+	
+9
+10
+
+11
+102
+
+116
+11611715r±1
+
+61316*
+1/ /(0
+
+61716*
+1/2 /(N
+
+61916*
+1/P /(Z
+
+62123*
+1.; .(E
+
+62426*
+1.1 .(2
+
+62126*
+1.; .(E
+
+61326*
+1/ /(0
+
+61726*
+1/2 /(N
+
+61926*
+1/P /(Z
+
+272432*
+11 1(
+
+272426*
+11 1(
+
+272426*
+11 1(
+
+333632*
+12 2(/
+
+333626*
+12 2(/
+
+333626*
+120 2(@
+
+384132*
+13 3(-
+
+384126*
+13 3(-
+
+384126*
+13. 3(=
+
+434632*
+14 4(
+
+434626*
+14 4(
+
+434626*
+14 4((
+
+512423*
+174 7(5
+
+511323*
+18 8(/
+
+515423*
+19 9(-
+
+515623*
+1: :(
+
+51658*
+17 7(-
+
+512432*
+176 7(@
+
+512426*
+174 7(5
+
+511332*
+180 8(@
+
+511326*
+18 8(/
+
+515432*
+19. 9(=
+
+515426*
+19 9(-
+
+515632*
+1: :((
+
+515626*
+1: :(
+
+51626*
+1<	 <(
+
+51659*
+1<	 <(
+
+512426*
+1< <(
+
+512759*
+1< <(
+
+51626*
+1=	 =(
+
+51659*
+1=	 =(
+
+513626*
+1= =(
+
+513359*
+1= =(
+
+51626*
+1>	 >(
+
+51659*
+1>	 >(
+
+514126*
+1> >(
+
+513859*
+1> >(
+
+51626*
+1?	 ?(
+
+51659*
+1?	 ?(
+
+514626*
+1? ?(
+
+514359*
+1? ?(
+
+60663*
+1J J(,
+
+606423*
+1JR J(_
+
+605623*
+1K K(
+
+60626*
+1J J(,
+
+606426*
+1J- J(:
+
+606432*
+1J` J(m
+
+606426*
+1JR J(_
+
+605632*
+1K K((
+
+605626*
+1K K(
+
+606658*
+1N N(,
+
+68663*
+1\ \(,
+
+687123*
+1\R \(_
+
+685623*
+1] ](
+
+68626*
+1\ \(,
+
+687126*
+1\- \(:
+
+687132*
+1\` \(m
+
+687126*
+1\R \(_
+
+685632*
+1] ]((
+
+685626*
+1] ](
+
+687358*
+1` `(,
+
+757963*
+1g g(
+
+758123*
+1g6 g(J
+
+757926*
+1g g(
+
+758326*
+1g g($
+
+758132*
+1gK g(_
+
+758126*
+1g6 g(J
+
+757963*
+1i i(
+
+75659*
+1i i(
+
+758558*
+1i i(
+
+752426*
+1i i((
+
+752759*
+1i i((
+
+758763*
+1j j(3
+
+75659*
+1j j(3
+
+758958*
+1j j(3
+
+919423*
+1o4 o(C
+
+919432*
+1oG o(W
+
+919626*
+1o4 o(C
+
+919863*
+1p! p(0
+
+91659*
+1p! p(0
+
+9110058*
+1p! p(0
+
+912426*
+1p1 p(;
+
+912759*
+1p1 p(;
+
+857963*
+1v v(
+
+852423*
+1v@ v(A
+
+858123*
+1vN v(b
+
+857926*
+1v v(
+
+858326*
+1v v(0
+
+852432*
+1vB v(L
+
+852426*
+1v@ v(A
+
+858132*
+1vc v(w
+
+858126*
+1vN v(b
+
+1009863*
+1x x(
+
+1002423*
+1x* x(+
+
+1009423*
+1x; x(J
+
+1009826*
+1x x(
+
+1002432*
+1x, x(9
+
+1002426*
+1x* x(+
+
+1009432*
+1xN x(^
+
+1009626*
+1x; x(J
+
+898763*
+1z z(%
+
+898123*
+1{ {('
+
+898726*
+1z z(%
+
+898326*
+1z& z(7
+
+898326*
+1z9 z(J
+
+898132*
+1{( {(<
+
+898126*
+1{ {('
+
+1058123*
+1ûL û(`
+
+1059626*
+1û û((
+
+1058132*
+1ûa û(u
+
+1058126*
+1ûL û(`
+
+1088323*
+1• •($
+
+10811126*
+1§ §(+
+
+1088332*
+1•% •(6
+
+1088326*
+1• •($
+
+1089626*
+1¶ ¶('
+
+11311663*
+1Ø Ø(
+
+11311626*
+1Ø Ø(
+
+11311826*
+1Ø Ø('
+
+1133859*
+1∞ ∞(
+
+1134126*
+1∞ ∞(
+
+1133859*
+1∞ ∞(
+
+1203859*
+1µ	 µ(
+
+1204126*
+1µ	 µ(
+
+1203859*
+1µ	 µ(
+
+12312623*
+1π0 π(B
+
+12312632*
+1πC π(U
+
+12312626*
+1π0 π(B
+
+1233359*
+1∫ ∫( 
+
+1233626*
+1∫ ∫( 
+
+1233359*
+1∫ ∫( 
+
+1283359*
+1ø ø( 
+
+1283626*
+1ø ø( 
+
+1283359*
+1ø ø( 
+
+1313859*
+1ƒ	 ƒ(
+
+1314126*
+1ƒ	 ƒ(
+
+1313859*
+1ƒ	 ƒ(
+
+1314859*
+1≈	 ≈(
+
+1344859*
+1   (
+
+1362759*
+1œ& œ(0
+
+1362426*
+1œ& œ(0
+
+1362759*
+1œ& œ(0
+
+1364626*
+1– –(
+
+1364359*
+1– –(
+
+666140*
+1‘A ‘(a
+
+66626*
+1‘A ‘(a
+
+666426*
+1‘b ‘(o
+
+1416423*
+1÷0 ÷(=
+
+1411323*
+1◊ ◊(3
+
+1415423*
+1ÿ ÿ(1
+
+1415623*
+1Ÿ Ÿ(!
+
+1416658*
+1÷ ÷()
+
+1416432*
+1÷> ÷(K
+
+1416426*
+1÷0 ÷(=
+
+1411332*
+1◊4 ◊(O
+
+1411326*
+1◊ ◊(3
+
+1415432*
+1ÿ2 ÿ(A
+
+1415426*
+1ÿ ÿ(1
+
+1415632*
+1Ÿ" Ÿ(,
+
+1415626*
+1Ÿ Ÿ(!
+
+141659*
+1€ €(
+
+141658*
+1€ €(
+
+1437963*
+1ﬂ ﬂ(
+
+1436423*
+1ﬂA ﬂ(N
+
+1438123*
+1‡ ‡(+
+
+1437926*
+1ﬂ ﬂ(
+
+1438326*
+1ﬂ ﬂ(+
+
+1436432*
+1ﬂO ﬂ(\
+
+1436426*
+1ﬂA ﬂ(N
+
+1438132*
+1‡, ‡(@
+
+1438126*
+1‡ ‡(+
+
+1459863*
+1˜	 ˜(
+
+1456423*
+1˜+ ˜(8
+
+1459423*
+1˜N ˜(]
+
+1459826*
+1˜	 ˜(
+
+1456432*
+1˜9 ˜(F
+
+1456426*
+1˜+ ˜(8
+
+1459432*
+1˜a ˜(q
+
+1459626*
+1˜N ˜(]
+
+736140*
+1ÉA É(a
+
+73626*
+1ÉA É(a
+
+737126*
+1Éb É(o
+
+1487123*
+1Ö0 Ö(=
+
+1481323*
+1Ü Ü(3
+
+1485423*
+1á á(1
+
+1485623*
+1à à(!
+
+1487358*
+1Ö Ö()
+
+1487132*
+1Ö> Ö(K
+
+1487126*
+1Ö0 Ö(=
+
+1481332*
+1Ü4 Ü(O
+
+1481326*
+1Ü Ü(3
+
+1485432*
+1á2 á(A
+
+1485426*
+1á á(1
+
+1485632*
+1à" à(,
+
+1485626*
+1à à(!
+
+148659*
+1ä ä(
+
+148658*
+1ä ä(
+
+1507963*
+1é é(
+
+1507123*
+1éA é(N
+
+1508123*
+1è è(+
+
+1507926*
+1é é(
+
+1508326*
+1é é(+
+
+1507132*
+1éO é(\
+
+1507126*
+1éA é(N
+
+1508132*
+1è, è(@
+
+1508126*
+1è è(+
+
+1529863*
+1•	 •(
+
+1527123*
+1•+ •(8
+
+1529423*
+1•N •(]
+
+1529826*
+1•	 •(
+
+1527132*
+1•9 •(F
+
+1527126*
+1•+ •(8
+
+1529432*
+1•a •(q
+
+1529626*
+1•N •(]

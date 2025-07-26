@@ -1,0 +1,1086 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508749387*java2.Bä$
+‘
+‹connectivity/service/src/test/java/org/eclipse/ditto/connectivity/service/messaging/monitoring/metrics/ConnectivityCounterRegistryTest.java2
+
+package4
+H
+Corg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics5
+h
+corg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.ConnectivityCounterRegistryTest7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+%
+ConnectivityCounterRegistryTest12
+z
+torg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.ConnectivityCounterRegistryTest.COUNTER_REGISTRY14
+
+field15
+
+private16
+
+COUNTER_REGISTRY17
+!
+ConnectivityCounterRegistry19
+
+unknown20
+
+is type21
+
+
+uses22
+
+ConnectivityConfig24
+
+returns25
+
+
+references26
+¬
+¥org.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.ConnectivityCounterRegistryTest#mockConnectivityConfig(ILjava/time/Duration;)LConnectivityConfig;28
+
+calls29
+w
+qorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.ConnectivityCounterRegistryTest.CONNECTION_ID31
+
+CONNECTION_ID32
+
+ConnectionId34
+y
+sorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.ConnectivityCounterRegistryTest.CONNECTION_TYPE36
+
+CONNECTION_TYPE37
+
+ConnectionType39
+p
+jorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.ConnectivityCounterRegistryTest.SOURCE41
+
+SOURCE42
+p
+jorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.ConnectivityCounterRegistryTest.TARGET44
+
+TARGET45
+w
+qorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.ConnectivityCounterRegistryTest.FIXED_INSTANT47
+
+FIXED_INSTANT48
+u
+oorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.ConnectivityCounterRegistryTest.FIXED_CLOCK50
+
+FIXED_CLOCK51
+ˆ
+org.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.ConnectivityCounterRegistryTest#getCounters(J)Ljava/util/Map;53
+
+method54
+
+getCounters55
+J
+DRecovered#innerTypeBindingRecovered#typeBindingLMeasurementWindow;0157
+/
+)Recovered#typeBindingLMeasurementWindow;059
+r
+lorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.ConnectivityCounterRegistryTest#setUp()V61
+
+setUp62
+
+BeforeClass64
+
+annotated by65
+)
+#Recovered#typeBindingLBeforeClass;067
+ˆ
+org.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.ConnectivityCounterRegistryTest#testAggregateSourceMetrics()V69
+ 
+testAggregateSourceMetrics70
+
+
+Test72
+"
+Recovered#typeBindingLTest;074
++
+%Recovered#typeBindingLSourceMetrics;076
+D
+>Recovered#innerTypeBindingRecovered#typeBindingLMeasurement;0178
+)
+#Recovered#typeBindingLMeasurement;080
+
+Measurement82
+•
+Žorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.ConnectivityCounterRegistryTest#getMeasurement(LMetricType;Z)LMeasurement;84
+ˆ
+org.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.ConnectivityCounterRegistryTest#testAggregateTargetMetrics()V86
+ 
+testAggregateTargetMetrics87
++
+%Recovered#typeBindingLTargetMetrics;089
+
+getMeasurement90
+(
+"Recovered#typeBindingLMetricType;092
+
+	has param93
+•
+Žorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.ConnectivityCounterRegistryTest#mergeRetrieveConnectionMetricsResponses()V95
+-
+'mergeRetrieveConnectionMetricsResponses96
+?
+9Recovered#typeBindingLRetrieveConnectionMetricsResponse;098
+Ž
+†org.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.ConnectivityCounterRegistryTest#testThrottlingCounterRegistered()V100
+&
+testThrottlingCounterRegistered101
+:
+3Recovered#typeBindingLConnectivityCounterRegistry;0103
+)
+"Recovered#typeBindingLConnection;0105
+D
+=Recovered#innerTypeBindingRecovered#typeBindingLMetricType;01107
+7
+0Recovered#typeBindingLConnectionMetricsCounter;0109
+Ø
+Ðorg.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.ConnectivityCounterRegistryTest#recordInboundMessageAndCheckThrottled(LConnectivityCounterRegistry;LConnection;LConnectionMetricsCounter;Z)V111
+ž
+–org.eclipse.ditto.connectivity.service.messaging.monitoring.metrics.ConnectivityCounterRegistryTest#verifyConnectionLogIsAddedWhenSourceIsThrottled()V113
+6
+/verifyConnectionLogIsAddedWhenSourceIsThrottled114
+/
+(Recovered#typeBindingLConnectionLogger;0116
+.
+'Recovered#typeBindingLArgumentMatcher;0118
+,
+%recordInboundMessageAndCheckThrottled119
+
+mockConnectivityConfig120
+1
+*Recovered#typeBindingLConnectivityConfig;0122
+/
+(Recovered#typeBindingLConnectionConfig;0124
++
+$Recovered#typeBindingLAmqp10Config;0126
+3
+,Recovered#typeBindingLAmqp10ConsumerConfig;0128
+9
+2Recovered#typeBindingLConnectionThrottlingConfig;0130J
+
+1
+12Z
+
+3	
+354j…
+
+81
+818220
+
+63
+636420
+@
+85:
+858654 *
+1{ {(26:3B
+	
+9
+10
+
+
+11
+87
+D
+99>
+9910054 *
+1È È(26:3B
+	
+9
+10
+
+11
+101
+
+108
+10810920
+@
+52:
+525354 *
+1R R(26:3B
+	
+9
+16
+
+
+11
+55
+@
+49:
+495015 *
+1P P(26:3B
+	
+9
+16
+
+
+11
+51
+F
+110?
+11011154 *
+1ý ý(26:3B
+	
+9
+16
+
+11
+119
+
+115
+11511620
+
+106
+10610720
+
+33
+333420
+
+58
+585920
+@
+35:
+353615 *
+1L L(26:3B
+	
+9
+16
+
+
+11
+37
+
+23
+232420
+
+91
+919220
+
+71
+717220
+
+75
+757620
+
+88
+888920
+F
+112?
+11211354 *
+1å å(26:3B
+	
+9
+10
+
+11
+114
+@
+60:
+606154 *
+1[ [(26:3B
+	
+9
+10
+
+
+11
+62
+
+66
+666720
+
+77
+777820
+@
+46:
+464715 *
+1O O(26:3B
+	
+9
+16
+
+
+11
+48
+
+97
+979820
+@
+13:
+131415 *
+1G G(26:3B
+	
+9
+16
+
+
+11
+17
+9
+64
+678 *
+1E E(-:3B
+	
+9
+10
+
+
+11
+12
+
+38
+383920
+
+56
+565720
+@
+30:
+303115 *
+1J J(26:3B
+	
+9
+16
+
+
+11
+32
+@
+43:
+434415 *
+1N N(26:3B
+	
+9
+16
+
+
+11
+45
+
+104
+10410520
+
+117
+11711820
+
+129
+12913020
+@
+68:
+686954 *
+1l l(26:3B
+	
+9
+10
+
+
+11
+70
+@
+40:
+404115 *
+1M M(26:3B
+	
+9
+16
+
+
+11
+42
+
+123
+12312420
+
+79
+798020
+
+125
+12512620
+
+121
+12112220
+
+127
+12712820
+B
+83<
+838454 *
+1 (26:3B
+	
+9
+16
+
+
+11
+90
+
+73
+737420
+B
+94<
+949554 *
+1” ”(26:3B
+	
+9
+10
+
+
+11
+96
+
+18
+181920
+C
+27=
+272854 *
+1‘ ‘(26:3B
+	
+9
+16
+
+11
+120
+
+102
+10210320r–.
+
+131821*
+1G G(5
+
+131822*
+1G G(5
+
+131822*
+1G6 G(F
+
+132325*
+1H5 H(K
+
+13626*
+1H5 H(K
+
+132729*
+1H5 H(K
+
+303321*
+1J J(&
+
+303322*
+1J J(&
+
+303322*
+1J' J(4
+
+353821*
+1L L((
+
+353822*
+1L L((
+
+353822*
+1L) L(8
+
+494626*
+1P: P(G
+
+525621*
+1S# S()
+
+525822*
+1S S( 
+
+606365*
+1[ [(
+
+606622*
+1[ [(
+
+601326*
+1^ ^(!
+
+601822*
+1^ ^(!
+
+601326*
+1^ ^(!
+
+604926*
+1^- ^(8
+
+603322*
+1^: ^(G
+
+603026*
+1^: ^(G
+
+603822*
+1^I ^(X
+
+603526*
+1^I ^(X
+
+604026*
+1^m ^(s
+
+601326*
+1_ _(!
+
+601822*
+1_ _(!
+
+601326*
+1_ _(!
+
+604926*
+1_- _(8
+
+603322*
+1_: _(G
+
+603026*
+1_: _(G
+
+603822*
+1_I _(X
+
+603526*
+1_I _(X
+
+604026*
+1_k _(q
+
+601326*
+1` `(!
+
+601822*
+1` `(!
+
+601326*
+1` `(!
+
+604926*
+1`- `(8
+
+603322*
+1`: `(G
+
+603026*
+1`: `(G
+
+603822*
+1`I `(X
+
+603526*
+1`I `(X
+
+604326*
+1`p `(v
+
+601326*
+1a a(!
+
+601822*
+1a a(!
+
+601326*
+1a a(!
+
+604926*
+1a- a(8
+
+603322*
+1a: a(G
+
+603026*
+1a: a(G
+
+603822*
+1aI a(X
+
+603526*
+1aI a(X
+
+604326*
+1an a(t
+
+601326*
+1b b(!
+
+601822*
+1b b(!
+
+601326*
+1b b(!
+
+604926*
+1b- b(8
+
+603322*
+1b: b(G
+
+603026*
+1b: b(G
+
+603822*
+1bI b(X
+
+603526*
+1bI b(X
+
+604326*
+1bl b(r
+
+601326*
+1c c(!
+
+601822*
+1c c(!
+
+601326*
+1c c(!
+
+604926*
+1c- c(8
+
+603322*
+1c: c(G
+
+603026*
+1c: c(G
+
+603822*
+1cI c(X
+
+603526*
+1cI c(X
+
+604326*
+1co c(u
+
+687165*
+1l l(
+
+687322*
+1l l(
+
+
+687521*
+1o o(*
+
+687522*
+1o o(
+
+681326*
+1o- o(=
+
+681822*
+1o- o(=
+
+681326*
+1o- o(=
+
+683322*
+1oU o(b
+
+683026*
+1oU o(b
+
+687721*
+1p p(%
+
+687922*
+1p p(
+
+688125*
+1q q(
+
+68626*
+1q q(
+
+688329*
+1q q(
+
+688125*
+1r r(
+
+68626*
+1r r(
+
+688329*
+1r r(
+
+688125*
+1s s(
+
+68626*
+1s s(
+
+688329*
+1s s(
+
+688125*
+1t t(
+
+68626*
+1t t(
+
+688329*
+1t t(
+
+684026*
+1w: w(@
+
+857165*
+1{ {(
+
+857322*
+1{ {(
+
+
+858821*
+1~ ~(*
+
+858822*
+1~ ~(
+
+851326*
+1~- ~(=
+
+851822*
+1~- ~(=
+
+851326*
+1~- ~(=
+
+853322*
+1~U ~(b
+
+853026*
+1~U ~(b
+
+857721*
+1€ €(%
+
+857922*
+1€ €(
+
+858125*
+1 (
+
+85626*
+1 (
+
+858329*
+1 (
+
+858125*
+1‚ ‚(
+
+85626*
+1‚ ‚(
+
+858329*
+1‚ ‚(
+
+858125*
+1ƒ ƒ(
+
+85626*
+1ƒ ƒ(
+
+858329*
+1ƒ ƒ(
+
+858125*
+1„ „(
+
+85626*
+1„ „(
+
+858329*
+1„ „(
+
+858125*
+1… …(
+
+85626*
+1… …(
+
+858329*
+1… …(
+
+858125*
+1† †(
+
+85626*
+1† †(
+
+858329*
+1† †(
+
+858125*
+1‡ ‡(
+
+85626*
+1‡ ‡(
+
+858329*
+1‡ ‡(
+
+858125*
+1ˆ ˆ(
+
+85626*
+1ˆ ˆ(
+
+858329*
+1ˆ ˆ(
+
+854326*
+1‹: ‹(@
+
+838125*
+1 (
+
+839193*
+1. (8
+
+838122*
+1 (
+
+839121*
+19 (C
+
+839122*
+1. (8
+
+83626*
+1M (X
+
+835229*
+1M (X
+
+834626*
+1‘ ‘(
+
+947165*
+1” ”(
+
+947322*
+1” ”(
+
+
+949721*
+1—1 —(7
+
+949722*
+1— —(0
+
+997165*
+1È È(
+
+997322*
+1È È(
+
+
+9910221*
+1Ë+ Ë(:
+
+9910222*
+1Ë Ë(*
+
+992325*
+1Ì9 Ì(O
+
+99626*
+1Ì9 Ì(O
+
+992729*
+1Ì9 Ì(O
+
+9910421*
+1Î Î($
+
+9910422*
+1Î Î(
+
+997521*
+1Ò Ò(*
+
+997522*
+1Ò Ò(
+
+9910621*
+1Ô Ô()
+
+999122*
+1Ô Ô(
+
+9910821*
+1ß( ß(7
+
+9910822*
+1ß ß('
+
+99626*
+1â	 â(.
+
+9911029*
+1â	 â(.
+
+1127165*
+1å å(
+
+1127322*
+1å å(
+
+
+11210421*
+1ç ç($
+
+11210422*
+1ç ç(
+
+11211521*
+1è  è(&
+
+11211522*
+1è è(
+
+11211522*
+1è. è(>
+
+11210221*
+1ê+ ê(:
+
+11210222*
+1ê ê(*
+
+1122325*
+1ë9 ë(O
+
+112626*
+1ë9 ë(O
+
+1122729*
+1ë9 ë(O
+
+1123822*
+1ì. ì(=
+
+1123526*
+1ì. ì(=
+
+11210821*
+1ð( ð(7
+
+11210822*
+1ð ð('
+
+112626*
+1ó	 ó(.
+
+11211029*
+1ó	 ó(.
+
+11211722*
+1ö4 ö(C
+
+11010293*
+1ý> ý(Y
+
+11010493*
+1þ þ(
+
+11010893*
+1ÿ ÿ(+
+
+11010221*
+1ýZ ý(i
+
+11010222*
+1ý> ý(Y
+
+11010421*
+1þ þ((
+
+11010422*
+1þ þ(
+
+11010821*
+1ÿ, ÿ(;
+
+11010822*
+1ÿ ÿ(+
+
+1107521*
+1ƒ ƒ($
+
+1107522*
+1ƒ ƒ(
+
+1107921*
+1… …(&
+
+1107922*
+1… …(
+
+272325*
+1‘ ‘(&
+
+272322*
+1‘ ‘(&
+
+2712121*
+1’" ’(4
+
+2712122*
+1’ ’(!
+
+2712122*
+1’< ’(N
+
+2712321*
+1“  “(0
+
+2712322*
+1“ “(
+
+2712322*
+1“8 “(H
+
+2712521*
+1” ”((
+
+2712522*
+1” ”(
+
+2712522*
+1”0 ”(<
+
+2712721*
+1•$ •(2
+
+2712722*
+1• •(#
+
+2712722*
+1•: •(N
+
+2712921*
+1–* –(:
+
+2712922*
+1– –()
+
+2712922*
+1–B –(\

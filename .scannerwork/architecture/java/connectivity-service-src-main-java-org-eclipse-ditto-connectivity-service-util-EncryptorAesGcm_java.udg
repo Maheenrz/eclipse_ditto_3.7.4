@@ -1,0 +1,359 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508722713*java2.BÑ
+h
+cconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/util/EncryptorAesGcm.java2
+
+package4
+0
++org.eclipse.ditto.connectivity.service.util5
+@
+;org.eclipse.ditto.connectivity.service.util.EncryptorAesGcm7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+EncryptorAesGcm12
+O
+Iorg.eclipse.ditto.connectivity.service.util.EncryptorAesGcm.GCM_IV_LENGTH14
+
+field15
+
+private16
+
+GCM_IV_LENGTH17
+P
+Jorg.eclipse.ditto.connectivity.service.util.EncryptorAesGcm.GCM_TAG_LENGTH19
+
+GCM_TAG_LENGTH20
+N
+Horg.eclipse.ditto.connectivity.service.util.EncryptorAesGcm.AES_KEY_SIZE22
+
+	protected23
+
+AES_KEY_SIZE24
+Ž
+‡org.eclipse.ditto.connectivity.service.util.EncryptorAesGcm#encryptWithPrefixIV(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;26
+
+method27
+
+encryptWithPrefixIV28
+
+
+references29
+y
+sorg.eclipse.ditto.connectivity.service.util.EncryptorAesGcm#toSecretKey(Ljava/lang/String;)Ljavax/crypto/SecretKey;31
+
+unknown32
+
+calls33
+V
+Porg.eclipse.ditto.connectivity.service.util.EncryptorAesGcm#getRandomNonceIV()[B35
+i
+corg.eclipse.ditto.connectivity.service.util.EncryptorAesGcm#encrypt([BLjavax/crypto/SecretKey;[B)[B37
+f
+`org.eclipse.ditto.connectivity.service.util.EncryptorAesGcm#toBase64String([B)Ljava/lang/String;39
+Ž
+‡org.eclipse.ditto.connectivity.service.util.EncryptorAesGcm#decryptWithPrefixIV(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;41
+
+decryptWithPrefixIV42
+h
+borg.eclipse.ditto.connectivity.service.util.EncryptorAesGcm#fromBase64String(Ljava/lang/String;)[B44
+y
+sorg.eclipse.ditto.connectivity.service.util.EncryptorAesGcm#decrypt([BLjavax/crypto/SecretKey;[B)Ljava/lang/String;46
+j
+dorg.eclipse.ditto.connectivity.service.util.EncryptorAesGcm#generateAESKey()Ljavax/crypto/SecretKey;48
+
+generateAESKey49
+k
+eorg.eclipse.ditto.connectivity.service.util.EncryptorAesGcm#generateAESKey(I)Ljavax/crypto/SecretKey;51
+l
+forg.eclipse.ditto.connectivity.service.util.EncryptorAesGcm#generateAESKeyAsString()Ljava/lang/String;53
+
+generateAESKeyAsString54
+
+getRandomNonceIV55
+
+fromBase64String56
+
+toBase64String57
+
+toSecretKey58
+
+encrypt59
+
+DittoConfigError61
+
+
+uses62
+
+decrypt63J
+
+1
+12Z
+
+3	
+354jó
+@
+50:
+505127 *
+1v v(26:3B
+	
+9
+23
+
+
+11
+49
+9
+64
+678 *
+1# #(#:3B
+	
+9
+10
+
+
+11
+12
+@
+21:
+212215 *
+1' '(26:3B
+	
+9
+23
+
+
+11
+24
+@
+52:
+525327 *
+1d d(26:3B
+	
+9
+10
+
+
+11
+54
+B
+38<
+383927 *
+1€ €(26:3B
+	
+9
+23
+
+
+11
+57
+@
+40:
+404127 *
+1E E(26:3B
+	
+9
+10
+
+
+11
+42
+@
+25:
+252627 *
+11 1(26:3B
+	
+9
+10
+
+
+11
+28
+@
+18:
+181915 *
+1& &(26:3B
+	
+9
+16
+
+
+11
+20
+@
+43:
+434427 *
+1| |(26:3B
+	
+9
+10
+
+
+11
+56
+B
+45<
+454627 *
+1˜ ˜(26:3B
+	
+9
+16
+
+
+11
+63
+B
+36<
+363727 *
+1 (26:3B
+	
+9
+16
+
+
+11
+59
+
+60
+606132
+@
+47:
+474827 *
+1Y Y(26:3B
+	
+9
+10
+
+
+11
+49
+B
+30<
+303127 *
+1„ „(26:3B
+	
+9
+23
+
+
+11
+58
+@
+13:
+131415 *
+1% %(26:3B
+	
+9
+16
+
+
+11
+17
+@
+34:
+343527 *
+1p p(26:3B
+	
+9
+23
+
+
+11
+55r®
+
+25629*
+14% 4(0
+
+253033*
+14% 4(0
+
+25629*
+15 5(+
+
+253433*
+15 5(+
+
+25629*
+16# 6(*
+
+253633*
+16# 6(*
+
+25629*
+1; ;(
+
+253833*
+1; ;(
+
+40629*
+1H% H(0
+
+403033*
+1H% H(0
+
+40629*
+1I/ I(?
+
+404333*
+1I/ I(?
+
+401329*
+1J$ J(1
+
+40629*
+1N N(
+
+404533*
+1N N(
+
+47629*
+1Z Z(
+
+475033*
+1Z Z(
+
+472129*
+1Z Z(+
+
+52629*
+1e e(
+
+523833*
+1e e(
+
+52629*
+1e e(-
+
+524733*
+1e e(-
+
+341329*
+1q' q(4
+
+30629*
+1…7 …(G
+
+304333*
+1…7 …(G
+
+302129*
+1ˆy ˆ(…
+
+366062*
+1Ž Ž($
+
+361829*
+1’H ’(V
+
+456062*
+1™ ™($
+
+451829*
+1H (V

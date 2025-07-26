@@ -1,0 +1,1545 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508448309*java2.B¢.
+r
+mconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/config/DittoConnectivityConfig.java2
+
+package4
+2
+-org.eclipse.ditto.connectivity.service.config5
+J
+Eorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+DittoConnectivityConfig12
+0
+*Recovered#typeBindingLConnectivityConfig;014
+
+unknown15
+
+
+implements16
+
+	Immutable18
+
+annotated by19
+'
+!Recovered#typeBindingLImmutable;021
+
+
+uses22
+W
+Qorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig.CONFIG_PATH24
+
+field25
+
+private26
+
+CONFIG_PATH27
+a
+[org.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig.serviceSpecificConfig29
+
+serviceSpecificConfig30
+
+DittoServiceConfig32
+
+is type33
+g
+aorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig.persistenceOperationsConfig35
+!
+persistenceOperationsConfig36
+!
+PersistenceOperationsConfig38
+Y
+Sorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig.mongoDbConfig40
+
+mongoDbConfig41
+
+MongoDbConfig43
+]
+Worg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig.healthCheckConfig45
+
+healthCheckConfig46
+
+HealthCheckConfig48
+\
+Vorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig.connectionConfig50
+
+connectionConfig51
+
+ConnectionConfig53
+V
+Porg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig.pingConfig55
+
+
+pingConfig56
+
+
+PingConfig58
+h
+borg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig.connectionIdsRetrievalConfig60
+"
+connectionIdsRetrievalConfig61
+"
+ConnectionIdsRetrievalConfig63
+X
+Rorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig.clientConfig65
+
+clientConfig66
+
+ClientConfig68
+Z
+Torg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig.protocolConfig70
+
+protocolConfig71
+
+ProtocolConfig73
+\
+Vorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig.monitoringConfig75
+
+monitoringConfig76
+
+MonitoringConfig78
+Y
+Sorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig.mappingConfig80
+
+mappingConfig81
+
+MappingConfig83
+a
+[org.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig.acknowledgementConfig85
+
+acknowledgementConfig86
+
+AcknowledgementConfig88
+X
+Rorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig.tunnelConfig90
+
+tunnelConfig91
+
+TunnelConfig93
+c
+]org.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#<init>(LScopedConfig;)V95
+
+method96
+*
+$Recovered#typeBindingLScopedConfig;098
+
+	has param99
+
+calls100
+
+
+references101
+ß
+üorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#of(LScopedConfig;)Lorg/eclipse/ditto/connectivity/service/config/DittoConnectivityConfig;103
+	
+of104
+
+returns105
+t
+morg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#getConnectionConfig()LConnectionConfig;107
+
+getConnectionConfig108
+h
+aorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#getPingConfig()LPingConfig;110
+
+getPingConfig111
+ç
+Öorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#getConnectionIdsRetrievalConfig()LConnectionIdsRetrievalConfig;113
+&
+getConnectionIdsRetrievalConfig114
+l
+eorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#getClientConfig()LClientConfig;116
+
+getClientConfig117
+n
+gorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#getClusterConfig()LClusterConfig;119
+
+getClusterConfig120
+
+ClusterConfig122
+v
+oorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#getHealthCheckConfig()LHealthCheckConfig;124
+
+getHealthCheckConfig125
+l
+eorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#getLimitsConfig()LLimitsConfig;127
+
+getLimitsConfig128
+
+LimitsConfig130
+h
+aorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#getHttpConfig()LHttpConfig;132
+
+getHttpConfig133
+
+
+HttpConfig135
+n
+gorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#getMetricsConfig()LMetricsConfig;137
+
+getMetricsConfig138
+
+MetricsConfig140
+n
+gorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#getTracingConfig()LTracingConfig;142
+
+getTracingConfig143
+
+TracingConfig145
+ã
+Éorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#getPersistenceOperationsConfig()LPersistenceOperationsConfig;147
+%
+getPersistenceOperationsConfig148
+n
+gorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#getMongoDbConfig()LMongoDbConfig;150
+
+getMongoDbConfig151
+p
+iorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#getProtocolConfig()LProtocolConfig;153
+
+getProtocolConfig154
+t
+morg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#getMonitoringConfig()LMonitoringConfig;156
+
+getMonitoringConfig157
+n
+gorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#getMappingConfig()LMappingConfig;159
+
+getMappingConfig160
+~
+worg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#getAcknowledgementConfig()LAcknowledgementConfig;162
+
+getAcknowledgementConfig163
+l
+eorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#getTunnelConfig()LTunnelConfig;165
+
+getTunnelConfig166
+h
+aorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#equals(Ljava/lang/Object;)Z168
+
+equals169
+
+Nullable171
+'
+ Recovered#typeBindingLNullable;0173
+X
+Qorg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#hashCode()I175
+
+hashCode176
+i
+borg.eclipse.ditto.connectivity.service.config.DittoConnectivityConfig#toString()Ljava/lang/String;178
+
+toString179J
+
+1
+12Z
+
+3	
+354jÊ
+F
+164?
+16416596 *
+1Æ Æ(26:3B
+	
+9
+10
+
+11
+166
+@
+28:
+282925 *
+13 3(26:3B
+	
+9
+26
+
+
+11
+30
+D
+115=
+11511696 *
+1m m(26:3B
+	
+9
+10
+
+11
+117
+@
+34:
+343525 *
+14 4(26:3B
+	
+9
+26
+
+
+11
+36
+F
+152?
+15215396 *
+1ö ö(26:3B
+	
+9
+10
+
+11
+154
+
+87
+878815
+
+37
+373815
+
+92
+929315
+D
+109=
+10911096 *
+1c c(26:3B
+	
+9
+10
+
+11
+111
+@
+23:
+232425 *
+11 1(26:3B
+	
+9
+26
+
+
+11
+27
+F
+177?
+17717896 *
+1” ”(26:3B
+	
+9
+10
+
+11
+179
+
+20
+202115
+D
+123=
+12312496 *
+1w w(26:3B
+	
+9
+10
+
+11
+125
+
+82
+828315
+9
+64
+678 *
+1/ /(+:3B
+	
+9
+10
+
+
+11
+12
+F
+136?
+13613796 *
+1Ü Ü(26:3B
+	
+9
+10
+
+11
+138
+
+134
+13413515
+
+72
+727315
+
+52
+525315
+F
+158?
+15815996 *
+1§ §(26:3B
+	
+9
+10
+
+11
+160
+@
+79:
+798025 *
+1= =(26:3B
+	
+9
+26
+
+
+11
+81
+@
+84:
+848525 *
+1> >(26:3B
+	
+9
+26
+
+
+11
+86
+@
+49:
+495025 *
+17 7(26:3B
+	
+9
+26
+
+
+11
+51
+F
+155?
+15515696 *
+1ü ü(26:3B
+	
+9
+10
+
+11
+157
+@
+44:
+444525 *
+16 6(26:3B
+	
+9
+26
+
+
+11
+46
+
+31
+313215
+F
+149?
+14915096 *
+1ï ï(26:3B
+	
+9
+10
+
+11
+151
+@
+59:
+596025 *
+19 9(26:3B
+	
+9
+26
+
+
+11
+61
+@
+54:
+545525 *
+18 8(26:3B
+	
+9
+26
+
+
+11
+56
+
+170
+17017115
+F
+146?
+14614796 *
+1ê ê(26:3B
+	
+9
+10
+
+11
+148
+
+17
+171815
+
+144
+14414515
+@
+74:
+747525 *
+1< <(26:3B
+	
+9
+26
+
+
+11
+76
+D
+126=
+12612796 *
+1| |(26:3B
+	
+9
+10
+
+11
+128
+
+77
+777815
+D
+102=
+10210396 *
+1Y Y(26:3B
+	
+9
+10
+
+11
+104
+F
+174?
+17417596 *
+1Ã Ã(26:3B
+	
+9
+10
+
+11
+176
+
+139
+13914015
+
+42
+424315
+D
+106=
+10610796 *
+1^ ^(26:3B
+	
+9
+10
+
+11
+108
+
+172
+17217315
+F
+167?
+16716896 *
+1≥ ≥(26:3B
+	
+9
+10
+
+11
+169
+
+67
+676815
+F
+141?
+14114296 *
+1ã ã(26:3B
+	
+9
+10
+
+11
+143
+@
+39:
+394025 *
+15 5(26:3B
+	
+9
+26
+
+
+11
+41
+
+129
+12913015
+F
+131?
+13113296 *
+1Å Å(26:3B
+	
+9
+10
+
+11
+133
+@
+89:
+899025 *
+1? ?(26:3B
+	
+9
+26
+
+
+11
+91
+@
+94:
+949596 *
+1A A(26:3B
+	
+9
+26
+
+
+11
+12
+F
+161?
+16116296 *
+1© ©(26:3B
+	
+9
+10
+
+11
+163
+
+97
+979815
+
+62
+626315
+@
+69:
+697025 *
+1; ;(26:3B
+	
+9
+26
+
+
+11
+71
+
+13
+131415
+
+57
+575815
+D
+112=
+11211396 *
+1h h(26:3B
+	
+9
+10
+
+11
+114
+
+47
+474815
+@
+64:
+646525 *
+1: :(26:3B
+	
+9
+26
+
+
+11
+66
+D
+118=
+11811996 *
+1r r(26:3B
+	
+9
+10
+
+11
+120
+
+121
+12112215rÓ?
+
+61316*
+1/7 /(I
+
+61719*
+1. .(
+
+62022*
+1. .(
+
+61322*
+1/7 /(I
+
+283133*
+13 3(%
+
+283122*
+13 3(%
+
+283122*
+13& 3(;
+
+343733*
+14 4(.
+
+343722*
+14 4(.
+
+343722*
+14/ 4(J
+
+394233*
+15 5( 
+
+394222*
+15 5( 
+
+394222*
+15! 5(.
+
+444733*
+16 6($
+
+444722*
+16 6($
+
+444722*
+16% 6(6
+
+495233*
+17 7(#
+
+495222*
+17 7(#
+
+495222*
+17$ 7(4
+
+545733*
+18 8(
+
+545722*
+18 8(
+
+545722*
+18 8((
+
+596233*
+19 9(/
+
+596222*
+19 9(/
+
+596222*
+190 9(L
+
+646733*
+1: :(
+
+646722*
+1: :(
+
+646722*
+1:  :(,
+
+697233*
+1; ;(!
+
+697222*
+1; ;(!
+
+697222*
+1;" ;(0
+
+747733*
+1< <(#
+
+747722*
+1< <(#
+
+747722*
+1<$ <(4
+
+798233*
+1= =( 
+
+798222*
+1= =( 
+
+798222*
+1=! =(.
+
+848733*
+1> >((
+
+848722*
+1> >((
+
+848722*
+1>) >(>
+
+899233*
+1? ?(
+
+899222*
+1? ?(
+
+899222*
+1?  ?(,
+
+949799*
+1A+ A(7
+
+946100*
+1A A($
+
+949733*
+1A8 A(I
+
+949722*
+1A+ A(7
+
+943122*
+1B	 B(
+
+9428101*
+1B	 B(
+
+9423101*
+1BJ B(U
+
+943722*
+1C	 C($
+
+9434101*
+1C	 C($
+
+944222*
+1D	 D(
+
+9439101*
+1D	 D(
+
+944722*
+1E	 E(
+
+9444101*
+1E	 E(
+
+947222*
+1F	 F(
+
+9469101*
+1F	 F(
+
+945222*
+1G	 G(
+
+9449101*
+1G	 G(
+
+943122*
+1G7 G(L
+
+9428101*
+1G7 G(L
+
+945722*
+1H	 H(
+
+9454101*
+1H	 H(
+
+943122*
+1H+ H(@
+
+9428101*
+1H+ H(@
+
+946222*
+1I	 I(%
+
+9459101*
+1I	 I(%
+
+943122*
+1IO I(d
+
+9428101*
+1IO I(d
+
+946722*
+1J	 J(
+
+9464101*
+1J	 J(
+
+943122*
+1J/ J(D
+
+9428101*
+1J/ J(D
+
+947722*
+1K	 K(
+
+9474101*
+1K	 K(
+
+943122*
+1K7 K(L
+
+9428101*
+1K7 K(L
+
+948222*
+1L	 L(
+
+9479101*
+1L	 L(
+
+943122*
+1L1 L(F
+
+9428101*
+1L1 L(F
+
+948722*
+1M	 M(
+
+9484101*
+1M	 M(
+
+943122*
+1MA M(V
+
+9428101*
+1MA M(V
+
+949222*
+1N	 N(
+
+9489101*
+1N	 N(
+
+943122*
+1N/ N(D
+
+9428101*
+1N/ N(D
+
+1026105*
+1Y Y(*
+
+1029799*
+1Y4 Y(@
+
+102622*
+1Y Y(*
+
+1029733*
+1YA Y(R
+
+1029722*
+1Y4 Y(@
+
+1026100*
+1Z Z(+
+
+10652105*
+1_ _(
+
+1065222*
+1_ _(
+
+1065222*
+1` `( 
+
+10649101*
+1` `( 
+
+10957105*
+1d d(
+
+1095722*
+1d d(
+
+1095722*
+1e e(
+
+10954101*
+1e e(
+
+11262105*
+1i i((
+
+1126222*
+1i i((
+
+1126222*
+1j j(,
+
+11259101*
+1j j(,
+
+11567105*
+1n n(
+
+1156722*
+1n n(
+
+1156722*
+1o o(
+
+11564101*
+1o o(
+
+118121105*
+1s s(
+
+11812122*
+1s s(
+
+11828101*
+1t t(%
+
+1183122*
+1t t(%
+
+11828101*
+1t t(%
+
+12347105*
+1x x(
+
+1234722*
+1x x(
+
+1234722*
+1y y(!
+
+12344101*
+1y y(!
+
+126129105*
+1} }(
+
+12612922*
+1} }(
+
+12628101*
+1~ ~(%
+
+1263122*
+1~ ~(%
+
+12628101*
+1~ ~(%
+
+131134105*
+1Ç Ç(
+
+13113422*
+1Ç Ç(
+
+13128101*
+1É É(%
+
+1313122*
+1É É(%
+
+13128101*
+1É É(%
+
+136139105*
+1á á(
+
+13613922*
+1á á(
+
+13628101*
+1à à(%
+
+1363122*
+1à à(%
+
+13628101*
+1à à(%
+
+141144105*
+1å å(
+
+14114422*
+1å å(
+
+14128101*
+1ç ç(%
+
+1413122*
+1ç ç(%
+
+14128101*
+1ç ç(%
+
+14637105*
+1ë ë('
+
+1463722*
+1ë ë('
+
+1463722*
+1í í(+
+
+14634101*
+1í í(+
+
+14942105*
+1ñ ñ(
+
+1494222*
+1ñ ñ(
+
+1494222*
+1ó ó(
+
+14939101*
+1ó ó(
+
+15272105*
+1õ õ(
+
+1527222*
+1õ õ(
+
+1527222*
+1ú ú(
+
+15269101*
+1ú ú(
+
+15577105*
+1† †(
+
+1557722*
+1† †(
+
+1557722*
+1° °( 
+
+15574101*
+1° °( 
+
+15882105*
+1• •(
+
+1588222*
+1• •(
+
+1588222*
+1¶ ¶(
+
+15879101*
+1¶ ¶(
+
+16187105*
+1™ ™(!
+
+1618722*
+1™ ™(!
+
+1618722*
+1´ ´(%
+
+16184101*
+1´ ´(%
+
+16492105*
+1Ø Ø(
+
+1649222*
+1Ø Ø(
+
+1649222*
+1∞ ∞(
+
+16489101*
+1∞ ∞(
+
+16717019*
+1µ µ(
+
+16717222*
+1µ µ($
+
+167622*
+1∂ ∂(
+
+1676101*
+1∂ ∂(
+
+167633*
+1º' º(+
+
+167622*
+1º º(&
+
+167622*
+1º/ º(F
+
+1673122*
+1Ω Ω(4
+
+16728101*
+1Ω Ω(4
+
+1673122*
+1Ω; Ω(P
+
+16728101*
+1Ω; Ω(P
+
+1673722*
+1æ  æ(;
+
+16734101*
+1æ  æ(;
+
+1673722*
+1æB æ(]
+
+16734101*
+1æB æ(]
+
+1674222*
+1ø  ø(-
+
+16739101*
+1ø  ø(-
+
+1674222*
+1ø4 ø(A
+
+16739101*
+1ø4 ø(A
+
+1674722*
+1¿  ¿(1
+
+16744101*
+1¿  ¿(1
+
+1674722*
+1¿8 ¿(I
+
+16744101*
+1¿8 ¿(I
+
+1675222*
+1¡  ¡(0
+
+16749101*
+1¡  ¡(0
+
+1675222*
+1¡7 ¡(G
+
+16749101*
+1¡7 ¡(G
+
+1675722*
+1¬  ¬(*
+
+16754101*
+1¬  ¬(*
+
+1675722*
+1¬1 ¬(;
+
+16754101*
+1¬1 ¬(;
+
+1676222*
+1√  √(<
+
+16759101*
+1√  √(<
+
+1676222*
+1√C √(_
+
+16759101*
+1√C √(_
+
+1676722*
+1ƒ  ƒ(,
+
+16764101*
+1ƒ  ƒ(,
+
+1676722*
+1ƒ3 ƒ(?
+
+16764101*
+1ƒ3 ƒ(?
+
+1677222*
+1≈  ≈(.
+
+16769101*
+1≈  ≈(.
+
+1677222*
+1≈5 ≈(C
+
+16769101*
+1≈5 ≈(C
+
+1677722*
+1∆  ∆(0
+
+16774101*
+1∆  ∆(0
+
+1677722*
+1∆7 ∆(G
+
+16774101*
+1∆7 ∆(G
+
+1678222*
+1«  «(-
+
+16779101*
+1«  «(-
+
+1678222*
+1«4 «(A
+
+16779101*
+1«4 «(A
+
+1678722*
+1»  »(5
+
+16784101*
+1»  »(5
+
+1678722*
+1»< »(Q
+
+16784101*
+1»< »(Q
+
+1679222*
+1…  …(,
+
+16789101*
+1…  …(,
+
+1679222*
+1…3 …(?
+
+16789101*
+1…3 …(?
+
+1743122*
+1Œ Œ(2
+
+17428101*
+1Œ Œ(2
+
+1743722*
+1Œ4 Œ(O
+
+17434101*
+1Œ4 Œ(O
+
+1744222*
+1ŒQ Œ(^
+
+17439101*
+1ŒQ Œ(^
+
+1744722*
+1Œ` Œ(q
+
+17444101*
+1Œ` Œ(q
+
+1745222*
+1œ œ(!
+
+17449101*
+1œ œ(!
+
+1745722*
+1œ# œ(-
+
+17454101*
+1œ# œ(-
+
+1746222*
+1œ/ œ(K
+
+17459101*
+1œ/ œ(K
+
+1746722*
+1œM œ(Y
+
+17464101*
+1œM œ(Y
+
+1747222*
+1œ[ œ(i
+
+17469101*
+1œ[ œ(i
+
+1747722*
+1– –(!
+
+17474101*
+1– –(!
+
+1748222*
+1–# –(0
+
+17479101*
+1–# –(0
+
+1748722*
+1–2 –(G
+
+17484101*
+1–2 –(G
+
+1749222*
+1–I –(U
+
+17489101*
+1–I –(U
+
+1773122*
+1÷, ÷(A
+
+17728101*
+1÷, ÷(A
+
+1773722*
+1◊4 ◊(O
+
+17734101*
+1◊4 ◊(O
+
+1774222*
+1ÿ& ÿ(3
+
+17739101*
+1ÿ& ÿ(3
+
+1774722*
+1Ÿ* Ÿ(;
+
+17744101*
+1Ÿ* Ÿ(;
+
+1775222*
+1⁄) ⁄(9
+
+17749101*
+1⁄) ⁄(9
+
+1775722*
+1€# €(-
+
+17754101*
+1€# €(-
+
+1776222*
+1‹5 ‹(Q
+
+17759101*
+1‹5 ‹(Q
+
+1776722*
+1›% ›(1
+
+17764101*
+1›% ›(1
+
+1777222*
+1ﬁ' ﬁ(5
+
+17769101*
+1ﬁ' ﬁ(5
+
+1777722*
+1ﬂ) ﬂ(9
+
+17774101*
+1ﬂ) ﬂ(9
+
+1778222*
+1‡& ‡(3
+
+17779101*
+1‡& ‡(3
+
+1778722*
+1·- ·(B
+
+17784101*
+1·- ·(B
+
+1779222*
+1‚$ ‚(0
+
+17789101*
+1‚$ ‚(0

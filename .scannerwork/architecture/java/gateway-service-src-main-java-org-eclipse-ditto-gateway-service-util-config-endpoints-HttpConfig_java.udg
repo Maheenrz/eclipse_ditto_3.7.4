@@ -1,0 +1,555 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508658090*java2.BÉ$
+j
+egateway/service/src/main/java/org/eclipse/ditto/gateway/service/util/config/endpoints/HttpConfig.java2
+
+package4
+<
+7org.eclipse.ditto.gateway.service.util.config.endpoints5
+G
+Borg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig7
+
+	interface8
+
+access9
+
+public10
+
+simple name11
+
+
+HttpConfig12
+4
+.Recovered#typeBindingLorg/eclipse/ditto/base;014
+
+unknown15
+
+
+implements16
+
+	Immutable18
+
+annotated by19
+'
+!Recovered#typeBindingLImmutable;021
+
+
+uses22
+t
+norg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig#getSupportedSchemaVersions()Ljava/util/Set;24
+
+method25
+ 
+getSupportedSchemaVersions26
+/
+)Recovered#typeBindingLJsonSchemaVersion;028
+m
+gorg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig#getProtocolHeaders()Ljava/util/List;30
+
+getProtocolHeaders31
+X
+Rorg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig#isForceHttps()Z33
+
+isForceHttps34
+]
+Worg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig#isRedirectToHttps()Z36
+
+isRedirectToHttps37
+á
+Äorg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig#getRedirectToHttpsBlocklistPattern()Ljava/util/regex/Pattern;39
+(
+"getRedirectToHttpsBlocklistPattern40
+X
+Rorg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig#isEnableCors()Z42
+
+isEnableCors43
+p
+jorg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig#getRequestTimeout()Ljava/time/Duration;45
+
+getRequestTimeout46
+u
+oorg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig#getQueryParametersAsHeaders()Ljava/util/Set;48
+!
+getQueryParametersAsHeaders49
+.
+(Recovered#typeBindingLHeaderDefinition;051
+y
+sorg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig#getAdditionalAcceptedMediaTypes()Ljava/util/Set;53
+%
+getAdditionalAcceptedMediaTypes54
+_
+Yorg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig$GatewayHttpConfigValue56
+
+
+enum57
+
+GatewayHttpConfigValue58
+.
+(Recovered#typeBindingLKnownConfigValue;060
+≈
+æorg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig$GatewayHttpConfigValue#values()[Lorg/eclipse/ditto/gateway/service/util/config/endpoints/HttpConfig$GatewayHttpConfigValue;62
+
+values63
+◊
+–org.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig$GatewayHttpConfigValue#valueOf(Ljava/lang/String;)Lorg/eclipse/ditto/gateway/service/util/config/endpoints/HttpConfig$GatewayHttpConfigValue;65
+
+valueOf66
+o
+iorg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig$GatewayHttpConfigValue.SCHEMA_VERSIONS68
+
+field69
+
+SCHEMA_VERSIONS70
+
+calls71
+p
+jorg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig$GatewayHttpConfigValue.PROTOCOL_HEADERS73
+
+PROTOCOL_HEADERS74
+k
+eorg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig$GatewayHttpConfigValue.FORCE_HTTPS76
+
+FORCE_HTTPS77
+q
+korg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig$GatewayHttpConfigValue.REDIRECT_TO_HTTPS79
+
+REDIRECT_TO_HTTPS80
+É
+}org.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig$GatewayHttpConfigValue.REDIRECT_TO_HTTPS_BLOCKLIST_PATTERN82
+)
+#REDIRECT_TO_HTTPS_BLOCKLIST_PATTERN83
+k
+eorg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig$GatewayHttpConfigValue.ENABLE_CORS85
+
+ENABLE_CORS86
+o
+iorg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig$GatewayHttpConfigValue.REQUEST_TIMEOUT88
+
+REQUEST_TIMEOUT89
+w
+qorg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig$GatewayHttpConfigValue.QUERY_PARAMS_AS_HEADERS91
+
+QUERY_PARAMS_AS_HEADERS92
+
+yorg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig$GatewayHttpConfigValue.ADDITIONAL_ACCEPTED_MEDIA_TYPES94
+%
+ADDITIONAL_ACCEPTED_MEDIA_TYPES95
+d
+^org.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig$GatewayHttpConfigValue.path97
+
+private98
+
+
+path99
+m
+forg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig$GatewayHttpConfigValue.defaultValue101
+
+defaultValue102
+¢
+öorg.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig$GatewayHttpConfigValue#<init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/Object;)V104
+
+
+references105
+Ñ
+}org.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig$GatewayHttpConfigValue#getDefaultValue()Ljava/lang/Object;107
+
+getDefaultValue108
+Ç
+{org.eclipse.ditto.gateway.service.util.config.endpoints.HttpConfig$GatewayHttpConfigValue#getConfigPath()Ljava/lang/String;110
+
+getConfigPath111J
+
+1
+12Z
+
+3	
+354j£
+
+17
+171815
+@
+32:
+323325 *
+17 7(26:3B
+	
+9
+10
+
+
+11
+34
+C
+96=
+969769 *
+1≥	 ≥(255:3B
+	
+9
+98
+
+
+11
+99
+G
+109@
+10911025 *
+1¿	 ¿(
+255:3B
+	
+9
+10
+
+11
+111
+@
+55:
+555657 *
+1m
+ m( 26:3B
+	
+9
+10
+
+
+11
+58
+6
+750
+757669 *
+1|	 |(255:3B
+
+
+11
+77
+@
+29:
+293025 *
+10 0(	26:3B
+	
+9
+10
+
+
+11
+31
+@
+47:
+474825 *
+1_ _(26:3B
+	
+9
+10
+
+
+11
+49
+
+50
+505115
+6
+670
+676869 *
+1r	 r(255:3B
+
+
+11
+70
+6
+720
+727369 *
+1w	 w(255:3B
+
+
+11
+74
+
+59
+596015
+8
+932
+939469 *
+1∞	 ∞((255:3B
+
+
+11
+95
+
+20
+202115
+@
+38:
+383925 *
+1G G(26:3B
+	
+9
+10
+
+
+11
+40
+6
+640
+646525 *
+1m
+ m( 255:3B
+
+
+11
+66
+8
+872
+878869 *
+1ì	 ì(255:3B
+
+
+11
+89
+
+27
+272815
+@
+41:
+414225 *
+1N N(26:3B
+	
+9
+10
+
+
+11
+43
+@
+44:
+444525 *
+1U U(26:3B
+	
+9
+10
+
+
+11
+46
+8
+842
+848569 *
+1é	 é(255:3B
+
+
+11
+86
+8
+812
+818269 *
+1à	 à(,255:3B
+
+
+11
+83
+G
+106@
+10610725 *
+1ª	 ª(
+255:3B
+	
+9
+10
+
+11
+108
+G
+100@
+10010169 *
+1¥	 ¥(255:3B
+	
+9
+98
+
+11
+102
+F
+103?
+10310425 *
+1∂	 ∂(255:3B
+	
+9
+98
+
+
+11
+58
+9
+64
+678 *
+1" "(:3B
+	
+9
+10
+
+
+11
+12
+8
+782
+787969 *
+1Ç	 Ç(255:3B
+
+
+11
+80
+8
+902
+909169 *
+1õ	 õ( 255:3B
+
+
+11
+92
+@
+35:
+353625 *
+1? ?(26:3B
+	
+9
+10
+
+
+11
+37
+
+13
+131415
+@
+23:
+232425 *
+1) )(26:3B
+	
+9
+10
+
+
+11
+26
+6
+610
+616225 *
+1m
+ m( 255:3B
+
+
+11
+63
+@
+52:
+525325 *
+1g g(26:3B
+	
+9
+10
+
+
+11
+54r÷
+
+61316*
+1"% "((
+
+61719*
+1! !(
+
+62022*
+1! !(
+
+61322*
+1"7 "(;
+
+61322*
+1"< "(C
+
+61322*
+1"D "(J
+
+61322*
+1"K "(O
+
+61322*
+1"P "(Z
+
+232722*
+1)	 )(
+
+475022*
+1_	 _(
+
+555916*
+1m, m(<
+
+555922*
+1m, m(<
+
+675571*
+1r	 r(
+
+675571*
+1r	 r(
+
+725571*
+1w	 w(
+
+725571*
+1w	 w(
+
+755571*
+1|	 |(
+
+755571*
+1|	 |(
+
+785571*
+1Ç	 Ç(
+
+785571*
+1Ç	 Ç(
+
+815571*
+1à	 à(,
+
+815571*
+1à	 à(,
+
+845571*
+1é	 é(
+
+845571*
+1é	 é(
+
+875571*
+1ì	 ì(
+
+875571*
+1ì	 ì(
+
+905571*
+1õ	 õ( 
+
+905571*
+1õ	 õ( 
+
+935571*
+1∞	 ∞((
+
+935571*
+1∞	 ∞((
+
+1035571*
+1∂	 ∂(
+
+10396105*
+1∑ ∑(
+
+103100105*
+1∏ ∏(
+
+106100105*
+1Ω Ω( 
+
+10996105*
+1¬ ¬(

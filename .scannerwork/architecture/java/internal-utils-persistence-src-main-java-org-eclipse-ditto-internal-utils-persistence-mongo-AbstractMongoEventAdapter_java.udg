@@ -1,0 +1,715 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508507691*java2.B¡
+
+zinternal/utils/persistence/src/main/java/org/eclipse/ditto/internal/utils/persistence/mongo/AbstractMongoEventAdapter.java2
+
+package4
+7
+2org.eclipse.ditto.internal.utils.persistence.mongo5
+Q
+Lorg.eclipse.ditto.internal.utils.persistence.mongo.AbstractMongoEventAdapter7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+AbstractMongoEventAdapter12
+*
+$Recovered#typeBindingLEventAdapter;014
+
+unknown15
+
+
+implements16
+
+Event18
+
+	has param19
+
+T21
+
+
+uses22
+Y
+Sorg.eclipse.ditto.internal.utils.persistence.mongo.AbstractMongoEventAdapter.LOGGER24
+
+field25
+
+private26
+
+LOGGER27
+
+Logger29
+
+is type30
+k
+eorg.eclipse.ditto.internal.utils.persistence.mongo.AbstractMongoEventAdapter.HISTORICAL_EVENT_HEADERS32
+
+HISTORICAL_EVENT_HEADERS33
+
+JsonFieldDefinition35
+(
+"Recovered#typeBindingLJsonObject;037
+Y
+Sorg.eclipse.ditto.internal.utils.persistence.mongo.AbstractMongoEventAdapter.system39
+
+	protected40
+
+system41
+
+ExtendedActorSystem43
+`
+Zorg.eclipse.ditto.internal.utils.persistence.mongo.AbstractMongoEventAdapter.eventRegistry45
+
+eventRegistry46
+
+EventRegistry48
+^
+Xorg.eclipse.ditto.internal.utils.persistence.mongo.AbstractMongoEventAdapter.eventConfig50
+
+eventConfig51
+
+EventConfig53
+é
+áorg.eclipse.ditto.internal.utils.persistence.mongo.AbstractMongoEventAdapter#<init>(LExtendedActorSystem;LEventRegistry;LEventConfig;)V55
+
+method56
+1
++Recovered#typeBindingLExtendedActorSystem;058
++
+%Recovered#typeBindingLEventRegistry;060
+)
+#Recovered#typeBindingLEventConfig;062
+
+calls63
+
+
+references64
+Å
+{org.eclipse.ditto.internal.utils.persistence.mongo.AbstractMongoEventAdapter#manifest(Ljava/lang/Object;)Ljava/lang/String;66
+
+manifest67
+#
+Recovered#typeBindingLEvent;069
+Ç
+|org.eclipse.ditto.internal.utils.persistence.mongo.AbstractMongoEventAdapter#toJournal(Ljava/lang/Object;)Ljava/lang/Object;71
+
+	toJournal72
+/
+)Recovered#typeBindingLJsonSchemaVersion;074
+
+JsonObjectBuilder76
+
+returns77
+ï
+éorg.eclipse.ditto.internal.utils.persistence.mongo.AbstractMongoEventAdapter#performToJournalMigration(LEvent;LJsonObject;)LJsonObjectBuilder;79
+*
+$Recovered#typeBindingLBsonDocument;081
+è
+àorg.eclipse.ditto.internal.utils.persistence.mongo.AbstractMongoEventAdapter#fromJournal(Ljava/lang/Object;Ljava/lang/String;)LEventSeq;83
+
+fromJournal84
+
+EventSeq86
+'
+!Recovered#typeBindingLBsonValue;088
+'
+!Recovered#typeBindingLJsonValue;090
+*
+$Recovered#typeBindingLDittoHeaders;092
+
+
+JsonObject94
+â
+Çorg.eclipse.ditto.internal.utils.persistence.mongo.AbstractMongoEventAdapter#performFromJournalMigration(LJsonObject;)LJsonObject;96
+0
+*Recovered#typeBindingLJsonParseException;098
+4
+-Recovered#typeBindingLDittoRuntimeException;0100
+ 
+performToJournalMigration101
+
+DittoHeaders103
+ç
+Öorg.eclipse.ditto.internal.utils.persistence.mongo.AbstractMongoEventAdapter#calculateHistoricalHeaders(LDittoHeaders;)LDittoHeaders;105
+!
+calculateHistoricalHeaders106
+2
++Recovered#typeBindingLDittoHeadersBuilder;0108
+"
+performFromJournalMigration109J
+
+1
+12Z
+
+3	
+354jÿ
+
+C
+95=
+959656 *
+1ï ï(26:3B
+	
+9
+40
+
+11
+109
+
+87
+878815
+
+91
+919215
+
+97
+979815
+9
+64
+678 *
+1- -(0:3B
+	
+9
+10
+
+
+11
+12
+
+93
+939415
+
+13
+131415
+
+28
+282915
+
+61
+616215
+@
+38:
+383925 *
+17 7(26:3B
+	
+9
+40
+
+
+11
+41
+@
+31:
+313225 *
+14 4(26:3B
+	
+9
+10
+
+
+11
+33
+@
+65:
+656656 *
+1B B(26:3B
+	
+9
+10
+
+
+11
+67
+
+42
+424315
+
+20
+202115
+
+59
+596015
+
+73
+737415
+@
+23:
+232425 *
+1/ /(26:3B
+	
+9
+26
+
+
+11
+27
+
+36
+363715
+
+99
+9910015
+
+75
+757615
+
+47
+474815
+@
+44:
+444525 *
+18 8(26:3B
+	
+9
+40
+
+
+11
+46
+
+68
+686915
+@
+82:
+828356 *
+1[ [(26:3B
+	
+9
+10
+
+
+11
+84
+
+89
+899015
+
+80
+808115
+
+85
+858615
+
+52
+525315
+
+57
+575815
+
+34
+343515
+A
+78;
+787956 *
+1 (26:3B
+	
+9
+40
+
+11
+101
+@
+54:
+545556 *
+1; ;(26:3B
+	
+9
+40
+
+
+11
+12
+F
+104?
+10410556 *
+1Ñ Ñ(26:3B
+	
+9
+26
+
+11
+106
+
+102
+10210315
+
+17
+171815
+@
+49:
+495025 *
+19 9(26:3B
+	
+9
+26
+
+
+11
+51
+@
+70:
+707156 *
+1L L(26:3B
+	
+9
+10
+
+
+11
+72
+
+107
+10710815rÂ
+
+61316*
+1-P -(\
+
+61719*
+1-; -(@
+
+62022*
+1-1 -(2
+
+61722*
+1-; -(@
+
+61322*
+1-P -(\
+
+232830*
+1/ /( 
+
+232822*
+1/ /( 
+
+232822*
+1/! /('
+
+313430*
+14 4(,
+
+313422*
+14 4(,
+
+313622*
+14- 4(7
+
+313422*
+149 4(Q
+
+384230*
+17 7((
+
+384222*
+17 7((
+
+384222*
+17) 7(/
+
+444730*
+18 8("
+
+444722*
+18 8("
+
+442022*
+18# 8($
+
+444722*
+18& 8(3
+
+495230*
+19 9(
+
+495222*
+19 9(
+
+495222*
+19 9(*
+
+545719*
+1;/ ;(B
+
+545919*
+1< <( 
+
+546119*
+1<9 <(D
+
+54663*
+1; ;((
+
+545730*
+1;C ;(I
+
+545722*
+1;/ ;(B
+
+545930*
+1<$ <(1
+
+545922*
+1< <( 
+
+542022*
+1<! <("
+
+546130*
+1<E <(P
+
+546122*
+1<9 <(D
+
+54622*
+1=	 =(
+
+54664*
+1=	 =(
+
+544222*
+1= =(
+
+543864*
+1= =(
+
+54622*
+1>	 >(
+
+54664*
+1>	 >(
+
+544722*
+1> >(
+
+544464*
+1> >(
+
+54622*
+1?	 ?(
+
+54664*
+1?	 ?(
+
+545222*
+1? ?(
+
+544964*
+1? ?(
+
+656822*
+1D D(#
+
+656822*
+1E E(
+
+706830*
+1N' N(/
+
+706822*
+1N N(#
+
+707330*
+1O% O(2
+
+707322*
+1O O($
+
+703630*
+1P P((
+
+703622*
+1P P(
+
+707577*
+1P+ P(D
+
+70664*
+1P+ P(D
+
+707863*
+1P+ P(D
+
+708030*
+1S  S($
+
+708022*
+1S S(
+
+828577*
+1\ \(
+
+828522*
+1\ \(
+
+828730*
+1]( ](1
+
+828722*
+1] ]('
+
+828930*
+1^ ^(&
+
+828922*
+1^ ^(
+
+823630*
+1`" `(,
+
+823622*
+1` `(!
+
+829130*
+1b$ b(0
+
+829122*
+1b b(#
+
+823422*
+1bG b(_
+
+823164*
+1bG b(_
+
+822030*
+1f f(
+
+822022*
+1f f(
+
+824464*
+1g g(&
+
+824722*
+1g g(&
+
+824464*
+1g g(&
+
+829377*
+1g- g(H
+
+82664*
+1g- g(H
+
+829563*
+1g- g(H
+
+829722*
+1i i(.
+
+829922*
+1i1 i(F
+
+824222*
+1j j(
+
+823864*
+1j j(
+
+823864*
+1k k(
+
+824222*
+1k k(
+
+823864*
+1k k(
+
+822364*
+1m m(
+
+822822*
+1m m(
+
+822364*
+1m m(
+
+787577*
+1 ( 
+
+786819*
+1A (F
+
+783619*
+1W (a
+
+787522*
+1 ( 
+
+786830*
+1J (O
+
+786822*
+1A (F
+
+783630*
+1b (l
+
+783622*
+1W (a
+
+783422*
+1Å Å(.
+
+783164*
+1Å Å(.
+
+7810277*
+1Å0 Å(J
+
+78664*
+1Å0 Å(J
+
+7810463*
+1Å0 Å(J
+
+10410277*
+1Ñ Ñ(
+
+1049119*
+1Ñ; Ñ(G
+
+10410222*
+1Ñ Ñ(
+
+1049130*
+1ÑH Ñ(T
+
+1049122*
+1Ñ; Ñ(G
+
+10410730*
+1Ö) Ö(A
+
+10410722*
+1Ö Ö("
+
+1044964*
+1Ü	 Ü(
+
+1045222*
+1Ü	 Ü(
+
+1044964*
+1Ü	 Ü(
+
+959377*
+1ï ï(
+
+953619*
+1ï< ï(F
+
+959322*
+1ï ï(
+
+953630*
+1ïG ï(Q
+
+953622*
+1ï< ï(F

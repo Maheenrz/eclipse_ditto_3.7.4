@@ -1,0 +1,513 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508578953*java2.BÂ
+s
+nconnectivity/service/src/main/java/org/eclipse/ditto/connectivity/service/messaging/signing/AzSaslSigning.java2
+
+package4
+=
+8org.eclipse.ditto.connectivity.service.messaging.signing5
+K
+Forg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+
+AzSaslSigning12
+0
+*Recovered#typeBindingLHttpRequestSigning;014
+
+unknown15
+
+
+implements16
+3
+-Recovered#typeBindingLAmqpConnectionSigning;018
+
+
+uses19
+X
+Rorg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning.AUTH_SCHEME21
+
+field22
+
+private23
+
+AUTH_SCHEME24
+g
+aorg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning.AMQP_USERNAME_TRIM_PATTERN26
+ 
+AMQP_USERNAME_TRIM_PATTERN27
+Z
+Torg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning.sharedKeyName29
+
+sharedKeyName30
+V
+Porg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning.sharedKey32
+
+	sharedKey33
+
+
+ByteString35
+
+is type36
+P
+Jorg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning.ttl38
+	
+ttl39
+U
+Oorg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning.endpoint41
+
+endpoint42
+›
+”org.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning#<init>(Ljava/lang/String;LByteString;Ljava/time/Duration;Ljava/lang/String;)V44
+
+method45
+(
+"Recovered#typeBindingLByteString;047
+
+	has param48
+
+calls49
+
+
+references50
+ä
+Ýorg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning#of(Ljava/lang/String;Ljava/lang/String;Ljava/time/Duration;Ljava/lang/String;)Lorg/eclipse/ditto/connectivity/service/messaging/signing/AzSaslSigning;52
+
+of53
+
+returns54
+{
+uorg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning#sign(LHttpRequest;Ljava/time/Instant;)LSource;56
+
+
+sign57
+
+Source59
+)
+#Recovered#typeBindingLHttpRequest;061
+%
+Recovered#typeBindingLNotUsed;063
+
+yorg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning#getSasToken(Ljava/time/Instant;)Ljava/lang/String;65
+-
+'Recovered#typeBindingLHttpCredentials;067
+Ž
+‡org.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning#createSignedCredentials(Ljava/time/Instant;)Ljava/util/Optional;69
+
+createSignedCredentials70
+5
+/Recovered#typeBindingLUserPasswordCredentials;072
+p
+jorg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning#getAmqpUsername()Ljava/lang/String;74
+ƒ
+}org.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning#getAmqpPassword(Ljava/time/Instant;)Ljava/lang/String;76
+
+getAmqpUsername77
+
+getAmqpPassword78
+
+getSasToken79
+¦
+Ÿorg.eclipse.ditto.connectivity.service.messaging.signing.AzSaslSigning#assembleToken(Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;)Ljava/lang/String;81
+
+assembleToken82J
+
+1
+12Z
+
+3	
+354j‹	
+@
+68:
+686945 *
+1T T(26:3B
+	
+9
+10
+
+
+11
+70
+@
+75:
+757645 *
+1j j(26:3B
+	
+9
+23
+
+
+11
+78
+
+17
+171815
+@
+20:
+202122 *
+1% %(26:3B
+	
+9
+23
+
+
+11
+24
+@
+51:
+515245 *
+1? ?(26:3B
+	
+9
+10
+
+
+11
+53
+
+34
+343515
+@
+31:
+313222 *
+1* *(26:3B
+	
+9
+23
+
+
+11
+33
+
+62
+626315
+@
+43:
+434445 *
+1. .(26:3B
+	
+9
+23
+
+
+11
+12
+9
+64
+678 *
+1# #(!:3B
+	
+9
+10
+
+
+11
+12
+
+58
+585915
+
+66
+666715
+@
+40:
+404122 *
+1, ,(26:3B
+	
+9
+23
+
+
+11
+42
+
+13
+131415
+@
+28:
+282922 *
+1) )(26:3B
+	
+9
+23
+
+
+11
+30
+@
+73:
+737445 *
+1` `(26:3B
+	
+9
+23
+
+
+11
+77
+@
+80:
+808145 *
+1} }(26:3B
+	
+9
+23
+
+
+11
+82
+
+60
+606115
+
+46
+464715
+@
+25:
+252622 *
+1' '(26:3B
+	
+9
+23
+
+
+11
+27
+@
+37:
+373822 *
+1+ +(26:3B
+	
+9
+23
+
+
+11
+39
+@
+55:
+555645 *
+1L L(26:3B
+	
+9
+10
+
+
+11
+57
+@
+64:
+646545 *
+1t t(26:3B
+	
+9
+23
+
+
+11
+79
+
+71
+717215rÆ
+
+61316*
+1#- #(?
+
+61716*
+1#A #(V
+
+61319*
+1#- #(?
+
+61719*
+1#A #(V
+
+313436*
+1* *(
+
+313419*
+1* *(
+
+313419*
+1* *('
+
+434648*
+1.= .(G
+
+43649*
+1. .(
+
+434636*
+1.H .(Q
+
+434619*
+1.= .(G
+
+43619*
+10	 0(
+
+43650*
+10	 0(
+
+432850*
+10 0(
+
+43619*
+11	 1(
+
+43650*
+11	 1(
+
+433419*
+11 1(
+
+433150*
+11 1(
+
+43619*
+12	 2(
+
+43650*
+12	 2(
+
+433750*
+12 2(
+
+43619*
+13	 3(
+
+43650*
+13	 3(
+
+434050*
+13 3(
+
+51654*
+1? ?( 
+
+51619*
+1? ?( 
+
+514636*
+1B B(,
+
+514619*
+1B B(
+
+51649*
+1C C(%
+
+555854*
+1M M(
+
+556048*
+1M4 M(?
+
+555819*
+1M M(
+
+556019*
+1M M(
+
+556219*
+1M  M('
+
+556036*
+1M@ M(G
+
+556019*
+1M4 M(?
+
+55650*
+1N N()
+
+556449*
+1N N()
+
+556636*
+1O O(*
+
+556619*
+1O O(
+
+552050*
+1OD O(O
+
+556036*
+1P P((
+
+556019*
+1P P(
+
+687119*
+1U U(,
+
+687136*
+1V' V(2
+
+687119*
+1V V(&
+
+68650*
+1W W(-
+
+687349*
+1W W(-
+
+68650*
+1W1 W(@
+
+687549*
+1W1 W(@
+
+732850*
+1a a(
+
+734050*
+1a/ a(7
+
+734050*
+1a/ a(7
+
+732550*
+1aC a(]
+
+752050*
+1k k(
+
+75650*
+1k$ k(/
+
+756449*
+1k$ k(/
+
+643750*
+1u, u(/
+
+644050*
+1v> v(F
+
+643150*
+1yG y(P
+
+643419*
+1yG y(P
+
+643150*
+1yG y(P
+
+64650*
+1z z(
+
+648049*
+1z z(
+
+642850*
+1z5 z(B

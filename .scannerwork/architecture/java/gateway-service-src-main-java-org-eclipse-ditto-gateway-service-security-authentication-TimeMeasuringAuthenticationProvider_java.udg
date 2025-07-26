@@ -1,0 +1,560 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508453199*java2.Bπ
+Ü
+Ägateway/service/src/main/java/org/eclipse/ditto/gateway/service/security/authentication/TimeMeasuringAuthenticationProvider.java2
+
+package4
+>
+9org.eclipse.ditto.gateway.service.security.authentication5
+b
+]org.eclipse.ditto.gateway.service.security.authentication.TimeMeasuringAuthenticationProvider7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+)
+#TimeMeasuringAuthenticationProvider12
+4
+.Recovered#typeBindingLAuthenticationProvider;014
+
+unknown15
+
+
+implements16
+
+	Immutable18
+
+annotated by19
+'
+!Recovered#typeBindingLImmutable;021
+
+
+uses22
+
+AuthenticationResult24
+
+	has param25
+
+R27
+j
+dorg.eclipse.ditto.gateway.service.security.authentication.TimeMeasuringAuthenticationProvider.logger29
+
+field30
+
+private31
+
+logger32
+
+ThreadSafeDittoLogger34
+
+is type35
+Ñ
+~org.eclipse.ditto.gateway.service.security.authentication.TimeMeasuringAuthenticationProvider#<init>(LThreadSafeDittoLogger;)V37
+
+method38
+
+	protected39
+3
+-Recovered#typeBindingLThreadSafeDittoLogger;041
+
+calls42
+
+
+references43
+π
+≤org.eclipse.ditto.gateway.service.security.authentication.TimeMeasuringAuthenticationProvider#authenticate(LRequestContext;LDittoHeaders;)Ljava/util/concurrent/CompletableFuture;45
+
+authenticate46
+,
+&Recovered#typeBindingLRequestContext;048
+*
+$Recovered#typeBindingLDittoHeaders;050
+6
+0Recovered#typeBindingLAuthorizationContextType;052
+
+AuthorizationContextType54
+
+returns55
+ò
+ëorg.eclipse.ditto.gateway.service.security.authentication.TimeMeasuringAuthenticationProvider#getType(LRequestContext;)LAuthorizationContextType;57
+*
+$Recovered#typeBindingLStartedTimer;059
+æ
+∑org.eclipse.ditto.gateway.service.security.authentication.TimeMeasuringAuthenticationProvider#tryToAuthenticate(LRequestContext;LDittoHeaders;)Ljava/util/concurrent/CompletableFuture;61
+ù
+ñorg.eclipse.ditto.gateway.service.security.authentication.TimeMeasuringAuthenticationProvider#getRootCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;63
+
+getRootCause64
+Ç
+|org.eclipse.ditto.gateway.service.security.authentication.TimeMeasuringAuthenticationProvider#isInternalError(LHttpStatus;)Z66
+
+isInternalError67
+(
+"Recovered#typeBindingLHttpStatus;069
+
+getType70
+
+tryToAuthenticate71
+º
+µorg.eclipse.ditto.gateway.service.security.authentication.TimeMeasuringAuthenticationProvider#toFailedAuthenticationResult(Ljava/lang/Throwable;LDittoHeaders;)LAuthenticationResult;73
+"
+toFailedAuthenticationResult74
+∏
+±org.eclipse.ditto.gateway.service.security.authentication.TimeMeasuringAuthenticationProvider#toDittoRuntimeException(Ljava/lang/Throwable;LDittoHeaders;)LDittoRuntimeException;76
+
+toDittoRuntimeException77
+
+DittoRuntimeException79
+º
+µorg.eclipse.ditto.gateway.service.security.authentication.TimeMeasuringAuthenticationProvider#unwrapDittoRuntimeException(Ljava/lang/Throwable;LDittoHeaders;)LDittoRuntimeException;81
+!
+unwrapDittoRuntimeException82
+3
+-Recovered#typeBindingLDittoRuntimeException;084
+–
+…org.eclipse.ditto.gateway.service.security.authentication.TimeMeasuringAuthenticationProvider#failOnTimeout(Ljava/util/concurrent/CompletionStage;LDittoHeaders;)Ljava/util/concurrent/CompletableFuture;86
+
+failOnTimeout87
+º
+µorg.eclipse.ditto.gateway.service.security.authentication.TimeMeasuringAuthenticationProvider#buildInternalErrorException(Ljava/lang/Throwable;LDittoHeaders;)LDittoRuntimeException;89
+!
+buildInternalErrorException90J
+
+1
+12Z
+
+3	
+354jâ	
+
+17
+171815
+@
+60:
+606138 *
+1z z(26:3B
+	
+9
+39
+
+
+11
+71
+
+49
+495015
+B
+75<
+757638 *
+1ê ê(26:3B
+	
+9
+39
+
+
+11
+77
+
+68
+686915
+
+33
+333415
+B
+72<
+727338 *
+1Ñ Ñ(26:3B
+	
+9
+39
+
+
+11
+74
+
+53
+535415
+B
+88<
+888938 *
+1π π(26:3B
+	
+9
+39
+
+
+11
+90
+@
+56:
+565738 *
+1q q(26:3B
+	
+9
+39
+
+
+11
+70
+@
+65:
+656638 *
+1f f(26:3B
+	
+9
+31
+
+
+11
+67
+
+13
+131415
+
+40
+404115
+B
+85<
+858638 *
+1≥ ≥(26:3B
+	
+9
+39
+
+
+11
+87
+
+23
+232415
+
+20
+202115
+
+26
+262715
+@
+28:
+282930 *
+1, ,(26:3B
+	
+9
+31
+
+
+11
+32
+
+51
+515215
+B
+80<
+808138 *
+1¢ ¢(26:3B
+	
+9
+31
+
+
+11
+82
+
+83
+838415
+@
+36:
+363738 *
+14 4(26:3B
+	
+9
+39
+
+
+11
+12
+9
+64
+678 *
+1) )(::3B
+	
+9
+10
+
+
+11
+12
+@
+62:
+626338 *
+1^ ^(26:3B
+	
+9
+31
+
+
+11
+64
+
+58
+585915
+@
+44:
+444538 *
+18 8(26:3B
+	
+9
+10
+
+
+11
+46
+
+47
+474815
+
+78
+787915rú
+
+61316*
+1* *(*
+
+61719*
+1( ((
+
+62022*
+1( ((
+
+62325*
+1)E )(Y
+
+62622*
+1); )(<
+
+62322*
+1)E )(Y
+
+61322*
+1* *(*
+
+62622*
+1*+ *(,
+
+283335*
+1, ,((
+
+283322*
+1, ,((
+
+283322*
+1,) ,(/
+
+364025*
+149 4(N
+
+36642*
+14 4(2
+
+364035*
+14O 4(U
+
+364022*
+149 4(N
+
+36622*
+15	 5(
+
+36643*
+15	 5(
+
+363322*
+15 5(
+
+362843*
+15 5(
+
+444725*
+19: 9(H
+
+444925*
+1: :(
+
+442622*
+19$ 9(%
+
+444735*
+19I 9(W
+
+444722*
+19: 9(H
+
+444935*
+1:  :(,
+
+444922*
+1: :(
+
+445135*
+1;( ;(@
+
+445122*
+1; ;('
+
+445355*
+1;C ;(J
+
+44643*
+1;C ;(J
+
+445642*
+1;C ;(J
+
+445835*
+1< <(!
+
+445822*
+1< <(
+
+442622*
+1= =(
+
+44643*
+1? ?(-
+
+446042*
+1? ?(-
+
+656825*
+1f2 f(<
+
+656835*
+1f= f(K
+
+656822*
+1f2 f(<
+
+565355*
+1q q(0
+
+564725*
+1q9 q(G
+
+565322*
+1q q(0
+
+564735*
+1qH q(V
+
+564722*
+1q9 q(G
+
+604725*
+1z? z(M
+
+604925*
+1z^ z(j
+
+602622*
+1z* z(+
+
+604735*
+1zN z(\
+
+604722*
+1z? z(M
+
+604935*
+1zk z(w
+
+604922*
+1z^ z(j
+
+722655*
+1Ñ Ñ(
+
+724925*
+1ÑL Ñ(X
+
+722622*
+1Ñ Ñ(
+
+724935*
+1ÑY Ñ(e
+
+724922*
+1ÑL Ñ(X
+
+757855*
+1ê ê($
+
+754925*
+1ë ë(
+
+757822*
+1ê ê($
+
+754935*
+1ë  ë(,
+
+754922*
+1ë ë(
+
+807855*
+1¢ ¢()
+
+804925*
+1£ £(
+
+807822*
+1¢ ¢()
+
+804935*
+1£  £(,
+
+804922*
+1£ £(
+
+808335*
+1©8 ©(M
+
+808322*
+1©" ©(7
+
+807855*
+1∞ ∞(+
+
+80643*
+1∞ ∞(+
+
+854925*
+1¥H ¥(T
+
+852622*
+1≥! ≥("
+
+852622*
+1¥# ¥($
+
+854935*
+1¥U ¥(a
+
+854922*
+1¥H ¥(T
+
+887855*
+1π π(+
+
+884925*
+1∫ ∫(
+
+887822*
+1π π(+
+
+884935*
+1∫  ∫(,
+
+884922*
+1∫ ∫(

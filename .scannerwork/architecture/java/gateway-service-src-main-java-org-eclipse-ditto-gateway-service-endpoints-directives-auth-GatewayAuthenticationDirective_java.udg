@@ -1,0 +1,463 @@
+
+1.0maheenrz_eclipse-ditto-3-7-4JavaFrontend"1753508602349*java2.B÷
+Ç
+}gateway/service/src/main/java/org/eclipse/ditto/gateway/service/endpoints/directives/auth/GatewayAuthenticationDirective.java2
+
+package4
+@
+;org.eclipse.ditto.gateway.service.endpoints.directives.auth5
+_
+Zorg.eclipse.ditto.gateway.service.endpoints.directives.auth.GatewayAuthenticationDirective7
+
+
+class8
+
+access9
+
+public10
+
+simple name11
+$
+GatewayAuthenticationDirective12
+g
+aorg.eclipse.ditto.gateway.service.endpoints.directives.auth.GatewayAuthenticationDirective.LOGGER14
+
+field15
+
+private16
+
+LOGGER17
+
+DittoLogger19
+
+unknown20
+
+is type21
+
+
+uses22
+t
+norg.eclipse.ditto.gateway.service.endpoints.directives.auth.GatewayAuthenticationDirective.authenticationChain24
+
+authenticationChain25
+
+AuthenticationChain27
+Ñ
+~org.eclipse.ditto.gateway.service.endpoints.directives.auth.GatewayAuthenticationDirective.defaultUnauthorizedExceptionFactory29
+)
+#defaultUnauthorizedExceptionFactory30
+*
+$Recovered#typeBindingLDittoHeaders;032
+3
+-Recovered#typeBindingLDittoRuntimeException;034
+
+yorg.eclipse.ditto.gateway.service.endpoints.directives.auth.GatewayAuthenticationDirective#<init>(LAuthenticationChain;)V36
+
+method37
+1
++Recovered#typeBindingLAuthenticationChain;039
+
+	has param40
+
+calls41
+
+
+references42
+ù
+ñorg.eclipse.ditto.gateway.service.endpoints.directives.auth.GatewayAuthenticationDirective#<init>(LAuthenticationChain;Ljava/util/function/Function;)V44
+¢
+õorg.eclipse.ditto.gateway.service.endpoints.directives.auth.GatewayAuthenticationDirective#authenticate(LDittoHeaders;Ljava/util/function/Function;)LRoute;46
+
+authenticate47
+
+Route49
+
+returns50
+2
+,Recovered#typeBindingLAuthenticationResult;052
+#
+Recovered#typeBindingLRoute;054
+∑
+∞org.eclipse.ditto.gateway.service.endpoints.directives.auth.GatewayAuthenticationDirective#handleAuthenticationTry(LTry;LUri;LDittoHeaders;Ljava/util/function/Function;)LRoute;56
+
+handleAuthenticationTry57
+!
+Recovered#typeBindingLTry;059
+!
+Recovered#typeBindingLUri;061
+≠
+¶org.eclipse.ditto.gateway.service.endpoints.directives.auth.GatewayAuthenticationDirective#handleFailedAuthentication(Ljava/lang/Throwable;LUri;LDittoHeaders;)LRoute;63
+ 
+handleFailedAuthentication64J
+
+1
+12Z
+
+3	
+354jì
+
+18
+181920
+9
+64
+678 *
+1% %(2:3B
+	
+9
+10
+
+
+11
+12
+
+31
+313220
+
+51
+515220
+
+26
+262720
+@
+28:
+282915 *
+1* *(26:3B
+	
+9
+16
+
+
+11
+30
+@
+45:
+454637 *
+1O O(26:3B
+	
+9
+10
+
+
+11
+47
+
+58
+585920
+
+60
+606120
+@
+62:
+626337 *
+1m m(26:3B
+	
+9
+16
+
+
+11
+64
+@
+35:
+353637 *
+12 2(26:3B
+	
+9
+10
+
+
+11
+12
+@
+13:
+131415 *
+1' '(26:3B
+	
+9
+16
+
+
+11
+17
+
+53
+535420
+@
+55:
+555637 *
+1^ ^(26:3B
+	
+9
+16
+
+
+11
+57
+@
+23:
+232415 *
+1) )(26:3B
+	
+9
+16
+
+
+11
+25
+@
+43:
+434437 *
+1@ @(26:3B
+	
+9
+10
+
+
+11
+12
+
+38
+383920
+
+33
+333420
+
+48
+484920r…
+
+131821*
+1' '(%
+
+131822*
+1' '(%
+
+131822*
+1'& '(,
+
+13622*
+1'L '(j
+
+232621*
+1) )(&
+
+232622*
+1) )(&
+
+232622*
+1)' )(:
+
+283122*
+1* *((
+
+283322*
+1** *(?
+
+353840*
+121 2(D
+
+35641*
+12 2(*
+
+353821*
+12E 2(X
+
+353822*
+121 2(D
+
+35642*
+13	 3(
+
+35641*
+13	 3(
+
+35641*
+13	 3(
+
+433840*
+1@1 @(D
+
+43641*
+1@ @(*
+
+433821*
+1@E @(X
+
+433822*
+1@1 @(D
+
+433122*
+1A A((
+
+433322*
+1A* A(?
+
+43622*
+1C	 C(
+
+43642*
+1C	 C(
+
+432622*
+1C C(!
+
+432342*
+1C C(!
+
+43622*
+1D	 D(
+
+43642*
+1D	 D(
+
+432842*
+1D D(1
+
+454850*
+1O O(
+
+453140*
+1O% O(1
+
+454822*
+1O O(
+
+453121*
+1O2 O(>
+
+453122*
+1O% O(1
+
+455122*
+1OO O(c
+
+455322*
+1Oe O(j
+
+554850*
+1^ ^(
+
+555840*
+1^1 ^(4
+
+556040*
+1_ _(
+
+553140*
+1` `(
+
+554822*
+1^ ^(
+
+555821*
+1^K ^(b
+
+555822*
+1^1 ^(4
+
+555122*
+1^5 ^(I
+
+556021*
+1_ _(!
+
+556022*
+1_ _(
+
+553121*
+1`  `(,
+
+553122*
+1` `(
+
+555122*
+1a a(0
+
+555322*
+1a2 a(7
+
+555121*
+1d( d(<
+
+555122*
+1d d('
+
+554850*
+1h h(.
+
+55642*
+1h h(.
+
+556241*
+1h h(.
+
+554850*
+1j j(*
+
+55642*
+1j j(*
+
+556241*
+1j j(*
+
+624850*
+1m m(
+
+626040*
+1mU m(X
+
+623140*
+1n n(
+
+624822*
+1m m(
+
+626021*
+1mY m(c
+
+626022*
+1mU m(X
+
+623121*
+1n  n(,
+
+623122*
+1n n(
+
+623321*
+1p> p(S
+
+623322*
+1p( p(=
+
+621342*
+1q q(
+
+621822*
+1q q(
+
+621342*
+1q q(
+
+621342*
+1v v(
+
+621822*
+1v v(
+
+621342*
+1v v(
+
+621342*
+1{	 {(
+
+621822*
+1{	 {(
+
+621342*
+1{	 {(
+
+622842*
+1} }(2
+
+622842*
+1} }(2
